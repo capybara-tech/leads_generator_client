@@ -1,7 +1,13 @@
 import React from "react";
+import { Route, Switch } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
 const App = () => {
-  return <div>Welcome to Capybara-tech AB</div>;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 };
 
 export default App;
