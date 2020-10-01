@@ -5,10 +5,10 @@ const Navbar = () => {
   return (
     <div>
       <img data-cy="logo" src="/images/dummylogo.png" alt="capybara-logo" />
-      <Link to='/whysolar' data-cy="button">Why solar</Link>
-      <Link data-cy="button">About us</Link>
-      <Link data-cy="button">FAQs</Link>
-      <Link data-cy="button">Get up to three quotes</Link>
+      <Link data-cy="button" to="/whysolar" >Why solar</Link>
+      <Link data-cy="button" to="/aboutus" >About us</Link>
+      <Link data-cy="button" to="/faqs" >FAQs</Link>
+      <Link data-cy="button" to="/quotes" >Get up to three quotes</Link>
     </div>
   );
 };
