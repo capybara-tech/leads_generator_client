@@ -4,12 +4,14 @@ import { Menu, Segment, Image } from "semantic-ui-react";
 
 const Navbar = () => {
   return (
-    <Segment>
+    <Segment id="segment">
       <Menu id="navbar" text>
         <Image
           data-cy="logo"
           src="/images/dummylogo.png"
           alt="capybara-logo"
+          as={Link}
+          to={{ pathname: "/" }}
           circular
           size="tiny"
         />
