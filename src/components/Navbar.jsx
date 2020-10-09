@@ -19,28 +19,28 @@ const Navbar = () => {
           position="right"
           as={Link}
           to={{ pathname: "/whysolar" }}
-          name="Why Solar"
+          content="Why solar"
           data-cy="button"
         />
         <Menu.Item
           position="right"
           as={Link}
           to={{ pathname: "/aboutus" }}
-          name="About us"
+          content="About us"
           data-cy="button"
         />
         <Menu.Item
           position="right"
           as={Link}
           to={{ pathname: "/faqs" }}
-          name="FAQs"
+          content="FAQs"
           data-cy="button"
         />
         <Menu.Item
           position="right"
           as={Link}
           to={{ pathname: "/quotes" }}
-          name="Get up to three quotes"
+          content="Get up to three quotes"
           data-cy="button"
         >
           <Button id="navbarButton">Get up to three quotes</Button>
