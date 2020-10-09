@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Menu, Segment, Image } from "semantic-ui-react";
+import { Menu, Segment, Image, Button } from "semantic-ui-react";
 
 const Navbar = () => {
   return (
@@ -42,7 +42,9 @@ const Navbar = () => {
           to={{ pathname: "/quotes" }}
           name="Get up to three quotes"
           data-cy="button"
-        />
+        >
+          <Button id="navbarButton">Get up to three quotes</Button>
+        </Menu.Item>
       </Menu>
     </Segment>
   );

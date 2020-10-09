@@ -1,7 +1,11 @@
 #navbar {
-  margin: 1vh;
-  font-size: 1vw;
+  font-size: 2vh;
+  background-color:#f2efed;
 }
 #segment {
   margin: 2vh;
+  background-color:#f2efed;
+}
+#navbarButton{
+  background-color:#C9E3AC;
 }
