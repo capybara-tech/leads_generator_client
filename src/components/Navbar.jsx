@@ -1,15 +1,52 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Menu, Segment, Image, Button } from "semantic-ui-react";
 
 const Navbar = () => {
   return (
-    <div>
-      <img data-cy="logo" src="/images/dummylogo.png" alt="capybara-logo" />
-      <Link data-cy="button" to="/whysolar" >Why solar</Link>
-      <Link data-cy="button" to="/aboutus" >About us</Link>
-      <Link data-cy="button" to="/faqs" >FAQs</Link>
-      <Link data-cy="button" to="/quotes" >Get up to three quotes</Link>
-    </div>
+    <Segment id="segment">
+      <Menu id="navbar" text>
+        <Image
+          data-cy="logo"
+          src="/images/dummylogo.png"
+          alt="capybara-logo"
+          as={Link}
+          to={{ pathname: "/" }}
+          circular
+          size="tiny"
+        />
+        <Menu.Item
+          position="right"
+          as={Link}
+          to={{ pathname: "/whysolar" }}
+          content="Why solar"
+          data-cy="button"
+        />
+        <Menu.Item
+          position="right"
+          as={Link}
+          to={{ pathname: "/aboutus" }}
+          content="About us"
+          data-cy="button"
+        />
+        <Menu.Item
+          position="right"
+          as={Link}
+          to={{ pathname: "/faqs" }}
+          content="FAQs"
+          data-cy="button"
+        />
+        <Menu.Item
+          position="right"
+          as={Link}
+          to={{ pathname: "/quotes" }}
+          content="Get up to three quotes"
+          data-cy="button"
+        >
+          <Button id="navbarButton">Get up to three quotes</Button>
+        </Menu.Item>
+      </Menu>
+    </Segment>
   );
 };
 
