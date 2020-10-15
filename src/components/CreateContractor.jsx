@@ -3,12 +3,19 @@ import axios from "axios";
 import { Form, Input, Button } from "semantic-ui-react";
 
 const CreateContractor = () => {
-  const [message, setMessage] = useState("")
+  const [message, setMessage] = useState("");
 
   const submitContractor = async (event) => {
     event.preventDefault();
     let responseMessage, contractorParams, response;
-    let { name, contact, address, telephone, email, companyNumber } = event.target;
+    let {
+      name,
+      contact,
+      address,
+      telephone,
+      email,
+      companyNumber,
+    } = event.target;
 
     try {
       contractorParams = {
@@ -18,25 +25,25 @@ const CreateContractor = () => {
         telephone: telephone.value,
         email: email.value,
         companyNumber: companyNumber.value,
-      }
+      };
 
       response = await axios.post(
         "http://localhost:3000/api/v1/admin/contractors",
         { contractor: contractorParams },
         { headers: { "Content-Type": "application/json" } }
-      )
+      );
+      
       responseMessage = response.data.message;
     } catch (error) {
       responseMessage = error.response.data.errors;
     } finally {
       setMessage(responseMessage);
     }
-    }
-
+  };
 
   return (
     <>
-    <h4>Create a new contractor</h4>
+      <h4>Create a new contractor</h4>
       <Form data-cy="contractor-form" onSubmit={submitContractor}>
         <Form.Group widths="equal">
           <Form.Field
