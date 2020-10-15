@@ -5,12 +5,13 @@ describe("Admin can create contractor", () => {
       cy.route({
         method: "POST",
         url: "http://localhost:3000/api/v1/admin/contractors",
-        response: '{"Contractor successfully created"}',
+        response: '{"message": "Contractor successfully created"}',
       })
+      cy.visit("/");
     })
 
     it('Admin can create an contractor successfully', () => {
-      cy.get('[data-cy=button]').contains("Create Contractor").click();
+      cy.get('[data-cy=button]').contains("Admin").click();
       cy.get('[data-cy=contractor-form]').within(() => {
         cy.get('[data-cy=name]').type('Name');
         cy.get('[data-cy=contact-person]').type('Conatct person');
