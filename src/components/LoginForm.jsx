@@ -9,6 +9,7 @@ const LoginForm = (props) => {
         <Grid.Column>
           <Form onSubmit={props.authenticate} data-cy="login-form">
             <Form.Input
+              id="email"
               data-cy="email"
               icon="user"
               iconPosition="left"
@@ -16,6 +17,7 @@ const LoginForm = (props) => {
               placeholder="Email"
             />
             <Form.Input
+              id="password"
               data-cy="password"
               icon="lock"
               iconPosition="left"
@@ -23,7 +25,7 @@ const LoginForm = (props) => {
               placeholder="Password"
               type="password"
             />
-            <Button content="Login" data-cy="button" />
+            <Button content="Login" id="login-button" data-cy="button" />
           </Form>
         </Grid.Column>
       </Grid>
