@@ -12,17 +12,17 @@ import Login from "./components/Login";
 import { connect } from "react-redux";
 
 const App = (props) => {
-  let content, login
+  //let content, login
 
-  if (props.authenticated) {
-    content = (
-      <>
-        <AdminHomePage />
-      </>
-    )
-  } else {
-    login = <Login />
-  }
+  //if (props.authenticated) {
+    //content = (
+     // <>
+     //   <AdminHomePage />
+      //</>
+    //)
+  //} else {
+   // login = <Login />
+ // }
 
   return (
     <>
@@ -33,11 +33,10 @@ const App = (props) => {
         <Route path="/aboutus" component={AboutUs} />
         <Route path="/faqs" component={FAQs} />
         <Route path="/quotes" component={QuotesPage} />
-        <Route path="/adminhome" component={AdminHomePage} />
+        <Route path="/adminlogin" component={Login} />
       </Switch>
       <Footer />
-      {login}
-      {content}
+
     </>
   );
 };
