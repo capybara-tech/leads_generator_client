@@ -8,7 +8,7 @@ const Footer = () => {
       <Link
         data-cy="button"
         as={Link}
-        to={{ pathname: "/adminlogin" }}
+        to={{ pathname: "/adminhomepage" }}
       >
         Admin
       </Link>
