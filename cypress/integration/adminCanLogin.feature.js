@@ -13,7 +13,6 @@ describe('Admin can login', () => {
         response: "fixture:registration_response.json"
       })
       cy.visit("/")
-      cy.get("[data-cy=button]").contains("Admin").click();
     });
 
     it('Admin can login', () => {
