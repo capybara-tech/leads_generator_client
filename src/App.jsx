@@ -8,8 +8,22 @@ import FAQs from "./components/FAQs";
 import QuotesPage from "./components/QuotesPage";
 import Footer from "./components/Footer";
 import AdminHomePage from "./components/AdminHomePage"
+import Login from "./components/Login";
+import { connect } from "react-redux";
 
-const App = () => {
+const App = (props) => {
+  let content, login
+
+  if (props.authenticated) {
+    content = (
+      <>
+        <AdminHomePage />
+      </>
+    )
+  } else {
+    login = <Login />
+  }
+
   return (
     <>
       <Navbar />
@@ -22,8 +36,15 @@ const App = () => {
         <Route path="/adminhome" component={AdminHomePage} />
       </Switch>
       <Footer />
+      {login}
+      {content}
     </>
   );
 };
 
-export default App;
+const mapStateToProps = (state) => {
+  return {
+    userEmail: state.currentUser.email
+  };
+};
+export default connect(mapStateToProps)(App);
