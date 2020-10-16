@@ -9,7 +9,7 @@ if (process.env.NODE_ENV === "production") {
 
 const auth = new JtockAuth({
   host: apiUrl,
-  prefixUrl: "/api/v1/",
+  prefixUrl: "/api/v1",
 });
 
 export default auth;
