@@ -1,44 +1,48 @@
-import React, { Component } from "react";
+import React from "react";
 import LoginForm from "./LoginForm";
 import auth from "../modules/auth";
 import { connect } from "react-redux";
 
-class Login extends Component {
+const Login = (props) => {
 
-  authenticate = async (event) => {
+  const authenticate = async (event) => {
     event.preventDefault();
     try {
       let response = await auth.signIn(
         event.target.email.value,
         event.target.password.value
       );
-      this.props.dispatch({
+      props.dispatch({
         type: "AUTHENTICATE",
         payload: {
           currentUser: { email: response.data.email },
         },
       });
     } catch (error) {
-      console.log(error);
+      props.dispatch({
+        type: "FAIL_AUTHENTICATE",
+        payload: {
+          errorMessage: error.response.data.errors[0],
+        },
+      });
     }
   };
 
-  render() {
     let loginForm, loginButton, loginMessage;
-
-    (loginForm = <LoginForm authenticate={this.authenticate} />)
+    (loginForm = <LoginForm authenticate={authenticate} />)
 
     return (
       <div>
         {loginForm}
         {loginButton}
         {loginMessage}
+        <p>{props.errorMessage}</p>
       </div>
     );
   }
-}
+
 const mapStateToProps = (state) => {
-  return { userEmail: state.currentUser.email, authenticated: state.authenticated };
+  return { userEmail: state.currentUser.email, authenticated: state.authenticated,  errorMessage: state.errorMessage };
 };
 
 export default connect(mapStateToProps)(Login);
