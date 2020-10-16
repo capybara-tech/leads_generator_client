@@ -7,22 +7,10 @@ import AboutUs from "./components/AboutUs";
 import FAQs from "./components/FAQs";
 import QuotesPage from "./components/QuotesPage";
 import Footer from "./components/Footer";
-import AdminHomePage from "./components/AdminHomePage"
+import AdminHomePage from "./components/AdminHomePage";
 import { connect } from "react-redux";
 
-const App = (props) => {
-  //let content, login
-
-  //if (props.authenticated) {
-    //content = (
-     // <>
-     //   <AdminHomePage />
-      //</>
-    //)
-  //} else {
-   // login = <Login />
- // }
-
+const App = () => {
   return (
     <>
       <Navbar />
@@ -35,14 +23,13 @@ const App = (props) => {
         <Route path="/adminhomepage" component={AdminHomePage} />
       </Switch>
       <Footer />
-
     </>
   );
 };
 
 const mapStateToProps = (state) => {
   return {
-    userEmail: state.currentUser.email
+    userEmail: state.currentUser.email,
   };
 };
 export default connect(mapStateToProps)(App);

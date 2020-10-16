@@ -3,10 +3,9 @@ import CreateContractor from "./CreateContractor";
 import Login from "./Login";
 import { connect } from "react-redux";
 
-
 const AdminHomePage = (props) => {
   let isUserAuthenticated = props.authenticated;
-  let content
+  let content;
 
   if (isUserAuthenticated === true) {
     content = (
@@ -15,19 +14,14 @@ const AdminHomePage = (props) => {
         <CreateContractor />
       </>
     );
-
   } else {
     content = (
       <>
         <Login />
       </>
-    )
+    );
   }
-  return (
-    <>
-      {content}
-    </>
-  );
+  return <>{content}</>;
 };
 
 const mapStateToProps = (state) => {
