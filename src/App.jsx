@@ -11,7 +11,7 @@ import AdminHomePage from "./components/AdminHomePage"
 
 const App = () => {
   return (
-    <div id="test">
+    <div>
       <Navbar />
       <Switch>
         <Route exact path="/" component={LandingPage} />
