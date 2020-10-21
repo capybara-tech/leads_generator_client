@@ -11,7 +11,7 @@ import AdminHomePage from "./components/AdminHomePage"
 
 const App = () => {
   return (
-    <>
+    <div id="test">
       <Navbar />
       <Switch>
         <Route exact path="/" component={LandingPage} />
@@ -22,7 +22,7 @@ const App = () => {
         <Route path="/adminhome" component={AdminHomePage} />
       </Switch>
       <Footer />
-    </>
+    </div>
   );
 };
 

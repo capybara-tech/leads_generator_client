@@ -1,12 +1,20 @@
 #navbar {
-  font-size: 2vh;
-  background-color: #f2efed;
-  
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin: auto;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
-#segment {
-  margin: 2vh;
-  background-color: #f2efed;
-}
+
 #navbarButton {
   background-color: #c9e3ac;
+}
+#bannerImg {
+  background-image: url("https://images.pexels.com/photos/4721355/pexels-photo-4721355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  width: 100%;
+}
+#test {
+  background-color: orange;
 }
