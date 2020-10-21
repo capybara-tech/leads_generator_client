@@ -1,14 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
-const Footer = () => {
+const Footer = (props) => {
+  if (props.location.pathname==="/adminhomepage") {
+    return false;
+}
   return (
     <div>
       <p>©2020</p>
       <Link
         data-cy="button"
         as={Link}
-        to={{ pathname: "/adminhome" }}
+        to={{ pathname: "/adminhomepage" }}
       >
         Admin
       </Link>
@@ -16,4 +19,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default withRouter (Footer);

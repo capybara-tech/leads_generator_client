@@ -16,6 +16,7 @@ const CreateContractor = () => {
       email,
       companyNumber,
     } = event.target;
+    const headers = JSON.parse(localStorage.getItem("J-tockAuth-Storage"));
 
     try {
       contractorParams = {
@@ -30,7 +31,7 @@ const CreateContractor = () => {
       response = await axios.post(
         "http://localhost:3000/api/v1/admin/contractors",
         { contractor: contractorParams },
-        { headers: { "Content-Type": "application/json" } }
+        { headers: headers }
       );
       
       responseMessage = response.data.message;
