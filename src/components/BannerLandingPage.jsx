@@ -9,9 +9,9 @@ function BannerLandingPage() {
         src="/images/BannerImage.jpg"
         alt="Top banner"
       />
-      <div id="bannerDiv">
-      <h1>We will donate 167.450 kr to help save the planet</h1>
-      <Button>Read more</Button>
+      <div id="bannerContent">
+      <p>We will donate 167.450 kr to help save the planet</p>
+      <Button id="bannerButton">Read more</Button>
       </div>
     </div>
   );

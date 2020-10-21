@@ -7,6 +7,7 @@ const Navbar = () => {
   return (
     <Menu text color="" id="navbar">
       <Image
+        id="logo"
         data-cy="logo"
         src="/images/dummylogo.png"
         alt="capybara-logo"

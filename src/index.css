@@ -1,11 +1,14 @@
 #navbar {
+  font-size: 3vh;
   padding-left: 5vw;
   padding-right: 5vw;
   margin: auto;
   position: fixed;
   background: rgba(0, 0, 0, 0.1);
-  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
   z-index: 10;
+  margin-bottom: 1vh;
 }
 #navbarButton {
   background-color: #c9e3ac;
@@ -13,12 +16,19 @@
 #bannerImg {
   width: 100%;
 }
-#bannerDiv {
+#bannerContent {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-size: 4vh;
 }
-#banner{
+#bannerButton {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#banner {
   position: absolute;
 }
