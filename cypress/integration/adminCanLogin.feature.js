@@ -42,6 +42,13 @@ describe("Admin can login", () => {
         response: '{"message": "Invalid login credentials. Please try again."}',
         status: "401",
       });
+
+      cy.route({
+        method: "GET",
+        url: "http://localhost:3000/api/v1/auth/**",
+        response: '{"message": "Invalid login credentials. Please try again."}',
+        status: "401",
+      });
       cy.visit("/");
       cy.get("[data-cy=button]").contains("Admin").click();
     });

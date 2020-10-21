@@ -36,7 +36,7 @@ const Login = (props) => {
         {loginForm}
         {loginButton}
         {loginMessage}
-        <p>{props.errorMessage}</p>
+        <p data-cy="error-message">{props.errorMessage}</p>
       </div>
     );
   }
