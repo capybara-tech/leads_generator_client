@@ -5,6 +5,7 @@
   position: fixed;
   background: rgba(0, 0, 0, 0.1);
   width: 100%;
+  z-index: 10;
 }
 #navbarButton {
   background-color: #c9e3ac;
@@ -12,18 +13,12 @@
 #bannerImg {
   width: 100%;
 }
-#bannerTxt {
+#bannerDiv {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-#bannerButton{
-position: absolute;
-top: 65%;
-left: 50%;
-transform: translate(-50%, -50%);
-}
-#bannerDiv{
-  position: ;
+#banner{
+  position: absolute;
 }
