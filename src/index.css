@@ -12,3 +12,18 @@
 #bannerImg {
   width: 100%;
 }
+#bannerTxt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#bannerButton{
+position: absolute;
+top: 65%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+#bannerDiv{
+  position: ;
+}
