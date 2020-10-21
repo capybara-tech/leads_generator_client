@@ -1,8 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import { Menu, Segment, Image, Button } from "semantic-ui-react";
 
-const Navbar = () => {
+const Navbar = (props) => {
+  if (props.location.pathname === "/adminhomepage") {
+    return false;
+  }
+  
   return (
     <Segment id="segment">
       <Menu id="navbar" text>
@@ -50,4 +54,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default withRouter(Navbar);

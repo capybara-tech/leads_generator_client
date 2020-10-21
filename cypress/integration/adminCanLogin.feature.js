@@ -17,6 +17,13 @@ describe("Admin can login", () => {
     });
 
     it("Admin can login", () => {
+      cy.get("[data-cy=button]").contains("Why solar").should("not.be.visible");
+      cy.get("[data-cy=button").contains("About us").should("not.be.visible");
+      cy.get("[data-cy=button]").contains("FAQs").should("not.be.visible");
+      cy.get("[data-cy=button]")
+        .contains("Get up to three quotes")
+        .should("not.be.visible");
+      cy.get("[data-cy=button]").contains("Admin").should("not.be.visible");
       cy.get("[data-cy=login-form]").within(() => {
         cy.get("[data-cy=email]").type("admin@mail.com");
         cy.get("[data-cy=password]").type("password");
@@ -32,7 +39,7 @@ describe("Admin can login", () => {
       cy.route({
         method: "POST",
         url: "http://localhost:3000/api/v1/auth/sign_in",
-        response: '{"message": "Invalid credentials"}',
+        response: '{"message": "Invalid login credentials. Please try again."}',
         status: "401",
       });
       cy.visit("/");
@@ -40,6 +47,13 @@ describe("Admin can login", () => {
     });
 
     it("with invalid credentials", () => {
+      cy.get("[data-cy=button]").contains("Why solar").should("not.be.visible");
+      cy.get("[data-cy=button]").contains("About us").should("not.be.visible");
+      cy.get("[data-cy=button]").contains("FAQs").should("not.be.visible");
+      cy.get("[data-cy=button]")
+        .contains("Get up to three quotes")
+        .should("not.be.visible");
+      cy.get("[data-cy=button]").contains("Admin").should("not.be.visible");
       cy.get("[data-cy=login-form]").within(() => {
         cy.get("[data-cy=email]").type("alex@mail.com");
         cy.get("[data-cy=password]").type("password");
