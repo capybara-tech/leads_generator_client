@@ -72,7 +72,6 @@ context("unsuccessfully", () => {
   });
 
   it("without email", () => {
-    cy.get("[data-cy=button]").contains("Admin").click();
     cy.get("[data-cy=contractor-form]").within(() => {
       cy.get("[data-cy=name]").type("Name");
       cy.get("[data-cy=contact-person]").type("Contact person");
