@@ -10,7 +10,7 @@ function BannerLandingPage() {
         alt="Top banner"
       />
       <div id="bannerContent">
-      <p>We will donate 167.450 kr to help save the planet</p>
+      <p id="bannerTxt">We will donate 167.450 kr to help save the planet</p>
       <Button id="bannerButton">Read more</Button>
       </div>
     </div>
