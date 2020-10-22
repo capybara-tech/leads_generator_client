@@ -20,7 +20,6 @@ const QuotesPage = () => {
               <label>My name's Felix, what's yours?</label>
               <br />
               <Field
-                data-cy="name"
                 name="name"
                 component="input"
                 type="text"
@@ -29,7 +28,6 @@ const QuotesPage = () => {
 
               {values.name && values.name !== "false" && (
                 <Field
-                  data-cy="email"
                   name="email"
                   component="input"
                   type="text"
@@ -45,6 +43,54 @@ const QuotesPage = () => {
                         </label>{" "}
                         <br />
                         {values.name && values.name !== "false" && (
+                          <input {...input} />
+                        )}
+                      </>
+                    );
+                  }}
+                </Field>
+              )}
+              {values.email && values.email !== "false" && (
+                <Field
+                  name="telephone"
+                  component="input"
+                  type="text"
+                  placeholder="Telephone"
+                >
+                  {({ input }) => {
+                    return (
+                      <>
+                        {" "}
+                        <br />
+                        <label>
+                          Great, and the best number to contact you on?
+                        </label>{" "}
+                        <br />
+                        {values.email && values.email !== "false" && (
+                          <input {...input} />
+                        )}
+                      </>
+                    );
+                  }}
+                </Field>
+              )}
+              {values.telephone && values.telephone !== "false" && (
+                <Field
+                  name="address"
+                  component="input"
+                  type="text"
+                  placeholder="Address"
+                >
+                  {({ input }) => {
+                    return (
+                      <>
+                        {" "}
+                        <br />
+                        <label>
+                          Lastly the address intend on turning green?
+                        </label>{" "}
+                        <br />
+                        {values.telephone && values.telephone !== "false" && (
                           <input {...input} />
                         )}
                       </>

@@ -1,4 +1,4 @@
-describe("visitor can request quotes", () => {
+describe("Visitor can request quotes", () => {
   context("successfully", () => {
     beforeEach(() => {
       cy.server();
@@ -7,16 +7,16 @@ describe("visitor can request quotes", () => {
         url: "http://localhost:3000/api/v1/quotes",
         response: '{"message": "Form successfully submitted."}',
       });
-      cy.visit("/")
+      cy.visit("/");
       cy.get("[data-cy=button]").contains("Get up to three quotes").click();
-    })
+    });
 
     it("Visitor can create a quote request successfully", () => {
       cy.get("[data-cy=quote-form]").within(() => {
-        cy.get("[data-cy=name]").type("Peter");
-        cy.get("[data-cy=email]").type("peter@mail.com");
-        cy.get("[data-cy=telephone]").type("0736123456");
-        cy.get("[data-cy=address]").type("Address");
+        cy.get('[name="name"]').type("Peter");
+        cy.get('[name="email"]').type("peter@mail.com");
+        cy.get('[name="telephone"]').type("0736123456");
+        cy.get('[name="address"]').type("Address");
         cy.get("[data-cy=installation-date]").type("within three months");
         cy.get("[data-cy=property-type]").type("house");
         cy.get("[data-cy=roof-slope]").type("15°");
@@ -34,5 +34,5 @@ describe("visitor can request quotes", () => {
         "Form successfully submitted."
       );
     });
-  })
-})
+  });
+});
