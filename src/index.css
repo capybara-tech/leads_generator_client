@@ -12,6 +12,8 @@
 }
 #navbarButton {
   background-color: #c9e3ac;
+  min-height: 1vh;
+  margin-right: auto;
 }
 #bannerImg {
   width: 100%;
@@ -31,4 +33,5 @@
 }
 #banner {
   position: absolute;
-}
+} 
+

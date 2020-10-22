@@ -1,21 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Image, Button, Menu } from "semantic-ui-react";
+import { Button, Menu } from "semantic-ui-react";
 
 const Navbar = () => {
-
   return (
     <Menu text color="" id="navbar">
-      <Image
-        id="logo"
-        data-cy="logo"
-        src="/images/dummylogo.png"
-        alt="capybara-logo"
-        as={Link}
-        to={{ pathname: "/" }}
-        circular
-        size="tiny"
-      />
+      <Menu.Item id="logo" alt="capybara-logo" as={Link} to={{ pathname: "/" }}>
+        <img data-cy="logo" src="/images/dummylogo.png" />
+      </Menu.Item>
       <Menu.Item
         position="right"
         as={Link}
@@ -46,7 +38,7 @@ const Navbar = () => {
       >
         <Button id="navbarButton">Get up to three quotes</Button>
       </Menu.Item>
-      </Menu>
+    </Menu>
   );
 };
 
