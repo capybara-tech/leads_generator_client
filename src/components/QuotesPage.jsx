@@ -1,9 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import { Form, Field } from "react-final-form";
 
-const onSubmit = () => {};
-
 const QuotesPage = () => {
+  const [message, setMessage] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    let responseMessage, quoteParams, response;
+    let { name, email, telephone, address } = event.target;
+
+    try {
+      quoteParams = {
+        name: name.value,
+        email: email.value,
+        telephone: telephone.value,
+        address: address.value,
+      };
+
+      response = await axios.post("http://localhost:3000/api/v1/quotes", {
+        quote: quoteParams,
+      });
+
+      responseMessage = response.data.message;
+    } catch (error) {
+      responseMessage = error.response.data.errors;
+    } finally {
+      setMessage(responseMessage);
+    }
+  };
+
   return (
     <>
       <h1 data-cy="title">Get up to three quotes</h1>
@@ -11,12 +37,11 @@ const QuotesPage = () => {
         onSubmit={onSubmit}
         initialValues={{
           name: null,
-          email: null,
         }}
         render={(props) => {
-          const { handleSubmit, form, values } = props;
+          const { values } = props;
           return (
-            <form data-cy="quote-form" onSubmit={handleSubmit}>
+            <form data-cy="quote-form" onSubmit={onSubmit}>
               <label>My name's Felix, what's yours?</label>
               <br />
               <Field
@@ -98,10 +123,14 @@ const QuotesPage = () => {
                   }}
                 </Field>
               )}
+              <button data-cy="button" type="submit">
+                Submit
+              </button>
             </form>
           );
         }}
       />
+      {message && <p data-cy="message">{message}</p>}
     </>
   );
 };
