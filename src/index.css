@@ -31,8 +31,15 @@ html,
   transform: translate(-50%, -50%);
 }
 #bannerTxt {
+  color:rgba(238, 238, 238, 0.742);
+  font-family: sofia pro;
   font-size: 3vw;
 }
+.numbers{
+  background: none;
+  color: #fe8733cb;
+}
+
 #bannerButton {
   position: absolute;
   transform: translate(-50%, -50%);
