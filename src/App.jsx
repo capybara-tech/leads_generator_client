@@ -12,7 +12,7 @@ import { connect } from "react-redux";
 
 const App = () => {
   return (
-    <>
+    <div>
       <Navbar />
       <Switch>
         <Route exact path="/" component={LandingPage} />
@@ -23,7 +23,7 @@ const App = () => {
         <Route path="/adminhomepage" component={AdminHomePage} />
       </Switch>
       <Footer />
-    </>
+    </div>
   );
 };
 

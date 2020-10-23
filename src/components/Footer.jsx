@@ -6,9 +6,15 @@ const Footer = (props) => {
     return false;
 }
   return (
-    <div>
-      <p>©2020</p>
+    <div className="footer">
+      <br />
+      <p>
+        {" "}
+        &copy;{new Date().getFullYear()} CAPYBARA TECH AB | All rights reserved
+        | Terms Of Service | Privacy
+      </p>
       <Link
+        id="adminLink"
         data-cy="button"
         as={Link}
         to={{ pathname: "/adminhomepage" }}
