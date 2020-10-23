@@ -7,10 +7,10 @@ const Navbar = () => {
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-device-width: 1224px)",
   });
-  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
   const isTabletOrMobileDevice = useMediaQuery({
-    query: '(max-device-width: 1224px)'
-  })
+    query: "(max-device-width: 1224px)",
+  });
   return (
     <div>
       {(isDesktopOrLaptop || isTabletOrMobileDevice || isTabletOrMobile) && (
@@ -54,7 +54,7 @@ const Navbar = () => {
                 content="Get up to three quotes"
                 data-cy="button"
               >
-                <Button id="navbarButton">Get up to three quotes</Button>
+                <Button id="navbarButton">Get up to 3 quotes</Button>
               </Menu.Item>
             </Menu>
           </div>
