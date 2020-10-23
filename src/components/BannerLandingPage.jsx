@@ -3,6 +3,7 @@ import {Button} from "semantic-ui-react"
 
 function BannerLandingPage() {
   return (
+    <div>
     <div id="banner">
       <img
         id="bannerImg"
@@ -13,6 +14,7 @@ function BannerLandingPage() {
       <p id="bannerTxt">We will donate 167.450 kr to help save the planet</p>
       <Button id="bannerButton">Read more</Button>
       </div>
+    </div>
     </div>
   );
 }

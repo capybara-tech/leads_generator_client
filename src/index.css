@@ -1,15 +1,23 @@
+body, 
+html,
+.app {
+  position: relative;
+  min-height: 100vh;   
+  margin-bottom: 200px;
+
+}
 #navbar {
   margin: auto;
   position: fixed;
   background: rgba(0, 0, 0, 0.1);
   z-index: 10;
-  width:100%;
-  padding:1.5vw;
+  width: 100%;
+  padding: 1.5vw;
 }
 #navbarButtonMenuItem {
-font-size: 1.5vw;
+  font-size: 1.5vw;
 }
-#navbarButton{
+#navbarButton {
   background-color: #c9e3ac;
 }
 #bannerImg {
@@ -22,16 +30,22 @@ font-size: 1.5vw;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-#bannerTxt{
-  font-size:3vw;
+#bannerTxt {
+  font-size: 3vw;
 }
 #bannerButton {
   position: absolute;
-  top: 120%;
-  left: 50%;
   transform: translate(-50%, -50%);
   font-size: 1.5vw;
 }
 #banner {
   position: absolute;
-} 
+}
+.footer{
+  width: 100%;
+  height: 200px;
+  position: fixed;
+  bottom: 0;
+  background-color: #DD5632;
+  z-index: -1;
+}
