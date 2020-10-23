@@ -10,27 +10,28 @@ const CreateContractor = () => {
     let responseMessage, contractorParams, response;
     let {
       name,
-      contact,
+      contact_person,
       address,
       telephone,
       email,
-      companyNumber,
+      company_number,
     } = event.target;
+    const headers = JSON.parse(localStorage.getItem("J-tockAuth-Storage"));
 
     try {
       contractorParams = {
         name: name.value,
-        contact: contact.value,
+        contact_person: contact_person.value,
         address: address.value,
         telephone: telephone.value,
         email: email.value,
-        companyNumber: companyNumber.value,
+        company_number: company_number.value,
       };
 
       response = await axios.post(
         "http://localhost:3000/api/v1/admin/contractors",
         { contractor: contractorParams },
-        { headers: { "Content-Type": "application/json" } }
+        { headers: headers }
       );
       
       responseMessage = response.data.message;
@@ -57,7 +58,7 @@ const CreateContractor = () => {
             control={Input}
             placeholder="Contact person"
             data-cy="contact-person"
-            name="contact"
+            name="contact_person"
             label="Contact person"
           />
           <Form.Field
@@ -85,7 +86,7 @@ const CreateContractor = () => {
             control={Input}
             placeholder="Company number"
             data-cy="company-number"
-            name="companyNumber"
+            name="company_number"
             label="Company number"
           />
         </Form.Group>

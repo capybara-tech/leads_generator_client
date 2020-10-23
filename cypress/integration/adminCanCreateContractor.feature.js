@@ -7,11 +7,26 @@ describe("Admin can create contractor", () => {
         url: "http://localhost:3000/api/v1/admin/contractors",
         response: '{"message": "Contractor successfully created"}',
       });
-      cy.visit("/");
+      cy.route({
+        method: "POST",
+        url: "http://localhost:3000/api/v1/auth/sign_in",
+        response: "fixture:registration_response.json",
+      });
+      cy.route({
+        method: "GET",
+        url: "http://localhost:3000/api/v1/auth/**",
+        response: "fixture:registration_response.json",
+      });
+      cy.visit("/")
+      cy.get("[data-cy=button]").contains("Admin").click();
+      cy.get("[data-cy=login-form]").within(() => {
+        cy.get("[data-cy=email]").type("admin@mail.com");
+        cy.get("[data-cy=password]").type("password");
+        cy.get("[data-cy=button]").contains("Login").click();
+      });
     });
 
     it("Admin can create an contractor successfully", () => {
-      cy.get("[data-cy=button]").contains("Admin").click();
       cy.get("[data-cy=contractor-form]").within(() => {
         cy.get("[data-cy=name]").type("Name");
         cy.get("[data-cy=contact-person]").type("Contact person");
@@ -37,11 +52,26 @@ context("unsuccessfully", () => {
       url: "http://localhost:3000/api/v1/admin/contractors",
       response: { message: "Email can't be blank" },
     });
-    cy.visit("/");
+    cy.route({
+      method: "POST",
+      url: "http://localhost:3000/api/v1/auth/sign_in",
+      response: "fixture:registration_response.json",
+    });
+    cy.route({
+      method: "GET",
+      url: "http://localhost:3000/api/v1/auth/**",
+      response: "fixture:registration_response.json",
+    });
+    cy.visit("/")
+    cy.get("[data-cy=button]").contains("Admin").click();
+    cy.get("[data-cy=login-form]").within(() => {
+      cy.get("[data-cy=email]").type("admin@mail.com");
+      cy.get("[data-cy=password]").type("password");
+      cy.get("[data-cy=button]").contains("Login").click();
+    });
   });
 
   it("without email", () => {
-    cy.get("[data-cy=button]").contains("Admin").click();
     cy.get("[data-cy=contractor-form]").within(() => {
       cy.get("[data-cy=name]").type("Name");
       cy.get("[data-cy=contact-person]").type("Contact person");

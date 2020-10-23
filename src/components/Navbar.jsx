@@ -1,7 +1,7 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
-import { Link } from "react-router-dom";
-import { Button, Menu } from "semantic-ui-react";
+import { Link, withRouter } from "react-router-dom";
+import { Menu, Segment, Image, Button } from "semantic-ui-react";
 
 const Navbar = () => {
   const isDesktopOrLaptop = useMediaQuery({
@@ -11,6 +11,7 @@ const Navbar = () => {
   const isTabletOrMobileDevice = useMediaQuery({
     query: "(max-device-width: 1224px)",
   });
+
   return (
     <div>
       {(isDesktopOrLaptop || isTabletOrMobileDevice || isTabletOrMobile) && (
@@ -64,4 +65,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default withRouter(Navbar);
