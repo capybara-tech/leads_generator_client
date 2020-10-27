@@ -1,12 +1,86 @@
+body,
+html,
+.app {
+  position: relative;
+  min-height: 100vh;
+  margin-bottom: 20vh;
+}
+
 #navbar {
-  font-size: 2vh;
-  background-color: #f2efed;
-  
+  margin: auto;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  width: 100%;
+  padding: 1.5vw;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
-#segment {
-  margin: 2vh;
-  background-color: #f2efed;
+
+#navbarButtonMenuItem {
+  font-size: 1.5vw;
 }
+
 #navbarButton {
   background-color: #c9e3ac;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background-color: transparent;
+  border-style: solid;
+  color: #fe8733cb;
+  border-radius: 10px;
+}
+
+#bannerImg {
+  width: 100%;
+}
+
+#bannerContent {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#bannerTxt {
+  color: rgba(238, 238, 238, 0.742);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 3vw;
+}
+.numbers {
+  background: none;
+  color: #fe8733cb;
+}
+
+#bannerButton {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 1.5vw;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background-color: transparent;
+  border-style: solid;
+  color: rgba(238, 238, 238, 0.742);
+  border-radius: 10px;
+}
+
+#banner {
+  position: absolute;
+}
+
+.footer {
+  background: rgba(0, 66, 37, 0.5);
+  text-align: center;
+  width: 100%;
+  height: 20vh;
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+#adminLink {
+  color: black;
 }
