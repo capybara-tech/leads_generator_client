@@ -111,7 +111,7 @@ const QuotesPage = () => {
                   }}
                 </Field>
               )}
-              {values.telephone && values.telephone !== "false" && (
+              {values.telephone && values.telephone.length == 13 && (
                 <Field
                   name="address"
                   component="input"
