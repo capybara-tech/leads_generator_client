@@ -82,7 +82,7 @@ const QuotesPage = () => {
                   }}
                 </Field>
               )}
-              {values.email && values.email !== "false" && (
+              {values.email && values.email.includes("@") && values.email.includes(".") && (
                 <Field
                   name="telephone"
                   component="input"
@@ -99,7 +99,7 @@ const QuotesPage = () => {
                           Great, and the best number to contact you on?
                         </label>{" "}
                         <br />
-                        {values.email && values.email !== "false" && (
+                        {values.email && values.email.includes("@") && values.email.includes(".") && (
                           <input {...input} />
                         )}
                       </>
@@ -131,9 +131,6 @@ const QuotesPage = () => {
                   }}
                 </Field>
               )}
-              <button data-cy="button" type="submit">
-                Submit
-              </button>
             </form>
           );
         }}
