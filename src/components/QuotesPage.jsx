@@ -5,13 +5,9 @@ import { Form, Field } from "react-final-form";
 const normaliseTelephone = (value) => {
   if (!value) return value;
   const onlyNums = value.replace(/[^\d]/g, "");
-  if (onlyNums.length <= 2) return onlyNums;
   if (onlyNums.length <= 10)
-    return `${onlyNums.slice(0, 4)}-${onlyNums.slice(4, 6)} ${onlyNums.slice(
-      6,
-      8
-    )} ${onlyNums.slice(8, 10)}`;
-};
+    return `${onlyNums.slice(0, 10)}`
+}
 
 const QuotesPage = () => {
   const [message, setMessage] = useState("");
@@ -111,7 +107,7 @@ const QuotesPage = () => {
                   }}
                 </Field>
               )}
-              {values.telephone && values.telephone.length == 13 && (
+              {values.telephone && values.telephone.length == 10 && (
                 <Field
                   name="address"
                   component="input"
