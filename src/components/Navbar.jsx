@@ -3,7 +3,7 @@ import { useMediaQuery } from "react-responsive";
 import { Link, withRouter } from "react-router-dom";
 import { Menu, Button } from "semantic-ui-react";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-device-width: 1224px)",
   });
@@ -11,6 +11,10 @@ const Navbar = () => {
   const isTabletOrMobileDevice = useMediaQuery({
     query: "(max-device-width: 1224px)",
   });
+  
+  if (props.location.pathname==="/adminhomepage") {
+    return false;
+  }
 
   return (
     <div>
