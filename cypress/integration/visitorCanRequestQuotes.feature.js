@@ -8,7 +8,7 @@ describe("Visitor can request quotes", () => {
         response: '{"message": "Form successfully submitted."}',
       });
       cy.visit("/");
-      cy.get("[data-cy=button]").contains("Get up to three quotes").click();
+      cy.get("[data-cy=button]").contains("Get up to 3 quotes").click();
     });
 
     it("Visitor can create a quote request successfully", () => {
@@ -31,7 +31,7 @@ describe("Visitor can request quotes", () => {
         status: "422",
       });
       cy.visit("/");
-      cy.get("[data-cy=button]").contains("Get up to three quotes").click();
+      cy.get("[data-cy=button]").contains("Get up to 3 quotes").click();
     });
 
     it("with invalid credentials", () => {

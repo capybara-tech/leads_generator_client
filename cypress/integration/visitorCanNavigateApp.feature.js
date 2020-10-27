@@ -8,7 +8,7 @@ describe('Visitor can navigate app', () => {
     cy.get('[data-cy=title]').should("contain", "Why solar")
     cy.get('[data-cy=title]').contains("About us").should("not.be.visible")
     cy.get('[data-cy=title]').contains("FAQs").should("not.be.visible")
-    cy.get('[data-cy=title]').contains("Get up to three quotes").should("not.be.visible")
+    cy.get('[data-cy=title]').contains("Get up to 3 quotes").should("not.be.visible")
   })
   
   it('visitor can navigate to About us', () => {
@@ -16,7 +16,7 @@ describe('Visitor can navigate app', () => {
     cy.get('[data-cy=title]').should("contain", "About us")
     cy.get('[data-cy=title]').contains("Why solar").should("not.be.visible")
     cy.get('[data-cy=title]').contains("FAQs").should("not.be.visible")
-    cy.get('[data-cy=title]').contains("Get up to three quotes").should("not.be.visible")
+    cy.get('[data-cy=title]').contains("Get up to 3 quotes").should("not.be.visible")
   });
     
   it('visitor can navigate to FAQs', () => {
@@ -24,11 +24,11 @@ describe('Visitor can navigate app', () => {
     cy.get('[data-cy=title]').should("contain", "FAQs")
     cy.get('[data-cy=title]').contains("Why solar").should("not.be.visible")
     cy.get('[data-cy=title]').contains("About us").should("not.be.visible")
-    cy.get('[data-cy=title]').contains("Get up to three quotes").should("not.be.visible")
+    cy.get('[data-cy=title]').contains("Get up to 3 quotes").should("not.be.visible")
   });
 
-  it('visitor can navigate to Get up to three quotes', () => {
-    cy.get('[data-cy=button]').contains("Get up to three quotes").click()
+  it('visitor can navigate to Get up to 3 quotes', () => {
+    cy.get('[data-cy=button]').contains("Get up to 3 quotes").click()
     cy.get('[data-cy=title]').should("contain", "Get up to three quotes")
     cy.get('[data-cy=title]').contains("Why solar").should("not.be.visible")
     cy.get('[data-cy=title]').contains("About us").should("not.be.visible")

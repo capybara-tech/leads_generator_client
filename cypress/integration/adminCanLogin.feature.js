@@ -13,7 +13,7 @@ describe("Admin can login", () => {
         response: "fixture:registration_response.json",
       });
       cy.visit("/");
-      cy.get("[data-cy=button]").contains("Admin").click();
+      cy.get("[data-cy=button]").contains("Admin").click({ force:true });
     });
 
     it("Admin can login", () => {
@@ -50,7 +50,7 @@ describe("Admin can login", () => {
         status: "401",
       });
       cy.visit("/");
-      cy.get("[data-cy=button]").contains("Admin").click();
+      cy.get("[data-cy=button]").contains("Admin").click({ force:true });
     });
 
     it("with invalid credentials", () => {

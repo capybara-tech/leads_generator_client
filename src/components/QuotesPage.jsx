@@ -107,7 +107,7 @@ const QuotesPage = () => {
                   }}
                 </Field>
               )}
-              {values.telephone && values.telephone.length == 10 && (
+              {values.telephone && values.telephone.length === 10 && (
                 <Field
                   name="address"
                   component="input"
