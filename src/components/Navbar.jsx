@@ -1,7 +1,7 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 import { Link, withRouter } from "react-router-dom";
-import { Menu, Segment, Image, Button } from "semantic-ui-react";
+import { Menu, Button } from "semantic-ui-react";
 
 const Navbar = () => {
   const isDesktopOrLaptop = useMediaQuery({
