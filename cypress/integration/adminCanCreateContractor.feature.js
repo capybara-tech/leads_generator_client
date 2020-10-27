@@ -18,7 +18,7 @@ describe("Admin can create contractor", () => {
         response: "fixture:registration_response.json",
       });
       cy.visit("/")
-      cy.get("[data-cy=button]").contains("Admin").click();
+      cy.get("[data-cy=button]").contains("Admin").click({ force:true });
       cy.get("[data-cy=login-form]").within(() => {
         cy.get("[data-cy=email]").type("admin@mail.com");
         cy.get("[data-cy=password]").type("password");
@@ -63,7 +63,7 @@ context("unsuccessfully", () => {
       response: "fixture:registration_response.json",
     });
     cy.visit("/")
-    cy.get("[data-cy=button]").contains("Admin").click();
+    cy.get("[data-cy=button]").contains("Admin").click({ force:true });
     cy.get("[data-cy=login-form]").within(() => {
       cy.get("[data-cy=email]").type("admin@mail.com");
       cy.get("[data-cy=password]").type("password");
