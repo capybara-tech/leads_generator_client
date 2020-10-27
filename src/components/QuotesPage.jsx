@@ -2,6 +2,17 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Form, Field } from "react-final-form";
 
+const normaliseTelephone = (value) => {
+  if (!value) return value;
+  const onlyNums = value.replace(/[^\d]/g, "");
+  if (onlyNums.length <= 2) return onlyNums;
+  if (onlyNums.length <= 10)
+    return `${onlyNums.slice(0, 4)}-${onlyNums.slice(4, 6)} ${onlyNums.slice(
+      6,
+      8
+    )} ${onlyNums.slice(8, 10)}`;
+};
+
 const QuotesPage = () => {
   const [message, setMessage] = useState("");
 
@@ -81,6 +92,7 @@ const QuotesPage = () => {
                   component="input"
                   type="text"
                   placeholder="Telephone"
+                  parse={normaliseTelephone}
                 >
                   {({ input }) => {
                     return (
