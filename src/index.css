@@ -110,3 +110,60 @@ html,
 #landingPageInfoSegment {
 display: block;
 }
+
+/* ------------------------Mobile------------------------ */
+
+#bannerImgMob {
+  width: 100%;
+  display: block;
+}
+
+#bannerInfoTxtMob {
+  color: rgba(238, 238, 238, 0.742);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 7vw;
+  position: absolute;
+  top: 15%;
+  left: 3%;
+  
+}
+
+.bannerInfoMob {
+  background: none;
+  color:rgba(238, 238, 238, 0.742);
+}
+
+#subInfoTxtMob {
+  background: none;
+  color:rgba(238, 238, 238, 0.742);
+  font-size: 4.5vw;
+}
+
+#bannerTxtMob {
+  color: rgba(238, 238, 238, 0.742);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 5vw;
+  text-align: center;
+  position: absolute;
+  top: 43%;
+  left: 30%;
+}
+
+.numbersMob {
+  background: none;
+  color: #fe8733cb;
+}
+
+#bannerButtonMob {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 3vw;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background-color: transparent;
+  border-style: solid;
+  color: rgba(238, 238, 238, 0.742);
+  border-radius: 10px;
+}

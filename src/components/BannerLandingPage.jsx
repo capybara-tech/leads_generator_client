@@ -35,27 +35,27 @@ const BannerLandingPage = (props) => {
         </div>
       )}
       {isTabletOrMobileDevice && (
-        <div id="banner">
+        <div id="bannerMob">
           <img
-            id="bannerImg"
+            id="bannerImgMob"
             src="/images/BannerImageMob.jpg"
             alt="Top banner"
           />
-          <div id="bannerContent">
-            <p id="bannerInfoTxt">
+          <div id="bannerContentMob">
+            <p id="bannerInfoTxtMob">
               Tillsammans gör vi Sverige
               <br />
               grönare med solceller <br />
-              <mark id="subInfoTxt">
+              <mark id="subInfoTxtMob">
                 Jämför upp till tre olika offerter
                 <Icon id="angleDownIcon" name="angle down" />
               </mark>
             </p>
-            <p id="bannerTxt">
-              We will donate <mark className="numbers">165.747 kr</mark>
+            <p id="bannerTxtMob">
+              We will donate <mark className="numbersMob">165.747 kr</mark>
               <br /> to help save the planet
               <br /> <br />
-              <Button id="bannerButton">Read more</Button>
+              <Button id="bannerButtonMob">Read more</Button>
             </p>
           </div>
         </div>
