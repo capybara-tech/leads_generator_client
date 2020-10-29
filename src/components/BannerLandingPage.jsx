@@ -1,21 +1,67 @@
 import React from "react";
-import { Button } from "semantic-ui-react";
+import { useMediaQuery } from "react-responsive";
+import { Button, Icon } from "semantic-ui-react";
 
-function BannerLandingPage() {
+const BannerLandingPage = (props) => {
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-device-width: 1224px)",
+  });
+  const isTabletOrMobileDevice = useMediaQuery({
+    query: "(max-device-width: 1224px)",
+  });
+
   return (
-    <div>
-      <div id="banner">
-        <img id="bannerImg" src="/images/BannerImage.jpg" alt="Top banner" />
-        <div id="bannerContent">
-          <p id="bannerTxt">
-            We will donate <mark className="numbers">165.747 kr</mark>
-            <br /> to help save the planet
-          </p>
-          <Button id="bannerButton">Read more</Button>
+    <>
+      {isDesktopOrLaptop && (
+        <div id="banner">
+          <img id="bannerImg" src="/images/BannerImage.jpg" alt="Top banner" />
+          <div id="bannerContent">
+            <p id="bannerInfoTxt">
+              Tillsammans gör vi Sverige
+              <br />
+              grönare med solceller <br />
+              <mark id="subInfoTxt">
+                Jämför upp till tre olika offerter
+                <Icon id="angleDownIcon" name="angle down" />
+              </mark>
+            </p>
+            <p id="bannerTxt">
+              We will donate <mark className="numbers">165.747 kr</mark>
+              <br /> to help save the planet
+              <br /> <br />
+              <Button id="bannerButton">Read more</Button>
+            </p>
+          </div>
         </div>
-      </div>
-    </div>
+      )}
+      {isTabletOrMobileDevice && (
+        <div id="bannerMob">
+          <img
+            id="bannerImgMob"
+            src="/images/BannerImageMob.jpg"
+            alt="Top banner"
+          />
+          <div id="bannerContentMob">
+            <p id="bannerInfoTxtMob">
+              Tillsammans gör vi Sverige
+              <br />
+              grönare med solceller <br />
+              <mark id="subInfoTxtMob">
+                Jämför upp till tre olika offerter
+                <Icon id="angleDownIcon" name="angle down" />
+              </mark>
+            </p>
+            <p id="bannerTxtMob">
+              We will donate <mark className="numbersMob">165.747 kr</mark>
+              <br /> to help save the planet
+              <br /> <br />
+              <Button id="bannerButtonMob">Read more</Button>
+            </p>
+          </div>
+        </div>
+      )}
+    </>
   );
-}
+};
 
 export default BannerLandingPage;

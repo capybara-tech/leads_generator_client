@@ -11,8 +11,8 @@ const Navbar = (props) => {
   const isTabletOrMobileDevice = useMediaQuery({
     query: "(max-device-width: 1224px)",
   });
-  
-  if (props.location.pathname==="/adminhomepage") {
+
+  if (props.location.pathname === "/adminhomepage") {
     return false;
   }
 
@@ -31,6 +31,7 @@ const Navbar = (props) => {
                 <img data-cy="logo" src="/images/dummylogo.png" alt="Logo" />
               </Menu.Item>
               <Menu.Item
+                icon={{ name: "angle down" }}
                 position="right"
                 as={Link}
                 to={{ pathname: "/whysolar" }}
