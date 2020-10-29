@@ -1,5 +1,5 @@
 describe("Visitor can see information grid component on landing page", () => {
-  Each(() => {
+  beforeEach(() => {
     cy.visit("/");
   });
 
@@ -28,7 +28,7 @@ describe("Visitor can see information grid component on landing page", () => {
     );
     cy.get("[data-cy=content]").should(
       "contain",
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, eius? Maiores, impedit accusamus atque at quam"
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, eius? Maiores, impedit accusamus atque at"
     );
   });
 
@@ -37,7 +37,7 @@ describe("Visitor can see information grid component on landing page", () => {
     cy.get("[data-cy=title]").should("contain", "How do solar panels work?");
     cy.get("[data-cy=content]").should(
       "contain",
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, eius? Maiores, impedit accusamus atque at quam"
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, eius? Maiores, impedit accusamus atque"
     );
   });
 });
