@@ -32,7 +32,9 @@ html,
 
 #bannerImg {
   width: 100%;
+  display: block;
 }
+
 #bannerInfoTxt{
   color: rgba(238, 238, 238, 0.742);
   font-family: "Poppins", sans-serif;
@@ -43,10 +45,12 @@ html,
   left: 28%;
   transform: translate(-50%, -50%);
 }
+
 .bannerInfo{
   background: none;
   color:rgba(238, 238, 238, 0.742);
 }
+
 #subInfoTxt{
   background: none;
   color:rgba(238, 238, 238, 0.742);
@@ -64,6 +68,7 @@ html,
   left: 74%;
   transform: translate(-50%, -50%);
 }
+
 .numbers {
   background: none;
   color: #fe8733cb;
@@ -82,7 +87,7 @@ html,
 }
 
 #banner {
-  position: absolute;
+  position: block;
 }
 
 .footer {
@@ -90,15 +95,18 @@ html,
   text-align: center;
   width: 100%;
   height: 20vh;
-  position: fixed;
-  bottom: 0;
-  z-index: -1;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
+
 #adminLink {
   color: black;
 }
+
 .angle.down.icon{
   color: #fe8733cb;
+}
+
+#landingPageInfoSegment {
+display: block;
 }
