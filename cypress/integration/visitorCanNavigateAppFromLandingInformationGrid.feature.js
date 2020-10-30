@@ -11,7 +11,7 @@ describe("Visitor can navigate app from landing information grid", () => {
     cy.get("#panelsWorkDiv").should("not.exist");
   });
 
-  it("visitor can navigate environment page", () => {
+  it("visitor can navigate to environment page", () => {
     cy.get("#planetDiv").click();
     cy.get("[data-cy=title]").should(
       "contain",
@@ -22,7 +22,7 @@ describe("Visitor can navigate app from landing information grid", () => {
     cy.get("#panelsWorkDiv").should("not.exist");
   });
 
-  it("visitor can navigate econonmy page", () => {
+  it("visitor can navigate to econonmy page", () => {
     cy.get("#walletDiv").click();
     cy.get("[data-cy=title]").should(
       "contain",
@@ -33,7 +33,7 @@ describe("Visitor can navigate app from landing information grid", () => {
     cy.get("#panelsWorkDiv").should("not.exist");
   });
 
-  it("visitor can how do solar panels work page", () => {
+  it("visitor can navigate to how do solar panels work page", () => {
     cy.get("#panelsWorkDiv").click();
     cy.get("[data-cy=title]").should("contain", "How do solar panels work");
     cy.get("#quotesDiv").should("not.exist");
