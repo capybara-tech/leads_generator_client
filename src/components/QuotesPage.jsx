@@ -5,9 +5,8 @@ import { Form, Field } from "react-final-form";
 const normaliseTelephone = (value) => {
   if (!value) return value;
   const onlyNums = value.replace(/[^\d]/g, "");
-  if (onlyNums.length <= 10)
-    return `${onlyNums.slice(0, 10)}`
-}
+  if (onlyNums.length <= 10) return `${onlyNums.slice(0, 10)}`;
+};
 
 const QuotesPage = () => {
   const [message, setMessage] = useState("");
@@ -82,31 +81,33 @@ const QuotesPage = () => {
                   }}
                 </Field>
               )}
-              {values.email && values.email.includes("@") && values.email.includes(".") && (
-                <Field
-                  name="telephone"
-                  component="input"
-                  type="text"
-                  placeholder="Telephone"
-                  parse={normaliseTelephone}
-                >
-                  {({ input }) => {
-                    return (
-                      <>
-                        {" "}
-                        <br />
-                        <label>
-                          Great, and the best number to contact you on?
-                        </label>{" "}
-                        <br />
-                        {values.email && values.email.includes("@") && values.email.includes(".") && (
-                          <input {...input} />
-                        )}
-                      </>
-                    );
-                  }}
-                </Field>
-              )}
+              {values.email &&
+                values.email.includes("@") &&
+                values.email.includes(".") && (
+                  <Field
+                    name="telephone"
+                    component="input"
+                    type="text"
+                    placeholder="Telephone"
+                    parse={normaliseTelephone}
+                  >
+                    {({ input }) => {
+                      return (
+                        <>
+                          {" "}
+                          <br />
+                          <label>
+                            Great, and the best number to contact you on?
+                          </label>{" "}
+                          <br />
+                          {values.email &&
+                            values.email.includes("@") &&
+                            values.email.includes(".") && <input {...input} />}
+                        </>
+                      );
+                    }}
+                  </Field>
+                )}
               {values.telephone && values.telephone.length === 10 && (
                 <Field
                   name="address"
@@ -125,6 +126,33 @@ const QuotesPage = () => {
                         <br />
                         {values.telephone && values.telephone !== "false" && (
                           <input {...input} />
+                        )}
+                      </>
+                    );
+                  }}
+                </Field>
+              )}
+              {values.address && values.address !== "false" && (
+                <Field component="select">
+                  {({}) => {
+                    return (
+                      <>
+                        {" "}
+                        {values.name && values.name !== "false" && (
+                          <>
+                            <p>
+                              Thank you, from now on you just have to click some
+                              icons to get a more accurate quote or you can
+                              choose to submit right now
+                            </p>
+                            <button>Next</button>
+                            <button>Submit</button>
+                            <h2>Time period</h2>
+                            <button name="1">Value 1</button>
+                            <button name="2">Value 2</button>
+                            <button name="3">Value 3</button>
+                            <button name="4">Value 4</button>
+                          </>
                         )}
                       </>
                     );
