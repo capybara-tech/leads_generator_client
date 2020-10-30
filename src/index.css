@@ -10,6 +10,7 @@ html,
   margin: auto;
   position: fixed;
   background: rgba(0, 0, 0, 0.3);
+  color: #0e0905cb;
   z-index: 10;
   width: 100%;
   padding: 1.5vw;
@@ -97,10 +98,11 @@ html,
   height: 20vh;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  color: #0e0905cb;
 }
 
 #adminLink {
-  color: black;
+  color: #0e0905cb;
 }
 
 .angle.down.icon{
@@ -109,6 +111,15 @@ html,
 
 #landingPageInfoSegment {
 display: block;
+padding: 2%;
+}
+
+.infoSegmentIcons {
+  color: #0e0905cb;
+}
+
+.infoSegmentIcons:hover {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /* ------------------------Mobile------------------------ */
