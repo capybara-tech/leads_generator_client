@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Form, Field } from "react-final-form";
+// import { Checkbox } from "semantic-ui-react"
 
 const normaliseTelephone = (value) => {
   if (!value) return value;
@@ -9,12 +10,28 @@ const normaliseTelephone = (value) => {
 };
 
 const QuotesPage = () => {
+  // const [isChecked, setIsChecked] = useState("");
   const [message, setMessage] = useState("");
 
   const onSubmit = async (event) => {
+    debugger
     event.preventDefault();
     let responseMessage, quoteParams, response;
-    let { name, email, telephone, address } = event.target;
+    let {
+      name,
+      email,
+      telephone,
+      address,
+      installation_date,
+      // roof_slope,
+      // roof_type,
+      // roof_direction,
+      // gutter_height,
+      // roof_width,
+      // roof_length,
+      // fuse_size,
+      // energy_consumption,
+    } = event.target;
 
     try {
       quoteParams = {
@@ -22,6 +39,15 @@ const QuotesPage = () => {
         email: email.value,
         telephone: telephone.value,
         address: address.value,
+        installation_date: installation_date.value,
+        // roof_slope: roof_slope.value,
+        // roof_type: roof_type.value,
+        // roof_direction: roof_direction.value,
+        // gutter_height: gutter_height.value,
+        // roof_width: roof_width.value,
+        // roof_length: roof_length.value,
+        // fuse_size: fuse_size.value,
+        // energy_consumption: energy_consumption.value,
       };
 
       response = await axios.post("http://localhost:3000/api/v1/quotes", {
@@ -35,6 +61,9 @@ const QuotesPage = () => {
       setMessage(responseMessage);
     }
   };
+
+
+  
 
   return (
     <>
@@ -137,6 +166,7 @@ const QuotesPage = () => {
                   {({}) => {
                     return (
                       <>
+                     
                         {" "}
                         {values.name && values.name !== "false" && (
                           <>
@@ -148,10 +178,24 @@ const QuotesPage = () => {
                             <button>Next</button>
                             <button>Submit</button>
                             <h2>Time period</h2>
-                            <button name="1">Value 1</button>
-                            <button name="2">Value 2</button>
-                            <button name="3">Value 3</button>
-                            <button name="4">Value 4</button>
+                            {/* <Checkbox
+                            value="installation_date"
+                            name="0-3 monthes"
+                            checked={e => IsChecked(e.target.value) }
+                            // onChange={iconChange}
+                            // checked={(event) => {
+                            //   iconChange()
+                            // }} 
+                            />
+                            <Checkbox
+                            name="installation_date"
+                            value="3-6 monthes"/>
+                            <Checkbox
+                            name="installation_date"
+                            value="6-12 monthes"/>
+                            <Checkbox
+                            name="installation_date"
+                            value="12 monthes +"/> */}
                           </>
                         )}
                       </>
@@ -159,6 +203,7 @@ const QuotesPage = () => {
                   }}
                 </Field>
               )}
+              <button type="submit">submit!!</button>
             </form>
           );
         }}
