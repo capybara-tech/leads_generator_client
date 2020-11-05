@@ -5,11 +5,17 @@ const Options = () => {
 
   return (
     <div>
-  <input name="installation_date" value={timeFrame}/>
-      <button type="button" onClick={() => setTimeFrame(timeFrame + "0-3 Months")}>
+      <input type="hidden" name="installation_date" value={timeFrame} />
+      <button
+        type="button"
+        onClick={() => setTimeFrame(timeFrame + "0-3 Months")}
+      >
         <img src="/images/dummylogo.png" />
       </button>
-      <button type="button" onClick={() => setTimeFrame(timeFrame + "3-6 Months")}>
+      <button
+        type="button"
+        onClick={() => setTimeFrame(timeFrame + "3-6 Months")}
+      >
         <img src="/images/dummylogo.png" />
       </button>
     </div>
