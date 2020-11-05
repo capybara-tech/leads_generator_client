@@ -1,27 +1,42 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
-const RoofSlope = () => { 
+const RoofSlope = () => {
+  const [roofSlope, setRoofSlope] = useState("");
 
-      const [roofSlope, setRoofSlope] = useState("");
   return (
-        <div>
-          <h2>What's the slope of your roof?</h2>
-          <input type="hidden" name="roof_slope" value={roofSlope} />
-          <button id="zeroToFiveDegreesIcon" type="button" onClick={() => setRoofSlope("0-5°")}>
-            <img src="/images/dummylogo.png" alt="0-5°" />
-          </button>
-          <button id="fiveToTwentyDegreesIcon" type="button" onClick={() => setRoofSlope("5-20°")}>
-            <img src="/images/dummylogo.png" alt="5-20°" />
-          </button>
-          <button id="twentyToFortyDegreesIcon" type="button" onClick={() => setRoofSlope("20-40°")}>
-            <img src="/images/dummylogo.png" alt="20-40°" />
-          </button>
-          <button id="fortyDegreesPlusIcon" type="button" onClick={() => setRoofSlope("40°+")}>
-            <img src="/images/dummylogo.png" alt="40°+" />
-          </button>
-        </div>
-  
-  )
-}
+    <div>
+      <h2>What's the slope of your roof?</h2>
+      <input type="hidden" name="roof_slope" value={roofSlope} />
+      <button
+        id="zeroToFiveDegreesIcon"
+        type="button"
+        onClick={() => setRoofSlope("0-5°")}
+      >
+        <img src="/images/dummylogo.png" alt="0-5°" />
+      </button>
+      <button
+        id="fiveToTwentyDegreesIcon"
+        type="button"
+        onClick={() => setRoofSlope("5-20°")}
+      >
+        <img src="/images/dummylogo.png" alt="5-20°" />
+      </button>
+      <button
+        id="twentyToFortyDegreesIcon"
+        type="button"
+        onClick={() => setRoofSlope("20-40°")}
+      >
+        <img src="/images/dummylogo.png" alt="20-40°" />
+      </button>
+      <button
+        id="fortyDegreesPlusIcon"
+        type="button"
+        onClick={() => setRoofSlope("40°+")}
+      >
+        <img src="/images/dummylogo.png" alt="40°+" />
+      </button>
+    </div>
+  );
+};
 
-export default RoofSlope
+export default RoofSlope;

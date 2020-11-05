@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import PropertyType from "./PropertyType"
+import PropertyType from "./PropertyType";
 import InstallationDate from "./InstallationDate";
 import RoofSlope from "./RoofSlope";
-import RoofType from "./RoofType"
+import RoofType from "./RoofType";
 import RoofDirection from "./RoofDirection";
+import RoofDimensions from "./RoofDimensions";
 import axios from "axios";
 import { Form, Field } from "react-final-form";
-
 
 const normaliseTelephone = (value) => {
   if (!value) return value;
@@ -30,9 +30,9 @@ const QuotesPage = () => {
       roof_slope,
       roof_type,
       roof_direction,
-      // gutter_height,
-      // roof_width,
-      // roof_length,
+      gutter_height,
+      roof_width,
+      roof_length,
       // fuse_size,
       // energy_consumption,
     } = event.target;
@@ -48,9 +48,9 @@ const QuotesPage = () => {
         roof_slope: roof_slope.value,
         roof_type: roof_type.value,
         roof_direction: roof_direction.value,
-        // gutter_height: gutter_height.value,
-        // roof_width: roof_width.value,
-        // roof_length: roof_length.value,
+        gutter_height: gutter_height.value,
+        roof_width: roof_width.value,
+        roof_length: roof_length.value,
         // fuse_size: fuse_size.value,
         // energy_consumption: energy_consumption.value,
       };
@@ -182,6 +182,7 @@ const QuotesPage = () => {
                             <RoofSlope />
                             <RoofType />
                             <RoofDirection />
+                            <RoofDimensions />
                           </>
                         )}
                       </>
@@ -189,7 +190,6 @@ const QuotesPage = () => {
                   }}
                 </Field>
               )}
-
             </form>
           );
         }}
