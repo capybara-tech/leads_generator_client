@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Options from "./Options";
+import InstallationDate from "./InstallationDate";
 import axios from "axios";
 import { Form, Field } from "react-final-form";
 
@@ -169,10 +169,8 @@ const QuotesPage = () => {
                               icons to get a more accurate quote or you can
                               choose to submit right now
                             </p>
-                            <button>Next</button>
-                            <button>Submit</button>
-                            <h2>Time period</h2>
-                            <Options />
+                            <button type="submit">Submit</button>
+                            <InstallationDate />
                           </>
                         )}
                       </>
@@ -180,7 +178,7 @@ const QuotesPage = () => {
                   }}
                 </Field>
               )}
-              <button type="submit">submit!!</button>
+
             </form>
           );
         }}
