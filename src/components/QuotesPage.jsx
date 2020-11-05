@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import PropertyType from "./PropertyType"
 import InstallationDate from "./InstallationDate";
+import RoofSlope from "./RoofSlope";
 import axios from "axios";
 import { Form, Field } from "react-final-form";
 
@@ -21,6 +23,7 @@ const QuotesPage = () => {
       telephone,
       address,
       installation_date,
+      property_type,
       roof_slope,
       // roof_type,
       // roof_direction,
@@ -38,6 +41,7 @@ const QuotesPage = () => {
         telephone: telephone.value,
         address: address.value,
         installation_date: installation_date.value,
+        property_type: property_type.value,
         roof_slope: roof_slope.value,
         // roof_type: roof_type.value,
         // roof_direction: roof_direction.value,
@@ -170,7 +174,9 @@ const QuotesPage = () => {
                               choose to submit right now
                             </p>
                             <button type="submit">Submit</button>
+                            <PropertyType />
                             <InstallationDate />
+                            <RoofSlope />
                           </>
                         )}
                       </>
