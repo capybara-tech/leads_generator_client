@@ -3,8 +3,10 @@ import PropertyType from "./PropertyType"
 import InstallationDate from "./InstallationDate";
 import RoofSlope from "./RoofSlope";
 import RoofType from "./RoofType"
+import RoofDirection from "./RoofDirection";
 import axios from "axios";
 import { Form, Field } from "react-final-form";
+
 
 const normaliseTelephone = (value) => {
   if (!value) return value;
@@ -27,7 +29,7 @@ const QuotesPage = () => {
       property_type,
       roof_slope,
       roof_type,
-      // roof_direction,
+      roof_direction,
       // gutter_height,
       // roof_width,
       // roof_length,
@@ -45,7 +47,7 @@ const QuotesPage = () => {
         property_type: property_type.value,
         roof_slope: roof_slope.value,
         roof_type: roof_type.value,
-        // roof_direction: roof_direction.value,
+        roof_direction: roof_direction.value,
         // gutter_height: gutter_height.value,
         // roof_width: roof_width.value,
         // roof_length: roof_length.value,
@@ -179,6 +181,7 @@ const QuotesPage = () => {
                             <InstallationDate />
                             <RoofSlope />
                             <RoofType />
+                            <RoofDirection />
                           </>
                         )}
                       </>
