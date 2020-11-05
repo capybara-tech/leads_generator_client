@@ -1,7 +1,7 @@
 import React, { useState } from "react";
+import Options from "./Options";
 import axios from "axios";
 import { Form, Field } from "react-final-form";
-// import { Checkbox } from "semantic-ui-react"
 
 const normaliseTelephone = (value) => {
   if (!value) return value;
@@ -10,11 +10,9 @@ const normaliseTelephone = (value) => {
 };
 
 const QuotesPage = () => {
-  // const [isChecked, setIsChecked] = useState("");
   const [message, setMessage] = useState("");
 
   const onSubmit = async (event) => {
-    debugger
     event.preventDefault();
     let responseMessage, quoteParams, response;
     let {
@@ -61,9 +59,6 @@ const QuotesPage = () => {
       setMessage(responseMessage);
     }
   };
-
-
-  
 
   return (
     <>
@@ -166,7 +161,6 @@ const QuotesPage = () => {
                   {({}) => {
                     return (
                       <>
-                     
                         {" "}
                         {values.name && values.name !== "false" && (
                           <>
@@ -178,24 +172,7 @@ const QuotesPage = () => {
                             <button>Next</button>
                             <button>Submit</button>
                             <h2>Time period</h2>
-                            {/* <Checkbox
-                            value="installation_date"
-                            name="0-3 monthes"
-                            checked={e => IsChecked(e.target.value) }
-                            // onChange={iconChange}
-                            // checked={(event) => {
-                            //   iconChange()
-                            // }} 
-                            />
-                            <Checkbox
-                            name="installation_date"
-                            value="3-6 monthes"/>
-                            <Checkbox
-                            name="installation_date"
-                            value="6-12 monthes"/>
-                            <Checkbox
-                            name="installation_date"
-                            value="12 monthes +"/> */}
+                            <Options />
                           </>
                         )}
                       </>
