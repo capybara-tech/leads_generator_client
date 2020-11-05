@@ -34,7 +34,7 @@ describe("Visitor can request quotes", () => {
         cy.get('#zeroToThreeMonthsIcon').click()
         cy.get('#houseIcon').click()
         cy.get('#zeroToFiveDegreesIcon').click()
-        cy.get('#roofBrickIcon').click()
+        cy.get('#tiledIcon').click()
         cy.get('#directionSouthIcon').click()
         cy.get('[name="gutterHeight"]').type("4.2")
         cy.get('[name="roofWidth"]').type("5.4")

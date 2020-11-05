@@ -6,7 +6,7 @@ const PropertyType = () => {
   return (
         <div>
           <h2>What type of property?</h2>
-          <input name="property_type" value={propertyType} />
+          <input type="hidden" name="property_type" value={propertyType} />
           <button id="houseIcon" type="button" onClick={() => setPropertyType("house")}>
             <img src="/images/dummylogo.png" alt="house°" />
           </button>

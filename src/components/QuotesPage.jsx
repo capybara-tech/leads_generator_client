@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PropertyType from "./PropertyType"
 import InstallationDate from "./InstallationDate";
 import RoofSlope from "./RoofSlope";
+import RoofType from "./RoofType"
 import axios from "axios";
 import { Form, Field } from "react-final-form";
 
@@ -25,7 +26,7 @@ const QuotesPage = () => {
       installation_date,
       property_type,
       roof_slope,
-      // roof_type,
+      roof_type,
       // roof_direction,
       // gutter_height,
       // roof_width,
@@ -43,7 +44,7 @@ const QuotesPage = () => {
         installation_date: installation_date.value,
         property_type: property_type.value,
         roof_slope: roof_slope.value,
-        // roof_type: roof_type.value,
+        roof_type: roof_type.value,
         // roof_direction: roof_direction.value,
         // gutter_height: gutter_height.value,
         // roof_width: roof_width.value,
@@ -177,6 +178,7 @@ const QuotesPage = () => {
                             <PropertyType />
                             <InstallationDate />
                             <RoofSlope />
+                            <RoofType />
                           </>
                         )}
                       </>
