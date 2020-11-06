@@ -10,12 +10,9 @@ import RoofDimensions from "./RoofDimensions";
 import Electricity from "./Electricity";
 import axios from "axios";
 import { Form, Field } from "react-final-form";
+import TelephoneQuestion from "./TelephoneQuestion";
 
-const normaliseTelephone = (value) => {
-  if (!value) return value;
-  const onlyNums = value.replace(/[^\d]/g, "");
-  if (onlyNums.length <= 10) return `${onlyNums.slice(0, 10)}`;
-};
+
 
 const QuotesPage = () => {
   const [message, setMessage] = useState("");
@@ -102,29 +99,21 @@ const QuotesPage = () => {
               {values.email &&
                 values.email.includes("@") &&
                 values.email.includes(".") && (
-                  <Field
-                    name="telephone"
-                    component="input"
-                    type="text"
-                    placeholder="Telephone"
-                    parse={normaliseTelephone}
-                  >
+                  <>
+                    <label>
+                      Great, and the best number to contact you on?
+                          </label>
+                    <TelephoneQuestion />
                     {({ input }) => {
                       return (
                         <>
-                          {" "}
-                          <br />
-                          <label>
-                            Great, and the best number to contact you on?
-                          </label>{" "}
-                          <br />
                           {values.email &&
                             values.email.includes("@") &&
                             values.email.includes(".") && <input {...input} />}
                         </>
                       );
                     }}
-                  </Field>
+                  </>
                 )}
               {values.telephone && values.telephone.length === 10 && (
                 <Field
