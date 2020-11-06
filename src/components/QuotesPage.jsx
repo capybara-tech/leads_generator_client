@@ -128,32 +128,32 @@ const QuotesPage = () => {
                 </>
               )}
               {values.address && values.address !== "false" && (
-                <Field component="select">
+                <>
+                  <p>
+                    Thank you, from now on you just have to click some icons to
+                    get a more accurate quote or you can choose to submit right
+                    now
+                  </p>
+                  <button type="submit">Submit</button>
+                  <PropertyType />
                   {({ input }) => {
                     return (
                       <>
                         {" "}
                         {values.name && values.name !== "false" && (
-                          <>
-                            <p>
-                              Thank you, from now on you just have to click some
-                              icons to get a more accurate quote or you can
-                              choose to submit right now
-                            </p>
-                            <button type="submit">Submit</button>
-                            <PropertyType />
-                            <InstallationDate />
+                          <input {...input} />
+
+                          /* <InstallationDate />
                             <RoofSlope />
                             <RoofType />
                             <RoofDirection />
                             <RoofDimensions />
-                            <Electricity />
-                          </>
+                            <Electricity /> */
                         )}
                       </>
                     );
                   }}
-                </Field>
+                </>
               )}
             </form>
           );
