@@ -68,7 +68,7 @@ const QuotesPage = () => {
   };
 
   return (
-    <>
+    <div id="quotesPage">
       <h1 data-cy="title">Get up to three quotes</h1>
       <Form
         onSubmit={onSubmit}
@@ -195,7 +195,7 @@ const QuotesPage = () => {
         }}
       />
       {message && <p data-cy="message">{message}</p>}
-    </>
+    </div>
   );
 };
 

@@ -122,6 +122,11 @@ padding: 2vh;
   color: rgba(0, 0, 0, 0.3);
 }
 
+#quotesPage{
+  padding-top: 15vh;
+  padding-bottom: 7vh;
+}
+
 /* ------------------------Mobile------------------------ */
 
 #bannerImgMob {
