@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import NameQuestion from "./NameQuestion"
+import NameQuestion from "./NameQuestion";
+import EmailQuestion from "./EmailQuestion";
 import PropertyType from "./PropertyType";
 import InstallationDate from "./InstallationDate";
 import RoofSlope from "./RoofSlope";
@@ -84,30 +85,19 @@ const QuotesPage = () => {
               <NameQuestion />
 
               {values.name && values.name !== "false" && (
-                <div id="emailQuestion">
-                  <Field
-                    name="email"
-                    component="input"
-                    type="text"
-                    placeholder="Email"
-                  >
-                    {({ input }) => {
-                      return (
-                        <>
-                          {" "}
-                          <br />
-                          <label>
-                            Thanks {values.name}, and your email address?
-                          </label>{" "}
-                          <br />
-                          {values.name && values.name !== "false" && (
-                            <input {...input} />
-                          )}
-                        </>
-                      );
-                    }}
-                  </Field>
-                </div>
+                <>
+                  <label>Thanks {values.name}, and your email address?</label>{" "}
+                  <br />
+                  <EmailQuestion />
+                  {({ input }) => {
+                    return (
+                      <>
+                        {" "}
+                        <input {...input} />
+                      </>
+                    );
+                  }}
+                </>
               )}
               {values.email &&
                 values.email.includes("@") &&
