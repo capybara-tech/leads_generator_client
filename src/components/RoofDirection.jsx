@@ -1,8 +1,8 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 const RoofDirection = () => {
   const [roofDirection, setRoofDirection] = useState("");
-  
+
   return (
     <div>
       <h2>What's the direction of your roof?</h2>

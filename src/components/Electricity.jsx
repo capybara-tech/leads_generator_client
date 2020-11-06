@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import { Field } from "react-final-form";
 
 const Electricity = () => {
-  const [fuseSize, setFuseSize] = useState("")
+  const [fuseSize, setFuseSize] = useState("");
 
   return (
     <div>
@@ -17,25 +17,22 @@ const Electricity = () => {
       <button id="25AIcon" type="button" onClick={() => setFuseSize("25A")}>
         <img src="/images/dummylogo.png" alt="25A" />
       </button>
-      <button
-        id="35AIcon"
-        type="button"
-        onClick={() => setFuseSize("35A")}
-      >
+      <button id="35AIcon" type="button" onClick={() => setFuseSize("35A")}>
         <img src="/images/dummylogo.png" alt="35A" />
       </button>
-      <button
-        id="35A+Icon"
-        type="button"
-        onClick={() => setFuseSize("35A+")}
-      >
+      <button id="35A+Icon" type="button" onClick={() => setFuseSize("35A+")}>
         <img src="/images/dummylogo.png" alt="35A+" />
       </button>
 
       <h2>What is your yearly energy consumption?</h2>
-      <Field name="energy_consumption" component="input" type="number" placeholder="Energy consumption" ></Field>
+      <Field
+        name="energy_consumption"
+        component="input"
+        type="number"
+        placeholder="Energy consumption"
+      ></Field>
     </div>
-  )
-}
+  );
+};
 
-export default Electricity
+export default Electricity;
