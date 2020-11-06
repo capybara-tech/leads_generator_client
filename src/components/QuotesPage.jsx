@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import NameQuestion from "./NameQuestion";
 import EmailQuestion from "./EmailQuestion";
+import TelephoneQuestion from "./TelephoneQuestion";
+import AddressQuestion from "./AddressQuestion";
 import PropertyType from "./PropertyType";
 import InstallationDate from "./InstallationDate";
 import RoofSlope from "./RoofSlope";
@@ -10,9 +12,6 @@ import RoofDimensions from "./RoofDimensions";
 import Electricity from "./Electricity";
 import axios from "axios";
 import { Form, Field } from "react-final-form";
-import TelephoneQuestion from "./TelephoneQuestion";
-
-
 
 const QuotesPage = () => {
   const [message, setMessage] = useState("");
@@ -100,9 +99,7 @@ const QuotesPage = () => {
                 values.email.includes("@") &&
                 values.email.includes(".") && (
                   <>
-                    <label>
-                      Great, and the best number to contact you on?
-                          </label>
+                    <label>Great, and the best number to contact you on?</label>
                     <TelephoneQuestion />
                     {({ input }) => {
                       return (
@@ -116,28 +113,19 @@ const QuotesPage = () => {
                   </>
                 )}
               {values.telephone && values.telephone.length === 10 && (
-                <Field
-                  name="address"
-                  component="input"
-                  type="text"
-                  placeholder="Address"
-                >
+                <>
+                  <label>Lastly the address intend on turning green?</label>
+                  <AddressQuestion />
                   {({ input }) => {
                     return (
                       <>
-                        {" "}
-                        <br />
-                        <label>
-                          Lastly the address intend on turning green?
-                        </label>{" "}
-                        <br />
                         {values.telephone && values.telephone !== "false" && (
                           <input {...input} />
                         )}
                       </>
                     );
                   }}
-                </Field>
+                </>
               )}
               {values.address && values.address !== "false" && (
                 <Field component="select">
