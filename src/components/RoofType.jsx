@@ -8,7 +8,7 @@ const RoofType = () => {
       <h2>What type of roof does the property have?</h2>
       <input type="hidden" name="roof_type" value={roofType} />
       <button id="tiledIcon" type="button" onClick={() => setRoofType("tiled")}>
-        <img src="/images/dummylogo.png" alt="tiled°" />
+        <img src="/images/dummylogo.png" alt="tiled" />
       </button>
       <button id="feltIcon" type="button" onClick={() => setRoofType("felt")}>
         <img src="/images/dummylogo.png" alt="felt" />

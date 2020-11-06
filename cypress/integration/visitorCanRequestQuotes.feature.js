@@ -39,8 +39,8 @@ describe("Visitor can request quotes", () => {
         cy.get('[name="gutter_height"]').type("4.2")
         cy.get('[name="roof_width"]').type("5.4")
         cy.get('[name="roof_length"]').type("6.1")
-        cy.get('#fuse16AmpsIcon').click()
-        cy.get('[name="energyConsumption"]').type("10000")
+        cy.get('#16AIcon').click()
+        cy.get('[name="energy_consumption"]').type("10000")
         cy.get('[data-cy=button]').contains("Submit").click()
         cy.get('data-cy=message').should("contain", "Form successfully submitted.")
       });

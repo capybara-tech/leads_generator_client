@@ -5,6 +5,7 @@ import RoofSlope from "./RoofSlope";
 import RoofType from "./RoofType";
 import RoofDirection from "./RoofDirection";
 import RoofDimensions from "./RoofDimensions";
+import Electricity from "./Electricity";
 import axios from "axios";
 import { Form, Field } from "react-final-form";
 
@@ -33,8 +34,8 @@ const QuotesPage = () => {
       gutter_height,
       roof_width,
       roof_length,
-      // fuse_size,
-      // energy_consumption,
+      fuse_size,
+      energy_consumption,
     } = event.target;
 
     try {
@@ -51,8 +52,8 @@ const QuotesPage = () => {
         gutter_height: gutter_height.value,
         roof_width: roof_width.value,
         roof_length: roof_length.value,
-        // fuse_size: fuse_size.value,
-        // energy_consumption: energy_consumption.value,
+        fuse_size: fuse_size.value,
+        energy_consumption: energy_consumption.value,
       };
 
       response = await axios.post("http://localhost:3000/api/v1/quotes", {
@@ -183,6 +184,7 @@ const QuotesPage = () => {
                             <RoofType />
                             <RoofDirection />
                             <RoofDimensions />
+                            <Electricity />
                           </>
                         )}
                       </>

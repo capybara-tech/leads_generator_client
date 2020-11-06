@@ -1,12 +1,18 @@
 import React, { useState } from "react";
+import { Field } from "react-final-form";
 
 const RoofSlope = () => {
   const [roofSlope, setRoofSlope] = useState("");
 
+  const handleOnChange = event => {
+    const { value } = event.target;
+    setRoofSlope({ value });
+  };
+
   return (
     <div>
       <h2>What's the slope of your roof?</h2>
-      <input type="hidden" name="roof_slope" value={roofSlope} />
+      <input type="text" name="roof_slope" value={roofSlope}  />
       <button
         id="zeroToFiveDegreesIcon"
         type="button"
@@ -35,6 +41,8 @@ const RoofSlope = () => {
       >
         <img src="/images/dummylogo.png" alt="40°+" />
       </button>
+
+      <Field component="input" type="number" placeholder="Energy consumption" onChange={handleOnChange}></Field>
     </div>
   );
 };
