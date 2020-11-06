@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import NameQuestion from "./NameQuestion"
 import PropertyType from "./PropertyType";
 import InstallationDate from "./InstallationDate";
 import RoofSlope from "./RoofSlope";
@@ -80,38 +81,33 @@ const QuotesPage = () => {
           const { values } = props;
           return (
             <form data-cy="quote-form" onSubmit={onSubmit}>
-              <label>My name's Felix, what's yours?</label>
-              <br />
-              <Field
-                name="name"
-                component="input"
-                type="text"
-                placeholder="Name"
-              ></Field>
+              <NameQuestion />
 
               {values.name && values.name !== "false" && (
-                <Field
-                  name="email"
-                  component="input"
-                  type="text"
-                  placeholder="Email"
-                >
-                  {({ input }) => {
-                    return (
-                      <>
-                        {" "}
-                        <br />
-                        <label>
-                          Thanks {values.name}, and your email address?
-                        </label>{" "}
-                        <br />
-                        {values.name && values.name !== "false" && (
-                          <input {...input} />
-                        )}
-                      </>
-                    );
-                  }}
-                </Field>
+                <div id="emailQuestion">
+                  <Field
+                    name="email"
+                    component="input"
+                    type="text"
+                    placeholder="Email"
+                  >
+                    {({ input }) => {
+                      return (
+                        <>
+                          {" "}
+                          <br />
+                          <label>
+                            Thanks {values.name}, and your email address?
+                          </label>{" "}
+                          <br />
+                          {values.name && values.name !== "false" && (
+                            <input {...input} />
+                          )}
+                        </>
+                      );
+                    }}
+                  </Field>
+                </div>
               )}
               {values.email &&
                 values.email.includes("@") &&

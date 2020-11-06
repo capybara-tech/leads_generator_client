@@ -127,6 +127,14 @@ padding: 2vh;
   padding-bottom: 7vh;
 }
 
+#nameQuestion{
+height:100vh;
+}
+
+#emailQuestion{
+  height:100vh;
+  }
+
 /* ------------------------Mobile------------------------ */
 
 #bannerImgMob {
