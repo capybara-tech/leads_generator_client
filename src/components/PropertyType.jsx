@@ -21,79 +21,163 @@ const PropertyType = () => {
           setIndex(0);
         }}
       >
-        Next
+        Skip
       </Scrolllink>
-      <input name="property_type" value={propertyType} />
-      <button
-        id="houseIcon"
-        type="button"
-        onClick={() => {
-          setPropertyType("house");
+      <input type="hidden" name="property_type" value={propertyType} />
+      <Scrolllink
+        to="installationDate"
+        activeClass="active"
+        spy={true}
+        smooth={true}
+        offset={-30}
+        duration={1500}
+        onMouseDown={async (e) => {
           setIndex(0);
         }}
       >
-        <img src="/images/dummylogo.png" alt="house" />
-      </button>
-      <button
-        id="apartmentIcon"
-        type="button"
-        onClick={() => {
-          setPropertyType("apartment");
+        <button
+          id="houseIcon"
+          type="button"
+          onClick={() => {
+            setPropertyType("house");
+            setIndex(0);
+          }}
+        >
+          <img src="/images/dummylogo.png" alt="house" />
+        </button>{" "}
+      </Scrolllink>
+      <Scrolllink
+        to="installationDate"
+        activeClass="active"
+        spy={true}
+        smooth={true}
+        offset={-30}
+        duration={1500}
+        onMouseDown={async (e) => {
           setIndex(0);
         }}
       >
-        <img src="/images/dummylogo.png" alt="apartment" />
-      </button>
-      <button
-        id="terracedSemiDetachedIcon"
-        type="button"
-        onClick={() => {
-          setPropertyType("terraced_semi_detached");
+        <button
+          id="apartmentIcon"
+          type="button"
+          onClick={() => {
+            setPropertyType("apartment");
+            setIndex(0);
+          }}
+        >
+          <img src="/images/dummylogo.png" alt="apartment" />
+        </button>{" "}
+      </Scrolllink>
+      <Scrolllink
+        to="installationDate"
+        activeClass="active"
+        spy={true}
+        smooth={true}
+        offset={-30}
+        duration={1500}
+        onMouseDown={async (e) => {
           setIndex(0);
         }}
       >
-        <img src="/images/dummylogo.png" alt="terraced semi detached" />
-      </button>
-      <button
-        id="barnIcon"
-        type="button"
-        onClick={() => {
-          setPropertyType("barn");
+        <button
+          id="terracedSemiDetachedIcon"
+          type="button"
+          onClick={() => {
+            setPropertyType("terraced_semi_detached");
+            setIndex(0);
+          }}
+        >
+          <img src="/images/dummylogo.png" alt="terraced semi detached" />
+        </button>{" "}
+      </Scrolllink>
+      <Scrolllink
+        to="installationDate"
+        activeClass="active"
+        spy={true}
+        smooth={true}
+        offset={-30}
+        duration={1500}
+        onMouseDown={async (e) => {
           setIndex(0);
         }}
       >
-        <img src="/images/dummylogo.png" alt="barn" />
-      </button>
-      <button
-        id="commercialIcon"
-        type="button"
-        onClick={() => {
-          setPropertyType("commercial");
+        <button
+          id="barnIcon"
+          type="button"
+          onClick={() => {
+            setPropertyType("barn");
+            setIndex(0);
+          }}
+        >
+          <img src="/images/dummylogo.png" alt="barn" />
+        </button>{" "}
+      </Scrolllink>
+      <Scrolllink
+        to="installationDate"
+        activeClass="active"
+        spy={true}
+        smooth={true}
+        offset={-30}
+        duration={1500}
+        onMouseDown={async (e) => {
           setIndex(0);
         }}
       >
-        <img src="/images/dummylogo.png" alt="commercial" />
-      </button>
-      <button
-        id="agriculturalIcon"
-        type="button"
-        onClick={() => {
-          setPropertyType("agricultural");
+        <button
+          id="commercialIcon"
+          type="button"
+          onClick={() => {
+            setPropertyType("commercial");
+            setIndex(0);
+          }}
+        >
+          <img src="/images/dummylogo.png" alt="commercial" />
+        </button>{" "}
+      </Scrolllink>
+      <Scrolllink
+        to="installationDate"
+        activeClass="active"
+        spy={true}
+        smooth={true}
+        offset={-30}
+        duration={1500}
+        onMouseDown={async (e) => {
           setIndex(0);
         }}
       >
-        <img src="/images/dummylogo.png" alt="agricultural" />
-      </button>
-      <button
-        id="otherPropertyIcon"
-        type="button"
-        onClick={() => {
-          setPropertyType("other");
+        <button
+          id="agriculturalIcon"
+          type="button"
+          onClick={() => {
+            setPropertyType("agricultural");
+            setIndex(0);
+          }}
+        >
+          <img src="/images/dummylogo.png" alt="agricultural" />
+        </button>{" "}
+      </Scrolllink>
+      <Scrolllink
+        to="installationDate"
+        activeClass="active"
+        spy={true}
+        smooth={true}
+        offset={-30}
+        duration={1500}
+        onMouseDown={async (e) => {
           setIndex(0);
         }}
       >
-        <img src="/images/dummylogo.png" alt="other property" />
-      </button>
+        <button
+          id="otherPropertyIcon"
+          type="button"
+          onClick={() => {
+            setPropertyType("other");
+            setIndex(0);
+          }}
+        >
+          <img src="/images/dummylogo.png" alt="other property" />
+        </button>{" "}
+      </Scrolllink>
       {components[index]}
     </div>
   );
