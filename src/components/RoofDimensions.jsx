@@ -4,6 +4,7 @@ import { Field } from "react-final-form";
 const RoofDimensions = () => {
   return (
     <div>
+      <h2>What's your roof dimension?</h2>
       <Field
         name="gutter_height"
         component="input"

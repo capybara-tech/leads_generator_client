@@ -11,7 +11,7 @@ import RoofDirection from "./RoofDirection";
 import RoofDimensions from "./RoofDimensions";
 import Electricity from "./Electricity";
 import axios from "axios";
-import { Form, Field } from "react-final-form";
+import { Form } from "react-final-form";
 
 const QuotesPage = () => {
   const [message, setMessage] = useState("");
@@ -136,23 +136,12 @@ const QuotesPage = () => {
                   </p>
                   <button type="submit">Submit</button>
                   <PropertyType />
-                  {({ input }) => {
-                    return (
-                      <>
-                        {" "}
-                        {values.name && values.name !== "false" && (
-                          <input {...input} />
-
-                          /* <InstallationDate />
-                            <RoofSlope />
-                            <RoofType />
-                            <RoofDirection />
-                            <RoofDimensions />
-                            <Electricity /> */
-                        )}
-                      </>
-                    );
-                  }}
+                  <InstallationDate />
+                  <RoofSlope />
+                  <RoofType />
+                  <RoofDirection />
+                  <RoofDimensions />
+                  <Electricity />
                 </>
               )}
             </form>
