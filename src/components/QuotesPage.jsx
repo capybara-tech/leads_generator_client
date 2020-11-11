@@ -4,12 +4,6 @@ import EmailQuestion from "./EmailQuestion";
 import TelephoneQuestion from "./TelephoneQuestion";
 import AddressQuestion from "./AddressQuestion";
 import PropertyType from "./PropertyType";
-import InstallationDate from "./InstallationDate";
-import RoofSlope from "./RoofSlope";
-import RoofType from "./RoofType";
-import RoofDirection from "./RoofDirection";
-import RoofDimensions from "./RoofDimensions";
-import Electricity from "./Electricity";
 import axios from "axios";
 import { Form } from "react-final-form";
 
@@ -136,12 +130,6 @@ const QuotesPage = () => {
                   </p>
                   <button type="submit">Submit</button>
                   <PropertyType />
-                  <InstallationDate />
-                  <RoofSlope />
-                  <RoofType />
-                  <RoofDirection />
-                  <RoofDimensions />
-                  <Electricity />
                 </>
               )}
             </form>

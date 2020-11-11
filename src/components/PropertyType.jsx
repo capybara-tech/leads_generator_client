@@ -1,61 +1,80 @@
 import React, { useState } from "react";
+import InstallationDate from "./InstallationDate"
+import { Link } from "react-scroll";
 
 const PropertyType = () => {
   const [propertyType, setPropertyType] = useState("");
+  const components = [<InstallationDate />]
+  const [index, setIndex] = useState("");
+
 
   return (
     <div>
       <h2>What type of property?</h2>
+      <Link
+        to="installationDate"
+        activeClass="active"
+        spy={true}
+        smooth={true}
+        offset={-30}
+        duration={1500}
+      >
+        <button type="button" >
+          Next
+        </button>
+     </Link>
       <input type="hidden" name="property_type" value={propertyType} />
       <button
         id="houseIcon"
         type="button"
-        onClick={() => setPropertyType("house")}
+        onClick={() => {setPropertyType("house") ; setIndex(0)}}
       >
-        <img src="/images/dummylogo.png" alt="house°" />
+        <img src="/images/dummylogo.png" alt="house" />
       </button>
       <button
         id="apartmentIcon"
         type="button"
-        onClick={() => setPropertyType("apartment")}
+        onClick={() => {setPropertyType("apartment") ; setIndex(0)}}
       >
         <img src="/images/dummylogo.png" alt="apartment" />
       </button>
       <button
         id="terracedSemiDetachedIcon"
         type="button"
-        onClick={() => setPropertyType("terraced_semi_detached")}
+        onClick={() => {setPropertyType("terraced_semi_detached") ; setIndex(0)}}
       >
         <img src="/images/dummylogo.png" alt="terraced semi detached" />
       </button>
       <button
         id="barnIcon"
         type="button"
-        onClick={() => setPropertyType("barn")}
+        onClick={() => {setPropertyType("barn") ; setIndex(0)}}
       >
         <img src="/images/dummylogo.png" alt="barn" />
       </button>
       <button
         id="commercialIcon"
         type="button"
-        onClick={() => setPropertyType("commercial")}
+        onClick={() => {setPropertyType("commercial") ; setIndex(0)}}
       >
         <img src="/images/dummylogo.png" alt="commercial" />
       </button>
       <button
         id="agriculturalIcon"
         type="button"
-        onClick={() => setPropertyType("agricultural")}
+        onClick={() => {setPropertyType("agricultural") ; setIndex(0)}}
       >
         <img src="/images/dummylogo.png" alt="agricultural" />
       </button>
       <button
         id="otherPropertyIcon"
         type="button"
-        onClick={() => setPropertyType("other")}
+        onClick={() => {setPropertyType("other") ; setIndex(0)}}
       >
         <img src="/images/dummylogo.png" alt="other property" />
       </button>
+      {components[index]}
+   
     </div>
   );
 };

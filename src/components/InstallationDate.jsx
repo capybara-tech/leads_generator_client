@@ -4,7 +4,7 @@ const InstallationDate = () => {
   const [timeFrame, setTimeFrame] = useState("");
 
   return (
-    <div>
+    <div id="installationDate">
       <h2>When are you looking for installation?</h2>
       <input type="hidden" name="installation_date" value={timeFrame} />
       <button
