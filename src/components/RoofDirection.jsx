@@ -4,7 +4,7 @@ const RoofDirection = () => {
   const [roofDirection, setRoofDirection] = useState("");
 
   return (
-    <div>
+    <div id="roofDirection">
       <h2>What's the direction of your roof?</h2>
       <input type="hidden" name="roof_direction" value={roofDirection} />
       <button
