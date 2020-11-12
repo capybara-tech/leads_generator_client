@@ -110,6 +110,7 @@ const QuotesPage = () => {
                 <>
                   <label>Lastly the address intend on turning green?</label>
                   <AddressQuestion />
+                 
                   {({ input }) => {
                     return (
                       <>
@@ -123,11 +124,6 @@ const QuotesPage = () => {
               )}
               {values.address && values.address !== "false" && (
                 <>
-                  <p>
-                    Thank you, from now on you just have to click some icons to
-                    get a more accurate quote or you can choose to submit right
-                    now
-                  </p>
                   <button type="submit">Submit</button>
                   <InstallationDate />
                  </>
