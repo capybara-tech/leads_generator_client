@@ -174,6 +174,7 @@ const PropertyType = () => {
       </Scrolllink>{" "}
       <br />
       <Scrolllink
+        id="propertyTypeBack"
         to="installationDate"
         activeClass="active"
         spy={true}

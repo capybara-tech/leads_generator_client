@@ -107,7 +107,8 @@ const InstallationDate = () => {
       >
         Back
       </Scrolllink>
-      <Scrolllink
+        <Scrolllink
+        id="installationDateSkip"
         to="propertyType"
         activeClass="active"
         spy={true}

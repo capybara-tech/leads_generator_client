@@ -13,7 +13,6 @@ describe("Visitor can request quotes", () => {
 
 
     it("Visitor can create a quote request successfully with just mandatory fields", () => {
-
       cy.get("[data-cy=quote-form]").within(() => {
         cy.get('[name="name"]').type("Peter");
         cy.get('[name="email"]').type("peter@mail.com");
@@ -44,6 +43,23 @@ describe("Visitor can request quotes", () => {
         cy.get('[data-cy=button]').contains("Submit").click()
          });
         cy.get('[data-cy=message]').should("contain", "Form successfully submitted.")
+    });
+
+    it('Visitor can make an unusual quote request', () => {
+      cy.get("[data-cy=quote-form]").within(() => {
+        cy.get('[name="name"]').type("Peter");
+        cy.get('[name="email"]').type("peter@mail.com");
+        cy.get("#emailBack").click();
+        cy.get('[name="email"]').type("user@mail.com");
+        cy.get('[name="telephone"]').type("0736123456");
+        cy.get('[name="address"]').type("Address");
+        cy.get("#installationDateSkip").click();
+        cy.get("#propertyTypeBack").click();
+        cy.get('#zeroToThreeMonthsIcon').click()
+        cy.get('#houseIcon').click()
+        cy.get('[data-cy=button]').contains("Submit").click()
+      });
+      cy.get('[data-cy=message]').should("contain", "Form successfully submitted.")
     });
   });
 });
