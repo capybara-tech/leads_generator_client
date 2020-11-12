@@ -10,29 +10,6 @@ const PropertyType = () => {
   return (
     <div>
       <h2 id="propertyType">What type of property?</h2>
-      <Scrolllink
-        to="addressQuestion"
-        activeClass="active"
-        spy={true}
-        smooth={true}
-        offset={-250}
-        duration={1500}
-      >
-        Back
-      </Scrolllink>
-      <Scrolllink
-        to="installationDate"
-        activeClass="active"
-        spy={true}
-        smooth={true}
-        offset={-30}
-        duration={1500}
-        onMouseDown={async (e) => {
-          setIndex(0);
-        }}
-      >
-        Skip
-      </Scrolllink>
       <input type="hidden" name="property_type" value={propertyType} />
       <Scrolllink
         to="installationDate"
@@ -187,6 +164,30 @@ const PropertyType = () => {
         >
           <img src="/images/dummylogo.png" alt="other property" />
         </button>{" "}
+      </Scrolllink>{" "}
+      <br />
+      <Scrolllink
+        to="addressQuestion"
+        activeClass="active"
+        spy={true}
+        smooth={true}
+        offset={-250}
+        duration={1500}
+      >
+        Back
+      </Scrolllink>
+      <Scrolllink
+        to="installationDate"
+        activeClass="active"
+        spy={true}
+        smooth={true}
+        offset={-30}
+        duration={1500}
+        onMouseDown={async (e) => {
+          setIndex(0);
+        }}
+      >
+        Skip
       </Scrolllink>
       {components[index]}
     </div>
