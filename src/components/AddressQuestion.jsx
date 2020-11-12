@@ -13,15 +13,25 @@ const AddressQuestion = () => {
       />
       <br />
       <Scrolllink
-          to="propertyType"
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-250}
-          duration={1500}
-        >
-          Next
-        </Scrolllink>
+        to="telephoneQuestion"
+        activeClass="active"
+        spy={true}
+        smooth={true}
+        offset={-250}
+        duration={1500}
+      >
+        Back
+      </Scrolllink>
+      <Scrolllink
+        to="propertyType"
+        activeClass="active"
+        spy={true}
+        smooth={true}
+        offset={-250}
+        duration={1500}
+      >
+        Next
+      </Scrolllink>
     </div>
   );
 };

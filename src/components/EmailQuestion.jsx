@@ -14,6 +14,16 @@ const EmailQuestion = () => {
         ></Field>{" "}
         <br />
         <Scrolllink
+          to="nameQuestion"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={-250}
+          duration={1500}
+        >
+          Back
+        </Scrolllink>
+        <Scrolllink
           to="telephoneQuestion"
           activeClass="active"
           spy={true}

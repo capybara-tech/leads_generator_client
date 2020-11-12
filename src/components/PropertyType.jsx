@@ -11,6 +11,16 @@ const PropertyType = () => {
     <div>
       <h2 id="propertyType">What type of property?</h2>
       <Scrolllink
+        to="addressQuestion"
+        activeClass="active"
+        spy={true}
+        smooth={true}
+        offset={-250}
+        duration={1500}
+      >
+        Back
+      </Scrolllink>
+      <Scrolllink
         to="installationDate"
         activeClass="active"
         spy={true}
