@@ -4,7 +4,7 @@ const RoofSlope = () => {
   const [roofSlope, setRoofSlope] = useState("");
 
   return (
-    <div>
+    <div id="roofSlope">
       <h2>What's the slope of your roof?</h2>
       <input type="hidden" name="roof_slope" value={roofSlope} />
       <button

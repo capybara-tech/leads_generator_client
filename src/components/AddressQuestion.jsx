@@ -23,7 +23,7 @@ const AddressQuestion = () => {
         Back
       </Scrolllink>
       <Scrolllink
-        to="propertyType"
+        to="installationDate"
         activeClass="active"
         spy={true}
         smooth={true}

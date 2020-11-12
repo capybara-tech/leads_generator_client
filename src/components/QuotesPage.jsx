@@ -3,7 +3,7 @@ import NameQuestion from "./NameQuestion";
 import EmailQuestion from "./EmailQuestion";
 import TelephoneQuestion from "./TelephoneQuestion";
 import AddressQuestion from "./AddressQuestion";
-import PropertyType from "./PropertyType";
+import InstallationDate from "./InstallationDate";
 import axios from "axios";
 import { Form } from "react-final-form";
 
@@ -129,7 +129,7 @@ const QuotesPage = () => {
                     now
                   </p>
                   <button type="submit">Submit</button>
-                  <PropertyType />
+                  <InstallationDate />
                 </>
               )}
             </form>

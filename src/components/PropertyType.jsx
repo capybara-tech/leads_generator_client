@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import InstallationDate from "./InstallationDate";
+import RoofSlope from "./RoofSlope";
 import { Link as Scrolllink } from "react-scroll";
 
 const PropertyType = () => {
   const [propertyType, setPropertyType] = useState("");
-  const components = [<InstallationDate />];
+  const components = [<RoofSlope />];
   const [index, setIndex] = useState("");
 
   return (
@@ -12,7 +12,7 @@ const PropertyType = () => {
       <h2 id="propertyType">What type of property?</h2>
       <input type="hidden" name="property_type" value={propertyType} />
       <Scrolllink
-        to="installationDate"
+        to="roofSlope"
         activeClass="active"
         spy={true}
         smooth={true}
@@ -34,7 +34,7 @@ const PropertyType = () => {
         </button>{" "}
       </Scrolllink>
       <Scrolllink
-        to="installationDate"
+        to="roofSlope"
         activeClass="active"
         spy={true}
         smooth={true}
@@ -56,7 +56,7 @@ const PropertyType = () => {
         </button>{" "}
       </Scrolllink>
       <Scrolllink
-        to="installationDate"
+        to="roofSlope"
         activeClass="active"
         spy={true}
         smooth={true}
@@ -78,7 +78,7 @@ const PropertyType = () => {
         </button>{" "}
       </Scrolllink>
       <Scrolllink
-        to="installationDate"
+        to="roofSlope"
         activeClass="active"
         spy={true}
         smooth={true}
@@ -100,7 +100,7 @@ const PropertyType = () => {
         </button>{" "}
       </Scrolllink>
       <Scrolllink
-        to="installationDate"
+        to="roofSlope"
         activeClass="active"
         spy={true}
         smooth={true}
@@ -122,7 +122,7 @@ const PropertyType = () => {
         </button>{" "}
       </Scrolllink>
       <Scrolllink
-        to="installationDate"
+        to="roofSlope"
         activeClass="active"
         spy={true}
         smooth={true}
@@ -144,7 +144,7 @@ const PropertyType = () => {
         </button>{" "}
       </Scrolllink>
       <Scrolllink
-        to="installationDate"
+        to="roofSlope"
         activeClass="active"
         spy={true}
         smooth={true}
@@ -167,7 +167,7 @@ const PropertyType = () => {
       </Scrolllink>{" "}
       <br />
       <Scrolllink
-        to="addressQuestion"
+        to="installationDate"
         activeClass="active"
         spy={true}
         smooth={true}
@@ -177,7 +177,7 @@ const PropertyType = () => {
         Back
       </Scrolllink>
       <Scrolllink
-        to="installationDate"
+        to="roofSlope"
         activeClass="active"
         spy={true}
         smooth={true}
