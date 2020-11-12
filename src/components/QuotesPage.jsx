@@ -11,6 +11,7 @@ const QuotesPage = () => {
   const [message, setMessage] = useState("");
 
   const onSubmit = async (event) => {
+    debugger
     event.preventDefault();
     let responseMessage, quoteParams, response;
     let {
@@ -18,16 +19,16 @@ const QuotesPage = () => {
       email,
       telephone,
       address,
-      installation_date,
-      property_type,
-      roof_slope,
-      roof_type,
-      roof_direction,
-      gutter_height,
-      roof_width,
-      roof_length,
-      fuse_size,
-      energy_consumption,
+      installation_date = "",
+      property_type = "",
+      roof_slope = "",
+      roof_type = "",
+      roof_direction = "",
+      gutter_height = "",
+      roof_width = "",
+      roof_length = "",
+      fuse_size = "",
+      energy_consumption = "",
     } = event.target;
 
     try {
@@ -54,7 +55,7 @@ const QuotesPage = () => {
 
       responseMessage = response.data.message;
     } catch (error) {
-      responseMessage = error.response.data.errors;
+      responseMessage = response.data.error;
     } finally {
       setMessage(responseMessage);
     }
@@ -124,7 +125,7 @@ const QuotesPage = () => {
               )}
               {values.address && values.address !== "false" && (
                 <>
-                  <button type="submit">Submit</button>
+                  <button data-cy="button" type="submit">Submit</button>
                   <InstallationDate />
                  </>
               )}

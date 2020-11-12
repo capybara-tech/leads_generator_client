@@ -143,30 +143,6 @@ html,
   height: 100vh;
 }
 
-.installationIcons {
-  height: 15vh;
-  width: 10vw;
-  background-color:transparent;
-}
-
-#installationDate {
-  align-items: center;
-  transform: translate(-50%, -50%);
-  margin-left: 50vw;
-  height: 100vh;
-}
-.propertyTypeIcons {
-  height: 15vh;
-  width: 10vw;
-  background-color:transparent;
-}
-#propertyType  {
-  align-items: center;
-  transform: translate(-50%, -50%);
-  margin-left: 50vw;
-  
-}
-
 /* ------------------------Mobile------------------------ */
 
 #bannerImgMob {

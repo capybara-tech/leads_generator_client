@@ -29,6 +29,7 @@ const RoofDimensions = () => {
         placeholder="Roof length"
       ></Field>
       <Scrolllink
+      id="nextToElectricity"
         to="electricity"
         activeClass="active"
         spy={true}
