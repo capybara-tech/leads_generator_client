@@ -5,7 +5,7 @@ const Electricity = () => {
   const [fuseSize, setFuseSize] = useState("");
 
   return (
-    <div>
+    <div id="electricity">
       <h2>What is your fuse size?</h2>
       <input type="hidden" name="fuse_size" value={fuseSize} />
       <button id="16AIcon" type="button" onClick={() => setFuseSize("16A")}>

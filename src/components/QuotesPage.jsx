@@ -130,7 +130,7 @@ const QuotesPage = () => {
                   </p>
                   <button type="submit">Submit</button>
                   <InstallationDate />
-                </>
+                 </>
               )}
             </form>
           );
