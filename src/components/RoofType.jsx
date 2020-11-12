@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import RoofDirection from "./RoofDirection"
+import RoofDirection from "./RoofDirection";
 import { Link as Scrolllink } from "react-scroll";
 
 const RoofType = () => {
@@ -22,7 +22,11 @@ const RoofType = () => {
           setIndex(0);
         }}
       >
-        <button id="tiledIcon" type="button" onClick={() => setRoofType("tiled")}>
+        <button
+          id="tiledIcon"
+          type="button"
+          onClick={() => setRoofType("tiled")}
+        >
           <img src="/images/dummylogo.png" alt="tiled" />
         </button>
       </Scrolllink>
@@ -52,7 +56,11 @@ const RoofType = () => {
           setIndex(0);
         }}
       >
-        <button id="metalIcon" type="button" onClick={() => setRoofType("metal")}>
+        <button
+          id="metalIcon"
+          type="button"
+          onClick={() => setRoofType("metal")}
+        >
           <img src="/images/dummylogo.png" alt="metal" />
         </button>
       </Scrolllink>
@@ -93,7 +101,8 @@ const RoofType = () => {
         >
           <img src="/images/dummylogo.png" alt="another" />
         </button>
-      </Scrolllink>
+      </Scrolllink>{" "}
+      <br />
       <Scrolllink
         to="roofSlope"
         activeClass="active"

@@ -86,7 +86,8 @@ const InstallationDate = () => {
         >
           <img src="/images/dummylogo.png" alt="Not sure" />
         </button>
-      </Scrolllink>
+      </Scrolllink>{" "}
+      <br />
       <Scrolllink
         to="addressQuestion"
         activeClass="active"
