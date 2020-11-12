@@ -1,5 +1,6 @@
 import React from 'react'
 import { Field } from "react-final-form";
+import { Link as Scrolllink } from "react-scroll";
 
 const normaliseTelephone = (value) => {
   if (!value) return value;
@@ -17,6 +18,17 @@ const TelephoneQuestion = () => {
         placeholder="Telephone"
         parse={normaliseTelephone}
       />
+      <br />
+        <Scrolllink
+          to="addressQuestion"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={-250}
+          duration={1500}
+        >
+          Next
+        </Scrolllink>
     </div>
   )
 }

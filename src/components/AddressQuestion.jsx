@@ -1,5 +1,6 @@
 import React from "react";
 import { Field } from "react-final-form";
+import { Link as Scrolllink } from "react-scroll";
 
 const AddressQuestion = () => {
   return (
@@ -10,6 +11,17 @@ const AddressQuestion = () => {
         type="text"
         placeholder="Address"
       />
+      <br />
+      <Scrolllink
+          to="propertyType"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={-250}
+          duration={1500}
+        >
+          Next
+        </Scrolllink>
     </div>
   );
 };

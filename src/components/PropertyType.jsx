@@ -9,7 +9,7 @@ const PropertyType = () => {
 
   return (
     <div>
-      <h2>What type of property?</h2>
+      <h2 id="propertyType">What type of property?</h2>
       <Scrolllink
         to="installationDate"
         activeClass="active"
