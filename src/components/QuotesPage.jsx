@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import NameQuestion from "./NameQuestion";
-import EmailQuestion from "./EmailQuestion";
-import TelephoneQuestion from "./TelephoneQuestion";
-import AddressQuestion from "./AddressQuestion";
-import InstallationDate from "./InstallationDate";
+import NameQuestion from "./mandatoryQuestions/NameQuestion";
+import EmailQuestion from "./mandatoryQuestions/EmailQuestion";
+import TelephoneQuestion from "./mandatoryQuestions/TelephoneQuestion";
+import AddressQuestion from "./mandatoryQuestions/AddressQuestion";
+import InstallationDate from "./additionalQuestions/InstallationDate";
 import axios from "axios";
 import { Form } from "react-final-form";
 
