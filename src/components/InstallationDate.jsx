@@ -8,9 +8,8 @@ const InstallationDate = () => {
   const [index, setIndex] = useState("");
 
   return (
-    <>
     <div id="installationDate">
-        <p>
+      <p>
         Thank you, from now on you just have to click some icons to get a more
         accurate quote or you can choose to submit right now
       </p>
@@ -33,7 +32,11 @@ const InstallationDate = () => {
           type="button"
           onClick={() => setTimeFrame("0-3 Months")}
         >
-          <img className="installationIcons" src="/images/dummylogo.png" alt="0-3 months" />
+          <img
+            className="installationIcons"
+            src="/images/dummylogo.png"
+            alt="0-3 months"
+          />
         </button>{" "}
       </Scrolllink>
       <Scrolllink
@@ -53,7 +56,11 @@ const InstallationDate = () => {
           type="button"
           onClick={() => setTimeFrame("3-6 Months")}
         >
-          <img className="installationIcons" src="/images/dummylogo.png" alt="3-6 months" />
+          <img
+            className="installationIcons"
+            src="/images/dummylogo.png"
+            alt="3-6 months"
+          />
         </button>{" "}
       </Scrolllink>
       <Scrolllink
@@ -73,7 +80,11 @@ const InstallationDate = () => {
           type="button"
           onClick={() => setTimeFrame("6-12 Months")}
         >
-          <img className="installationIcons" src="/images/dummylogo.png" alt="6-12 months" />
+          <img
+            className="installationIcons"
+            src="/images/dummylogo.png"
+            alt="6-12 months"
+          />
         </button>{" "}
       </Scrolllink>
       <Scrolllink
@@ -93,7 +104,11 @@ const InstallationDate = () => {
           type="button"
           onClick={() => setTimeFrame("Not sure")}
         >
-          <img className="installationIcons" src="/images/dummylogo.png" alt="Not sure" />
+          <img
+            className="installationIcons"
+            src="/images/dummylogo.png"
+            alt="Not sure"
+          />
         </button>
       </Scrolllink>{" "}
       <br />
@@ -107,7 +122,7 @@ const InstallationDate = () => {
       >
         Back
       </Scrolllink>
-        <Scrolllink
+      <Scrolllink
         id="installationDateSkip"
         to="propertyType"
         activeClass="active"
@@ -123,8 +138,6 @@ const InstallationDate = () => {
       </Scrolllink>
       {components[index]}
     </div>
-    <br />
-    </>
   );
 };
 

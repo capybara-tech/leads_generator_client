@@ -54,7 +54,7 @@ const QuotesPage = () => {
 
       responseMessage = response.data.message;
     } catch (error) {
-      responseMessage = "Somthing went wrong, please try again"
+      responseMessage = "Somthing went wrong, please try again";
     } finally {
       setMessage(responseMessage);
     }
@@ -110,7 +110,7 @@ const QuotesPage = () => {
                 <>
                   <label>Lastly the address intend on turning green?</label>
                   <AddressQuestion />
-                 
+
                   {({ input }) => {
                     return (
                       <>
@@ -124,9 +124,11 @@ const QuotesPage = () => {
               )}
               {values.address && values.address !== "false" && (
                 <>
-                  <button data-cy="button" type="submit">Submit</button>
+                  <button data-cy="button" type="submit">
+                    Submit
+                  </button>
                   <InstallationDate />
-                 </>
+                </>
               )}
             </form>
           );

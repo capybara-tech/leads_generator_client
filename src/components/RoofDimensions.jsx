@@ -15,21 +15,21 @@ const RoofDimensions = () => {
         component="input"
         type="number"
         placeholder="Gutter height"
-      ></Field>
+      />
       <Field
         name="roof_width"
         component="input"
         type="number"
         placeholder="Roof width"
-      ></Field>
+      />
       <Field
         name="roof_length"
         component="input"
         type="number"
         placeholder="Roof length"
-      ></Field>
+      />
       <Scrolllink
-      id="nextToElectricity"
+        id="nextToElectricity"
         to="electricity"
         activeClass="active"
         spy={true}
@@ -41,7 +41,8 @@ const RoofDimensions = () => {
         }}
       >
         Next
-      </Scrolllink><br />
+      </Scrolllink>
+      <br />
       <Scrolllink
         to="roofDirection"
         activeClass="active"

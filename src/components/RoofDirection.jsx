@@ -44,7 +44,7 @@ const RoofDirection = () => {
         <button
           id="northEastIcon"
           type="button"
-          onClick={() => setRoofDirection("Noth East")}
+          onClick={() => setRoofDirection("North East")}
         >
           <img src="/images/dummylogo.png" alt="North East" />
         </button>{" "}

@@ -23,7 +23,7 @@ const PropertyType = () => {
         }}
       >
         <button
-        className="propertyTypeIcons"
+          className="propertyTypeIcons"
           id="houseIcon"
           type="button"
           onClick={() => {
@@ -31,7 +31,11 @@ const PropertyType = () => {
             setIndex(0);
           }}
         >
-          <img className="propertyTypeIcons" src="/images/dummylogo.png" alt="house" />
+          <img
+            className="propertyTypeIcons"
+            src="/images/dummylogo.png"
+            alt="house"
+          />
         </button>{" "}
       </Scrolllink>
       <Scrolllink
@@ -46,7 +50,7 @@ const PropertyType = () => {
         }}
       >
         <button
-        className="propertyTypeIcons"
+          className="propertyTypeIcons"
           id="apartmentIcon"
           type="button"
           onClick={() => {
@@ -54,7 +58,11 @@ const PropertyType = () => {
             setIndex(0);
           }}
         >
-          <img className="propertyTypeIcons" src="/images/dummylogo.png" alt="apartment" />
+          <img
+            className="propertyTypeIcons"
+            src="/images/dummylogo.png"
+            alt="apartment"
+          />
         </button>{" "}
       </Scrolllink>
       <Scrolllink
@@ -69,7 +77,7 @@ const PropertyType = () => {
         }}
       >
         <button
-        className="propertyTypeIcons"
+          className="propertyTypeIcons"
           id="terracedSemiDetachedIcon"
           type="button"
           onClick={() => {
@@ -77,7 +85,11 @@ const PropertyType = () => {
             setIndex(0);
           }}
         >
-          <img className="propertyTypeIcons" src="/images/dummylogo.png" alt="terraced semi detached" />
+          <img
+            className="propertyTypeIcons"
+            src="/images/dummylogo.png"
+            alt="terraced semi detached"
+          />
         </button>{" "}
       </Scrolllink>
       <Scrolllink
@@ -92,7 +104,7 @@ const PropertyType = () => {
         }}
       >
         <button
-        className="propertyTypeIcons"
+          className="propertyTypeIcons"
           id="barnIcon"
           type="button"
           onClick={() => {
@@ -100,7 +112,11 @@ const PropertyType = () => {
             setIndex(0);
           }}
         >
-          <img className="propertyTypeIcons" src="/images/dummylogo.png" alt="barn" />
+          <img
+            className="propertyTypeIcons"
+            src="/images/dummylogo.png"
+            alt="barn"
+          />
         </button>{" "}
       </Scrolllink>
       <Scrolllink
@@ -115,7 +131,7 @@ const PropertyType = () => {
         }}
       >
         <button
-        className="propertyTypeIcons"
+          className="propertyTypeIcons"
           id="commercialIcon"
           type="button"
           onClick={() => {
@@ -123,7 +139,11 @@ const PropertyType = () => {
             setIndex(0);
           }}
         >
-          <img className="propertyTypeIcons" src="/images/dummylogo.png" alt="commercial" />
+          <img
+            className="propertyTypeIcons"
+            src="/images/dummylogo.png"
+            alt="commercial"
+          />
         </button>{" "}
       </Scrolllink>
       <Scrolllink
@@ -138,7 +158,7 @@ const PropertyType = () => {
         }}
       >
         <button
-        className="propertyTypeIcons"
+          className="propertyTypeIcons"
           id="agriculturalIcon"
           type="button"
           onClick={() => {
@@ -146,7 +166,11 @@ const PropertyType = () => {
             setIndex(0);
           }}
         >
-          <img className="propertyTypeIcons" src="/images/dummylogo.png" alt="agricultural" />
+          <img
+            className="propertyTypeIcons"
+            src="/images/dummylogo.png"
+            alt="agricultural"
+          />
         </button>{" "}
       </Scrolllink>
       <Scrolllink
@@ -161,7 +185,7 @@ const PropertyType = () => {
         }}
       >
         <button
-        className="propertyTypeIcons"
+          className="propertyTypeIcons"
           id="otherPropertyIcon"
           type="button"
           onClick={() => {
@@ -169,7 +193,11 @@ const PropertyType = () => {
             setIndex(0);
           }}
         >
-          <img className="propertyTypeIcons" src="/images/dummylogo.png" alt="other property" />
+          <img
+            className="propertyTypeIcons"
+            src="/images/dummylogo.png"
+            alt="other property"
+          />
         </button>{" "}
       </Scrolllink>{" "}
       <br />

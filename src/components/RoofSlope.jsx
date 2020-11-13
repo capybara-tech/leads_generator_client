@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import RoofType from "./RoofType"
+import RoofType from "./RoofType";
 import { Link as Scrolllink } from "react-scroll";
 
 const RoofSlope = () => {
@@ -105,7 +105,8 @@ const RoofSlope = () => {
         }}
       >
         Next
-      </Scrolllink><br />
+      </Scrolllink>
+      <br />
       <Scrolllink
         to="propertyType"
         activeClass="active"

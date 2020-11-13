@@ -23,14 +23,13 @@ const Electricity = () => {
       <button id="35A+Icon" type="button" onClick={() => setFuseSize("35A+")}>
         <img src="/images/dummylogo.png" alt="35A+" />
       </button>
-
       <h2>What is your yearly energy consumption?</h2>
       <Field
         name="energy_consumption"
         component="input"
         type="number"
         placeholder="Energy consumption"
-      ></Field>
+      />
     </div>
   );
 };

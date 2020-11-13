@@ -32,7 +32,6 @@ const AddressQuestion = () => {
       >
         Next
       </Scrolllink>
-    
     </div>
   );
 };
