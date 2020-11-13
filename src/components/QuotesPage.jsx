@@ -11,7 +11,6 @@ const QuotesPage = () => {
   const [message, setMessage] = useState("");
 
   const onSubmit = async (event) => {
-    debugger
     event.preventDefault();
     let responseMessage, quoteParams, response;
     let {
@@ -55,7 +54,7 @@ const QuotesPage = () => {
 
       responseMessage = response.data.message;
     } catch (error) {
-      responseMessage = response.data.error;
+      responseMessage = "Somthing went wrong, please try again"
     } finally {
       setMessage(responseMessage);
     }
