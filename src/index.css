@@ -36,7 +36,7 @@ html,
   display: block;
 }
 
-#bannerInfoTxt{
+#bannerInfoTxt {
   color: rgba(238, 238, 238, 0.742);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -47,14 +47,14 @@ html,
   transform: translate(-50%, -50%);
 }
 
-.bannerInfo{
+.bannerInfo {
   background: none;
-  color:rgba(238, 238, 238, 0.742);
+  color: rgba(238, 238, 238, 0.742);
 }
 
-#subInfoTxt{
+#subInfoTxt {
   background: none;
-  color:rgba(238, 238, 238, 0.742);
+  color: rgba(238, 238, 238, 0.742);
   font-size: 1.5vw;
 }
 
@@ -105,13 +105,13 @@ html,
   color: #0e0905cb;
 }
 
-.angle.down.icon{
+.angle.down.icon {
   color: #fe8733cb;
 }
 
 #landingPageInfoSegment {
-display: block;
-padding: 2vh;
+  display: block;
+  padding: 2vh;
 }
 
 .infoSegmentIcons {
@@ -120,6 +120,27 @@ padding: 2vh;
 
 .infoSegmentIcons:hover {
   color: rgba(0, 0, 0, 0.3);
+}
+
+#quotesPage {
+  padding-top: 15vh;
+  padding-bottom: 7vh;
+}
+
+#nameQuestion {
+  height: 100vh;
+}
+
+#emailQuestion {
+  height: 100vh;
+}
+
+#telephoneQuestion {
+  height: 100vh;
+}
+
+#addressQuestion {
+  height: 100vh;
 }
 
 /* ------------------------Mobile------------------------ */
@@ -141,12 +162,12 @@ padding: 2vh;
 
 .bannerInfoMob {
   background: none;
-  color:rgba(238, 238, 238, 0.742);
+  color: rgba(238, 238, 238, 0.742);
 }
 
 #subInfoTxtMob {
   background: none;
-  color:rgba(238, 238, 238, 0.742);
+  color: rgba(238, 238, 238, 0.742);
   font-size: 4.5vw;
 }
 

@@ -1,13 +1,11 @@
 import React, { useState } from "react";
+import NameQuestion from "./NameQuestion";
+import EmailQuestion from "./EmailQuestion";
+import TelephoneQuestion from "./TelephoneQuestion";
+import AddressQuestion from "./AddressQuestion";
+import InstallationDate from "./InstallationDate";
 import axios from "axios";
-import { Form, Field } from "react-final-form";
-
-const normaliseTelephone = (value) => {
-  if (!value) return value;
-  const onlyNums = value.replace(/[^\d]/g, "");
-  if (onlyNums.length <= 10)
-    return `${onlyNums.slice(0, 10)}`
-}
+import { Form } from "react-final-form";
 
 const QuotesPage = () => {
   const [message, setMessage] = useState("");
@@ -15,7 +13,22 @@ const QuotesPage = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
     let responseMessage, quoteParams, response;
-    let { name, email, telephone, address } = event.target;
+    let {
+      name,
+      email,
+      telephone,
+      address,
+      installation_date = "",
+      property_type = "",
+      roof_slope = "",
+      roof_type = "",
+      roof_direction = "",
+      gutter_height = "",
+      roof_width = "",
+      roof_length = "",
+      fuse_size = "",
+      energy_consumption = "",
+    } = event.target;
 
     try {
       quoteParams = {
@@ -23,6 +36,16 @@ const QuotesPage = () => {
         email: email.value,
         telephone: telephone.value,
         address: address.value,
+        installation_date: installation_date.value,
+        property_type: property_type.value,
+        roof_slope: roof_slope.value,
+        roof_type: roof_type.value,
+        roof_direction: roof_direction.value,
+        gutter_height: gutter_height.value,
+        roof_width: roof_width.value,
+        roof_length: roof_length.value,
+        fuse_size: fuse_size.value,
+        energy_consumption: energy_consumption.value,
       };
 
       response = await axios.post("http://localhost:3000/api/v1/quotes", {
@@ -31,14 +54,14 @@ const QuotesPage = () => {
 
       responseMessage = response.data.message;
     } catch (error) {
-      responseMessage = error.response.data.errors;
+      responseMessage = "Somthing went wrong, please try again";
     } finally {
       setMessage(responseMessage);
     }
   };
 
   return (
-    <>
+    <div id="quotesPage">
       <h1 data-cy="title">Get up to three quotes</h1>
       <Form
         onSubmit={onSubmit}
@@ -49,94 +72,70 @@ const QuotesPage = () => {
           const { values } = props;
           return (
             <form data-cy="quote-form" onSubmit={onSubmit}>
-              <label>My name's Felix, what's yours?</label>
-              <br />
-              <Field
-                name="name"
-                component="input"
-                type="text"
-                placeholder="Name"
-              ></Field>
+              <NameQuestion />
 
               {values.name && values.name !== "false" && (
-                <Field
-                  name="email"
-                  component="input"
-                  type="text"
-                  placeholder="Email"
-                >
+                <>
+                  <label>Thanks {values.name}, and your email address?</label>{" "}
+                  <br />
+                  <EmailQuestion />
                   {({ input }) => {
                     return (
                       <>
                         {" "}
-                        <br />
-                        <label>
-                          Thanks {values.name}, and your email address?
-                        </label>{" "}
-                        <br />
-                        {values.name && values.name !== "false" && (
-                          <input {...input} />
-                        )}
+                        <input {...input} />
                       </>
                     );
                   }}
-                </Field>
+                </>
               )}
-              {values.email && values.email.includes("@") && values.email.includes(".") && (
-                <Field
-                  name="telephone"
-                  component="input"
-                  type="text"
-                  placeholder="Telephone"
-                  parse={normaliseTelephone}
-                >
-                  {({ input }) => {
-                    return (
-                      <>
-                        {" "}
-                        <br />
-                        <label>
-                          Great, and the best number to contact you on?
-                        </label>{" "}
-                        <br />
-                        {values.email && values.email.includes("@") && values.email.includes(".") && (
-                          <input {...input} />
-                        )}
-                      </>
-                    );
-                  }}
-                </Field>
-              )}
+              {values.email &&
+                values.email.includes("@") &&
+                values.email.includes(".") && (
+                  <>
+                    <label>Great, and the best number to contact you on?</label>
+                    <TelephoneQuestion />
+                    {({ input }) => {
+                      return (
+                        <>
+                          {values.email &&
+                            values.email.includes("@") &&
+                            values.email.includes(".") && <input {...input} />}
+                        </>
+                      );
+                    }}
+                  </>
+                )}
               {values.telephone && values.telephone.length === 10 && (
-                <Field
-                  name="address"
-                  component="input"
-                  type="text"
-                  placeholder="Address"
-                >
+                <>
+                  <label>Lastly the address intend on turning green?</label>
+                  <AddressQuestion />
+
                   {({ input }) => {
                     return (
                       <>
-                        {" "}
-                        <br />
-                        <label>
-                          Lastly the address intend on turning green?
-                        </label>{" "}
-                        <br />
                         {values.telephone && values.telephone !== "false" && (
                           <input {...input} />
                         )}
                       </>
                     );
                   }}
-                </Field>
+                </>
+              )}
+              {values.address && values.address !== "false" && (
+                <>
+                  <button data-cy="button" type="submit">
+                    Submit
+                  </button>
+                  <InstallationDate />
+                </>
               )}
             </form>
           );
         }}
       />
       {message && <p data-cy="message">{message}</p>}
-    </>
+    </div>
   );
 };
 
