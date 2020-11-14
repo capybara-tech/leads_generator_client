@@ -1,11 +1,46 @@
-#nameQuestion{
-  height:100vh;
+#getUpTo3Quotes{
+  position: absolute;
+  top: 15%;
+  left: 7%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
-#questionForName{
+#nameQuestion {
+  height: 100vh;
+  background-color: rgba(238, 238, 238, 0.742);
+}
+
+#questionForName {
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+#fieldName {
+  width: 40vw;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+#nextToEmailQ {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 4vw;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  color: black;
+}
+#openingQuestionHello {
+  color: #fe8733cb;
+}
+#openingQuestion {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1, 5vw;
 }

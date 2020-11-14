@@ -5,20 +5,22 @@ import { Link as Scrolllink } from "react-scroll";
 
 const NameQuestion = () => {
   return (
-      <div id="nameQuestion">
-        <h1 data-cy="title">Get up to three quotes</h1>
-        <div id="questionForName">
-        <h3>My name's Felix, what's yours?</h3>
+    <div id="nameQuestion">
+      <h1 id="getUpTo3Quotes" data-cy="title">Get up to three quotes</h1>
+      <div id="questionForName">
+        <h3 id="openingQuestion"><span id="openingQuestionHello">Hello!</span> My name's Felix, what's yours?</h3>
         <br />
         <Field
           id="fieldName"
           name="name"
           component="input"
           type="text"
-          placeholder="Name"
+          placeholder="Name..."
         />
-        <br />
+        <br /> 
+        </div>
         <Scrolllink
+        id="nextToEmailQ"
           to="emailQuestion"
           activeClass="active"
           spy={true}
@@ -28,8 +30,8 @@ const NameQuestion = () => {
         >
           Next
         </Scrolllink>
-        </div>
-      </div>
+     
+    </div>
   );
 };
 
