@@ -17,13 +17,14 @@ describe("Admin can create contractor", () => {
         url: "http://localhost:3000/api/v1/auth/**",
         response: "fixture:registration_response.json",
       });
-      cy.visit("/")
-      cy.get("[data-cy=button]").contains("Admin").click({ force:true });
+      cy.visit("/");
+      cy.get("[data-cy=button]").contains("Admin").click({ force: true });
       cy.get("[data-cy=login-form]").within(() => {
         cy.get("[data-cy=email]").type("admin@mail.com");
         cy.get("[data-cy=password]").type("password");
         cy.get("[data-cy=button]").contains("Login").click();
       });
+      cy.get("#create-contractor").click();
     });
 
     it("Admin can create an contractor successfully", () => {
@@ -62,13 +63,14 @@ context("unsuccessfully", () => {
       url: "http://localhost:3000/api/v1/auth/**",
       response: "fixture:registration_response.json",
     });
-    cy.visit("/")
-    cy.get("[data-cy=button]").contains("Admin").click({ force:true });
+    cy.visit("/");
+    cy.get("[data-cy=button]").contains("Admin").click({ force: true });
     cy.get("[data-cy=login-form]").within(() => {
       cy.get("[data-cy=email]").type("admin@mail.com");
       cy.get("[data-cy=password]").type("password");
       cy.get("[data-cy=button]").contains("Login").click();
     });
+    cy.get("#create-contractor").click();
   });
 
   it("without email", () => {
