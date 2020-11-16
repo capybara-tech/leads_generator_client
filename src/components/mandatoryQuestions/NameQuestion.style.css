@@ -23,10 +23,18 @@
   border-top: none;
   border-left: none;
   border-right: none;
-  outline: none;
   box-shadow: none;
+  outline: none;
   background-color: transparent;
+  background: transparent;
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  transition: background-color 5000s;
+}
+
 #nextToEmailQ {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
