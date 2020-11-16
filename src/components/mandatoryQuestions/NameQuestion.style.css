@@ -1,4 +1,4 @@
-#getUpTo3Quotes{
+#getUpTo3Quotes {
   position: absolute;
   top: 15%;
   left: 7%;
@@ -19,20 +19,23 @@
   transform: translate(-50%, -50%);
 }
 #fieldName {
+  font-family: "Poppins", sans-serif;
+  font-size: 3vh;
   width: 40vw;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  border: none;
+  border-bottom: 2px solid black;
   box-shadow: none;
   outline: none;
   background-color: transparent;
   background: transparent;
 }
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active  {
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
   transition: background-color 5000s;
+  font-family: "Poppins", sans-serif;
+  font-size: 3vh;
 }
 
 #nextToEmailQ {
