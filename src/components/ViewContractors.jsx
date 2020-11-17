@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Card } from "semantic-ui-react";
 
 const ContractorPage = () => {
   const [contractors, setContractors] = useState([]);
@@ -19,16 +20,21 @@ const ContractorPage = () => {
   let content = contractors.map((contractor) => (
     <div data-cy={`contractor-${contractor.id}`} data-id={contractor.id}>
       <div>
-        <p data-cy="name">{contractor.name}</p>
-        <p data-cy="telephone">{contractor.telephone}</p>
-        <p data-cy="email">{contractor.email}</p>
+        <Card>
+          <Card.Content>
+            <Card.Header data-cy="name">{contractor.name}</Card.Header>
+            <Card.Meta data-cy="telephone">{contractor.telephone}</Card.Meta>
+            <Card.Meta data-cy="email">{contractor.email}</Card.Meta>
+          </Card.Content>
+        </Card>
+        <br />
       </div>
     </div>
   ));
 
   return (
     <div id="contractor-page">
-      <h1>Contractor list</h1>
+      <h2>Contractor list</h2>
       <div>{content}</div>
     </div>
   );

@@ -3,6 +3,7 @@ import ViewContractors from "./ViewContractors";
 import CreateContractor from "./CreateContractor";
 import Login from "./Login";
 import { connect } from "react-redux";
+import { Button } from 'semantic-ui-react'
 
 const AdminHomePage = (props) => {
   const [viewContractors, setViewContractors] = useState(false);
@@ -14,13 +15,13 @@ const AdminHomePage = (props) => {
     content = (
       <>
         <h2 data-cy="title">At your service...</h2>
-        <button id="view-contractors" onClick={setViewContractors}>
+        <Button primary id="view-contractors" onClick={setViewContractors}>
           View contractors
-        </button>
+        </Button>
         {viewContractors && <ViewContractors />}
-        <button id="create-contractor" onClick={setCreateContractor}>
+        <Button primary id="create-contractor" onClick={setCreateContractor}>
           Create contractor
-        </button>
+        </Button>
         {createContractor && <CreateContractor />}
       </>
     );
