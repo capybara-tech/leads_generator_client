@@ -23,7 +23,7 @@
   font-size: 3vh;
   width: 40vw;
   border: none;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
   box-shadow: none;
   outline: none;
   background-color: transparent;
@@ -40,12 +40,33 @@ input:-webkit-autofill:active {
 
 #nextToEmailQ {
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 4vw;
+  font-weight: 400;
+  font-size: 5vh;
   position: absolute;
   top: 50%;
   left: 75%;
-  color: black;
+  background-color: transparent;
+  border:none;
+  outline: none;
+  border-color: #fe8733cb;
+  color: #fe8733cb;
+}
+#nextToEmailQ::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fe8733cb;
+  transition: width .3s;
+}
+
+#nextToEmailQ:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+#nextToEmailQ.active {
+  border-bottom: 3px solid #fe8733cb;
 }
 #openingQuestionHello {
   color: #fe8733cb;
