@@ -3,20 +3,14 @@
       {
         "id": 1,
         "name": "Jacks AB",
-        "contact_person": "Sam Peters",
-        "address": "Frejgatan 16113 49 Stockholm",
         "telephone": "0767856789",
-        "email": "peter@mail.com",
-        "company_number": "556785-7932"
+        "email": "peter@mail.com"
       },
       {
         "id": 2,
         "name": "Active AB",
-        "contact_person": "Simon Eriksson",
-        "address": "Frejgatan 16113 45 Stockholm",
         "telephone": "0767856666",
-        "email": "gary@mail.com",
-        "company_number": "556785-6556"
+        "email": "gary@mail.com"
       }
     ]
   }

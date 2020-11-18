@@ -1,0 +1,13 @@
+{
+  "contractors": [
+    {
+      "id": 1,
+      "name": "Jacks AB",
+      "contact_person": "Sam Peters",
+      "address": "Frejgatan 16113 49 Stockholm",
+      "telephone": "0767856789",
+      "email": "peter@mail.com",
+      "company_number": "556785-7932"
+    }
+  ]
+}
