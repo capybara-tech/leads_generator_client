@@ -34,6 +34,7 @@ describe("Admin can see specific contractor", () => {
 
   it("Admin can see content of contractor one", () => {
     cy.get("[data-cy=contractor-1]").within(() => {
+      cy.get("[data-cy=button]").click();
       cy.get("[data-cy=name]").should("contain", "Jacks AB");
       cy.get("[data-cy=contactPerson]").should("contain", "Sam Peters");
       cy.get("[data-cy=address]").should("contain", "Frejgatan 16113 49 Stockholm");
