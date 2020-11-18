@@ -29,7 +29,7 @@ const NameQuestion = () => {
         activeClass="active"
         spy={true}
         smooth={true}
-        offset={-250}
+        offset={0}
         duration={1500}
       >
         <button id="nextToEmailQ">Next</button>

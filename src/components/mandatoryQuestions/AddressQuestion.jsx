@@ -22,7 +22,7 @@ const AddressQuestion = () => {
         activeClass="active"
         spy={true}
         smooth={true}
-        offset={-250}
+        offset={0}
         duration={1500}
       ><button id="backToTelephoneQ">Back</button>
         
@@ -32,7 +32,7 @@ const AddressQuestion = () => {
         activeClass="active"
         spy={true}
         smooth={true}
-        offset={-250}
+        offset={0}
         duration={1500}
       ><button id="nextToIconQ">Next</button>
         

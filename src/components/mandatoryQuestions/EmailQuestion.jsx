@@ -24,7 +24,7 @@ const EmailQuestion = () => {
         activeClass="active"
         spy={true}
         smooth={true}
-        offset={-250}
+        offset={0}
         duration={1500}
       >
         <button id="backToNameQ">Back</button>
@@ -34,7 +34,7 @@ const EmailQuestion = () => {
         activeClass="active"
         spy={true}
         smooth={true}
-        offset={-250}
+        offset={0}
         duration={1500}
       >
         <button id="nextToTelephoneQ">Next</button>
