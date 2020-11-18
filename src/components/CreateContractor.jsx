@@ -44,7 +44,7 @@ const CreateContractor = () => {
 
   return (
     <>
-      <h4>Create a new contractor</h4>
+      <h2>Create a new contractor</h2>
       <Form data-cy="contractor-form" onSubmit={submitContractor}>
         <Form.Group widths="equal">
           <Form.Field
