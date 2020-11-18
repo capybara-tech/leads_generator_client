@@ -7,6 +7,7 @@ const EmailQuestion = () => {
   return (
     <div id="emailQuestion">
       <div id="questionForEmail">
+      <h3 id="questionAskingForEmail">Thanks <span id="nameFromPerson">name of person</span>, what's your email address?</h3>{" "}
         <Field
           id="fieldEmail"
           name="email"

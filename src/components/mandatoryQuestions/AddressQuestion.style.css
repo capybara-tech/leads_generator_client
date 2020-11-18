@@ -1,26 +1,26 @@
-#telephoneQuestion {
+#addressQuestion {
   position: relative;
   height: 100vh;
   background-color: rgba(238, 238, 238, 0.742);
 }
+#questionAskingForAddress {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1, 5vw;
+}
+#addressWord{
+    color: #fe8733cb;
+}
 
-#questionForTelephone {
+#questionForAddress {
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-#questionAskingForTelephone {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 1, 5vw;
-}
-#contactWord{
-    color: #fe8733cb;
-}
 
-#fieldTelephone {
+#fieldAddress {
   font-family: "Poppins", sans-serif;
   font-size: 3vh;
   width: 40vw;
@@ -31,7 +31,6 @@
   background-color: transparent;
   background: transparent;
 }
-
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -41,7 +40,7 @@ input:-webkit-autofill:active {
   font-size: 3vh;
 }
 
-#nextToAddressQ {
+#nextToIconQ {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 4vh;
@@ -49,30 +48,27 @@ input:-webkit-autofill:active {
   top: 50%;
   left: 75%;
   background-color: transparent;
-  border:none;
+  border: none;
   outline: none;
- 
 }
-
-#nextToAddressQ::after {
-  content: '';
+#nextToIconQ::after {
+  content: "";
   display: block;
   width: 0;
   height: 2px;
   background: black;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 
-#nextToAddressQ:hover::after {
+#nextToIconQ:hover::after {
   width: 100%;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 
-#nextToAddressQ.active {
+#nextToIconQ.active {
   border-bottom: 3px solid black;
 }
-
-#backToEmailQ {
+#backToTelephoneQ {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 4vh;
@@ -80,25 +76,23 @@ input:-webkit-autofill:active {
   top: 50%;
   left: 15%;
   background-color: transparent;
-  border:none;
+  border: none;
   outline: none;
- 
 }
-
-#backToEmailQ::after {
-  content: '';
+#backToTelephoneQ::after {
+  content: "";
   display: block;
   width: 0;
   height: 2px;
   background: black;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 
-#backToEmailQ:hover::after {
+#backToTelephoneQ:hover::after {
   width: 100%;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 
-#backToEmailQ.active {
+#backToTelephoneQ.active {
   border-bottom: 3px solid black;
 }

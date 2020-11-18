@@ -75,7 +75,6 @@ const QuotesPage = () => {
 
               {values.name && values.name !== "false" && (
                 <>
-                  <label>Thanks {values.name}, and your email address?</label>{" "}
                   <EmailQuestion />
                   {({ input }) => {
                     return (
@@ -91,7 +90,6 @@ const QuotesPage = () => {
                 values.email.includes("@") &&
                 values.email.includes(".") && (
                   <>
-                    <label>Great, and the best number to contact you on?</label>
                     <TelephoneQuestion />
                     {({ input }) => {
                       return (
@@ -106,7 +104,6 @@ const QuotesPage = () => {
                 )}
               {values.telephone && values.telephone.length === 10 && (
                 <>
-                  <label>Lastly the address intend on turning green?</label>
                   <AddressQuestion />
 
                   {({ input }) => {
