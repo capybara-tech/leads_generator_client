@@ -41,22 +41,21 @@ input:-webkit-autofill:active {
 #nextToEmailQ {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 5vh;
+  font-size: 4vh;
   position: absolute;
   top: 50%;
   left: 75%;
   background-color: transparent;
   border:none;
   outline: none;
-  border-color: #fe8733cb;
-  color: #fe8733cb;
+ 
 }
 #nextToEmailQ::after {
   content: '';
   display: block;
   width: 0;
   height: 2px;
-  background: #fe8733cb;
+  background: black;
   transition: width .3s;
 }
 
@@ -66,7 +65,7 @@ input:-webkit-autofill:active {
 }
 
 #nextToEmailQ.active {
-  border-bottom: 3px solid #fe8733cb;
+  border-bottom: 3px solid black;
 }
 #openingQuestionHello {
   color: #fe8733cb;
