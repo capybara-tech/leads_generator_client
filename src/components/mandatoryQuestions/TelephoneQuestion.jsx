@@ -1,5 +1,5 @@
 import React from "react";
-import "./TelephoneQuestion.style.css"
+import "./TelephoneQuestion.style.css";
 import { Field } from "react-final-form";
 import { Link as Scrolllink } from "react-scroll";
 
@@ -13,16 +13,19 @@ const TelephoneQuestion = () => {
   return (
     <div id="telephoneQuestion">
       <div id="questionForTelephone">
-      <h3 id="questionAskingForTelephone">Great, and the best number to <span id="contactWord">contact</span> you on?</h3>
-      <Field
-        id="fieldTelephone"
-        name="telephone"
-        component="input"
-        type="text"
-        placeholder="Telephone"
-        parse={normaliseTelephone}
-      />
-      <br />
+        <h3 id="questionAskingForTelephone">
+          Great, and the best number to <span id="contactWord">contact</span>{" "}
+          you on?
+        </h3>
+        <Field
+          id="fieldTelephone"
+          name="telephone"
+          component="input"
+          type="text"
+          placeholder="Telephone"
+          parse={normaliseTelephone}
+        />
+        <br />
       </div>
       <Scrolllink
         to="emailQuestion"

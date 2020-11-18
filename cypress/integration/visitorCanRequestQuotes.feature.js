@@ -54,7 +54,7 @@ describe("Visitor can request quotes", () => {
       cy.get("[data-cy=quote-form]").within(() => {
         cy.get('[name="name"]').type("Peter");
         cy.get('[name="email"]').type("peter@mail.com");
-        cy.get("#emailBack").click();
+        cy.get("#backToEmailQ").click();
         cy.get('[name="email"]').type("user@mail.com");
         cy.get('[name="telephone"]').type("0736123456");
         cy.get('[name="address"]').type("Address");

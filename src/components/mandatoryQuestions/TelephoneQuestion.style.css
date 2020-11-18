@@ -11,13 +11,15 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 #questionAskingForTelephone {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 1, 5vw;
 }
-#contactWord{
-    color: #fe8733cb;
+
+#contactWord {
+  color: #fe8733cb;
 }
 
 #fieldTelephone {
@@ -49,23 +51,22 @@ input:-webkit-autofill:active {
   top: 50%;
   left: 75%;
   background-color: transparent;
-  border:none;
+  border: none;
   outline: none;
- 
 }
 
 #nextToAddressQ::after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 2px;
   background: black;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 
 #nextToAddressQ:hover::after {
   width: 100%;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 
 #nextToAddressQ.active {
@@ -80,23 +81,22 @@ input:-webkit-autofill:active {
   top: 50%;
   left: 15%;
   background-color: transparent;
-  border:none;
+  border: none;
   outline: none;
- 
 }
 
 #backToEmailQ::after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 2px;
   background: black;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 
 #backToEmailQ:hover::after {
   width: 100%;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 
 #backToEmailQ.active {

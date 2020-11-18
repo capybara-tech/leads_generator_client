@@ -3,13 +3,15 @@
   height: 100vh;
   background-color: rgba(238, 238, 238, 0.742);
 }
+
 #questionAskingForEmail {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 1, 5vw;
 }
-#nameFromPerson{
-    color: #fe8733cb;
+
+#nameFromPerson {
+  color: #fe8733cb;
 }
 
 #questionForEmail {
@@ -31,6 +33,7 @@
   background-color: transparent;
   background: transparent;
 }
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -51,6 +54,7 @@ input:-webkit-autofill:active {
   border: none;
   outline: none;
 }
+
 #nextToTelephoneQ::after {
   content: "";
   display: block;
@@ -68,6 +72,7 @@ input:-webkit-autofill:active {
 #nextToTelephoneQ.active {
   border-bottom: 3px solid black;
 }
+
 #backToNameQ {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -79,6 +84,7 @@ input:-webkit-autofill:active {
   border: none;
   outline: none;
 }
+
 #backToNameQ::after {
   content: "";
   display: block;
