@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import NameQuestion from "./NameQuestion";
-import EmailQuestion from "./EmailQuestion";
-import TelephoneQuestion from "./TelephoneQuestion";
-import AddressQuestion from "./AddressQuestion";
-import InstallationDate from "./InstallationDate";
+import NameQuestion from "./mandatoryQuestions/NameQuestion";
+import EmailQuestion from "./mandatoryQuestions/EmailQuestion";
+import TelephoneQuestion from "./mandatoryQuestions/TelephoneQuestion";
+import AddressQuestion from "./mandatoryQuestions/AddressQuestion";
+import InstallationDate from "./additionalQuestions/InstallationDate";
 import axios from "axios";
 import { Form } from "react-final-form";
 
@@ -62,7 +62,6 @@ const QuotesPage = () => {
 
   return (
     <div id="quotesPage">
-      <h1 data-cy="title">Get up to three quotes</h1>
       <Form
         onSubmit={onSubmit}
         initialValues={{
@@ -76,8 +75,6 @@ const QuotesPage = () => {
 
               {values.name && values.name !== "false" && (
                 <>
-                  <label>Thanks {values.name}, and your email address?</label>{" "}
-                  <br />
                   <EmailQuestion />
                   {({ input }) => {
                     return (
@@ -93,7 +90,6 @@ const QuotesPage = () => {
                 values.email.includes("@") &&
                 values.email.includes(".") && (
                   <>
-                    <label>Great, and the best number to contact you on?</label>
                     <TelephoneQuestion />
                     {({ input }) => {
                       return (
@@ -108,7 +104,6 @@ const QuotesPage = () => {
                 )}
               {values.telephone && values.telephone.length === 10 && (
                 <>
-                  <label>Lastly the address intend on turning green?</label>
                   <AddressQuestion />
 
                   {({ input }) => {

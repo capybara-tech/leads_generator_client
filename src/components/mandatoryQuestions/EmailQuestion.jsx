@@ -1,32 +1,46 @@
 import React from "react";
+import "./EmailQuestion.style.css";
 import { Field } from "react-final-form";
 import { Link as Scrolllink } from "react-scroll";
 
 const EmailQuestion = () => {
   return (
     <div id="emailQuestion">
-      <Field name="email" component="input" type="text" placeholder="Email" />
-      <br />
+      <div id="questionForEmail">
+        <h3 id="questionAskingForEmail">
+          Thanks <span id="nameFromPerson">name of person</span>, what's your
+          email address?
+        </h3>{" "}
+        <Field
+          id="fieldEmail"
+          name="email"
+          component="input"
+          type="text"
+          placeholder="Email"
+        />
+        <br />
+      </div>
+
       <Scrolllink
         id="emailBack"
         to="nameQuestion"
         activeClass="active"
         spy={true}
         smooth={true}
-        offset={-250}
+        offset={0}
         duration={1500}
       >
-        Back
+        <button id="backToNameQ">Back</button>
       </Scrolllink>
       <Scrolllink
         to="telephoneQuestion"
         activeClass="active"
         spy={true}
         smooth={true}
-        offset={-250}
+        offset={0}
         duration={1500}
       >
-        Next
+        <button id="nextToTelephoneQ">Next</button>
       </Scrolllink>
     </div>
   );
