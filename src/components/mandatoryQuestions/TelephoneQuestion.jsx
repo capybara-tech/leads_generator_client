@@ -1,4 +1,5 @@
 import React from "react";
+import "./TelephoneQuestion.style.css"
 import { Field } from "react-final-form";
 import { Link as Scrolllink } from "react-scroll";
 
@@ -11,7 +12,9 @@ const normaliseTelephone = (value) => {
 const TelephoneQuestion = () => {
   return (
     <div id="telephoneQuestion">
+      <div id="questionForTelephone">
       <Field
+        id="fieldTelephone"
         name="telephone"
         component="input"
         type="text"
@@ -19,6 +22,7 @@ const TelephoneQuestion = () => {
         parse={normaliseTelephone}
       />
       <br />
+      </div>
       <Scrolllink
         to="emailQuestion"
         activeClass="active"
@@ -27,7 +31,7 @@ const TelephoneQuestion = () => {
         offset={-250}
         duration={1500}
       >
-        Back
+        <button id="backToEmailQ">Back</button>
       </Scrolllink>
       <Scrolllink
         to="addressQuestion"
@@ -37,7 +41,7 @@ const TelephoneQuestion = () => {
         offset={-250}
         duration={1500}
       >
-        Next
+        <button id="nextToAddressQ"> Next</button>
       </Scrolllink>
     </div>
   );

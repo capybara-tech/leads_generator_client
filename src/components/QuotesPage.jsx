@@ -76,7 +76,6 @@ const QuotesPage = () => {
               {values.name && values.name !== "false" && (
                 <>
                   <label>Thanks {values.name}, and your email address?</label>{" "}
-                  <br />
                   <EmailQuestion />
                   {({ input }) => {
                     return (
