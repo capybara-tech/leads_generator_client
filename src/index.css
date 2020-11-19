@@ -122,18 +122,6 @@ html,
   color: rgba(0, 0, 0, 0.3);
 }
 
-#emailQuestion {
-  height: 100vh;
-}
-
-#telephoneQuestion {
-  height: 100vh;
-}
-
-#addressQuestion {
-  height: 100vh;
-}
-
 /* ------------------------Mobile------------------------ */
 
 #bannerImgMob {
