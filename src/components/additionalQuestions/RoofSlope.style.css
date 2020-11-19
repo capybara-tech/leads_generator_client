@@ -1,10 +1,10 @@
-#propertyType {
+#roofSlope {
   position: relative;
   height: 100vh;
   background-color: rgba(238, 238, 238, 0.742);
 }
 
-#propertyTypeIcons {
+#roofSlopeIcons {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -12,17 +12,17 @@
   text-align: center;
 }
 
-.imgPropertyTypeIcons {
+.imgRoofSlopeIcons {
   height: 30vh;
   width: 10vw;
 }
 
-#questionForPropertyType {
+#questionForRoofSlope {
   font-family: "Poppins", sans-serif;
   font-size: 3vh;
 }
 
-#propertyWord{
+#slopeWord{
   color: #fe8733cb;
 }
 
@@ -35,7 +35,7 @@ input:-webkit-autofill:active {
   font-size: 3vh;
 }
 
-#skipToRoofSlopeQ {
+#skipToRoofTypeQ {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 4vh;
@@ -47,7 +47,7 @@ input:-webkit-autofill:active {
   outline: none;
 }
 
-#skipToRoofSlopeQ::after {
+#skipToRoofTypeQ::after {
   content: "";
   display: block;
   width: 0;
@@ -56,16 +56,16 @@ input:-webkit-autofill:active {
   transition: width 0.3s;
 }
 
-#skipToRoofSlopeQ:hover::after {
+#skipToRoofTypeQ:hover::after {
   width: 100%;
   transition: width 0.3s;
 }
 
-#skipToRoofSlopeQ.active {
+#skipToRoofTypeQ.active {
   border-bottom: 3px solid black;
 }
 
-#backToInstallationDateQ {
+#backToPropertyTypeQ {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 4vh;
@@ -77,7 +77,7 @@ input:-webkit-autofill:active {
   outline: none;
 }
 
-#backToInstallationDateQ::after {
+#backToPropertyTypeQ::after {
   content: "";
   display: block;
   width: 0;
@@ -86,11 +86,55 @@ input:-webkit-autofill:active {
   transition: width 0.3s;
 }
 
-#backToInstallationDateQ:hover::after {
+#backToPropertyTypeQ:hover::after {
   width: 100%;
   transition: width 0.3s;
 }
 
-#backToInstallationDateQ.active {
+#backToPropertyTypeQ.active {
   border-bottom: 3px solid black;
+}
+
+#nextToRoofTypeQ {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 3vh;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+#nextToRoofTypeQ::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 0.3s;
+}
+
+#nextToRoofTypeQ:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#nextToRoofTypeQ.active {
+  border-bottom: 3px solid black;
+}
+
+#fieldSlope {
+  font-family: "Poppins", sans-serif;
+  font-size: 3vh;
+  width: 30vw;
+  border: none;
+  border-bottom: 1px solid black;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  background: transparent;
+}
+#exactRoofSlopeQ{
+  font-family: "Poppins", sans-serif;
+  font-size: 3vh;
 }
