@@ -26,7 +26,7 @@ const InstallationDate = () => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-10}
+                offset={-40}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
@@ -39,7 +39,7 @@ const InstallationDate = () => {
                   onClick={() => setTimeFrame("0-3 Months")}
                 >
                   <img
-                    className="imgIcons"
+                    className="imgInstallationDateIcons"
                     src="/images/dummylogo.png"
                     alt="0-3 months"
                   />
@@ -52,7 +52,7 @@ const InstallationDate = () => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-10}
+                offset={-40}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
@@ -65,7 +65,7 @@ const InstallationDate = () => {
                   onClick={() => setTimeFrame("3-6 Months")}
                 >
                   <img
-                    className="imgIcons"
+                    className="imgInstallationDateIcons"
                     src="/images/dummylogo.png"
                     alt="3-6 months"
                   />
@@ -78,7 +78,7 @@ const InstallationDate = () => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-10}
+                offset={-40}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
@@ -91,7 +91,7 @@ const InstallationDate = () => {
                   onClick={() => setTimeFrame("6-12 Months")}
                 >
                   <img
-                    className="imgIcons"
+                    className="imgInstallationDateIcons"
                     src="/images/dummylogo.png"
                     alt="6-12 months"
                   />
@@ -104,7 +104,7 @@ const InstallationDate = () => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-10}
+                offset={-40}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
@@ -117,7 +117,7 @@ const InstallationDate = () => {
                   onClick={() => setTimeFrame("Not sure")}
                 >
                   <img
-                    className="imgIcons"
+                    className="imgInstallationDateIcons"
                     src="/images/dummylogo.png"
                     alt="Not sure"
                   />
@@ -143,7 +143,7 @@ const InstallationDate = () => {
           activeClass="active"
           spy={true}
           smooth={true}
-          offset={-10}
+          offset={-40}
           duration={1500}
           onMouseDown={async (e) => {
             setIndex(0);
