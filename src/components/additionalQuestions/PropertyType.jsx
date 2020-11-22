@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./PropertyType.style.css"
+import "./PropertyType.style.css";
 import RoofSlope from "./RoofSlope";
 import { Link as Scrolllink } from "react-scroll";
 import { Grid } from "semantic-ui-react";
@@ -14,7 +14,9 @@ const PropertyType = () => {
       <div id="propertyType">
         <input type="hidden" name="property_type" value={propertyType} />
         <Grid id="propertyTypeIcons">
-          <h3 id="questionForPropertyType">What type of <span id="propertyWord">property</span> do you own?</h3>
+          <h3 id="questionForPropertyType">
+            What type of <span id="propertyWord">property</span> do you own?
+          </h3>
           <Grid.Row relaxed columns={4}>
             <Grid.Column>
               <Scrolllink
@@ -29,7 +31,7 @@ const PropertyType = () => {
                 }}
               >
                 <button
-                   className="buttonIcons"
+                  className="buttonIcons"
                   id="houseIcon"
                   type="button"
                   onClick={() => {
@@ -58,7 +60,7 @@ const PropertyType = () => {
                 }}
               >
                 <button
-                   className="buttonIcons"
+                  className="buttonIcons"
                   id="apartmentIcon"
                   type="button"
                   onClick={() => {
@@ -87,7 +89,7 @@ const PropertyType = () => {
                 }}
               >
                 <button
-                   className="buttonIcons"
+                  className="buttonIcons"
                   id="terracedSemiDetachedIcon"
                   type="button"
                   onClick={() => {
@@ -176,7 +178,7 @@ const PropertyType = () => {
                 }}
               >
                 <button
-                 className="buttonIcons"
+                  className="buttonIcons"
                   id="agriculturalIcon"
                   type="button"
                   onClick={() => {
@@ -205,7 +207,7 @@ const PropertyType = () => {
                 }}
               >
                 <button
-               className="buttonIcons"
+                  className="buttonIcons"
                   id="otherPropertyIcon"
                   type="button"
                   onClick={() => {
@@ -246,7 +248,7 @@ const PropertyType = () => {
             setIndex(0);
           }}
         >
-         <button id="skipToRoofSlopeQ">Skip</button>
+          <button id="skipToRoofSlopeQ">Skip</button>
         </Scrolllink>
       </div>
       {components[index]}
