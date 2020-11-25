@@ -1,0 +1,38 @@
+{
+  "quotes": [
+    {
+      "id": 1,
+      "name": "John Matthews",
+      "email": "user@mail.com",
+      "telephone": "0385337368",
+      "address": "Småbrukets backe 30 14158 Huddinge",
+      "installation_date": "within three months",
+      "property_type": "barn",
+      "roof_slope": "15 degrees",
+      "roof_type": "tiled",
+      "roof_direction": "north",
+      "gutter_height": "4.5m",
+      "roof_width": "4.5m",
+      "roof_length": "3m",
+      "fuse_size": "A16",
+      "energy_consumption": "3660kw"
+    },
+    {
+      "id": 2,
+      "name": "Peter Andrews",
+      "email": "peter123@mail.com",
+      "telephone": "0787890767",
+      "address": "Liljevalchsgatan 24, 151 45 Södertälje",
+      "installation_date": "within six months",
+      "property_type": "house",
+      "roof_slope": "5 degrees",
+      "roof_type": "slate",
+      "roof_direction": "south",
+      "gutter_height": "2.5m",
+      "roof_width": "6.4m",
+      "roof_length": "3.2m",
+      "fuse_size": "A16",
+      "energy_consumption": "48060kw"
+    }
+  ]
+}
