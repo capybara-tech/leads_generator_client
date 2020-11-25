@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Field } from "react-final-form";
 import Electricity from "./Electricity";
-import "./RoofDimensions.style.css"
+import "./RoofDimensions.style.css";
 import { Link as Scrolllink } from "react-scroll";
 
 const RoofDimensions = () => {
@@ -11,29 +11,32 @@ const RoofDimensions = () => {
   return (
     <>
       <div id="roofDimensions">
-    <div id="questionForRoofDimensions">
-        <h3 id="questionAskingForRoofDimensions"> What's your roof <span id="dimesionWord">dimension</span>?</h3>
-        <Field
-        id="fieldGutterHeight"
-          name="gutter_height"
-          component="input"
-          type="number"
-          placeholder="Gutter height"
-        />
-        <Field
-        id="fieldRoofWidth"
-          name="roof_width"
-          component="input"
-          type="number"
-          placeholder="Roof width"
-        />
-        <Field
-        id="fieldRoofLength"
-          name="roof_length"
-          component="input"
-          type="number"
-          placeholder="Roof length"
-        />
+        <div id="questionForRoofDimensions">
+          <h3 id="questionAskingForRoofDimensions">
+            {" "}
+            What's your roof <span id="dimesionWord">dimension</span>?
+          </h3>
+          <Field
+            id="fieldGutterHeight"
+            name="gutter_height"
+            component="input"
+            type="number"
+            placeholder="Gutter height"
+          />
+          <Field
+            id="fieldRoofWidth"
+            name="roof_width"
+            component="input"
+            type="number"
+            placeholder="Roof width"
+          />
+          <Field
+            id="fieldRoofLength"
+            name="roof_length"
+            component="input"
+            type="number"
+            placeholder="Roof length"
+          />
         </div>
         <Scrolllink
           id="nextToElectricity"
