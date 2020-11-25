@@ -24,7 +24,7 @@ describe("Admin can see search for quotes", () => {
         cy.get("[data-cy=password]").type("password");
         cy.get("[data-cy=button]").contains("Login").click();
       });
-      cy.get("[data-cy=button]").contains("Quotes").click();
+      cy.get("#quotes").click();
     });
 
     it("Admin can search for specific quotes", () => {
