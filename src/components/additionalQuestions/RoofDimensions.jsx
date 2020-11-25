@@ -76,7 +76,7 @@ const RoofDimensions = (props) => {
         >
           <button id="skipToElectricityQ">Skip</button>
         </Scrolllink>
-        <button data-cy="button" type="submit" onClick={props.onSubmit}>
+        <button id="submitButton" data-cy="button" type="submit" onClick={props.onSubmit}>
           Submit
         </button>
       </div>
