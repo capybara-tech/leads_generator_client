@@ -4,7 +4,7 @@ import RoofSlope from "./RoofSlope";
 import { Link as Scrolllink } from "react-scroll";
 import { Grid } from "semantic-ui-react";
 
-const PropertyType = () => {
+const PropertyType = (props) => {
   const [propertyType, setPropertyType] = useState("");
   const components = [<RoofSlope />];
   const [index, setIndex] = useState("");
@@ -250,6 +250,9 @@ const PropertyType = () => {
         >
           <button id="skipToRoofSlopeQ">Skip</button>
         </Scrolllink>
+        <button data-cy="button" type="submit" onClick={props.onSubmit}>
+          Submit
+        </button>
       </div>
       {components[index]}
     </>

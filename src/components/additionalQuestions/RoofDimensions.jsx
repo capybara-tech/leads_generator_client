@@ -4,7 +4,7 @@ import Electricity from "./Electricity";
 import "./RoofDimensions.style.css";
 import { Link as Scrolllink } from "react-scroll";
 
-const RoofDimensions = () => {
+const RoofDimensions = (props) => {
   const components = [<Electricity />];
   const [index, setIndex] = useState("");
 
@@ -76,6 +76,9 @@ const RoofDimensions = () => {
         >
           <button id="skipToElectricityQ">Skip</button>
         </Scrolllink>
+        <button data-cy="button" type="submit" onClick={props.onSubmit}>
+          Submit
+        </button>
       </div>
       {components[index]}
     </>

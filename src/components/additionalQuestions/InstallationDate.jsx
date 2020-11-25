@@ -4,7 +4,7 @@ import "./InstallationDate.style.css";
 import { Link as Scrolllink } from "react-scroll";
 import { Grid } from "semantic-ui-react";
 
-const InstallationDate = () => {
+const InstallationDate = (props) => {
   const [timeFrame, setTimeFrame] = useState("");
   const components = [<PropertyType />];
   const [index, setIndex] = useState("");
@@ -14,11 +14,14 @@ const InstallationDate = () => {
       <div id="installationDate">
         <input type="hidden" name="installation_date" value={timeFrame} />
         <Grid id="installationIcons">
-        <p id="moveOnToIconsOpening">
-          Thank you, from now on you just have to click some icons to get a more
-          accurate quote or you can choose to submit right now
-        </p>
-        <h3 id="questionForInstallationDate">When are you looking for <span id="installationWord">installation</span>?</h3>
+          <p id="moveOnToIconsOpening">
+            Thank you, from now on you just have to click some icons to get a
+            more accurate quote or you can choose to submit right now
+          </p>
+          <h3 id="questionForInstallationDate">
+            When are you looking for{" "}
+            <span id="installationWord">installation</span>?
+          </h3>
           <Grid.Row relaxed columns={4}>
             <Grid.Column>
               <Scrolllink
@@ -134,8 +137,8 @@ const InstallationDate = () => {
           smooth={true}
           offset={-0}
           duration={1500}
-        ><button id="backToAddressQ">Back</button>
-          
+        >
+          <button id="backToAddressQ">Back</button>
         </Scrolllink>
         <Scrolllink
           id="installationDateSkip"
@@ -148,9 +151,12 @@ const InstallationDate = () => {
           onMouseDown={async (e) => {
             setIndex(0);
           }}
-        ><button id="skipToPropertyTypeQ">Skip</button>
-          
+        >
+          <button id="skipToPropertyTypeQ">Skip</button>
         </Scrolllink>
+        <button data-cy="button" type="submit" onClick={props.onSubmit}>
+          Submit
+        </button>
       </div>
 
       {components[index]}

@@ -4,7 +4,7 @@ import "./RoofDirection.style.css";
 import { Link as Scrolllink } from "react-scroll";
 import { Grid } from "semantic-ui-react";
 
-const RoofDirection = () => {
+const RoofDirection = (props) => {
   const [roofDirection, setRoofDirection] = useState("");
   const components = [<RoofDimensions />];
   const [index, setIndex] = useState("");
@@ -246,6 +246,9 @@ const RoofDirection = () => {
         >
           <button id="skipToRoofDimensionsQ">Skip</button>
         </Scrolllink>
+        <button data-cy="button" type="submit" onClick={props.onSubmit}>
+          Submit
+        </button>
       </div>
       {components[index]}
     </>

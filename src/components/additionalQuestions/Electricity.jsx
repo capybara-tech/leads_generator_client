@@ -4,7 +4,7 @@ import "./Electricity.style.css";
 import { Link as Scrolllink } from "react-scroll";
 import { Grid } from "semantic-ui-react";
 
-const Electricity = () => {
+const Electricity = (props) => {
   const [fuseSize, setFuseSize] = useState("");
 
   return (
@@ -95,6 +95,9 @@ const Electricity = () => {
       >
         <button id="backToRoofDimensionsQ">Back</button>
       </Scrolllink>
+      <button data-cy="button" type="submit" onClick={props.onSubmit}>
+          Submit
+        </button>
     </div>
   );
 };
