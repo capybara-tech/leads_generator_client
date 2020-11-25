@@ -1,0 +1,158 @@
+#roofDimensions {
+  position: relative;
+  height: 100vh;
+  background-color: rgba(238, 238, 238, 0.742);
+}
+
+#questionAskingForRoofDimensions {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1, 5vw;
+}
+
+#dimesionWord {
+  color: #fe8733cb;
+}
+
+#questionForRoofDimensions{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#fieldGutterHeight {
+  font-family: "Poppins", sans-serif;
+  font-size: 3vh;
+  width: 40vw;
+  border: none;
+  border-bottom: 1px solid black;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  background: transparent;
+}
+
+#fieldRoofWidth {
+  font-family: "Poppins", sans-serif;
+  font-size: 3vh;
+  width: 40vw;
+  border: none;
+  border-bottom: 1px solid black;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  background: transparent;
+}
+
+#fieldRoofLength {
+  font-family: "Poppins", sans-serif;
+  font-size: 3vh;
+  width: 40vw;
+  border: none;
+  border-bottom: 1px solid black;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  background: transparent;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s;
+  font-family: "Poppins", sans-serif;
+  font-size: 3vh;
+}
+
+#nextToElectricityQ {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 4vh;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+#nextToElectricityQ::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 0.3s;
+}
+
+#nextToElectricityQ:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#nextToElectricityQ.active {
+  border-bottom: 3px solid black;
+}
+
+#backToRoofDirectionQ {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 4vh;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+#backToRoofDirectionQ::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 0.3s;
+}
+
+#backToRoofDirectionQ:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#backToRoofDirectionQ.active {
+  border-bottom: 3px solid black;
+}
+
+#skipToElectricityQ {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 4vh;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+#skipToElectricityQ::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 0.3s;
+}
+
+#skipToElectricityQ:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#skipToElectricityQ.active {
+  border-bottom: 3px solid black;
+}
