@@ -5,7 +5,7 @@ const QuoteSearchBox = ({ handleChange }) => {
     <>
       <input
         type="search"
-        placeholder="name..."
+        placeholder="name, email, telephone, address"
         onChange={handleChange}
       ></input>
     </>

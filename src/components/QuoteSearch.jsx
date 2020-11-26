@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import QuoteSearchBox from "./QuoteSearchBox";
-import QuoteSummary from "./QuoteSummary";
 import axios from "axios";
 
 const QuoteSearch = () => {
@@ -22,22 +21,28 @@ const QuoteSearch = () => {
   const handleChange = (e) => {
     setSearch(e.target.value);
   };
-  const filteredQuotes = quotes.filter((quote) =>
-    quote.name.toLowerCase().includes(search.toLowerCase())
+
+  const filteredQuotes = quotes.filter(
+    (quote) =>
+      quote.telephone.includes(search) ||
+      quote.name.toLowerCase().includes(search.toLowerCase()) ||
+      quote.email.toLowerCase().includes(search.toLowerCase()) ||
+      quote.address.toLowerCase().includes(search.toLowerCase())
   );
 
   return (
     <>
-    <h4>Search by...</h4>
+      <h4>Search by...</h4>
       <QuoteSearchBox handleChange={handleChange} />
       {filteredQuotes.map((quote) => (
-        <QuoteSummary
-          key={quote.id}
-          name={quote.name}
-          email={quote.email}
-          telephone={quote.telephone}
-          address={quote.address}
-        />
+        <>
+          <div id={`quote-${quote.id}`} data-id={quote.id}>
+            <p>{quote.name}</p>
+            <p>{quote.email}</p>
+            <p>{quote.telephone}</p>
+            <p>{quote.address}</p>
+          </div>
+        </>
       ))}
     </>
   );
