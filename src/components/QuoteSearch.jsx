@@ -28,6 +28,7 @@ const QuoteSearch = () => {
 
   return (
     <>
+    <h4>Search by...</h4>
       <QuoteSearchBox handleChange={handleChange} />
       {filteredQuotes.map((quote) => (
         <QuoteSummary
