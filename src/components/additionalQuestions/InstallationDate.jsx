@@ -14,9 +14,10 @@ const InstallationDate = (props) => {
       <div id="installationDate">
         <input type="hidden" name="installation_date" value={timeFrame} />
         <Grid id="installationIcons">
-          <p id="moveOnToIconsOpening">
+        <p id="moveOnToIconsOpening">
             Thank you, from now on you just have to click some icons to get a
             more accurate quote or you can choose to submit right now
+            if you wish to stop at any point and obtain up to three quotes just hit the submit button.
           </p>
           <h3 id="questionForInstallationDate">
             When are you looking for{" "}

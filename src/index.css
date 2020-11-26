@@ -6,6 +6,39 @@ html,
   margin-bottom: 20vh;
 }
 
+#submitButton { 
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 4vh;
+  margin: 0;
+  position: absolute;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 90%;
+  left:50%;
+}
+
+#submitButton::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 0.3s;
+}
+
+#submitButton:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#submitButton.active {
+  border-bottom: 3px solid black;
+}
+
 #navbar {
   margin: auto;
   position: fixed;
