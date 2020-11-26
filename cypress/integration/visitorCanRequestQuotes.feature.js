@@ -39,7 +39,7 @@ describe("Visitor can request quotes", () => {
         cy.get('[name="gutter_height"]').type("4.2");
         cy.get('[name="roof_width"]').type("5.4");
         cy.get('[name="roof_length"]').type("6.1");
-        cy.get("#nextToElectricity").click();
+        cy.get("#nextToElectricityQ").click();
         cy.get("#16AIcon").click();
         cy.get('[name="energy_consumption"]').type("10000");
         cy.get("[data-cy=button]").contains("Submit").click();
@@ -58,8 +58,8 @@ describe("Visitor can request quotes", () => {
         cy.get('[name="email"]').type("user@mail.com");
         cy.get('[name="telephone"]').type("0736123456");
         cy.get('[name="address"]').type("Address");
-        cy.get("#installationDateSkip").click();
-        cy.get("#propertyTypeBack").click();
+        cy.get("#skipToPropertyTypeQ").click();
+        cy.get("#backToInstallationDateQ").click();
         cy.get("#zeroToThreeMonthsIcon").click();
         cy.get("#houseIcon").click();
         cy.get("[data-cy=button]").contains("Submit").click();
