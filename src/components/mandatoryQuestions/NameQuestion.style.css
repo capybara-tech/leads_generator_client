@@ -43,10 +43,10 @@ input:-webkit-autofill:active {
 #nextToEmailQ {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 4vh;
+  font-size: 3vh;
   position: absolute;
-  top: 50%;
-  left: 75%;
+  top: 57%;
+  right: 30%;
   background-color: transparent;
   border: none;
   outline: none;
