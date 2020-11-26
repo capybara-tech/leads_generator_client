@@ -11,7 +11,7 @@ const Electricity = (props) => {
     <div id="electricity">
       <input type="hidden" name="fuse_size" value={fuseSize} />
       <Grid id="fuseSizeIcons">
-        <h3 id="questionAskingForFuseSize">
+        <h3 id="questionAskingForElectricity">
           What is your <span id="fuseSizeWord">fuse size</span>?
         </h3>
         <Grid.Row relaxed columns={4}>
@@ -70,7 +70,7 @@ const Electricity = (props) => {
         </Grid.Row>
         <Grid.Row relaxed columns={1}>
           <Grid.Column>
-            <h3 id="questionAskingForEnergyConsuption">
+            <h3 id="questionAskingForElectricity">
               What is your yearly energy{" "}
               <span id="consuptionWord">consumption</span>?
             </h3>
