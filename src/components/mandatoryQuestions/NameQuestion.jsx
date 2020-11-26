@@ -11,7 +11,7 @@ const NameQuestion = () => {
       </h1>
       <div id="questionForName">
         <h3 id="openingQuestion">
-          <span id="openingQuestionHello">Hello!</span> My name's Felix, what's
+          <span id="helloWord">Hello!</span> My name's Felix, what's
           yours?
         </h3>
         <Field
