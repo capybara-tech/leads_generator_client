@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import RoofType from "./RoofType";
 import "./RoofSlope.style.css";
 import { Link as Scrolllink } from "react-scroll";
-import { Grid } from "semantic-ui-react";
+import { Grid, Icon } from "semantic-ui-react";
 
 const RoofSlope = (props) => {
   const [roofSlope, setRoofSlope] = useState("");
@@ -24,7 +24,7 @@ const RoofSlope = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
@@ -49,7 +49,7 @@ const RoofSlope = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
@@ -74,7 +74,7 @@ const RoofSlope = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
@@ -99,7 +99,7 @@ const RoofSlope = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
@@ -121,7 +121,9 @@ const RoofSlope = (props) => {
           </Grid.Row>
           <Grid.Row relaxed columns={1}>
             <Grid.Column>
-              <p id="exactRoofSlopeQ">If you know your exact roof slope please enter it below</p>
+              <p id="exactRoofSlopeQ">
+                If you know your exact roof slope please enter it below
+              </p>
               <input
                 id="fieldSlope"
                 component="input"
@@ -135,7 +137,7 @@ const RoofSlope = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
@@ -153,25 +155,30 @@ const RoofSlope = (props) => {
           activeClass="active"
           spy={true}
           smooth={true}
-          offset={-30}
+          offset={0}
           duration={1500}
         >
-          <button id="backToPropertyTypeQ">Back</button>
+          <Icon size="big" name="angle left" id="backToPropertyTypeQ" />
         </Scrolllink>
         <Scrolllink
           to="roofType"
           activeClass="active"
           spy={true}
           smooth={true}
-          offset={-30}
+          offset={0}
           duration={1500}
           onMouseDown={async (e) => {
             setIndex(0);
           }}
         >
-          <button id="skipToRoofTypeQ">Skip</button>
+          <Icon size="big" name="angle right" id="skipToRoofTypeQ" />
         </Scrolllink>
-        <button id="submitButton" data-cy="button" type="submit" onClick={props.onSubmit}>
+        <button
+          id="submitButton"
+          data-cy="button"
+          type="submit"
+          onClick={props.onSubmit}
+        >
           Submit
         </button>
       </div>

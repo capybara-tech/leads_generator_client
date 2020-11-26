@@ -1,32 +1,32 @@
-#installationDate{
+#installationDate {
   position: relative;
   height: 100vh;
   background-color: rgba(238, 238, 238, 0.742);
 }
 
-#installationIcons{
-position: absolute;
-top:50%;
-left:50%;
-transform: translate(-50%, -50%);
-text-align: center;
+#installationIcons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.imgInstallationDateIcons{
-  height:30vh;
-  width:10vw;
+.imgInstallationDateIcons {
+  height: 30vh;
+  width: 10vw;
 }
 
-#questionForInstallationDate{
+#questionForInstallationDate {
   font-family: "Poppins", sans-serif;
   font-size: 3vh;
 }
 
-#installationWord{
+#installationWord {
   color: #fe8733cb;
 }
 
-#moveOnToIconsOpening{
+#moveOnToIconsOpening {
   font-family: "Poppins", sans-serif;
   font-size: 3vh;
 }
@@ -41,61 +41,15 @@ input:-webkit-autofill:active {
 }
 
 #skipToPropertyTypeQ {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 4vh;
   position: absolute;
   top: 50%;
-  right: 10%;
-  background-color: transparent;
-  border: none;
-  outline: none;
-}
-
-#skipToPropertyTypeQ::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: black;
-  transition: width 0.3s;
-}
-
-#skipToPropertyTypeQ:hover::after {
-  width: 100%;
-  transition: width 0.3s;
-}
-
-#skipToPropertyTypeQ.active {
-  border-bottom: 3px solid black;
+  right: 15%;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 #backToAddressQ {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 4vh;
   position: absolute;
   top: 50%;
-  left: 10%;
-  background-color: transparent;
-  border: none;
-  outline: none;
-}
-
-#backToAddressQ::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: black;
-  transition: width 0.3s;
-}
-
-#backToAddressQ:hover::after {
-  width: 100%;
-  transition: width 0.3s;
-}
-
-#backToAddressQ.active {
-  border-bottom: 3px solid black;
+  left: 15%;
+  color: rgba(0, 0, 0, 0.4);
 }

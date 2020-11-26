@@ -22,7 +22,7 @@
   font-size: 3vh;
 }
 
-#propertyWord{
+#propertyWord {
   color: #fe8733cb;
 }
 
@@ -36,61 +36,15 @@ input:-webkit-autofill:active {
 }
 
 #skipToRoofSlopeQ {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 4vh;
   position: absolute;
   top: 50%;
-  right: 10%;
-  background-color: transparent;
-  border: none;
-  outline: none;
-}
-
-#skipToRoofSlopeQ::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: black;
-  transition: width 0.3s;
-}
-
-#skipToRoofSlopeQ:hover::after {
-  width: 100%;
-  transition: width 0.3s;
-}
-
-#skipToRoofSlopeQ.active {
-  border-bottom: 3px solid black;
+  right: 15%;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 #backToInstallationDateQ {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 4vh;
   position: absolute;
   top: 50%;
-  left: 10%;
-  background-color: transparent;
-  border: none;
-  outline: none;
-}
-
-#backToInstallationDateQ::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: black;
-  transition: width 0.3s;
-}
-
-#backToInstallationDateQ:hover::after {
-  width: 100%;
-  transition: width 0.3s;
-}
-
-#backToInstallationDateQ.active {
-  border-bottom: 3px solid black;
+  left: 15%;
+  color: rgba(0, 0, 0, 0.4);
 }

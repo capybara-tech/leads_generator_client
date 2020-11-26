@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import RoofDirection from "./RoofDirection";
-import "./RoofType.style.css"
+import "./RoofType.style.css";
 import { Link as Scrolllink } from "react-scroll";
-import { Grid } from "semantic-ui-react"
+import { Grid, Icon } from "semantic-ui-react";
 
 const RoofType = (props) => {
   const [roofType, setRoofType] = useState("");
@@ -15,9 +15,10 @@ const RoofType = (props) => {
         <input type="hidden" name="roof_type" value={roofType} />
         <Grid id="roofTypeIcons">
           <h3 id="questionForRoofType">
-            What <span id="typeOfRoofWording">type of roof</span> does the property have?
+            What <span id="typeOfRoofWording">type of roof</span> does the
+            property have?
           </h3>
-          
+
           <Grid.Row columns={4}>
             <Grid.Column>
               <Scrolllink
@@ -25,14 +26,14 @@ const RoofType = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
                 }}
               >
                 <button
-                className="imgRoofTypeBtn"
+                  className="imgRoofTypeBtn"
                   id="tiledIcon"
                   type="button"
                   onClick={() => setRoofType("tiled")}
@@ -51,14 +52,14 @@ const RoofType = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
                 }}
               >
                 <button
-                className="imgRoofTypeBtn"
+                  className="imgRoofTypeBtn"
                   id="feltIcon"
                   type="button"
                   onClick={() => setRoofType("felt")}
@@ -77,14 +78,14 @@ const RoofType = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
                 }}
               >
                 <button
-                className="imgRoofTypeBtn"
+                  className="imgRoofTypeBtn"
                   id="metalIcon"
                   type="button"
                   onClick={() => setRoofType("metal")}
@@ -104,14 +105,14 @@ const RoofType = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
                 }}
               >
                 <button
-                className="imgRoofTypeBtn"
+                  className="imgRoofTypeBtn"
                   id="asbestosIcon"
                   type="button"
                   onClick={() => setRoofType("asbestos")}
@@ -124,22 +125,22 @@ const RoofType = (props) => {
                 </button>
               </Scrolllink>
             </Grid.Column>
-            </Grid.Row>
-            <Grid.Row columns={1}>
+          </Grid.Row>
+          <Grid.Row columns={1}>
             <Grid.Column>
               <Scrolllink
                 to="roofDirection"
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
                 }}
               >
                 <button
-                className="imgRoofTypeBtn"
+                  className="imgRoofTypeBtn"
                   id="anotherIcon"
                   type="button"
                   onClick={() => setRoofType("another")}
@@ -152,8 +153,7 @@ const RoofType = (props) => {
                 </button>
               </Scrolllink>{" "}
             </Grid.Column>
-           
-         </Grid.Row>
+          </Grid.Row>
         </Grid>
         <br />
         <Scrolllink
@@ -161,25 +161,30 @@ const RoofType = (props) => {
           activeClass="active"
           spy={true}
           smooth={true}
-          offset={-30}
+          offset={0}
           duration={1500}
         >
-          <button id="backToRoofSlopeQ">Back</button>
+          <Icon size="big" name="angle left" id="backToRoofSlopeQ" />
         </Scrolllink>
         <Scrolllink
           to="roofDirection"
           activeClass="active"
           spy={true}
           smooth={true}
-          offset={-30}
+          offset={0}
           duration={1500}
           onMouseDown={async (e) => {
             setIndex(0);
           }}
         >
-          <button id="skipToRoofDirectionQ">Skip</button>
+          <Icon size="big" name="angle right" id="skipToRoofDirectionQ" />
         </Scrolllink>
-        <button id="submitButton" data-cy="button" type="submit" onClick={props.onSubmit}>
+        <button
+          id="submitButton"
+          data-cy="button"
+          type="submit"
+          onClick={props.onSubmit}
+        >
           Submit
         </button>
       </div>

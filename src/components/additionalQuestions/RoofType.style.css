@@ -15,8 +15,6 @@
 .imgRoofTypeIcons {
   height: 30vh;
   width: 10vw;
- 
-
 }
 
 #questionForRoofType {
@@ -24,7 +22,7 @@
   font-size: 3vh;
 }
 
-#typeOfRoofWording{
+#typeOfRoofWording {
   color: #fe8733cb;
 }
 
@@ -38,62 +36,15 @@ input:-webkit-autofill:active {
 }
 
 #skipToRoofDirectionQ {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 4vh;
   position: absolute;
   top: 50%;
-  right: 10%;
-  background-color: transparent;
-  border: none;
-  outline: none;
-}
-
-#skipToRoofDirectionQ::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: black;
-  transition: width 0.3s;
-}
-
-#skipToRoofDirectionQ:hover::after {
-  width: 100%;
-  transition: width 0.3s;
-}
-
-#skipToRoofDirectionQ.active {
-  border-bottom: 3px solid black;
+  right: 15%;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 #backToRoofSlopeQ {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 4vh;
   position: absolute;
   top: 50%;
-  left: 10%;
-  background-color: transparent;
-  border: none;
-  outline: none;
+  left: 15%;
+  color: rgba(0, 0, 0, 0.4);
 }
-
-#backToRoofSlopeQ::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: black;
-  transition: width 0.3s;
-}
-
-#backToRoofSlopeQ:hover::after {
-  width: 100%;
-  transition: width 0.3s;
-}
-
-#backToRoofSlopeQ.active {
-  border-bottom: 3px solid black;
-}
-

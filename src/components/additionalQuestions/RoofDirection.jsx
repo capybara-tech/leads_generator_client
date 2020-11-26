@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import RoofDimensions from "./RoofDimensions";
 import "./RoofDirection.style.css";
 import { Link as Scrolllink } from "react-scroll";
-import { Grid } from "semantic-ui-react";
+import { Grid, Icon } from "semantic-ui-react";
 
 const RoofDirection = (props) => {
   const [roofDirection, setRoofDirection] = useState("");
@@ -15,8 +15,8 @@ const RoofDirection = (props) => {
         <input type="hidden" name="roof_direction" value={roofDirection} />
         <Grid id="roofDirectionIcons">
           <h3 id="questionForRoofDirection">
-          What's the <span id="directionWord">direction</span> of your roof?
-        </h3>
+            What's the <span id="directionWord">direction</span> of your roof?
+          </h3>
           <Grid.Row relaxed columns={4}>
             <Grid.Column>
               <Scrolllink
@@ -24,7 +24,7 @@ const RoofDirection = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
@@ -49,7 +49,7 @@ const RoofDirection = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
@@ -74,7 +74,7 @@ const RoofDirection = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
@@ -99,7 +99,7 @@ const RoofDirection = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
@@ -126,7 +126,7 @@ const RoofDirection = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
@@ -151,7 +151,7 @@ const RoofDirection = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
@@ -176,7 +176,7 @@ const RoofDirection = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
@@ -201,7 +201,7 @@ const RoofDirection = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
@@ -228,25 +228,30 @@ const RoofDirection = (props) => {
           activeClass="active"
           spy={true}
           smooth={true}
-          offset={-250}
+          offset={0}
           duration={1500}
         >
-          <button id="backToRoofTypeQ">Back</button>
+          <Icon size="big" name="angle left" id="backToRoofTypeQ" />
         </Scrolllink>
         <Scrolllink
           to="roofDimensions"
           activeClass="active"
           spy={true}
           smooth={true}
-          offset={-30}
+          offset={0}
           duration={1500}
           onMouseDown={async (e) => {
             setIndex(0);
           }}
         >
-          <button id="skipToRoofDimensionsQ">Skip</button>
+          <Icon size="big" name="angle right" id="skipToRoofDimensionsQ" />
         </Scrolllink>
-        <button id="submitButton" data-cy="button" type="submit" onClick={props.onSubmit}>
+        <button
+          id="submitButton"
+          data-cy="button"
+          type="submit"
+          onClick={props.onSubmit}
+        >
           Submit
         </button>
       </div>

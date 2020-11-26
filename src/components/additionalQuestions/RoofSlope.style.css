@@ -22,7 +22,7 @@
   font-size: 3vh;
 }
 
-#slopeWord{
+#slopeWord {
   color: #fe8733cb;
 }
 
@@ -36,69 +36,23 @@ input:-webkit-autofill:active {
 }
 
 #skipToRoofTypeQ {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 4vh;
   position: absolute;
   top: 50%;
-  right: 10%;
-  background-color: transparent;
-  border: none;
-  outline: none;
-}
-
-#skipToRoofTypeQ::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: black;
-  transition: width 0.3s;
-}
-
-#skipToRoofTypeQ:hover::after {
-  width: 100%;
-  transition: width 0.3s;
-}
-
-#skipToRoofTypeQ.active {
-  border-bottom: 3px solid black;
+  right: 15%;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 #backToPropertyTypeQ {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 4vh;
   position: absolute;
   top: 50%;
-  left: 10%;
-  background-color: transparent;
-  border: none;
-  outline: none;
-}
-
-#backToPropertyTypeQ::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: black;
-  transition: width 0.3s;
-}
-
-#backToPropertyTypeQ:hover::after {
-  width: 100%;
-  transition: width 0.3s;
-}
-
-#backToPropertyTypeQ.active {
-  border-bottom: 3px solid black;
+  left: 15%;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 #nextToRoofTypeQ {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 3vh;
+  font-size: 2.1vh;
   position: absolute;
   background-color: transparent;
   border: none;
@@ -125,8 +79,8 @@ input:-webkit-autofill:active {
 
 #fieldSlope {
   font-family: "Poppins", sans-serif;
-  font-size: 3vh;
-  width: 30vw;
+  font-size: 2vh;
+  width: 20vw;
   border: none;
   border-bottom: 1px solid black;
   box-shadow: none;
@@ -134,7 +88,7 @@ input:-webkit-autofill:active {
   background-color: transparent;
   background: transparent;
 }
-#exactRoofSlopeQ{
+#exactRoofSlopeQ {
   font-family: "Poppins", sans-serif;
-  font-size: 3vh;
+  font-size: 2vh;
 }

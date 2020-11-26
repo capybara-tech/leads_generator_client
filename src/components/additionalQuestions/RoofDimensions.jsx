@@ -3,6 +3,7 @@ import { Field } from "react-final-form";
 import Electricity from "./Electricity";
 import "./RoofDimensions.style.css";
 import { Link as Scrolllink } from "react-scroll";
+import { Icon } from "semantic-ui-react";
 
 const RoofDimensions = (props) => {
   const components = [<Electricity />];
@@ -44,7 +45,7 @@ const RoofDimensions = (props) => {
           activeClass="active"
           spy={true}
           smooth={true}
-          offset={-30}
+          offset={0}
           duration={1500}
           onMouseDown={async (e) => {
             setIndex(0);
@@ -58,25 +59,30 @@ const RoofDimensions = (props) => {
           activeClass="active"
           spy={true}
           smooth={true}
-          offset={-30}
+          offset={0}
           duration={1500}
         >
-          <button id="backToRoofDirectionQ">Back</button>
+          <Icon size="big" name="angle left" id="backToRoofDirectionQ" />
         </Scrolllink>
         <Scrolllink
           to="electricity"
           activeClass="active"
           spy={true}
           smooth={true}
-          offset={-30}
+          offset={0}
           duration={1500}
           onMouseDown={async (e) => {
             setIndex(0);
           }}
         >
-          <button id="skipToElectricityQ">Skip</button>
+          <Icon size="big" name="angle right" id="skipToElectricityQ" />
         </Scrolllink>
-        <button id="submitButton" data-cy="button" type="submit" onClick={props.onSubmit}>
+        <button
+          id="submitButton"
+          data-cy="button"
+          type="submit"
+          onClick={props.onSubmit}
+        >
           Submit
         </button>
       </div>

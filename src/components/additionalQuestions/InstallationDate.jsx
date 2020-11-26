@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PropertyType from "./PropertyType";
 import "./InstallationDate.style.css";
 import { Link as Scrolllink } from "react-scroll";
-import { Grid } from "semantic-ui-react";
+import { Grid, Icon } from "semantic-ui-react";
 
 const InstallationDate = (props) => {
   const [timeFrame, setTimeFrame] = useState("");
@@ -14,11 +14,6 @@ const InstallationDate = (props) => {
       <div id="installationDate">
         <input type="hidden" name="installation_date" value={timeFrame} />
         <Grid id="installationIcons">
-        <p id="moveOnToIconsOpening">
-            Thank you, from now on you just have to click some icons to get a
-            more accurate quote or you can choose to submit right now
-            if you wish to stop at any point and obtain up to three quotes just hit the submit button.
-          </p>
           <h3 id="questionForInstallationDate">
             When are you looking for{" "}
             <span id="installationWord">installation</span>?
@@ -30,7 +25,7 @@ const InstallationDate = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-40}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
@@ -56,7 +51,7 @@ const InstallationDate = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-40}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
@@ -82,7 +77,7 @@ const InstallationDate = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-40}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
@@ -108,7 +103,7 @@ const InstallationDate = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-40}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
@@ -139,7 +134,7 @@ const InstallationDate = (props) => {
           offset={-0}
           duration={1500}
         >
-          <button id="backToAddressQ">Back</button>
+          <Icon size="big" name="angle left" id="backToAddressQ" />
         </Scrolllink>
         <Scrolllink
           id="installationDateSkip"
@@ -147,15 +142,20 @@ const InstallationDate = (props) => {
           activeClass="active"
           spy={true}
           smooth={true}
-          offset={-40}
+          offset={0}
           duration={1500}
           onMouseDown={async (e) => {
             setIndex(0);
           }}
         >
-          <button id="skipToPropertyTypeQ">Skip</button>
+          <Icon size="big" name="angle right" id="skipToPropertyTypeQ" />
         </Scrolllink>
-        <button id="submitButton" data-cy="button" type="submit" onClick={props.onSubmit}>
+        <button
+          id="submitButton"
+          data-cy="button"
+          type="submit"
+          onClick={props.onSubmit}
+        >
           Submit
         </button>
       </div>

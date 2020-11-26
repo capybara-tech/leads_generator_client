@@ -6,19 +6,20 @@ html,
   margin-bottom: 20vh;
 }
 
-#submitButton { 
+#submitButton {
   background-color: transparent;
+  color: rgba(0, 0, 0, 0.4);
   border: none;
   outline: none;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 4vh;
+  font-size: 2vh;
   margin: 0;
   position: absolute;
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   top: 90%;
-  left:50%;
+  left: 50%;
 }
 
 #submitButton::after {
@@ -26,7 +27,7 @@ html,
   display: block;
   width: 0;
   height: 2px;
-  background: black;
+  background: rgba(0, 0, 0, 0.4);
   transition: width 0.3s;
 }
 
@@ -36,7 +37,7 @@ html,
 }
 
 #submitButton.active {
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.4);
 }
 
 #navbar {
@@ -154,7 +155,6 @@ html,
 .infoSegmentIcons:hover {
   color: rgba(0, 0, 0, 0.3);
 }
-
 
 #bannerImgMob {
   width: 100%;

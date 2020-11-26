@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./PropertyType.style.css";
 import RoofSlope from "./RoofSlope";
 import { Link as Scrolllink } from "react-scroll";
-import { Grid } from "semantic-ui-react";
+import { Grid, Icon } from "semantic-ui-react";
 
 const PropertyType = (props) => {
   const [propertyType, setPropertyType] = useState("");
@@ -24,7 +24,7 @@ const PropertyType = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
@@ -53,7 +53,7 @@ const PropertyType = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
@@ -82,7 +82,7 @@ const PropertyType = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
@@ -111,7 +111,7 @@ const PropertyType = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
@@ -142,7 +142,7 @@ const PropertyType = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
@@ -171,7 +171,7 @@ const PropertyType = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
@@ -200,7 +200,7 @@ const PropertyType = (props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={0}
                 duration={1500}
                 onMouseDown={async (e) => {
                   setIndex(0);
@@ -225,32 +225,36 @@ const PropertyType = (props) => {
             </Grid.Column>
           </Grid.Row>
         </Grid>
-        <br />
         <Scrolllink
           id="propertyTypeBack"
           to="installationDate"
           activeClass="active"
           spy={true}
           smooth={true}
-          offset={-250}
+          offset={0}
           duration={1500}
         >
-          <button id="backToInstallationDateQ">Back</button>
+          <Icon size="big" name="angle left" id="backToInstallationDateQ" />
         </Scrolllink>
         <Scrolllink
           to="roofSlope"
           activeClass="active"
           spy={true}
           smooth={true}
-          offset={-30}
+          offset={0}
           duration={1500}
           onMouseDown={async (e) => {
             setIndex(0);
           }}
         >
-          <button id="skipToRoofSlopeQ">Skip</button>
+          <Icon size="big" name="angle right" id="skipToRoofSlopeQ" />
         </Scrolllink>
-        <button id="submitButton" data-cy="button" type="submit" onClick={props.onSubmit}>
+        <button
+          id="submitButton"
+          data-cy="button"
+          type="submit"
+          onClick={props.onSubmit}
+        >
           Submit
         </button>
       </div>

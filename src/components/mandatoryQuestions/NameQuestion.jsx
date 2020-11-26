@@ -14,7 +14,6 @@ const NameQuestion = () => {
           <span id="openingQuestionHello">Hello!</span> My name's Felix, what's
           yours?
         </h3>
-        <br />
         <Field
           id="fieldName"
           name="name"

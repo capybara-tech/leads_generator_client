@@ -22,14 +22,14 @@
   font-size: 3vh;
 }
 
-#fuseSizeWord{
+#fuseSizeWord {
   color: #fe8733cb;
 }
 
 #fieldEnergyConsumption {
   font-family: "Poppins", sans-serif;
-  font-size: 3vh;
-  width: 30vw;
+  font-size: 2vh;
+  width: 20vw;
   border: none;
   border-bottom: 1px solid black;
   box-shadow: none;
@@ -38,15 +38,9 @@
   background: transparent;
 }
 
-#questionAskingForEnergyConsuption{
-  font-family: "Poppins", sans-serif;
-  font-size: 3vh;
-}
-
-#consuptionWord{
+#consuptionWord {
   color: #fe8733cb;
 }
-
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -57,36 +51,9 @@ input:-webkit-autofill:active {
   font-size: 3vh;
 }
 
-
-
 #backToRoofDimensionsQ {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 4vh;
   position: absolute;
   top: 50%;
-  left: 10%;
-  background-color: transparent;
-  border: none;
-  outline: none;
+  left: 15%;
+  color: rgba(0, 0, 0, 0.4);
 }
-
-#backToRoofDimensionsQ::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: black;
-  transition: width 0.3s;
-}
-
-#backToRoofDimensionsQ:hover::after {
-  width: 100%;
-  transition: width 0.3s;
-}
-
-#backToRoofDimensionsQ.active {
-  border-bottom: 3px solid black;
-}
-
-
