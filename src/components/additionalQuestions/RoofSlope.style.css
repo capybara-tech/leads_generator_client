@@ -1,34 +1,29 @@
-#getUpTo3Quotes {
-  position: absolute;
-  top: 15%;
-  left: 7%;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-}
-
-#nameQuestion {
+#roofSlope {
+  position: relative;
   height: 100vh;
   background-color: rgba(238, 238, 238, 0.742);
 }
 
-#questionForName {
-  margin: 0;
+#roofSlopeIcons {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-#fieldName {
+.imgRoofSlopeIcons {
+  height: 30vh;
+  width: 10vw;
+}
+
+#questionForRoofSlope {
   font-family: "Poppins", sans-serif;
   font-size: 3vh;
-  width: 40vw;
-  border: none;
-  border-bottom: 1px solid black;
-  box-shadow: none;
-  outline: none;
-  background-color: transparent;
-  background: transparent;
+}
+
+#slopeWord {
+  color: #fe8733cb;
 }
 
 input:-webkit-autofill,
@@ -40,19 +35,31 @@ input:-webkit-autofill:active {
   font-size: 3vh;
 }
 
-#nextToEmailQ {
+#skipToRoofTypeQ {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#backToPropertyTypeQ {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#nextToRoofTypeQ {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 3vh;
+  font-size: 2.1vh;
   position: absolute;
-  top: 57%;
-  right: 30%;
   background-color: transparent;
   border: none;
   outline: none;
 }
 
-#nextToEmailQ::after {
+#nextToRoofTypeQ::after {
   content: "";
   display: block;
   width: 0;
@@ -61,20 +68,27 @@ input:-webkit-autofill:active {
   transition: width 0.3s;
 }
 
-#nextToEmailQ:hover::after {
+#nextToRoofTypeQ:hover::after {
   width: 100%;
   transition: width 0.3s;
 }
 
-#nextToEmailQ.active {
+#nextToRoofTypeQ.active {
   border-bottom: 3px solid black;
 }
 
-#helloWord {
-  color: #fe8733cb;
-}
-#openingQuestion {
+#fieldSlope {
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 1, 5vw;
+  font-size: 2vh;
+  width: 20vw;
+  border: none;
+  border-bottom: 1px solid black;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  background: transparent;
+}
+#exactRoofSlopeQ {
+  font-family: "Poppins", sans-serif;
+  font-size: 2vh;
 }

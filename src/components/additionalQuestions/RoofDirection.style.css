@@ -1,0 +1,50 @@
+#roofDirection {
+  position: relative;
+  height: 100vh;
+  background-color: rgba(238, 238, 238, 0.742);
+}
+
+#roofDirectionIcons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.imgRoofDirectionIcons {
+  height: 30vh;
+  width: 10vw;
+}
+
+#questionForRoofDirection {
+  font-family: "Poppins", sans-serif;
+  font-size: 3vh;
+}
+
+#directionWord {
+  color: #fe8733cb;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s;
+  font-family: "Poppins", sans-serif;
+  font-size: 3vh;
+}
+
+#skipToRoofDimensionsQ {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#backToRoofTypeQ {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  color: rgba(0, 0, 0, 0.4);
+}

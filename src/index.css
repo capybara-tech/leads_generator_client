@@ -6,6 +6,40 @@ html,
   margin-bottom: 20vh;
 }
 
+#submitButton {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.4);
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 2vh;
+  margin: 0;
+  position: absolute;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 90%;
+  left: 50%;
+}
+
+#submitButton::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.4);
+  transition: width 0.3s;
+}
+
+#submitButton:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#submitButton.active {
+  border-bottom: 3px solid rgba(0, 0, 0, 0.4);
+}
+
 #navbar {
   margin: auto;
   position: fixed;
@@ -121,20 +155,6 @@ html,
 .infoSegmentIcons:hover {
   color: rgba(0, 0, 0, 0.3);
 }
-
-#emailQuestion {
-  height: 100vh;
-}
-
-#telephoneQuestion {
-  height: 100vh;
-}
-
-#addressQuestion {
-  height: 100vh;
-}
-
-/* ------------------------Mobile------------------------ */
 
 #bannerImgMob {
   width: 100%;

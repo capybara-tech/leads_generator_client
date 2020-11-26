@@ -1,20 +1,19 @@
-#addressQuestion {
+#roofDimensions {
   position: relative;
   height: 100vh;
   background-color: rgba(238, 238, 238, 0.742);
 }
 
-#questionAskingForAddress {
+#questionAskingForRoofDimensions {
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 1, 5vw;
+  font-size: 3vh;
 }
 
-#addressWord {
+#dimesionWord {
   color: #fe8733cb;
 }
 
-#questionForAddress {
+#questionForRoofDimensions {
   margin: 0;
   position: absolute;
   top: 50%;
@@ -22,10 +21,34 @@
   transform: translate(-50%, -50%);
 }
 
-#fieldAddress {
+#fieldGutterHeight {
   font-family: "Poppins", sans-serif;
-  font-size: 3vh;
-  width: 40vw;
+  font-size: 2vh;
+  width: 30vw;
+  border: none;
+  border-bottom: 1px solid black;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  background: transparent;
+}
+
+#fieldRoofWidth {
+  font-family: "Poppins", sans-serif;
+  font-size: 2vh;
+  width: 30vw;
+  border: none;
+  border-bottom: 1px solid black;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  background: transparent;
+}
+
+#fieldRoofLength {
+  font-family: "Poppins", sans-serif;
+  font-size: 2vh;
+  width: 30vw;
   border: none;
   border-bottom: 1px solid black;
   box-shadow: none;
@@ -43,19 +66,19 @@ input:-webkit-autofill:active {
   font-size: 3vh;
 }
 
-#nextToIconQ {
+#nextToElectricityQ {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 3vh;
+  font-size: 2vh;
   position: absolute;
-  top: 57%;
-  right: 30%;
+  top: 54%;
+  left: 55%;
   background-color: transparent;
   border: none;
   outline: none;
 }
 
-#nextToIconQ::after {
+#nextToElectricityQ::after {
   content: "";
   display: block;
   width: 0;
@@ -64,41 +87,25 @@ input:-webkit-autofill:active {
   transition: width 0.3s;
 }
 
-#nextToIconQ:hover::after {
+#nextToElectricityQ:hover::after {
   width: 100%;
   transition: width 0.3s;
 }
 
-#nextToIconQ.active {
+#nextToElectricityQ.active {
   border-bottom: 3px solid black;
 }
 
-#backToTelephoneQ {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 3vh;
+#skipToElectricityQ {
   position: absolute;
-  top: 57%;
-  left: 30%;
-  background-color: transparent;
-  border: none;
-  outline: none;
+  top: 50%;
+  right: 15%;
+  color: rgba(0, 0, 0, 0.4);
 }
 
-#backToTelephoneQ::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: black;
-  transition: width 0.3s;
-}
-
-#backToTelephoneQ:hover::after {
-  width: 100%;
-  transition: width 0.3s;
-}
-
-#backToTelephoneQ.active {
-  border-bottom: 3px solid black;
+#backToRoofDirectionQ {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  color: rgba(0, 0, 0, 0.4);
 }

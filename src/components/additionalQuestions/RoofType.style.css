@@ -1,0 +1,50 @@
+#roofType {
+  position: relative;
+  height: 100vh;
+  background-color: rgba(238, 238, 238, 0.742);
+}
+
+#roofTypeIcons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.imgRoofTypeIcons {
+  height: 30vh;
+  width: 10vw;
+}
+
+#questionForRoofType {
+  font-family: "Poppins", sans-serif;
+  font-size: 3vh;
+}
+
+#typeOfRoofWording {
+  color: #fe8733cb;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s;
+  font-family: "Poppins", sans-serif;
+  font-size: 3vh;
+}
+
+#skipToRoofDirectionQ {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#backToRoofSlopeQ {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  color: rgba(0, 0, 0, 0.4);
+}

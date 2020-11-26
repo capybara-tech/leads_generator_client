@@ -1,133 +1,195 @@
 import React, { useState } from "react";
 import RoofDirection from "./RoofDirection";
+import "./RoofType.style.css";
 import { Link as Scrolllink } from "react-scroll";
+import { Grid, Icon } from "semantic-ui-react";
 
-const RoofType = () => {
+const RoofType = (props) => {
   const [roofType, setRoofType] = useState("");
   const components = [<RoofDirection />];
   const [index, setIndex] = useState("");
 
   return (
-    <div id="roofType">
-      <h2>What type of roof does the property have?</h2>
-      <input type="hidden" name="roof_type" value={roofType} />
-      <Scrolllink
-        to="roofDirection"
-        activeClass="active"
-        spy={true}
-        smooth={true}
-        offset={-30}
-        duration={1500}
-        onMouseDown={async (e) => {
-          setIndex(0);
-        }}
-      >
-        <button
-          id="tiledIcon"
-          type="button"
-          onClick={() => setRoofType("tiled")}
+    <>
+      <div id="roofType">
+        <input type="hidden" name="roof_type" value={roofType} />
+        <Grid id="roofTypeIcons">
+          <h3 id="questionForRoofType">
+            What <span id="typeOfRoofWording">type of roof</span> does the
+            property have?
+          </h3>
+
+          <Grid.Row columns={4}>
+            <Grid.Column>
+              <Scrolllink
+                to="roofDirection"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={1500}
+                onMouseDown={async (e) => {
+                  setIndex(0);
+                }}
+              >
+                <button
+                  className="imgRoofTypeBtn"
+                  id="tiledIcon"
+                  type="button"
+                  onClick={() => setRoofType("tiled")}
+                >
+                  <img
+                    className="imgRoofTypeIcons"
+                    src="/images/dummylogo.png"
+                    alt="tiled"
+                  />
+                </button>
+              </Scrolllink>
+            </Grid.Column>
+            <Grid.Column>
+              <Scrolllink
+                to="roofDirection"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={1500}
+                onMouseDown={async (e) => {
+                  setIndex(0);
+                }}
+              >
+                <button
+                  className="imgRoofTypeBtn"
+                  id="feltIcon"
+                  type="button"
+                  onClick={() => setRoofType("felt")}
+                >
+                  <img
+                    className="imgRoofTypeIcons"
+                    src="/images/dummylogo.png"
+                    alt="felt"
+                  />
+                </button>
+              </Scrolllink>
+            </Grid.Column>
+            <Grid.Column>
+              <Scrolllink
+                to="roofDirection"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={1500}
+                onMouseDown={async (e) => {
+                  setIndex(0);
+                }}
+              >
+                <button
+                  className="imgRoofTypeBtn"
+                  id="metalIcon"
+                  type="button"
+                  onClick={() => setRoofType("metal")}
+                >
+                  <img
+                    className="imgRoofTypeIcons"
+                    src="/images/dummylogo.png"
+                    alt="metal"
+                  />
+                </button>
+              </Scrolllink>
+            </Grid.Column>
+
+            <Grid.Column>
+              <Scrolllink
+                to="roofDirection"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={1500}
+                onMouseDown={async (e) => {
+                  setIndex(0);
+                }}
+              >
+                <button
+                  className="imgRoofTypeBtn"
+                  id="asbestosIcon"
+                  type="button"
+                  onClick={() => setRoofType("asbestos")}
+                >
+                  <img
+                    className="imgRoofTypeIcons"
+                    src="/images/dummylogo.png"
+                    alt="asbestos"
+                  />
+                </button>
+              </Scrolllink>
+            </Grid.Column>
+          </Grid.Row>
+          <Grid.Row columns={1}>
+            <Grid.Column>
+              <Scrolllink
+                to="roofDirection"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={1500}
+                onMouseDown={async (e) => {
+                  setIndex(0);
+                }}
+              >
+                <button
+                  className="imgRoofTypeBtn"
+                  id="anotherIcon"
+                  type="button"
+                  onClick={() => setRoofType("another")}
+                >
+                  <img
+                    className="imgRoofTypeIcons"
+                    src="/images/dummylogo.png"
+                    alt="another"
+                  />
+                </button>
+              </Scrolllink>{" "}
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+        <br />
+        <Scrolllink
+          to="roofSlope"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={1500}
         >
-          <img src="/images/dummylogo.png" alt="tiled" />
-        </button>
-      </Scrolllink>
-      <Scrolllink
-        to="roofDirection"
-        activeClass="active"
-        spy={true}
-        smooth={true}
-        offset={-30}
-        duration={1500}
-        onMouseDown={async (e) => {
-          setIndex(0);
-        }}
-      >
-        <button id="feltIcon" type="button" onClick={() => setRoofType("felt")}>
-          <img src="/images/dummylogo.png" alt="felt" />
-        </button>
-      </Scrolllink>
-      <Scrolllink
-        to="roofDirection"
-        activeClass="active"
-        spy={true}
-        smooth={true}
-        offset={-30}
-        duration={1500}
-        onMouseDown={async (e) => {
-          setIndex(0);
-        }}
-      >
-        <button
-          id="metalIcon"
-          type="button"
-          onClick={() => setRoofType("metal")}
+          <Icon size="big" name="angle left" id="backToRoofSlopeQ" />
+        </Scrolllink>
+        <Scrolllink
+          to="roofDirection"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={1500}
+          onMouseDown={async (e) => {
+            setIndex(0);
+          }}
         >
-          <img src="/images/dummylogo.png" alt="metal" />
-        </button>
-      </Scrolllink>
-      <Scrolllink
-        to="roofDirection"
-        activeClass="active"
-        spy={true}
-        smooth={true}
-        offset={-30}
-        duration={1500}
-        onMouseDown={async (e) => {
-          setIndex(0);
-        }}
-      >
+          <Icon size="big" name="angle right" id="skipToRoofDirectionQ" />
+        </Scrolllink>
         <button
-          id="asbestosIcon"
-          type="button"
-          onClick={() => setRoofType("asbestos")}
+          id="submitButton"
+          data-cy="button"
+          type="submit"
+          onClick={props.onSubmit}
         >
-          <img src="/images/dummylogo.png" alt="asbestos" />
+          Submit
         </button>
-      </Scrolllink>
-      <Scrolllink
-        to="roofDirection"
-        activeClass="active"
-        spy={true}
-        smooth={true}
-        offset={-30}
-        duration={1500}
-        onMouseDown={async (e) => {
-          setIndex(0);
-        }}
-      >
-        <button
-          id="anotherIcon"
-          type="button"
-          onClick={() => setRoofType("another")}
-        >
-          <img src="/images/dummylogo.png" alt="another" />
-        </button>
-      </Scrolllink>{" "}
-      <br />
-      <Scrolllink
-        to="roofSlope"
-        activeClass="active"
-        spy={true}
-        smooth={true}
-        offset={-30}
-        duration={1500}
-      >
-        Back
-      </Scrolllink>
-      <Scrolllink
-        to="roofDirection"
-        activeClass="active"
-        spy={true}
-        smooth={true}
-        offset={-30}
-        duration={1500}
-        onMouseDown={async (e) => {
-          setIndex(0);
-        }}
-      >
-        Skip
-      </Scrolllink>
+      </div>
       {components[index]}
-    </div>
+    </>
   );
 };
 

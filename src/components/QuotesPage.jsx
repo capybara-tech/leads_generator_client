@@ -119,9 +119,6 @@ const QuotesPage = () => {
               )}
               {values.address && values.address !== "false" && (
                 <>
-                  <button data-cy="button" type="submit">
-                    Submit
-                  </button>
                   <InstallationDate />
                 </>
               )}

@@ -1,0 +1,59 @@
+#electricity {
+  position: relative;
+  height: 100vh;
+  background-color: rgba(238, 238, 238, 0.742);
+}
+
+#fuseSizeIcons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.imgFuseSizeIcons {
+  height: 30vh;
+  width: 10vw;
+}
+
+#questionAskingForElectricity {
+  font-family: "Poppins", sans-serif;
+  font-size: 3vh;
+}
+
+#fuseSizeWord {
+  color: #fe8733cb;
+}
+
+#fieldEnergyConsumption {
+  font-family: "Poppins", sans-serif;
+  font-size: 2vh;
+  width: 20vw;
+  border: none;
+  border-bottom: 1px solid black;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  background: transparent;
+}
+
+#consuptionWord {
+  color: #fe8733cb;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s;
+  font-family: "Poppins", sans-serif;
+  font-size: 3vh;
+}
+
+#backToRoofDimensionsQ {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  color: rgba(0, 0, 0, 0.4);
+}
