@@ -9,7 +9,7 @@ const QuoteSearchBox = ({ handleChange }) => {
         type="search"
         placeholder="name, email, telephone, address"
         onChange={handleChange}
-      ></input>
+      />
     </>
   );
 };
