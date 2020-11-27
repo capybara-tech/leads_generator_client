@@ -3,6 +3,7 @@ import NameQuestion from "./mandatoryQuestions/NameQuestion";
 import EmailQuestion from "./mandatoryQuestions/EmailQuestion";
 import TelephoneQuestion from "./mandatoryQuestions/TelephoneQuestion";
 import AddressQuestion from "./mandatoryQuestions/AddressQuestion";
+import MidPageSubmitOrContinue from "./mandatoryQuestions/MidPageSubmitOrContinue"
 import InstallationDate from "./additionalQuestions/InstallationDate";
 import axios from "axios";
 import { Form } from "react-final-form";
@@ -119,6 +120,7 @@ const QuotesPage = () => {
               )}
               {values.address && values.address !== "false" && (
                 <>
+                  <MidPageSubmitOrContinue />
                   <InstallationDate />
                 </>
               )}
