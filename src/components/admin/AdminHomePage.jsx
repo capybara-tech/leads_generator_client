@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import ViewContractors from "./ViewContractors";
+import ViewContractors from "../admin/ViewContractors";
 import CreateContractor from "./CreateContractor";
 import QuoteSearch from "./QuoteSearch";
-import Login from "./Login";
+import Login from "../admin/Login";
 import { connect } from "react-redux";
 import { Button } from 'semantic-ui-react'
 
