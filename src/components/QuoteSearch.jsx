@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import QuoteSearchBox from "./QuoteSearchBox";
 import axios from "axios";
+import { Segment } from "semantic-ui-react";
 
 const QuoteSearch = () => {
   const [quotes, setQuotes] = useState([]);
@@ -36,12 +37,14 @@ const QuoteSearch = () => {
       <QuoteSearchBox handleChange={handleChange} />
       {filteredQuotes.map((quote) => (
         <>
-          <div id={`quote-${quote.id}`} data-id={quote.id}>
-            <p>{quote.name}</p>
-            <p>{quote.email}</p>
-            <p>{quote.telephone}</p>
-            <p>{quote.address}</p>
-          </div>
+          <Segment verticle textAlign="center">
+            <div id={`quote-${quote.id}`} data-id={quote.id}>
+              <h4 data-cy="name">{quote.name}</h4>
+              <p data-cy="email">{quote.email}</p>
+              <p data-cy="telephone">{quote.telephone}</p>
+              <p data-cy="address">{quote.address}</p>
+            </div>
+          </Segment>
         </>
       ))}
     </>

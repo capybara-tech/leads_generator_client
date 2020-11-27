@@ -28,10 +28,15 @@ describe("Admin can see search for quotes", () => {
     });
 
     it("Admin can search for specific quotes", () => {
-      cy.get("[data-cy=search]").type("Liljevalchsgatan 24");
-      cy.get("[data-cy=name]").should("contain", "Peter Andrews");
-      cy.get("[data-cy=email]").should("contain", "peter123@mail.com");
-      cy.get("[data-cy=telephone]").should("contain", "0787890767");
+      cy.get("#quoteSearch").type("Liljevalchsgatan 24");
+      cy.get("[data-cy=name]").contains("Peter Andrews").should("be.visible");
+      cy.get("[data-cy=email]").contains("peter123@mail.com").should("be.visible");
+      cy.get("[data-cy=telephone]").contains("0787890767").should("be.visible");
+      cy.get("[data-cy=address]").contains("Liljevalchsgatan 24, 151 45 Södertälje").should("be.visible");
+      cy.get("[data-cy=name]").contains("John Matthews").should("not.be.visible");
+      cy.get("[data-cy=email").contains("user@mail.com").should("not.be.visible");
+      cy.get("[data-cy=telephone").contains("0385337368").should("not.be.visible");
+      cy.get("[data-cy=telephone").contains("Småbrukets backe 30 14158 Huddinge").should("not.be.visible");
     });
   });
 });
