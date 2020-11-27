@@ -1,6 +1,7 @@
 import React from "react";
 import "./MidPageSubmitOrContinue.style.css";
 import { Link as Scrolllink } from "react-scroll";
+import { Popup } from "semantic-ui-react";
 
 const MidPageSubmitOrContinue = (props) => {
   return (
@@ -35,14 +36,21 @@ const MidPageSubmitOrContinue = (props) => {
           <button id="continueToIcons">Continue</button>
         </Scrolllink>
       </div>
-      <button
-        id="submitButton"
-        data-cy="button"
-        type="submit"
-        onClick={props.onSubmit}
-      >
-        Submit
-      </button>
+      <Popup
+        trigger={
+          <button
+            id="submitButton"
+            data-cy="button"
+            type="submit"
+            onClick={props.onSubmit}
+          >
+            Submit
+          </button>
+        }
+        content="Are you sure you want to submit now there are only icons to click?"
+        inverted
+        position="top center"
+      />
     </div>
   );
 };

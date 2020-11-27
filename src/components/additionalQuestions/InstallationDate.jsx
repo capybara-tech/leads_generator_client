@@ -168,16 +168,22 @@ const InstallationDate = (props) => {
             position="bottom center"
           />
         </Scrolllink>
-        <button
-          id="submitButton"
-          data-cy="button"
-          type="submit"
-          onClick={props.onSubmit}
-        >
-          Submit
-        </button>
+        <Popup
+          trigger={
+            <button
+              id="submitButton"
+              data-cy="button"
+              type="submit"
+              onClick={props.onSubmit}
+            >
+              Submit
+            </button>
+          }
+          content="Are you sure you want to submit now?"
+          inverted
+          position="top center"
+        />
       </div>
-
       {components[index]}
     </>
   );
