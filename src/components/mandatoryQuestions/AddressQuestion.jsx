@@ -31,7 +31,7 @@ const AddressQuestion = () => {
         <button id="backToTelephoneQ">Back</button>
       </Scrolllink>
       <Scrolllink
-        to="installationDate"
+        to="midPageSubmitOrContinue"
         activeClass="active"
         spy={true}
         smooth={true}

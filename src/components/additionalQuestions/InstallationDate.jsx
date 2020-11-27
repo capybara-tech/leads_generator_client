@@ -127,14 +127,14 @@ const InstallationDate = (props) => {
         </Grid>
         <br />
         <Scrolllink
-          to="addressQuestion"
+          to="midPageSubmitOrContinue"
           activeClass="active"
           spy={true}
           smooth={true}
           offset={-0}
           duration={1500}
         >
-          <Icon size="big" name="angle left" id="backToAddressQ" />
+          <Icon size="big" name="angle left" id="backToMidPageSubmitOrContinue" />
         </Scrolllink>
         <Scrolllink
           id="installationDateSkip"

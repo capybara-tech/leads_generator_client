@@ -47,7 +47,7 @@ input:-webkit-autofill:active {
   color: rgba(0, 0, 0, 0.4);
 }
 
-#backToAddressQ {
+#backToMidPageSubmitOrContinue {
   position: absolute;
   top: 50%;
   left: 15%;
