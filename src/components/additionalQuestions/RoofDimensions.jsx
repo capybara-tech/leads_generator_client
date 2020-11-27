@@ -3,7 +3,7 @@ import { Field } from "react-final-form";
 import Electricity from "./Electricity";
 import "./RoofDimensions.style.css";
 import { Link as Scrolllink } from "react-scroll";
-import { Icon } from "semantic-ui-react";
+import { Icon, Popup } from "semantic-ui-react";
 
 const RoofDimensions = (props) => {
   const components = [<Electricity />];
@@ -62,7 +62,14 @@ const RoofDimensions = (props) => {
           offset={0}
           duration={1500}
         >
-          <Icon size="big" name="angle left" id="backToRoofDirectionQ" />
+          <Popup
+            trigger={
+              <Icon size="big" name="angle left" id="backToRoofDirectionQ" />
+            }
+            content="Go back to previous question"
+            inverted
+            position="bottom center"
+          />
         </Scrolllink>
         <Scrolllink
           to="electricity"
@@ -75,16 +82,30 @@ const RoofDimensions = (props) => {
             setIndex(0);
           }}
         >
-          <Icon size="big" name="angle right" id="skipToElectricityQ" />
+          <Popup
+            trigger={
+              <Icon size="big" name="angle right" id="skipToElectricityQ" />
+            }
+            content="Skip to next question"
+            inverted
+            position="bottom center"
+          />
         </Scrolllink>
-        <button
-          id="submitButton"
-          data-cy="button"
-          type="submit"
-          onClick={props.onSubmit}
-        >
-          Submit
-        </button>
+        <Popup
+          trigger={
+            <button
+              id="submitButton"
+              data-cy="button"
+              type="submit"
+              onClick={props.onSubmit}
+            >
+              Submit
+            </button>
+          }
+          content="Only one question to go, are you sure you want to submit now?"
+          inverted
+          position="top center"
+        />
       </div>
       {components[index]}
     </>

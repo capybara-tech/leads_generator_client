@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import RoofType from "./RoofType";
 import "./RoofSlope.style.css";
 import { Link as Scrolllink } from "react-scroll";
-import { Grid, Icon } from "semantic-ui-react";
+import { Grid, Icon, Popup } from "semantic-ui-react";
 
 const RoofSlope = (props) => {
   const [roofSlope, setRoofSlope] = useState("");
@@ -158,7 +158,14 @@ const RoofSlope = (props) => {
           offset={0}
           duration={1500}
         >
-          <Icon size="big" name="angle left" id="backToPropertyTypeQ" />
+          <Popup
+            trigger={
+              <Icon size="big" name="angle left" id="backToPropertyTypeQ" />
+            }
+            content="Go back to previous question"
+            inverted
+            position="bottom center"
+          />
         </Scrolllink>
         <Scrolllink
           to="roofType"
@@ -171,16 +178,30 @@ const RoofSlope = (props) => {
             setIndex(0);
           }}
         >
-          <Icon size="big" name="angle right" id="skipToRoofTypeQ" />
+          <Popup
+            trigger={
+              <Icon size="big" name="angle right" id="skipToRoofTypeQ" />
+            }
+            content="Skip to next question"
+            inverted
+            position="bottom center"
+          />
         </Scrolllink>
-        <button
-          id="submitButton"
-          data-cy="button"
-          type="submit"
-          onClick={props.onSubmit}
-        >
-          Submit
-        </button>
+        <Popup
+          trigger={
+            <button
+              id="submitButton"
+              data-cy="button"
+              type="submit"
+              onClick={props.onSubmit}
+            >
+              Submit
+            </button>
+          }
+          content="Are you sure you want to submit now?"
+          inverted
+          position="top center"
+        />
       </div>
       {components[index]}
     </>

@@ -1,8 +1,9 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
-import { Button, Icon } from "semantic-ui-react";
+import { Link } from "react-router-dom";
+import { Button, Icon, Menu } from "semantic-ui-react";
 
-const BannerLandingPage = (props) => {
+const BannerLandingPage = () => {
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-device-width: 1224px)",
   });
@@ -22,14 +23,26 @@ const BannerLandingPage = (props) => {
               grönare med solceller <br />
               <mark id="subInfoTxt">
                 Jämför upp till tre olika offerter
-                <Icon id="angleDownIcon" name="angle down" />
+                <Menu.Item
+                  id="angleDownIcon"
+                  icon={{ name: "angle down" }}
+                  as={Link}
+                  to={{ pathname: "/quotes" }}
+                />
               </mark>
             </p>
             <p id="bannerTxt">
               We will donate <mark className="numbers">165.747 kr</mark>
               <br /> to help save the planet
               <br /> <br />
-              <Button id="bannerButton">Read more</Button>
+              <Button
+                id="bannerButton"
+                data-cy="button"
+                as={Link}
+                to={{ pathname: "/aboutus" }}
+              >
+                Read more
+              </Button>
             </p>
           </div>
         </div>

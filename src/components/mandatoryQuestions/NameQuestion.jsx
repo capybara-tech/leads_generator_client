@@ -6,13 +6,9 @@ import { Link as Scrolllink } from "react-scroll";
 const NameQuestion = () => {
   return (
     <div id="nameQuestion">
-      <h1 id="getUpTo3Quotes" data-cy="title">
-        Get up to three quotes
-      </h1>
       <div id="questionForName">
-        <h3 id="openingQuestion">
-          <span id="helloWord">Hello!</span> My name's Felix, what's
-          yours?
+        <h3 id="openingQuestion" data-cy="title">
+          <span id="helloWord">Hello!</span> My name's Felix, what's yours?
         </h3>
         <Field
           id="fieldName"

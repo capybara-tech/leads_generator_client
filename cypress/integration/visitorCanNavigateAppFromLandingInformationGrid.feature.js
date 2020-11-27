@@ -5,7 +5,9 @@ describe("Visitor can navigate app from landing information grid", () => {
 
   it("visitor can navigate to get up to 3 quotes page", () => {
     cy.get("#quotesDiv").click();
-    cy.get("[data-cy=title]").should("contain", "Get up to three quotes");
+    cy.get("[data-cy=title]")
+      .contains("My name's Felix, what's yours?")
+      .should("be.visible");
     cy.get("#planetDiv").should("not.exist");
     cy.get("#walletDiv").should("not.exist");
     cy.get("#panelsWorkDiv").should("not.exist");

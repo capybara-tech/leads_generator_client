@@ -1,6 +1,6 @@
 import React from "react";
 import LoginForm from "./LoginForm";
-import auth from "../modules/auth";
+import auth from "./modules/auth";
 import { connect } from "react-redux";
 
 const Login = (props) => {

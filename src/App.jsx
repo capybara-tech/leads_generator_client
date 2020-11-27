@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import LandingPage from "./components/generalPageContent/LandingPage";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/generalPageContent/Navbar";
 import WhySolar from "./components/generalPageContent/WhySolar";
 import Environment from "./components/generalPageContent/Environment";
 import Economics from "./components/generalPageContent/Economics";
@@ -9,8 +9,8 @@ import AboutUs from "./components/generalPageContent/AboutUs";
 import FAQs from "./components/generalPageContent/FAQs";
 import QuotesPage from "./components/QuotesPage";
 import HowItWorks from "./components/generalPageContent/HowItWorks";
-import Footer from "./components/Footer";
-import AdminHomePage from "./components/AdminHomePage";
+import Footer from "./components/generalPageContent/Footer";
+import AdminHomePage from "./components/admin/AdminHomePage";
 import { connect } from "react-redux";
 
 const App = () => {

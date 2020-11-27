@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Field } from "react-final-form";
 import "./Electricity.style.css";
 import { Link as Scrolllink } from "react-scroll";
-import { Grid, Icon } from "semantic-ui-react";
+import { Grid, Icon, Popup } from "semantic-ui-react";
 
 const Electricity = (props) => {
   const [fuseSize, setFuseSize] = useState("");
@@ -84,7 +84,8 @@ const Electricity = (props) => {
             />
           </Grid.Column>
         </Grid.Row>
-      </Grid>¯
+      </Grid>
+      ¯
       <Scrolllink
         to="roofDimensions"
         activeClass="active"
@@ -93,7 +94,14 @@ const Electricity = (props) => {
         offset={0}
         duration={1500}
       >
-        <Icon size="big" name="angle left" id="backToRoofDimensionsQ" />
+        <Popup
+          trigger={
+            <Icon size="big" name="angle left" id="backToRoofDimensionsQ" />
+          }
+          content="Go back to previous question"
+          inverted
+          position="bottom center"
+        />
       </Scrolllink>
       <button
         id="submitButton"
