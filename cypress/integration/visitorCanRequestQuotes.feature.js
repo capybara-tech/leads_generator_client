@@ -31,6 +31,7 @@ describe("Visitor can request quotes", () => {
         cy.get('[name="email"]').type("peter@mail.com");
         cy.get('[name="telephone"]').type("0736123456");
         cy.get('[name="address"]').type("Address");
+        cy.get("#continueToIcons").click();
         cy.get("#zeroToThreeMonthsIcon").click();
         cy.get("#houseIcon").click();
         cy.get("#zeroToFiveDegreesIcon").click();
@@ -58,6 +59,7 @@ describe("Visitor can request quotes", () => {
         cy.get('[name="email"]').type("user@mail.com");
         cy.get('[name="telephone"]').type("0736123456");
         cy.get('[name="address"]').type("Address");
+        cy.get("#continueToIcons").click();
         cy.get("#skipToPropertyTypeQ").click();
         cy.get("#backToInstallationDateQ").click();
         cy.get("#zeroToThreeMonthsIcon").click();
