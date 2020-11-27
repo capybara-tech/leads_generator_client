@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./PropertyType.style.css";
 import RoofSlope from "./RoofSlope";
 import { Link as Scrolllink } from "react-scroll";
-import { Grid, Icon } from "semantic-ui-react";
+import { Grid, Icon, Popup } from "semantic-ui-react";
 
 const PropertyType = (props) => {
   const [propertyType, setPropertyType] = useState("");
@@ -234,7 +234,14 @@ const PropertyType = (props) => {
           offset={0}
           duration={1500}
         >
-          <Icon size="big" name="angle left" id="backToInstallationDateQ" />
+          <Popup
+            trigger={
+              <Icon size="big" name="angle left" id="backToInstallationDateQ" />
+            }
+            content="Go back to previous question"
+            inverted
+            position="bottom center"
+          />
         </Scrolllink>
         <Scrolllink
           to="roofSlope"
@@ -247,7 +254,14 @@ const PropertyType = (props) => {
             setIndex(0);
           }}
         >
-          <Icon size="big" name="angle right" id="skipToRoofSlopeQ" />
+          <Popup
+            trigger={
+              <Icon size="big" name="angle right" id="skipToRoofSlopeQ" />
+            }
+            content="Skip to next question"
+            inverted
+            position="bottom center"
+          />
         </Scrolllink>
         <button
           id="submitButton"

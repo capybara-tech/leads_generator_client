@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import RoofDirection from "./RoofDirection";
 import "./RoofType.style.css";
 import { Link as Scrolllink } from "react-scroll";
-import { Grid, Icon } from "semantic-ui-react";
+import { Grid, Icon, Popup } from "semantic-ui-react";
 
 const RoofType = (props) => {
   const [roofType, setRoofType] = useState("");
@@ -164,7 +164,14 @@ const RoofType = (props) => {
           offset={0}
           duration={1500}
         >
-          <Icon size="big" name="angle left" id="backToRoofSlopeQ" />
+          <Popup
+            trigger={
+              <Icon size="big" name="angle left" id="backToRoofSlopeQ" />
+            }
+            content="Go back to previous question"
+            inverted
+            position="bottom center"
+          />
         </Scrolllink>
         <Scrolllink
           to="roofDirection"
@@ -177,7 +184,14 @@ const RoofType = (props) => {
             setIndex(0);
           }}
         >
-          <Icon size="big" name="angle right" id="skipToRoofDirectionQ" />
+          <Popup
+            trigger={
+              <Icon size="big" name="angle right" id="skipToRoofDirectionQ" />
+            }
+            content="Skip to next question"
+            inverted
+            position="bottom center"
+          />
         </Scrolllink>
         <button
           id="submitButton"
