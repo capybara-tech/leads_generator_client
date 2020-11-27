@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ViewContractors from "./ViewContractors";
 import CreateContractor from "./CreateContractor";
+import QuoteSearch from "./QuoteSearch";
 import Login from "./Login";
 import { connect } from "react-redux";
 import { Button } from 'semantic-ui-react'
@@ -8,6 +9,7 @@ import { Button } from 'semantic-ui-react'
 const AdminHomePage = (props) => {
   const [viewContractors, setViewContractors] = useState(false);
   const [createContractor, setCreateContractor] = useState(false);
+  const [quoteSearch, setQuoteSearch] = useState(false);
   let isUserAuthenticated = props.authenticated;
   let content;
 
@@ -23,6 +25,10 @@ const AdminHomePage = (props) => {
           Create contractor
         </Button>
         {createContractor && <CreateContractor />}
+        <Button primary id="quotes" onClick={setQuoteSearch}>
+          Quotes
+        </Button>
+        {quoteSearch && <QuoteSearch />}
       </>
     );
   } else {
