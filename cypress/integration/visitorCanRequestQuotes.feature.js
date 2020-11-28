@@ -16,7 +16,10 @@ describe("Visitor can request quotes", () => {
         cy.get('[name="name"]').type("Peter");
         cy.get('[name="email"]').type("peter@mail.com");
         cy.get('[name="telephone"]').type("0736123456");
-        cy.get('[name="address"]').type("Address");
+        cy.get('[name="postcode"]').type("11521");
+        cy.get("div[street='option']").contains("Galärvarvsvägen").click();
+        cy.get("[name='address-number']").type("14");
+        cy.get("[data-cy=address").contains("Galärvarvsvägen 14 115 21, Stockholm").should("be.visible");
         cy.get("[data-cy=button]").contains("Submit").click();
       });
       cy.get("[data-cy=message]").should(
@@ -30,7 +33,10 @@ describe("Visitor can request quotes", () => {
         cy.get('[name="name"]').type("Peter");
         cy.get('[name="email"]').type("peter@mail.com");
         cy.get('[name="telephone"]').type("0736123456");
-        cy.get('[name="address"]').type("Address");
+        cy.get('[name="postcode"]').type("11521");
+        cy.get("div[street='option']").contains("Galärvarvsvägen").click();
+        cy.get("[name='address-number']").type("14");
+        cy.get("[data-cy=address").contains("Galärvarvsvägen 14 115 21, Stockholm").should("be.visible");
         cy.get("#continueToIcons").click();
         cy.get("#zeroToThreeMonthsIcon").click();
         cy.get("#houseIcon").click();
@@ -58,7 +64,10 @@ describe("Visitor can request quotes", () => {
         cy.get("#backToEmailQ").click();
         cy.get('[name="email"]').type("user@mail.com");
         cy.get('[name="telephone"]').type("0736123456");
-        cy.get('[name="address"]').type("Address");
+        cy.get('[name="postcode"]').type("11521");
+        cy.get("div[street='option']").contains("Galärvarvsvägen").click();
+        cy.get("[name='address-number']").type("14");
+        cy.get("[data-cy=address").contains("Galärvarvsvägen 14 115 21, Stockholm").should("be.visible");
         cy.get("#continueToIcons").click();
         cy.get("#skipToPropertyTypeQ").click();
         cy.get("#backToInstallationDateQ").click();
@@ -89,7 +98,7 @@ describe("Visitor can request quotes", () => {
         cy.get('[name="name"]').type("Peter");
         cy.get('[name="email"]').type("peter@mail.com");
         cy.get('[name="telephone"]').type("0736123456");
-        cy.get('[name="address"]').type("hello street");
+        cy.get('[name="postcode"]').type("hello street");
         cy.get("[data-cy=button]").contains("Submit").click();
       });
       cy.get("[data-cy=message]").should(
