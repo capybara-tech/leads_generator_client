@@ -18,19 +18,11 @@ class AddressSearch extends Component {
     const url = `https://postnummerapi.se/api/1.0/get/${this.state.searchTerm}/`;
     const response = await axios.get(url);
     this.setState({
-      items: response.data.items,
+      items: response.data,
     });
   };
 
   render() {
-    const showAddresses = this.state.items.map((address) => {
-      return (
-        <div>
-          <p>{address}</p>
-        </div>
-      );
-    });
-
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
@@ -45,7 +37,6 @@ class AddressSearch extends Component {
             Search
           </Button>
         </form>
-        <p>{showAddresses}</p>
       </div>
     );
   }
