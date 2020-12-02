@@ -1,59 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import PlacesAutocomplete, {
   geocodeByAddress,
-  getLatLng,
+  getLatLng
 } from "react-places-autocomplete";
 
-class AddressSearch extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { address: "" };
-  }
+const AddressSearch = () => {
+  const [address, setAddress] = useState("");
+  const [coordinates, setCoordinates] = useState({
+    lat: null,
+    lng: null
+  });
 
-  handleChange = (address) => {
-    this.setState({ address });
+  const handleSelect = async value => {
+    const results = await geocodeByAddress(value);
+    const latLng = await getLatLng(results[0]);
+    setAddress(value);
+    setCoordinates(latLng);
   };
 
-  handleSelect = (address) => {
-    geocodeByAddress(address)
-      .then((results) => getLatLng(results[0]))
-      .then((latLng) => console.log("Success", latLng))
-      .catch((error) => console.error("Error", error));
-  };
-
-  render() {
-    return (
+  return (
+    <div>
       <PlacesAutocomplete
-        value={this.state.address}
-        onChange={this.handleChange}
-        onSelect={this.handleSelect}
+        value={address}
+        onChange={setAddress}
+        onSelect={handleSelect}
       >
         {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
           <div>
-            <input
-              {...getInputProps({
-                placeholder: "Search Places ...",
-                className: "location-search-input",
-              })}
-            />
-            <div className="autocomplete-dropdown-container">
-              {loading && <div>Loading...</div>}
-              {suggestions.map((suggestion) => {
-                const className = suggestion.active
-                  ? "suggestion-item--active"
-                  : "suggestion-item";
-                // inline style for demonstration purpose
-                const style = suggestion.active
-                  ? { backgroundColor: "#fafafa", cursor: "pointer" }
-                  : { backgroundColor: "#ffffff", cursor: "pointer" };
+            <input {...getInputProps({ placeholder: "Type address" })} />
+            <div>
+              {loading ? <div>...loading</div> : null}
+              {suggestions.map(suggestion => {
+                const style = {
+                  backgroundColor: suggestion.active ? "#41b6e6" : "#fff"
+                };
                 return (
-                  <div
-                    {...getSuggestionItemProps(suggestion, {
-                      className,
-                      style,
-                    })}
-                  >
-                    <span>{suggestion.description}</span>
+                  <div {...getSuggestionItemProps(suggestion, { style })}>
+                    {suggestion.description}
                   </div>
                 );
               })}
@@ -61,8 +44,8 @@ class AddressSearch extends React.Component {
           </div>
         )}
       </PlacesAutocomplete>
-    );
-  }
+    </div>
+  );
 }
 
 export default AddressSearch;
