@@ -1,43 +1,66 @@
-import React, { Component } from "react";
-import axios from "axios";
-import { Button, Input } from "semantic-ui-react";
+import React from "react";
+import PlacesAutocomplete, {
+  geocodeByAddress,
+  getLatLng,
+} from "react-places-autocomplete";
 
+class AddressSearch extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { address: "" };
+  }
 
-class AddressSearch extends Component {
-  state = {
-    searchTerm: [],
-    items: [],
+  handleChange = (address) => {
+    this.setState({ address });
   };
 
-  onChange = (e) => {
-    this.setState({ searchTerm: e.target.value });
-  };
-
-  handleSubmit = async (e) => {
-    e.preventDefault();
-    const url = `https://postnummerapi.se/api/1.0/get/${this.state.searchTerm}/`;
-    const response = await axios.get(url);
-    this.setState({
-      items: response.data,
-    });
+  handleSelect = (address) => {
+    geocodeByAddress(address)
+      .then((results) => getLatLng(results[0]))
+      .then((latLng) => console.log("Success", latLng))
+      .catch((error) => console.error("Error", error));
   };
 
   render() {
     return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
-          <Input
-            type="text"
-            name="search"
-            placeholder="postcode"
-            value={this.state.searchTerm}
-            onChange={this.onChange}
-          />
-          <Button id="submit" name="search">
-            Search
-          </Button>
-        </form>
-      </div>
+      <PlacesAutocomplete
+        value={this.state.address}
+        onChange={this.handleChange}
+        onSelect={this.handleSelect}
+      >
+        {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
+          <div>
+            <input
+              {...getInputProps({
+                placeholder: "Search Places ...",
+                className: "location-search-input",
+              })}
+            />
+            <div className="autocomplete-dropdown-container">
+              {loading && <div>Loading...</div>}
+              {suggestions.map((suggestion) => {
+                const className = suggestion.active
+                  ? "suggestion-item--active"
+                  : "suggestion-item";
+                // inline style for demonstration purpose
+                const style = suggestion.active
+                  ? { backgroundColor: "#fafafa", cursor: "pointer" }
+                  : { backgroundColor: "#ffffff", cursor: "pointer" };
+                return (
+                  <div
+                    {...getSuggestionItemProps(suggestion, {
+                      className,
+                      style,
+                    })}
+                  >
+                    <span>{suggestion.description}</span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
+      </PlacesAutocomplete>
     );
   }
 }
