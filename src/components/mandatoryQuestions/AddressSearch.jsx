@@ -29,6 +29,7 @@ const AddressSearch = () => {
         onChange={setAddress}
         onSelect={handleSelect}
         searchOptions={searchOptions}
+        shouldFetchSuggestions={address.length > 3}
       >
         {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
           <div>
