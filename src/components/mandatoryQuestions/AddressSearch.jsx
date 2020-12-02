@@ -18,12 +18,17 @@ const AddressSearch = () => {
     setCoordinates(latLng);
   };
 
+  const searchOptions = {
+    componentRestrictions: { country: ['SE'] },
+  }
+
   return (
     <div>
       <PlacesAutocomplete
         value={address}
         onChange={setAddress}
         onSelect={handleSelect}
+        searchOptions={searchOptions}
       >
         {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
           <div>
