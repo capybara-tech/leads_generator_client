@@ -4,6 +4,7 @@ import PlacesAutocomplete, {
   getLatLng,
 } from "react-places-autocomplete";
 import scriptLoader from "react-async-script-loader";
+
 const AddressSearch = ({ isScriptLoaded, isScriptLoadSucceed }) => {
   const [address, setAddress] = useState("");
   const [coordinates, setCoordinates] = useState({
