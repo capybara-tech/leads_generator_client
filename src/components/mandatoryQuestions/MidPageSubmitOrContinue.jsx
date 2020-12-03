@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
+import InstallationDate from "../additionalQuestions/InstallationDate";
 import "./MidPageSubmitOrContinue.style.css";
 import { Link as Scrolllink } from "react-scroll";
 import { Popup } from "semantic-ui-react";
 
 const MidPageSubmitOrContinue = (props) => {
+  const components = [<InstallationDate />];
+  const [index, setIndex] = useState("");
+
   return (
+    <>
     <div id="midPageSubmitOrContinue">
       <div id="messageMidPage">
         <h3 id="midPageTitle">
@@ -32,6 +37,9 @@ const MidPageSubmitOrContinue = (props) => {
           smooth={true}
           offset={-0}
           duration={1500}
+          onMouseDown={async (e) => {
+            setIndex(0);
+          }}
         >
           <button id="continueToIcons">Continue</button>
         </Scrolllink>
@@ -52,6 +60,8 @@ const MidPageSubmitOrContinue = (props) => {
         position="top center"
       />
     </div>
+    {components[index]}
+    </>
   );
 };
 
