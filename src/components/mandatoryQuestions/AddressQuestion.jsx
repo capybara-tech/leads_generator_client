@@ -76,7 +76,7 @@ const AddressQuestion = ({ isScriptLoaded, isScriptLoadSucceed }) => {
                   {loading ? <div>...loading</div> : null}
                   {suggestions.map((suggestion) => {
                     const style = {
-                      backgroundColor: suggestion.active ? "#41b6e6" : "#fff",
+                      backgroundColor: suggestion.active ? "#fe8733cb" : "#ededed",
                     };
                     return (
                       <div {...getSuggestionItemProps(suggestion, { style })}>
