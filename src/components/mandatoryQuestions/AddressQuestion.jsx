@@ -24,7 +24,6 @@ const AddressQuestion = ({ isScriptLoaded, isScriptLoadSucceed }) => {
     const latLng = await getLatLng(results[0]);
     setAddress(value);
     setCoordinates(latLng);
-    console.log(coordinates);
   };
 
   const searchOptions = {
@@ -49,6 +48,9 @@ const AddressQuestion = ({ isScriptLoaded, isScriptLoadSucceed }) => {
               loading,
             }) => (
               <div>
+                <input type="hidden" name="latitude" defaultValue="59.3293" value={coordinates.lat} />
+                <input type="hidden" name="longitude" defaultValue="18.0686" value={coordinates.lng} />
+                <input type="hidden" name="location" value={address} />
                 <Scrolllink
                   to="midPageSubmitOrContinue"
                   activeClass="active"

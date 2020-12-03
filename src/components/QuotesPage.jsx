@@ -3,7 +3,7 @@ import NameQuestion from "./mandatoryQuestions/NameQuestion";
 import EmailQuestion from "./mandatoryQuestions/EmailQuestion";
 import TelephoneQuestion from "./mandatoryQuestions/TelephoneQuestion";
 import AddressQuestion from "./mandatoryQuestions/AddressQuestion";
-import MidPageSubmitOrContinue from "./mandatoryQuestions/MidPageSubmitOrContinue"
+import MidPageSubmitOrContinue from "./mandatoryQuestions/MidPageSubmitOrContinue";
 import InstallationDate from "./additionalQuestions/InstallationDate";
 import axios from "axios";
 import { Form } from "react-final-form";
@@ -18,7 +18,9 @@ const QuotesPage = () => {
       name,
       email,
       telephone,
-      address,
+      location,
+      latitude,
+      longitude,
       installation_date = "",
       property_type = "",
       roof_slope = "",
@@ -36,7 +38,9 @@ const QuotesPage = () => {
         name: name.value,
         email: email.value,
         telephone: telephone.value,
-        address: address.value,
+        location: location.value,
+        latitude: latitude.value,
+        longitude: longitude.value,
         installation_date: installation_date.value,
         property_type: property_type.value,
         roof_slope: roof_slope.value,
