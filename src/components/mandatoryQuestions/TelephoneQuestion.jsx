@@ -36,12 +36,12 @@ const TelephoneQuestion = () => {
         offset={0}
         duration={1500}
       >
-          <Popup
-              trigger={<Icon size="big" name="angle left" id="backToEmailQ" />}
-              content="Back to previous question"
-              inverted
-              position="bottom center"
-            />
+        <Popup
+          trigger={<Icon size="big" name="angle left" id="backToEmailQ" />}
+          content="Back to previous question"
+          inverted
+          position="bottom center"
+        />
       </Scrolllink>
       <Scrolllink
         to="addressQuestion"
@@ -52,9 +52,7 @@ const TelephoneQuestion = () => {
         duration={1500}
       >
         <Popup
-           trigger={
-            <Icon size="big" name="angle right" id="nextToAddressQ" />
-          }
+          trigger={<Icon size="big" name="angle right" id="nextToAddressQ" />}
           content="Next question"
           inverted
           position="bottom center"

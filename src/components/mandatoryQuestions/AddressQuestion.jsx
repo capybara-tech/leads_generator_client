@@ -8,7 +8,7 @@ import PlacesAutocomplete, {
 import scriptLoader from "react-async-script-loader";
 import { Field } from "react-final-form";
 import { Link as Scrolllink } from "react-scroll";
-import { Popup, Icon } from "semantic-ui-react"
+import { Popup, Icon } from "semantic-ui-react";
 
 const AddressQuestion = ({ isScriptLoaded, isScriptLoadSucceed }) => {
   const [address, setAddress] = useState("");
@@ -76,7 +76,9 @@ const AddressQuestion = ({ isScriptLoaded, isScriptLoadSucceed }) => {
                   {loading ? <div>...loading</div> : null}
                   {suggestions.map((suggestion) => {
                     const style = {
-                      backgroundColor: suggestion.active ? "#fe8733cb" : "#ededed",
+                      backgroundColor: suggestion.active
+                        ? "#fe8733cb"
+                        : "#ededed",
                     };
                     return (
                       <div {...getSuggestionItemProps(suggestion, { style })}>
@@ -96,8 +98,10 @@ const AddressQuestion = ({ isScriptLoaded, isScriptLoadSucceed }) => {
             offset={0}
             duration={1500}
           >
-             <Popup
-              trigger={<Icon size="big" name="angle left" id="backToTelephoneQ" />}
+            <Popup
+              trigger={
+                <Icon size="big" name="angle left" id="backToTelephoneQ" />
+              }
               content="Back to previous question"
               inverted
               position="bottom center"
