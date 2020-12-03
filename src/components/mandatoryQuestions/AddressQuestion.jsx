@@ -8,6 +8,7 @@ import PlacesAutocomplete, {
 import scriptLoader from "react-async-script-loader";
 import { Field } from "react-final-form";
 import { Link as Scrolllink } from "react-scroll";
+import { Popup, Icon } from "semantic-ui-react"
 
 const AddressQuestion = ({ isScriptLoaded, isScriptLoadSucceed }) => {
   const [address, setAddress] = useState("");
@@ -95,7 +96,12 @@ const AddressQuestion = ({ isScriptLoaded, isScriptLoadSucceed }) => {
             offset={0}
             duration={1500}
           >
-            <button id="backToTelephoneQ">Back</button>
+             <Popup
+              trigger={<Icon size="big" name="angle left" id="backToTelephoneQ" />}
+              content="Back to previous question"
+              inverted
+              position="bottom center"
+            />
           </Scrolllink>
           <Scrolllink
             to="midPageSubmitOrContinue"
@@ -108,7 +114,12 @@ const AddressQuestion = ({ isScriptLoaded, isScriptLoadSucceed }) => {
               setIndex(0);
             }}
           >
-            <button id="nextToIconQ">Next</button>
+            <Popup
+              trigger={<Icon size="big" name="angle right" id="nextToIconQ" />}
+              content="Next question"
+              inverted
+              position="bottom center"
+            />
           </Scrolllink>
         </div>
         {components[index]}
@@ -151,7 +162,12 @@ const AddressQuestion = ({ isScriptLoaded, isScriptLoadSucceed }) => {
             offset={0}
             duration={1500}
           >
-            <button id="nextToIconQ">Next</button>
+            <Popup
+              trigger={<Icon size="big" name="angle right" id="nextToIconQ" />}
+              content="Next question"
+              inverted
+              position="bottom center"
+            />
           </Scrolllink>
         </div>
         ;

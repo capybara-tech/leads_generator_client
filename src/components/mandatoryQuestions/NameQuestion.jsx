@@ -2,6 +2,7 @@ import React from "react";
 import "./NameQuestion.style.css";
 import { Field } from "react-final-form";
 import { Link as Scrolllink } from "react-scroll";
+import { Popup, Icon } from "semantic-ui-react"
 
 const NameQuestion = () => {
   return (
@@ -27,7 +28,14 @@ const NameQuestion = () => {
         offset={0}
         duration={1500}
       >
-        <button id="nextToEmailQ">Next</button>
+        <Popup
+            trigger={
+              <Icon size="big" name="angle right" id="nextToEmailQ" />
+            }
+            content="Next question"
+            inverted
+            position="bottom center"
+          />
       </Scrolllink>
     </div>
   );

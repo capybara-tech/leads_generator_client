@@ -41,33 +41,10 @@ input:-webkit-autofill:active {
 }
 
 #nextToEmailQ {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 3vh;
   position: absolute;
-  top: 57%;
-  right: 30%;
-  background-color: transparent;
-  border: none;
-  outline: none;
-}
-
-#nextToEmailQ::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: black;
-  transition: width 0.3s;
-}
-
-#nextToEmailQ:hover::after {
-  width: 100%;
-  transition: width 0.3s;
-}
-
-#nextToEmailQ.active {
-  border-bottom: 3px solid black;
+  top: 50%;
+  right: 15%;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 #helloWord {

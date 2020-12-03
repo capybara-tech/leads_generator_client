@@ -2,6 +2,7 @@ import React from "react";
 import "./TelephoneQuestion.style.css";
 import { Field } from "react-final-form";
 import { Link as Scrolllink } from "react-scroll";
+import { Popup, Icon } from "semantic-ui-react";
 
 const normaliseTelephone = (value) => {
   if (!value) return value;
@@ -35,7 +36,12 @@ const TelephoneQuestion = () => {
         offset={0}
         duration={1500}
       >
-        <button id="backToEmailQ">Back</button>
+          <Popup
+              trigger={<Icon size="big" name="angle left" id="backToEmailQ" />}
+              content="Back to previous question"
+              inverted
+              position="bottom center"
+            />
       </Scrolllink>
       <Scrolllink
         to="addressQuestion"
@@ -45,7 +51,14 @@ const TelephoneQuestion = () => {
         offset={0}
         duration={1500}
       >
-        <button id="nextToAddressQ"> Next</button>
+        <Popup
+           trigger={
+            <Icon size="big" name="angle right" id="nextToAddressQ" />
+          }
+          content="Next question"
+          inverted
+          position="bottom center"
+        />
       </Scrolllink>
     </div>
   );

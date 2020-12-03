@@ -2,6 +2,7 @@ import React from "react";
 import "./EmailQuestion.style.css";
 import { Field } from "react-final-form";
 import { Link as Scrolllink } from "react-scroll";
+import { Popup, Icon } from "semantic-ui-react"
 
 const EmailQuestion = () => {
   return (
@@ -30,7 +31,12 @@ const EmailQuestion = () => {
         offset={0}
         duration={1500}
       >
-        <button id="backToNameQ">Back</button>
+           <Popup
+              trigger={<Icon size="big" name="angle left" id="backToNameQ" />}
+              content="Back to previous question"
+              inverted
+              position="bottom center"
+            />
       </Scrolllink>
       <Scrolllink
         to="telephoneQuestion"
@@ -40,7 +46,14 @@ const EmailQuestion = () => {
         offset={0}
         duration={1500}
       >
-        <button id="nextToTelephoneQ">Next</button>
+        <Popup
+            trigger={
+              <Icon size="big" name="angle right" id="nextToTelephoneQ" />
+            }
+            content="Next question"
+            inverted
+            position="bottom center"
+          />
       </Scrolllink>
     </div>
   );
