@@ -8,7 +8,6 @@ import PlacesAutocomplete, {
 import scriptLoader from "react-async-script-loader";
 import { Field } from "react-final-form";
 import { Link as Scrolllink } from "react-scroll";
-import { Icon, Popup } from "semantic-ui-react";
 
 const AddressQuestion = ({ isScriptLoaded, isScriptLoadSucceed }) => {
   const [address, setAddress] = useState("");
@@ -34,6 +33,20 @@ const AddressQuestion = ({ isScriptLoaded, isScriptLoadSucceed }) => {
     return (
       <>
         <div id="addressQuestion">
+          <input
+            type="hidden"
+            name="latitude"
+            defaultValue="59.3293"
+            value={coordinates.lat}
+          />
+          <input
+            type="hidden"
+            name="longitude"
+            defaultValue="18.0686"
+            value={coordinates.lng}
+          />
+          <input type="hidden" name="location" value={address} />
+
           <PlacesAutocomplete
             value={address}
             onChange={setAddress}
@@ -47,35 +60,13 @@ const AddressQuestion = ({ isScriptLoaded, isScriptLoadSucceed }) => {
               getSuggestionItemProps,
               loading,
             }) => (
-              <div>
-                <input type="hidden" name="latitude" defaultValue="59.3293" value={coordinates.lat} />
-                <input type="hidden" name="longitude" defaultValue="18.0686" value={coordinates.lng} />
-                <input type="hidden" name="location" value={address} />
-                <Scrolllink
-                  to="midPageSubmitOrContinue"
-                  activeClass="active"
-                  spy={true}
-                  smooth={true}
-                  offset={0}
-                  duration={1500}
-                  onMouseDown={async (e) => {
-                    setIndex(0);
-                  }}
-                >
-                  <Popup
-                    trigger={
-                      <Icon
-                        size="big"
-                        name="angle right"
-                        id="nextToSubmitOrContinue"
-                      />
-                    }
-                    content="Next to next question"
-                    inverted
-                    position="bottom center"
-                  />
-                </Scrolllink>
+              <div id="questionForAddress">
+                <h3>
+                  Lastly the <span id="addressWord">address</span> intend on
+                  turning green?
+                </h3>
                 <input
+                  id="fieldAddress"
                   onChange={(e) => setAddress(e.target.value)}
                   name="address"
                   {...getInputProps({})}
@@ -96,6 +87,29 @@ const AddressQuestion = ({ isScriptLoaded, isScriptLoadSucceed }) => {
               </div>
             )}
           </PlacesAutocomplete>
+          <Scrolllink
+            to="telephoneQuestion"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={1500}
+          >
+            <button id="backToTelephoneQ">Back</button>
+          </Scrolllink>
+          <Scrolllink
+            to="midPageSubmitOrContinue"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={1500}
+            onMouseDown={async (e) => {
+              setIndex(0);
+            }}
+          >
+            <button id="nextToIconQ">Next</button>
+          </Scrolllink>
         </div>
         {components[index]}
       </>
