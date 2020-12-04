@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { Link, withRouter } from "react-router-dom";
-import { Menu, Button } from "semantic-ui-react";
+import { Menu, Button, Modal, Card } from "semantic-ui-react";
 
 const Navbar = (props) => {
+  const [open, setOpen] = useState(false);
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-device-width: 1224px)",
   });
@@ -30,14 +31,31 @@ const Navbar = (props) => {
               >
                 <img data-cy="logo" src="/images/dummylogo.png" alt="Logo" />
               </Menu.Item>
-              <Menu.Item
-                icon={{ name: "angle down" }}
-                position="right"
-                as={Link}
-                to={{ pathname: "/whysolar" }}
-                content="Why solar"
-                data-cy="button"
-              />
+              <Modal
+                basic
+                onClose={() => setOpen(false)}
+                onOpen={() => setOpen(true)}
+                open={open}
+                size="small"
+                trigger={
+                  <Menu.Item
+                    icon={{ name: "angle down" }}
+                    position="right"
+                    content="Why solar"
+                    data-cy="button"
+                  />
+                }
+              >
+                <Card.Group itemsPerColumn={1}>
+                  <Card
+                    image="https://thevideoink.com/wp-content/uploads/2017/05/environment-policy.EVt5-g.jpg"
+                  />
+                
+                  <Card
+                    image="https://img.caixin.com/2019-12-10/1575981676022946.jpg"
+                  />
+                </Card.Group>
+              </Modal>
               <Menu.Item
                 position="right"
                 as={Link}
