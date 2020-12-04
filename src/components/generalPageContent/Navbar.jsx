@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { Link, withRouter } from "react-router-dom";
-import { Menu, Button } from "semantic-ui-react";
+import { Menu, Button, Modal, Grid, Divider, Image } from "semantic-ui-react";
 
 const Navbar = (props) => {
+  const [open, setOpen] = useState(false);
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-device-width: 1224px)",
   });
@@ -30,14 +31,53 @@ const Navbar = (props) => {
               >
                 <img data-cy="logo" src="/images/dummylogo.png" alt="Logo" />
               </Menu.Item>
-              <Menu.Item
-                icon={{ name: "angle down" }}
-                position="right"
-                as={Link}
-                to={{ pathname: "/whysolar" }}
-                content="Why solar"
-                data-cy="button"
-              />
+              <Modal
+                basic
+                onClose={() => setOpen(false)}
+                onOpen={() => setOpen(true)}
+                open={open}
+                size="small"
+                trigger={
+                  <Menu.Item
+                    icon={{ name: "angle down" }}
+                    position="right"
+                    content="Why solar"
+                    data-cy="button"
+                  />
+                }
+              >
+                <Grid columns={2} relaxed="very">
+                  <Grid.Column>
+                    <Menu.Item
+                      onClick={() => setOpen(false)}
+                      id="linkToEnvironmentPage"
+                      as={Link}
+                      to={{ pathname: "/environment" }}
+                    >
+                      <Image
+                        circular
+                        size="massive"
+                        src="https://www.alicetraveldesigner.com/wp-content/uploads/2020/01/IMG_7895-1300x1300.jpg"
+                      />
+                    </Menu.Item>
+                  </Grid.Column>
+                  <Grid.Column>
+                    <Menu.Item
+                      onClick={() => setOpen(false)}
+                      id="linkToEconomicsPage"
+                      as={Link}
+                      to={{ pathname: "/economics" }}
+                    >
+                      <Image
+                        circular
+                        size="massive"
+                        src="https://previews.123rf.com/images/tankist276/tankist2761203/tankist276120300263/13002202-background-of-very-many-mass-currency-note-dollars-square-photo.jpg"
+                      />
+                    </Menu.Item>
+                  </Grid.Column>
+                </Grid>
+                <Divider vertical>Or</Divider>
+              </Modal>
               <Menu.Item
                 position="right"
                 as={Link}

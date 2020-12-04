@@ -2,7 +2,6 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import LandingPage from "./components/generalPageContent/LandingPage";
 import Navbar from "./components/generalPageContent/Navbar";
-import WhySolar from "./components/generalPageContent/WhySolar";
 import Environment from "./components/generalPageContent/Environment";
 import Economics from "./components/generalPageContent/Economics";
 import AboutUs from "./components/generalPageContent/AboutUs";
@@ -19,7 +18,6 @@ const App = () => {
       <Navbar />
       <Switch>
         <Route exact path="/" component={LandingPage} />
-        <Route path="/whysolar" component={WhySolar} />
         <Route path="/environment" component={Environment} />
         <Route path="/economics" component={Economics} />
         <Route path="/aboutus" component={AboutUs} />

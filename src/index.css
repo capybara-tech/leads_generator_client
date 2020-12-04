@@ -6,6 +6,10 @@ html,
   margin-bottom: 20vh;
 }
 
+.ui.vertical.divider{
+  color: #fe8733cb;
+}
+
 #submitButton {
   background-color: transparent;
   color: rgba(0, 0, 0, 0.4);
