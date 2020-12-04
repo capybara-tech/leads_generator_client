@@ -10,6 +10,7 @@
     "final-form": "^4.20.1",
     "j-tockauth": "^1.2.7",
     "react": "^16.13.1",
+    "react-async-script-loader": "^0.3.0",
     "react-dom": "^16.13.1",
     "react-final-form": "^6.5.2",
     "react-places-autocomplete": "^7.3.0",
