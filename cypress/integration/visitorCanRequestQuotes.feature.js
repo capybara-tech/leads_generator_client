@@ -16,7 +16,9 @@ describe("Visitor can request quotes", () => {
         cy.get('[name="name"]').type("Peter");
         cy.get('[name="email"]').type("peter@mail.com");
         cy.get('[name="telephone"]').type("0736123456");
+        cy.wait(2000)
         cy.get('#fieldAddress').type("Galärvarvsvägen 14 115 21, Stockholm")
+        cy.wait(2000)
         cy.get("#nextToIconQ").click();
         cy.get("[data-cy=button]").contains("Submit").click();
       });
@@ -31,7 +33,9 @@ describe("Visitor can request quotes", () => {
         cy.get('[name="name"]').type("Peter");
         cy.get('[name="email"]').type("peter@mail.com");
         cy.get('[name="telephone"]').type("0736123456");
+        cy.wait(2000)
         cy.get('#fieldAddress').type("Galärvarvsvägen 14 115 21, Stockholm")
+        cy.wait(2000)
         cy.get("#nextToIconQ").click();
         cy.get("#continueToIcons").click();
         cy.get("#zeroToThreeMonthsIcon").click();
@@ -60,7 +64,9 @@ describe("Visitor can request quotes", () => {
         cy.get("#backToEmailQ").click();
         cy.get('[name="email"]').type("user@mail.com");
         cy.get('[name="telephone"]').type("0736123456");
+        cy.wait(2000)
         cy.get('#fieldAddress').type("Galärvarvsvägen 14 115 21, Stockholm")
+        cy.wait(2000)
         cy.get("#nextToIconQ").click();
         cy.get("#continueToIcons").click();
         cy.get("#skipToPropertyTypeQ").click();
