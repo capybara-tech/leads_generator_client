@@ -37,13 +37,13 @@ const AddressQuestion = ({ isScriptLoaded, isScriptLoadSucceed }) => {
           <input
             type="hidden"
             name="latitude"
-            defaultValue="59.3293"
+            defaultValue="90.0000"
             value={coordinates.lat}
           />
           <input
             type="hidden"
             name="longitude"
-            defaultValue="18.0686"
+            defaultValue="45.0000"
             value={coordinates.lng}
           />
           <input type="hidden" name="location" value={address} />

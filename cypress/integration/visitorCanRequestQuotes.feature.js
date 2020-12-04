@@ -16,10 +16,8 @@ describe("Visitor can request quotes", () => {
         cy.get('[name="name"]').type("Peter");
         cy.get('[name="email"]').type("peter@mail.com");
         cy.get('[name="telephone"]').type("0736123456");
-        cy.get('[name="postcode"]').type("11521");
-        cy.get("div[street='option']").contains("Galärvarvsvägen").click();
-        cy.get("[name='address-number']").type("14");
-        cy.get("[data-cy=address").contains("Galärvarvsvägen 14 115 21, Stockholm").should("be.visible");
+        cy.get('[name="address"]').type("Galärvarvsvägen 14 115 21, Stockholm")
+        cy.get("#nextToIconQ").click();
         cy.get("[data-cy=button]").contains("Submit").click();
       });
       cy.get("[data-cy=message]").should(
@@ -33,10 +31,8 @@ describe("Visitor can request quotes", () => {
         cy.get('[name="name"]').type("Peter");
         cy.get('[name="email"]').type("peter@mail.com");
         cy.get('[name="telephone"]').type("0736123456");
-        cy.get('[name="postcode"]').type("11521");
-        cy.get("div[street='option']").contains("Galärvarvsvägen").click();
-        cy.get("[name='address-number']").type("14");
-        cy.get("[data-cy=address").contains("Galärvarvsvägen 14 115 21, Stockholm").should("be.visible");
+        cy.get('[name="address"]').type("Galärvarvsvägen 14 115 21, Stockholm")
+        cy.get("#nextToIconQ").click();
         cy.get("#continueToIcons").click();
         cy.get("#zeroToThreeMonthsIcon").click();
         cy.get("#houseIcon").click();
@@ -64,10 +60,8 @@ describe("Visitor can request quotes", () => {
         cy.get("#backToEmailQ").click();
         cy.get('[name="email"]').type("user@mail.com");
         cy.get('[name="telephone"]').type("0736123456");
-        cy.get('[name="postcode"]').type("11521");
-        cy.get("div[street='option']").contains("Galärvarvsvägen").click();
-        cy.get("[name='address-number']").type("14");
-        cy.get("[data-cy=address").contains("Galärvarvsvägen 14 115 21, Stockholm").should("be.visible");
+        cy.get('#fieldAddress').type("Galärvarvsvägen 14 115 21, Stockholm")
+        cy.get("#nextToIconQ").click();
         cy.get("#continueToIcons").click();
         cy.get("#skipToPropertyTypeQ").click();
         cy.get("#backToInstallationDateQ").click();
@@ -78,32 +72,6 @@ describe("Visitor can request quotes", () => {
       cy.get("[data-cy=message]").should(
         "contain",
         "Form successfully submitted."
-      );
-    });
-  });
-
-  context("Unsucessfully", () => {
-    beforeEach(() => {
-      cy.server();
-      cy.route({
-        method: "POST",
-        url: "http://localhost:3000/api/v1/quotes",
-        response: '{"message": "Somthing went wrong, please try again"}',
-      });
-      cy.visit("/");
-      cy.get("[data-cy=button]").contains("Get up to 3 quotes").click();
-    });
-    it("with incorrect address", () => {
-      cy.get("[data-cy=quote-form]").within(() => {
-        cy.get('[name="name"]').type("Peter");
-        cy.get('[name="email"]').type("peter@mail.com");
-        cy.get('[name="telephone"]').type("0736123456");
-        cy.get('[name="postcode"]').type("hello street");
-        cy.get("[data-cy=button]").contains("Submit").click();
-      });
-      cy.get("[data-cy=message]").should(
-        "contain",
-        "Somthing went wrong, please try again"
       );
     });
   });
