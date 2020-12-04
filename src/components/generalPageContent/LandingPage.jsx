@@ -5,7 +5,7 @@ import LandingPageInfoSegment from "./LandingPageInfoSegment";
 const LandingPage = () => {
   return (
     <div>
-      <BannerLandingPage /> 
+      <BannerLandingPage />
       <LandingPageInfoSegment />
     </div>
   );

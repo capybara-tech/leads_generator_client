@@ -2,9 +2,9 @@ import React from "react";
 import { Link, withRouter } from "react-router-dom";
 
 const Footer = (props) => {
-  if (props.location.pathname==="/adminhomepage") {
+  if (props.location.pathname === "/adminhomepage") {
     return false;
-}
+  }
   return (
     <div className="footer">
       <br />
@@ -25,4 +25,4 @@ const Footer = (props) => {
   );
 };
 
-export default withRouter (Footer);
+export default withRouter(Footer);

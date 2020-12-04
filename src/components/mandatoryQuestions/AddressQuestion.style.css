@@ -1,7 +1,7 @@
 #addressQuestion {
   position: relative;
   height: 100vh;
-  background-color: rgba(238, 238, 238, 0.742);
+  background-color: #ededed;
 }
 
 #questionAskingForAddress {
@@ -44,61 +44,15 @@ input:-webkit-autofill:active {
 }
 
 #nextToIconQ {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 3vh;
   position: absolute;
-  top: 57%;
-  right: 30%;
-  background-color: transparent;
-  border: none;
-  outline: none;
-}
-
-#nextToIconQ::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: black;
-  transition: width 0.3s;
-}
-
-#nextToIconQ:hover::after {
-  width: 100%;
-  transition: width 0.3s;
-}
-
-#nextToIconQ.active {
-  border-bottom: 3px solid black;
+  top: 50%;
+  right: 15%;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 #backToTelephoneQ {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 3vh;
   position: absolute;
-  top: 57%;
-  left: 30%;
-  background-color: transparent;
-  border: none;
-  outline: none;
-}
-
-#backToTelephoneQ::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: black;
-  transition: width 0.3s;
-}
-
-#backToTelephoneQ:hover::after {
-  width: 100%;
-  transition: width 0.3s;
-}
-
-#backToTelephoneQ.active {
-  border-bottom: 3px solid black;
+  top: 50%;
+  left: 15%;
+  color: rgba(0, 0, 0, 0.4);
 }
