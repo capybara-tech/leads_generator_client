@@ -9,9 +9,17 @@ import { Form } from "react-final-form";
 const QuotesPage = () => {
   const [message, setMessage] = useState("");
 
+  const toBase64 = (file) => 
+  new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = (error) => reject(error);
+  });
+
   const onSubmit = async (event) => {
     event.preventDefault();
-    let responseMessage, quoteParams, response;
+    let responseMessage, quoteParams, encodedImage, response;
     let {
       name,
       email,
@@ -29,6 +37,7 @@ const QuotesPage = () => {
       roof_length = "",
       fuse_size = "",
       energy_consumption = "",
+      image
     } = event.target;
 
     try {
@@ -50,6 +59,11 @@ const QuotesPage = () => {
         fuse_size: fuse_size.value,
         energy_consumption: energy_consumption.value,
       };
+
+      if (image.files[0]) {
+        encodedImage = await toBase64(image.files[0]);
+        quoteParams.image = encodedImage;
+      }
 
       response = await axios.post("http://localhost:3000/api/v1/quotes", {
         quote: quoteParams,
@@ -120,6 +134,7 @@ const QuotesPage = () => {
                   }}
                 </>
               )}
+              <input id="image-upload" name="image" type="file" />
             </form>
           );
         }}
