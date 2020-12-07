@@ -51,6 +51,7 @@ describe("Visitor can request quotes", () => {
         cy.get('[name="energy_consumption"]').type("10000");
         cy.get("[data-cy=button]").contains("Submit").click();
       });
+      cy.file_upload("img.jpeg", "#image-upload", "image/jpeg");
       cy.get("[data-cy=message]").should(
         "contain",
         "Form successfully submitted."
