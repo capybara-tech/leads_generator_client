@@ -10,6 +10,26 @@ html,
   color: #fe8733cb;
 }
 
+#closeIcon{
+  position: relative;
+  left: 100%;
+  color:lightgray;
+  background-color: rgba(223, 223, 223, 0.605);;
+}
+
+#headerSubNav{
+  font-family: "Poppins", sans-serif;
+  color:lightgray;
+}
+
+#economyWord{
+  color: #fe8733cb;
+}
+
+#environmentWord{
+  color: #fe8733cb;
+}
+
 #submitButton {
   background-color: transparent;
   color: rgba(0, 0, 0, 0.4);
