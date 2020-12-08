@@ -5,21 +5,23 @@ import TelephoneQuestion from "./mandatoryQuestions/TelephoneQuestion";
 import AddressQuestion from "./mandatoryQuestions/AddressQuestion";
 import axios from "axios";
 import { Form } from "react-final-form";
+import ImageUploader from "react-images-upload";
 
 const QuotesPage = () => {
   const [message, setMessage] = useState("");
+  const [photos, setPhotos] = useState([]);
 
-  const toBase64 = (file) => 
-  new Promise((resolve, reject) => {
-    const reader = new FileReader();
-    reader.readAsDataURL(file);
-    reader.onload = () => resolve(reader.result);
-    reader.onerror = (error) => reject(error);
-  });
+  const toBase64 = (file) =>
+    new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = (error) => reject(error);
+    });
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    let responseMessage, quoteParams, encodedImage, response;
+    let responseMessage, quoteParams, response;
     let {
       name,
       email,
@@ -37,7 +39,6 @@ const QuotesPage = () => {
       roof_length = "",
       fuse_size = "",
       energy_consumption = "",
-      image
     } = event.target;
 
     try {
@@ -58,12 +59,8 @@ const QuotesPage = () => {
         roof_length: roof_length.value,
         fuse_size: fuse_size.value,
         energy_consumption: energy_consumption.value,
+        images: photos,
       };
-
-      if (image.files[0]) {
-        encodedImage = await toBase64(image.files[0]);
-        quoteParams.image = encodedImage;
-      }
 
       response = await axios.post("http://localhost:3000/api/v1/quotes", {
         quote: quoteParams,
@@ -75,6 +72,15 @@ const QuotesPage = () => {
     } finally {
       setMessage(responseMessage);
     }
+  };
+
+  const onDrop = async (photo) => {
+    const encodedImages = [];
+    for (let image of photo) {
+      const encodedImage = await toBase64(image);
+      encodedImages.push(encodedImage);
+    }
+    setPhotos(encodedImages);
   };
 
   return (
@@ -134,7 +140,14 @@ const QuotesPage = () => {
                   }}
                 </>
               )}
-              <input id="image-upload" name="image" type="file" />
+              <ImageUploader
+                withIcon={true}
+                onChange={onDrop}
+                imgExtension={[".jpg", ".gif", ".png", ".gif"]}
+                maxFileSize={5242880}
+                withPreview={true}
+                data-cy="image-upload"
+              />
             </form>
           );
         }}
