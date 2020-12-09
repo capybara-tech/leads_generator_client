@@ -1,7 +1,16 @@
 import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { Link, withRouter } from "react-router-dom";
-import { Menu, Button, Modal, Grid, Divider, Image } from "semantic-ui-react";
+import {
+  Menu,
+  Button,
+  Modal,
+  Grid,
+  Divider,
+  Image,
+  Icon,
+  Header,
+} from "semantic-ui-react";
 
 const Navbar = (props) => {
   const [open, setOpen] = useState(false);
@@ -57,8 +66,12 @@ const Navbar = (props) => {
                       <Image
                         circular
                         size="massive"
-                        src="https://www.alicetraveldesigner.com/wp-content/uploads/2020/01/IMG_7895-1300x1300.jpg"
+                        src="https://mcvt-comet-37.fra1.cdn.digitaloceanspaces.com//previews/1740/preview_1740.jpg"
                       />
+                      <Header id="headerSubNav" as="h3" textAlign="center">
+                        How can this help our{" "}
+                        <span id="environmentWord">environment</span>?
+                      </Header>
                     </Menu.Item>
                   </Grid.Column>
                   <Grid.Column>
@@ -71,12 +84,25 @@ const Navbar = (props) => {
                       <Image
                         circular
                         size="massive"
-                        src="https://previews.123rf.com/images/tankist276/tankist2761203/tankist276120300263/13002202-background-of-very-many-mass-currency-note-dollars-square-photo.jpg"
+                        src="https://i.pinimg.com/originals/b1/96/ff/b196ff9387ada79fc28b7953e81372fb.png"
                       />
+                      <Header id="headerSubNav" as="h3" textAlign="center">
+                        How can this help your <br />
+                        <span id="economyWord">economy</span>?
+                      </Header>
                     </Menu.Item>
                   </Grid.Column>
                 </Grid>
-                <Divider vertical>Or</Divider>
+                <Divider vertical>Or</Divider>{" "}
+                <div>
+                  <Icon
+                    circular
+                    id="closeIcon"
+                    name="close"
+                    size="big"
+                    onClick={() => setOpen(false)}
+                  />
+                </div>
               </Modal>
               <Menu.Item
                 position="right"

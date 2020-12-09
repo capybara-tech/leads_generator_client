@@ -6,7 +6,27 @@ html,
   margin-bottom: 20vh;
 }
 
-.ui.vertical.divider{
+.ui.vertical.divider {
+  color: #fe8733cb;
+}
+
+#closeIcon {
+  position: relative;
+  left: 100%;
+  color: rgba(238, 238, 238, 0.742);
+  background-color: rgba(223, 223, 223, 0.605);
+}
+
+#headerSubNav {
+  font-family: "Poppins", sans-serif;
+  color: rgba(238, 238, 238, 0.742);
+}
+
+#economyWord {
+  color: #fe8733cb;
+}
+
+#environmentWord {
   color: #fe8733cb;
 }
 
