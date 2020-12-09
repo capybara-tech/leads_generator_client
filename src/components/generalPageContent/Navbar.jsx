@@ -66,7 +66,7 @@ const Navbar = (props) => {
                       <Image
                         circular
                         size="massive"
-                        src="https://www.alicetraveldesigner.com/wp-content/uploads/2020/01/IMG_7895-1300x1300.jpg"
+                        src="https://mcvt-comet-37.fra1.cdn.digitaloceanspaces.com//previews/1740/preview_1740.jpg"
                       />
                       <Header id="headerSubNav" as="h3" textAlign="center">
                         How can this help our{" "}
@@ -84,7 +84,7 @@ const Navbar = (props) => {
                       <Image
                         circular
                         size="massive"
-                        src="https://previews.123rf.com/images/tankist276/tankist2761203/tankist276120300263/13002202-background-of-very-many-mass-currency-note-dollars-square-photo.jpg"
+                        src="https://i.pinimg.com/originals/b1/96/ff/b196ff9387ada79fc28b7953e81372fb.png"
                       />
                       <Header id="headerSubNav" as="h3" textAlign="center">
                         How can this help your <br />
