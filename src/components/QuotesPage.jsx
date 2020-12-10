@@ -3,6 +3,7 @@ import NameQuestion from "./mandatoryQuestions/NameQuestion";
 import EmailQuestion from "./mandatoryQuestions/EmailQuestion";
 import TelephoneQuestion from "./mandatoryQuestions/TelephoneQuestion";
 import AddressQuestion from "./mandatoryQuestions/AddressQuestion";
+import Message from "./mandatoryQuestions/Message";
 import axios from "axios";
 import { Form } from "react-final-form";
 
@@ -60,6 +61,7 @@ const QuotesPage = () => {
       responseMessage = "Somthing went wrong, please try again";
     } finally {
       setMessage(responseMessage);
+      console.log(responseMessage)
     }
   };
 
@@ -124,7 +126,9 @@ const QuotesPage = () => {
           );
         }}
       />
-      {message && <p data-cy="message">{message}</p>}
+      <Message 
+      message={message}
+      />
     </div>
   );
 };
