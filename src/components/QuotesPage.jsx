@@ -61,7 +61,6 @@ const QuotesPage = () => {
       responseMessage = "Somthing went wrong, please try again";
     } finally {
       setMessage(responseMessage);
-      console.log(responseMessage)
     }
   };
 

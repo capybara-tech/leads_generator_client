@@ -1,5 +1,6 @@
 import React from "react";
-import { Modal } from "semantic-ui-react";
+import { Link } from "react-router-dom";
+import { Modal, Menu } from "semantic-ui-react";
 
 const Message = ({ message }) => {
   return (
@@ -21,6 +22,9 @@ const Message = ({ message }) => {
             <Modal.Content>
               <h1>success</h1>
               <p>{message}</p>
+              <Menu.Item as={Link} to={{ pathname: "/" }}>
+                <button>Back to homepage</button>
+              </Menu.Item>
             </Modal.Content>
           </Modal>
         </>
