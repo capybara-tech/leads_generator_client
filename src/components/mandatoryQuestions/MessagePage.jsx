@@ -1,19 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Modal, Menu } from "semantic-ui-react";
+import { Modal, Menu, Message } from "semantic-ui-react";
 
-const Message = ({ message }) => {
+const MessagePage = ({ message }) => {
   return (
     <div>
       {message.length > 28 ? (
         <>
           {/* error message */}
-          <Modal basic open={message}>
-            <Modal.Content>
-              <h1>error</h1>
-              <p>{message}</p>
-            </Modal.Content>
-          </Modal>
+          <Message error>
+            <h4>{message}</h4>
+          </Message>
         </>
       ) : (
         <>
@@ -33,4 +30,4 @@ const Message = ({ message }) => {
   );
 };
 
-export default Message;
+export default MessagePage;
