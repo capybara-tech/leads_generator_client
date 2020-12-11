@@ -8,14 +8,14 @@ const MessagePage = ({ message }) => {
       {message.length > 28 ? (
         <>
           {/* error message */}
-        {alert("Somthing went wrong, please try again - perhaps you forgot to fill include your address?")}
+        {alert("Somthing went wrong, please try again - perhaps you forgot to fill out your address?")}
         </>
       ) : (
         <>
           {/* success message */}
           <Modal basic open={message}>
             <Modal.Content>
-              <h1>success</h1>
+              <h1>Success</h1>
               <p>{message}</p>
               <Menu.Item as={Link} to={{ pathname: "/" }}>
                 <button>Back to homepage</button>
