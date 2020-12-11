@@ -6,9 +6,19 @@ import AddressQuestion from "./mandatoryQuestions/AddressQuestion";
 import MessagePage from "./mandatoryQuestions/MessagePage";
 import axios from "axios";
 import { Form } from "react-final-form";
+import ImageUploader from "react-images-upload";
 
 const QuotesPage = () => {
   const [message, setMessage] = useState("");
+  const [photos, setPhotos] = useState([]);
+
+  const toBase64 = (file) =>
+    new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = (error) => reject(error);
+    });
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -50,6 +60,7 @@ const QuotesPage = () => {
         roof_length: roof_length.value,
         fuse_size: fuse_size.value,
         energy_consumption: energy_consumption.value,
+        images: photos,
       };
 
       response = await axios.post("http://localhost:3000/api/v1/quotes", {
@@ -62,6 +73,15 @@ const QuotesPage = () => {
     } finally {
       setMessage(responseMessage);
     }
+  };
+
+  const onDrop = async (photo) => {
+    const encodedImages = [];
+    for (let image of photo) {
+      const encodedImage = await toBase64(image);
+      encodedImages.push(encodedImage);
+    }
+    setPhotos(encodedImages);
   };
 
   return (
@@ -121,6 +141,14 @@ const QuotesPage = () => {
                   }}
                 </>
               )}
+              <ImageUploader
+                withIcon={true}
+                onChange={onDrop}
+                imgExtension={[".jpg", ".gif", ".png", ".gif"]}
+                maxFileSize={5242880}
+                withPreview={true}
+                data-cy="image-upload"
+              />
             </form>
           );
         }}
