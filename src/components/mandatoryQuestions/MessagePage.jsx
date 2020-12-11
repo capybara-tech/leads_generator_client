@@ -16,7 +16,7 @@ const MessagePage = ({ message }) => {
           <Modal basic open={message}>
             <Modal.Content>
               <h1>Success</h1>
-              <p>{message}</p>
+              <p data-cy="message">{message}</p>
               <Menu.Item as={Link} to={{ pathname: "/" }}>
                 <button>Back to homepage</button>
               </Menu.Item>
