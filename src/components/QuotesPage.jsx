@@ -3,6 +3,7 @@ import NameQuestion from "./mandatoryQuestions/NameQuestion";
 import EmailQuestion from "./mandatoryQuestions/EmailQuestion";
 import TelephoneQuestion from "./mandatoryQuestions/TelephoneQuestion";
 import AddressQuestion from "./mandatoryQuestions/AddressQuestion";
+import MessagePage from "./mandatoryQuestions/MessagePage";
 import axios from "axios";
 import { Form } from "react-final-form";
 
@@ -124,7 +125,9 @@ const QuotesPage = () => {
           );
         }}
       />
-      {message && <p data-cy="message">{message}</p>}
+      <MessagePage 
+      message={message}
+      />
     </div>
   );
 };
