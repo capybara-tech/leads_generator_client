@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Modal, Menu, Message } from "semantic-ui-react";
+import { Modal, Menu } from "semantic-ui-react";
 
 const MessagePage = ({ message }) => {
   return (
@@ -8,9 +8,7 @@ const MessagePage = ({ message }) => {
       {message.length > 28 ? (
         <>
           {/* error message */}
-          <Message error>
-            <h4>{message}</h4>
-          </Message>
+        {alert("Somthing went wrong, please try again - perhaps you forgot to fill include your address?")}
         </>
       ) : (
         <>
