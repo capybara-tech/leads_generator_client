@@ -8,7 +8,9 @@ const MessagePage = ({ message }) => {
       {message.length > 28 ? (
         <>
           {/* error message */}
-        {alert("Somthing went wrong, please try again - perhaps you forgot to fill out your address?")}
+          {alert(
+            "Somthing went wrong, please try again - perhaps you forgot to fill out your address?"
+          )}
         </>
       ) : (
         <>
