@@ -11,6 +11,7 @@ import HowSolarWorks from "./components/generalPageContent/HowSolarWorks";
 import HowItWorks from "./components/generalPageContent/HowItWorks";
 import BecomeAPartner from "./components/generalPageContent/BecomeAPartner";
 import TermsAndConditions from "./components/generalPageContent/Legals/TermsAndConditions";
+import PrivacyPolicy from "./components/generalPageContent/Legals/PrivacyPolicy"
 import Footer from "./components/generalPageContent/Footer";
 import AdminHomePage from "./components/admin/AdminHomePage";
 import { connect } from "react-redux";
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/howitworks" component={HowItWorks} />
         <Route path="/partner" component={BecomeAPartner} />
         <Route path="/termsandconditions" component={TermsAndConditions} />
+        <Route path="/privacypolicy" component={PrivacyPolicy} />
         <Route path="/adminhomepage" component={AdminHomePage} />
       </Switch>
       <Footer />

@@ -89,6 +89,14 @@ const Footer = (props) => {
               >
                 Terms and conditions
               </Link>{" "}
+              <Link
+                className="footerLink"
+                data-cy="button"
+                as={Link}
+                to={{ pathname: "/privacypolicy" }}
+              >
+                Privacy policy
+              </Link>{" "}
             </Grid.Column>
             <Grid.Column>
               <h3 className="footerHeader">Help</h3>
