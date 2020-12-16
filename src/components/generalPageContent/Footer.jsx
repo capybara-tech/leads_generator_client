@@ -7,6 +7,7 @@ const Footer = (props) => {
   }
   return (
     <div data-cy="footer" className="footer">
+      <h3>Discover</h3>
       <Link data-cy="button" as={Link} to={{ pathname: "/aboutus" }}>
         About us
       </Link>{" "}

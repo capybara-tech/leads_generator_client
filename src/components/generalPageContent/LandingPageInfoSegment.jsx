@@ -41,7 +41,6 @@ const LandingPageInfoSegment = () => {
                 </p>
               </Link>
             </Grid.Column>
-
             <Grid.Column textAlign="center">
               <Link
                 to={{ pathname: "/economics" }}
@@ -58,10 +57,9 @@ const LandingPageInfoSegment = () => {
                 </p>
               </Link>
             </Grid.Column>
-
             <Grid.Column textAlign="center">
               <Link
-                to={{ pathname: "/howitworks" }}
+                to={{ pathname: "/howsolarworks" }}
                 id="panelsWorkDiv"
                 className="infoSegmentIcons"
               >
@@ -79,4 +77,5 @@ const LandingPageInfoSegment = () => {
     </div>
   );
 };
+
 export default LandingPageInfoSegment;
