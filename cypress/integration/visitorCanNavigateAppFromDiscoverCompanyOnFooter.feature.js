@@ -8,7 +8,7 @@ describe("Visitor can navigate app from discover company on the footer", () => {
       cy.get("[data-cy=button]").contains("About us").click();
     });
     cy.get("[data-cy=title]").should("contain", "About us");
-    cy.get("[data-cy=title]").contains("How it works").should("not.be.visible");
+    cy.get("[data-cy=title]").contains("The SolSpana way").should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("How does this have an impact on the planet")
       .should("not.be.visible");
@@ -32,11 +32,11 @@ describe("Visitor can navigate app from discover company on the footer", () => {
     cy.get("[data-cy=title]").contains("FAQs").should("not.be.visible");
   });
 
-  it("to How it works", () => {
+  it("to How SolSpana works", () => {
     cy.get("[data-cy=footer]").within(() => {
-      cy.get("[data-cy=button]").contains("How it works").click();
+      cy.get("[data-cy=button]").contains("How SOLSPANA works").click();
     });
-    cy.get("[data-cy=title]").should("contain", "How it works");
+    cy.get("[data-cy=title]").should("contain", "The SolSpana way");
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("How does this have an impact on the planet")
@@ -70,7 +70,7 @@ describe("Visitor can navigate app from discover company on the footer", () => {
       "How does this have an impact on the planet"
     );
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
-    cy.get("[data-cy=title]").contains("How it works").should("not.be.visible");
+    cy.get("[data-cy=title]").contains("The SolSpana way").should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("How does this have an impact on your wallet")
       .should("not.be.visible");
@@ -100,7 +100,7 @@ describe("Visitor can navigate app from discover company on the footer", () => {
       "How does this have an impact on your wallet"
     );
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
-    cy.get("[data-cy=title]").contains("How it works").should("not.be.visible");
+    cy.get("[data-cy=title]").contains("The SolSpana way").should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("How does this have an impact on the planet")
       .should("not.be.visible");
@@ -127,7 +127,7 @@ describe("Visitor can navigate app from discover company on the footer", () => {
     });
     cy.get("[data-cy=title]").should("contain", "Become a partner");
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
-    cy.get("[data-cy=title]").contains("How it works").should("not.be.visible");
+    cy.get("[data-cy=title]").contains("The SolSpana way").should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("How does this have an impact on the planet")
       .should("not.be.visible");
@@ -157,7 +157,7 @@ describe("Visitor can navigate app from discover company on the footer", () => {
       "My name's Felix, what's yours?"
     );
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
-    cy.get("[data-cy=title]").contains("How it works").should("not.be.visible");
+    cy.get("[data-cy=title]").contains("The SolSpana way").should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("How does this have an impact on the planet")
       .should("not.be.visible");
