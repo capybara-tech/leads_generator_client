@@ -94,7 +94,9 @@ describe("Visitor can navigate app from legal category title on the footer", () 
     cy.get("[data-cy=title]")
       .contains("Terms and conditions")
       .should("not.be.visible");
-    cy.get("[data-cy=title]").contains("Cookies").should("not.be.visible");
+    cy.get("[data-cy=title]")
+      .contains("Privacy policy")
+      .should("not.be.visible");
     cy.get("[data-cy=title]").contains("Contact us").should("not.be.visible");
     cy.get("[data-cy=title]").contains("FAQs").should("not.be.visible");
   });

@@ -97,6 +97,15 @@ const Footer = (props) => {
               >
                 Privacy policy
               </Link>{" "}
+              <br />
+              <Link
+                className="footerLink"
+                data-cy="button"
+                as={Link}
+                to={{ pathname: "/cookies" }}
+              >
+                Cookies
+              </Link>{" "}
             </Grid.Column>
             <Grid.Column>
               <h3 className="footerHeader">Help</h3>
