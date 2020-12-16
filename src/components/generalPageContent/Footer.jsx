@@ -81,6 +81,14 @@ const Footer = (props) => {
             </Grid.Column>
             <Grid.Column>
               <h3 className="footerHeader">Legal</h3>
+              <Link
+                className="footerLink"
+                data-cy="button"
+                as={Link}
+                to={{ pathname: "/termsandconditions" }}
+              >
+                Terms and conditions
+              </Link>{" "}
             </Grid.Column>
             <Grid.Column>
               <h3 className="footerHeader">Help</h3>
