@@ -1,4 +1,4 @@
-describe("Visitor can navigate app from discover company on the footer", () => {
+describe("Visitor can navigate app from discover category title on the footer", () => {
   beforeEach(() => {
     cy.visit("/");
   });
@@ -8,6 +8,7 @@ describe("Visitor can navigate app from discover company on the footer", () => {
       cy.get("[data-cy=button]").contains("About us").click();
     });
     cy.get("[data-cy=title]").should("contain", "About us");
+    cy.get("[data-cy=title]").contains("How does solar work?").should("not.be.visible");
     cy.get("[data-cy=title]").contains("The SolSpana way").should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("How does this have an impact on the planet")
@@ -37,6 +38,7 @@ describe("Visitor can navigate app from discover company on the footer", () => {
       cy.get("[data-cy=button]").contains("How SOLSPANA works").click();
     });
     cy.get("[data-cy=title]").should("contain", "The SolSpana way");
+    cy.get("[data-cy=title]").contains("How does solar work?").should("not.be.visible");
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("How does this have an impact on the planet")
@@ -69,6 +71,7 @@ describe("Visitor can navigate app from discover company on the footer", () => {
       "contain",
       "How does this have an impact on the planet"
     );
+    cy.get("[data-cy=title]").contains("How does solar work?").should("not.be.visible");
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
     cy.get("[data-cy=title]").contains("The SolSpana way").should("not.be.visible");
     cy.get("[data-cy=title]")
@@ -99,6 +102,7 @@ describe("Visitor can navigate app from discover company on the footer", () => {
       "contain",
       "How does this have an impact on your wallet"
     );
+    cy.get("[data-cy=title]").contains("How does solar work?").should("not.be.visible");
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
     cy.get("[data-cy=title]").contains("The SolSpana way").should("not.be.visible");
     cy.get("[data-cy=title]")
@@ -126,6 +130,7 @@ describe("Visitor can navigate app from discover company on the footer", () => {
       cy.get("[data-cy=button]").contains("Become a partner").click();
     });
     cy.get("[data-cy=title]").should("contain", "Become a partner");
+    cy.get("[data-cy=title]").contains("How does solar work?").should("not.be.visible");
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
     cy.get("[data-cy=title]").contains("The SolSpana way").should("not.be.visible");
     cy.get("[data-cy=title]")
@@ -156,6 +161,7 @@ describe("Visitor can navigate app from discover company on the footer", () => {
       "contain",
       "My name's Felix, what's yours?"
     );
+    cy.get("[data-cy=title]").contains("How does solar work?").should("not.be.visible");
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
     cy.get("[data-cy=title]").contains("The SolSpana way").should("not.be.visible");
     cy.get("[data-cy=title]")
