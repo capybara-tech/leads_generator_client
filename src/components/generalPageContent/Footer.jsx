@@ -13,6 +13,9 @@ const Footer = (props) => {
           <Grid.Row columns={4}>
             <Grid.Column textAlign="center">
               <h3>Solar</h3>
+              <Link data-cy="button" as={Link} to={{ pathname: "/howsolarworks" }}>
+                How solar works?
+              </Link>
             </Grid.Column>
             <Grid.Column textAlign="center">
               <h3>Discover</h3>
