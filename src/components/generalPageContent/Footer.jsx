@@ -154,7 +154,9 @@ const Footer = (props) => {
                   aria-hidden="true"
                 />
               </div>
-              <h3 className="footerHeader">Our charities</h3>
+              <h3 className="footerHeader">Our awesome charities<Icon id="trophy" name="trophy" /></h3>
+              <p id="protectTheForest" className="footerLink">Protect the forest</p>
+              <p id="greenLiving" className="footerLink">Green living</p>
             </Grid.Column>
           </Grid.Row>
         </Grid>
