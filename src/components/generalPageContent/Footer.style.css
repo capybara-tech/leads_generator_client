@@ -2,7 +2,7 @@
   background: rgba(0, 66, 37, 0.5);
   text-align: center;
   width: 100%;
-  height: 40vh;
+  height: 30vh;
   font-family: "Poppins", sans-serif;
   font-size: 0.8em;
   font-weight: bold;
@@ -23,7 +23,7 @@
   height: 0;
   width: 3.5vw;
   content: "";
-  border-top: 2.5px solid #0e0905cb;
+  border-top: 2.5px solid #fe8733cb;
 }
 
 .footerLink {
@@ -40,6 +40,14 @@
   color: transparent;
 }
 
+#trophy {
+  color: rgba(238, 238, 238, 0.742);
+}
+
 .contact {
   margin: 0em;
+}
+
+#socialMedia {
+font-size: 3vh;
 }

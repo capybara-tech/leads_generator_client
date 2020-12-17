@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.style.css";
 import { Link, withRouter } from "react-router-dom";
-import { Container, Grid } from "semantic-ui-react";
+import { Container, Grid, Icon } from "semantic-ui-react";
 
 const Footer = (props) => {
   if (props.location.pathname === "/adminhomepage") {
@@ -76,7 +76,7 @@ const Footer = (props) => {
                 as={Link}
                 to={{ pathname: "/quotes" }}
               >
-                Get up to 3 quotes
+                Get up to 3 quotes <Icon id="trophy" name="trophy" />
               </Link>{" "}
             </Grid.Column>
             <Grid.Column>
@@ -132,6 +132,28 @@ const Footer = (props) => {
             </Grid.Column>
             <Grid.Column>
               <h3 className="footerHeader">Follow us on</h3>
+              <div id="socialMedia">
+                <i id="instagramIcon"
+                  onClick={() => window.open("https://instagram.com")}
+                  className="fa fa-instagram fa"
+                  aria-hidden="true"
+                />{' '}
+                <i id="facebookIcon"
+                  onClick={() => window.open("https://facebook.com")}
+                  className="fa fa-facebook"
+                  aria-hidden="true"
+                />{' '}
+                <i id="twitterIcon"
+                  onClick={() => window.open("https://twitter.com")}
+                  className="fab fa-twitter-square fa"
+                  aria-hidden="true"
+                />{' '}
+                <i id="linkedinIcon"
+                  onClick={() => window.open("https://linkedin.com")}
+                  className="fa fa-linkedin"
+                  aria-hidden="true"
+                />
+              </div>
               <h3 className="footerHeader">Our charities</h3>
             </Grid.Column>
           </Grid.Row>
