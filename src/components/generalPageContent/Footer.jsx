@@ -109,8 +109,26 @@ const Footer = (props) => {
             </Grid.Column>
             <Grid.Column>
               <h3 className="footerHeader">Help</h3>
-              <p>capybara.it@gmail.com</p>
-              <p>Monday - Friday | 8.00 - 16.00</p>
+              <Link
+                className="footerLink"
+                data-cy="button"
+                as={Link}
+                to={{ pathname: "/contactus" }}
+              >
+                Contact us
+              </Link>{" "}
+              <br />
+              <Link
+                className="footerLink"
+                data-cy="button"
+                as={Link}
+                to={{ pathname: "/faqs" }}
+              >
+                FAQs
+              </Link>{" "}
+              <br /> <br />
+              <p className="contact">capybara.it@gmail.com</p>
+              <p className="contact">Monday - Friday | 8.00 - 16.00</p>
             </Grid.Column>
             <Grid.Column>
               <h3 className="footerHeader">Follow us on</h3>

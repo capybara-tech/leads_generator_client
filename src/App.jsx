@@ -7,13 +7,14 @@ import Economics from "./components/generalPageContent/Economics";
 import AboutUs from "./components/generalPageContent/AboutUs";
 import FAQs from "./components/generalPageContent/FAQs";
 import QuotesPage from "./components/QuotesPage";
+import Footer from "./components/generalPageContent/Footer";
 import HowSolarWorks from "./components/generalPageContent/HowSolarWorks";
 import HowItWorks from "./components/generalPageContent/HowItWorks";
 import BecomeAPartner from "./components/generalPageContent/BecomeAPartner";
 import TermsAndConditions from "./components/generalPageContent/Legals/TermsAndConditions";
-import PrivacyPolicy from "./components/generalPageContent/Legals/PrivacyPolicy"
-import Cookies from "./components/generalPageContent/Legals/Cookies"
-import Footer from "./components/generalPageContent/Footer";
+import PrivacyPolicy from "./components/generalPageContent/Legals/PrivacyPolicy";
+import Cookies from "./components/generalPageContent/Legals/Cookies";
+import ContactUs from "./components/generalPageContent/ContactUs";
 import AdminHomePage from "./components/admin/AdminHomePage";
 import { connect } from "react-redux";
 
@@ -34,6 +35,7 @@ const App = () => {
         <Route path="/termsandconditions" component={TermsAndConditions} />
         <Route path="/privacypolicy" component={PrivacyPolicy} />
         <Route path="/cookies" component={Cookies} />
+        <Route path="/contactus" component={ContactUs} />
         <Route path="/adminhomepage" component={AdminHomePage} />
       </Switch>
       <Footer />
