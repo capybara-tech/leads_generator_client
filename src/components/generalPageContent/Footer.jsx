@@ -109,6 +109,8 @@ const Footer = (props) => {
             </Grid.Column>
             <Grid.Column>
               <h3 className="footerHeader">Help</h3>
+              <p>capybara.it@gmail.com</p>
+              <p>Monday - Friday | 8.00 - 16.00</p>
             </Grid.Column>
             <Grid.Column>
               <h3 className="footerHeader">Follow us on</h3>
