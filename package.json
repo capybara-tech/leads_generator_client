@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.20.0",
     "final-form": "^4.20.1",
+    "framer-motion": "^3.0.0",
     "j-tockauth": "^1.2.7",
     "react": "^16.13.1",
     "react-async-script-loader": "^0.3.0",

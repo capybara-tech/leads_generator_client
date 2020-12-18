@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Link as Scrolllink } from "react-scroll";
 import { Button, Icon, Menu } from "semantic-ui-react";
 import CountUp from "react-countup";
+import { motion } from "framer-motion";
 import "./BannerLandingPage.style.css";
 
 const BannerLandingPage = () => {
@@ -13,6 +14,14 @@ const BannerLandingPage = () => {
   const isTabletOrMobileDevice = useMediaQuery({
     query: "(max-device-width: 1224px)",
   });
+
+  const bounceTransition = {
+    y: {
+      duration: 0.4,
+      yoyo: Infinity,
+      ease: "easeOut"
+    }
+  }
 
   return (
     <>
@@ -34,7 +43,15 @@ const BannerLandingPage = () => {
               </mark>
             </p>
             <div>
-              <CountUp start={0} end={165677} delay={0} duration={4} suffix={ "Kr" }>
+              <CountUp
+                start={0}
+                end={165}
+                delay={0}
+                duration={4}
+                suffix={" Kr"}
+                decimals={3}
+                decimal="."
+              >
                 {({ countUpRef }) => (
                   <p id="bannerTxt">
                     We will donate <span className="numbers" ref={countUpRef} />
@@ -53,7 +70,13 @@ const BannerLandingPage = () => {
               </Button>
             </div>
           </div>
-          <Scrolllink
+          <div id="dubbleArrowDown">
+            <motion.span
+            transition={bounceTransition}
+            animate={{
+              y:["50%", "-50%"],
+            }}
+            ><Scrolllink
             id="dubbleArrowDown"
             to="infoSegment"
             activeClass="active"
@@ -63,9 +86,11 @@ const BannerLandingPage = () => {
             duration={1500}
           >
             <Icon size="huge" name="angle double down" />
-          </Scrolllink>
+          </Scrolllink></motion.span>
+          </div>
         </div>
       )}
+
       {isTabletOrMobileDevice && (
         <div id="bannerMob">
           <img
