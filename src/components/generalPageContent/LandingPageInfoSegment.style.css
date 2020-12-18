@@ -1,20 +1,28 @@
 #infoSegment{
   position: relative;
   height:110vh;
+  background-color: #fcf6f5ff;
 }
 
 #quotesDiv{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   position: absolute;
+  text-align: center;
   top:40vh;
-  left:30vw;
+  left:20vw;
   transform: translate(-50%, -50%);
 }
 
 #boxWithIcons{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   top:15vh;
   width:40vw;
-  background-color: khaki;
+  background:rgb(95, 203, 143);
   position: absolute;
   right:0;
+  text-align: center;
+  
 }
 

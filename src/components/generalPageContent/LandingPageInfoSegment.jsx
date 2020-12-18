@@ -19,11 +19,6 @@ const LandingPageInfoSegment = () => {
             size="massive"
           />
           <h3 data-cy="title">Get up to 3 Quotes</h3>
-          <p data-cy="content">
-            <li>Lorem ipsum dolor sit amet consectetur.</li>
-            <li>Lorem ipsum dolor sit amet consectetur.</li>
-            <li>Lorem ipsum dolor sit amet consectetur.</li>
-          </p>
         </Link>
       </div>
       <div id="boxWithIcons">
