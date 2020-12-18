@@ -23,6 +23,13 @@
   position: absolute;
   right:0;
   text-align: center;
-  
+}
+
+#imageOfTrees{
+position: absolute;
+height:65vh;
+width:70vw;
+bottom:5vh;
+left:0.5vw;
 }
 
