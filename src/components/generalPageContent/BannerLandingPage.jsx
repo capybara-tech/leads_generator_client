@@ -1,6 +1,7 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
+import { Link as Scrolllink } from "react-scroll";
 import { Button, Icon, Menu } from "semantic-ui-react";
 import CountUp from "react-countup";
 import "./BannerLandingPage.style.css";
@@ -17,7 +18,6 @@ const BannerLandingPage = () => {
     <>
       {isDesktopOrLaptop && (
         <div id="banner">
-          {/* <img id="bannerImg" src="/images/BannerImage.jpg" alt="Top banner" /> */}
           <div id="bannerContent">
             <p id="bannerInfoTxt">
               Tillsammans gör vi Sverige
@@ -34,25 +34,36 @@ const BannerLandingPage = () => {
               </mark>
             </p>
             <div>
-            <CountUp start={0} end={165677} delay={0} duration={5}>
-              {({ countUpRef }) => (
-                <p id="bannerTxt">
-                  We will donate <span className="numbers" ref={countUpRef} />
-                   Kr <br />
-                  to help save the planet
-                </p>
-              )}
-            </CountUp>
-            <Button
-              id="bannerButton"
-              data-cy="button"
-              as={Link}
-              to={{ pathname: "/aboutus" }}
-            >
-              Read more
-            </Button>
+              <CountUp start={0} end={165677} delay={0} duration={4} suffix={ "Kr" }>
+                {({ countUpRef }) => (
+                  <p id="bannerTxt">
+                    We will donate <span className="numbers" ref={countUpRef} />
+                    <br />
+                    to help save the planet
+                  </p>
+                )}
+              </CountUp>
+              <Button
+                id="bannerButton"
+                data-cy="button"
+                as={Link}
+                to={{ pathname: "/aboutus" }}
+              >
+                Read more
+              </Button>
             </div>
           </div>
+          <Scrolllink
+            id="dubbleArrowDown"
+            to="infoSegment"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={1500}
+          >
+            <Icon size="huge" name="angle double down" />
+          </Scrolllink>
         </div>
       )}
       {isTabletOrMobileDevice && (

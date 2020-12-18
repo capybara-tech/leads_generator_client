@@ -4,7 +4,7 @@ import { Container, Grid, Icon } from "semantic-ui-react";
 
 const LandingPageInfoSegment = () => {
   return (
-    <div>
+    <div id="infoSegment">
       <Container id="landingPageInfoSegment">
         <Grid divided="vertically">
           <Grid.Row columns={3}>
