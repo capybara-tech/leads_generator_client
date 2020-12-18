@@ -19,9 +19,9 @@ const BannerLandingPage = () => {
     y: {
       duration: 0.4,
       yoyo: Infinity,
-      ease: "easeOut"
-    }
-  }
+      ease: "easeOut",
+    },
+  };
 
   return (
     <>
@@ -72,21 +72,23 @@ const BannerLandingPage = () => {
           </div>
           <div id="dubbleArrowDown">
             <motion.span
-            transition={bounceTransition}
-            animate={{
-              y:["50%", "-50%"],
-            }}
-            ><Scrolllink
-            id="dubbleArrowDown"
-            to="infoSegment"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={1500}
-          >
-            <Icon size="huge" name="angle double down" />
-          </Scrolllink></motion.span>
+              transition={bounceTransition}
+              animate={{
+                y: ["50%", "-50%"],
+              }}
+            >
+              <Scrolllink
+                id="dubbleArrowDown"
+                to="infoSegment"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={1500}
+              >
+                <Icon size="big" name="angle double down" />
+              </Scrolllink>
+            </motion.span>
           </div>
         </div>
       )}
