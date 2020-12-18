@@ -2,6 +2,8 @@ import React from "react";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
 import { Button, Icon, Menu } from "semantic-ui-react";
+import CountUp from "react-countup";
+import "./BannerLandingPage.style.css";
 
 const BannerLandingPage = () => {
   const isDesktopOrLaptop = useMediaQuery({
@@ -15,7 +17,7 @@ const BannerLandingPage = () => {
     <>
       {isDesktopOrLaptop && (
         <div id="banner">
-          <img id="bannerImg" src="/images/BannerImage.jpg" alt="Top banner" />
+          {/* <img id="bannerImg" src="/images/BannerImage.jpg" alt="Top banner" /> */}
           <div id="bannerContent">
             <p id="bannerInfoTxt">
               Tillsammans gör vi Sverige
@@ -31,19 +33,25 @@ const BannerLandingPage = () => {
                 />
               </mark>
             </p>
-            <p id="bannerTxt">
-              We will donate <mark className="numbers">165.747 kr</mark>
-              <br /> to help save the planet
-              <br /> <br />
-              <Button
-                id="bannerButton"
-                data-cy="button"
-                as={Link}
-                to={{ pathname: "/aboutus" }}
-              >
-                Read more
-              </Button>
-            </p>
+            <div>
+            <CountUp start={0} end={165677} delay={0} duration={5}>
+              {({ countUpRef }) => (
+                <p id="bannerTxt">
+                  We will donate <span className="numbers" ref={countUpRef} />
+                   Kr <br />
+                  to help save the planet
+                </p>
+              )}
+            </CountUp>
+            <Button
+              id="bannerButton"
+              data-cy="button"
+              as={Link}
+              to={{ pathname: "/aboutus" }}
+            >
+              Read more
+            </Button>
+            </div>
           </div>
         </div>
       )}

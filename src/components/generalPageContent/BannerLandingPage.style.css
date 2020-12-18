@@ -1,0 +1,62 @@
+#bannerInfoTxt {
+  color: rgba(238, 238, 238, 0.742);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 3.5vw;
+  position: absolute;
+  top: 40%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+}
+
+.bannerInfo {
+  background: none;
+  color: rgba(238, 238, 238, 0.742);
+}
+
+#subInfoTxt {
+  background: none;
+  color: rgba(238, 238, 238, 0.742);
+  font-size: 1.5vw;
+}
+
+#bannerTxt {
+  color: rgba(238, 238, 238, 0.742);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2vw;
+  text-align: center;
+  position: absolute;
+  top: 65%;
+  left: 74%;
+  transform: translate(-50%, -50%);
+}
+
+.numbers {
+  background: none;
+  color: #fe8733cb;
+}
+
+#bannerButton {
+  position: absolute;
+  top: 76%;
+  left:74%;
+  transform: translate(-50%, -50%);
+  font-size: 1.3vw;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background-color: transparent;
+  border-style: solid;
+  color: rgba(238, 238, 238, 0.742);
+  border-radius: 10px;
+}
+
+#banner {
+  height:100vh;
+  background-image: url("/images/BannerImage.jpg");
+  background-size: cover;
+}
+
+.angle.down.icon {
+  color: #fe8733cb;
+}
