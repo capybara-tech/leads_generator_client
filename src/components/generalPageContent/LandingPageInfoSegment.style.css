@@ -1,0 +1,21 @@
+#infoSegment{
+  position: relative;
+  height:110vh;
+}
+
+#quotesDiv{
+  position: absolute;
+  top:40vh;
+  left:30vw;
+  transform: translate(-50%, -50%);
+}
+
+#boxWithIcons{
+  top:15vh;
+  height:70vh;
+  width:40vw;
+  background-color: khaki;
+  position: absolute;
+  right:0;
+}
+
