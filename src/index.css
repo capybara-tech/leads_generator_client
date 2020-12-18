@@ -149,20 +149,6 @@ html,
   position: block;
 }
 
-.footer {
-  background: rgba(0, 66, 37, 0.5);
-  text-align: center;
-  width: 100%;
-  height: 20vh;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  color: #0e0905cb;
-}
-
-#adminLink {
-  color: #0e0905cb;
-}
-
 .angle.down.icon {
   color: #fe8733cb;
 }

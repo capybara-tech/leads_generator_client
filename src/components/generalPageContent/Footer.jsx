@@ -1,17 +1,170 @@
 import React from "react";
+import "./Footer.style.css";
 import { Link, withRouter } from "react-router-dom";
+import { Container, Grid, Icon } from "semantic-ui-react";
 
 const Footer = (props) => {
   if (props.location.pathname === "/adminhomepage") {
     return false;
   }
   return (
-    <div className="footer">
-      <br />
+    <div data-cy="footer" className="footer">
+      <Container>
+        <Grid divided="vertically" textAlign="left">
+          <Grid.Row columns={5}>
+            <Grid.Column>
+              <h3 className="footerHeader">Solar</h3>
+              <Link
+                className="footerLink"
+                data-cy="button"
+                as={Link}
+                to={{ pathname: "/howsolarworks" }}
+              >
+                How solar works?
+              </Link>
+            </Grid.Column>
+            <Grid.Column>
+              <h3 className="footerHeader">Discover</h3>
+              <Link
+                className="footerLink"
+                data-cy="button"
+                as={Link}
+                to={{ pathname: "/aboutus" }}
+              >
+                About us
+              </Link>{" "}
+              <br />
+              <Link
+                className="footerLink"
+                data-cy="button"
+                as={Link}
+                to={{ pathname: "/howitworks" }}
+              >
+                How SOLSPANA works
+              </Link>{" "}
+              <br />
+              <Link
+                className="footerLink"
+                data-cy="button"
+                as={Link}
+                to={{ pathname: "/environment" }}
+              >
+                Impact on planet
+              </Link>{" "}
+              |{" "}
+              <Link
+                className="footerLink"
+                data-cy="button"
+                as={Link}
+                to={{ pathname: "/economics" }}
+              >
+                Impact on wallet
+              </Link>{" "}
+              <br />
+              <Link
+                className="footerLink"
+                data-cy="button"
+                as={Link}
+                to={{ pathname: "/partner" }}
+              >
+                Become a partner
+              </Link>{" "}
+              <br />
+              <Link
+                className="footerLink"
+                data-cy="button"
+                as={Link}
+                to={{ pathname: "/quotes" }}
+              >
+                Get up to 3 quotes <Icon id="trophy" name="trophy" />
+              </Link>{" "}
+            </Grid.Column>
+            <Grid.Column>
+              <h3 className="footerHeader">Legal</h3>
+              <Link
+                className="footerLink"
+                data-cy="button"
+                as={Link}
+                to={{ pathname: "/termsandconditions" }}
+              >
+                Terms and conditions
+              </Link>{" "}
+              <Link
+                className="footerLink"
+                data-cy="button"
+                as={Link}
+                to={{ pathname: "/privacypolicy" }}
+              >
+                Privacy policy
+              </Link>{" "}
+              <br />
+              <Link
+                className="footerLink"
+                data-cy="button"
+                as={Link}
+                to={{ pathname: "/cookies" }}
+              >
+                Cookies
+              </Link>{" "}
+            </Grid.Column>
+            <Grid.Column>
+              <h3 className="footerHeader">Help</h3>
+              <Link
+                className="footerLink"
+                data-cy="button"
+                as={Link}
+                to={{ pathname: "/contactus" }}
+              >
+                Contact us
+              </Link>{" "}
+              <br />
+              <Link
+                className="footerLink"
+                data-cy="button"
+                as={Link}
+                to={{ pathname: "/faqs" }}
+              >
+                FAQs
+              </Link>{" "}
+              <br /> <br />
+              <p className="contact">capybara.it@gmail.com</p>
+              <p className="contact">Monday - Friday | 8.00 - 16.00</p>
+            </Grid.Column>
+            <Grid.Column>
+              <h3 className="footerHeader">Follow us on</h3>
+              <div id="socialMedia">
+                <i id="instagramIcon"
+                  onClick={() => window.open("https://instagram.com")}
+                  className="fa fa-instagram fa"
+                  aria-hidden="true"
+                />{' '}
+                <i id="facebookIcon"
+                  onClick={() => window.open("https://facebook.com")}
+                  className="fa fa-facebook"
+                  aria-hidden="true"
+                />{' '}
+                <i id="twitterIcon"
+                  onClick={() => window.open("https://twitter.com")}
+                  className="fab fa-twitter-square fa"
+                  aria-hidden="true"
+                />{' '}
+                <i id="linkedinIcon"
+                  onClick={() => window.open("https://linkedin.com")}
+                  className="fa fa-linkedin"
+                  aria-hidden="true"
+                />
+              </div>
+              <h3 className="footerHeader">Our awesome charities<Icon id="trophy" name="trophy" /></h3>
+              <p id="protectTheForest" className="footerLink">Protect the forest</p>
+              <p id="greenLiving" className="footerLink">Green living</p>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+      </Container>
       <p>
         {" "}
-        &copy;{new Date().getFullYear()} CAPYBARA TECH AB | All rights reserved
-        | Terms Of Service | Privacy
+        <br /> &copy;{new Date().getFullYear()} CAPYBARA TECH | registration no.
+        123456-7890, Kista, Stockholm | All rights reserved
       </p>
       <Link
         id="adminLink"

@@ -5,7 +5,7 @@ const FAQs = () => {
   return (
     <>
       <div id="faqsContent">
-        <h1 data-cy="title">FAQs</h1>
+        <h1 data-cy="title">Frequently asked questions</h1>
         <h3>Site currently under construction...</h3>
       </div>
     </>
