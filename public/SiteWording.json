@@ -7,11 +7,25 @@
       "advantage3": "No obligation and free - we are against pushy sales practices!"
     },
     "impactPlanet": {
-    "title": "Help save our majestic planet",
-    "advantage1": "Harvest infinite, truly renewable (and free!) energy from the sun",
-    "advantage2": "Dramatically reduces your property's carbon footprint by...",
-    "advantage3": "...a lower dependence for fossil fuels, burnt to produce electricity",
-    "advantage4": "Solar panels have no emissions and therefore zero climate impact once installed"
+      "title": "Help save our bruised planet",
+      "advantage1": "Harvest infinite, truly clean (and free!) energy from the sun",
+      "advantage2": "Dramatically reduce your property's thirst for fossil fuels, burnt to produce electricity",
+      "advantage3": "Solar panels have no emissions and therefore zero climate impact once installed",
+      "advantage4": "Shrink you carbon footprint drastically overnight"
+    },
+    "impactWallet": {
+      "title": "",
+      "advantage1": "",
+      "advantage2": "",
+      "advantage3": "",
+      "advantage4": ""
+    },
+    "howSolarWorks": {
+      "title": "How do solar panels work?",
+      "step1": "Daylight (not only sunlight is required!) hits the solar photovoltaic cells in the panels",
+      "step2": "Direct current (DC) electricity is produced",
+      "step3": "With a bit of magic, an inverter converts DC electricity to alternating current electricty (AC)",
+      "step4": "The energy can then be used in your property, excess sold to the national grid or stored"
     }
   }
 }
