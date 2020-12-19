@@ -6,7 +6,7 @@ import "./LandingPageInfoSegment.style.css";
 const LandingPageInfoSegment = () => {
   return (
     <div id="infoSegment">
-      <img id="imageOfTrees" src="/images/tree.png" alt="trees"/>
+      <img id="imageOfTrees" src="/images/pinetrees.png" alt="trees"/>
       <div id="midPageIcon">
         <Link
           to={{ pathname: "/quotes" }}
