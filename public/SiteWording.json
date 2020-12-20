@@ -1,31 +1,46 @@
 {
   "landingPage": {
-    "get3Quotes": {
-      "title": "3 quotes in the bag with minimal effort",
-      "advantage1": "Our partners are MCS registered, vetted and we continue to monitor their reviews",
-      "advantage2": "Compare competitive quotes with service",
-      "advantage3": "No obligation and free - we are against pushy sales practices!"
+    "banner": {
+      "headline1": "Together we can transform the UK into a green haven",
+      "headline2": "by installing solar panels",
+      "ourAims": {
+        "aims": "Our aims:",
+        "aim1": "Create a new eco initiative, where yes everyone is a winner and a % of our profits are donated back to society",
+        "aim2": "By obtaining a quote you are donating indirectly to charity, no strings attached!",
+        "aim3": "You will lower your energy bills and benefit from a long-term steady investment, with better returns than any bank",
+        "aim4": "Make solar energy easily accessible to all, matching varying needs to our carefully selected partners",
+        "aim5": "Revolutionise the solar market, voice the benefits of solar helping people live in a greener society"
+      },
+      "obtainQuote": "Obtain 3 quotes now"
     },
-    "impactPlanet": {
-      "title": "Help save our bruised planet",
-      "advantage1": "Harvest infinite, truly clean (and free!) energy from the sun",
-      "advantage2": "Dramatically reduce your property's thirst for fossil fuels, burnt to produce electricity",
-      "advantage3": "Solar panels have no emissions and therefore zero climate impact once installed",
-      "advantage4": "Shrink you carbon footprint drastically overnight"
-    },
-    "impactWallet": {
-      "title": "",
-      "advantage1": "",
-      "advantage2": "",
-      "advantage3": "",
-      "advantage4": ""
-    },
-    "howSolarWorks": {
-      "title": "How do solar panels work?",
-      "step1": "Daylight (not only sunlight is required!) hits the solar photovoltaic cells in the panels",
-      "step2": "Direct current (DC) electricity is produced",
-      "step3": "With a bit of magic, an inverter converts DC electricity to alternating current electricty (AC)",
-      "step4": "The energy can then be used in your property, excess sold to the national grid or stored"
+    "infoSegmant": {
+      "get3Quotes": {
+        "title": "3 quotes in the bag with minimal effort",
+        "advantage1": "Our partners are MCS registered, vetted and we continue to monitor their reviews",
+        "advantage2": "Compare competitive quotes with service",
+        "advantage3": "No obligation and free - we are against pushy sales practices!"
+      },
+      "impactPlanet": {
+        "title": "Help save our bruised planet",
+        "advantage1": "Harvest infinite, truly clean (and free!) energy from the sun",
+        "advantage2": "Dramatically reduce your property's thirst for fossil fuels, burnt to produce electricity",
+        "advantage3": "Solar panels have no emissions and therefore zero climate impact once installed",
+        "advantage4": "Shrink you carbon footprint drastically overnight"
+      },
+      "impactWallet": {
+        "title": "",
+        "advantage1": "",
+        "advantage2": "",
+        "advantage3": "",
+        "advantage4": ""
+      },
+      "howSolarWorks": {
+        "title": "How do solar panels work?",
+        "step1": "Daylight (not only sunlight is required!) hits the solar photovoltaic cells in the panels",
+        "step2": "Direct current (DC) electricity is produced",
+        "step3": "With a bit of magic, an inverter converts DC electricity to alternating current electricty (AC)",
+        "step4": "The energy can then be used in your property, excess sold to the national grid or stored"
+      }
     }
   }
 }
