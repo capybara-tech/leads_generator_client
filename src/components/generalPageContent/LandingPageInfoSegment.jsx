@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Icon, Grid } from "semantic-ui-react";
+import { Icon, Grid, List } from "semantic-ui-react";
 import "./LandingPageInfoSegment.style.css";
 
 const LandingPageInfoSegment = () => {
   return (
     <div id="infoSegment">
-      <img id="imageOfTrees" src="/images/pinetrees.png" alt="trees"/>
+      <img id="imageOfTrees" src="/images/pinetrees.png" alt="trees" />
       <div id="midPageIcon">
         <Link
           to={{ pathname: "/quotes" }}
@@ -41,10 +41,36 @@ const LandingPageInfoSegment = () => {
                 How does this have an impact on the planet
               </h3>
               <p data-cy="content">
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <List>
+                  <List.Item className="solarBenefits">
+                    <List.Icon name="check circle" />
+                    <List.Content>
+                      Lorem ipsum dolor sit amet consectetur.
+                    </List.Content>
+                  </List.Item>{" "}
+                  <br />
+                  <List.Item className="solarBenefits">
+                    <List.Icon name="check circle" />
+                    <List.Content>
+                      Lorem ipsum dolor sit amet consectetur.
+                    </List.Content>
+                  </List.Item>{" "}
+                  <br />
+                  <List.Item className="solarBenefits">
+                    <List.Icon name="check circle" />
+                    <List.Content>
+                      Lorem ipsum dolor sit amet consectetur.
+                    </List.Content>
+                  </List.Item>{" "}
+                  <br />
+                  <List.Item className="solarBenefits">
+                    <List.Icon name="check circle" />
+                    <List.Content>
+                      Lorem ipsum dolor sit amet consectetur.
+                    </List.Content>
+                  </List.Item>{" "}
+                  <br />
+                </List>
               </p>
             </Grid.Column>
           </Grid.Row>
@@ -63,10 +89,36 @@ const LandingPageInfoSegment = () => {
                 How does this have an impact on your wallet
               </h3>
               <p data-cy="content">
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <List>
+                  <List.Item className="solarBenefits">
+                    <List.Icon name="check circle" />
+                    <List.Content>
+                      Lorem ipsum dolor sit amet consectetur.
+                    </List.Content>
+                  </List.Item>{" "}
+                  <br />
+                  <List.Item className="solarBenefits">
+                    <List.Icon name="check circle" />
+                    <List.Content>
+                      Lorem ipsum dolor sit amet consectetur.
+                    </List.Content>
+                  </List.Item>{" "}
+                  <br />
+                  <List.Item className="solarBenefits">
+                    <List.Icon name="check circle" />
+                    <List.Content>
+                      Lorem ipsum dolor sit amet consectetur.
+                    </List.Content>
+                  </List.Item>{" "}
+                  <br />
+                  <List.Item className="solarBenefits">
+                    <List.Icon name="check circle" />
+                    <List.Content>
+                      Lorem ipsum dolor sit amet consectetur.
+                    </List.Content>
+                  </List.Item>{" "}
+                  <br />
+                </List>
               </p>
             </Grid.Column>
           </Grid.Row>
@@ -83,10 +135,36 @@ const LandingPageInfoSegment = () => {
             <Grid.Column width={12}>
               <h3 data-cy="title">How do solar panels work?</h3>
               <p data-cy="content">
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <List>
+                  <List.Item className="solarBenefits">
+                    <List.Icon name="check circle" />
+                    <List.Content>
+                      Lorem ipsum dolor sit amet consectetur.
+                    </List.Content>
+                  </List.Item>{" "}
+                  <br />
+                  <List.Item className="solarBenefits">
+                    <List.Icon name="check circle" />
+                    <List.Content>
+                      Lorem ipsum dolor sit amet consectetur.
+                    </List.Content>
+                  </List.Item>{" "}
+                  <br />
+                  <List.Item className="solarBenefits">
+                    <List.Icon name="check circle" />
+                    <List.Content>
+                      Lorem ipsum dolor sit amet consectetur.
+                    </List.Content>
+                  </List.Item>{" "}
+                  <br />
+                  <List.Item className="solarBenefits">
+                    <List.Icon name="check circle" />
+                    <List.Content>
+                      Lorem ipsum dolor sit amet consectetur.
+                    </List.Content>
+                  </List.Item>{" "}
+                  <br />
+                </List>
               </p>
             </Grid.Column>
           </Grid.Row>
