@@ -43,16 +43,35 @@
       }
     },
     "aboutUsPage": {
-      "opening": "Connecting property owners with local vetted solar panel installers",
-      "openingSub": "Sleep well - dramatically lower your carbon footprint overnight and wreak financial benefits (lower energy bills, government grants and a steady longterm investment as the panels pay for themselves, increased property prices and get a saving rate substantially higher than any bank)",
-      "introduction": {
+      "opening": "Connecting property owners with local vetted, and of course, certified solar panel installers",
+      "openingSub": "Its simple, we promote the benefits of solar(hopefully winning you over!), you complete our online quote request and receive three quotes. Your solar quest then begins",
+      "benefits": {
+        "benefits1": "Fitting solar panels is no sweat. Our professionals will deal with eveything and are helpful people to talk to. After a decision to proceed(which we appreciate is not simple!), sit back and let them do the hard work",
+        "benefits2": "Sleep well. Dramatically lower your carbon footprint overnight and wreak financial benefits (lower energy bills, government grants and a steady longterm investment as the panels pay for themselves, increased property prices and get a saving rate substantially higher than any bank)",
+        "benefits3": "Our installers are compeiting against one another. They therefore offer their best price first time around. No quibbles.",
+        "benefits4": "'Good enough' doesn't cut it. We listen to what our customers and evolve with their needs. We use the latest tech to give you an awesome experience."
+      },
+      "beginning": {
         "title": "How SOLSPANA began",
-        "paraOne": "We Alex Bellamy and Felix Oppong Wilborg are on a mission of bringing solar energy to the forefront of everyone's minds, very much like electric cars, only solar has a larger positive impact",
-        "paraTwo": "Two down to earth friends who saw an opportunity and with the same determination for a solar revolution, SOLSPANA was born.",
+        "paraOne": "We Alex Bellamy and Felix Oppong Wilborg are on a mission of bringing solar energy to the forefront of everyone's minds",
+        "paraTwo": "Two down to earth friends who met in Stockholm. Saw opportunity and with the same determination for a solar revolution (and throwing in some tech!), SOLSPANA was born.",
         "paraThree": "Unlike our competitors, we will donate 15% of our net profits directly to other environmental initiatives as we are truly devoted to reversing the damage to our planet"
       },
+      "ourVision": {
+        "title": "Our mission",
+        "vision": "Petrol and diesel car sales are banned from 2030, solar power gets no real airtime. We are here to change that where people live more informed and more creative lives."
+      },
+      "ourAims": {
+        "title": "Our aims:",
+        "aim1": "Create a new eco initiative, where yes everyone is a winner and a % of our profits are donated back to society",
+        "aim2": "By obtaining a quote you are donating indirectly to charity, no strings attached!",
+        "aim3": "You will lower your energy bills and benefit from a long-term steady investment, with returns better than any bank",
+        "aim4": "Make solar energy easily accessible to all, matching varying needs to our carefully selected partners",
+        "aim5": "Revolutionise the solar market, voice the benefits of solar helping people live in a greener society",
+        "conclusion": "Transparency, honesty and dedication to our customers are a given"
+      },
       "ourTeam": {
-        "title": "Our team",
+        "title": "Meet our leadership team",
         "alex": "Alex Bellamy",
         "alexTitle": "CEO and co-founder",
         "alexEmail": "alex@capybara.com",
@@ -62,18 +81,15 @@
         "felixEmail": "felix@capybara.com",
         "felixFact": ""
       },
-      "ourAims": {
-        "title": "Our core values:",
-        "aim1": "Create a new eco initiative, where yes everyone is a winner and a % of our profits are donated back to society",
-        "aim2": "By obtaining a quote you are donating indirectly to charity, no strings attached!",
-        "aim3": "You will lower your energy bills and benefit from a long-term steady investment, with returns better than any bank",
-        "aim4": "Make solar energy easily accessible to all, matching varying needs to our carefully selected partners",
-        "aim5": "Revolutionise the solar market, voice the benefits of solar helping people live in a greener society"
-      },
       "ceoMessage": {
         "title": "A message from our CEO",
-        "message": "",
-        "signed": "Alex Bellamy, CEO Capybara"
+        "message": "With our planet coming under increasing pressure from global threats such as global warming, plastic clogging up our oceans and deforestation, like most others it concerns me what the world will be like for my grandchilden and their offspring. Challenge the status quo by investing in 100% clean and limitless solar energy - and help change the world for tomorrow.",
+        "signed": "Alex Bellamy, CEO Capybara UK"
+      },
+      "ourCharities": {
+        "title": "Our charities",
+        "para1": "We love our planet so much as such we donate a massive 15% of our net profits to other green initiatives",
+        "para2": "By completing our straightforward online quote request form you are indirectly donating to charity."
       }
     },
     "becomeAPartnerPage": {
