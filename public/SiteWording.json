@@ -13,7 +13,7 @@
       },
       "obtainQuote": "Obtain 3 quotes now"
     },
-    "infoSegmant": {
+    "infoSegment": {
       "get3Quotes": {
         "title": "3 quotes in the bag with minimal effort",
         "advantage1": "Our partners are MCS registered, vetted and we continue to monitor their reviews",
@@ -38,7 +38,7 @@
         "title": "How do solar panels work?",
         "step1": "Daylight (not only sunlight is required!) hits the solar photovoltaic cells in the panels",
         "step2": "Direct current (DC) electricity is produced",
-        "step3": "With a bit of magic, an inverter converts DC electricity to alternating current electricty (AC)",
+        "step3": "With a bit of magic, an inverter converts DC electricity to alternating current electricity (AC)",
         "step4": "The energy can then be used in your property, excess sold to the national grid or stored"
       }
     },
@@ -51,13 +51,13 @@
         "benefits3": "Government grants and financial support are up for grabs",
         "benefits4": "Increases the value of your property",
         "benefits5": "An impressive return on investment (ROI)",
-        "benefits6": "Prices have fallen by around 70% since 2010, quite a bargin now!",
+        "benefits6": "Prices have fallen by around 70% since 2010, quite a bargain now!",
         "benefits7": "Low maintenance"
       },
       "lowerEnergyBills": {
         "title": "Pay less on energy bills",
         "content": "Between £85-220 each year, depending where the property you are looking to turn green is located and a 4Kw PV system(typical for a family home). These chunky savings come about as you will be meeting some of your own electricity needs. The amount saved monthly will be affected by:",
-        "point1": "Whether you are large or small electricity user, don't worry neither us nor our installers make judgements! If no one is at home during the day a solar battery may be a good shout. This will store the electricty generated, meaning that it can be used during the evenings(when the sun has said goodbye)",
+        "point1": "Whether you are large or small electricity user, don't worry neither us nor our installers make judgements! If no one is at home during the day a solar battery may be a good shout. This will store the electricity generated, meaning that it can be used during the evenings(when the sun has said goodbye)",
         "point2": "The type of solar panels. To up electricity production you can fit more panels or invest in high-efficiency ones."
       }
     },
@@ -65,9 +65,9 @@
       "opening": "Connecting property owners with local vetted, and of course, certified solar panel installers",
       "openingSub": "Its simple, we promote the benefits of solar(hopefully winning you over!), you complete our online quote request and receive three quotes. Your solar quest then begins",
       "benefits": {
-        "benefits1": "Fitting solar panels is no sweat. Our professionals will deal with eveything and are helpful people to talk to. After a decision to proceed(which we appreciate is not simple!), sit back and let them do the hard work",
+        "benefits1": "Fitting solar panels is no sweat. Our professionals will deal with everything and are helpful people to talk to. After a decision to proceed(which we appreciate is not simple!), sit back and let them do the hard work",
         "benefits2": "Sleep well. Dramatically lower your carbon footprint overnight and wreak financial benefits (lower energy bills, government grants and a steady longterm investment as the panels pay for themselves, increased property prices and get a saving rate substantially higher than any bank)",
-        "benefits3": "Our installers are compeiting against one another. They therefore offer their best price first time around. No quibbles.",
+        "benefits3": "Our installers are competing against one another. They therefore offer their best price first time around. No quibbles.",
         "benefits4": "'Good enough' doesn't cut it. We listen to what our customers and evolve with their needs. We use the latest tech to give you an awesome experience."
       },
       "beginning": {
@@ -102,7 +102,7 @@
       },
       "ceoMessage": {
         "title": "A message from our CEO",
-        "message": "With our planet coming under increasing pressure from global threats such as global warming, plastic clogging up our oceans and deforestation, like most others it concerns me what the world will be like for my grandchilden and their offspring. Challenge the status quo by investing in 100% clean and limitless solar energy - and help change the world for tomorrow.",
+        "message": "With our planet coming under increasing pressure from global threats such as global warming, plastic clogging up our oceans and deforestation, like most others it concerns me what the world will be like for my grandchildren and their offspring. Challenge the status quo by investing in 100% clean and limitless solar energy - and help change the world for tomorrow.",
         "signed": "Alex Bellamy, CEO Capybara UK"
       },
       "ourCharities": {
@@ -113,7 +113,7 @@
     },
     "faqsPage": {
       "opening": "Frequently asked questions",
-      "disadvanages": {
+      "disadvantages": {
         "title": "What are the disadvantages of solar panels?",
         "answer": "Like everything in this world there are disadvantages. They require lots of space and are they are not suitable for every roof(our specialists will of course point this out if the case!). They are pricy to install and not cheap to move if you do. Whilst the return on investment (ROI) is one of the best you can make, its over a relatively long period. Efficiency is affected by the weather (although daylight is enough for them to work just not at their best). Production of the panels can also create pollution"
       }
