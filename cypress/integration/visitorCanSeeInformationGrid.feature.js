@@ -16,7 +16,19 @@ describe("Visitor can see information grid component on landing page", () => {
     );
     cy.get("[data-cy=content]").should(
       "contain",
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, eius? Maiores, impedit accusamus atque at quam"
+      "Lorem ipsum dolor sit amet consectetura"
+    );
+    cy.get("[data-cy=content]").should(
+      "contain",
+      "Lorem ipsum dolor sit amet consecteturb"
+    );
+    cy.get("[data-cy=content]").should(
+      "contain",
+      "Lorem ipsum dolor sit amet consecteturc"
+    );
+    cy.get("[data-cy=content]").should(
+      "contain",
+      "Lorem ipsum dolor sit amet consecteturd"
     );
   });
 
@@ -28,7 +40,19 @@ describe("Visitor can see information grid component on landing page", () => {
     );
     cy.get("[data-cy=content]").should(
       "contain",
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, eius? Maiores, impedit accusamus atque at"
+      "Lorem ipsum dolor sit amet consecteture"
+    );
+    cy.get("[data-cy=content]").should(
+      "contain",
+      "Lorem ipsum dolor sit amet consecteturf"
+    );
+    cy.get("[data-cy=content]").should(
+      "contain",
+      "Lorem ipsum dolor sit amet consecteturg"
+    );
+    cy.get("[data-cy=content]").should(
+      "contain",
+      "Lorem ipsum dolor sit amet consecteturh"
     );
   });
 
@@ -37,7 +61,19 @@ describe("Visitor can see information grid component on landing page", () => {
     cy.get("[data-cy=title]").should("contain", "How do solar panels work?");
     cy.get("[data-cy=content]").should(
       "contain",
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, eius? Maiores, impedit accusamus atque"
+      "Lorem ipsum dolor sit amet consecteturi"
+    );
+    cy.get("[data-cy=content]").should(
+      "contain",
+      "Lorem ipsum dolor sit amet consecteturj"
+    );
+    cy.get("[data-cy=content]").should(
+      "contain",
+      "Lorem ipsum dolor sit amet consecteturk"
+    );
+    cy.get("[data-cy=content]").should(
+      "contain",
+      "Lorem ipsum dolor sit amet consecteturl"
     );
   });
 });

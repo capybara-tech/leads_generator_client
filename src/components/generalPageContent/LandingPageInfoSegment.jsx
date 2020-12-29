@@ -45,28 +45,28 @@ const LandingPageInfoSegment = () => {
                   <List.Item className="solarBenefits">
                     <List.Icon name="check circle" />
                     <List.Content>
-                      Lorem ipsum dolor sit amet consectetur.
+                      Lorem ipsum dolor sit amet consectetura.
                     </List.Content>
                   </List.Item>{" "}
                   <br />
                   <List.Item className="solarBenefits">
                     <List.Icon name="check circle" />
                     <List.Content>
-                      Lorem ipsum dolor sit amet consectetur.
+                      Lorem ipsum dolor sit amet consecteturb.
                     </List.Content>
                   </List.Item>{" "}
                   <br />
                   <List.Item className="solarBenefits">
                     <List.Icon name="check circle" />
                     <List.Content>
-                      Lorem ipsum dolor sit amet consectetur.
+                      Lorem ipsum dolor sit amet consecteturc.
                     </List.Content>
                   </List.Item>{" "}
                   <br />
                   <List.Item className="solarBenefits">
                     <List.Icon name="check circle" />
                     <List.Content>
-                      Lorem ipsum dolor sit amet consectetur.
+                      Lorem ipsum dolor sit amet consecteturd.
                     </List.Content>
                   </List.Item>{" "}
                   <br />
@@ -93,28 +93,28 @@ const LandingPageInfoSegment = () => {
                   <List.Item className="solarBenefits">
                     <List.Icon name="check circle" />
                     <List.Content>
-                      Lorem ipsum dolor sit amet consectetur.
+                      Lorem ipsum dolor sit amet consecteture.
                     </List.Content>
                   </List.Item>{" "}
                   <br />
                   <List.Item className="solarBenefits">
                     <List.Icon name="check circle" />
                     <List.Content>
-                      Lorem ipsum dolor sit amet consectetur.
+                      Lorem ipsum dolor sit amet consecteturf.
                     </List.Content>
                   </List.Item>{" "}
                   <br />
                   <List.Item className="solarBenefits">
                     <List.Icon name="check circle" />
                     <List.Content>
-                      Lorem ipsum dolor sit amet consectetur.
+                      Lorem ipsum dolor sit amet consecteturg.
                     </List.Content>
                   </List.Item>{" "}
                   <br />
                   <List.Item className="solarBenefits">
                     <List.Icon name="check circle" />
                     <List.Content>
-                      Lorem ipsum dolor sit amet consectetur.
+                      Lorem ipsum dolor sit amet consecteturh.
                     </List.Content>
                   </List.Item>{" "}
                   <br />
@@ -139,28 +139,28 @@ const LandingPageInfoSegment = () => {
                   <List.Item className="solarBenefits">
                     <List.Icon name="check circle" />
                     <List.Content>
-                      Lorem ipsum dolor sit amet consectetur.
+                      Lorem ipsum dolor sit amet consecteturi.
                     </List.Content>
                   </List.Item>{" "}
                   <br />
                   <List.Item className="solarBenefits">
                     <List.Icon name="check circle" />
                     <List.Content>
-                      Lorem ipsum dolor sit amet consectetur.
+                      Lorem ipsum dolor sit amet consecteturj.
                     </List.Content>
                   </List.Item>{" "}
                   <br />
                   <List.Item className="solarBenefits">
                     <List.Icon name="check circle" />
                     <List.Content>
-                      Lorem ipsum dolor sit amet consectetur.
+                      Lorem ipsum dolor sit amet consecteturk.
                     </List.Content>
                   </List.Item>{" "}
                   <br />
                   <List.Item className="solarBenefits">
                     <List.Icon name="check circle" />
                     <List.Content>
-                      Lorem ipsum dolor sit amet consectetur.
+                      Lorem ipsum dolor sit amet consecteturl.
                     </List.Content>
                   </List.Item>{" "}
                   <br />
