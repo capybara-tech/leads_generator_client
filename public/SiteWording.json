@@ -15,7 +15,7 @@
     },
     "infoSegment": {
       "get3Quotes": {
-        "title": "3 quotes in the bag with minimal effort",
+        "title": "3 quotes with minimal effort",
         "advantage1": "Our partners are MCS registered, vetted and we continue to monitor their reviews",
         "advantage2": "Compare competitive quotes with service",
         "advantage3": "No obligation and free - we are against pushy sales practices!"
@@ -40,6 +40,10 @@
         "step2": "Direct current (DC) electricity is produced",
         "step3": "With a bit of magic, an inverter converts DC electricity to alternating current electricity (AC)",
         "step4": "The energy can then be used in your property, excess sold to the national grid or stored"
+      }, 
+      "flashMessages": {
+        "light": "Daylight is sufficient for the magic to happen - solar panels to produce electricty. Fortunate as direct sunlight is rare across the UK.",
+        "planning": "Planning permission is not required(in most cases). Installing solar panels on residential, non domestic buildings or land is usually classified as a 'permitted development'."
       }
     },
     "impactWalletPage": {
@@ -64,10 +68,20 @@
         "title": "Sell excess electricity you produce",
         "content": "Depending on your circumstances, the solar panels will generate more electricity than you can use. Cash in on this resource by selling it to the National Grid through a Smart Export Guarantee (SEG). Essentially properties with solar panels, low carbon and small scale carbon generators, are offered generous tariffs by electricity suppliers under the SEG for the electricity sold. Think of it as state-backed income for around 25 years plus, quite an investment!"
       },
-      "financialSupport": {},
+      "financialSupport": {
+        "title": "Government schemes and financial support",
+        "content": "There are currently two government schemes you can take advantage of:",
+        "scheme1": "The Smart Export Guarantee - will pay you for excess electricity which you produce and hits the National Grid.",
+        "scheme2": "The Renewable Heat Incentive - you will receive quarterly payments over a massive 7 years to help homeowners pay for solar thermal panels, a renewable heat technology."
+      },
       "increasedPropertyPrice": {
         "title": "Increase your property price",
         "content": "By 14% on average and up to a massive 38% in some (lucky)regions of the UK. More than a whopping £16,000 of cash if you sell up. These are figures from the Government Department of Energy and Climate Change which found that by making evergy saving improvements to your property such as installing solar panels, you can secure these punchy property price increases"
+      },
+      "panelFallenPrice": {
+        "title": "Solar panels prices - eyewatering 70%(on average) cheaper than in 2010",
+        "content": "As solar panels have become more popular the prices have dramatically fallen and this trend is likely to continue. The beauty of supply and demand.",
+        "content2": "You're looking at about £6,500 for a typical 4kW solar PV system, for an average family home. Quite an expensive investment but you win when all figures are taken into consideration, not to mention the environmental benefits too!"
       },
       "lowMaintenace": {
         "title": "Everyone's favourite - low maintenance",
