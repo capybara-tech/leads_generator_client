@@ -148,6 +148,14 @@
       "disadvantages": {
         "title": "What are the disadvantages of solar panels?",
         "answer": "Like everything in this world there are disadvantages. They require lots of space and are they are not suitable for every roof(our specialists will of course point this out if the case!). They are pricy to install and not cheap to move if you do. Whilst the return on investment (ROI) is one of the best you can make, its over a relatively long period. Efficiency is affected by the weather (although daylight is enough for them to work just not at their best). Production of the panels can also create pollution"
+      },
+      "howSolarWorksPage": {
+        "title": "How do solar panels actually work?",
+        "titleSub": "Lets keep it simple, like the process itself:",
+        "step1": "Not only sunshine, daylight hits the solar photovoltaic cells in the panels",
+        "step2": "Direct current (DC) electricity is produced",
+        "step3": "An inverter converts DC electricity to alternating current electricity (AC)",
+        "step4": "The electricity can then be used in your property, excess sold to the National Grid or stored"
       }
     },
     "becomeAPartnerPage": {
