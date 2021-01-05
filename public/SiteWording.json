@@ -1,0 +1,180 @@
+{
+  "landingPage": {
+    "banner": {
+      "headline1": "Together we can transform the UK into a green haven",
+      "headline2": "by fitting solar panels",
+      "ourAims": {
+        "aims": "Our aims:",
+        "aim1": "Create a new eco initiative, where yes everyone is a winner and a % of our profits are donated back to society",
+        "aim2": "By obtaining a quote you are donating indirectly to charity, no strings attached!",
+        "aim3": "You will lower your energy bills and benefit from a long-term steady investment, with returns better than any bank",
+        "aim4": "Make solar energy easily accessible to all, matching varying needs to our carefully selected partners",
+        "aim5": "Revolutionise the solar market, voice the benefits of solar helping people live in a greener society"
+      },
+      "obtainQuote": "Obtain 3 quotes now"
+    },
+    "infoSegment": {
+      "get3Quotes": {
+        "title": "3 quotes with minimal effort",
+        "advantage1": "Our partners are MCS registered, vetted and we continue to monitor their reviews",
+        "advantage2": "Compare competitive quotes with service",
+        "advantage3": "No obligation and free - we are against pushy sales practices!"
+      },
+      "impactPlanet": {
+        "title": "Help save our bruised planet",
+        "advantage1": "Harvest infinite, truly clean (and free!) energy from the sun",
+        "advantage2": "Dramatically reduce your property's thirst for fossil fuels, burnt to produce electricity",
+        "advantage3": "Solar panels have no emissions and therefore zero climate impact once installed",
+        "advantage4": "Shrink you carbon footprint drastically overnight"
+      },
+      "impactWallet": {
+        "title": "Figures which won't disappoint",
+        "advantage1": "Lower energy bills and sell excess electricity to the National Grid",
+        "advantage2": "Government grants and financial support are up for grabs",
+        "advantage3": "Increases the value of your property",
+        "advantage4": "An impressive return on investment (ROI) and solar panel prices have fallen by around 70% since 2010, quite a bargain now! "
+      },
+      "howSolarWorks": {
+        "title": "How do solar panels work?",
+        "step1": "Daylight (not only sunlight is required!) hits the solar photovoltaic cells in the panels",
+        "step2": "Direct current (DC) electricity is produced",
+        "step3": "With a bit of magic, an inverter converts DC electricity to alternating current electricity (AC)",
+        "step4": "The energy can then be used in your property, excess sold to the national grid or stored"
+      },
+      "flashMessages": {
+        "light": "Daylight is sufficient for the magic to happen - solar panels to produce electricty. Fortunate as direct sunlight is rare across the UK.",
+        "planning": "Planning permission is not required(in most cases). Installing solar panels on residential, non domestic buildings or land is usually classified as a 'permitted development'."
+      }
+    },
+    "impactEnvironmentPage": {},
+    "impactWalletPage": {
+      "opening": "Figures which won't disappoint",
+      "openingSub": "If the environmental benefits of solar panels has not convinced you about the benefits of solar, the financial ones will :). For those than have already seen the light this is the icing on the cake",
+      "benefits": {
+        "benefits1": "Lower energy bills",
+        "benefits2": "Sell excess electricity to the National Grid",
+        "benefits3": "Government grants and financial support are up for grabs",
+        "benefits4": "Increases the value of your property",
+        "benefits5": "An impressive return on investment (ROI)",
+        "benefits6": "Solar panel prices have fallen by around 70% since 2010, quite a bargain now!",
+        "benefits7": "Low maintenance"
+      },
+      "lowerEnergyBills": {
+        "title": "Pay less on energy bills",
+        "content": "Between £85-220 each year, depending where the property you are looking to turn green is located and a 4Kw PV system(typical for a family home). These chunky savings come about as you will be meeting some of your own electricity needs. The amount saved monthly will be affected by:",
+        "point1": "Whether you are large or small electricity user, don't worry neither us nor our installers make judgements! If no one is at home during the day a solar battery may be a good shout. This will store the electricity generated, meaning that it can be used during the evenings(when the sun has said goodbye)",
+        "point2": "The type of solar panels. To up electricity production you can fit more panels or invest in high-efficiency ones."
+      },
+      "sellToGrid": {
+        "title": "Sell excess electricity you produce",
+        "content": "Depending on your circumstances, the solar panels will generate more electricity than you can use. Cash in on this resource by selling it to the National Grid through a Smart Export Guarantee (SEG). Essentially properties with solar panels, low carbon and small scale carbon generators, are offered generous tariffs by electricity suppliers under the SEG for the electricity sold. Think of it as state-backed income for around 25 years plus, quite an investment!"
+      },
+      "financialSupport": {
+        "title": "Government schemes and financial support",
+        "content": "There are currently two government schemes you can take advantage of:",
+        "scheme1": "The Smart Export Guarantee - will pay you for excess electricity which you produce and hits the National Grid.",
+        "scheme2": "The Renewable Heat Incentive - you will receive quarterly payments over a massive 7 years to help homeowners pay for solar thermal panels, a renewable heat technology."
+      },
+      "increasedPropertyPrice": {
+        "title": "Increase your property price",
+        "content": "By 14% on average and up to a massive 38% in some (lucky)regions of the UK. More than a whopping £16,000 of cash if you sell up. These are figures from the Government Department of Energy and Climate Change which found that by making evergy saving improvements to your property such as installing solar panels, you can secure these punchy property price increases"
+      },
+      "investment": {
+        "title": "A solid long-term investment",
+        "content": "A 3kW panel system(typically on smaller family homes) can save an impressive £1,000/year on electricity costs, double that for beefier systems. You will be earning around 5.5% yearly - the annual return of investment (ROI). With UK interest at record lows of <1%, you will receive far better returns than you would get by keeping the same cash in the bank.",
+        "content2": "The techy stuff - think of ROI as the cash generated by the panels in relation to the initial cost of installating the solar system. So that you can see how we have got to the massive 5.5% figure - we calculated a supply and installation cost of £6,500 for the panels and £1,000/year saved for 25 years (the typical gurantee period for a solar system). This return does not take into consideration the other financial benefits such as the increase in property prices which would smash this percentage through the roof!"
+      },
+      "panelFallenPrice": {
+        "title": "Solar panels prices - eyewatering 70%(on average) cheaper than in 2010",
+        "content": "As solar panels have become more popular the prices have dramatically fallen and this trend is likely to continue. The beauty of supply and demand.",
+        "content2": "You're looking at about £6,500 for a typical 4kW solar PV system, for an average family home. Quite an expensive investment but you win when all figures are taken into consideration, not to mention the environmental benefits too!"
+      },
+      "lowMaintenace": {
+        "title": "Everyone's favourite - low maintenance",
+        "content": "Solars panels aren't like kids - you don't have to constantly keep an eye on them. As it frequently rains in the UK, the solar panels are kept sufficiently clean by nature. The panels are installed at an angle and have a smooth surface meaning that debris also glides straight off. To ensure that the panels are working at their best they should not be obstructed after installation. Solar panels work horses, with a long working life - in excess 40 years and most often come with a 25 year guarantee, pretty impressive!"
+      }
+    },
+    "aboutUsPage": {
+      "opening": "Connecting property owners with local vetted, and of course, certified solar panel installers",
+      "openingSub": "Its simple, we promote the benefits of solar(hopefully winning you over!), you complete our online quote request and receive three quotes. Your solar quest then begins",
+      "benefits": {
+        "benefits1": "Fitting solar panels is no sweat. Our professionals will deal with everything and are helpful people to talk to. After a decision to proceed(which we appreciate is not simple!), sit back and let them do the hard work",
+        "benefits2": "Sleep well. Dramatically lower your carbon footprint overnight and wreak financial benefits (lower energy bills, government grants and a steady longterm investment as the panels pay for themselves, increased property prices and get a saving rate substantially higher than any bank)",
+        "benefits3": "Our installers are competing against one another. They therefore offer their best price first time around. No quibbles.",
+        "benefits4": "'Good enough' doesn't cut it. We listen to what our customers and evolve with their needs. We use the latest tech to give you an awesome experience."
+      },
+      "beginning": {
+        "title": "How SOLSPANA began",
+        "paraOne": "We Alex Bellamy and Felix Oppong Wilborg are on a mission of bringing solar energy to the forefront of everyone's minds",
+        "paraTwo": "Two down to earth friends who met in Stockholm. Saw opportunity and with the same determination for a solar revolution (and throwing in some tech!), SOLSPANA was born.",
+        "paraThree": "Unlike our competitors, we will donate 15% of our net profits directly to other environmental initiatives as we are truly devoted to reversing the damage to our planet"
+      },
+      "ourVision": {
+        "title": "Our mission",
+        "vision": "Petrol and diesel car sales are banned from 2030, solar power gets no real airtime. We are here to change that where people live more informed and more creative lives."
+      },
+      "ourAims": {
+        "title": "Our aims:",
+        "aim1": "Create a new eco initiative, where yes everyone is a winner and a % of our profits are donated back to society",
+        "aim2": "By obtaining a quote you are donating indirectly to charity, no strings attached!",
+        "aim3": "You will lower your energy bills and benefit from a long-term steady investment, with returns better than any bank",
+        "aim4": "Make solar energy easily accessible to all, matching varying needs to our carefully selected partners",
+        "aim5": "Revolutionise the solar market, voice the benefits of solar helping people live in a greener society",
+        "conclusion": "Transparency, honesty and dedication to our customers are a given"
+      },
+      "ourTeam": {
+        "title": "Meet our leadership team",
+        "alex": "Alex Bellamy",
+        "alexTitle": "CEO and co-founder",
+        "alexEmail": "alex@capybara.com",
+        "alexFact": "A stickler for searching for meaning and purpose, even in small things!",
+        "felix": "Felix Oppong Willborg",
+        "felixTitle": "COO and co-founder",
+        "felixEmail": "felix@capybara.com",
+        "felixFact": ""
+      },
+      "ceoMessage": {
+        "title": "A message from our CEO",
+        "message": "With our planet coming under increasing pressure from global threats such as global warming, plastic clogging up our oceans and deforestation, like most others it concerns me what the world will be like for my grandchildren and their offspring. Challenge the status quo by investing in 100% clean and limitless solar energy - and help change the world for tomorrow.",
+        "signed": "Alex Bellamy, CEO Capybara UK"
+      },
+      "ourCharities": {
+        "title": "Our charities",
+        "para1": "We love our planet so much as such we donate a massive 15% of our net profits to other green initiatives",
+        "para2": "By completing our straightforward online quote request form you are indirectly donating to charity."
+      }
+    },
+    "faqsPage": {
+      "opening": "Frequently asked questions",
+      "disadvantages": {
+        "title": "What are the disadvantages of solar panels?",
+        "answer": "Like everything in this world there are disadvantages. They require lots of space and are they are not suitable for every roof(our specialists will of course point this out if the case!). They are pricy to install and not cheap to move if you do. Whilst the return on investment (ROI) is one of the best you can make, its over a relatively long period. Efficiency is affected by the weather (although daylight is enough for them to work just not at their best). Production of the panels can also create pollution"
+      },
+      "howSolarWorksPage": {
+        "title": "How do solar panels actually work?",
+        "titleSub": "Lets keep it simple, like the process itself:",
+        "step1": "Not only sunshine, daylight hits the solar photovoltaic cells in the panels",
+        "step2": "Direct current (DC) electricity is produced",
+        "step3": "An inverter converts DC electricity to alternating current electricity (AC)",
+        "step4": "The electricity can then be used in your property, excess sold to the National Grid or stored"
+      },
+      "howSolspanaWorksPage": {}
+    },
+    "becomeAPartnerPage": {
+      "title": "Become a SOLSPANA installer today.",
+      "para1": "Get a steady flow of jobs*, reduce your admin and keep all of the revenue from our referral (apart from of course our minimal intro fee)",
+      "para2": "We love our customers and want you too so its important that you provide a first class service at all times, lets face it a happy customer results in future referrals.",
+      "para3": "The only other condition is that you are MCS registered.",
+      "para4": "Say goodbye to tedious paperwork, simply drop us an email or give us a call to get the ball rolling.",
+      "para5": "Join our quest to help make the UK more energy efficient.",
+      "smallPrint": "*based on location"
+    },
+    "contactUsPage": {
+      "title": "Contact the team",
+      "strapLine": "the quickest way to to get in touch is to start a live chat, alternatively:",
+      "email": "capybara.it@gmail.com",
+      "post": "Kista, Stockholm",
+      "conclude": "real people ready to address your queries or offer friendly advice"
+    }
+  }
+}

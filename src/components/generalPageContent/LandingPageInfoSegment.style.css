@@ -1,0 +1,38 @@
+#infoSegment{
+  position: relative;
+  height: 110vh;
+  background-color: #fcf6f5ff;
+}
+
+#quotesDiv{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  position: absolute;
+  text-align: center;
+  top: 40vh;
+  left: 20vw;
+  transform: translate(-50%, -50%);
+}
+
+#boxWithIcons{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  top: 15vh;
+  width: 40vw;
+  background:#fe8733cb;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+#imageOfTrees{
+position: absolute;
+height: 65vh;
+width: 70vw;
+bottom: 5vh;
+left: 0.5vw;
+}
+
+.solarBenefits {
+  float: left;
+}
