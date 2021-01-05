@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutUs.style.css";
-import { Segment } from "semantic-ui-react"
+import { Segment, Reveal } from "semantic-ui-react";
 const AboutUs = () => {
   return (
     <>
@@ -10,16 +10,73 @@ const AboutUs = () => {
         </div>
         <Segment id="aboutUsSegmentInfo">
           <div id="meetTheTeam">
-            <h3>Meet the team</h3>
+            <Reveal animated="fade">
+              <Reveal.Content visible>
+                <div id="meetTheTeamVisible">
+                  <h3>Meet the team</h3>
+                </div>
+              </Reveal.Content>
+              <Reveal.Content hidden>
+                <div id="meetTheTeamHidden">
+                  {" "}
+                  <h4>Hello</h4>
+                  <p>This is Alex</p>
+                  <p>This is Felix</p>
+                </div>
+              </Reveal.Content>
+            </Reveal>
           </div>
+
           <div id="ourCharitys">
-            <h3>Our charitys</h3>
+            <Reveal animated="fade">
+              <Reveal.Content visible>
+                <div id="ourCharitysVisible">
+                  <h3>Our charitys</h3>
+                </div>
+              </Reveal.Content>
+              <Reveal.Content hidden>
+                <div id="ourCharitysHidden">
+                  {" "}
+                  <h4>Hello</h4>
+                  <p>This is one of our charitys</p>
+                  <p>This is another charity</p>
+                </div>
+              </Reveal.Content>
+            </Reveal>
           </div>
+
           <div id="ourVision">
-            <h3>Our vision </h3>
+            <Reveal animated="fade">
+              <Reveal.Content visible>
+                <div id="ourVisionVisible">
+                  <h3>Our vision </h3>
+                </div>
+              </Reveal.Content>
+              <Reveal.Content hidden>
+                <div id="ourVisionHidden">
+                  {" "}
+                  <h4>Hello</h4>
+                  <p>This is our vision</p>
+                </div>
+              </Reveal.Content>
+            </Reveal>
           </div>
+
           <div id="ourAims">
-            <h3>Our aims</h3>
+            <Reveal animated="fade">
+              <Reveal.Content visible>
+                <div id="ourAimsVisible">
+                  {" "}
+                  <h3>Our aims</h3>
+                </div>
+              </Reveal.Content>
+              <Reveal.Content hidden>
+                <div id="ourAimsHidden">
+                  <h4>Hello</h4>
+                  <p>This is our aims</p>
+                </div>
+              </Reveal.Content>
+            </Reveal>
           </div>
         </Segment>
       </div>

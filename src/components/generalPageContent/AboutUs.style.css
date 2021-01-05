@@ -18,18 +18,59 @@
   z-index: 9;
 }
 
-#meetTheTeam {
+#meetTheTeamVisible {
   height: 40vh;
+  width:40vw;
+  text-align: center;
+  background-color: lightgray;
 }
 
-#ourCharitys {
+#meetTheTeamHidden {
   height: 40vh;
+  width:40vw;
+  text-align: center;
+  background-color:lightgray;
 }
 
-#ourVision {
+#ourCharitysVisible {
   height: 40vh;
+  width:40vw;
+  text-align: center;
+  background-color: lightgray;
 }
 
-#ourAims {
+#ourCharitysHidden {
   height: 40vh;
+  width:40vw;
+  text-align: center;
+  background-color: lightgray;
+}
+
+#ourVisionVisible {
+  height: 40vh;
+  width:40vw;
+  text-align: center;
+  background-color: lightgray;
+}
+
+#ourVisionHidden {
+  height: 40vh;
+  width:40vw;
+  text-align: center;
+  background-color: lightgray;
+}
+
+#ourAimsVisible {
+  height: 40vh;
+  width:40vw;
+  text-align: center;
+  background-color: lightgray;
+}
+
+#ourAimsHidden {
+  height: 40vh;
+  width:40vw;
+  text-align: center;
+  vertical-align: middle;
+  background-color: lightgray;
 }
