@@ -21,7 +21,7 @@
 #meetTheTeamVisible {
   height: 50vh;
   width:40vw;
-  padding: 10vh;
+  padding: 20vh;
   text-align: center;
   background-color: white;
 }
@@ -38,7 +38,7 @@
 #ourCharitysVisible {
   height: 50vh;
   width:40vw;
-  padding: 10vh;
+  padding: 20vh;
   text-align: center;
   background-color: white;
 }
@@ -54,7 +54,7 @@
 #ourVisionVisible {
   height: 50vh;
   width:40vw;
-  padding: 10vh;
+  padding: 20vh;
   text-align: center;
   background-color: white;
 }
@@ -70,7 +70,7 @@
 #ourAimsVisible {
   height: 50vh;
   width:40vw;
-  padding: 10vh;
+  padding: 20vh;
   text-align: center;
   background-color: white;
 }
@@ -78,7 +78,7 @@
 #ourAimsHidden {
   height: 50vh;
   width:40vw;
-  padding: 10vh;
+  padding:1vh;
   text-align: center;
   background-color: white;
 }
