@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutUs.style.css";
-
+import { Segment } from "semantic-ui-react"
 const AboutUs = () => {
   return (
     <>
@@ -8,8 +8,8 @@ const AboutUs = () => {
         <div id="aboutUsBanner">
           <h1>About us.</h1>
         </div>
-        <div id="aboutUsSegmentInfo">
-          <div id="MeetTheTeam">
+        <Segment id="aboutUsSegmentInfo">
+          <div id="meetTheTeam">
             <h3>Meet the team</h3>
           </div>
           <div id="ourCharitys">
@@ -21,7 +21,7 @@ const AboutUs = () => {
           <div id="ourAims">
             <h3>Our aims</h3>
           </div>
-        </div>
+        </Segment>
       </div>
     </>
   );

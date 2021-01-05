@@ -1,4 +1,35 @@
 #aboutUsContent {
-  height: 100vh; 
+  height: 100vh;
 }
 
+#aboutUsBanner {
+  height: 40vh;
+  width: 100vw;
+  background-color: lightcoral;
+}
+#aboutUsSegmentInfo {
+  column-count: 2;
+  column-gap: 0;
+  padding: 0;
+  width: 80vw;
+  top: 25vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+}
+
+#meetTheTeam {
+  height: 40vh;
+}
+
+#ourCharitys {
+  height: 40vh;
+}
+
+#ourVision {
+  height: 40vh;
+}
+
+#ourAims {
+  height: 40vh;
+}
