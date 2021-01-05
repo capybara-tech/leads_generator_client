@@ -21,6 +21,7 @@
 #meetTheTeamVisible {
   height: 40vh;
   width:40vw;
+  padding-top: 10vh;
   text-align: center;
   background-color: lightgray;
 }
@@ -28,6 +29,7 @@
 #meetTheTeamHidden {
   height: 40vh;
   width:40vw;
+  padding-top: 10vh;
   text-align: center;
   background-color:lightgray;
 }
@@ -35,6 +37,7 @@
 #ourCharitysVisible {
   height: 40vh;
   width:40vw;
+  padding-top: 10vh;
   text-align: center;
   background-color: lightgray;
 }
@@ -42,6 +45,7 @@
 #ourCharitysHidden {
   height: 40vh;
   width:40vw;
+  padding-top: 10vh;
   text-align: center;
   background-color: lightgray;
 }
@@ -49,6 +53,7 @@
 #ourVisionVisible {
   height: 40vh;
   width:40vw;
+  padding-top: 10vh;
   text-align: center;
   background-color: lightgray;
 }
@@ -56,6 +61,7 @@
 #ourVisionHidden {
   height: 40vh;
   width:40vw;
+  padding-top: 10vh;
   text-align: center;
   background-color: lightgray;
 }
@@ -63,6 +69,7 @@
 #ourAimsVisible {
   height: 40vh;
   width:40vw;
+  padding-top: 10vh;
   text-align: center;
   background-color: lightgray;
 }
@@ -70,7 +77,7 @@
 #ourAimsHidden {
   height: 40vh;
   width:40vw;
+  padding-top: 10vh;
   text-align: center;
-  vertical-align: middle;
   background-color: lightgray;
 }
