@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutUs.style.css";
-import { Segment, Reveal } from "semantic-ui-react";
+import { Segment, Reveal, Image } from "semantic-ui-react";
 const AboutUs = () => {
   return (
     <>
@@ -18,10 +18,41 @@ const AboutUs = () => {
               </Reveal.Content>
               <Reveal.Content hidden>
                 <div id="meetTheTeamHidden">
-                  {" "}
-                  <h4>Hello</h4>
-                  <p>This is Alex</p>
-                  <p>This is Felix</p>
+                  <div>
+                    <Image
+                      verticalAlign="middle"
+                      src={
+                        "https://react.semantic-ui.com/images/avatar/large/daniel.jpg"
+                      }
+                      size="tiny"
+                      circular
+                    />
+                    <br />
+                    <h5>Alex Bellamy</h5>
+                    <p>
+                      A stickler for searching for meaning and purpose, even in
+                      small things!
+                    </p>
+                    <p>CEO and co-founder</p>
+
+                    <p>alex@capybara.com</p>
+                  </div>
+                  <div>
+                    <Image
+                      verticalAlign="middle"
+                      src={
+                        "https://react.semantic-ui.com/images/avatar/large/daniel.jpg"
+                      }
+                      size="tiny"
+                      circular
+                    />
+                    <br />
+                    <h5>Felix Oppong Willborg</h5>
+                    <p>bla bla bla bla bla bla</p>
+                    <p>COO and co-founder</p>
+
+                    <p>felix@capybara.com</p>
+                  </div>
                 </div>
               </Reveal.Content>
             </Reveal>
@@ -31,15 +62,19 @@ const AboutUs = () => {
             <Reveal animated="fade">
               <Reveal.Content visible>
                 <div id="ourCharitysVisible">
-                  <h3>Our charitys</h3>
+                  <h3>Our charities</h3>
                 </div>
               </Reveal.Content>
               <Reveal.Content hidden>
                 <div id="ourCharitysHidden">
-                  {" "}
-                  <h4>Hello</h4>
-                  <p>This is one of our charitys</p>
-                  <p>This is another charity</p>
+                  <p>
+                    We love our planet so much as such we donate a massive 15%
+                    of our net profits to other green initiatives.
+                    <br />
+                    <br />
+                    By completing our straightforward online quote request form
+                    you are indirectly donating to charity.
+                  </p>
                 </div>
               </Reveal.Content>
             </Reveal>
@@ -49,14 +84,17 @@ const AboutUs = () => {
             <Reveal animated="fade">
               <Reveal.Content visible>
                 <div id="ourVisionVisible">
-                  <h3>Our vision </h3>
+                  <h3>Our mission</h3>
                 </div>
               </Reveal.Content>
               <Reveal.Content hidden>
                 <div id="ourVisionHidden">
                   {" "}
-                  <h4>Hello</h4>
-                  <p>This is our vision</p>
+                  <p>
+                    Petrol and diesel car sales are banned from 2030, solar
+                    power gets no real airtime. We are here to change that where
+                    people live more informed and more creative lives.
+                  </p>
                 </div>
               </Reveal.Content>
             </Reveal>
@@ -72,13 +110,44 @@ const AboutUs = () => {
               </Reveal.Content>
               <Reveal.Content hidden>
                 <div id="ourAimsHidden">
-                  <h4>Hello</h4>
-                  <p>This is our aims</p>
+                  <p>
+                    Create a new eco initiative, where yes everyone is a winner
+                    and a % of our profits are donated back to society
+                    <br />
+                    By obtaining a quote you are donating indirectly to charity,
+                    no strings attached!
+                    <br />
+                    You will lower your energy bills and benefit from a
+                    long-term steady investment, with returns better than any
+                    bank
+                    <br />
+                    Make solar energy easily accessible to all, matching varying
+                    needs to our carefully selected partners
+                    <br />
+                    Revolutionise the solar market, voice the benefits of solar
+                    helping people live in a greener society
+                    <br />
+                    Transparency, honesty and dedication to our customers are a
+                    given
+                  </p>
                 </div>
               </Reveal.Content>
             </Reveal>
           </div>
         </Segment>
+
+        <div id="aboutUsBottomBanner">
+          <h2>A message from our CEO</h2>
+          <h4>
+            With our planet coming under increasing pressure from global threats
+            such as global warming, plastic clogging up our oceans and
+            deforestation, like most others it concerns me what the world will
+            be like for my grandchildren and their offspring. Challenge the
+            status quo by investing in 100% clean and limitless solar energy -
+            and help change the world for tomorrow.
+          </h4>
+          <p>Alex Bellamy, CEO Capybara UK</p>
+        </div>
       </div>
     </>
   );

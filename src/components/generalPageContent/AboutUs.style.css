@@ -1,83 +1,92 @@
-#aboutUsContent {
-  height: 100vh;
-}
+
 
 #aboutUsBanner {
-  height: 40vh;
+  text-align: center;
+  padding-top: 15vh;
+  height: 60vh;
   width: 100vw;
-  background-color: lightcoral;
+  background-color: lightblue;
 }
 #aboutUsSegmentInfo {
   column-count: 2;
   column-gap: 0;
   padding: 0;
   width: 80vw;
-  top: 25vh;
+  top: 20vh;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9;
 }
 
 #meetTheTeamVisible {
-  height: 40vh;
+  height: 50vh;
   width:40vw;
-  padding-top: 10vh;
+  padding: 10vh;
   text-align: center;
-  background-color: lightgray;
+  background-color: white;
 }
 
 #meetTheTeamHidden {
-  height: 40vh;
+  columns: 2;
+  height: 50vh;
   width:40vw;
-  padding-top: 10vh;
+  padding:1vh;
   text-align: center;
-  background-color:lightgray;
+  background-color: white;
 }
 
 #ourCharitysVisible {
-  height: 40vh;
+  height: 50vh;
   width:40vw;
-  padding-top: 10vh;
+  padding: 10vh;
   text-align: center;
-  background-color: lightgray;
+  background-color: white;
 }
 
 #ourCharitysHidden {
-  height: 40vh;
+  height: 50vh;
   width:40vw;
-  padding-top: 10vh;
+  padding: 10vh;
   text-align: center;
-  background-color: lightgray;
+  background-color: white;
 }
 
 #ourVisionVisible {
-  height: 40vh;
+  height: 50vh;
   width:40vw;
-  padding-top: 10vh;
+  padding: 10vh;
   text-align: center;
-  background-color: lightgray;
+  background-color: white;
 }
 
 #ourVisionHidden {
-  height: 40vh;
+  height: 50vh;
   width:40vw;
-  padding-top: 10vh;
+  padding: 10vh;
   text-align: center;
-  background-color: lightgray;
+  background-color: white;
 }
 
 #ourAimsVisible {
-  height: 40vh;
+  height: 50vh;
   width:40vw;
-  padding-top: 10vh;
+  padding: 10vh;
   text-align: center;
-  background-color: lightgray;
+  background-color: white;
 }
 
 #ourAimsHidden {
-  height: 40vh;
+  height: 50vh;
   width:40vw;
-  padding-top: 10vh;
+  padding: 10vh;
   text-align: center;
+  background-color: white;
+}
+
+#aboutUsBottomBanner{
+  text-align: center;
+  padding:10vh;
+  height:40vh;
+  width:100vw;
   background-color: lightgray;
 }
