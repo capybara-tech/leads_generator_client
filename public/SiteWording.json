@@ -46,6 +46,7 @@
         "planning": "Planning permission is not required(in most cases). Installing solar panels on residential, non domestic buildings or land is usually classified as a 'permitted development'."
       }
     },
+    "impactEnvironmentPage": {},
     "impactWalletPage": {
       "opening": "Figures which won't disappoint",
       "openingSub": "If the environmental benefits of solar panels has not convinced you about the benefits of solar, the financial ones will :). For those than have already seen the light this is the icing on the cake",
@@ -156,7 +157,8 @@
         "step2": "Direct current (DC) electricity is produced",
         "step3": "An inverter converts DC electricity to alternating current electricity (AC)",
         "step4": "The electricity can then be used in your property, excess sold to the National Grid or stored"
-      }
+      },
+      "howSolspanaWorksPage": {}
     },
     "becomeAPartnerPage": {
       "title": "Become a SOLSPANA installer today.",
