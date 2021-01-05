@@ -1,12 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ViewContractors from "../admin/ViewContractors";
 import CreateContractor from "./CreateContractor";
 import QuoteSearch from "./QuoteSearch";
 import Login from "../admin/Login";
 import { connect } from "react-redux";
-import { Button } from 'semantic-ui-react'
+import { Button } from "semantic-ui-react";
 
 const AdminHomePage = (props) => {
+  useEffect(() => {
+    if (window.Tawk_API) {
+      window.Tawk_API.hideWidget();
+    }
+    return () => {
+      if (window.Tawk_API) {
+        window.Tawk_API.showWidget();
+      }
+    };
+  }, []);
+
   const [viewContractors, setViewContractors] = useState(false);
   const [createContractor, setCreateContractor] = useState(false);
   const [quoteSearch, setQuoteSearch] = useState(false);
