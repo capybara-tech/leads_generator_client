@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutUs.style.css";
-import { Segment, Reveal, Image, Grid } from "semantic-ui-react";
+import { Segment, Reveal, Image, Grid, Icon } from "semantic-ui-react";
 const AboutUs = () => {
   return (
     <>
@@ -11,55 +11,6 @@ const AboutUs = () => {
         <Segment id="aboutUsSegmentInfo">
           <Grid>
             <Grid.Row columns={2}>
-              <Grid.Column id="meetTheTeam">
-                <Reveal animated="fade">
-                  <Reveal.Content visible>
-                    <div id="meetTheTeamVisible">
-                      <h3>Meet the team</h3>
-                    </div>
-                  </Reveal.Content>
-                  <Reveal.Content hidden>
-                    <div id="meetTheTeamHidden">
-                      <div>
-                        <Image
-                          verticalAlign="middle"
-                          src={
-                            "https://react.semantic-ui.com/images/avatar/large/daniel.jpg"
-                          }
-                          size="tiny"
-                          circular
-                        />
-                        <br />
-                        <h5>Alex Bellamy</h5>
-                        <p>
-                          A stickler for searching for meaning and purpose, even
-                          in small things!
-                        </p>
-                        <p>CEO and co-founder</p>
-
-                        <p>alex@capybara.com</p>
-                      </div>
-                      <div>
-                        <Image
-                          verticalAlign="middle"
-                          src={
-                            "https://react.semantic-ui.com/images/avatar/large/daniel.jpg"
-                          }
-                          size="tiny"
-                          circular
-                        />
-                        <br />
-                        <h5>Felix Oppong Willborg</h5>
-                        <p>bla bla bla bla bla bla</p>
-                        <p>COO and co-founder</p>
-
-                        <p>felix@capybara.com</p>
-                      </div>
-                    </div>
-                  </Reveal.Content>
-                </Reveal>
-              </Grid.Column>
-
               <Grid.Column id="ourCharitys">
                 <Reveal animated="fade">
                   <Reveal.Content visible>
@@ -81,8 +32,7 @@ const AboutUs = () => {
                   </Reveal.Content>
                 </Reveal>
               </Grid.Column>
-            </Grid.Row>
-            <Grid.Row columns={2}>
+
               <Grid.Column id="ourVision">
                 <Reveal animated="fade">
                   <Reveal.Content visible>
@@ -102,47 +52,42 @@ const AboutUs = () => {
                   </Reveal.Content>
                 </Reveal>
               </Grid.Column>
-
-              <Grid.Column id="ourAims">
-                <Reveal animated="fade">
-                  <Reveal.Content visible>
-                    <div id="ourAimsVisible">
-                      {" "}
-                      <h3>Our aims</h3>
-                    </div>
-                  </Reveal.Content>
-                  <Reveal.Content hidden>
-                    <div id="ourAimsHidden">
-                      <p>
-                        Create a new eco initiative, where yes everyone is a
-                        winner and a % of our profits are donated back to
-                        society
-                        <br />
-                        By obtaining a quote you are donating indirectly to
-                        charity, no strings attached!
-                        <br />
-                        You will lower your energy bills and benefit from a
-                        long-term steady investment, with returns better than
-                        any bank
-                        <br />
-                        Make solar energy easily accessible to all, matching
-                        varying needs to our carefully selected partners
-                        <br />
-                        Revolutionise the solar market, voice the benefits of
-                        solar helping people live in a greener society
-                        <br />
-                        Transparency, honesty and dedication to our customers
-                        are a given
-                      </p>
-                    </div>
-                  </Reveal.Content>
-                </Reveal>
-              </Grid.Column>
             </Grid.Row>
           </Grid>
         </Segment>
 
         <div id="aboutUsBottomBanner">
+          <h1 id="meetTheTeamTitle">Meet the team</h1>
+          <Grid id="meetTheTeam">
+            <Grid.Row columns={2}>
+              <Grid.Column>
+                <Image
+                  verticalAlign="middle"
+                  src={
+                    "https://react.semantic-ui.com/images/avatar/large/daniel.jpg"
+                  }
+                  size="medium"
+                />
+                <h3>Alex Bellamy</h3>
+                <p>CEO and co-founder</p>
+                <Icon name="mail" size="big" />
+                {/* fix email link */}
+              </Grid.Column>
+              <Grid.Column>
+                <Image
+                  verticalAlign="middle"
+                  src={
+                    "https://react.semantic-ui.com/images/avatar/large/daniel.jpg"
+                  }
+                  size="medium"
+                />
+                <h3>Felix Oppong Willborg</h3>
+                <p>COO and co-founder</p>
+                <Icon name="mail" size="big" />
+                {/* fix email link */}
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
           <h2>A message from our CEO</h2>
           <h4>
             With our planet coming under increasing pressure from global threats
@@ -155,6 +100,53 @@ const AboutUs = () => {
           <p>Alex Bellamy, CEO Capybara UK</p>
         </div>
       </div>
+
+      <Grid>
+        <Grid.Row columns={5}>
+          <Grid.Column>
+            <Icon name="trophy" size="massive" />
+            <p>
+              Create a new eco initiative, where yes everyone is a winner and a
+              % of our profits are donated back to society
+            </p>
+          </Grid.Column>
+          <Grid.Column>
+            <Icon name="like" size="massive" />
+            <p>
+              By obtaining a quote you are donating indirectly to charity, no
+              strings attached!
+            </p>
+          </Grid.Column>
+          <Grid.Column>
+            <Icon name="money" size="massive" />
+            <p>
+              You will lower your energy bills and benefit from a long-term
+              steady investment, with returns better than any bank
+            </p>
+          </Grid.Column>
+          <Grid.Column>
+            <Icon name="handshake" size="massive" />
+            <p>
+              Make solar energy easily accessible to all, matching varying needs
+              to our carefully selected partners
+            </p>
+          </Grid.Column>
+          <Grid.Column>
+            <Icon name="recycle" size="massive" />
+            <p>
+              Revolutionise the solar market, voice the benefits of solar
+              helping people live in a greener society
+            </p>
+          </Grid.Column>
+        </Grid.Row>
+        <Grid.Row columns={1}>
+          <Grid.Column>
+            <h3>
+              Transparency, honesty and dedication to our customers are a given
+            </h3>
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
     </>
   );
 };

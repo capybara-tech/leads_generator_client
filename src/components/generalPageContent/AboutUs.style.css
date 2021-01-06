@@ -9,28 +9,11 @@
 }
 #aboutUsSegmentInfo {
   padding: 0;
-  width: 80vw;
+  width:90vw;
   top: 20vh;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9;
-}
-
-#meetTheTeamVisible {
-  height: 50vh;
-  width:40vw;
-  padding: 20vh;
-  text-align: center;
-  background-color: white;
-}
-
-#meetTheTeamHidden {
-  columns: 2;
-  height: 50vh;
-  width:40vw;
-  padding:1vh;
-  text-align: center;
-  background-color: white;
 }
 
 #ourCharitysVisible {
@@ -76,7 +59,7 @@
 #ourAimsHidden {
   height: 50vh;
   width:40vw;
-  padding:1vh;
+  padding:10vh;
   text-align: center;
   background-color: white;
 }
@@ -84,7 +67,15 @@
 #aboutUsBottomBanner{
   text-align: center;
   padding:10vh;
-  height:40vh;
   width:100vw;
   background-color: lightgray;
+}
+
+#meetTheTeam{
+  left:50%;
+  padding-bottom:30vh;
+}
+
+#meetTheTeamTitle{
+  padding-bottom:20vh;
 }
