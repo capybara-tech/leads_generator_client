@@ -8,8 +8,6 @@
   background-color: lightblue;
 }
 #aboutUsSegmentInfo {
-  column-count: 2;
-  column-gap: 0;
   padding: 0;
   width: 80vw;
   top: 20vh;
