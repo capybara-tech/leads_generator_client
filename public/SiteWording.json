@@ -158,23 +158,45 @@
         "step3": "An inverter converts DC electricity to alternating current electricity (AC)",
         "step4": "The electricity can then be used in your property, excess sold to the National Grid or stored"
       },
-      "howSolspanaWorksPage": {}
-    },
-    "becomeAPartnerPage": {
-      "title": "Become a SOLSPANA installer today.",
-      "para1": "Get a steady flow of jobs*, reduce your admin and keep all of the revenue from our referral (apart from of course our minimal intro fee)",
-      "para2": "We love our customers and want you too so its important that you provide a first class service at all times, lets face it a happy customer results in future referrals.",
-      "para3": "The only other condition is that you are MCS registered.",
-      "para4": "Say goodbye to tedious paperwork, simply drop us an email or give us a call to get the ball rolling.",
-      "para5": "Join our quest to help make the UK more energy efficient.",
-      "smallPrint": "*based on location"
-    },
-    "contactUsPage": {
-      "title": "Contact the team",
-      "strapLine": "the quickest way to to get in touch is to start a live chat, alternatively:",
-      "email": "capybara.it@gmail.com",
-      "post": "Kista, Stockholm",
-      "conclude": "real people ready to address your queries or offer friendly advice"
+      "howSolspanaWorksPage": {
+        "title": "How SOLSPANA's service works",
+        "subTitle": "It's effortless to find MCS certified, vetted and trusted solar installers",
+        "process": {
+          "step1Title": "1. Request 3 quotes - no obligation and free!",
+          "step1Content": "You will firstly answer a few easy questions about your property. A heads up - give as much detail as possible for a more accurate quote. We will connect you with selected partners across the UK, every job's covered.",
+          "step2Title": "2. Get quotes",
+          "step2Content": "We'll pass your details to 3 installers who will be in touch in lightning speed. There's a lot for our professionals to consider when installing a solar panel system so its likely they will arrange a mutually convenient time to check out your property and to iron out any queries",
+          "step3Title": "3. Choose your MCS professional",
+          "step3Content": "Armed with quotes and recommendations you are all set to choose your tradesman. We are against pushy sales practices or hidden costs!",
+          "step4Title": "4. Job complete",
+          "step4Content": "Once your panels are up, it would be helpful if you could drop us a line rating our partners reliability, work and value for money. Feedback rewards good work and holds the installer accountable for any (very rare)problems",
+          "conclusion": "Save time, money & hassle with us:)"
+        },
+        "summary": {
+          "point1Title": "Only selected partners",
+          "point1Content": "We don't pass your personal details to any Tom, Dick or Harry. We evaluate our partners to ensure they meet our super-stringent service standards, they're a friendly bunch too",
+          "point2Title": "MCS registered installers",
+          "point2Content": "Have confidence - all of our installers are MCS certified. Experienced tip-top professionals delivering quality work and adhering to industry standards",
+          "point3Title": "Jaw-dropping warranties",
+          "point3COntent": "For peace of mind, a massive 25 year warranty is typically on offer. There are not many other guarantees out there for that length of time!"
+        }
+      },
+      "becomeAPartnerPage": {
+        "title": "Become a SOLSPANA installer today.",
+        "para1": "Get a steady flow of jobs*, reduce your admin and keep all of the revenue from our referral (apart from of course our minimal intro fee)",
+        "para2": "We love our customers and want you too so its important that you provide a first class service at all times, lets face it a happy customer results in future referrals.",
+        "para3": "The only other condition is that you are MCS registered.",
+        "para4": "Say goodbye to tedious paperwork, simply drop us an email or give us a call to get the ball rolling.",
+        "para5": "Join our quest to help make the UK more energy efficient.",
+        "smallPrint": "*based on location"
+      },
+      "contactUsPage": {
+        "title": "Contact the team",
+        "strapLine": "the quickest way to to get in touch is to start a live chat, alternatively:",
+        "email": "capybara.it@gmail.com",
+        "post": "Kista, Stockholm",
+        "conclude": "real people ready to address your queries or offer friendly advice"
+      }
     }
   }
 }
