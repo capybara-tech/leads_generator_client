@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Route, Switch } from "react-router-dom";
 import LandingPage from "./components/generalPageContent/LandingPage";
 import Navbar from "./components/generalPageContent/Navbar";
@@ -19,6 +19,21 @@ import AdminHomePage from "./components/admin/AdminHomePage";
 import { connect } from "react-redux";
 
 const App = () => {
+
+  useEffect(() => {
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = "https://embed.tawk.to/5fe27444a8a254155ab5a1e7/1eq69ccfn";
+      s1.charset = "UTF-8";
+      s1.setAttribute("crossorigin", "*");
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  }, []);
+
   return (
     <div>
       <Navbar />
