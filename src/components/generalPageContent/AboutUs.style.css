@@ -48,21 +48,7 @@
   background-color: white;
 }
 
-#ourAimsVisible {
-  height: 50vh;
-  width:40vw;
-  padding: 20vh;
-  text-align: center;
-  background-color: white;
-}
 
-#ourAimsHidden {
-  height: 50vh;
-  width:40vw;
-  padding:10vh;
-  text-align: center;
-  background-color: white;
-}
 
 #aboutUsBottomBanner{
   text-align: center;
@@ -78,4 +64,32 @@
 
 #meetTheTeamTitle{
   padding-bottom:20vh;
+}
+
+#ourAimsGrid{
+  padding-top:30vh;
+  padding-left:5vw;
+  padding-right:5vw;
+  padding-bottom:20vh;
+  text-align: center;
+}
+
+#recycle{
+  color:#c1df9c;
+}
+
+#handshake{
+color: #006996;
+}
+
+#money{
+  color:#85bb65;
+}
+
+#like{
+  color:#9b111e;
+}
+
+#winner{
+  color: #d4af37;
 }

@@ -101,44 +101,45 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <Grid>
+      <Grid id="ourAimsGrid">
         <Grid.Row columns={5}>
           <Grid.Column>
-            <Icon name="trophy" size="massive" />
+            <Icon id="winner" name="winner" size="massive" />
             <p>
               Create a new eco initiative, where yes everyone is a winner and a
               % of our profits are donated back to society
             </p>
           </Grid.Column>
           <Grid.Column>
-            <Icon name="like" size="massive" />
+            <Icon id="like" name="like" size="massive" />
             <p>
               By obtaining a quote you are donating indirectly to charity, no
               strings attached!
             </p>
           </Grid.Column>
           <Grid.Column>
-            <Icon name="money" size="massive" />
+            <Icon id="money" name="money" size="massive" />
             <p>
               You will lower your energy bills and benefit from a long-term
               steady investment, with returns better than any bank
             </p>
           </Grid.Column>
           <Grid.Column>
-            <Icon name="handshake" size="massive" />
+            <Icon id="handshake" name="handshake" size="massive" />
             <p>
               Make solar energy easily accessible to all, matching varying needs
               to our carefully selected partners
             </p>
           </Grid.Column>
           <Grid.Column>
-            <Icon name="recycle" size="massive" />
+            <Icon id="recycle" name="recycle" size="massive" />
             <p>
               Revolutionise the solar market, voice the benefits of solar
               helping people live in a greener society
             </p>
           </Grid.Column>
         </Grid.Row>
+        <br/>
         <Grid.Row columns={1}>
           <Grid.Column>
             <h3>
