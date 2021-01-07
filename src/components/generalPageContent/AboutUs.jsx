@@ -1,13 +1,13 @@
 import React from "react";
 import "./AboutUs.style.css";
-import { Segment, Reveal, Image, Grid, Icon } from "semantic-ui-react";
+import { Segment, Reveal, Image, Grid, Icon, Popup } from "semantic-ui-react";
 const AboutUs = () => {
   return (
     <>
       <div id="aboutUsContent">
         <div id="aboutUsBanner">
           <p id="aboutUsTitle">
-          Making UK greener, <br/> one quote at the time
+            Making UK greener, <br /> one quote at the time
           </p>
           <p>
             Its simple, we promote the benefits of solar(hopefully winning you
@@ -64,17 +64,25 @@ const AboutUs = () => {
         </Segment>
 
         <div id="aboutUsBottomBanner">
-          <p id="meetTheTeamTitle">Meet the team</p>
+          <p id="meetTheTeamTitle">- Meet the team -</p>
           <Grid id="meetTheTeam">
             <Grid.Row columns={3}>
               <Grid.Column>
-                <Image
-                  verticalAlign="middle"
-                  src={
-                    "https://react.semantic-ui.com/images/avatar/large/daniel.jpg"
+              <Popup
+                  position="bottom center"
+                  content="A stickler for searching for meaning and purpose, even in small things!"
+                  on="hover"
+                  inverted
+                  trigger={
+                    <Image
+                      verticalAlign="middle"
+                      src={
+                        "https://react.semantic-ui.com/images/avatar/large/daniel.jpg"
+                      }
+                      circular
+                      size="small"
+                    />
                   }
-                  circular
-                  size="small"
                 />
                 <h3>Alex Bellamy</h3>
                 <p>CEO and co-founder</p>
@@ -82,13 +90,21 @@ const AboutUs = () => {
                 {/* fix email link */}
               </Grid.Column>
               <Grid.Column>
-                <Image
-                  verticalAlign="middle"
-                  src={
-                    "https://react.semantic-ui.com/images/avatar/large/daniel.jpg"
+              <Popup
+                  position="bottom center"
+                  content="Bla Bla Bla Bla Bla Bla Bla Bla Bla"
+                  on="hover"
+                  inverted
+                  trigger={
+                    <Image
+                      verticalAlign="middle"
+                      src={
+                        "https://react.semantic-ui.com/images/avatar/large/daniel.jpg"
+                      }
+                      circular
+                      size="small"
+                    />
                   }
-                  circular
-                  size="small"
                 />
                 <h3>Felix Oppong Willborg</h3>
                 <p>COO and co-founder</p>
@@ -96,16 +112,24 @@ const AboutUs = () => {
                 {/* fix email link */}
               </Grid.Column>
               <Grid.Column>
-                <Image
-                  verticalAlign="middle"
-                  src={
-                    "https://react.semantic-ui.com/images/avatar/large/daniel.jpg"
+                <Popup
+                  position="bottom center"
+                  content="Woff!"
+                  on="hover"
+                  inverted
+                  trigger={
+                    <Image
+                      verticalAlign="middle"
+                      src={
+                        "https://react.semantic-ui.com/images/avatar/large/daniel.jpg"
+                      }
+                      circular
+                      size="small"
+                    />
                   }
-                  circular
-                  size="small"
                 />
                 <h3>Twinky</h3>
-                <p>Office dog </p>
+                <p>Head of Customer Satisfaction</p>
                 <Icon name="mail" size="big" />
                 {/* fix email link */}
               </Grid.Column>
