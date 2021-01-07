@@ -5,7 +5,7 @@
 #aboutUsTitle{
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 8vh;
+  font-size: 9vh;
 }
 
 #aboutUsBanner {
@@ -26,6 +26,8 @@
 }
 
 #ourCharitysVisible {
+  font-family: "Poppins", sans-serif;
+  font-size: 5vh;
   height: 50vh;
   width:40vw;
   padding: 20vh;
@@ -34,6 +36,7 @@
 }
 
 #ourCharitysHidden {
+  font-family: "Poppins", sans-serif;
   height: 50vh;
   width:40vw;
   padding: 15vh;
@@ -42,6 +45,8 @@
 }
 
 #ourVisionVisible {
+  font-family: "Poppins", sans-serif;
+  font-size: 5vh;
   height: 50vh;
   width:40vw;
   padding: 20vh;
@@ -50,6 +55,7 @@
 }
 
 #ourVisionHidden {
+  font-family: "Poppins", sans-serif;
   height: 50vh;
   width:40vw;
   padding: 15vh;
@@ -72,6 +78,8 @@
 }
 
 #meetTheTeamTitle{
+  font-family: "Poppins", sans-serif;
+  font-size: 5vh;
   padding-bottom:20vh;
 }
 

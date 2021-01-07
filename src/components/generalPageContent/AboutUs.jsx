@@ -7,7 +7,7 @@ const AboutUs = () => {
       <div id="aboutUsContent">
         <div id="aboutUsBanner">
           <p id="aboutUsTitle">
-          Making UK greener one quote at the time
+          Making UK greener, <br/> one quote at the time
           </p>
           <p>
             Its simple, we promote the benefits of solar(hopefully winning you
@@ -22,7 +22,7 @@ const AboutUs = () => {
                 <Reveal animated="fade">
                   <Reveal.Content visible>
                     <div id="ourCharitysVisible">
-                      <h3>Our charities</h3>
+                      <p>- Our charities -</p>
                     </div>
                   </Reveal.Content>
                   <Reveal.Content hidden>
@@ -44,7 +44,7 @@ const AboutUs = () => {
                 <Reveal animated="fade">
                   <Reveal.Content visible>
                     <div id="ourVisionVisible">
-                      <h3>Our mission</h3>
+                      <p>- Our mission -</p>
                     </div>
                   </Reveal.Content>
                   <Reveal.Content hidden>
@@ -64,16 +64,17 @@ const AboutUs = () => {
         </Segment>
 
         <div id="aboutUsBottomBanner">
-          <h1 id="meetTheTeamTitle">Meet the team</h1>
+          <p id="meetTheTeamTitle">Meet the team</p>
           <Grid id="meetTheTeam">
-            <Grid.Row columns={2}>
+            <Grid.Row columns={3}>
               <Grid.Column>
                 <Image
                   verticalAlign="middle"
                   src={
                     "https://react.semantic-ui.com/images/avatar/large/daniel.jpg"
                   }
-                  size="medium"
+                  circular
+                  size="small"
                 />
                 <h3>Alex Bellamy</h3>
                 <p>CEO and co-founder</p>
@@ -86,10 +87,25 @@ const AboutUs = () => {
                   src={
                     "https://react.semantic-ui.com/images/avatar/large/daniel.jpg"
                   }
-                  size="medium"
+                  circular
+                  size="small"
                 />
                 <h3>Felix Oppong Willborg</h3>
                 <p>COO and co-founder</p>
+                <Icon name="mail" size="big" />
+                {/* fix email link */}
+              </Grid.Column>
+              <Grid.Column>
+                <Image
+                  verticalAlign="middle"
+                  src={
+                    "https://react.semantic-ui.com/images/avatar/large/daniel.jpg"
+                  }
+                  circular
+                  size="small"
+                />
+                <h3>Twinky</h3>
+                <p>Office dog </p>
                 <Icon name="mail" size="big" />
                 {/* fix email link */}
               </Grid.Column>
