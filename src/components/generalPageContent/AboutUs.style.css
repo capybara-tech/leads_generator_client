@@ -36,6 +36,26 @@
   background-color: white;
 }
 
+.teamMemberTitles{
+  font-family: "Poppins", sans-serif;
+}
+
+.teamMemberName{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 3vh;
+}
+
+#ceoMessageTitle{
+  font-family: "Poppins", sans-serif;
+  font-size: 5vh;
+}
+
+#ceoMessage{
+  font-family: "Poppins", sans-serif;
+  font-size: 3vh;
+}
+
 #ourCharitysHidden {
   font-family: "Poppins", sans-serif;
   height: 50vh;

@@ -84,8 +84,8 @@ const AboutUs = () => {
                     />
                   }
                 />
-                <h3>Alex Bellamy</h3>
-                <p>CEO and co-founder</p>
+                <p className="teamMemberName">Alex Bellamy</p>
+                <p className="teamMemberTitles">CEO and co-founder</p>
                 <Icon name="mail" size="big" />
                 {/* fix email link */}
               </Grid.Column>
@@ -106,8 +106,8 @@ const AboutUs = () => {
                     />
                   }
                 />
-                <h3>Felix Oppong Willborg</h3>
-                <p>COO and co-founder</p>
+                <p className="teamMemberName">Felix Oppong Willborg</p>
+                <p className="teamMemberTitles">COO and co-founder</p>
                 <Icon name="mail" size="big" />
                 {/* fix email link */}
               </Grid.Column>
@@ -128,22 +128,22 @@ const AboutUs = () => {
                     />
                   }
                 />
-                <h3>Twinky</h3>
-                <p>Head of Customer Satisfaction</p>
+                <p className="teamMemberName">Twinky</p>
+                <p className="teamMemberTitles">Head of Customer Satisfaction</p>
                 <Icon name="mail" size="big" />
                 {/* fix email link */}
               </Grid.Column>
             </Grid.Row>
           </Grid>
-          <h2>A message from our CEO</h2>
-          <h4>
+          <p id="ceoMessageTitle">- A message from our CEO -</p>
+          <p id="ceoMessage">
             With our planet coming under increasing pressure from global threats
             such as global warming, plastic clogging up our oceans and
             deforestation, like most others it concerns me what the world will
             be like for my grandchildren and their offspring. Challenge the
             status quo by investing in 100% clean and limitless solar energy -
             and help change the world for tomorrow.
-          </h4>
+          </p>
           <p>Alex Bellamy, CEO Capybara UK</p>
         </div>
       </div>
