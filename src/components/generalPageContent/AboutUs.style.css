@@ -1,16 +1,25 @@
+#aboutUsContent{
+  font-family: "Poppins", sans-serif;
+}
 
+#aboutUsTitle{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 8vh;
+}
 
 #aboutUsBanner {
-  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 4vh;
   padding-top: 15vh;
-  height: 60vh;
+  height: 80vh;
   width: 100vw;
-  background-color: lightblue;
+  background-color: rgb(200, 218, 204);
 }
 #aboutUsSegmentInfo {
   padding: 0;
   width:90vw;
-  top: 20vh;
+  top: 5vh;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9;
@@ -27,7 +36,7 @@
 #ourCharitysHidden {
   height: 50vh;
   width:40vw;
-  padding: 10vh;
+  padding: 15vh;
   text-align: center;
   background-color: white;
 }
@@ -43,7 +52,7 @@
 #ourVisionHidden {
   height: 50vh;
   width:40vw;
-  padding: 10vh;
+  padding: 15vh;
   text-align: center;
   background-color: white;
 }

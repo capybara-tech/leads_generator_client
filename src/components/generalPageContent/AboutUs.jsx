@@ -6,7 +6,14 @@ const AboutUs = () => {
     <>
       <div id="aboutUsContent">
         <div id="aboutUsBanner">
-          <h1>About us.</h1>
+          <p id="aboutUsTitle">
+          Making UK greener one quote at the time
+          </p>
+          <p>
+            Its simple, we promote the benefits of solar(hopefully winning you
+            over!), you complete our online quote request and receive three
+            quotes. Your solar quest then begins
+          </p>
         </div>
         <Segment id="aboutUsSegmentInfo">
           <Grid>
@@ -139,7 +146,7 @@ const AboutUs = () => {
             </p>
           </Grid.Column>
         </Grid.Row>
-        <br/>
+        <br />
         <Grid.Row columns={1}>
           <Grid.Column>
             <h3>
