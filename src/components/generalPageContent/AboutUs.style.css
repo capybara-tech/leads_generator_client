@@ -105,11 +105,19 @@
 }
 
 #ourAimsGrid{
+  font-family: "Poppins", sans-serif;
   padding-top:30vh;
   padding-left:5vw;
   padding-right:5vw;
   padding-bottom:20vh;
   text-align: center;
+}
+
+#ourAimsConclusion{
+  padding-top:10vh;
+  font-family: "Poppins", sans-serif;
+  font-size: 5vh;
+  padding-bottom:20vh;
 }
 
 #recycle{

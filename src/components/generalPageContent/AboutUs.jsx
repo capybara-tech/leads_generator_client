@@ -189,9 +189,9 @@ const AboutUs = () => {
         <br />
         <Grid.Row columns={1}>
           <Grid.Column>
-            <h3>
+            <p id="ourAimsConclusion">
               Transparency, honesty and dedication to our customers are a given
-            </h3>
+            </p>
           </Grid.Column>
         </Grid.Row>
       </Grid>
