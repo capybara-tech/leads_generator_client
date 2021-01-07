@@ -10,8 +10,9 @@
 
 #aboutUsBanner {
   font-family: "Poppins", sans-serif;
-  font-size: 4vh;
-  padding-top: 15vh;
+  padding:5vw;
+  font-size: 3vh;
+  padding-top: 20vh;
   height: 90vh;
   width: 100vw;
   background-color: rgb(200, 218, 204);
