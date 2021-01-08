@@ -190,13 +190,12 @@
         "para5": "Join our quest to help make the UK more energy efficient.",
         "smallPrint": "*based on location"
       },
-      "contactUsPage": {
-        "title": "Contact the team",
-        "strapLine": "the quickest way to to get in touch is to start a live chat, alternatively:",
-        "email": "capybara.it@gmail.com",
-        "post": "Kista, Stockholm",
-        "conclude": "real people ready to address your queries or offer friendly advice"
-      }
+    "contactUsPage": {
+      "title": "Contact the SOLSPANA team",
+      "strapLine": "The quickest way to to get in touch is to start a live chat, alternatively:",
+      "email": "capybara.it@gmail.com",
+      "post": "Kista, Stockholm",
+      "conclude": "Real people ready to address your queries or offer friendly advice."
     }
   }
 }
