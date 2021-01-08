@@ -2,7 +2,10 @@ import React from "react";
 import "./AboutUs.style.css";
 import { Segment, Reveal, Image, Grid, Icon, Popup } from "semantic-ui-react";
 const AboutUs = () => {
-
+  
+    useEffect(() => {
+      window.scrollTo(0, 0)
+    }, [])
   return (
     <>
       <div id="aboutUsContent">
