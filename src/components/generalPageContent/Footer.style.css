@@ -1,4 +1,6 @@
 .footer {
+  padding-top: 10vh;
+  position: absolute;
   background: rgba(0, 66, 37, 0.5);
   text-align: center;
   width: 100%;

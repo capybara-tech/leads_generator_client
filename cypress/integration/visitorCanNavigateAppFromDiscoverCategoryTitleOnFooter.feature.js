@@ -7,7 +7,7 @@ describe("Visitor can navigate app from discover category title on the footer", 
     cy.get("[data-cy=footer]").within(() => {
       cy.get("[data-cy=button]").contains("About us").click();
     });
-    cy.get("[data-cy=title]").should("contain", "About us");
+    cy.get("[data-cy=title]").should("contain", "Making UK greener,");
     cy.get("[data-cy=title]").contains("How does solar work?").should("not.be.visible");
     cy.get("[data-cy=title]").contains("The SolSpana way").should("not.be.visible");
     cy.get("[data-cy=title]")
