@@ -2,6 +2,7 @@ import React from "react";
 import "./AboutUs.style.css";
 import { Segment, Reveal, Image, Grid, Icon, Popup } from "semantic-ui-react";
 const AboutUs = () => {
+
   return (
     <>
       <div id="aboutUsContent">
@@ -68,7 +69,7 @@ const AboutUs = () => {
           <Grid id="meetTheTeam">
             <Grid.Row columns={3}>
               <Grid.Column>
-              <Popup
+                <Popup
                   position="bottom center"
                   content="A stickler for searching for meaning and purpose, even in small things!"
                   on="hover"
@@ -90,7 +91,7 @@ const AboutUs = () => {
                 {/* fix email link */}
               </Grid.Column>
               <Grid.Column>
-              <Popup
+                <Popup
                   position="bottom center"
                   content="Bla Bla Bla Bla Bla Bla Bla Bla Bla"
                   on="hover"
@@ -129,7 +130,9 @@ const AboutUs = () => {
                   }
                 />
                 <p className="teamMemberName">Twinky</p>
-                <p className="teamMemberTitles">Head of Customer Satisfaction</p>
+                <p className="teamMemberTitles">
+                  Head of Customer Satisfaction
+                </p>
                 <Icon name="mail" size="big" />
                 {/* fix email link */}
               </Grid.Column>
@@ -146,55 +149,63 @@ const AboutUs = () => {
           </p>
           <p>Alex Bellamy, CEO Capybara UK</p>
         </div>
+        <div id="middleSegment">
+          <p id="ourAmbitionTitle">- Our ambition -</p>
+        </div>
       </div>
-
-      <Grid id="ourAimsGrid">
-        <Grid.Row columns={5}>
-          <Grid.Column>
-            <Icon id="winner" name="winner" size="massive" />
-            <p>
-              Create a new eco initiative, where yes everyone is a winner and a
-              % of our profits are donated back to society
-            </p>
-          </Grid.Column>
-          <Grid.Column>
-            <Icon id="like" name="like" size="massive" />
-            <p>
-              By obtaining a quote you are donating indirectly to charity, no
-              strings attached!
-            </p>
-          </Grid.Column>
-          <Grid.Column>
-            <Icon id="money" name="money" size="massive" />
-            <p>
-              You will lower your energy bills and benefit from a long-term
-              steady investment, with returns better than any bank
-            </p>
-          </Grid.Column>
-          <Grid.Column>
-            <Icon id="handshake" name="handshake" size="massive" />
-            <p>
-              Make solar energy easily accessible to all, matching varying needs
-              to our carefully selected partners
-            </p>
-          </Grid.Column>
-          <Grid.Column>
-            <Icon id="recycle" name="recycle" size="massive" />
-            <p>
-              Revolutionise the solar market, voice the benefits of solar
-              helping people live in a greener society
-            </p>
-          </Grid.Column>
-        </Grid.Row>
-        <br />
-        <Grid.Row columns={1}>
-          <Grid.Column>
-            <p id="ourAimsConclusion">
-              Transparency, honesty and dedication to our customers are a given
-            </p>
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
+      <Segment id="ourAimsSegment">
+        <Grid id="ourAimsGrid">
+          <Grid.Row columns={5}>
+            <Grid.Column>
+              <Icon id="winner" name="winner" size="massive" />
+              <p>
+                Create a new eco initiative, where yes everyone is a winner and
+                a % of our profits are donated back to society
+              </p>
+            </Grid.Column>
+            <Grid.Column>
+              <Icon id="like" name="like" size="massive" />
+              <p>
+                By obtaining a quote you are donating indirectly to charity, no
+                strings attached!
+              </p>
+            </Grid.Column>
+            <Grid.Column>
+              <Icon id="money" name="money" size="massive" />
+              <p>
+                You will lower your energy bills and benefit from a long-term
+                steady investment, with returns better than any bank
+              </p>
+            </Grid.Column>
+            <Grid.Column>
+              <Icon id="handshake" name="handshake" size="massive" />
+              <p>
+                Make solar energy easily accessible to all, matching varying
+                needs to our carefully selected partners
+              </p>
+            </Grid.Column>
+            <Grid.Column>
+              <Icon id="recycle" name="recycle" size="massive" />
+              <p>
+                Revolutionise the solar market, voice the benefits of solar
+                helping people live in a greener society
+              </p>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+      </Segment>
+      <div id="ourAimsConclusion">
+        <Grid>
+          <Grid.Row columns={1}>
+            <Grid.Column>
+              <p id="conclusionOfOurAims">
+                Transparency, honesty and dedication to our customers are a
+                given
+              </p>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+      </div>
     </>
   );
 };
