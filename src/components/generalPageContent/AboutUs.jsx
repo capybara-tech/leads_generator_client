@@ -1,8 +1,8 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./AboutUs.style.css";
 import { Segment, Reveal, Image, Grid, Icon, Popup } from "semantic-ui-react";
 const AboutUs = () => {
-  
+
     useEffect(() => {
       window.scrollTo(0, 0)
     }, [])
@@ -10,7 +10,7 @@ const AboutUs = () => {
     <>
       <div id="aboutUsContent">
         <div id="aboutUsBanner">
-          <p id="aboutUsTitle">
+          <p data-cy="title" id="aboutUsTitle">
             Making UK greener, <br /> one quote at the time
           </p>
           <p>
