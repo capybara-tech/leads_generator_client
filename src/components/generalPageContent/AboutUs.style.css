@@ -1,4 +1,167 @@
-#aboutUsContent {
-  height: 100vh; 
-  padding-top: 15vh;
+#aboutUsContent{
+  font-family: "Poppins", sans-serif;
+}
+
+#aboutUsTitle{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 9vh;
+}
+
+#aboutUsBanner {
+  font-family: "Poppins", sans-serif;
+  padding:5vw;
+  font-size: 3vh;
+  padding-top: 20vh;
+  height: 90vh;
+  width: 100vw;
+  background-color: rgb(200, 218, 204);
+}
+#aboutUsSegmentInfo {
+  padding: 0;
+  width:90vw;
+  top: 5vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+}
+
+#ourAimsSegment{
+  position: absolute;
+  width:90vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+}
+
+#middleSegment{
+  height:60vh;
+}
+
+#ourAmbitionTitle{
+  padding-top:5vh;
+  font-family: "Poppins", sans-serif;
+  font-size: 5vh;
+  text-align: center;
+}
+
+#ourCharitysVisible {
+  font-family: "Poppins", sans-serif;
+  font-size: 5vh;
+  height: 50vh;
+  width:40vw;
+  padding: 20vh;
+  text-align: center;
+  background-color: white;
+}
+
+.teamMemberTitles{
+  font-family: "Poppins", sans-serif;
+}
+
+.teamMemberName{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 3vh;
+}
+
+#ceoMessageTitle{
+  font-family: "Poppins", sans-serif;
+  font-size: 5vh;
+}
+
+#ceoMessage{
+  font-family: "Poppins", sans-serif;
+  font-size: 3vh;
+}
+
+#ourCharitysHidden {
+  font-family: "Poppins", sans-serif;
+  height: 50vh;
+  width:40vw;
+  padding: 15vh;
+  text-align: center;
+  background-color: white;
+}
+
+#ourVisionVisible {
+  font-family: "Poppins", sans-serif;
+  font-size: 5vh;
+  height: 50vh;
+  width:40vw;
+  padding: 20vh;
+  text-align: center;
+  background-color: white;
+}
+
+#ourVisionHidden {
+  font-family: "Poppins", sans-serif;
+  height: 50vh;
+  width:40vw;
+  padding: 15vh;
+  text-align: center;
+  background-color: white;
+}
+
+
+
+#aboutUsBottomBanner{
+  text-align: center;
+  padding:10vh;
+  width:100vw;
+  background-color: lightgray;
+}
+
+#meetTheTeam{
+  left:50%;
+  padding-bottom:30vh;
+}
+
+#meetTheTeamTitle{
+  font-family: "Poppins", sans-serif;
+  font-size: 5vh;
+  padding-bottom:20vh;
+}
+
+#ourAimsGrid{
+  font-family: "Poppins", sans-serif;
+  padding-top:30vh;
+  padding-left:5vw;
+  padding-right:5vw;
+  padding-bottom:20vh;
+  text-align: center;
+}
+
+#ourAimsConclusion{
+  height:80vh;
+  text-align: center;
+  padding:10vh;
+  font-family: "Poppins", sans-serif;
+  font-size: 5vh;
+  padding-bottom:20vh;
+  background-color: rgb(200, 218, 204);
+}
+
+#conclusionOfOurAims{
+  padding-top:50vh;
+}
+
+#recycle{
+  color:#c1df9c;
+}
+
+#handshake{
+color: #006996;
+}
+
+#money{
+  color:#85bb65;
+}
+
+#like{
+  color:#9b111e;
+}
+
+#winner{
+  color: #d4af37;
 }

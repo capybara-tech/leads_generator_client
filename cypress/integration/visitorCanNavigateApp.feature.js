@@ -5,7 +5,7 @@ describe("Visitor can navigate app", () => {
 
   it("visitor can navigate to About us", () => {
     cy.get("[data-cy=button]").contains("About us").click();
-    cy.get("[data-cy=title]").should("contain", "About us");
+    cy.get("[data-cy=title]").should("contain", "Making UK greener,");
     cy.get("[data-cy=title]").contains("Frequently asked questions").should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("My name's Felix, what's yours?")
@@ -41,7 +41,7 @@ describe("Visitor can navigate app", () => {
 
   it("visitor can navigate to About us from read more button on home banner", () => {
     cy.get("[data-cy=button]").contains("Read more").click({ force: true });
-    cy.get("[data-cy=title]").should("contain", "About us");
+    cy.get("[data-cy=title]").should("contain", "Making UK greener,");
     cy.get("[data-cy=title]").contains("Frequently asked questions").should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("My name's Felix, what's yours?")
