@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./AboutUs.style.css";
 import { Segment, Reveal, Image, Grid, Icon, Popup } from "semantic-ui-react";
 const AboutUs = () => {
