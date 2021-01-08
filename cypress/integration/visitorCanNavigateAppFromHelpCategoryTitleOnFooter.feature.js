@@ -7,7 +7,7 @@ describe("Visitor can navigate app from help category title on the footer", () =
     cy.get("[data-cy=footer]").within(() => {
       cy.get("[data-cy=button]").contains("Contact us").click();
     });
-    cy.get("[data-cy=title]").should("contain", "Contact us");
+    cy.get("[data-cy=title]").should("contain", "Contact the SOLSPANA team");
     cy.get("[data-cy=title]")
       .contains("How solar works?")
       .should("not.be.visible");
@@ -68,6 +68,6 @@ describe("Visitor can navigate app from help category title on the footer", () =
       .contains("Privacy policy")
       .should("not.be.visible");
     cy.get("[data-cy=title]").contains("Cookies").should("not.be.visible");
-    cy.get("[data-cy=title]").contains("Contact us").should("not.be.visible");
+    cy.get("[data-cy=title]").contains("Contact the SOLSPANA team").should("not.be.visible");
   });
 });
