@@ -21,6 +21,11 @@
   color: #fe8733cb;
 }
 
+#cardGroup {
+  margin-left: 25%;
+  display: inline-block;
+}
+
 .conclusion {
   font-family: "Poppins", sans-serif;
   font-size: 2vh;
