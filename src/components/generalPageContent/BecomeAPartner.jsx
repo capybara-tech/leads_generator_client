@@ -13,11 +13,11 @@ const BecomeAPartner = () => {
         <h1 id="title" data-cy="title">
           Join #TEAMSOLSPANA
         </h1>
-        <h3 id="subTitle">
+        <p id="subTitle">
           Get a <span id="highlightedWord">steady flow of jobs*</span>, reduce
           your admin & <span id="highlightedWord">keep all revenue</span> from
           our referral (apart from of course our minimal intro fee).
-        </h3>
+        </p>
         <div id="cardGroup">
           <Reveal animated="move up">
             <Reveal.Content visible>
@@ -69,14 +69,15 @@ const BecomeAPartner = () => {
             </Reveal.Content>
           </Reveal>
         </div>
-        <br />
-        <p className="conclusion">
-          Say goodbye to tedious paperwork, simply drop us an email or start a
-          live chat to get the ball rolling.
+        <br /> <br />
+        <p id="subTitle">
+          Say goodbye to tedious paperwork, simply <span id="highlightedWord">drop us an email or start a
+          live chat to get the ball rolling</span>.
         </p>
-        <p className="conclusion">
+        <p id="signOff">
           Join our quest to help make the UK more energy efficient.
-        </p>
+        </p> <br /> <br /> 
+        <p id="condition">*based on location</p>
       </div>
     </>
   );

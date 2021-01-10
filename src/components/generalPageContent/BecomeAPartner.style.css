@@ -26,8 +26,14 @@
   display: inline-block;
 }
 
-.conclusion {
+#signOff {
+  font-family: "Give You Glory";
+  font-size: 3vh;
+  margin-left: 20%;
+}
+
+#condition {
   font-family: "Poppins", sans-serif;
-  font-size: 2vh;
+  font-size: 1vh;
   margin-left: 20%;
 }
