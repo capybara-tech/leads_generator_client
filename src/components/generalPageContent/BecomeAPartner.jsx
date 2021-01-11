@@ -16,7 +16,7 @@ const BecomeAPartner = () => {
         <p id="subTitle">
           Get a <span id="highlightedWord">steady flow of jobs*</span>, reduce
           your admin & <span id="highlightedWord">keep all revenue</span> from
-          our referral (apart from of course our minimal intro fee).
+          our referral(apart from of course our minimal intro fee).
         </p>
         <div id="cardGroup">
           <Reveal animated="move up">
@@ -51,7 +51,7 @@ const BecomeAPartner = () => {
                   <Card.Content>
                     <Card.Header>MCS certified</Card.Header>
                     <Card.Description>
-                      The only other condition is that you are MCS registered.
+                    With the regulated society we now live in, the only other condition is that you are MCS registered.
                     </Card.Description>
                   </Card.Content>
                 </Card>
@@ -71,11 +71,11 @@ const BecomeAPartner = () => {
         </div>
         <br /> <br />
         <p id="subTitle">
-          Say goodbye to tedious paperwork, simply <span id="highlightedWord">drop us an email or start a
-          live chat to get the ball rolling</span>.
+          Say goodbye to tedious paperwork, simply drop us an <span id="highlightedWord">email</span> or <span id="highlightedWord">start a
+          live chat</span> to get the ball rolling.
         </p>
         <p id="signOff">
-          Join our quest to help make the UK more energy efficient.
+          Join our quest to make the UK more energy efficient.
         </p> <br /> <br /> 
         <p id="condition">*based on location</p>
       </div>
