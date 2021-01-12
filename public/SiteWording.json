@@ -183,11 +183,17 @@
       },
       "becomeAPartnerPage": {
         "title": "Join #TEAMSOLSPANA",
-        "para1": "Get a steady flow of jobs*, reduce your admin and keep all revenue from our referral(apart from of course our minimal intro fee)",
-        "para2": "We love our customers and want you too so its important that you provide a first class service at all times, lets face it a happy customer results in future referrals.",
-        "para3": "With the regulated society we now live in, the only other condition is that you are MCS registered.",
-        "para4": "Say goodbye to tedious paperwork, simply drop us an email or start a live chat to get the ball rolling.",
-        "para5": "Join our quest to make the UK more energy efficient.",
+        "subTitle": "Get a steady flow of jobs*, reduce your admin & keep all revenue from our referral(apart from of course our minimal intro fee).",
+        "criteriaOneTitle": "Customer satisfacion",
+        "criteriaOneContent": "We love our customers and want you too so its important that you provide a first class service at all times.",
+        "criteriaOneFlipTitle": "100%",
+        "criteriaOneFlipContent": "Nothing less!",
+        "criteriaTwoTitle": "MCS certified",
+        "criteriaTwoContent": "With the regulated society we now live in, the only other condition is that you are MCS registered.",
+        "criteriaTwoFlipTitle": "No offense",
+        "crtieriaTwoFlipContent": "It's what our customers expect!",
+        "conclusion": "Say goodbye to tedious paperwork, simply drop us an email or start a live chat to get the ball rolling.",
+        "signOff": "Join our quest to make the UK more energy efficient.",
         "smallPrint": "*based on location"
       },
       "contactUsPage": {
