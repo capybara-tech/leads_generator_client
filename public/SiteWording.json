@@ -2,7 +2,7 @@
   "landingPage": {
     "banner": {
       "headline1": "Together we can transform the UK into a green haven",
-      "headline2": "by fitting solar panels",
+      "headline2": "by us installing solar panels",
       "ourAims": {
         "aims": "Our aims:",
         "aim1": "Create a new eco initiative, where yes everyone is a winner and a % of our profits are donated back to society",
@@ -46,7 +46,49 @@
         "planning": "Planning permission is not required(in most cases). Installing solar panels on residential, non domestic buildings or land is usually classified as a 'permitted development'."
       }
     },
-    "impactEnvironmentPage": {},
+    "impactEnvironmentPage": {
+      "opening": "Help save our bruised planet - install solar",
+      "openingSub": "...one of the most effective ways to reduce your mucky emissions",
+      "benfits": {
+        "benefits1": "Harvest infinite, truly clean (and free!) energy from the sun",
+        "benefits2": "Dramatically reduce your property's thirst for fossil fuels, burnt to produce electricity",
+        "benefits3": "Solar panels have no emissions and therefore zero climate impact once installed",
+        "benefits4": "Shrink you carbon footprint drastically overnight"
+      },
+      "flashMessage": {
+        "content": "Petrol and diesel car sales are banned from 2030, solar power gets no real airtime. We are here to change that where people live more informed and more creative lives."
+      },
+      "footprint": {
+        "title": "Solar panels shrink your carbon dixiode(CO2) emissions",
+        "content1": "By around 20%, a staggering 1.5 - 2 tonnes of CO2 a year. These numbers speak for themselves."
+      },
+      "fossilFuels": {
+        "title": "Fossil fuels are a menace to our environment",
+        "content1": "An astonishing 50%* of UK electricity is produced from fossil fuels. Coal, oil and gas set ablaze to feed the grid and keep the lights on. Burning of these fossil fuels is the largest source of emissions of CO2 by humans, contributing to global warming.",
+        "content2": "A worldwide emergency raising temperatures resulting in more droughts, increased fire threats, heat waves, water shortages and storm damage. Rising and warmer oceans and melting ice, harming sensitive ecosystems and destroying people's communities and livelihoods...the list goes on!",
+        "content3": "Solar panels reduce your reliance on filthy fossil fuels.",
+        "smallPrint": "**on average"
+      },
+      "capitalise": {
+        "title": "Tap into an amazing resource - daylight",
+        "benefit1": "limitless",
+        "benefit2": "100% renewable",
+        "benefit3": "gratis, yes free!"
+      },
+      "independence": {
+        "title": "Independence from the National Grid",
+        "content1": "Feel comfort in knowing the source of your electricity - clean British daylight.",
+        "content2": "You may be able to achieve total independence from the National Grid(powered by mountainous volumes of fossil fuels to meet the UK's electricity demand). The more electricity your solar panels generate, the less you have to potentially buy from the utility companies. A solar battery should get you through the night and achieve ultimate self-sufficieny!",
+        "content3": "The UK has pledged to cut CO2 emissions by 80% by 2050, installing solar panels verges us closer to the target."
+      },
+      "zeroEmissions": {
+        "title": "Solar panels generate zero emissions",
+        "content": "Once installed, they are busy producing clean electricity. With no toxins released into our already suffocated atmosphere, the panels are environmentally friendly."
+      },
+      "conclusion": {
+        "content": "Solar - the right choice to live 'greener' and protect the future of our planet."
+      }
+    },
     "impactWalletPage": {
       "opening": "Figures which won't disappoint",
       "openingSub": "If the environmental benefits of solar panels has not convinced you about the benefits of solar, the financial ones will :). For those than have already seen the light this is the icing on the cake",
@@ -182,12 +224,18 @@
         }
       },
       "becomeAPartnerPage": {
-        "title": "Become a SOLSPANA installer today.",
-        "para1": "Get a steady flow of jobs*, reduce your admin and keep all of the revenue from our referral (apart from of course our minimal intro fee)",
-        "para2": "We love our customers and want you too so its important that you provide a first class service at all times, lets face it a happy customer results in future referrals.",
-        "para3": "The only other condition is that you are MCS registered.",
-        "para4": "Say goodbye to tedious paperwork, simply drop us an email or give us a call to get the ball rolling.",
-        "para5": "Join our quest to help make the UK more energy efficient.",
+        "title": "Join #TEAMSOLSPANA",
+        "subTitle": "Get a steady flow of jobs*, reduce your admin & keep all revenue from our referral(apart from of course our minimal intro fee).",
+        "criteriaOneTitle": "Customer satisfacion",
+        "criteriaOneContent": "We love our customers and want you too so its important that you provide a first class service at all times.",
+        "criteriaOneFlipTitle": "100%",
+        "criteriaOneFlipContent": "Nothing less!",
+        "criteriaTwoTitle": "MCS certified",
+        "criteriaTwoContent": "With the regulated society we now live in, the only other condition is that you are MCS registered.",
+        "criteriaTwoFlipTitle": "No offense",
+        "crtieriaTwoFlipContent": "It's what our customers expect!",
+        "conclusion": "Say goodbye to tedious paperwork, simply drop us an email or start a live chat to get the ball rolling.",
+        "signOff": "Join our quest to make the UK more energy efficient.",
         "smallPrint": "*based on location"
       },
       "contactUsPage": {

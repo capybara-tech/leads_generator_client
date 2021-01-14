@@ -17,7 +17,7 @@ describe("Visitor can navigate app from discover category title on the footer", 
       .contains("How does this have an impact on your wallet")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("Become a partner")
+      .contains("Join #TEAMSOLSPANA")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("My name's Felix, what's yours?")
@@ -47,7 +47,7 @@ describe("Visitor can navigate app from discover category title on the footer", 
       .contains("How does this have an impact on your wallet")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("Become a partner")
+      .contains("Join #TEAMSOLSPANA")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("My name's Felix, what's yours?")
@@ -78,7 +78,7 @@ describe("Visitor can navigate app from discover category title on the footer", 
       .contains("How does this have an impact on your wallet")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("Become a partner")
+      .contains("Join #TEAMSOLSPANA")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("My name's Felix, what's yours?")
@@ -109,7 +109,7 @@ describe("Visitor can navigate app from discover category title on the footer", 
       .contains("How does this have an impact on the planet")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("Become a partner")
+      .contains("Join #TEAMSOLSPANA")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("My name's Felix, what's yours?")
@@ -125,11 +125,11 @@ describe("Visitor can navigate app from discover category title on the footer", 
     cy.get("[data-cy=title]").contains("FAQs").should("not.be.visible");
   });
 
-  it("to Become a partner", () => {
+  it("to Join #TEAMSOLSPANA", () => {
     cy.get("[data-cy=footer]").within(() => {
-      cy.get("[data-cy=button]").contains("Become a partner").click();
+      cy.get("[data-cy=button]").contains("Join #TEAMSOLSPANA").click();
     });
-    cy.get("[data-cy=title]").should("contain", "Become a partner");
+    cy.get("[data-cy=title]").should("contain", "Join #TEAMSOLSPANA");
     cy.get("[data-cy=title]").contains("How does solar work?").should("not.be.visible");
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
     cy.get("[data-cy=title]").contains("The SolSpana way").should("not.be.visible");
@@ -171,7 +171,7 @@ describe("Visitor can navigate app from discover category title on the footer", 
       .contains("How does this have an impact on your wallet")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("Become a partner")
+      .contains("Join #TEAMSOLSPANA")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("Terms and conditions")

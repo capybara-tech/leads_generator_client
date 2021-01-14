@@ -22,7 +22,7 @@ describe("Visitor can navigate app from help category title on the footer", () =
       .contains("How does this have an impact on your wallet")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("Become a partner")
+      .contains("Join #TEAMSOLSPANA")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("My name's Felix, what's yours?")
@@ -56,7 +56,7 @@ describe("Visitor can navigate app from help category title on the footer", () =
       .contains("How does this have an impact on your wallet")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("Become a partner")
+      .contains("Join #TEAMSOLSPANA")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("My name's Felix, what's yours?")
