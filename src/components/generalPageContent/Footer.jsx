@@ -22,6 +22,24 @@ const Footer = (props) => {
               >
                 How solar works?
               </Link>
+              <h3 className="footerHeader">Benefits</h3>
+              <Link
+                className="footerLink"
+                data-cy="button"
+                as={Link}
+                to={{ pathname: "/environment" }}
+              >
+                Impact on planet
+              </Link>{" "}
+              <br />
+              <Link
+                className="footerLink"
+                data-cy="button"
+                as={Link}
+                to={{ pathname: "/economics" }}
+              >
+                Impact on wallet
+              </Link>{" "}
             </Grid.Column>
             <Grid.Column>
               <h3 className="footerHeader">Discover</h3>
@@ -41,24 +59,6 @@ const Footer = (props) => {
                 to={{ pathname: "/howitworks" }}
               >
                 How SOLSPANA works
-              </Link>{" "}
-              <br />
-              <Link
-                className="footerLink"
-                data-cy="button"
-                as={Link}
-                to={{ pathname: "/environment" }}
-              >
-                Impact on planet
-              </Link>{" "}
-              |{" "}
-              <Link
-                className="footerLink"
-                data-cy="button"
-                as={Link}
-                to={{ pathname: "/economics" }}
-              >
-                Impact on wallet
               </Link>{" "}
               <br />
               <Link
@@ -133,30 +133,41 @@ const Footer = (props) => {
             <Grid.Column>
               <h3 className="footerHeader">Follow us on</h3>
               <div id="socialMedia">
-                <i id="instagramIcon"
+                <i
+                  id="instagramIcon"
                   onClick={() => window.open("https://instagram.com")}
                   className="fa fa-instagram fa"
                   aria-hidden="true"
-                />{' '}
-                <i id="facebookIcon"
+                />{" "}
+                <i
+                  id="facebookIcon"
                   onClick={() => window.open("https://facebook.com")}
                   className="fa fa-facebook"
                   aria-hidden="true"
-                />{' '}
-                <i id="twitterIcon"
+                />{" "}
+                <i
+                  id="twitterIcon"
                   onClick={() => window.open("https://twitter.com")}
                   className="fab fa-twitter-square fa"
                   aria-hidden="true"
-                />{' '}
-                <i id="linkedinIcon"
+                />{" "}
+                <i
+                  id="linkedinIcon"
                   onClick={() => window.open("https://linkedin.com")}
                   className="fa fa-linkedin"
                   aria-hidden="true"
                 />
               </div>
-              <h3 className="footerHeader">Our awesome charities<Icon id="trophy" name="trophy" /></h3>
-              <p id="protectTheForest" className="footerLink">Protect the forest</p>
-              <p id="greenLiving" className="footerLink">Green living</p>
+              <h3 className="footerHeader">
+                Our awesome charities
+                <Icon id="trophy" name="trophy" />
+              </h3>
+              <p id="protectTheForest" className="footerLink">
+                Protect the forest
+              </p>
+              <p id="greenLiving" className="footerLink">
+                Green living
+              </p>
             </Grid.Column>
           </Grid.Row>
         </Grid>
