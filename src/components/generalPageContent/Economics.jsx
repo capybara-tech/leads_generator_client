@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Economics.style.css";
 import Slider from "infinite-react-carousel";
-import { Grid } from "semantic-ui-react";
+import { Grid, Segment, Button } from "semantic-ui-react";
 import CountUp from "react-countup";
 
 const Economics = () => {
@@ -83,8 +84,16 @@ const Economics = () => {
           </div>
         </Slider>
       </div>
-      <div id="solSpanaInNumbers">
-        <Grid columns={4}>
+      <div>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+
+      </div>
+      <Segment id="solSpanaInNumbers">
+        <Grid  verticalAlign="middle" columns={4}>
           <Grid.Row>
             <Grid.Column>
               <div>
@@ -97,8 +106,8 @@ const Economics = () => {
                 >
                   {({ countUpRef }) => (
                     <p>
-                      lower energy bills up to <br />{" "}
-                      <span className="numbers" ref={countUpRef} />
+                       <span className="numbers" ref={countUpRef} /><br />{" "}
+                      Average lower energy bills
                     </p>
                   )}
                 </CountUp>
@@ -108,9 +117,9 @@ const Economics = () => {
               <div>
                 <CountUp start={0} end={14} delay={0} duration={4} suffix={"%"}>
                   {({ countUpRef }) => (
-                    <p>
-                      Increase your property price <br />{" "}
-                      <span className="numbers" ref={countUpRef} />
+                    <p><span className="numbers" ref={countUpRef} /><br />{" "}
+                      Increased property price 
+                      
                     </p>
                   )}
                 </CountUp>
@@ -128,9 +137,9 @@ const Economics = () => {
                   decimal="."
                 >
                   {({ countUpRef }) => (
-                    <p>
-                      Yearly you will be earning around <br />
-                      <span className="numbers" ref={countUpRef} />
+                    <p><span className="numbers" ref={countUpRef} /><br />
+                     Average yearly return of invest 
+                      
                     </p>
                   )}
                 </CountUp>
@@ -140,10 +149,10 @@ const Economics = () => {
               <div>
                 <CountUp start={0} end={70} delay={0} duration={4} suffix={"%"}>
                   {({ countUpRef }) => (
-                    <p>
-                      Price reduction of solar panels since 2010
-                      <br />
-                      <span className="numbers" ref={countUpRef} />
+                    <p><span className="numbers" ref={countUpRef} /> <br />
+                      price reduction since 2010
+                     
+                      
                     </p>
                   )}
                 </CountUp>
@@ -151,6 +160,13 @@ const Economics = () => {
             </Grid.Column>
           </Grid.Row>
         </Grid>
+      </Segment>
+      
+      <div id="economicsBottomBanner">
+      <div id="concultionEconomics">
+        <p>It's easy, get up to three quotes now...</p>
+      <Button  as={Link}
+                  to={{ pathname: "/quotes" }} id="economicsButton">Click here</Button></div>
       </div>
     </div>
   );
