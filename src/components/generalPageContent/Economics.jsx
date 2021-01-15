@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import "./Economics.style.css";
 import Slider from "infinite-react-carousel";
+import { Grid } from "semantic-ui-react";
+import CountUp from "react-countup";
 
 const Economics = () => {
   useEffect(() => {
@@ -80,6 +82,75 @@ const Economics = () => {
             <button className="cardButton">Tell me more</button>
           </div>
         </Slider>
+      </div>
+      <div id="solSpanaInNumbers">
+        <Grid columns={4}>
+          <Grid.Row>
+            <Grid.Column>
+              <div>
+                <CountUp
+                  start={0}
+                  end={220}
+                  delay={0}
+                  duration={4}
+                  prefix={"£"}
+                >
+                  {({ countUpRef }) => (
+                    <p>
+                      lower energy bills up to <br />{" "}
+                      <span className="numbers" ref={countUpRef} />
+                    </p>
+                  )}
+                </CountUp>
+              </div>
+            </Grid.Column>
+            <Grid.Column>
+              <div>
+                <CountUp start={0} end={14} delay={0} duration={4} suffix={"%"}>
+                  {({ countUpRef }) => (
+                    <p>
+                      Increase your property price <br />{" "}
+                      <span className="numbers" ref={countUpRef} />
+                    </p>
+                  )}
+                </CountUp>
+              </div>
+            </Grid.Column>
+            <Grid.Column>
+              <div>
+                <CountUp
+                  start={0}
+                  end={5.5}
+                  delay={0}
+                  duration={4}
+                  suffix={"%"}
+                  decimals={1}
+                  decimal="."
+                >
+                  {({ countUpRef }) => (
+                    <p>
+                      Yearly you will be earning around <br />
+                      <span className="numbers" ref={countUpRef} />
+                    </p>
+                  )}
+                </CountUp>
+              </div>
+            </Grid.Column>
+            <Grid.Column>
+              <div>
+                <CountUp start={0} end={70} delay={0} duration={4} suffix={"%"}>
+                  {({ countUpRef }) => (
+                    <p>
+                      Price reduction of solar panels since 2010
+                      <br />
+                      <span className="numbers" ref={countUpRef} />
+                    </p>
+                  )}
+                </CountUp>
+              </div>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
       </div>
     </div>
   );
