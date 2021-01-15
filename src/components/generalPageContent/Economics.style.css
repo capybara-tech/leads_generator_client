@@ -1,7 +1,3 @@
-#economicsContent {
-
-}
-
 #economicsBanner {
   font-family: "Poppins", sans-serif;
   padding:5vw;
@@ -10,10 +6,26 @@
   height: 75vh;
   width: 100vw;
   background-color: rgb(200, 218, 204);
+  backdrop-filter: blur(10px);
 }
 
 #economicsTitle{
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 7vh;
+}
+
+.economicsCard{
+  font-family: "Poppins", sans-serif;
+  height:20vh;
+  padding: 50px 0 50px;
+  text-align: center;
+  margin:auto;
+  border:2px solid;
+}
+
+#sliderCarousel{
+  top:-10vh;
+  position: relative;
+  background-color: transparent;
 }

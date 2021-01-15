@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./Economics.style.css";
 import Slider from "infinite-react-carousel";
+import { Card } from "semantic-ui-react";
 
 const Economics = () => {
   useEffect(() => {
@@ -9,18 +10,17 @@ const Economics = () => {
 
   const settings = {
     accessibility: false,
-    adaptiveHeight: true,
     arrows: false,
     arrowsBlock: false,
     autoplay: true,
-    autoplaySpeed: 1000,
-    centerPadding: 30,
-    className: "hello",
-    duration: 100,
+    autoplaySpeed: 3000,
+    duration: 1000,
     initialSlide: true,
-    shift: 10,
+    shift: 200,
     slidesToShow: 5,
+    centerPadding: 15,
     swipe: false,
+    dots: true,
   };
 
   return (
@@ -36,31 +36,31 @@ const Economics = () => {
           the light this is the icing on the cake
         </p>
       </div>
-      <div>
+      <div id="sliderCarousel">
         <Slider {...settings}>
-          <div>
-            <h3>Lower energy bills</h3>
+          <div className="economicsCard">
+            <p>Lower energy bills</p>
           </div>
-          <div>
-            <h3>Sell excess electricity to the National Grid</h3>
+          <div className="economicsCard">
+            <p>Sell excess electricity to the National Grid</p>
           </div>
-          <div>
-            <h3>Government grants and financial support are up for grabs</h3>
+          <div className="economicsCard">
+            <p>Government grants and financial support are up for grabs</p>
           </div>
-          <div>
-            <h3>Increases the value of your property</h3>
+          <div className="economicsCard">
+            <p>Increases the value of your property</p>
           </div>
-          <div>
-            <h3>An impressive return on investment (ROI)</h3>
+          <div className="economicsCard">
+            <p>An impressive return on investment (ROI)</p>
           </div>
-          <div>
-            <h3>
+          <div className="economicsCard">
+            <p>
               Solar panel prices have fallen by around 70% since 2010, quite a
               bargain now!
-            </h3>
+            </p>
           </div>
-          <div>
-            <h3>Low maintenance</h3>
+          <div className="economicsCard">
+            <p>Low maintenance</p>
           </div>
         </Slider>
       </div>
