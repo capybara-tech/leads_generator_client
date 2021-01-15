@@ -84,16 +84,8 @@ const Economics = () => {
           </div>
         </Slider>
       </div>
-      <div>
-        <h1>hello</h1>
-        <h1>hello</h1>
-        <h1>hello</h1>
-        <h1>hello</h1>
-        <h1>hello</h1>
-
-      </div>
       <Segment id="solSpanaInNumbers">
-        <Grid  verticalAlign="middle" columns={4}>
+        <Grid verticalAlign="middle" columns={4}>
           <Grid.Row>
             <Grid.Column>
               <div>
@@ -106,8 +98,8 @@ const Economics = () => {
                 >
                   {({ countUpRef }) => (
                     <p>
-                       <span className="numbers" ref={countUpRef} /><br />{" "}
-                      Average lower energy bills
+                      <span className="numbers" ref={countUpRef} />
+                      <br /> Average lower energy bills
                     </p>
                   )}
                 </CountUp>
@@ -117,9 +109,9 @@ const Economics = () => {
               <div>
                 <CountUp start={0} end={14} delay={0} duration={4} suffix={"%"}>
                   {({ countUpRef }) => (
-                    <p><span className="numbers" ref={countUpRef} /><br />{" "}
-                      Increased property price 
-                      
+                    <p>
+                      <span className="numbers" ref={countUpRef} />
+                      <br /> Increased property price
                     </p>
                   )}
                 </CountUp>
@@ -137,9 +129,10 @@ const Economics = () => {
                   decimal="."
                 >
                   {({ countUpRef }) => (
-                    <p><span className="numbers" ref={countUpRef} /><br />
-                     Average yearly return of invest 
-                      
+                    <p>
+                      <span className="numbers" ref={countUpRef} />
+                      <br />
+                      Average yearly return of invest
                     </p>
                   )}
                 </CountUp>
@@ -149,10 +142,9 @@ const Economics = () => {
               <div>
                 <CountUp start={0} end={70} delay={0} duration={4} suffix={"%"}>
                   {({ countUpRef }) => (
-                    <p><span className="numbers" ref={countUpRef} /> <br />
+                    <p>
+                      <span className="numbers" ref={countUpRef} /> <br />
                       price reduction since 2010
-                     
-                      
                     </p>
                   )}
                 </CountUp>
@@ -161,12 +153,14 @@ const Economics = () => {
           </Grid.Row>
         </Grid>
       </Segment>
-      
+
       <div id="economicsBottomBanner">
-      <div id="concultionEconomics">
-        <p>It's easy, get up to three quotes now...</p>
-      <Button  as={Link}
-                  to={{ pathname: "/quotes" }} id="economicsButton">Click here</Button></div>
+        <div id="concultionEconomics">
+          <p>It's easy, get up to three quotes now...</p>
+          <Button as={Link} to={{ pathname: "/quotes" }} id="economicsButton">
+            Click here
+          </Button>
+        </div>
       </div>
     </div>
   );
