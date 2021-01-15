@@ -4,6 +4,7 @@ import "./Economics.style.css";
 import Slider from "infinite-react-carousel";
 import { Grid, Segment, Button } from "semantic-ui-react";
 import CountUp from "react-countup";
+import VisibilitySensor from "react-visibility-sensor";
 
 const Economics = () => {
   useEffect(() => {
@@ -24,6 +25,8 @@ const Economics = () => {
     swipe: false,
     dots: true,
   };
+
+  const [focus, setFocus] = React.useState(false);
 
   return (
     <div id="economicsContent">
@@ -90,64 +93,101 @@ const Economics = () => {
             <Grid.Column>
               <div>
                 <CountUp
-                  start={0}
+                  start={focus ? 0 : null}
                   end={220}
-                  delay={0}
                   duration={4}
+                  redraw={true}
                   prefix={"£"}
                 >
                   {({ countUpRef }) => (
-                    <p>
+                    <VisibilitySensor
+                      onChange={(isVisible) => {
+                        if (isVisible) {
+                          setFocus(true);
+                        }
+                      }}
+                    >
                       <span className="numbers" ref={countUpRef} />
-                      <br /> Average lower energy bills
-                    </p>
+                    </VisibilitySensor>
                   )}
                 </CountUp>
-              </div>
-            </Grid.Column>
-            <Grid.Column>
-              <div>
-                <CountUp start={0} end={14} delay={0} duration={4} suffix={"%"}>
-                  {({ countUpRef }) => (
-                    <p>
-                      <span className="numbers" ref={countUpRef} />
-                      <br /> Increased property price
-                    </p>
-                  )}
-                </CountUp>
+                <p>average lower energy bills</p>
               </div>
             </Grid.Column>
             <Grid.Column>
               <div>
                 <CountUp
-                  start={0}
-                  end={5.5}
-                  delay={0}
+                  start={focus ? 0 : null}
+                  end={14}
                   duration={4}
+                  redraw={true}
+                  suffix={"%"}
+                >
+                  {({ countUpRef }) => (
+                    <VisibilitySensor
+                      onChange={(isVisible) => {
+                        if (isVisible) {
+                          setFocus(true);
+                        }
+                      }}
+                    >
+                      <span className="numbers" ref={countUpRef} />
+                    </VisibilitySensor>
+                  )}
+                </CountUp>
+
+                <p>increased property price</p>
+              </div>
+            </Grid.Column>
+            <Grid.Column>
+              <div>
+                <CountUp
+                  start={focus ? 0 : null}
+                  end={5.5}
+                  duration={4}
+                  redraw={true}
                   suffix={"%"}
                   decimals={1}
                   decimal="."
                 >
                   {({ countUpRef }) => (
-                    <p>
+                    <VisibilitySensor
+                      onChange={(isVisible) => {
+                        if (isVisible) {
+                          setFocus(true);
+                        }
+                      }}
+                    >
                       <span className="numbers" ref={countUpRef} />
-                      <br />
-                      Average yearly return of invest
-                    </p>
+                    </VisibilitySensor>
                   )}
                 </CountUp>
+
+                <p>average yearly return of invest</p>
               </div>
             </Grid.Column>
             <Grid.Column>
               <div>
-                <CountUp start={0} end={70} delay={0} duration={4} suffix={"%"}>
+                <CountUp
+                  start={focus ? 0 : null}
+                  end={70}
+                  duration={4}
+                  redraw={true}
+                  suffix={"%"}
+                >
                   {({ countUpRef }) => (
-                    <p>
-                      <span className="numbers" ref={countUpRef} /> <br />
-                      price reduction since 2010
-                    </p>
+                    <VisibilitySensor
+                      onChange={(isVisible) => {
+                        if (isVisible) {
+                          setFocus(true);
+                        }
+                      }}
+                    >
+                      <span className="numbers" ref={countUpRef} />
+                    </VisibilitySensor>
                   )}
                 </CountUp>
+                <p>price reduction since 2010</p>
               </div>
             </Grid.Column>
           </Grid.Row>
