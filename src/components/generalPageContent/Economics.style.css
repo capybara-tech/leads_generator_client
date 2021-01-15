@@ -1,4 +1,19 @@
 #economicsContent {
-  height: 100vh;
-  padding-top: 15vh;
+
+}
+
+#economicsBanner {
+  font-family: "Poppins", sans-serif;
+  padding:5vw;
+  font-size: 3vh;
+  padding-top: 20vh;
+  height: 75vh;
+  width: 100vw;
+  background-color: rgb(200, 218, 204);
+}
+
+#economicsTitle{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 7vh;
 }
