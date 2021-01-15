@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import "./Economics.style.css";
 import Slider from "infinite-react-carousel";
-import { Card } from "semantic-ui-react";
 
 const Economics = () => {
   useEffect(() => {
@@ -39,28 +38,46 @@ const Economics = () => {
       <div id="sliderCarousel">
         <Slider {...settings}>
           <div className="economicsCard">
-            <p>Lower energy bills</p>
+            <div className="cardContent">
+              <p>Lower energy bills</p>
+            </div>
+            <button className="cardButton">Tell me more</button>
           </div>
           <div className="economicsCard">
-            <p>Sell excess electricity to the National Grid</p>
+            <div className="cardContent">
+              <p>Sell excess electricity to the National Grid</p>
+            </div>
+            <button className="cardButton">Tell me more</button>
           </div>
           <div className="economicsCard">
-            <p>Government grants and financial support are up for grabs</p>
+            <div className="cardContent">
+              <p>Government grants and financial support are up for grabs</p>
+            </div>
+            <button className="cardButton">Tell me more</button>
           </div>
           <div className="economicsCard">
-            <p>Increases the value of your property</p>
+            <div className="cardContent">
+              <p>Increases the value of your property</p>
+            </div>{" "}
+            <button className="cardButton">Tell me more</button>
           </div>
           <div className="economicsCard">
-            <p>An impressive return on investment (ROI)</p>
+            <div className="cardContent">
+              <p>An impressive return on investment (ROI)</p>
+            </div>
+            <button className="cardButton">Tell me more</button>
           </div>
           <div className="economicsCard">
-            <p>
-              Solar panel prices have fallen by around 70% since 2010, quite a
-              bargain now!
-            </p>
+            <div className="cardContent">
+              <p>Solar panel prices have fallen by around 70% since 2010!</p>
+            </div>
+            <button className="cardButton">Tell me more</button>
           </div>
           <div className="economicsCard">
-            <p>Low maintenance</p>
+            <div className="cardContent">
+              <p>Low maintenance</p>
+            </div>{" "}
+            <button className="cardButton">Tell me more</button>
           </div>
         </Slider>
       </div>
