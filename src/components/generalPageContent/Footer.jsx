@@ -29,7 +29,7 @@ const Footer = (props) => {
                 as={Link}
                 to={{ pathname: "/environment" }}
               >
-                Impact on planet
+                Ecofriendly
               </Link>{" "}
               <br />
               <Link
@@ -38,7 +38,7 @@ const Footer = (props) => {
                 as={Link}
                 to={{ pathname: "/economics" }}
               >
-                Impact on wallet
+                Profit-oriented
               </Link>{" "}
             </Grid.Column>
             <Grid.Column>
@@ -160,7 +160,6 @@ const Footer = (props) => {
               </div>
               <h3 className="footerHeader">
                 Our awesome charities
-                <Icon id="trophy" name="trophy" />
               </h3>
               <p id="protectTheForest" className="footerLink">
                 Protect the forest

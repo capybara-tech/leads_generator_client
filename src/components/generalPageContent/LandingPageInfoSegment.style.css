@@ -36,3 +36,11 @@ left: 0.5vw;
 .solarBenefits {
   float: left;
 }
+
+.titles {
+  text-align: left;
+}
+
+.content {
+  text-align: left;
+}
