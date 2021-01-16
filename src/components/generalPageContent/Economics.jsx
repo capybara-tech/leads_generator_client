@@ -37,7 +37,7 @@ const Economics = () => {
         </p>
         <p>
           If the environmental benefits of solar panels has not convinced you,
-          the financial ones will😃. <br /> For those than have already seen
+          the financial ones will😃. <br /> For those who have already seen
           the light this is the icing on the 🍰!
         </p>
       </div>
