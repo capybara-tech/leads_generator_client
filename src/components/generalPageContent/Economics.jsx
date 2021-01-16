@@ -37,8 +37,8 @@ const Economics = () => {
         </p>
         <p>
           If the environmental benefits of solar panels has not convinced you,
-          the financial ones will :). <br /> For those than have already seen
-          the light this is the icing on the cake
+          the financial ones will😃. <br /> For those than have already seen
+          the light this is the icing on the 🍰!
         </p>
       </div>
       <div id="sliderCarousel">
@@ -135,7 +135,6 @@ const Economics = () => {
                     </VisibilitySensor>
                   )}
                 </CountUp>
-
                 <p>increased property price</p>
               </div>
             </Grid.Column>
