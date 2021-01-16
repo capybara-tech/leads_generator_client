@@ -101,6 +101,25 @@ const Economics = () => {
           </div>
         </Slider>
       </div>
+      <div id="propertyValueSection">
+        <Grid verticalAlign="middle" columns={2}>
+          <Grid.Row>
+            <Grid.Column>
+              <img src="/images/vector-creator.png" />
+            </Grid.Column>
+            <Grid.Column>
+              <p>
+                By 14% on average and up to a massive 38% in some (lucky)regions
+                of the UK. More than a whopping £16,000 of cash if you sell up.
+                These are figures from the Government Department of Energy and
+                Climate Change which found that by making energy saving
+                improvements to your property such as installing solar panels,
+                you can secure these punchy property price increases
+              </p>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+      </div>
       <Segment id="solSpanaInNumbers">
         <Grid verticalAlign="middle" columns={4}>
           <Grid.Row>

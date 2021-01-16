@@ -116,3 +116,9 @@
   color: #fe8733cb;
   border-radius: 10px;
 }
+
+#propertyValueSection {
+  font-size: 3vh;
+  font-family: "Poppins", sans-serif;
+  padding: 5vh;
+}
