@@ -37,8 +37,8 @@ const Economics = () => {
         </p>
         <p>
           If the environmental benefits of solar panels has not convinced you,
-          the financial ones will😃. <br /> For those who have already seen
-          the light this is the icing on the 🍰!
+          the financial ones will😃. <br /> For those who have already seen the
+          light this is the icing on the 🍰!
         </p>
       </div>
       <div id="sliderCarousel">
@@ -47,43 +47,57 @@ const Economics = () => {
             <div className="cardContent">
               <p>Lower energy bills</p>
             </div>
-            <button className="cardButton">Tell me more</button>
+            <div className="economicsCardBottomBanner">
+              <button className="cardButton">Tell me more</button>
+            </div>
           </div>
           <div className="economicsCard">
             <div className="cardContent">
               <p>Sell excess electricity to the National Grid</p>
             </div>
-            <button className="cardButton">Tell me more</button>
+            <div className="economicsCardBottomBanner">
+              <button className="cardButton">Tell me more</button>
+            </div>
           </div>
           <div className="economicsCard">
             <div className="cardContent">
               <p>Government grants and financial support are up for grabs</p>
             </div>
-            <button className="cardButton">Tell me more</button>
+            <div className="economicsCardBottomBanner">
+              <button className="cardButton">Tell me more</button>
+            </div>
           </div>
           <div className="economicsCard">
             <div className="cardContent">
               <p>Increases the value of your property</p>
-            </div>{" "}
-            <button className="cardButton">Tell me more</button>
+            </div>
+            <div className="economicsCardBottomBanner">
+              <button className="cardButton">Tell me more</button>
+            </div>
           </div>
           <div className="economicsCard">
             <div className="cardContent">
               <p>An impressive return on investment (ROI)</p>
             </div>
-            <button className="cardButton">Tell me more</button>
+            <div className="economicsCardBottomBanner">
+              <button className="cardButton">Tell me more</button>
+            </div>
           </div>
           <div className="economicsCard">
             <div className="cardContent">
               <p>Solar panel prices have fallen by around 70% since 2010!</p>
             </div>
-            <button className="cardButton">Tell me more</button>
+            <div className="economicsCardBottomBanner">
+              <button className="cardButton">Tell me more</button>
+            </div>
           </div>
           <div className="economicsCard">
             <div className="cardContent">
               <p>Low maintenance</p>
-            </div>{" "}
-            <button className="cardButton">Tell me more</button>
+            </div>
+            <div className="economicsCardBottomBanner">
+              <button className="cardButton">Tell me more</button>
+            </div>
           </div>
         </Slider>
       </div>
