@@ -21,6 +21,34 @@ const LandingPageInfoSegment = () => {
           />
           <h3 data-cy="title">Get up to 3 Quotes</h3>
         </Link>
+        <Grid.Column width={12}>
+          <p data-cy="content">
+            <List>
+              <List.Item className="solarBenefits">
+                <List.Icon name="check circle" />
+                <List.Content className="content">
+                  Our partners are MCS registered, vetted and we continue to
+                  monitor their reviews
+                </List.Content>
+              </List.Item>{" "}
+              <br />
+              <List.Item className="solarBenefits">
+                <List.Icon name="check circle" />
+                <List.Content>
+                  Compare competitive quotes with service
+                </List.Content>
+              </List.Item>{" "}
+              <br />
+              <List.Item className="solarBenefits">
+                <List.Icon name="check circle" />
+                <List.Content>
+                  No obligation and free - we are against pushy sales practices!
+                </List.Content>
+              </List.Item>{" "}
+              <br />
+            </List>
+          </p>
+        </Grid.Column>
       </div>
       <div id="boxWithIcons">
         <br />
@@ -38,35 +66,38 @@ const LandingPageInfoSegment = () => {
             </Grid.Column>
             <Grid.Column width={12}>
               <h3 data-cy="title" className="titles">
-              Help save our bruised planet
+                Help save our bruised planet
               </h3>
               <p data-cy="content">
                 <List>
                   <List.Item className="solarBenefits">
                     <List.Icon name="check circle" />
                     <List.Content className="content">
-                    Harvest infinite, truly clean (and free!) energy from the sun
+                      Harvest infinite, truly clean (and free!) energy from the
+                      sun
                     </List.Content>
                   </List.Item>{" "}
                   <br />
                   <List.Item className="solarBenefits">
                     <List.Icon name="check circle" />
                     <List.Content>
-                    Dramatically reduce your property's thirst for fossil fuels, burnt to produce electricity
+                      Dramatically reduce your property's thirst for fossil
+                      fuels, burnt to produce electricity
                     </List.Content>
                   </List.Item>{" "}
                   <br />
                   <List.Item className="solarBenefits">
                     <List.Icon name="check circle" />
                     <List.Content>
-                    Solar panels have no emissions and therefore zero climate impact once installed
+                      Solar panels have no emissions and therefore zero climate
+                      impact once installed
                     </List.Content>
                   </List.Item>{" "}
                   <br />
                   <List.Item className="solarBenefits">
                     <List.Icon name="check circle" />
                     <List.Content>
-                    Shrink you carbon footprint drastically overnight
+                      Shrink you carbon footprint drastically overnight
                     </List.Content>
                   </List.Item>{" "}
                   <br />
@@ -86,35 +117,38 @@ const LandingPageInfoSegment = () => {
             </Grid.Column>
             <Grid.Column width={12}>
               <h3 data-cy="title" className="titles">
-              Figures which won't disappoint
+                Figures which won't disappoint
               </h3>
               <p data-cy="content">
                 <List>
                   <List.Item className="solarBenefits">
                     <List.Icon name="check circle" />
                     <List.Content>
-                    Lower energy bills and sell excess electricity to the National Grid
+                      Lower energy bills and sell excess electricity to the
+                      National Grid
                     </List.Content>
                   </List.Item>{" "}
                   <br />
                   <List.Item className="solarBenefits">
                     <List.Icon name="check circle" />
                     <List.Content>
-                    Government grants and financial support are up for grabs
+                      Government grants and financial support are up for grabs
                     </List.Content>
                   </List.Item>{" "}
                   <br />
                   <List.Item className="solarBenefits">
                     <List.Icon name="check circle" />
                     <List.Content>
-                    Increases the value of your property
+                      Increases the value of your property
                     </List.Content>
                   </List.Item>{" "}
                   <br />
                   <List.Item className="solarBenefits">
                     <List.Icon name="check circle" />
                     <List.Content>
-                    An impressive return on investment (ROI) and solar panel prices have fallen by around 70% since 2010, quite a bargain now! 
+                      An impressive return on investment (ROI) and solar panel
+                      prices have fallen by around 70% since 2010, quite a
+                      bargain now!
                     </List.Content>
                   </List.Item>{" "}
                   <br />
@@ -133,34 +167,39 @@ const LandingPageInfoSegment = () => {
               </Link>
             </Grid.Column>
             <Grid.Column width={12}>
-              <h3 data-cy="title" className="titles">How solar panels work</h3>
+              <h3 data-cy="title" className="titles">
+                How solar panels work
+              </h3>
               <p data-cy="content">
                 <List>
                   <List.Item className="solarBenefits">
                     <List.Icon name="check circle" />
                     <List.Content>
-                    Daylight (not only sunlight is required!) hits the solar photovoltaic cells in the panels
+                      Daylight (not only sunlight is required!) hits the solar
+                      photovoltaic cells in the panels
                     </List.Content>
                   </List.Item>{" "}
                   <br />
                   <List.Item className="solarBenefits">
                     <List.Icon name="check circle" />
                     <List.Content>
-                    Direct current (DC) electricity is produced
+                      Direct current (DC) electricity is produced
                     </List.Content>
                   </List.Item>{" "}
                   <br />
                   <List.Item className="solarBenefits">
                     <List.Icon name="check circle" />
                     <List.Content>
-                    With a bit of magic, an inverter converts DC electricity to alternating current electricity (AC)
+                      With a bit of magic, an inverter converts DC electricity
+                      to alternating current electricity (AC)
                     </List.Content>
                   </List.Item>{" "}
                   <br />
                   <List.Item className="solarBenefits">
                     <List.Icon name="check circle" />
                     <List.Content>
-                    The energy can then be used in your property, excess sold to the national grid or stored
+                      The energy can then be used in your property, excess sold
+                      to the national grid or stored
                     </List.Content>
                   </List.Item>{" "}
                   <br />
