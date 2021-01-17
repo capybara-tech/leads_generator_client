@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./HowSolarWorks.style.css";
 
 const HowSolarWorks = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div id="howSolarWorksContent">
       <h1 data-cy="title">How does solar work?</h1>

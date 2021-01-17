@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./FAQs.style.css";
 
 const FAQs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <div id="faqsContent">

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NameQuestion from "./mandatoryQuestions/NameQuestion";
 import EmailQuestion from "./mandatoryQuestions/EmailQuestion";
 import TelephoneQuestion from "./mandatoryQuestions/TelephoneQuestion";
@@ -8,6 +8,10 @@ import axios from "axios";
 import { Form } from "react-final-form";
 
 const QuotesPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [message, setMessage] = useState("");
 
   const onSubmit = async (event) => {
