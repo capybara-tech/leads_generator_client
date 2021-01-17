@@ -223,6 +223,32 @@ const Economics = () => {
             </p>
           </Grid.Column>
         </Grid.Row>
+        <Grid.Row id="priceFallenSection">
+          <Grid.Column>
+            {" "}
+            <p className="titleBenefit">
+              Solar panels prices - eye-watering 70%(on average) cheaper than in
+              2010
+            </p>
+            <p>
+              As solar panels have become more popular the prices have
+              dramatically fallen and this trend is likely to continue. The
+              beauty of supply and demand. You're looking at
+              about £6,500 for a typical 4kW solar PV system, for an average
+              family home. Quite an expensive investment but you win when all
+              figures are taken into consideration, not to mention the
+              environmental benefits too!
+            </p>
+          </Grid.Column>
+          <Grid.Column>
+            {" "}
+            <Image
+              id="priceFallenImg"
+              floated="right"
+              src="/images/pluto-presenting-chart.png"
+            />
+          </Grid.Column>
+        </Grid.Row>
       </Grid>
       <Segment id="solSpanaInNumbers">
         <Grid verticalAlign="middle" columns={4}>
