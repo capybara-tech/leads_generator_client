@@ -104,7 +104,7 @@ const Economics = () => {
       <Grid verticalAlign="middle" columns={2}>
         <Grid.Row id="propertyValueSection">
           <Grid.Column>
-            <p className="titleBenefit">Increase the value of your property</p>
+            
             <Image
               floated="left"
               id="propertyValueImg"
@@ -112,6 +112,7 @@ const Economics = () => {
             />
           </Grid.Column>
           <Grid.Column>
+            <p className="titleBenefit">Increase the value of your property</p>
             <p>
               By 14% on average and up to a massive 38% in some (lucky)regions
               of the UK. More than a whopping £16,000 of cash if you sell up.
@@ -146,7 +147,6 @@ const Economics = () => {
         </Grid.Row>
         <Grid.Row id="sellToNationalGridSection">
           <Grid.Column>
-            <p className="titleBenefit">Make money doing nothing!</p>
             <Image
             id="sellBackToGridImg"
               floated="left"
@@ -154,6 +154,7 @@ const Economics = () => {
             />
           </Grid.Column>
           <Grid.Column>
+            <p className="titleBenefit">Make money doing nothing!</p>
             <p>
               Depending on your circumstances, the solar panels will generate
               more electricity than you can use. Cash in on this resource by
