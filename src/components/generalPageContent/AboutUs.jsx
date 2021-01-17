@@ -1,11 +1,21 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./AboutUs.style.css";
-import { Segment, Reveal, Image, Grid, Icon, Popup } from "semantic-ui-react";
-const AboutUs = () => {
+import {
+  Segment,
+  Reveal,
+  Image,
+  Grid,
+  Icon,
+  Popup,
+  Button,
+} from "semantic-ui-react";
 
-    useEffect(() => {
-      window.scrollTo(0, 0)
-    }, [])
+const AboutUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <div id="aboutUsContent">
@@ -43,7 +53,6 @@ const AboutUs = () => {
                   </Reveal.Content>
                 </Reveal>
               </Grid.Column>
-
               <Grid.Column id="ourVision">
                 <Reveal animated="fade">
                   <Reveal.Content visible>
@@ -66,7 +75,6 @@ const AboutUs = () => {
             </Grid.Row>
           </Grid>
         </Segment>
-
         <div id="aboutUsBottomBanner">
           <p id="meetTheTeamTitle">- Meet the team -</p>
           <Grid id="meetTheTeam">
@@ -205,6 +213,14 @@ const AboutUs = () => {
                 Transparency, honesty and dedication to our customers are a
                 given
               </p>
+              <Button
+                data-cy="button"
+                as={Link}
+                to={{ pathname: "/quotes" }}
+                id="quoteButton"
+              >
+                Feeling inspired? Click to obtain quotes
+              </Button>
             </Grid.Column>
           </Grid.Row>
         </Grid>
