@@ -233,11 +233,10 @@ const Economics = () => {
             <p>
               As solar panels have become more popular the prices have
               dramatically fallen and this trend is likely to continue. The
-              beauty of supply and demand. You're looking at
-              about £6,500 for a typical 4kW solar PV system, for an average
-              family home. Quite an expensive investment but you win when all
-              figures are taken into consideration, not to mention the
-              environmental benefits too!
+              beauty of supply and demand. You're looking at about £6,500 for a
+              typical 4kW solar PV system, for an average family home. Quite an
+              expensive investment but you win when all figures are taken into
+              consideration, not to mention the environmental benefits too!
             </p>
           </Grid.Column>
           <Grid.Column>
@@ -247,6 +246,28 @@ const Economics = () => {
               floated="right"
               src="/images/pluto-presenting-chart.png"
             />
+          </Grid.Column>
+        </Grid.Row>
+        <Grid.Row id="grantsAndFinancialSupportSection">
+          <Grid.Column>
+            <Image
+              id="grantsAndFinancialSupportImg"
+              floated="right"
+              src="/images/grantsAndSupport.png"
+            />
+          </Grid.Column>
+          <Grid.Column>
+            <p className="titleBenefit">
+              Government schemes and financial support
+            </p>
+            <p>
+              There are currently two government schemes you can take advantage
+              of: The Smart Export Guarantee - will pay you for excess
+              electricity which you produce and hits the National Grid. The
+              Renewable Heat Incentive - you will receive quarterly payments
+              over a massive 7 years to help homeowners pay for solar thermal
+              panels, a renewable heat technology.
+            </p>
           </Grid.Column>
         </Grid.Row>
       </Grid>
