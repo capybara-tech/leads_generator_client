@@ -104,8 +104,8 @@ const Economics = () => {
       <Grid verticalAlign="middle" columns={2}>
         <Grid.Row id="propertyValueSection">
           <Grid.Column>
+            <p className="titleBenefit">Increase the value of your property</p>
             <Image
-              size="big"
               floated="left"
               id="propertyValueImg"
               src="/images/vector-creator.png"
@@ -124,6 +124,7 @@ const Economics = () => {
         </Grid.Row>
         <Grid.Row id="lowerEnergyBillsSection">
           <Grid.Column>
+            <p className="titleBenefit">Save money with lower energy bills</p>
             <p>
               Between £85-220 each year, depending where the property you are
               looking to turn green is located and a 4Kw PV system(typical for a
@@ -140,11 +141,29 @@ const Economics = () => {
             </p>
           </Grid.Column>
           <Grid.Column>
+            <Image id="piggyBankImg" floated="right" src="/images/piggybank.png" />
+          </Grid.Column>
+        </Grid.Row>
+        <Grid.Row id="sellToNationalGridSection">
+          <Grid.Column>
+            <p className="titleBenefit">Make money doing nothing!</p>
             <Image
-              size="big"
-              floated="right"
-              src="/images/vector-creator (1).png"
+            id="sellBackToGridImg"
+              floated="left"
+              src="/images/pluto-remote-working.png"
             />
+          </Grid.Column>
+          <Grid.Column>
+            <p>
+              Depending on your circumstances, the solar panels will generate
+              more electricity than you can use. Cash in on this resource by
+              selling it to the National Grid through a Smart Export Guarantee
+              (SEG). Essentially properties with solar panels, low carbon and
+              small scale carbon generators, are offered generous tariffs by
+              electricity suppliers under the SEG for the electricity sold.
+              Think of it as state-backed income for around 25 years plus, quite
+              an investment!
+            </p>
           </Grid.Column>
         </Grid.Row>
       </Grid>
