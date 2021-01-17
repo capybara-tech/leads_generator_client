@@ -193,9 +193,34 @@ const Economics = () => {
           <Grid.Column>
             <Image
               id="longtermInvestmentImg"
-              floated="left"
+              floated="right"
               src="/images/LongtermInvestment.png"
             />
+          </Grid.Column>
+        </Grid.Row>
+        <Grid.Row id="lowMaintenanceSection">
+          <Grid.Column>
+            {" "}
+            <Image
+              id="lowMaintenanceImg"
+              floated="left"
+              src="/images/kidPourWater.png"
+            />
+          </Grid.Column>
+          <Grid.Column>
+            <p className="titleBenefit">
+              Everyone's favourite - low maintenance
+            </p>
+            <p>
+              Solars panels aren't like kids - you don't have to constantly keep
+              an eye on them. As it frequently rains in the UK, the solar panels
+              are kept sufficiently clean by nature. The panels are installed at
+              an angle and have a smooth surface meaning that debris also glides
+              straight off. To ensure that the panels are working at their best
+              they should not be obstructed after installation. Solar panels
+              work horses, with a long working life - in excess 40 years and
+              most often come with a 25 year guarantee, pretty impressive!
+            </p>
           </Grid.Column>
         </Grid.Row>
       </Grid>

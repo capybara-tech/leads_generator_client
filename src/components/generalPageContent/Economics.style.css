@@ -165,3 +165,13 @@
   height:90vh;
   padding:10vh;
 }
+
+#lowMaintenanceSection{
+  font-size: 2.5vh;
+  font-family: "Poppins", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95vw;
+  height:90vh;
+  padding:10vh;
+}
