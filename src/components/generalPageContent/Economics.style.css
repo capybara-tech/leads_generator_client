@@ -120,5 +120,19 @@
 #propertyValueSection {
   font-size: 3vh;
   font-family: "Poppins", sans-serif;
-  padding: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95vw;
+  height:90vh;
+  padding:10vh;
+}
+
+#lowerEnergyBillsSection{
+  font-size: 3vh;
+  font-family: "Poppins", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95vw;
+  height:90vh;
+  padding:10vh;
 }

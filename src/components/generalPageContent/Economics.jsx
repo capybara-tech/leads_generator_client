@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Economics.style.css";
 import Slider from "infinite-react-carousel";
-import { Grid, Segment, Button } from "semantic-ui-react";
+import { Grid, Segment, Button, Image } from "semantic-ui-react";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 
@@ -101,25 +101,53 @@ const Economics = () => {
           </div>
         </Slider>
       </div>
-      <div id="propertyValueSection">
-        <Grid verticalAlign="middle" columns={2}>
-          <Grid.Row>
-            <Grid.Column>
-              <img src="/images/vector-creator.png" />
-            </Grid.Column>
-            <Grid.Column>
-              <p>
-                By 14% on average and up to a massive 38% in some (lucky)regions
-                of the UK. More than a whopping £16,000 of cash if you sell up.
-                These are figures from the Government Department of Energy and
-                Climate Change which found that by making energy saving
-                improvements to your property such as installing solar panels,
-                you can secure these punchy property price increases
-              </p>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-      </div>
+      <Grid verticalAlign="middle" columns={2}>
+        <Grid.Row id="propertyValueSection">
+          <Grid.Column>
+            <Image
+              size="big"
+              floated="left"
+              id="propertyValueImg"
+              src="/images/vector-creator.png"
+            />
+          </Grid.Column>
+          <Grid.Column>
+            <p>
+              By 14% on average and up to a massive 38% in some (lucky)regions
+              of the UK. More than a whopping £16,000 of cash if you sell up.
+              These are figures from the Government Department of Energy and
+              Climate Change which found that by making energy saving
+              improvements to your property such as installing solar panels, you
+              can secure these punchy property price increases
+            </p>
+          </Grid.Column>
+        </Grid.Row>
+        <Grid.Row id="lowerEnergyBillsSection">
+          <Grid.Column>
+            <p>
+              Between £85-220 each year, depending where the property you are
+              looking to turn green is located and a 4Kw PV system(typical for a
+              family home). These chunky savings come about as you will be
+              meeting some of your own electricity needs. The amount saved
+              monthly will be affected by: Whether you are large or small
+              electricity user, don't worry neither us nor our installers make
+              judgements! If no one is at home during the day a solar battery
+              may be a good shout. This will store the electricity generated,
+              meaning that it can be used during the evenings(when the sun has
+              said goodbye) The type of solar panels. To up electricity
+              production you can fit more panels or invest in high-efficiency
+              ones.
+            </p>
+          </Grid.Column>
+          <Grid.Column>
+            <Image
+              size="big"
+              floated="right"
+              src="/images/vector-creator (1).png"
+            />
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
       <Segment id="solSpanaInNumbers">
         <Grid verticalAlign="middle" columns={4}>
           <Grid.Row>
