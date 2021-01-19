@@ -6,74 +6,83 @@ describe("Visitor can see information grid component on landing page", () => {
   it("get up to 3 quotes button", () => {
     cy.get("#threeQuotes").should("exist");
     cy.get("[data-cy=title]").should("contain", "Get up to 3 Quotes");
+    cy.get("[data-cy=content]").should(
+      "contain",
+      "Our partners are MCS registered, vetted and we continue to monitor their reviews"
+    );
+    cy.get("[data-cy=content]").should(
+      "contain",
+      "Compare competitive quotes with service"
+    );
+    cy.get("[data-cy=content]").should(
+      "contain",
+      "No obligation and free - we are against pushy sales practices!"
+    );
   });
 
-  it("how does this have an impact on the planet section", () => {
+  it("Help save our bruised planet section", () => {
     cy.get("#impactPlanet").should("exist");
-    cy.get("[data-cy=title]").should(
+    cy.get("[data-cy=title]").should("contain", "Help save our bruised planet");
+    cy.get("[data-cy=content]").should(
       "contain",
-      "How does this have an impact on the planet"
+      "Harvest infinite, truly clean (and free!) energy from the sun"
     );
     cy.get("[data-cy=content]").should(
       "contain",
-      "Lorem ipsum dolor sit amet consectetura"
+      "Dramatically reduce your property's thirst for fossil fuels, burnt to produce electricity"
     );
     cy.get("[data-cy=content]").should(
       "contain",
-      "Lorem ipsum dolor sit amet consecteturb"
+      "Solar panels have no emissions and therefore zero climate impact once installed"
     );
     cy.get("[data-cy=content]").should(
       "contain",
-      "Lorem ipsum dolor sit amet consecteturc"
-    );
-    cy.get("[data-cy=content]").should(
-      "contain",
-      "Lorem ipsum dolor sit amet consecteturd"
+      "Shrink you carbon footprint drastically overnight"
     );
   });
 
-  it("how does this have an impact on your wallet section", () => {
+  it("Figures which won't disappoint section", () => {
     cy.get("#impactWallet").should("exist");
     cy.get("[data-cy=title]").should(
       "contain",
-      "How does this have an impact on your wallet"
+      "Figures which won't disappoint"
     );
     cy.get("[data-cy=content]").should(
       "contain",
-      "Lorem ipsum dolor sit amet consecteture"
+      "Lower energy bills and sell excess electricity to the National Grid"
     );
     cy.get("[data-cy=content]").should(
       "contain",
-      "Lorem ipsum dolor sit amet consecteturf"
+      "Government grants and financial support are up for grabs"
     );
     cy.get("[data-cy=content]").should(
       "contain",
-      "Lorem ipsum dolor sit amet consecteturg"
+      "Increases the value of your property"
     );
     cy.get("[data-cy=content]").should(
       "contain",
-      "Lorem ipsum dolor sit amet consecteturh"
+      "An impressive return on investment (ROI) and solar panel prices have fallen by around 70% since 2010, quite a bargain now!"
     );
   });
 
-  it("how do solar panels work section", () => {
+  it("How solar panels work section", () => {
     cy.get("#howPanelsWork").should("exist");
-    cy.get("[data-cy=title]").should("contain", "How do solar panels work?");
+    cy.get("[data-cy=title]").should("contain", "How solar panels work");
     cy.get("[data-cy=content]").should(
       "contain",
-      "Lorem ipsum dolor sit amet consecteturi"
+      "Daylight (not only sunlight is required!) hits the solar photovoltaic cells in the panels"
     );
     cy.get("[data-cy=content]").should(
       "contain",
-      "Lorem ipsum dolor sit amet consecteturj"
+      "Direct current (DC) electricity is produced"
     );
     cy.get("[data-cy=content]").should(
       "contain",
-      "Lorem ipsum dolor sit amet consecteturk"
+      "With a bit of magic, an inverter converts DC electricity to alternating current electricity (AC)"
     );
     cy.get("[data-cy=content]").should(
       "contain",
-      "Lorem ipsum dolor sit amet consecteturl"
+      "The energy can then be used in your property, excess sold to the national grid or stored"
     );
   });
 });

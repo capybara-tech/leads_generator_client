@@ -26,7 +26,7 @@ const LandingPageInfoSegment = () => {
             <List>
               <List.Item className="solarBenefits">
                 <List.Icon name="check circle" />
-                <List.Content className="content">
+                <List.Content data-cy="content" className="content">
                   Our partners are MCS registered, vetted and we continue to
                   monitor their reviews
                 </List.Content>
@@ -34,14 +34,14 @@ const LandingPageInfoSegment = () => {
               <br />
               <List.Item className="solarBenefits">
                 <List.Icon name="check circle" />
-                <List.Content>
+                <List.Content data-cy="content">
                   Compare competitive quotes with service
                 </List.Content>
               </List.Item>{" "}
               <br />
               <List.Item className="solarBenefits">
                 <List.Icon name="check circle" />
-                <List.Content>
+                <List.Content data-cy="content">
                   No obligation and free - we are against pushy sales practices!
                 </List.Content>
               </List.Item>{" "}
