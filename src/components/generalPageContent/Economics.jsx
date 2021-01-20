@@ -211,6 +211,11 @@ const Economics = () => {
             />
           </Grid.Column>
         </Grid.Row>
+        <Grid.Row columns={1}>
+          <Grid.Column>
+            <div className="parallax"></div>
+          </Grid.Column>
+        </Grid.Row>
         <Grid.Row id="longtermInvestmentSection">
           <Grid.Column>
             <Image

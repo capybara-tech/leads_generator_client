@@ -190,10 +190,6 @@
   width: 95vw;
   height: 90vh;
   padding: 10vh;
-  background-image: url("/images/method-draw-image.svg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
 }
 
 #lowMaintenanceSection {
@@ -253,4 +249,13 @@ li span {
 .highlightedWord {
   color: #fe8733;
   font-weight: bold;
+}
+
+.parallax{
+  background-image: url("/images/backgroundText.png");
+  height:300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color:#fe8733;
 }
