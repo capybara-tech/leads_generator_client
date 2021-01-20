@@ -102,24 +102,36 @@ const Economics = () => {
         </Slider>
       </div>
       <Grid verticalAlign="middle" columns={2}>
-        
         <Grid.Row id="lowerEnergyBillsSection">
           <Grid.Column>
             <p className="titleBenefit">Save money with lower energy bills</p>
-            <p>
-              Between £85-220 each year, depending where the property you are
-              looking to turn green is located and a 4Kw PV system(typical for a
-              family home). These chunky savings come about as you will be
-              meeting some of your own electricity needs. The amount saved
-              monthly will be affected by: Whether you are large or small
-              electricity user, don't worry neither us nor our installers make
-              judgements! If no one is at home during the day a solar battery
-              may be a good shout. This will store the electricity generated,
-              meaning that it can be used during the evenings(when the sun has
-              said goodbye) The type of solar panels. To up electricity
-              production you can fit more panels or invest in high-efficiency
-              ones.
+            <p className="mainCategoryContent">
+              Between <span className="highlightedWord">£85-220/year</span>,
+              depending where the property you are looking to turn green is
+              located and a 4Kw PV system(typical for a family home). These
+              chunky savings come about as you will be meeting some of your own
+              electricity needs. The amount saved monthly will be affected by:{" "}
             </p>
+            <ul>
+              <li>
+                {" "}
+                <span>
+                  Whether you are large or small electricity user, don't worry
+                  neither us nor our installers make judgements! If no one is at
+                  home during the day a solar battery may be a good shout. This
+                  will store the electricity generated, meaning that it can be
+                  used during the evenings(when the sun has said goodbye){" "}
+                </span>
+              </li>{" "}
+              <br />
+              <li>
+                {" "}
+                <span>
+                  The type of solar panels. To up electricity production you can
+                  fit more panels or invest in high-efficiency ones
+                </span>{" "}
+              </li>
+            </ul>
           </Grid.Column>
           <Grid.Column>
             <Image
@@ -139,29 +151,24 @@ const Economics = () => {
           </Grid.Column>
           <Grid.Column>
             <p className="titleBenefit">Make money doing nothing!</p>
+            <p className="mainCategoryContent">
+              Depending on your circumstances,{" "}
+              <span className="highlightedWord">
+                solar panels will generate more electricity than you can use.
+              </span>{" "}
+              Cash in on this resource by selling it to the National Grid
+              through a Smart Export Guarantee (SEG). Essentially properties
+              with solar panels, low carbon and small scale carbon generators,
+              are offered generous tariffs by electricity suppliers under the
+              SEG for the electricity sold.
+            </p>
             <p>
-              Depending on your circumstances, the solar panels will generate
-              more electricity than you can use. Cash in on this resource by
-              selling it to the National Grid through a Smart Export Guarantee
-              (SEG). Essentially properties with solar panels, low carbon and
-              small scale carbon generators, are offered generous tariffs by
-              electricity suppliers under the SEG for the electricity sold.
               Think of it as state-backed income for around 25 years plus, quite
-              an investment!
+              an investment <span className="highlightedWord">!!</span>
             </p>
           </Grid.Column>
         </Grid.Row>
-        
-        
-        
         <Grid.Row id="grantsAndFinancialSupportSection">
-          <Grid.Column>
-            <Image
-              id="grantsAndFinancialSupportImg"
-              floated="right"
-              src="/images/grantsAndSupport.png"
-            />
-          </Grid.Column>
           <Grid.Column>
             <p className="titleBenefit">
               Government schemes and financial support
@@ -175,8 +182,22 @@ const Economics = () => {
               panels, a renewable heat technology.
             </p>
           </Grid.Column>
+          <Grid.Column>
+            <Image
+              id="grantsAndFinancialSupportImg"
+              floated="right"
+              src="/images/grantsAndSupport.png"
+            />
+          </Grid.Column>
         </Grid.Row>
-<Grid.Row id="longtermInvestmentSection">
+        <Grid.Row id="longtermInvestmentSection">
+          <Grid.Column>
+            <Image
+              id="longtermInvestmentImg"
+              floated="right"
+              src="/images/LongtermInvestment.png"
+            />
+          </Grid.Column>
           <Grid.Column>
             <p className="titleBenefit">A solid long-term investment</p>
             <p>
@@ -196,23 +217,8 @@ const Economics = () => {
               this percentage through the roof!
             </p>
           </Grid.Column>
-          <Grid.Column>
-            <Image
-              id="longtermInvestmentImg"
-              floated="right"
-              src="/images/LongtermInvestment.png"
-            />
-          </Grid.Column>
         </Grid.Row>
-
         <Grid.Row id="propertyValueSection">
-          <Grid.Column>
-            <Image
-              floated="left"
-              id="propertyValueImg"
-              src="/images/vector-creator.png"
-            />
-          </Grid.Column>
           <Grid.Column>
             <p className="titleBenefit">Increase the value of your property</p>
             <p>
@@ -224,8 +230,23 @@ const Economics = () => {
               can secure these punchy property price increases
             </p>
           </Grid.Column>
+          <Grid.Column>
+            <Image
+              floated="left"
+              id="propertyValueImg"
+              src="/images/vector-creator.png"
+            />
+          </Grid.Column>
         </Grid.Row>
         <Grid.Row id="priceFallenSection">
+          <Grid.Column>
+            {" "}
+            <Image
+              id="priceFallenImg"
+              floated="right"
+              src="/images/pluto-presenting-chart.png"
+            />
+          </Grid.Column>
           <Grid.Column>
             {" "}
             <p className="titleBenefit">
@@ -241,25 +262,10 @@ const Economics = () => {
               consideration, not to mention the environmental benefits too!
             </p>
           </Grid.Column>
-          <Grid.Column>
-            {" "}
-            <Image
-              id="priceFallenImg"
-              floated="right"
-              src="/images/pluto-presenting-chart.png"
-            />
-          </Grid.Column>
         </Grid.Row>
         <Grid.Row id="lowMaintenanceSection">
           <Grid.Column>
             {" "}
-            <Image
-              id="lowMaintenanceImg"
-              floated="left"
-              src="/images/kidPourWater.png"
-            />
-          </Grid.Column>
-          <Grid.Column>
             <p className="titleBenefit">
               Everyone's favourite - low maintenance
             </p>
@@ -274,9 +280,17 @@ const Economics = () => {
               most often come with a 25 year guarantee, pretty impressive!
             </p>
           </Grid.Column>
+          <Grid.Column>
+            {" "}
+            <Image
+              id="lowMaintenanceImg"
+              floated="left"
+              src="/images/kidPourWater.png"
+            />
+          </Grid.Column>
         </Grid.Row>
       </Grid>
-      <Segment id="solSpanaInNumbers">
+      <Segment raised id="solSpanaInNumbers">
         <Grid verticalAlign="middle" columns={4}>
           <Grid.Row>
             <Grid.Column>
@@ -381,9 +395,8 @@ const Economics = () => {
           </Grid.Row>
         </Grid>
       </Segment>
-
       <div id="economicsBottomBanner">
-        <div id="concultionEconomics">
+        <div id="conclusionEconomics">
           <p>It's easy, get up to three quotes now...</p>
           <Button as={Link} to={{ pathname: "/quotes" }} id="economicsButton">
             Click here

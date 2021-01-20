@@ -1,6 +1,5 @@
-#economicsContent{
+#economicsContent {
   background-color: #fffff4;
-  
 }
 
 #economicsBanner {
@@ -16,11 +15,11 @@
 #economicsTitle {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 7vh;
+  font-size: 9vh;
   color: #fffff4;
 }
 
-#economicsSubHeader{
+#economicsSubHeader {
   color: #fffff4;
 }
 
@@ -102,19 +101,21 @@
   font-size: 4vh;
   text-align: center;
   z-index: 9;
+  background-color: #fffff4;
 }
 
 #economicsBottomBanner {
   height: 60vh;
-  background-color: rgb(200, 218, 204);
+  background-color: #98517c;
 }
 
-#concultionEconomics {
+#conclusionEconomics {
   position: relative;
   top: 60%;
   text-align: center;
   font-family: "Give You Glory";
   font-size: 4vh;
+  color: #fffff4;
 }
 
 #economicsButton {
@@ -127,8 +128,8 @@
   border-radius: 10px;
 }
 
-.titleBenefit{
-  font-size:5vh;
+.titleBenefit {
+  font-size: 5vh;
   font-weight: 600;
   color: #0d0e0b;
 }
@@ -139,79 +140,96 @@
   margin-left: auto;
   margin-right: auto;
   width: 95vw;
-  height:90vh;
-  padding:10vh;
- 
+  height: 90vh;
+  padding: 10vh;
 }
 
-#lowerEnergyBillsSection{
+#lowerEnergyBillsSection {
   font-size: 2.5vh;
   font-family: "Poppins", sans-serif;
   margin-left: auto;
   margin-right: auto;
   width: 95vw;
-  height:90vh;
-  padding:10vh;
-  margin-top:-10vh;
-  color:#0d0e0b;
- 
+  height: 90vh;
+  padding: 10vh;
+  margin-top: -10vh;
+  color: #0d0e0b;
 }
 
-#sellToNationalGridSection{
+#sellToNationalGridSection {
   font-size: 2.5vh;
   font-family: "Poppins", sans-serif;
   margin-left: auto;
   margin-right: auto;
   width: 95vw;
-  height:90vh;
-  padding:10vh;
-  color:#0d0e0b;
+  height: 90vh;
+  padding: 10vh;
+  color: #0d0e0b;
 }
 
-#sellBackToGridImg{
-  height:60vh;
+#sellBackToGridImg {
+  height: 60vh;
 }
 
-#longtermInvestmentSection{
+#longtermInvestmentSection {
   font-size: 2.5vh;
   font-family: "Poppins", sans-serif;
   margin-left: auto;
   margin-right: auto;
   width: 95vw;
-  height:90vh;
-  padding:10vh;
-
+  height: 90vh;
+  padding: 10vh;
 }
 
-#lowMaintenanceSection{
+#lowMaintenanceSection {
   font-size: 2.5vh;
   font-family: "Poppins", sans-serif;
   margin-left: auto;
   margin-right: auto;
   width: 95vw;
-  height:90vh;
-  padding:10vh;
-
+  height: 90vh;
+  padding: 10vh;
 }
 
-#priceFallenSection{
+#priceFallenSection {
   font-size: 2.5vh;
   font-family: "Poppins", sans-serif;
   margin-left: auto;
   margin-right: auto;
   width: 95vw;
-  height:90vh;
-  padding:10vh;
-
+  height: 90vh;
+  padding: 10vh;
 }
 
-#grantsAndFinancialSupportSection{
+#grantsAndFinancialSupportSection {
   font-size: 2.5vh;
   font-family: "Poppins", sans-serif;
   margin-left: auto;
   margin-right: auto;
   width: 95vw;
-  height:90vh;
-  padding:10vh;
- 
+  height: 90vh;
+  padding: 10vh;
+}
+
+.mainCategoryContent {
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  font-size: 2.5vh;
+}
+
+li {
+  list-style: square outside none;
+  text-align: justify;
+  font-size: 2.5vh;
+  color: #fe8733;
+}
+
+li span {
+  font-family: "Poppins", sans-serif;
+  color: #0d0e0b;
+}
+
+.highlightedWord {
+  color: #fe8733;
+  font-weight: bold;
 }
