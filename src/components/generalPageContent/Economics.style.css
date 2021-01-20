@@ -28,6 +28,8 @@
   border: 0.1px solid;
   background-color: #fffff4;
   outline: none;
+  background-image: url("/images/money.png");
+  background-size: 12vh;
 }
 
 .economicsCardBottomBanner::after {
