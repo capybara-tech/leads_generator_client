@@ -1,0 +1,14 @@
+<svg width="1600" height="1200" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="1202" width="1602" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <text stroke="#000" transform="matrix(13.938046013030197,0,0,19.443893279855164,-5877.739929864477,-11367.056349175064) " font-style="normal" font-weight="normal" xml:space="preserve" text-anchor="start" font-family="'Poppins'" font-size="24" id="svg_1" y="639" x="422.36609" stroke-width="0" fill="#bee9a9">SolSpana</text>
+ </g>
+</svg>

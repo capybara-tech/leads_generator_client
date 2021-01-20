@@ -190,10 +190,10 @@
   width: 95vw;
   height: 90vh;
   padding: 10vh;
-  background-image: url("/images/backgroundText.png");
+  background-image: url("/images/method-draw-image.svg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-position: bottom;
+  background-size: cover;
 }
 
 #lowMaintenanceSection {
