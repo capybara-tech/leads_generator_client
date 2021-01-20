@@ -40,7 +40,7 @@ const Economics = () => {
     <div id="economicsContent">
       <div id="economicsBanner">
         <p data-cy="title" id="economicsTitle">
-          Figures which won't
+          Figures which <span id="titleEmphasis">won't</span>
           <br /> disappoint
         </p>
         <p id="economicsSubHeader">

@@ -19,6 +19,14 @@
   color: #fffff4;
 }
 
+#titleEmphasis {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 9vh;
+  color: #b4e9a9;
+  text-decoration: underline;
+}
+
 #economicsSubHeader {
   color: #fffff4;
 }
@@ -30,6 +38,7 @@
   outline: none;
   background-image: url("/images/money.png");
   background-size: 12vh;
+  border-radius: 3%;
 }
 
 .economicsCardBottomBanner::after {
@@ -181,6 +190,10 @@
   width: 95vw;
   height: 90vh;
   padding: 10vh;
+  background-image: url("/images/backgroundText.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 #lowMaintenanceSection {
