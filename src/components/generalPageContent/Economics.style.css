@@ -217,6 +217,12 @@
   font-size: 2.5vh;
 }
 
+.subContent {
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  font-size: 1.75vh;
+}
+
 li {
   list-style: square outside none;
   text-align: justify;
