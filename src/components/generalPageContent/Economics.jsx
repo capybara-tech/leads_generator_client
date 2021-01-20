@@ -35,7 +35,7 @@ const Economics = () => {
           Figures which won't
           <br /> disappoint
         </p>
-        <p>
+        <p id="economicsSubHeader">
           If the environmental benefits of solar panels has not convinced you,
           the financial ones will😃. <br /> For those who have already seen the
           light this is the icing on the 🍰!
@@ -102,26 +102,7 @@ const Economics = () => {
         </Slider>
       </div>
       <Grid verticalAlign="middle" columns={2}>
-        <Grid.Row id="propertyValueSection">
-          <Grid.Column>
-            <Image
-              floated="left"
-              id="propertyValueImg"
-              src="/images/vector-creator.png"
-            />
-          </Grid.Column>
-          <Grid.Column>
-            <p className="titleBenefit">Increase the value of your property</p>
-            <p>
-              By 14% on average and up to a massive 38% in some (lucky)regions
-              of the UK. More than a whopping £16,000 of cash if you sell up.
-              These are figures from the Government Department of Energy and
-              Climate Change which found that by making energy saving
-              improvements to your property such as installing solar panels, you
-              can secure these punchy property price increases
-            </p>
-          </Grid.Column>
-        </Grid.Row>
+        
         <Grid.Row id="lowerEnergyBillsSection">
           <Grid.Column>
             <p className="titleBenefit">Save money with lower energy bills</p>
@@ -170,7 +151,32 @@ const Economics = () => {
             </p>
           </Grid.Column>
         </Grid.Row>
-        <Grid.Row id="longtermInvestmentSection">
+        
+        
+        
+        <Grid.Row id="grantsAndFinancialSupportSection">
+          <Grid.Column>
+            <Image
+              id="grantsAndFinancialSupportImg"
+              floated="right"
+              src="/images/grantsAndSupport.png"
+            />
+          </Grid.Column>
+          <Grid.Column>
+            <p className="titleBenefit">
+              Government schemes and financial support
+            </p>
+            <p>
+              There are currently two government schemes you can take advantage
+              of: The Smart Export Guarantee - will pay you for excess
+              electricity which you produce and hits the National Grid. The
+              Renewable Heat Incentive - you will receive quarterly payments
+              over a massive 7 years to help homeowners pay for solar thermal
+              panels, a renewable heat technology.
+            </p>
+          </Grid.Column>
+        </Grid.Row>
+<Grid.Row id="longtermInvestmentSection">
           <Grid.Column>
             <p className="titleBenefit">A solid long-term investment</p>
             <p>
@@ -198,28 +204,24 @@ const Economics = () => {
             />
           </Grid.Column>
         </Grid.Row>
-        <Grid.Row id="lowMaintenanceSection">
+
+        <Grid.Row id="propertyValueSection">
           <Grid.Column>
-            {" "}
             <Image
-              id="lowMaintenanceImg"
               floated="left"
-              src="/images/kidPourWater.png"
+              id="propertyValueImg"
+              src="/images/vector-creator.png"
             />
           </Grid.Column>
           <Grid.Column>
-            <p className="titleBenefit">
-              Everyone's favourite - low maintenance
-            </p>
+            <p className="titleBenefit">Increase the value of your property</p>
             <p>
-              Solars panels aren't like kids - you don't have to constantly keep
-              an eye on them. As it frequently rains in the UK, the solar panels
-              are kept sufficiently clean by nature. The panels are installed at
-              an angle and have a smooth surface meaning that debris also glides
-              straight off. To ensure that the panels are working at their best
-              they should not be obstructed after installation. Solar panels
-              work horses, with a long working life - in excess 40 years and
-              most often come with a 25 year guarantee, pretty impressive!
+              By 14% on average and up to a massive 38% in some (lucky)regions
+              of the UK. More than a whopping £16,000 of cash if you sell up.
+              These are figures from the Government Department of Energy and
+              Climate Change which found that by making energy saving
+              improvements to your property such as installing solar panels, you
+              can secure these punchy property price increases
             </p>
           </Grid.Column>
         </Grid.Row>
@@ -248,25 +250,28 @@ const Economics = () => {
             />
           </Grid.Column>
         </Grid.Row>
-        <Grid.Row id="grantsAndFinancialSupportSection">
+        <Grid.Row id="lowMaintenanceSection">
           <Grid.Column>
+            {" "}
             <Image
-              id="grantsAndFinancialSupportImg"
-              floated="right"
-              src="/images/grantsAndSupport.png"
+              id="lowMaintenanceImg"
+              floated="left"
+              src="/images/kidPourWater.png"
             />
           </Grid.Column>
           <Grid.Column>
             <p className="titleBenefit">
-              Government schemes and financial support
+              Everyone's favourite - low maintenance
             </p>
             <p>
-              There are currently two government schemes you can take advantage
-              of: The Smart Export Guarantee - will pay you for excess
-              electricity which you produce and hits the National Grid. The
-              Renewable Heat Incentive - you will receive quarterly payments
-              over a massive 7 years to help homeowners pay for solar thermal
-              panels, a renewable heat technology.
+              Solars panels aren't like kids - you don't have to constantly keep
+              an eye on them. As it frequently rains in the UK, the solar panels
+              are kept sufficiently clean by nature. The panels are installed at
+              an angle and have a smooth surface meaning that debris also glides
+              straight off. To ensure that the panels are working at their best
+              they should not be obstructed after installation. Solar panels
+              work horses, with a long working life - in excess 40 years and
+              most often come with a 25 year guarantee, pretty impressive!
             </p>
           </Grid.Column>
         </Grid.Row>

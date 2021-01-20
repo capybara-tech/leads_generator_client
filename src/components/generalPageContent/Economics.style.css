@@ -1,3 +1,8 @@
+#economicsContent{
+  background-color: #fffff4;
+  
+}
+
 #economicsBanner {
   font-family: "Poppins", sans-serif;
   padding: 5vw;
@@ -5,19 +10,24 @@
   padding-top: 20vh;
   height: 75vh;
   width: 100vw;
-  background-color: rgb(200, 218, 204);
+  background-color: #98517c;
 }
 
 #economicsTitle {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 7vh;
+  color: #fffff4;
+}
+
+#economicsSubHeader{
+  color: #fffff4;
 }
 
 .economicsCard {
   height: 25vh;
   border: 0.1px solid;
-  background-color: white;
+  background-color: #fffff4;
   outline: none;
 }
 
@@ -120,6 +130,7 @@
 .titleBenefit{
   font-size:5vh;
   font-weight: 600;
+  color: #0d0e0b;
 }
 
 #propertyValueSection {
@@ -130,6 +141,7 @@
   width: 95vw;
   height:90vh;
   padding:10vh;
+ 
 }
 
 #lowerEnergyBillsSection{
@@ -140,6 +152,9 @@
   width: 95vw;
   height:90vh;
   padding:10vh;
+  margin-top:-10vh;
+  color:#0d0e0b;
+ 
 }
 
 #sellToNationalGridSection{
@@ -150,6 +165,7 @@
   width: 95vw;
   height:90vh;
   padding:10vh;
+  color:#0d0e0b;
 }
 
 #sellBackToGridImg{
@@ -164,6 +180,7 @@
   width: 95vw;
   height:90vh;
   padding:10vh;
+
 }
 
 #lowMaintenanceSection{
@@ -174,6 +191,7 @@
   width: 95vw;
   height:90vh;
   padding:10vh;
+
 }
 
 #priceFallenSection{
@@ -184,6 +202,7 @@
   width: 95vw;
   height:90vh;
   padding:10vh;
+
 }
 
 #grantsAndFinancialSupportSection{
@@ -194,4 +213,5 @@
   width: 95vw;
   height:90vh;
   padding:10vh;
+ 
 }
