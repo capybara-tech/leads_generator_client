@@ -30,7 +30,7 @@ const Economics = () => {
         </p>
         <p id="economicsSubHeader">
           If the environmental benefits of solar panels has not convinced you,
-          the seven financial ones will😃. For those who have already seen the
+          the seven financial ones will😃. For those who have already seen
           what's what this is the icing on the 🍰!
         </p>
         <TextLoop interval={1750}>
@@ -101,18 +101,13 @@ const Economics = () => {
             </ul>
           </Grid.Column>
           <Grid.Column>
-            <Image
-              id="piggyBankImg"
-              floated="right"
-              src="/images/piggybank.png"
-            />
+            <Image id="piggyBankImg" src="/images/piggybank.png" />
           </Grid.Column>
         </Grid.Row>
         <Grid.Row id="sellToNationalGridSection">
           <Grid.Column>
             <Image
               id="sellBackToGridImg"
-              floated="left"
               src="/images/pluto-remote-working.png"
             />
           </Grid.Column>
@@ -172,7 +167,6 @@ const Economics = () => {
           <Grid.Column>
             <Image
               id="grantsAndFinancialSupportImg"
-              floated="right"
               src="/images/grantsAndSupport.png"
             />
           </Grid.Column>
@@ -186,7 +180,6 @@ const Economics = () => {
           <Grid.Column>
             <Image
               id="longtermInvestmentImg"
-              floated="right"
               src="/images/LongtermInvestment.png"
             />
           </Grid.Column>
@@ -249,11 +242,7 @@ const Economics = () => {
             </p>
           </Grid.Column>
           <Grid.Column>
-            <Image
-              floated="left"
-              id="propertyValueImg"
-              src="/images/vector-creator.png"
-            />
+            <Image id="propertyValueImg" src="/images/vector-creator.png" />
           </Grid.Column>
         </Grid.Row>
         <Grid.Row id="priceFallenSection">
@@ -305,7 +294,7 @@ const Economics = () => {
               should not be obstructed after installation.
             </p>
             <p className="mainCategoryContent">
-              Solar panels work horses, with a{" "}
+              Solar panels are work horses, with a{" "}
               <span className="highlightedWord">
                 long working life - in excess 40 years and most often come with
                 a 25 year guarantee, pretty impressive!
@@ -314,11 +303,7 @@ const Economics = () => {
           </Grid.Column>
           <Grid.Column>
             {" "}
-            <Image
-              id="lowMaintenanceImg"
-              floated="left"
-              src="/images/kidPourWater.png"
-            />
+            <Image id="lowMaintenanceImg" src="/images/kidPourWater.png" />
           </Grid.Column>
         </Grid.Row>
       </Grid>

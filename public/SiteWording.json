@@ -91,7 +91,7 @@
     },
     "impactWalletPage": {
       "opening": "Figures which won't disappoint",
-      "openingSub": "If the environmental benefits of solar panels has not convinced, the seven financial ones will . For those who have already seen what's what this is the icing on the !",
+      "openingSub": "If the environmental benefits of solar panels has not convinced you, the seven financial ones will . For those who have already seen what's what this is the icing on the !",
       "benefits": {
         "benefits1": "Lower energy bills",
         "benefits2": "Sell excess electricity to the National Grid",
@@ -139,15 +139,13 @@
         "title": "Everyone's favourite - low maintenance",
         "content1": "Solars panels aren't like kids - you don't have to constantly keep an eye on them.",
         "content2": "As it frequently rains in the UK, the solar panels are kept sufficiently clean by nature. The panels are installed at an angle and have a smooth surface meaning that debris also glides straight off. To ensure that the panels are working at their best they should not be obstructed after installation.",
-        "content3": "Solar panels work horses, with a long working life - in excess 40 years and most often come with a 25 year guarantee, pretty impressive!"
+        "content3": "Solar panels are work horses, with a long working life - in excess 40 years and most often come with a 25 year guarantee, pretty impressive!"
       },
       "benefitsSummary": {
         "benefit1": "average lower energy bills*",
         "benefit2": "increased property price**",
         "benefit3": "average yearly return on invest",
-        "benefit4": "price reduction since 2010**",
-        "smallprint1": "*up to £220",
-        "smallprint2": "**on average"
+        "benefit4": "price reduction since 2010"
       },
       "conclusion": {
         "content": "It's easy, get up to three quotes now..."
