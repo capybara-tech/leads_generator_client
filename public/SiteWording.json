@@ -109,7 +109,8 @@
       },
       "sellToGrid": {
         "title": "Make money doing nothing!",
-        "content": "Depending on your circumstances, solar panels will generate more electricity than you can use. Cash in on this resource by selling it to the National Grid through a Smart Export Guarantee (SEG). Essentially properties with solar panels, low carbon and small scale carbon generators, are offered generous tariffs by electricity suppliers under the SEG for the electricity sold. Think of it as state-backed income for around 25 years plus, quite an investment!!"
+        "content1": "Depending on your circumstances, solar panels will generate more electricity than you can use. Cash in on this resource by selling it to the National Grid through a Smart Export Guarantee (SEG). Essentially properties with solar panels, low carbon and small scale carbon generators, are offered generous tariffs by electricity suppliers under the SEG for the electricity sold.",
+        "content2": "Think of it as state-backed income for around 25 years plus, quite an investment !!!"
       },
       "financialSupport": {
         "title": "Government schemes and financial support",

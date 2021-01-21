@@ -117,8 +117,9 @@ const Economics = () => {
               Between <span className="highlightedWord">£85-220/year</span>,
               depending where the property you are looking to turn green is
               located and a 4Kw PV system(typical for a family home). These
-              chunky savings come about as you will be meeting some of your own
-              electricity needs. The amount saved monthly will be affected by:{" "}
+              <span className="highlightedWord"> chunky savings</span> come
+              about as you will be meeting some of your own electricity needs.
+              The amount saved monthly will be affected by:{" "}
             </p>
             <ul>
               <li>
@@ -171,8 +172,11 @@ const Economics = () => {
               SEG for the electricity sold.
             </p>
             <p>
-              Think of it as state-backed income for around 25 years plus, quite
-              an investment <span className="highlightedWord">!!</span>
+              Think of it as{" "}
+              <span className="highlightedWord">
+                state-backed income for around 25 years plus
+              </span>
+              , quite an investment!
             </p>
           </Grid.Column>
         </Grid.Row>
@@ -189,16 +193,20 @@ const Economics = () => {
               <li>
                 {" "}
                 <span>
-                  The Smart Export Guarantee - will pay you for excess
+                  The Smart Export Guarantee - will{" "}
+                  <span className="highlightedWord">pay you</span> for excess
                   electricity which you produce and hits the National Grid
                 </span>
               </li>{" "}
               <br />
               <li>
                 <span>
-                  The Renewable Heat Incentive - you will receive quarterly
-                  payments over a massive 7 years to help homeowners pay for
-                  solar thermal panels, a renewable heat technology
+                  The Renewable Heat Incentive - you will{" "}
+                  <span className="highlightedWord">
+                    receive quarterly payments over a massive 7 years
+                  </span>{" "}
+                  to help homeowners pay for solar thermal panels, a renewable
+                  heat technology
                 </span>
               </li>
             </ul>
@@ -227,15 +235,20 @@ const Economics = () => {
           <Grid.Column>
             <p className="titleBenefit">A solid long-term investment</p>
             <p className="mainCategoryContent">
-              A 3kW panel system(typically on smaller family homes) can save an
-              impressive £1,000/year on electricity costs, double that for
-              beefier systems.{" "}
+              A 3kW panel system(typically on smaller family homes) can{" "}
+              <span className="highlightedWord">
+                save an impressive £1,000/year
+              </span>{" "}
+              on electricity costs, double that for beefier systems.{" "}
             </p>
             <p className="mainCategoryContent">
-              You will be earning around 5.5% yearly - the annual return of
-              investment (ROI). With UK interest at record lows of 1%, you will
-              receive far better returns than you would get by keeping the same
-              cash in the bank.
+              You will be{" "}
+              <span className="highlightedWord">
+                earning around 5.5% yearly
+              </span>{" "}
+              - the annual return of investment (ROI). With UK interest at
+              record lows of 1%, you will receive far better returns than you
+              would get by keeping the same cash in the bank.
             </p>
             <p className="mainCategoryContent">
               This return does not take into consideration the other financial
@@ -262,14 +275,19 @@ const Economics = () => {
           <Grid.Column>
             <p className="titleBenefit">Increase the value of your property</p>
             <p className="mainCategoryContent">
-              By 14% on average and up to a massive 38% in some (lucky)regions
-              of the UK. More than a whopping £16,000 of cash if you sell up.
+              <span className="highlightedWord">By 14% on average</span> and up
+              to a massive 38% in some (lucky)regions of the UK. More than a
+              whopping £16,000 of cash if you sell up.
             </p>
             <p className="mainCategoryContent">
-              These are figures from the Government Department of Energy and
-              Climate Change which found that by making energy saving
-              improvements to your property such as installing solar panels, you
-              can secure these punchy property price increases.
+              These are{" "}
+              <span className="highlightedWord">
+                figures from the Government Department of Energy and Climate
+                Change
+              </span>{" "}
+              which found that by making energy saving improvements to your
+              property such as installing solar panels, you can secure these
+              punchy property price increases.
             </p>
           </Grid.Column>
           <Grid.Column>
@@ -295,8 +313,11 @@ const Economics = () => {
               Solar panels prices - 70%(on average) cheaper than in 2010!
             </p>
             <p className="mainCategoryContent">
-              As solar panels have become more popular the prices have
-              dramatically fallen. The beauty of supply and demand.{" "}
+              As solar panels have become more popular the{" "}
+              <span className="highlightedWord">
+                prices have dramatically fallen.
+              </span>{" "}
+              The beauty of supply and demand.{" "}
             </p>
             <p className="mainCategoryContent">
               You're looking at about £6,500 for a typical 4kW solar PV system,
@@ -313,8 +334,10 @@ const Economics = () => {
               Everyone's favourite - low maintenance
             </p>
             <p className="mainCategoryContent">
-              Solars panels aren't like kids - you don't have to constantly keep
-              an eye on them.{" "}
+              Solars panels aren't like kids -{" "}
+              <span className="highlightedWord">
+                you don't have to constantly keep an eye on them.
+              </span>{" "}
             </p>
             <p className="mainCategoryContent">
               As it frequently rains in the UK, the solar panels are kept
@@ -324,9 +347,11 @@ const Economics = () => {
               should not be obstructed after installation.
             </p>
             <p className="mainCategoryContent">
-              Solar panels work horses, with a long working life - in excess 40
-              years and most often come with a 25 year guarantee, pretty
-              impressive!
+              Solar panels work horses, with a{" "}
+              <span className="highlightedWord">
+                long working life - in excess 40 years and most often come with
+                a 25 year guarantee, pretty impressive!
+              </span>
             </p>
           </Grid.Column>
           <Grid.Column>
