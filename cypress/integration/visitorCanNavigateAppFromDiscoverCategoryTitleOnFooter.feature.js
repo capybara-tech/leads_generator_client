@@ -14,7 +14,7 @@ describe("Visitor can navigate app from discover category title on the footer", 
       .contains("How does this have an impact on the planet")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("How does this have an impact on your wallet")
+      .contains("Figures which won't disappoint")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("Join #TEAMSOLSPANA")
@@ -44,7 +44,7 @@ describe("Visitor can navigate app from discover category title on the footer", 
       .contains("How does this have an impact on the planet")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("How does this have an impact on your wallet")
+      .contains("Figures which won't disappoint")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("Join #TEAMSOLSPANA")
@@ -75,7 +75,7 @@ describe("Visitor can navigate app from discover category title on the footer", 
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
     cy.get("[data-cy=title]").contains("The SolSpana way").should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("How does this have an impact on your wallet")
+      .contains("Figures which won't disappoint")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("Join #TEAMSOLSPANA")
@@ -100,7 +100,7 @@ describe("Visitor can navigate app from discover category title on the footer", 
     });
     cy.get("[data-cy=title]").should(
       "contain",
-      "How does this have an impact on your wallet"
+      "Figures which won't disappoint"
     );
     cy.get("[data-cy=title]").contains("How does solar work?").should("not.be.visible");
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
@@ -137,7 +137,7 @@ describe("Visitor can navigate app from discover category title on the footer", 
       .contains("How does this have an impact on the planet")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("How does this have an impact on your wallet")
+      .contains("Figures which won't disappoint")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("My name's Felix, what's yours?")
@@ -168,7 +168,7 @@ describe("Visitor can navigate app from discover category title on the footer", 
       .contains("How does this have an impact on the planet")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("How does this have an impact on your wallet")
+      .contains("Figures which won't disappoint")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("Join #TEAMSOLSPANA")
