@@ -1,7 +1,6 @@
 #economicsContent {
   background-color: #fffff4;
 }
-
 #economicsBanner {
   font-family: "Poppins", sans-serif;
   padding: 5vw;
@@ -9,28 +8,21 @@
   padding-top: 20vh;
   height: 75vh;
   width: 100vw;
-  background-color: #98517c;
+  background-color: #c8dacc;
 }
-
 #economicsTitle {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 9vh;
-  color: #fffff4;
+  color: #0d0e0b;
 }
-
 #titleEmphasis {
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  font-size: 9vh;
-  color: #b4e9a9;
+  font-weight: 600;
   text-decoration: underline;
 }
-
 #economicsSubHeader {
-  color: #fffff4;
+  color: #0d0e0b;
 }
-
 .economicsCard {
   height: 25vh;
   border: 0.1px solid;
@@ -40,7 +32,6 @@
   background-size: 12vh;
   border-radius: 3%;
 }
-
 .economicsCardBottomBanner::after {
   position: absolute;
   margin-bottom: 5px;
@@ -51,23 +42,19 @@
   background-color: #fe8733cb;
   transition: height 0.3s;
 }
-
 .economicsCardBottomBanner:hover::after {
   height: 20%;
   transition: height 0.3s;
   background-color: #fe8733cb;
 }
-
 .economicsCardBottomBanner.active {
   background-color: #fe8733cb;
 }
-
 #sliderCarousel {
   top: -10vh;
   position: relative;
   background-color: transparent;
 }
-
 .cardButton {
   position: absolute;
   bottom: 0;
@@ -79,7 +66,6 @@
   outline: none;
   z-index: 999;
 }
-
 .cardButton::after {
   content: "";
   display: block;
@@ -87,7 +73,6 @@
   height: 2px;
   background: rgb(0, 0, 0);
 }
-
 .cardContent {
   margin-right: 10%;
   font-family: "Poppins", sans-serif;
@@ -98,28 +83,24 @@
   left: 33%;
   transform: translate(-50%, -50%);
 }
-
 #solSpanaInNumbers {
   margin-bottom: -15%;
-  font-weight: bold;
   padding-top: 20vh;
   padding-bottom: 20vh;
   margin-left: auto;
   margin-right: auto;
   width: 95vw;
-  color: #98517c;
+  color: #0d0e0b;
   font-family: "Poppins", sans-serif;
   font-size: 4vh;
   text-align: center;
   z-index: 9;
   background-color: #fffff4;
 }
-
 #economicsBottomBanner {
   height: 60vh;
-  background-color: #98517c;
+  background-color: #c8dacc;
 }
-
 #conclusionEconomics {
   position: relative;
   top: 60%;
@@ -128,7 +109,6 @@
   font-size: 4vh;
   color: #fffff4;
 }
-
 #economicsButton {
   font-size: 4vh;
   font-family: "Poppins", sans-serif;
@@ -138,13 +118,11 @@
   color: #fe8733cb;
   border-radius: 10px;
 }
-
 .titleBenefit {
   font-size: 5vh;
   font-weight: 600;
   color: #0d0e0b;
 }
-
 #propertyValueSection {
   font-size: 2.5vh;
   font-family: "Poppins", sans-serif;
@@ -154,7 +132,6 @@
   height: 90vh;
   padding: 10vh;
 }
-
 #lowerEnergyBillsSection {
   font-size: 2.5vh;
   font-family: "Poppins", sans-serif;
@@ -163,10 +140,8 @@
   width: 95vw;
   height: 90vh;
   padding: 10vh;
-  margin-top: -10vh;
   color: #0d0e0b;
 }
-
 #sellToNationalGridSection {
   font-size: 2.5vh;
   font-family: "Poppins", sans-serif;
@@ -177,11 +152,9 @@
   padding: 10vh;
   color: #0d0e0b;
 }
-
 #sellBackToGridImg {
   height: 60vh;
 }
-
 #longtermInvestmentSection {
   font-size: 2.5vh;
   font-family: "Poppins", sans-serif;
@@ -190,8 +163,8 @@
   width: 95vw;
   height: 90vh;
   padding: 10vh;
+  color: #0d0e0b;
 }
-
 #lowMaintenanceSection {
   font-size: 2.5vh;
   font-family: "Poppins", sans-serif;
@@ -200,8 +173,8 @@
   width: 95vw;
   height: 90vh;
   padding: 10vh;
+  color: #0d0e0b;
 }
-
 #priceFallenSection {
   font-size: 2.5vh;
   font-family: "Poppins", sans-serif;
@@ -210,8 +183,8 @@
   width: 95vw;
   height: 90vh;
   padding: 10vh;
+  color: #0d0e0b;
 }
-
 #grantsAndFinancialSupportSection {
   font-size: 2.5vh;
   font-family: "Poppins", sans-serif;
@@ -220,42 +193,37 @@
   width: 95vw;
   height: 90vh;
   padding: 10vh;
+  color: #0d0e0b;
 }
-
 .mainCategoryContent {
   font-family: "Poppins", sans-serif;
   text-align: justify;
   font-size: 2.5vh;
 }
-
 .subContent {
   font-family: "Poppins", sans-serif;
   text-align: justify;
   font-size: 1.75vh;
 }
-
 li {
   list-style: square outside none;
   text-align: justify;
   font-size: 2.5vh;
   color: #fe8733;
 }
-
 li span {
   font-family: "Poppins", sans-serif;
   color: #0d0e0b;
 }
-
 .highlightedWord {
   color: #fe8733;
   font-weight: bold;
 }
-
-.parallax{
+.parallax {
   background-image: url("/images/backgroundText.png");
-  height:300px;
+  height: 300px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-color:#fe8733;
+  background-color: #0d0e0b;
 }

@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Economics.style.css";
-import Slider from "infinite-react-carousel";
 import {
   Grid,
   Segment,
@@ -19,21 +18,6 @@ const Economics = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const settings = {
-    accessibility: false,
-    arrows: false,
-    arrowsBlock: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    duration: 1000,
-    initialSlide: true,
-    shift: 200,
-    slidesToShow: 5,
-    centerPadding: 15,
-    swipe: false,
-    dots: true,
-  };
-
   const [focus, setFocus] = React.useState(false);
 
   return (
@@ -48,66 +32,6 @@ const Economics = () => {
           the financial ones will😃. <br /> For those who have already seen the
           light this is the icing on the 🍰!
         </p>
-      </div>
-      <div id="sliderCarousel">
-        <Slider {...settings}>
-          <div className="economicsCard">
-            <div className="cardContent">
-              <p>Lower energy bills</p>
-            </div>
-            <div className="economicsCardBottomBanner">
-              <button className="cardButton">Tell me more</button>
-            </div>
-          </div>
-          <div className="economicsCard">
-            <div className="cardContent">
-              <p>Sell excess electricity to the National Grid</p>
-            </div>
-            <div className="economicsCardBottomBanner">
-              <button className="cardButton">Tell me more</button>
-            </div>
-          </div>
-          <div className="economicsCard">
-            <div className="cardContent">
-              <p>Government grants and financial support are up for grabs</p>
-            </div>
-            <div className="economicsCardBottomBanner">
-              <button className="cardButton">Tell me more</button>
-            </div>
-          </div>
-          <div className="economicsCard">
-            <div className="cardContent">
-              <p>Increases the value of your property</p>
-            </div>
-            <div className="economicsCardBottomBanner">
-              <button className="cardButton">Tell me more</button>
-            </div>
-          </div>
-          <div className="economicsCard">
-            <div className="cardContent">
-              <p>An impressive return on investment (ROI)</p>
-            </div>
-            <div className="economicsCardBottomBanner">
-              <button className="cardButton">Tell me more</button>
-            </div>
-          </div>
-          <div className="economicsCard">
-            <div className="cardContent">
-              <p>Solar panel prices have fallen by around 70% since 2010!</p>
-            </div>
-            <div className="economicsCardBottomBanner">
-              <button className="cardButton">Tell me more</button>
-            </div>
-          </div>
-          <div className="economicsCard">
-            <div className="cardContent">
-              <p>Low maintenance</p>
-            </div>
-            <div className="economicsCardBottomBanner">
-              <button className="cardButton">Tell me more</button>
-            </div>
-          </div>
-        </Slider>
       </div>
       <Grid verticalAlign="middle" columns={2}>
         <Grid.Row id="lowerEnergyBillsSection">
@@ -438,7 +362,6 @@ const Economics = () => {
                     </VisibilitySensor>
                   )}
                 </CountUp>
-
                 <p>average yearly return of invest</p>
               </div>
             </Grid.Column>
