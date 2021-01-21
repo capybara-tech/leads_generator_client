@@ -19,7 +19,7 @@ describe("Visitor can navigate app from legal category title on the footer", () 
       .contains("How does this have an impact on the planet")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("How does this have an impact on your wallet")
+      .contains("Figures which won't disappoint")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("Join #TEAMSOLSPANA")
@@ -51,7 +51,7 @@ describe("Visitor can navigate app from legal category title on the footer", () 
       .contains("How does this have an impact on the planet")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("How does this have an impact on your wallet")
+      .contains("Figures which won't disappoint")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("Join #TEAMSOLSPANA")
@@ -83,7 +83,7 @@ describe("Visitor can navigate app from legal category title on the footer", () 
       .contains("How does this have an impact on the planet")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("How does this have an impact on your wallet")
+      .contains("Figures which won't disappoint")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("Join #TEAMSOLSPANA")

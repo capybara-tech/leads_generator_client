@@ -91,49 +91,64 @@
     },
     "impactWalletPage": {
       "opening": "Figures which won't disappoint",
-      "openingSub": "If the environmental benefits of solar panels has not convinced you about the benefits of solar, the financial ones will :). For those than have already seen the light this is the icing on the cake",
+      "openingSub": "If the environmental benefits of solar panels has not convinced you, the seven financial ones will . For those who have already seen what's what this is the icing on the !",
       "benefits": {
         "benefits1": "Lower energy bills",
         "benefits2": "Sell excess electricity to the National Grid",
         "benefits3": "Government grants and financial support are up for grabs",
         "benefits4": "Increases the value of your property",
         "benefits5": "An impressive return on investment (ROI)",
-        "benefits6": "Solar panel prices have fallen by around 70% since 2010, quite a bargain now!",
+        "benefits6": "Solar panel prices have fallen by around 70% since 2010!",
         "benefits7": "Low maintenance"
       },
       "lowerEnergyBills": {
         "title": "Pay less on energy bills",
-        "content": "Between £85-220 each year, depending where the property you are looking to turn green is located and a 4Kw PV system(typical for a family home). These chunky savings come about as you will be meeting some of your own electricity needs. The amount saved monthly will be affected by:",
+        "content": "Between £85-220/year, depending where the property you are looking to turn green is located and a 4Kw PV system(typical for a family home). These chunky savings come about as you will be meeting some of your own electricity needs. The amount saved monthly will be affected by:",
         "point1": "Whether you are large or small electricity user, don't worry neither us nor our installers make judgements! If no one is at home during the day a solar battery may be a good shout. This will store the electricity generated, meaning that it can be used during the evenings(when the sun has said goodbye)",
-        "point2": "The type of solar panels. To up electricity production you can fit more panels or invest in high-efficiency ones."
+        "point2": "The type of solar panels. To up electricity production you can fit more panels or invest in high-efficiency ones"
       },
       "sellToGrid": {
-        "title": "Sell excess electricity you produce",
-        "content": "Depending on your circumstances, the solar panels will generate more electricity than you can use. Cash in on this resource by selling it to the National Grid through a Smart Export Guarantee (SEG). Essentially properties with solar panels, low carbon and small scale carbon generators, are offered generous tariffs by electricity suppliers under the SEG for the electricity sold. Think of it as state-backed income for around 25 years plus, quite an investment!"
+        "title": "Make money doing nothing!",
+        "content1": "Depending on your circumstances, solar panels will generate more electricity than you can use. Cash in on this resource by selling it to the National Grid through a Smart Export Guarantee (SEG). Essentially properties with solar panels, low carbon and small scale carbon generators, are offered generous tariffs by electricity suppliers under the SEG for the electricity sold.",
+        "content2": "Think of it as state-backed income for around 25 years plus, quite an investment !!!"
       },
       "financialSupport": {
         "title": "Government schemes and financial support",
         "content": "There are currently two government schemes you can take advantage of:",
-        "scheme1": "The Smart Export Guarantee - will pay you for excess electricity which you produce and hits the National Grid.",
-        "scheme2": "The Renewable Heat Incentive - you will receive quarterly payments over a massive 7 years to help homeowners pay for solar thermal panels, a renewable heat technology."
-      },
-      "increasedPropertyPrice": {
-        "title": "Increase your property price",
-        "content": "By 14% on average and up to a massive 38% in some (lucky)regions of the UK. More than a whopping £16,000 of cash if you sell up. These are figures from the Government Department of Energy and Climate Change which found that by making energy saving improvements to your property such as installing solar panels, you can secure these punchy property price increases"
+        "scheme1": "The Smart Export Guarantee - will pay you for excess electricity which you produce and hits the National Grid",
+        "scheme2": "The Renewable Heat Incentive - you will receive quarterly payments over a massive 7 years to help homeowners pay for solar thermal panels, a renewable heat technology"
       },
       "investment": {
         "title": "A solid long-term investment",
-        "content": "A 3kW panel system(typically on smaller family homes) can save an impressive £1,000/year on electricity costs, double that for beefier systems. You will be earning around 5.5% yearly - the annual return of investment (ROI). With UK interest at record lows of <1%, you will receive far better returns than you would get by keeping the same cash in the bank.",
-        "content2": "The techy stuff - think of ROI as the cash generated by the panels in relation to the initial cost of installing the solar system. So that you can see how we have got to the massive 5.5% figure - we calculated a supply and installation cost of £6,500 for the panels and £1,000/year saved for 25 years (the typical guarantee period for a solar system). This return does not take into consideration the other financial benefits such as the increase in property prices which would smash this percentage through the roof!"
+        "content1": "A 3kW panel system(typically on smaller family homes) can save an impressive £1,000/year on electricity costs, double that for beefier systems.",
+        "content2": "You will be earning around 5.5% yearly - the annual return of investment (ROI). With UK interest at record lows of 1%, you will receive far better returns than you would get by keeping the same cash in the bank.",
+        "content3": "This return does not take into consideration the other financial benefits such as the increase in property prices which would smash this percentage through the roof!",
+        "conclusion": "Think of ROI as the cash generated by the panels in relation to the initial cost of installing the solar system. So that you can see how we have got to the massive 5.5% figure - we calculated a supply and installation cost of £6,500 for the panels and £1,000/year saved for 25 years (the typical guarantee period for a solar system)."
+      },
+      "increasedPropertyPrice": {
+        "title": "Increase your property price",
+        "content1": "By 14% on average and up to a massive 38% in some (lucky)regions of the UK. More than a whopping £16,000 of cash if you sell up.",
+        "content2": "These are figures from the Government Department of Energy and Climate Change which found that by making energy saving improvements to your property such as installing solar panels, you can secure these punchy property price increases."
       },
       "panelFallenPrice": {
-        "title": "Solar panels prices - eye-watering 70%(on average) cheaper than in 2010",
-        "content": "As solar panels have become more popular the prices have dramatically fallen and this trend is likely to continue. The beauty of supply and demand.",
+        "title": "Solar panels prices - 70%(on average) cheaper than in 2010!",
+        "content": "As solar panels have become more popular the prices have dramatically fallen. The beauty of supply and demand.",
         "content2": "You're looking at about £6,500 for a typical 4kW solar PV system, for an average family home. Quite an expensive investment but you win when all figures are taken into consideration, not to mention the environmental benefits too!"
       },
       "lowMaintenanace": {
         "title": "Everyone's favourite - low maintenance",
-        "content": "Solars panels aren't like kids - you don't have to constantly keep an eye on them. As it frequently rains in the UK, the solar panels are kept sufficiently clean by nature. The panels are installed at an angle and have a smooth surface meaning that debris also glides straight off. To ensure that the panels are working at their best they should not be obstructed after installation. Solar panels work horses, with a long working life - in excess 40 years and most often come with a 25 year guarantee, pretty impressive!"
+        "content1": "Solars panels aren't like kids - you don't have to constantly keep an eye on them.",
+        "content2": "As it frequently rains in the UK, the solar panels are kept sufficiently clean by nature. The panels are installed at an angle and have a smooth surface meaning that debris also glides straight off. To ensure that the panels are working at their best they should not be obstructed after installation.",
+        "content3": "Solar panels are work horses, with a long working life - in excess 40 years and most often come with a 25 year guarantee, pretty impressive!"
+      },
+      "benefitsSummary": {
+        "benefit1": "average lower energy bills*",
+        "benefit2": "increased property price**",
+        "benefit3": "average yearly return on invest",
+        "benefit4": "price reduction since 2010"
+      },
+      "conclusion": {
+        "content": "It's easy, get up to three quotes now..."
       }
     },
     "aboutUsPage": {
