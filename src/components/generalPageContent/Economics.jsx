@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import TextLoop from "react-text-loop";
 import { Link } from "react-router-dom";
 import "./Economics.style.css";
 import {
@@ -29,9 +30,42 @@ const Economics = () => {
         </p>
         <p id="economicsSubHeader">
           If the environmental benefits of solar panels has not convinced you,
-          the financial ones will😃. <br /> For those who have already seen the
-          light this is the icing on the 🍰!
+          the seven financial ones will😃. For those who have already seen the
+          what's what this is the icing on the 🍰!
         </p>
+        <TextLoop interval={1750}>
+          <div>
+            <p className="financialBenefits">Lower energy bills</p>
+          </div>
+          <div>
+            <p className="financialBenefits">
+              Sell excess electricity to the National Grid
+            </p>
+          </div>
+          <div>
+            <p className="financialBenefits">
+              Government grants and financial support are up for grabs
+            </p>
+          </div>
+          <div>
+            <p className="financialBenefits">
+              Increases the value of your property
+            </p>
+          </div>
+          <div>
+            <p className="financialBenefits">
+              An impressive return on investment (ROI)
+            </p>
+          </div>
+          <div>
+            <p className="financialBenefits">
+              Solar panel prices have fallen by around 70% since 2010!
+            </p>
+          </div>
+          <div>
+            <p className="financialBenefits">Low maintenance</p>
+          </div>
+        </TextLoop>
       </div>
       <Grid verticalAlign="middle" columns={2}>
         <Grid.Row id="lowerEnergyBillsSection">
