@@ -11,6 +11,6 @@ describe('Visitor can navigate sub navbar', () => {
   it('visitor can see economics page', () => {
     cy.get('[data-cy=button]').contains("Why solar").click({force: true})
     cy.get('#linkToEconomicsPage').click({force: true})
-    cy.get('[data-cy=title]').should("contain", "How does this have an impact on your wallet")
+    cy.get('[data-cy=title]').should("contain", "Figures which won't disappoint")
   })
 }) 

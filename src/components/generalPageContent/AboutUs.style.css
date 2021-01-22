@@ -17,6 +17,7 @@
   width: 100vw;
   background-color: rgb(200, 218, 204);
 }
+
 #aboutUsSegmentInfo {
   padding: 0;
   width: 90vw;
@@ -103,7 +104,7 @@
   background-color: white;
 }
 
-#aboutUsBottomBanner {
+#aboutUsBottomBanner{
   text-align: center;
   padding: 10vh;
   width: 100vw;
