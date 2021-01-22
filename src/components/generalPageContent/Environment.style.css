@@ -32,3 +32,34 @@
   color: #fe8733;
   font-weight: bold;
  }
+
+ #environmentCategory{
+  font-size: 2.5vh;
+  font-family: "Poppins", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95vw;
+  height: 90vh;
+  padding: 10vh;
+ }
+
+ .titleEnvironmentBenefit{
+  font-size: 5vh;
+  font-weight: 600;
+  color: #0d0e0b;
+ }
+
+ .mainEnvironmentContent{
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  font-size: 2.5vh;
+ }
+
+ .environmentParallax{
+  background-image: url("/images/parallaxFinal.png");
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #0d0e0b;
+ }
