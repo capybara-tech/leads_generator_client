@@ -26,7 +26,7 @@ const AboutUs = () => {
           <p>
             Its simple, we promote the benefits of solar(hopefully winning you
             over!), you complete our online quote request and receive three
-            quotes. Your solar quest then begins
+            quotes. Your solar quest then begins.
           </p>
         </div>
         <Segment id="aboutUsSegmentInfo">
