@@ -29,19 +29,19 @@ const AboutUs = () => {
             quotes. Your solar quest then begins.
           </p>
         </div>
-        <Segment id="aboutUsSegmentInfo">
+        <Segment raised id="aboutUsSegmentInfo">
           <Grid>
             <Grid.Row columns={2}>
               <Grid.Column id="ourCharitys">
                 <Reveal animated="fade">
                   <Reveal.Content visible>
                     <div id="ourCharitysVisible">
-                      <p>- Our charities -</p>
+                      <p className="infoSegmentTitle">- Our charities -</p>
                     </div>
                   </Reveal.Content>
                   <Reveal.Content hidden>
                     <div id="ourCharitysHidden">
-                      <p>
+                      <p className="infoSegmentParagraph">
                         We love our planet so much as such we donate a massive
                         15% of our net profits to other green initiatives.
                         <br />
@@ -57,13 +57,13 @@ const AboutUs = () => {
                 <Reveal animated="fade">
                   <Reveal.Content visible>
                     <div id="ourVisionVisible">
-                      <p>- Our mission -</p>
+                      <p className="infoSegmentTitle">- Our mission -</p>
                     </div>
                   </Reveal.Content>
                   <Reveal.Content hidden>
                     <div id="ourVisionHidden">
                       {" "}
-                      <p>
+                      <p className="infoSegmentParagraph">
                         Petrol and diesel car sales are banned from 2030, solar
                         power gets no real airtime. We are here to change that
                         where people live more informed and more creative lives.
@@ -164,7 +164,7 @@ const AboutUs = () => {
           <p id="ourAmbitionTitle">- Our ambition -</p>
         </div>
       </div>
-      <Segment id="ourAimsSegment">
+      <Segment raised id="ourAimsSegment">
         <Grid id="ourAimsGrid">
           <Grid.Row columns={5}>
             <Grid.Column>
