@@ -7,13 +7,13 @@ describe("Visitor can navigate app from help category title on the footer", () =
     cy.get("[data-cy=footer]").within(() => {
       cy.get("[data-cy=button]").contains("Contact us").click();
     });
-    cy.get("[data-cy=title]").should("contain", "Contact the SOLSPANA team");
+    cy.get("[data-cy=title]").should("contain", "Contact the WATTSWHAT team");
     cy.get("[data-cy=title]")
       .contains("How solar works?")
       .should("not.be.visible");
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("The SolSpana way")
+      .contains("The WATTSWHAT way")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("How does this have an impact on the planet")
@@ -22,7 +22,7 @@ describe("Visitor can navigate app from help category title on the footer", () =
       .contains("Figures which won't disappoint")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("Join #TEAMSOLSPANA")
+      .contains("Join #TEAMWATTSWHAT")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("My name's Felix, what's yours?")
@@ -47,7 +47,7 @@ describe("Visitor can navigate app from help category title on the footer", () =
       .should("not.be.visible");
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("The SolSpana way")
+      .contains("The WATTSWHAT way")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("How does this have an impact on the planet")
@@ -56,7 +56,7 @@ describe("Visitor can navigate app from help category title on the footer", () =
       .contains("Figures which won't disappoint")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("Join #TEAMSOLSPANA")
+      .contains("Join #TEAMWATTSWHAT")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("My name's Felix, what's yours?")
@@ -68,6 +68,6 @@ describe("Visitor can navigate app from help category title on the footer", () =
       .contains("Privacy policy")
       .should("not.be.visible");
     cy.get("[data-cy=title]").contains("Cookies").should("not.be.visible");
-    cy.get("[data-cy=title]").contains("Contact the SOLSPANA team").should("not.be.visible");
+    cy.get("[data-cy=title]").contains("Contact the WATTSWHAT team").should("not.be.visible");
   });
 });

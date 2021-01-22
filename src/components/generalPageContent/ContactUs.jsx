@@ -9,7 +9,7 @@ const ContactUs = () => {
 
   return (
     <div id="contactUsContent">
-      <h1 data-cy="title" id="title">Contact the SOLSPANA team</h1>
+      <h1 data-cy="title" id="title">Contact the WATTSWHAT team</h1>
       <h3 id= "subTitle">The quickest way to to get in touch is to start a <span id="liveChat">live chat</span><Icon name="rocketchat" />, alternatively:</h3>
       <h2 className="contactTitle">Email</h2>
       <p className="contactContent">capybara.it@gmail.com</p>

@@ -13,12 +13,12 @@ describe("Visitor can navigate app from benefits category title on the footer", 
     );
     cy.get("[data-cy=title]").contains("How does solar work?").should("not.be.visible");
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
-    cy.get("[data-cy=title]").contains("The SolSpana way").should("not.be.visible");
+    cy.get("[data-cy=title]").contains("The WATTSWHAT way").should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("How does this have an impact on your wallet")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("Join #TEAMSOLSPANA")
+      .contains("Join #WATTSWHAT")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("My name's Felix, what's yours?")
@@ -30,7 +30,7 @@ describe("Visitor can navigate app from benefits category title on the footer", 
       .contains("Privacy policy")
       .should("not.be.visible");
     cy.get("[data-cy=title]").contains("Cookies").should("not.be.visible");
-    cy.get("[data-cy=title]").contains("Contact the SOLSPANA team").should("not.be.visible");
+    cy.get("[data-cy=title]").contains("Contact the WATTSWHAT team").should("not.be.visible");
     cy.get("[data-cy=title]").contains("FAQs").should("not.be.visible");
   });
 
@@ -40,7 +40,7 @@ describe("Visitor can navigate app from benefits category title on the footer", 
     });
     cy.get("[data-cy=title]").should(
       "contain",
-      "How does this have an impact on your wallet"
+      "Figures which won't disappoint"
     );
     cy.get("[data-cy=title]").contains("How does solar work?").should("not.be.visible");
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
