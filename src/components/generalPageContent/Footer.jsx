@@ -58,7 +58,7 @@ const Footer = (props) => {
                 as={Link}
                 to={{ pathname: "/howitworks" }}
               >
-                How SOLSPANA works
+                How WATTSWHAT works
               </Link>{" "}
               <br />
               <Link
@@ -67,7 +67,7 @@ const Footer = (props) => {
                 as={Link}
                 to={{ pathname: "/partner" }}
               >
-                Join #TEAMSOLSPANA
+                Join #TEAMWATTSWATT
               </Link>{" "}
               <br />
               <Link

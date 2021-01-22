@@ -11,7 +11,7 @@ const BecomeAPartner = () => {
     <>
       <div id="becomeAPartnerContent">
         <h1 id="title" data-cy="title">
-          Join #TEAMSOLSPANA
+          Join #TEAMWATTSWHAT
         </h1>
         <p id="subTitle">
           Get a <span id="highlightedWord">steady flow of jobs*</span>, reduce
