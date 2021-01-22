@@ -1,11 +1,21 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./AboutUs.style.css";
-import { Segment, Reveal, Image, Grid, Icon, Popup } from "semantic-ui-react";
-const AboutUs = () => {
+import {
+  Segment,
+  Reveal,
+  Image,
+  Grid,
+  Icon,
+  Popup,
+  Button,
+} from "semantic-ui-react";
 
-    useEffect(() => {
-      window.scrollTo(0, 0)
-    }, [])
+const AboutUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <div id="aboutUsContent">
@@ -16,22 +26,22 @@ const AboutUs = () => {
           <p>
             Its simple, we promote the benefits of solar(hopefully winning you
             over!), you complete our online quote request and receive three
-            quotes. Your solar quest then begins
+            quotes. Your solar quest then begins.
           </p>
         </div>
-        <Segment id="aboutUsSegmentInfo">
+        <Segment raised id="aboutUsSegmentInfo">
           <Grid>
             <Grid.Row columns={2}>
               <Grid.Column id="ourCharitys">
                 <Reveal animated="fade">
                   <Reveal.Content visible>
                     <div id="ourCharitysVisible">
-                      <p>- Our charities -</p>
+                      <p className="infoSegmentTitle">- Our charities -</p>
                     </div>
                   </Reveal.Content>
                   <Reveal.Content hidden>
                     <div id="ourCharitysHidden">
-                      <p>
+                      <p className="infoSegmentParagraph">
                         We love our planet so much as such we donate a massive
                         15% of our net profits to other green initiatives.
                         <br />
@@ -43,18 +53,17 @@ const AboutUs = () => {
                   </Reveal.Content>
                 </Reveal>
               </Grid.Column>
-
               <Grid.Column id="ourVision">
                 <Reveal animated="fade">
                   <Reveal.Content visible>
                     <div id="ourVisionVisible">
-                      <p>- Our mission -</p>
+                      <p className="infoSegmentTitle">- Our mission -</p>
                     </div>
                   </Reveal.Content>
                   <Reveal.Content hidden>
                     <div id="ourVisionHidden">
                       {" "}
-                      <p>
+                      <p className="infoSegmentParagraph">
                         Petrol and diesel car sales are banned from 2030, solar
                         power gets no real airtime. We are here to change that
                         where people live more informed and more creative lives.
@@ -66,7 +75,6 @@ const AboutUs = () => {
             </Grid.Row>
           </Grid>
         </Segment>
-
         <div id="aboutUsBottomBanner">
           <p id="meetTheTeamTitle">- Meet the team -</p>
           <Grid id="meetTheTeam">
@@ -156,7 +164,7 @@ const AboutUs = () => {
           <p id="ourAmbitionTitle">- Our ambition -</p>
         </div>
       </div>
-      <Segment id="ourAimsSegment">
+      <Segment raised id="ourAimsSegment">
         <Grid id="ourAimsGrid">
           <Grid.Row columns={5}>
             <Grid.Column>
@@ -205,6 +213,14 @@ const AboutUs = () => {
                 Transparency, honesty and dedication to our customers are a
                 given
               </p>
+              <Button
+                data-cy="button"
+                as={Link}
+                to={{ pathname: "/quotes" }}
+                id="quoteButton"
+              >
+                Feeling inspired? Click to obtain quotes
+              </Button>
             </Grid.Column>
           </Grid.Row>
         </Grid>

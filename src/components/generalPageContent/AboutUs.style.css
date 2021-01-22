@@ -1,8 +1,10 @@
-#aboutUsContent{
+#aboutUsContent {
   font-family: "Poppins", sans-serif;
+  color: #0d0e0b;
+  background-color: #fffff4;
 }
 
-#aboutUsTitle{
+#aboutUsTitle {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 9vh;
@@ -10,157 +12,178 @@
 
 #aboutUsBanner {
   font-family: "Poppins", sans-serif;
-  padding:5vw;
+  padding: 5vw;
   font-size: 3vh;
   padding-top: 20vh;
   height: 90vh;
   width: 100vw;
-  background-color: rgb(200, 218, 204);
+  background-color: #c8dacc;
 }
 
 #aboutUsSegmentInfo {
   padding: 0;
-  width:90vw;
+  width: 90vw;
   top: 5vh;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9;
+  background-color: #fffff4;
 }
 
-#ourAimsSegment{
+.infoSegmentTitle {
   position: absolute;
-  width:90vw;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Poppins", sans-serif;
+  font-size: 5vh;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.infoSegmentParagraph {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Poppins", sans-serif;
+}
+
+#ourCharitysVisible {
+  height: 50vh;
+  width: 40vw;
+  background-color: #fffff4;
+}
+
+#ourCharitysHidden {
+  height: 50vh;
+  width: 40vw;
+  background-color: #fffff4;
+}
+
+#ourVisionVisible {
+  height: 50vh;
+  width: 40vw;
+  background-color: #fffff4;
+}
+
+#ourVisionHidden {
+  height: 50vh;
+  width: 40vw;
+  background-color: #fffff4;
+}
+
+#ourAimsSegment {
+  position: absolute;
+  width: 90vw;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9;
 }
 
-#middleSegment{
-  height:60vh;
+#middleSegment {
+  height: 60vh;
 }
 
-#ourAmbitionTitle{
-  padding-top:5vh;
+#ourAmbitionTitle {
+  padding-top: 5vh;
   font-family: "Poppins", sans-serif;
   font-size: 5vh;
   text-align: center;
 }
 
-#ourCharitysVisible {
+#meetTheTeamTitle {
   font-family: "Poppins", sans-serif;
   font-size: 5vh;
-  height: 50vh;
-  width:40vw;
-  padding: 20vh;
-  text-align: center;
-  background-color: white;
+  padding-bottom: 20vh;
 }
 
-.teamMemberTitles{
+#meetTheTeam {
+  left: 50%;
+  padding-bottom: 30vh;
+}
+
+.teamMemberTitles {
   font-family: "Poppins", sans-serif;
 }
 
-.teamMemberName{
+.teamMemberName {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 3vh;
 }
 
-#ceoMessageTitle{
+#ceoMessageTitle {
   font-family: "Poppins", sans-serif;
   font-size: 5vh;
 }
 
-#ceoMessage{
+#ceoMessage {
   font-family: "Poppins", sans-serif;
   font-size: 3vh;
 }
 
-#ourCharitysHidden {
+#aboutUsBottomBanner {
+  text-align: center;
+  padding: 10vh;
+  width: 100vw;
+  background-color: #0d0e0b;
+  color: #fffff4;
+}
+
+#ourAimsGrid {
   font-family: "Poppins", sans-serif;
-  height: 50vh;
-  width:40vw;
-  padding: 15vh;
+  padding-top: 30vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-bottom: 20vh;
   text-align: center;
-  background-color: white;
+  background-color: #fffff4;
 }
 
-#ourVisionVisible {
-  font-family: "Poppins", sans-serif;
-  font-size: 5vh;
-  height: 50vh;
-  width:40vw;
-  padding: 20vh;
+#ourAimsConclusion {
+  height: 80vh;
   text-align: center;
-  background-color: white;
-}
-
-#ourVisionHidden {
-  font-family: "Poppins", sans-serif;
-  height: 50vh;
-  width:40vw;
-  padding: 15vh;
-  text-align: center;
-  background-color: white;
-}
-
-#aboutUsBottomBanner{
-  text-align: center;
-  padding:10vh;
-  width:100vw;
-  background-color: lightgray;
-}
-
-#meetTheTeam{
-  left:50%;
-  padding-bottom:30vh;
-}
-
-#meetTheTeamTitle{
+  padding: 10vh;
   font-family: "Poppins", sans-serif;
   font-size: 5vh;
-  padding-bottom:20vh;
+  padding-bottom: 20vh;
+  background-color: #c8dacc;
 }
 
-#ourAimsGrid{
-  font-family: "Poppins", sans-serif;
-  padding-top:30vh;
-  padding-left:5vw;
-  padding-right:5vw;
-  padding-bottom:20vh;
+#conclusionOfOurAims {
+  font-family: "Give You Glory";
+  font-size: 4vh;
+  padding-top: 40vh;
   text-align: center;
 }
 
-#ourAimsConclusion{
-  height:80vh;
-  text-align: center;
-  padding:10vh;
-  font-family: "Poppins", sans-serif;
-  font-size: 5vh;
-  padding-bottom:20vh;
-  background-color: rgb(200, 218, 204);
+#recycle {
+  color: #c1df9c;
 }
 
-#conclusionOfOurAims{
-  padding-top:50vh;
+#handshake {
+  color: #006996;
 }
 
-#recycle{
-  color:#c1df9c;
+#money {
+  color: #85bb65;
 }
 
-#handshake{
-color: #006996;
+#like {
+  color: #9b111e;
 }
 
-#money{
-  color:#85bb65;
-}
-
-#like{
-  color:#9b111e;
-}
-
-#winner{
+#winner {
   color: #d4af37;
+}
+
+#quoteButton {
+  font-size: 4vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background-color: transparent;
+  border-style: solid;
+  color: #fe8733cb;
+  border-radius: 10px;
 }

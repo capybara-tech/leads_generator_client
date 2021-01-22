@@ -33,7 +33,7 @@ const BannerLandingPage = () => {
               <br />
               grönare med solceller <br />
               <mark id="subInfoTxt">
-                Jämför upp till tre olika offerter
+               Obtain 3 quotes now
                 <Menu.Item
                   id="angleDownIcon"
                   icon={{ name: "angle down" }}
@@ -45,18 +45,16 @@ const BannerLandingPage = () => {
             <div>
               <CountUp
                 start={0}
-                end={165}
+                end={15}
                 delay={0}
                 duration={4}
-                suffix={" Kr"}
-                decimals={3}
-                decimal="."
+                suffix={"%"}
               >
                 {({ countUpRef }) => (
                   <p id="bannerTxt">
-                    We will donate <span className="numbers" ref={countUpRef} />
+                    We donate <span className="numbers" ref={countUpRef} /> of our profits
                     <br />
-                    to help save the planet
+                    to other green initiaves
                   </p>
                 )}
               </CountUp>

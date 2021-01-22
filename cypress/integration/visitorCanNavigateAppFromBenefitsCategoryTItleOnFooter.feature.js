@@ -1,62 +1,24 @@
-describe("Visitor can navigate app from help category title on the footer", () => {
+describe("Visitor can navigate app from benefits category title on the footer", () => {
   beforeEach(() => {
     cy.visit("/");
   });
 
-  it("to Contact us", () => {
+  it("to Ecofriendly", () => {
     cy.get("[data-cy=footer]").within(() => {
-      cy.get("[data-cy=button]").contains("Contact us").click();
+      cy.get("[data-cy=button]").contains("Ecofriendly").click();
     });
-    cy.get("[data-cy=title]").should("contain", "Contact the WATTSWHAT team");
-    cy.get("[data-cy=title]")
-      .contains("How solar works?")
-      .should("not.be.visible");
+    cy.get("[data-cy=title]").should(
+      "contain",
+      "How does this have an impact on the planet"
+    );
+    cy.get("[data-cy=title]").contains("How does solar work?").should("not.be.visible");
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
+    cy.get("[data-cy=title]").contains("The WATTSWHAT way").should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("The WATTSWHAT way")
+      .contains("How does this have an impact on your wallet")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("How does this have an impact on the planet")
-      .should("not.be.visible");
-    cy.get("[data-cy=title]")
-      .contains("Figures which won't disappoint")
-      .should("not.be.visible");
-    cy.get("[data-cy=title]")
-      .contains("Join #TEAMWATTSWHAT")
-      .should("not.be.visible");
-    cy.get("[data-cy=title]")
-      .contains("My name's Felix, what's yours?")
-      .should("not.be.visible");
-    cy.get("[data-cy=title]")
-      .contains("Terms and conditions")
-      .should("not.be.visible");
-    cy.get("[data-cy=title]")
-      .contains("Privacy policy")
-      .should("not.be.visible");
-    cy.get("[data-cy=title]").contains("Cookies").should("not.be.visible");
-    cy.get("[data-cy=title]").contains("FAQs").should("not.be.visible");
-  });
-
-  it("to FAQs", () => {
-    cy.get("[data-cy=footer]").within(() => {
-      cy.get("[data-cy=button]").contains("FAQs").click();
-    });
-    cy.get("[data-cy=title]").should("contain", "Frequently asked questions");
-    cy.get("[data-cy=title]")
-      .contains("How solar works?")
-      .should("not.be.visible");
-    cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
-    cy.get("[data-cy=title]")
-      .contains("The WATTSWHAT way")
-      .should("not.be.visible");
-    cy.get("[data-cy=title]")
-      .contains("How does this have an impact on the planet")
-      .should("not.be.visible");
-    cy.get("[data-cy=title]")
-      .contains("Figures which won't disappoint")
-      .should("not.be.visible");
-    cy.get("[data-cy=title]")
-      .contains("Join #TEAMWATTSWHAT")
+      .contains("Join #WATTSWHAT")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("My name's Felix, what's yours?")
@@ -69,5 +31,37 @@ describe("Visitor can navigate app from help category title on the footer", () =
       .should("not.be.visible");
     cy.get("[data-cy=title]").contains("Cookies").should("not.be.visible");
     cy.get("[data-cy=title]").contains("Contact the WATTSWHAT team").should("not.be.visible");
+    cy.get("[data-cy=title]").contains("FAQs").should("not.be.visible");
   });
-});
+
+  it("to Profit-oriented", () => {
+    cy.get("[data-cy=footer]").within(() => {
+      cy.get("[data-cy=button]").contains("Profit-oriented").click();
+    });
+    cy.get("[data-cy=title]").should(
+      "contain",
+      "Figures which won't disappoint"
+    );
+    cy.get("[data-cy=title]").contains("How does solar work?").should("not.be.visible");
+    cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
+    cy.get("[data-cy=title]").contains("The SolSpana way").should("not.be.visible");
+    cy.get("[data-cy=title]")
+      .contains("How does this have an impact on the planet")
+      .should("not.be.visible");
+    cy.get("[data-cy=title]")
+      .contains("Join #TEAMSOLSPANA")
+      .should("not.be.visible");
+    cy.get("[data-cy=title]")
+      .contains("My name's Felix, what's yours?")
+      .should("not.be.visible");
+    cy.get("[data-cy=title]")
+      .contains("Terms and conditions")
+      .should("not.be.visible");
+    cy.get("[data-cy=title]")
+      .contains("Privacy policy")
+      .should("not.be.visible");
+    cy.get("[data-cy=title]").contains("Cookies").should("not.be.visible");
+    cy.get("[data-cy=title]").contains("Contact the SOLSPANA team").should("not.be.visible");
+    cy.get("[data-cy=title]").contains("FAQs").should("not.be.visible");
+  });
+})

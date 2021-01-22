@@ -32,10 +32,10 @@
         "advantage1": "Lower energy bills and sell excess electricity to the National Grid",
         "advantage2": "Government grants and financial support are up for grabs",
         "advantage3": "Increases the value of your property",
-        "advantage4": "An impressive return on investment (ROI) and solar panel prices have fallen by around 70% since 2010, quite a bargain now! "
+        "advantage4": "An impressive return on investment (ROI) and solar panel prices have fallen by around 70% since 2010, quite a bargain now!"
       },
       "howSolarWorks": {
-        "title": "How do solar panels work?",
+        "title": "How solar panels work",
         "step1": "Daylight (not only sunlight is required!) hits the solar photovoltaic cells in the panels",
         "step2": "Direct current (DC) electricity is produced",
         "step3": "With a bit of magic, an inverter converts DC electricity to alternating current electricity (AC)",
@@ -153,7 +153,7 @@
     },
     "aboutUsPage": {
       "opening": "Connecting property owners with local vetted, and of course, certified solar panel installers",
-      "openingSub": "Its simple, we promote the benefits of solar(hopefully winning you over!), you complete our online quote request and receive three quotes. Your solar quest then begins",
+      "openingSub": "Its simple, we promote the benefits of solar(hopefully winning you over!), you complete our online quote request and receive three quotes. Your solar quest then begins.",
       "benefits": {
         "benefits1": "Fitting solar panels is no sweat. Our professionals will deal with everything and are helpful people to talk to. After a decision to proceed(which we appreciate is not simple!), sit back and let them do the hard work",
         "benefits2": "Sleep well. Dramatically lower your carbon footprint overnight and wreak financial benefits (lower energy bills, government grants and a steady longterm investment as the panels pay for themselves, increased property prices and get a saving rate substantially higher than any bank)",
