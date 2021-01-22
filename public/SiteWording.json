@@ -47,13 +47,13 @@
       }
     },
     "impactEnvironmentPage": {
-      "opening": "Help save our bruised planet - install solar",
-      "openingSub": "...one of the most effective ways to reduce your mucky emissions",
+      "opening": "Help save our bruised planet install solar",
+      "openingSub": "...one of the most effective ways to reduce your mucky emissions.",
       "benfits": {
-        "benefits1": "Harvest infinite, truly clean (and free!) energy from the sun",
-        "benefits2": "Dramatically reduce your property's thirst for fossil fuels, burnt to produce electricity",
-        "benefits3": "Solar panels have no emissions and therefore zero climate impact once installed",
-        "benefits4": "Shrink you carbon footprint drastically overnight"
+        "benefits1": "Harvest infinite and clean energy from the sun",
+        "benefits2": "Reduce your property's thirst for fossil fuels",
+        "benefits3": "Zero climate impact once installed",
+        "benefits4": "Shrink you carbon footprint overnight"
       },
       "flashMessage": {
         "content": "Petrol and diesel car sales are banned from 2030, solar power gets no real airtime. We are here to change that where people live more informed and more creative lives."

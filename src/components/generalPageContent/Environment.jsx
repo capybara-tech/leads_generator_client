@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import "./Environment.style.css"
+import TextLoop from "react-text-loop";
+import "./Environment.style.css";
 
 const Environment = () => {
   useEffect(() => {
@@ -7,9 +8,38 @@ const Environment = () => {
   }, []);
 
   return (
-    <div id="environmentContent" >
-      <h1 data-cy="title">How does this have an impact on the planet</h1>
-      <h3>Site currently under construction...</h3>
+    <div id="environmentContent">
+      <div id="environmentBanner">
+        <p data-cy="title" id="environmentTitle">
+          Help save our bruised planet <br />
+          <span id="titleEnvironmentEmphasis">install solar </span>
+        </p>
+        <p id="environmentSubHeader">
+          ...one of the most effective ways to reduce your mucky emissions.
+        </p>
+        <TextLoop interval={1750}>
+          <div>
+            <p className="environmentalBenefits">
+              Harvest infinite and clean energy from the sun
+            </p>
+          </div>
+          <div>
+            <p className="environmentalBenefits">
+              Reduce your property's thirst for fossil fuels
+            </p>
+          </div>
+          <div>
+            <p className="environmentalBenefits">
+              Zero climate impact once installed
+            </p>
+          </div>
+          <div>
+            <p className="environmentalBenefits">
+              Shrink you carbon footprint overnight
+            </p>
+          </div>
+        </TextLoop>
+      </div>
     </div>
   );
 };
