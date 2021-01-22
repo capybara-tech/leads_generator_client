@@ -63,3 +63,41 @@
   background-repeat: no-repeat;
   background-color: #0d0e0b;
  }
+
+ #co2Comparsion {
+  margin-bottom: -15%;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95vw;
+  z-index: 9;
+  background-color: #fffff4;
+ }
+
+ #environmentBottomBanner {
+  height: 80vh;
+  text-align: center;
+  padding: 10vh;
+  font-family: "Poppins", sans-serif;
+  font-size: 5vh;
+  padding-bottom: 20vh;
+  background-color: #c8dacc;
+ }
+
+ #environmentConclusion {
+  font-family: "Give You Glory";
+  font-size: 4vh;
+  padding-top: 40vh;
+  text-align: center;
+ }
+
+ #environmentQuoteButton {
+  font-size: 4vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background-color: transparent;
+  border-style: solid;
+  color: #fe8733cb;
+  border-radius: 10px;
+ }

@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import TextLoop from "react-text-loop";
+import { Link } from "react-router-dom";
 import "./Environment.style.css";
-import { Grid, Image } from "semantic-ui-react";
+import { Grid, Image, Segment, Button } from "semantic-ui-react";
 
 const Environment = () => {
   useEffect(() => {
@@ -126,6 +127,26 @@ const Environment = () => {
           </Grid.Column>
         </Grid.Row>
       </Grid>
+      <Segment raised id="co2Comparsion"></Segment>
+      <div id="environmentBottomBanner">
+        <Grid>
+          <Grid.Row columns={1}>
+            <Grid.Column>
+              <p id="environmentConclusion">
+              Solar - the right choice to live 'greener' and protect the future of our planet.
+              </p>
+              <Button
+                data-cy="button"
+                as={Link}
+                to={{ pathname: "/quotes" }}
+                id="environmentQuoteButton"
+              >
+                Click to obtain 3 quotes
+              </Button>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+      </div>
     </div>
   );
 };
