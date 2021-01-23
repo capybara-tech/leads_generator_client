@@ -11,7 +11,7 @@ describe("Visitor can navigate app from discover category title on the footer", 
     cy.get("[data-cy=title]").contains("How does solar work?").should("not.be.visible");
     cy.get("[data-cy=title]").contains("The WATTSWHAT way").should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("How does this have an impact on the planet")
+      .contains("Help save our bruised planet install solar")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("Figures which won't disappoint")
@@ -41,7 +41,7 @@ describe("Visitor can navigate app from discover category title on the footer", 
     cy.get("[data-cy=title]").contains("How does solar work?").should("not.be.visible");
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("How does this have an impact on the planet")
+      .contains("Help save our bruised planet install solar")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("Figures which won't disappoint")
@@ -63,13 +63,13 @@ describe("Visitor can navigate app from discover category title on the footer", 
     cy.get("[data-cy=title]").contains("FAQs").should("not.be.visible");
   });
 
-  it("to How does this have an impact on the planet", () => {
+  it("to Help save our bruised planet install solar", () => {
     cy.get("[data-cy=footer]").within(() => {
       cy.get("[data-cy=button]").contains("Ecofriendly").click();
     });
     cy.get("[data-cy=title]").should(
       "contain",
-      "How does this have an impact on the planet"
+      "Help save our bruised planet install solar"
     );
     cy.get("[data-cy=title]").contains("How does solar work?").should("not.be.visible");
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
@@ -94,7 +94,7 @@ describe("Visitor can navigate app from discover category title on the footer", 
     cy.get("[data-cy=title]").contains("FAQs").should("not.be.visible");
   });
 
-  it("to How does this have an impact on your wallet", () => {
+  it("to Figures which won't disappoint", () => {
     cy.get("[data-cy=footer]").within(() => {
       cy.get("[data-cy=button]").contains("Profit-oriented").click();
     });
@@ -106,7 +106,7 @@ describe("Visitor can navigate app from discover category title on the footer", 
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
     cy.get("[data-cy=title]").contains("The WATTSWHAT way").should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("How does this have an impact on the planet")
+      .contains("Help save our bruised planet install solar")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("Join #TEAMWATTSWHAT")
@@ -134,7 +134,7 @@ describe("Visitor can navigate app from discover category title on the footer", 
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
     cy.get("[data-cy=title]").contains("The WATTSWHAT way").should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("How does this have an impact on the planet")
+      .contains("Help save our bruised planet install solar")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("Figures which won't disappoint")
@@ -165,7 +165,7 @@ describe("Visitor can navigate app from discover category title on the footer", 
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
     cy.get("[data-cy=title]").contains("The WATTSWHAT way").should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("How does this have an impact on the planet")
+      .contains("Help save our bruised planet install solar")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("Figures which won't disappoint")

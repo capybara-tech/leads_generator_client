@@ -17,7 +17,7 @@ describe("Visitor can navigate app from landing information grid", () => {
     cy.get("#planetDiv").click();
     cy.get("[data-cy=title]").should(
       "contain",
-      "How does this have an impact on the planet"
+      "Help save our bruised planet install solar"
     );
     cy.get("#quotesDiv").should("not.exist");
     cy.get("#walletDiv").should("not.exist");
