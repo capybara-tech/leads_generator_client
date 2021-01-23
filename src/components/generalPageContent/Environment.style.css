@@ -1,39 +1,39 @@
 #environmentContent {
-    background-color: #fffff4;
-  }
+  background-color: #fffff4;
+}
 
- #environmentBanner {
+#environmentBanner {
   font-family: "Poppins", sans-serif;
   padding: 5vw;
   font-size: 3vh;
   padding-top: 20vh;
-  height: 85vh;
+  height: 90vh;
   width: 100vw;
   background-color: #0d0e0b;
- }
+}
 
- #environmentTitle {
+#environmentTitle {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 9vh;
   color: #fffff4;
- }
+}
 
- #titleEnvironmentEmphasis {
+#titleEnvironmentEmphasis {
   font-weight: 600;
   text-decoration: underline;
- }
+}
 
- #environmentSubHeader {
+#environmentSubHeader {
   color: #fffff4;
- }
+}
 
- .environmentalBenefits {
+.environmentalBenefits {
   color: #fe8733;
   font-weight: bold;
- }
+}
 
- #environmentCategory{
+#environmentCategory {
   font-size: 2.5vh;
   font-family: "Poppins", sans-serif;
   margin-left: auto;
@@ -41,30 +41,35 @@
   width: 95vw;
   height: 90vh;
   padding: 10vh;
- }
+}
 
- .titleEnvironmentBenefit{
+.titleEnvironmentBenefit {
   font-size: 5vh;
   font-weight: 600;
   color: #0d0e0b;
- }
+}
 
- .mainEnvironmentContent{
+.mainEnvironmentContent {
   font-family: "Poppins", sans-serif;
   text-align: justify;
   font-size: 2.5vh;
- }
+}
 
- .environmentParallax{
+#environmentCondition {
+  font-family: "Poppins", sans-serif;
+  font-size: 1vh;
+}
+
+.environmentParallax {
   background-image: url("/images/parallaxFinal.png");
   height: 300px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #0d0e0b;
- }
+}
 
- #co2Comparsion {
+#co2Comparsion {
   margin-bottom: -15%;
   padding-top: 20vh;
   padding-bottom: 20vh;
@@ -73,26 +78,22 @@
   width: 95vw;
   z-index: 9;
   background-color: #fffff4;
- }
+}
 
- #environmentBottomBanner {
-  height: 80vh;
-  text-align: center;
-  padding: 10vh;
-  font-family: "Poppins", sans-serif;
-  font-size: 5vh;
-  padding-bottom: 20vh;
+#environmentBottomBanner {
+  height: 60vh;
   background-color: #c8dacc;
- }
+  text-align: center;
+}
 
- #environmentConclusion {
+#environmentConclusion {
   font-family: "Give You Glory";
   font-size: 4vh;
-  padding-top: 40vh;
+  padding-top: 35vh;
   text-align: center;
- }
+}
 
- #environmentQuoteButton {
+#environmentQuoteButton {
   font-size: 4vh;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -100,4 +101,9 @@
   border-style: solid;
   color: #fe8733cb;
   border-radius: 10px;
- }
+}
+
+.environmentHighlightedWord {
+  color: #fe8733;
+  font-weight: bold;
+}

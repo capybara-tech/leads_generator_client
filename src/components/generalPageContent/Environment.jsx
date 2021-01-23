@@ -17,7 +17,9 @@ const Environment = () => {
           <span id="titleEnvironmentEmphasis">install solar </span>
         </p>
         <p id="environmentSubHeader">
-          ...one of the most effective ways to reduce your mucky emissions.
+          ...one of the most effective ways to reduce your mucky emissions💪.
+          Sleep easy knowing you are making a genuine difference🎯 to the
+          environment.
         </p>
         <TextLoop interval={1750}>
           <div>
@@ -37,7 +39,7 @@ const Environment = () => {
           </div>
           <div>
             <p className="environmentalBenefits">
-              Shrink you carbon footprint overnight
+              Shrink your carbon footprint overnight
             </p>
           </div>
         </TextLoop>
@@ -49,8 +51,11 @@ const Environment = () => {
               Solar panels shrink your carbon dixiode(CO2) emissions
             </p>
             <p className="mainEnvironmentContent">
-              By around 20%, a staggering 1.5 - 2 tonnes of CO2 a year. These
-              numbers speak for themselves.
+              By 20%, a staggering{" "}
+              <span className="environmentHighlightedWord">
+                1.5 - 2 tonnes of CO2 a year.
+              </span>{" "}
+              These numbers speak for themselves!
             </p>
           </Grid.Column>
           <Grid.Column>
@@ -66,17 +71,29 @@ const Environment = () => {
               Fossil fuels are a menace to our environment
             </p>
             <p className="mainEnvironmentContent">
-              An astonishing 50%* of UK electricity is produced from fossil
-              fuels. Coal, oil and gas set ablaze to feed the grid and keep the
-              lights on. Burning of these fossil fuels is the largest source of
-              emissions of CO2 by humans, contributing to global warming. A
-              worldwide emergency raising temperatures resulting in more
+              An astonishing{" "}
+              <span className="environmentHighlightedWord">
+                50%* of UK electricity is produced from fossil fuels.
+              </span>{" "}
+              Coal, oil and gas set ablaze to feed the grid and keep the lights
+              on.{" "}
+              <span className="environmentHighlightedWord">
+                Burning these fossil fuels is the largest source of emissions of
+                CO2 by humans
+              </span>
+              , contributing to global warming.{" "}
+            </p>
+            <p className="mainEnvironmentContent">
+              A worldwide emergency raising temperatures resulting in more
               droughts, increased fire threats, heat waves, water shortages and
               storm damage. Rising and warmer oceans and melting ice, harming
               sensitive ecosystems and destroying people's communities and
-              livelihoods...the list goes on! Solar panels reduce your reliance
-              on filthy fossil fuels.
+              livelihoods...the list goes on!
             </p>
+            <p className="mainEnvironmentContent">
+              Solar panels reduce your reliance on filthy fossil fuels.
+            </p>
+            <p id="environmentCondition">*on average</p>
           </Grid.Column>
         </Grid.Row>
         <Grid.Row columns={1}>
@@ -90,15 +107,25 @@ const Environment = () => {
               Independence from the National Grid
             </p>
             <p className="mainEnvironmentContent">
-              Feel comfort in knowing the source of your electricity - clean
-              British daylight. You may be able to achieve total independence
-              from the National Grid(powered by mountainous volumes of fossil
-              fuels to meet the UK's electricity demand). The more electricity
-              your solar panels generate, the less you have to potentially buy
-              from the utility companies. A solar battery should get you through
-              the night and achieve ultimate self-sufficieny! The UK has pledged
-              to cut CO2 emissions by 80% by 2050, installing solar panels
-              verges us closer to the target.
+              Feel comfort in knowing the source of your electricity -{" "}
+              <span className="environmentHighlightedWord">
+                clean British daylight.
+              </span>
+            </p>{" "}
+            <p className="mainEnvironmentContent">
+              You may be able to{" "}
+              <span className="environmentHighlightedWord">
+                achieve total independence from the National Grid
+              </span>
+              (powered by mountainous volumes of fossil fuels to meet the UK's
+              electricity demand). The more electricity your solar panels
+              generate, the less you have to potentially buy from the utility
+              companies. A solar battery should get you through the night and
+              achieve ultimate self-sufficieny!{" "}
+            </p>{" "}
+            <p className="mainEnvironmentContent">
+              The UK has pledged to cut CO2 emissions by 80% by 2050, installing
+              solar panels verges us closer to the target.
             </p>
           </Grid.Column>
           <Grid.Column>
@@ -121,8 +148,10 @@ const Environment = () => {
             </p>
             <p className="mainEnvironmentContent">
               Once installed, they are busy producing clean electricity. With no
-              toxins released into our already suffocated atmosphere, the panels
-              are environmentally friendly.
+              toxins released into our already suffocated atmosphere, the{" "}
+              <span className="environmentHighlightedWord">
+                panels are environmentally friendly.
+              </span>
             </p>
           </Grid.Column>
         </Grid.Row>
@@ -133,7 +162,8 @@ const Environment = () => {
           <Grid.Row columns={1}>
             <Grid.Column>
               <p id="environmentConclusion">
-              Solar - the right choice to live 'greener' and protect the future of our planet.
+                Solar - the right choice to live 'greener' and protect the
+                future of our planet.
               </p>
               <Button
                 data-cy="button"
