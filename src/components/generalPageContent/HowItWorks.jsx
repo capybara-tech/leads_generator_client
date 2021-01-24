@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./HowItWorks.style.css";
-import { Card } from "semantic-ui-react";
+import { Card, Button } from "semantic-ui-react";
 
 const HowItWorks = () => {
   useEffect(() => {
@@ -9,11 +10,11 @@ const HowItWorks = () => {
 
   return (
     <div id="howItWorksContent">
-      <h1 data-cy="title">The WATTSWHAT way</h1>
-      <p>
+      <h1 data-cy="title" id="howItWorksTitle">The WATTSWHAT way</h1>
+      <h3 id="howItWorkssubTitle">
         It's effortless to find MCS certified, vetted and trusted solar
         installers.
-      </p>
+      </h3>
       <div id="howItWorksCards">
         <Card.Group>
           <Card>
@@ -68,8 +69,8 @@ const HowItWorks = () => {
             </Card.Content>
           </Card>
         </Card.Group>
-      </div>
-      <p>Save time, money & hassle with us</p>
+      </div> 
+      <p id="howItWorksconclusion"><br />Save time, money & hassle with us</p>
     </div>
   );
 };
