@@ -9,13 +9,13 @@ describe("Visitor can navigate app from benefits category title on the footer", 
     });
     cy.get("[data-cy=title]").should(
       "contain",
-      "How does this have an impact on the planet"
+      "Help save our bruised planet install solar"
     );
     cy.get("[data-cy=title]").contains("How does solar work?").should("not.be.visible");
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
     cy.get("[data-cy=title]").contains("The WATTSWHAT way").should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("How does this have an impact on your wallet")
+      .contains("Figures which won't disappoint")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("Join #WATTSWHAT")
@@ -44,9 +44,9 @@ describe("Visitor can navigate app from benefits category title on the footer", 
     );
     cy.get("[data-cy=title]").contains("How does solar work?").should("not.be.visible");
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
-    cy.get("[data-cy=title]").contains("The SolSpana way").should("not.be.visible");
+    cy.get("[data-cy=title]").contains("The WATTSWHAT way").should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("How does this have an impact on the planet")
+      .contains("Help save our bruised planet install solar")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("Join #TEAMSOLSPANA")
@@ -61,7 +61,7 @@ describe("Visitor can navigate app from benefits category title on the footer", 
       .contains("Privacy policy")
       .should("not.be.visible");
     cy.get("[data-cy=title]").contains("Cookies").should("not.be.visible");
-    cy.get("[data-cy=title]").contains("Contact the SOLSPANA team").should("not.be.visible");
+    cy.get("[data-cy=title]").contains("Contact the WATTSWHAT team").should("not.be.visible");
     cy.get("[data-cy=title]").contains("FAQs").should("not.be.visible");
   });
 })

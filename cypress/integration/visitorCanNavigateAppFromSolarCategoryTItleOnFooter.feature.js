@@ -11,7 +11,7 @@ describe("Visitor can navigate app from solar category title on the footer", () 
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
     cy.get("[data-cy=title]").contains("The WATTSWHAT way").should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("How does this have an impact on the planet")
+      .contains("Help save our bruised planet install solar")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("Figures which won't disappoint")
