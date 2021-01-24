@@ -2,3 +2,7 @@
   height: 100vh;
   padding-top: 15vh;
 }
+
+#howItWorksCards {
+  display: inline-block;
+}
