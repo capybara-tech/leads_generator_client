@@ -215,14 +215,14 @@
         "step3": "An inverter converts DC electricity to alternating current electricity (AC)",
         "step4": "The electricity can then be used in your property, excess sold to the National Grid or stored"
       },
-      "howSolspanaWorksPage": {
-        "title": "How SOLSPANA's service works",
-        "subTitle": "It's effortless to find MCS certified, vetted and trusted solar installers",
+      "howWattsWhatWorksPage": {
+        "title": "The WATTSWHAT way",
+        "subTitle": "It's effortless to find MCS certified, vetted and trusted solar installers.",
         "process": {
-          "step1Title": "1. Request 3 quotes - no obligation and free!",
+          "step1Title": "Request 3 quotes - no obligation and free!",
           "step1Content": "You will firstly answer a few easy questions about your property. A heads up - give as much detail as possible for a more accurate quote. We will connect you with selected partners across the UK, every job's covered.",
-          "step2Title": "2. Get quotes",
-          "step2Content": "We'll pass your details to 3 installers who will be in touch in lightning speed. There's a lot for our professionals to consider when installing a solar panel system so its likely they will arrange a mutually convenient time to check out your property and to iron out any queries",
+          "step2Title": "Get quotes",
+          "step2Content": "We'll pass your details to 3 installers who will be in touch in lightning speed. There's a lot for our professionals to consider when installing a solar panel system so its likely they will arrange a mutually convenient time to check out your property and to iron out any queries.",
           "step3Title": "3. Choose your MCS professional",
           "step3Content": "Armed with quotes and recommendations you are all set to choose your tradesman. We are against pushy sales practices or hidden costs!",
           "step4Title": "4. Job complete",
