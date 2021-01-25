@@ -20,13 +20,13 @@ const HowItWorks = () => {
         <Card.Group>
           <Card id="card1">
             <Card.Content>
-              <Card.Header id="howItWorksNumber">01</Card.Header>
+              <Card.Header id="howItWorksNumber1">01</Card.Header>
               <br />
-              <Card.Header id="howItWorksCardTitle">
+              <Card.Header id="howItWorksCardTitle1">
                 Request 3 quotes - no obligation and free!
               </Card.Header>{" "}
               <br />
-              <Card.Description id="howItWorksCardContent">
+              <Card.Description id="howItWorksCardContent1">
                 You will firstly answer a few easy questions about your
                 property. A heads up - give as much detail as possible for a
                 more accurate quote. <br /> <br />
@@ -35,23 +35,32 @@ const HowItWorks = () => {
               </Card.Description>
               <Card.Description>
                 <Icon
-                  id="howItWorksArrow"
+                  id="howItWorksArrow1"
                   size="huge"
                   name="arrow circle right"
                 />
               </Card.Description>
             </Card.Content>
           </Card>
-          <Card>
+          <Card id="card2">
             <Card.Content>
-              <Card.Header>Get quotes</Card.Header>
-              <Card.Description>
+            <Card.Header id="howItWorksNumber2">02</Card.Header>
+            <br />
+              <Card.Header id="howItWorksCardTitle2">Get quotes</Card.Header> <br />
+              <Card.Description id="howItWorksCardContent2">
                 We'll pass your details to 3 installers who will be in touch in
                 lightning speed. <br /> <br />
                 There's a lot for our professionals to consider when installing
                 a solar panel system so its likely they will arrange a mutually
                 convenient time to check out your property and to iron out any
                 queries.
+              </Card.Description> <br />
+              <Card.Description>
+                <Icon
+                  id="howItWorksArrow2"
+                  size="huge"
+                  name="arrow circle right"
+                />
               </Card.Description>
             </Card.Content>
           </Card>

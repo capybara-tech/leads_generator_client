@@ -1,6 +1,6 @@
 #howItWorksContent {
   height: 105vh;
-  padding-top: 15vh;
+  padding-top: 12vh;
 }
 
 #howItWorksTitle {
@@ -26,22 +26,47 @@
   background-color: #fe8733;
 }
 
-#howItWorksNumber {
+#howItWorksNumber1 {
   color: #fffff4;
   font-size: 4vw;
 }
 
-#howItWorksCardTitle {
+#howItWorksCardTitle1 {
   font-family: "Poppins", sans-serif;
   color: #fffff4;
 }
 
-#howItWorksCardContent {
+#howItWorksCardContent1 {
   font-family: "Poppins", sans-serif;
   color: #fffff4;
 }
 
-#howItWorksArrow {
+#howItWorksArrow1 {
+  color: #fffff4;
+}
+
+#card2 {
+  margin-left: -1%;
+  border-radius: 10px;
+  background-color: #c8dacc;
+}
+
+#howItWorksNumber2 {
+  color: #fffff4;
+  font-size: 4vw;
+}
+
+#howItWorksCardTitle2 {
+  font-family: "Poppins", sans-serif;
+  color: #fffff4;
+}
+
+#howItWorksCardContent2 {
+  font-family: "Poppins", sans-serif;
+  color: #fffff4;
+}
+
+#howItWorksArrow2 {
   color: #fffff4;
 }
 
