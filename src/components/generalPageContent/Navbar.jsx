@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { Link, withRouter } from "react-router-dom";
+import "./Navbar.style.css";
 import {
   Menu,
   Button,
@@ -30,8 +31,8 @@ const Navbar = (props) => {
     <div>
       {(isDesktopOrLaptop || isTabletOrMobileDevice || isTabletOrMobile) && (
         <>
-          <div>
-            <Menu text color="" id="navbar">
+          <div id="navbar">
+            <Menu text inverted color="">
               <Menu.Item
                 id="logo"
                 alt="capybara-logo"

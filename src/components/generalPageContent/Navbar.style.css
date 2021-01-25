@@ -1,0 +1,23 @@
+#navbar {
+  margin: auto;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.406);
+  z-index: 10;
+  width: 100%;
+  padding: 1.5vw;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+#navbarButtonMenuItem {
+  font-size: 1.5vw;
+}
+
+#navbarButton {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background-color: transparent;
+  border-style: solid;
+  color: #fe8733cb;
+  border-radius: 10px;
+}
