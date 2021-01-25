@@ -44,9 +44,12 @@ const HowItWorks = () => {
           </Card>
           <Card id="card2">
             <Card.Content>
-            <Card.Header id="howItWorksNumber2">02</Card.Header>
-            <br />
-              <Card.Header id="howItWorksCardTitle2">Get quotes</Card.Header> <br />
+              <Card.Header id="howItWorksNumber2">02</Card.Header>
+              <br />
+              <Card.Header id="howItWorksCardTitle2">
+                Get quotes
+              </Card.Header>{" "}
+              <br />
               <Card.Description id="howItWorksCardContent2">
                 We'll pass your details to 3 installers who will be in touch in
                 lightning speed. <br /> <br />
@@ -54,7 +57,8 @@ const HowItWorks = () => {
                 a solar panel system so its likely they will arrange a mutually
                 convenient time to check out your property and to iron out any
                 queries.
-              </Card.Description> <br />
+              </Card.Description>{" "}
+              <br />
               <Card.Description>
                 <Icon
                   id="howItWorksArrow2"
@@ -64,14 +68,27 @@ const HowItWorks = () => {
               </Card.Description>
             </Card.Content>
           </Card>
-          <Card>
+          <Card id="card3">
             <Card.Content>
-              <Card.Header>Choose your MCS professional</Card.Header>
-              <Card.Description>
+              <Card.Header id="howItWorksNumber3">03</Card.Header>
+              <br />
+              <Card.Header id="howItWorksCardTitle3">
+                Choose your MCS professional
+              </Card.Header>{" "}
+              <br />
+              <Card.Description id="howItWorksCardContent3">
                 Armed with quotes and recommendations you are all set to choose
                 your tradesman.
                 <br />
                 <br /> We are against pushy sales practices or hidden costs!
+              </Card.Description>{" "}
+              <br />
+              <Card.Description>
+                <Icon
+                  id="howItWorksArrow3"
+                  size="huge"
+                  name="arrow circle right"
+                />
               </Card.Description>
             </Card.Content>
           </Card>

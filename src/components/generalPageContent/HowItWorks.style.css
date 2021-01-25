@@ -70,6 +70,31 @@
   color: #fffff4;
 }
 
+#card3 {
+  margin-left: -1%;
+  border-radius: 10px;
+  background-color: #0d0e0b;
+}
+
+#howItWorksNumber3 {
+  color: #fffff4;
+  font-size: 4vw;
+}
+
+#howItWorksCardTitle3 {
+  font-family: "Poppins", sans-serif;
+  color: #fffff4;
+}
+
+#howItWorksCardContent3 {
+  font-family: "Poppins", sans-serif;
+  color: #fffff4;
+}
+
+#howItWorksArrow3 {
+  color: #fffff4;
+}
+
 #howItWorksconclusion {
   font-family: "Give You Glory";
   font-size: 3vh;
