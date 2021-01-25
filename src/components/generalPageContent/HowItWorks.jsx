@@ -92,16 +92,29 @@ const HowItWorks = () => {
               </Card.Description>
             </Card.Content>
           </Card>
-          <Card>
+          <Card id="card4">
             <Card.Content>
-              <Card.Header>Job complete</Card.Header>
-              <Card.Description>
+              <Card.Header id="howItWorksNumber4">04</Card.Header>
+              <br />
+              <Card.Header id="howItWorksCardTitle4">
+                Job complete
+              </Card.Header>{" "}
+              <br />
+              <Card.Description id="howItWorksCardContent4">
                 Once your panels are up, it would be helpful if you could drop
                 us a line rating our partners reliability, work and value for
                 money. <br />
                 <br />
                 Feedback rewards good work and holds the installer accountable
                 for any (very rare)problems.
+              </Card.Description>
+              <br />
+              <Card.Description>
+                <Icon
+                  id="howItWorksArrow4"
+                  size="huge"
+                  name="arrow circle right"
+                />
               </Card.Description>
             </Card.Content>
           </Card>
