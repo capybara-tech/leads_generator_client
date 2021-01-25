@@ -17,7 +17,32 @@
 }
 
 #howItWorksCards {
+  margin-left: 5%;
   display: inline-block;
+}
+
+#card1 {
+  border-radius: 10px;
+  background-color: #fe8733;
+}
+
+#howItWorksNumber {
+  color: #fffff4;
+  font-size: 4vw;
+}
+
+#howItWorksCardTitle {
+  font-family: "Poppins", sans-serif;
+  color: #fffff4;
+}
+
+#howItWorksCardContent {
+  font-family: "Poppins", sans-serif;
+  color: #fffff4;
+}
+
+#howItWorksArrow {
+  color: #fffff4;
 }
 
 #howItWorksconclusion {

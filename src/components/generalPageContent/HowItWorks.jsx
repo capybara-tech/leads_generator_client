@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
 import "./HowItWorks.style.css";
-import { Card, Button } from "semantic-ui-react";
+import { Card, Icon } from "semantic-ui-react";
 
 const HowItWorks = () => {
   useEffect(() => {
@@ -10,24 +9,36 @@ const HowItWorks = () => {
 
   return (
     <div id="howItWorksContent">
-      <h1 data-cy="title" id="howItWorksTitle">The WATTSWHAT way</h1>
+      <h1 data-cy="title" id="howItWorksTitle">
+        The WATTSWHAT way
+      </h1>
       <h3 id="howItWorkssubTitle">
         It's effortless to find MCS certified, vetted and trusted solar
         installers.
       </h3>
       <div id="howItWorksCards">
         <Card.Group>
-          <Card>
+          <Card id="card1">
             <Card.Content>
-              <Card.Header>
+              <Card.Header id="howItWorksNumber">01</Card.Header>
+              <br />
+              <Card.Header id="howItWorksCardTitle">
                 Request 3 quotes - no obligation and free!
-              </Card.Header>
-              <Card.Description>
+              </Card.Header>{" "}
+              <br />
+              <Card.Description id="howItWorksCardContent">
                 You will firstly answer a few easy questions about your
                 property. A heads up - give as much detail as possible for a
                 more accurate quote. <br /> <br />
                 We will connect you with selected partners across the UK, every
-                job's covered.
+                job's covered. <br /> <br />
+              </Card.Description>
+              <Card.Description>
+                <Icon
+                  id="howItWorksArrow"
+                  size="huge"
+                  name="arrow circle right"
+                />
               </Card.Description>
             </Card.Content>
           </Card>
@@ -69,8 +80,11 @@ const HowItWorks = () => {
             </Card.Content>
           </Card>
         </Card.Group>
-      </div> 
-      <p id="howItWorksconclusion"><br />Save time, money & hassle with us</p>
+      </div>
+      <p id="howItWorksconclusion">
+        <br />
+        Save time, money & hassle with us
+      </p>
     </div>
   );
 };
