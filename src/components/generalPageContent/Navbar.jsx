@@ -39,7 +39,7 @@ const Navbar = (props) => {
                 as={Link}
                 to={{ pathname: "/" }}
               >
-                <img data-cy="logo" src="/images/dummylogo.png" alt="Logo" />
+                <Image size="small" data-cy="logo" src="/images/final logo.png" alt="Logo" />
               </Menu.Item>
               <Modal
                 basic
