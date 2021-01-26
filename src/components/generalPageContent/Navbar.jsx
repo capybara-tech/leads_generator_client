@@ -15,6 +15,7 @@ import {
 
 const Navbar = (props) => {
   const [open, setOpen] = useState(false);
+  const [navbar, setNavbar] = useState(false);
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-device-width: 1224px)",
   });
@@ -27,11 +28,20 @@ const Navbar = (props) => {
     return false;
   }
 
+  const changeBackground = () => {
+    if (window.scrollY >= 80) {
+      setNavbar(true);
+    } else { setNavbar(false);
+    }
+  }
+
+  window.addEventListener('scroll', changeBackground)
+
   return (
     <div>
       {(isDesktopOrLaptop || isTabletOrMobileDevice || isTabletOrMobile) && (
         <>
-          <div id="navbar">
+          <div className={navbar ? 'navbar active' : 'navbar'}>
             <Menu text inverted color="">
               <Menu.Item
                 id="logo"
