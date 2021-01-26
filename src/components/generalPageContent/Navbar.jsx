@@ -35,7 +35,7 @@ const Navbar = (props) => {
           <div className={navbar ? "navbar active" : "navbar"}>
             <Menu text inverted size="massive" color="">
               <Menu.Item
-              position="left"
+                position="left"
                 id="logo"
                 alt="capybara-logo"
                 as={Link}
@@ -56,8 +56,8 @@ const Navbar = (props) => {
                       as={Link}
                       to={{ pathname: "/environment" }}
                     >
-                      How can this help our 
-                        <span id="environmentWord"> environment</span>?
+                      How can this help our
+                      <span id="environmentWord"> environment</span>?
                     </Dropdown.Item>
                     <Dropdown.Item
                       id="linkToEconomicsPage"
@@ -65,7 +65,7 @@ const Navbar = (props) => {
                       to={{ pathname: "/economics" }}
                     >
                       How can this help your
-                        <span id="economyWord"> economy</span>?
+                      <span id="economyWord"> economy</span>?
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
