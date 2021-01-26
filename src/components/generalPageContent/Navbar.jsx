@@ -42,7 +42,7 @@ const Navbar = (props) => {
       {(isDesktopOrLaptop || isTabletOrMobileDevice || isTabletOrMobile) && (
         <>
           <div className={navbar ? 'navbar active' : 'navbar'}>
-            <Menu text inverted color="">
+            <Menu text inverted size="massive" color="">
               <Menu.Item
                 id="logo"
                 alt="capybara-logo"

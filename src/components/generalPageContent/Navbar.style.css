@@ -21,10 +21,15 @@
 #navbarButton {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  background-color: transparent;
-  border-style: solid;
-  color: #fe8733cb;
+  background-color: #fffff4;
+  color: #0d0e0b;
   border-radius: 10px;
+  border: solid  #fffff4;
+}
+#navbarButton:hover {
+  background-color: transparent;
+  color: #fe8733;
+  border: solid #fe8733;
 }
 
 .ui.vertical.divider {
