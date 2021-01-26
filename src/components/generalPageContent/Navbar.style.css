@@ -14,6 +14,11 @@
   background-color: rgba(0, 0, 0, 0.468);
 }
 
+#dropDownMenu {
+  background-color:#fffff4;
+  font-family: "Poppins", sans-serif;
+}
+
 #navbarButtonMenuItem {
   font-size: 1.5vw;
 }
@@ -30,26 +35,6 @@
   background-color: transparent;
   color: #fe8733;
   border: solid #fe8733;
-}
-
-.angle.down.icon {
-  color:#fe8733
-}
-
-.ui.vertical.divider {
-  color: #fe8733cb;
-}
-
-#closeIcon {
-  position: relative;
-  left: 100%;
-  color: rgba(238, 238, 238, 0.742);
-  background-color: rgba(223, 223, 223, 0.605);
-}
-
-#headerSubNav {
-  font-family: "Poppins", sans-serif;
-  color: rgba(238, 238, 238, 0.742);
 }
 
 #economyWord {

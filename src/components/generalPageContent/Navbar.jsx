@@ -2,19 +2,9 @@ import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { Link, withRouter } from "react-router-dom";
 import "./Navbar.style.css";
-import {
-  Menu,
-  Button,
-  Modal,
-  Grid,
-  Divider,
-  Image,
-  Icon,
-  Header,
-} from "semantic-ui-react";
+import { Menu, Button, Image, Dropdown } from "semantic-ui-react";
 
 const Navbar = (props) => {
-  const [open, setOpen] = useState(false);
   const [navbar, setNavbar] = useState(false);
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-device-width: 1224px)",
@@ -31,17 +21,18 @@ const Navbar = (props) => {
   const changeBackground = () => {
     if (window.scrollY >= 80) {
       setNavbar(true);
-    } else { setNavbar(false);
+    } else {
+      setNavbar(false);
     }
-  }
+  };
 
-  window.addEventListener('scroll', changeBackground)
+  window.addEventListener("scroll", changeBackground);
 
   return (
     <div>
       {(isDesktopOrLaptop || isTabletOrMobileDevice || isTabletOrMobile) && (
         <>
-          <div className={navbar ? 'navbar active' : 'navbar'}>
+          <div className={navbar ? "navbar active" : "navbar"}>
             <Menu text inverted size="massive" color="">
               <Menu.Item
                 id="logo"
@@ -49,72 +40,35 @@ const Navbar = (props) => {
                 as={Link}
                 to={{ pathname: "/" }}
               >
-                <Image size="small" data-cy="logo" src="/images/final logo.png" alt="Logo" />
+                <Image
+                  size="small"
+                  data-cy="logo"
+                  src="/images/final logo.png"
+                  alt="Logo"
+                />
               </Menu.Item>
-              <Modal
-                basic
-                onClose={() => setOpen(false)}
-                onOpen={() => setOpen(true)}
-                open={open}
-                size="small"
-                trigger={
-                  <Menu.Item
-                    icon={{ name: "angle down" }}
-                    position="right"
-                    content="Why solar"
-                    data-cy="button"
-                  />
-                }
-              >
-                <Grid columns={2} relaxed="very">
-                  <Grid.Column>
-                    <Menu.Item
-                      onClick={() => setOpen(false)}
+              <Menu.Item>
+                <Dropdown item text="Why solar">
+                  <Dropdown.Menu id="dropDownMenu">
+                    <Dropdown.Item
                       id="linkToEnvironmentPage"
                       as={Link}
                       to={{ pathname: "/environment" }}
                     >
-                      <Image
-                        circular
-                        size="massive"
-                        src="https://mcvt-comet-37.fra1.cdn.digitaloceanspaces.com//previews/1740/preview_1740.jpg"
-                      />
-                      <Header id="headerSubNav" as="h3" textAlign="center">
-                        How can this help our{" "}
-                        <span id="environmentWord">environment</span>?
-                      </Header>
-                    </Menu.Item>
-                  </Grid.Column>
-                  <Grid.Column>
-                    <Menu.Item
-                      onClick={() => setOpen(false)}
+                      How can this help our 
+                        <span id="environmentWord"> environment</span>?
+                    </Dropdown.Item>
+                    <Dropdown.Item
                       id="linkToEconomicsPage"
                       as={Link}
                       to={{ pathname: "/economics" }}
                     >
-                      <Image
-                        circular
-                        size="massive"
-                        src="https://i.pinimg.com/originals/b1/96/ff/b196ff9387ada79fc28b7953e81372fb.png"
-                      />
-                      <Header id="headerSubNav" as="h3" textAlign="center">
-                        How can this help your <br />
-                        <span id="economyWord">economy</span>?
-                      </Header>
-                    </Menu.Item>
-                  </Grid.Column>
-                </Grid>
-                <Divider vertical>Or</Divider>{" "}
-                <div>
-                  <Icon
-                    circular
-                    id="closeIcon"
-                    name="close"
-                    size="big"
-                    onClick={() => setOpen(false)}
-                  />
-                </div>
-              </Modal>
+                      How can this help your
+                        <span id="economyWord"> economy</span>?
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </Menu.Item>
               <Menu.Item
                 position="right"
                 as={Link}
