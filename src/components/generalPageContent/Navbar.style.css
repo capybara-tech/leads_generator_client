@@ -10,13 +10,22 @@
   z-index: 10;
   width: 100%;
 }
-.navbar.active{
+
+.navbar.active {
   background-color: rgba(0, 0, 0, 0.468);
 }
 
 #dropDownMenu {
   background-color:#fffff4;
   font-family: "Poppins", sans-serif;
+}
+
+#economyWord {
+  color: #fe8733cb;
+}
+
+#environmentWord {
+  color: #fe8733cb;
 }
 
 #navbarButtonMenuItem {
@@ -31,16 +40,9 @@
   border-radius: 10px;
   border: solid  #fffff4;
 }
+
 #navbarButton:hover {
   background-color: transparent;
   color: #fe8733;
   border: solid #fe8733;
-}
-
-#economyWord {
-  color: #fe8733cb;
-}
-
-#environmentWord {
-  color: #fe8733cb;
 }
