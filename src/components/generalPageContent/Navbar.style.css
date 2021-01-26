@@ -32,6 +32,10 @@
   border: solid #fe8733;
 }
 
+.angle.down.icon {
+  color:#fe8733
+}
+
 .ui.vertical.divider {
   color: #fe8733cb;
 }
