@@ -43,10 +43,12 @@
 
 #howItWorksArrow1 {
   color: #fffff4;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 #card2 {
-  margin-left: -1%;
   border-radius: 10px;
   background-color: #c8dacc;
 }
@@ -68,12 +70,14 @@
 
 #howItWorksArrow2 {
   color: #fffff4;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 #card3 {
-  margin-left: -1%;
   border-radius: 10px;
-  background-color: #0d0e0b;
+  background-color: #c6ebc9;
 }
 
 #howItWorksNumber3 {
@@ -93,12 +97,14 @@
 
 #howItWorksArrow3 {
   color: #fffff4;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 #card4 {
-  margin-left: -1%;
   border-radius: 10px;
-  background-color: #c6ebc9;
+  background-color: #6fb087;
 }
 
 #howItWorksNumber4 {
@@ -118,6 +124,9 @@
 
 #howItWorksArrow4 {
   color: #fffff4;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 #howItWorksconclusion {
