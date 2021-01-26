@@ -84,7 +84,7 @@ const BannerLandingPage = () => {
                 offset={0}
                 duration={1500}
               >
-                <Icon size="big" name="angle double down" />
+                <Icon id="dubbleArrowDown" size="big" name="angle double down" />
               </Scrolllink>
             </motion.span>
           </div>

@@ -6,30 +6,6 @@ html,
   margin-bottom: 20vh;
 }
 
-.ui.vertical.divider {
-  color: #fe8733cb;
-}
-
-#closeIcon {
-  position: relative;
-  left: 100%;
-  color: rgba(238, 238, 238, 0.742);
-  background-color: rgba(223, 223, 223, 0.605);
-}
-
-#headerSubNav {
-  font-family: "Poppins", sans-serif;
-  color: rgba(238, 238, 238, 0.742);
-}
-
-#economyWord {
-  color: #fe8733cb;
-}
-
-#environmentWord {
-  color: #fe8733cb;
-}
-
 #submitButton {
   background-color: transparent;
   color: rgba(0, 0, 0, 0.4);
@@ -62,31 +38,6 @@ html,
 
 #submitButton.active {
   border-bottom: 3px solid rgba(0, 0, 0, 0.4);
-}
-
-#navbar {
-  margin: auto;
-  position: fixed;
-  background: rgba(0, 0, 0, 0.3);
-  color: #0e0905cb;
-  z-index: 10;
-  width: 100%;
-  padding: 1.5vw;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-}
-
-#navbarButtonMenuItem {
-  font-size: 1.5vw;
-}
-
-#navbarButton {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  background-color: transparent;
-  border-style: solid;
-  color: #fe8733cb;
-  border-radius: 10px;
 }
 
 #landingPageInfoSegment {

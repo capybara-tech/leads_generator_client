@@ -1,0 +1,48 @@
+.navbar {
+  height:15vh;
+  margin: auto;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  position: fixed;
+  background-color:transparent;
+  z-index: 10;
+  width: 100%;
+}
+
+.navbar.active {
+  background-color: rgba(0, 0, 0, 0.468);
+}
+
+#dropDownMenu {
+  background-color:#fffff4;
+  font-family: "Poppins", sans-serif;
+}
+
+#economyWord {
+  color: #fe8733cb;
+}
+
+#environmentWord {
+  color: #fe8733cb;
+}
+
+#navbarButtonMenuItem {
+  font-size: 1.5vw;
+}
+
+#navbarButton {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background-color: #fffff4;
+  color: #0d0e0b;
+  border-radius: 10px;
+  border: solid  #fffff4;
+}
+
+#navbarButton:hover {
+  background-color: transparent;
+  color: #fe8733;
+  border: solid #fe8733;
+}
