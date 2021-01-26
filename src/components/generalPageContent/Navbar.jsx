@@ -49,7 +49,7 @@ const Navbar = (props) => {
                 />
               </Menu.Item>
               <Menu.Item position="right">
-                <Dropdown item text="Why solar">
+                <Dropdown item text="Why solar" data-cy="button">
                   <Dropdown.Menu id="dropDownMenu">
                     <Dropdown.Item
                       id="linkToEnvironmentPage"
