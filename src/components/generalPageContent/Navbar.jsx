@@ -35,6 +35,7 @@ const Navbar = (props) => {
           <div className={navbar ? "navbar active" : "navbar"}>
             <Menu text inverted size="massive" color="">
               <Menu.Item
+              position="left"
                 id="logo"
                 alt="capybara-logo"
                 as={Link}
@@ -47,7 +48,7 @@ const Navbar = (props) => {
                   alt="Logo"
                 />
               </Menu.Item>
-              <Menu.Item>
+              <Menu.Item position="right">
                 <Dropdown item text="Why solar">
                   <Dropdown.Menu id="dropDownMenu">
                     <Dropdown.Item
