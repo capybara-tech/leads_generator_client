@@ -4,7 +4,9 @@ import { Link as Scrolllink } from "react-scroll";
 import { Menu, Icon } from "semantic-ui-react";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
+import EnvironmentSectionLandingPage from "./EnvironmentSectionLandingPage";
 import "./HeroPage.style.css";
+
 
 const HeroPage = () => {
 
@@ -54,7 +56,7 @@ const HeroPage = () => {
         >
           <Scrolllink
             id="dubbleArrowDown"
-            to=""
+            to="environmentSection"
             activeClass="active"
             spy={true}
             smooth={true}
@@ -65,7 +67,9 @@ const HeroPage = () => {
           </Scrolllink>
         </motion.span>
       </div>
+      <EnvironmentSectionLandingPage />
     </div>
+    
   );
 };
 
