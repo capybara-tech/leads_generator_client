@@ -9,12 +9,13 @@
 
 #bannerContent{
   position: absolute;
-  top:45vh;
-  left:30vw;
-  transform: translate(-50%, -50%);
+  top:50vh;
+  left:5vw;
+  transform: translate(0%, -50%);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 3vw;
+  color:black;
 }
 
 #subTitleObtainQuotes{
@@ -22,4 +23,16 @@
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 2vw;
+  color:black;
+}
+
+#environmentalHeroTitle {
+  position: absolute;
+  top:50vh;
+  right:5vw;
+  transform: translate(0%, -50%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2vw;
+  color:white;
 }
