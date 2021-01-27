@@ -27,66 +27,58 @@ const BannerLandingPage = () => {
     <>
       {isDesktopOrLaptop && (
         <div id="banner">
-          <div id="bannerContent">
-            <p id="bannerInfoTxt">
-              Tillsammans gör vi Sverige
-              <br />
-              grönare med solceller <br />
-              <mark id="subInfoTxt">
-               Obtain 3 quotes now
-                <Menu.Item
-                  id="angleDownIcon"
-                  icon={{ name: "angle down" }}
-                  as={Link}
-                  to={{ pathname: "/quotes" }}
-                />
-              </mark>
-            </p>
-            <div>
-              <CountUp
-                start={0}
-                end={15}
-                delay={0}
-                duration={4}
-                suffix={"%"}
-              >
-                {({ countUpRef }) => (
-                  <p id="bannerTxt">
-                    We donate <span className="numbers" ref={countUpRef} /> of our profits
-                    <br />
-                    to other green initiaves
-                  </p>
-                )}
-              </CountUp>
-              <Button
-                id="bannerButton"
-                data-cy="button"
-                as={Link}
-                to={{ pathname: "/aboutus" }}
-              >
-                Read more
-              </Button>
+          <div id="bannerBackground">
+            <div id="bannerContent">
+              <p id="bannerInfoTxt">
+                Let's transform the UK into a<br /> green haven with solar
+                panels <br />
+                <mark id="subInfoTxt">
+                  Obtain 3 quotes now
+                  <Menu.Item
+                    id="angleDownIcon"
+                    icon={{ name: "angle down" }}
+                    as={Link}
+                    to={{ pathname: "/quotes" }}
+                  />
+                </mark>
+              </p>
+              <div>
+                <CountUp start={0} end={15} delay={0} duration={4} suffix={"%"}>
+                  {({ countUpRef }) => (
+                    <p id="bannerTxt">
+                      We donate <span className="numbers" ref={countUpRef} /> of
+                      our profits
+                      <br />
+                      to other green initiaves
+                    </p>
+                  )}
+                </CountUp>
+              </div>
             </div>
-          </div>
-          <div id="dubbleArrowDown">
-            <motion.span
-              transition={bounceTransition}
-              animate={{
-                y: ["50%", "-50%"],
-              }}
-            >
-              <Scrolllink
-                id="dubbleArrowDown"
-                to="infoSegment"
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={1500}
+            <div id="dubbleArrowDown">
+              <motion.span
+                transition={bounceTransition}
+                animate={{
+                  y: ["50%", "-50%"],
+                }}
               >
-                <Icon id="dubbleArrowDown" size="big" name="angle double down" />
-              </Scrolllink>
-            </motion.span>
+                <Scrolllink
+                  id="dubbleArrowDown"
+                  to="infoSegment"
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={1500}
+                >
+                  <Icon
+                    id="dubbleArrowDown"
+                    size="big"
+                    name="angle double down"
+                  />
+                </Scrolllink>
+              </motion.span>
+            </div>
           </div>
         </div>
       )}

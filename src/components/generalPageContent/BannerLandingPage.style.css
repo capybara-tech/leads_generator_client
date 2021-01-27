@@ -1,64 +1,53 @@
+#bannerBackground{
+    background-image: url("/images/background3.png");
+    height: 300vh;
+    background-attachment: fixed;
+    background-position:right;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
 #bannerInfoTxt {
-  color: rgba(238, 238, 238, 0.742);
+  color: black;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 3.5vw;
+  font-size: 4vw;
   position: absolute;
-  top: 40%;
-  left: 28%;
+  top: 50%;
+  left: 33%;
   transform: translate(-50%, -50%);
 }
 
 .bannerInfo {
   background: none;
-  color: rgba(238, 238, 238, 0.742);
+  color: #fffff4;
 }
 
 #subInfoTxt {
   background: none;
-  color: rgba(238, 238, 238, 0.742);
-  font-size: 1.5vw;
+  color: black;
+  font-size: 2.5vw;
 }
 
 #bannerTxt {
-  color: rgba(238, 238, 238, 0.742);
+  color: #fffff4;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 1.5vw;
+  font-size: 2vw;
   text-align: center;
   position: absolute;
-  top: 65%;
-  left: 74%;
+  top: 50%;
+  left: 83%;
   transform: translate(-50%, -50%);
 }
 
 .numbers {
   background: none;
-  color: #fe8733cb;
-}
-
-#bannerButton {
-  position: absolute;
-  top: 78%;
-  left:74%;
-  transform: translate(-50%, -50%);
-  font-size: 1.3vw;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  background-color: transparent;
-  border-style: solid;
-  color: rgba(238, 238, 238, 0.742);
-  border-radius: 10px;
-}
-
-#banner {
-  height:100vh;
-  background-image: url("/images/BannerImage.jpg");
-  background-size: cover;
+  color: #fe8733;
 }
 
 #angleDownIcon {
-  color: #fe8733cb;
+  color: #fe8733;
 }
 
 #dubbleArrowDown {
@@ -69,5 +58,29 @@
   top: 94%;
   left:50%;
   transform: translate(-50%, -50%);
-  color: rgba(238, 238, 238, 0.742);
+  color: black;
+}
+
+#environmentalSection {
+  position: absolute;
+  top:100vh;
+}
+
+#bannerButton {
+  position: relative;
+  top: 50%;
+  left:50%;
+  font-size: 1.3vw;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background-color: transparent;
+  border-style: solid;
+  color: black;
+  border-radius: 10px;
+}
+
+#infoSegment{
+  position: absolute;
+  background-color: transparent;
+  top:200vh;
 }

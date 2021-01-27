@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-import BannerLandingPage from "./BannerLandingPage";
-import LandingPageInfoSegment from "./LandingPageInfoSegment";
+import HeroPage from "./HeroPage";
 
 const LandingPage = () => {
   useEffect(() => {
@@ -9,8 +8,8 @@ const LandingPage = () => {
 
   return (
     <div>
-      <BannerLandingPage />
-      <LandingPageInfoSegment />
+      <HeroPage />
+      
     </div>
   );
 };

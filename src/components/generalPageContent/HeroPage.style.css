@@ -1,0 +1,25 @@
+#heroPage{
+  background-image: url("/images/background3.png");
+  height: 300vh;
+  background-attachment: fixed;
+  background-position:right;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+#bannerContent{
+  position: absolute;
+  top:45vh;
+  left:30vw;
+  transform: translate(-50%, -50%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 3vw;
+}
+
+#subTitleObtainQuotes{
+  background: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2vw;
+}
