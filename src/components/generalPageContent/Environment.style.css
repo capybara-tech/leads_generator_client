@@ -108,6 +108,13 @@
   font-weight: bold;
 }
 
+#titleC02Segment {
+  padding-left: 7vw;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 4vh;
+}
+
 #co2ComparisonGridRow {
   position:absolute;
   height:100%;
@@ -125,7 +132,7 @@
   width:20%;
 }
 
-#questionOTwoColumn{
+#questionTwoColumn{
   position: absolute;
   left:50%;
   transform: translate(-50%);
@@ -204,7 +211,7 @@
   background-color: #70af8f;
 }
 
-.textInSegment {
+.questionInCo2Segment {
   text-align: center;
   font-size: 2.5vh;
   font-family: "Poppins", sans-serif;
