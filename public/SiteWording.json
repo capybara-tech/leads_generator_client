@@ -85,6 +85,15 @@
         "title": "Solar panels generate zero emissions",
         "content": "Once installed, they are busy producing clean electricity. With no toxins released into our already suffocated atmosphere, the panels are environmentally friendly."
       },
+      "twoTonnesCo2": {
+        "title": "Hover over the questions to put 2 tonnes of Co2 into perspective:",
+        "mobileQuestion": "iPhones charged/year?",
+        "mobileAnswer": "255,064 times",
+        "trainQuestion": "Train journey?",
+        "trainAnswer": "3.5 times around the globe!",
+        "coalQuestion": "Amount of coal burned?",
+        "coalAnswer": "1,000 kg"
+      },
       "conclusion": {
         "content": "Solar - the right choice to live 'greener' and protect the future of our planet."
       }
