@@ -1,5 +1,5 @@
 #howSolarWorksContent {
-  height: 100vh;
+  height: 105vh;
   padding-top: 15vh;
 }
 
@@ -17,13 +17,13 @@
 }
 
 #howSolarWorksCards {
-  margin-left: 5%;
+  margin-left: 6vw;
   display: inline-block;
 }
 
 #howSolarWorksCard1 {
   border-radius: 10px;
-  background-color: #fe8733;
+  background-color: #70af85;
 }
 
 #howSolarWorksNumber1 {
@@ -50,7 +50,7 @@
 
 #howSolarWorksCard2 {
   border-radius: 10px;
-  background-color: #fe8733;
+  background-color: #70af85;
 }
 
 #howSolarWorksNumber2 {
@@ -77,7 +77,7 @@
 
 #howSolarWorksCard3 {
   border-radius: 10px;
-  background-color: #fe8733;
+  background-color: #70af85;
 }
 
 #howSolarWorksNumber3 {
@@ -104,7 +104,7 @@
 
 #howSolarWorksCard4 {
   border-radius: 10px;
-  background-color: #fe8733;
+  background-color: #70af85;
 }
 
 #howSolarWorksNumber4 {
