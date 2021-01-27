@@ -9,13 +9,12 @@ const HowItWorks = () => {
 
   return (
     <div id="howItWorksContent">
+      <h3 id="howItWorkssubTitle">
+        Your environmental revolution in four easy steps
+      </h3>
       <h1 data-cy="title" id="howItWorksTitle">
         The WATTSWHAT way
       </h1>
-      <h3 id="howItWorkssubTitle">
-        It's effortless to find MCS certified, vetted and trusted solar
-        installers.
-      </h3>
       <div id="howItWorksCards">
         <Card.Group>
           <Card id="card1">
@@ -122,7 +121,7 @@ const HowItWorks = () => {
       </div>
       <p id="howItWorksconclusion">
         <br />
-        Save time, money & hassle with us
+        Save time, money & hassle - request your quotes
       </p>
     </div>
   );
