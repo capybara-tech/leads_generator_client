@@ -2,3 +2,48 @@
   height: 100vh;
   padding-top: 15vh;
 }
+
+#howSolarWorksTitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 7vh;
+  margin-top: 2%;
+  margin-left: 20%;
+}
+
+#howSolarWorksSubTitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 2vh;
+  margin-left: 20%;
+}
+
+#howSolarWorksCards {
+  margin-left: 5%;
+  display: inline-block;
+}
+
+#howSolarWorksCard1 {
+  border-radius: 10px;
+  background-color: #fe8733;
+}
+
+#howSolarWorksNumber1 {
+  color: #fffff4;
+  font-size: 4vw;
+}
+
+#howSolarWorksCardTitle1 {
+  font-family: "Poppins", sans-serif;
+  color: #fffff4;
+}
+
+#howSolarWorksCardContent1 {
+  font-family: "Poppins", sans-serif;
+  color: #fffff4;
+}
+
+#howSolarWorksArrow1 {
+  color: #fffff4;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
