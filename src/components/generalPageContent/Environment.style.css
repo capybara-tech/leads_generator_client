@@ -115,45 +115,43 @@
   font-size: 4vh;
 }
 
-#subTitleCo2Segment {
-  padding-left:7vw;
-  font-family: "Poppins", sans-serif;
+#co2Hightlight {
+  font-weight: bold;
 }
 
 #co2ComparisonGridRow {
-  position:absolute;
-  height:100%;
-  bottom:0%;
-  height:90%;
-  width:10%;
+  position: absolute;
+  height: 100%;
+  bottom: 0%;
+  height: 90%;
+  width: 10%;
 }
 
-#questionOneColumn{
+#questionOneColumn {
   position: absolute;
-  left:20%;
+  left: 20%;
   transform: translate(-50%);
-  bottom:0%;
-  height:90%;
-  width:20%;
+  bottom: 0%;
+  height: 90%;
+  width: 20%;
 }
 
-#questionTwoColumn{
+#questionTwoColumn {
   position: absolute;
-  left:50%;
+  left: 50%;
   transform: translate(-50%);
-  bottom:0%;
-  height:90%;
-  width:20%;
+  bottom: 0%;
+  height: 90%;
+  width: 20%;
 }
 
-
-#questionThreeColumn{
+#questionThreeColumn {
   position: absolute;
-  left:80%;
+  left: 80%;
   transform: translate(-50%);
-  bottom:0%;
-  height:90%;
-  width:20%;
+  bottom: 0%;
+  height: 90%;
+  width: 20%;
 }
 
 #revealQuestionOneAnswer::after {
@@ -224,39 +222,39 @@
 
 #answerQuestionOne {
   position: absolute;
-  top:12vh;
+  top: 12vh;
   font-size: 4vh;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   writing-mode: vertical-rl;
   line-height: 95%;
   margin-left: 0.5vw;
-  color:#fffff4;
+  color: #fffff4;
   z-index: 99;
 }
 
 #answerQuestionTwo {
   position: absolute;
-  top:5vh;
+  top: 5vh;
   font-size: 4vh;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   writing-mode: vertical-rl;
   line-height: 95%;
   margin-left: 0.5vw;
-  color:#fffff4;
+  color: #fffff4;
   z-index: 99;
 }
 
 #answerQuestionThree {
   position: absolute;
-  top:14vh;
+  top: 14vh;
   font-size: 4vh;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   writing-mode: vertical-rl;
   line-height: 95%;
   margin-left: 0.5vw;
-  color:#fffff4;
+  color: #fffff4;
   z-index: 99;
 }

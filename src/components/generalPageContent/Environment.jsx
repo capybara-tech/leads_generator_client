@@ -156,8 +156,10 @@ const Environment = () => {
           </Grid.Column>
         </Grid.Row>
       </Grid>
-      <p id="titleCo2Segment">Lets put 2 tonnes of Co2 into perspective:</p>
-      <p id="subTitleCo2Segment">Hover above the question you want answered</p>
+      <p id="titleCo2Segment">
+        Hover over the questions to{" "}
+        <span id="co2Hightlight">put 2 tonnes of Co2 into perspective:</span>
+      </p>
       <Segment raised id="co2Comparsion">
         <Grid>
           <Grid.Row id="co2ComparisonGridRow">
