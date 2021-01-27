@@ -108,11 +108,16 @@
   font-weight: bold;
 }
 
-#titleC02Segment {
+#titleCo2Segment {
   padding-left: 7vw;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 4vh;
+}
+
+#subTitleCo2Segment {
+  padding-left:7vw;
+  font-family: "Poppins", sans-serif;
 }
 
 #co2ComparisonGridRow {
@@ -162,7 +167,7 @@
 }
 
 #revealQuestionOneAnswer:hover::after {
-  height: 80%;
+  height: 70%;
   transition: height 0.5s;
   background-color: #70af8f;
 }
@@ -194,7 +199,7 @@
 #revealQuestionThreeAnswer::after {
   position: absolute;
   bottom: 0%;
-  content: "300.000";
+  content: "";
   width: 100%;
   height: 0%;
   background-color: #70af8f;
@@ -202,7 +207,7 @@
 }
 
 #revealQuestionThreeAnswer:hover::after {
-  height: 50%;
+  height: 60%;
   transition: height 0.5s;
   background-color: #70af8f;
 }
@@ -215,4 +220,43 @@
   text-align: center;
   font-size: 2.5vh;
   font-family: "Poppins", sans-serif;
+}
+
+#answerQuestionOne {
+  position: absolute;
+  top:12vh;
+  font-size: 4vh;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  writing-mode: vertical-rl;
+  line-height: 95%;
+  margin-left: 0.5vw;
+  color:#fffff4;
+  z-index: 99;
+}
+
+#answerQuestionTwo {
+  position: absolute;
+  top:5vh;
+  font-size: 4vh;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  writing-mode: vertical-rl;
+  line-height: 95%;
+  margin-left: 0.5vw;
+  color:#fffff4;
+  z-index: 99;
+}
+
+#answerQuestionThree {
+  position: absolute;
+  top:14vh;
+  font-size: 4vh;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  writing-mode: vertical-rl;
+  line-height: 95%;
+  margin-left: 0.5vw;
+  color:#fffff4;
+  z-index: 99;
 }

@@ -156,23 +156,27 @@ const Environment = () => {
           </Grid.Column>
         </Grid.Row>
       </Grid>
-      <p id="titleC02Segment">Lets put 2 tonnes of C02 into perspective:</p>
+      <p id="titleCo2Segment">Lets put 2 tonnes of Co2 into perspective:</p>
+      <p id="subTitleCo2Segment">Hover above the question you want answered</p>
       <Segment raised id="co2Comparsion">
         <Grid>
           <Grid.Row id="co2ComparisonGridRow">
             <Grid.Column id="questionOneColumn">
               <div id="revealQuestionOneAnswer">
                 <p className="questionInCo2Segment">iPhones charged/year?</p>
+                <p id="answerQuestionOne">255,064 times</p>
               </div>
             </Grid.Column>
             <Grid.Column id="questionTwoColumn">
               <div id="revealQuestionTwoAnswer">
                 <p className="questionInCo2Segment">Train journey?</p>
+                <p id="answerQuestionTwo">3.5 times around the globe!</p>
               </div>
             </Grid.Column>
             <Grid.Column id="questionThreeColumn">
               <div id="revealQuestionThreeAnswer">
-                <p className="questionInCo2Segment">Amount of coal burned</p>
+                <p className="questionInCo2Segment">Amount of coal burned?</p>
+                <p id="answerQuestionThree">1,000 kg</p>
               </div>
             </Grid.Column>
           </Grid.Row>
