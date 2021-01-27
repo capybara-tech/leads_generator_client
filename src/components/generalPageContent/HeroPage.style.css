@@ -36,3 +36,22 @@
   font-size: 2vw;
   color:white;
 }
+
+.numbers {
+  color: #fe8733;
+}
+
+#angleDownIcon {
+  color: #fe8733;
+}
+
+#dubbleArrowDown {
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  position: absolute;
+  top: 94%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
