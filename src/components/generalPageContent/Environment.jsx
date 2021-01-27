@@ -156,7 +156,27 @@ const Environment = () => {
           </Grid.Column>
         </Grid.Row>
       </Grid>
-      <Segment raised id="co2Comparsion"></Segment>
+      <Segment raised id="co2Comparsion">
+        <Grid>
+          <Grid.Row id="co2ComparisonGridRow">
+            <Grid.Column id="questionOneColumn">
+              <div id="revealQuestionOneAnswer">
+                <p className="textInSegment"></p>
+              </div>
+            </Grid.Column>
+            <Grid.Column id="questionTwoColumn">
+              <div id="revealQuestionTwoAnswer">
+                <p className="textInSegment"></p>
+              </div>
+            </Grid.Column>
+            <Grid.Column id="questionThreeColumn">
+              <div id="revealQuestionThreeAnswer">
+                <p className="questionInCo2Segment"></p>
+              </div>
+            </Grid.Column>
+            </Grid.Row>
+        </Grid>
+      </Segment>
       <div id="environmentBottomBanner">
         <Grid>
           <Grid.Row columns={1}>
