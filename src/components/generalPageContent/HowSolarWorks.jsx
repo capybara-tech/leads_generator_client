@@ -15,8 +15,7 @@ const HowSolarWorks = () => {
       <h3 id="howSolarWorksSubTitle">
         Lets keep it simple, like the process itself:
       </h3>
-      <div id="howSolarWorksCards">
-        <Card.Group>
+        <Card.Group centered>
           <Card id="howSolarWorksCard1">
             <Card.Content>
               <Card.Header id="howSolarWorksNumber1">01</Card.Header>
@@ -106,7 +105,6 @@ const HowSolarWorks = () => {
           </Card>
         </Card.Group>
       </div>
-    </div>
   );
 };
 
