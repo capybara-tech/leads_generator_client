@@ -219,10 +219,14 @@
       "howSolarWorksPage": {
         "title": "How do solar panels actually work?",
         "titleSub": "Lets keep it simple, like the process itself:",
-        "step1": "Not only sunshine, daylight hits the solar photovoltaic cells in the panels",
-        "step2": "Direct current (DC) electricity is produced",
-        "step3": "An inverter converts DC electricity to alternating current electricity (AC)",
-        "step4": "The electricity can then be used in your property, excess sold to the National Grid or stored"
+        "step1Title": "Daylight",
+        "step1": "Not only sunshine, daylight hits the solar photovoltaic cells in the panels.",
+        "step2Title": "Electricity produced",
+        "step2": "Direct current (DC) electricity is produced.",
+        "step3Title": "Conversion",
+        "step3": "An inverter converts DC electricity to alternating current electricity (AC).",
+        "step4Title": "Utilise electricity",
+        "step4": "The electricity can then be used in your property, excess sold to the National Grid or stored."
       },
       "howWattsWhatWorksPage": {
         "title": "The WATTSWHAT way",

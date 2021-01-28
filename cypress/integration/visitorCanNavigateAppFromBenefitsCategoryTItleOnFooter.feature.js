@@ -11,7 +11,7 @@ describe("Visitor can navigate app from benefits category title on the footer", 
       "contain",
       "Help save our bruised planet install solar"
     );
-    cy.get("[data-cy=title]").contains("How does solar work?").should("not.be.visible");
+    cy.get("[data-cy=title]").contains("How do solar panels actually work?").should("not.be.visible");
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
     cy.get("[data-cy=title]").contains("The WATTSWHAT way").should("not.be.visible");
     cy.get("[data-cy=title]")
@@ -42,7 +42,7 @@ describe("Visitor can navigate app from benefits category title on the footer", 
       "contain",
       "Figures which won't disappoint"
     );
-    cy.get("[data-cy=title]").contains("How does solar work?").should("not.be.visible");
+    cy.get("[data-cy=title]").contains("How do solar panels actually work?").should("not.be.visible");
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
     cy.get("[data-cy=title]").contains("The WATTSWHAT way").should("not.be.visible");
     cy.get("[data-cy=title]")
