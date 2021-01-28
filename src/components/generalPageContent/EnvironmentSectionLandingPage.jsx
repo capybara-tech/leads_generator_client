@@ -44,7 +44,7 @@ const EnvironmentSectionLandingPage = () => {
         >
           <Scrolllink
             id="dubbleArrowDown"
-            to=""
+            to="summaryLandingPage"
             activeClass="active"
             spy={true}
             smooth={true}
