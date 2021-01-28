@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PropertyType from "./PropertyType";
 import "./InstallationDate.style.css";
 import { Link as Scrolllink } from "react-scroll";
-import { Grid, Icon, Popup } from "semantic-ui-react";
+import { Grid, Icon, Popup, Image } from "semantic-ui-react";
 
 const InstallationDate = (props) => {
   const [timeFrame, setTimeFrame] = useState("");
@@ -14,10 +14,17 @@ const InstallationDate = (props) => {
       <div id="installationDate">
         <input type="hidden" name="installation_date" value={timeFrame} />
         <Grid id="installationIcons">
-          <h3 id="questionForInstallationDate">
-            When are you looking for{" "}
-            <span id="installationWord">installation</span>?
-          </h3>
+          <div id="questionDiv">
+            <p>
+              <img
+                id="questionImage"
+                src="/images/questionLogo.png"
+                alt="installationDate"
+              />{" "}
+              {""}
+              When are you looking for installation?
+            </p>
+          </div>
           <Grid.Row relaxed columns={4}>
             <Grid.Column>
               <Scrolllink
@@ -39,7 +46,7 @@ const InstallationDate = (props) => {
                 >
                   <img
                     className="imgInstallationDateIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/0-3months.png"
                     alt="0-3 months"
                   />
                 </button>{" "}
@@ -65,7 +72,7 @@ const InstallationDate = (props) => {
                 >
                   <img
                     className="imgInstallationDateIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/3-6months.png"
                     alt="3-6 months"
                   />
                 </button>{" "}
@@ -91,7 +98,7 @@ const InstallationDate = (props) => {
                 >
                   <img
                     className="imgInstallationDateIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/6-12months.png"
                     alt="6-12 months"
                   />
                 </button>{" "}
@@ -99,6 +106,7 @@ const InstallationDate = (props) => {
             </Grid.Column>
             <Grid.Column>
               <Scrolllink
+                className="installationDateScrollLinks"
                 to="propertyType"
                 activeClass="active"
                 spy={true}
@@ -117,7 +125,7 @@ const InstallationDate = (props) => {
                 >
                   <img
                     className="imgInstallationDateIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/notSureDates.png"
                     alt="Not sure"
                   />
                 </button>
