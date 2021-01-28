@@ -95,7 +95,7 @@ const SummaryLandingPage = () => {
               id="cardButtonMenuItem2"
               position="right"
               as={Link}
-              to={{ pathname: "/quotes" }}
+              to={{ pathname: "/environment" }}
               data-cy="button"
             >
               <Button id="cardButton2">Read More</Button>
@@ -147,7 +147,7 @@ const SummaryLandingPage = () => {
               id="cardButtonMenuItem3"
               position="right"
               as={Link}
-              to={{ pathname: "/quotes" }}
+              to={{ pathname: "/economics" }}
               data-cy="button"
             >
               <Button id="cardButton3">Read More</Button>
@@ -199,7 +199,7 @@ const SummaryLandingPage = () => {
               id="cardButtonMenuItem4"
               position="right"
               as={Link}
-              to={{ pathname: "/quotes" }}
+              to={{ pathname: "/howsolarworks" }}
               data-cy="button"
             >
               <Button id="cardButton4">Read More</Button>
