@@ -19,16 +19,12 @@
   font-family: "Poppins", sans-serif;
 }
 
-#economyWord {
-  color: #fe8733cb;
-}
-
-#environmentWord {
-  color: #fe8733cb;
-}
-
 #navbarButtonMenuItem {
   font-size: 1.5vw;
+}
+
+.subnavAngleRight {
+  color:#70af85;
 }
 
 #navbarButton {

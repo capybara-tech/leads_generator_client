@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { Link, withRouter } from "react-router-dom";
 import "./Navbar.style.css";
-import { Menu, Button, Image, Dropdown } from "semantic-ui-react";
+import { Menu, Button, Image, Dropdown, Icon } from "semantic-ui-react";
 
 const Navbar = (props) => {
   const [navbar, setNavbar] = useState(false);
@@ -55,16 +55,14 @@ const Navbar = (props) => {
                       as={Link}
                       to={{ pathname: "/environment" }}
                     >
-                      How can this help our
-                      <span id="environmentWord"> environment</span>?
+                    Environment <Icon className="subnavAngleRight" name="angle right"/>
                     </Dropdown.Item>
                     <Dropdown.Item
                       id="linkToEconomicsPage"
                       as={Link}
                       to={{ pathname: "/economics" }}
                     >
-                      How can this help your
-                      <span id="economyWord"> economy</span>?
+                     Economy <Icon className="subnavAngleRight" name="angle right" />
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
