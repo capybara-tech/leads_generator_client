@@ -5,6 +5,7 @@ import { Menu, Icon } from "semantic-ui-react";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
 import EnvironmentSectionLandingPage from "./EnvironmentSectionLandingPage";
+import SummaryLandingPage from "./SummaryLandingPage";
 import "./HeroPage.style.css";
 
 
@@ -68,6 +69,7 @@ const HeroPage = () => {
         </motion.span>
       </div>
       <EnvironmentSectionLandingPage />
+      <SummaryLandingPage />
     </div>
     
   );
