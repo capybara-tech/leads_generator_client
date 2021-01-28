@@ -39,6 +39,7 @@
 
 #heroTree {
   position: absolute;
-  right:0%;
-  bottom:10%;
+  right:4%;
+  bottom:15%;
+  height:70vh;
 }
