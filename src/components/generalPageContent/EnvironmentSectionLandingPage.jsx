@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Link as Scrolllink } from "react-scroll";
-import { Button, Icon } from "semantic-ui-react";
+import { Button, Icon, Image, Grid } from "semantic-ui-react";
 import { motion } from "framer-motion";
 import "./EnvironmentalSectionLandingPage.style.css";
 
@@ -17,8 +17,9 @@ const EnvironmentSectionLandingPage = () => {
 
 
   return (
-    <div id="environmentSection">
-      <div id="environmentalContentLandingPage">
+    <Grid id="environmentSection">
+      <Grid.Row columns={2} id="environmentalContentLandingPage">
+        <Grid.Column>
         <p>
           We love our planet so much as such we donate a massive 15% of our net
           profits to other green initiatives
@@ -31,10 +32,11 @@ const EnvironmentSectionLandingPage = () => {
         >
           Read more
         </Button>
-      </div>
-      <div>
-        <img id="heroTree" src="/images/HeroTree1.png" alt="tree" />
-      </div>
+        </Grid.Column>
+        <Grid.Column>
+        <Image size="medium" id="heroTree" src="/images/HeroTree1.png" alt="tree" />
+      </Grid.Column>
+      </Grid.Row>
       <div id="dubbleArrowDown">
         <motion.span
           transition={bounceTransition}
@@ -55,7 +57,7 @@ const EnvironmentSectionLandingPage = () => {
           </Scrolllink>
         </motion.span>
       </div>
-    </div>
+    </Grid>
   );
 };
 

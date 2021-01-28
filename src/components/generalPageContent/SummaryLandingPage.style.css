@@ -1,5 +1,6 @@
 #summaryLandingPage {
   position: absolute;
+  margin-top: 1%;
   height: 100vh;
   top: 200vh;
   width: 100vw;
@@ -9,13 +10,19 @@
 
 #summaryCards {
   position: relative;
-  top: 65%;
+  top: 50%;
   transform: translate(0, -50%);
+  padding-bottom:10vh;
+}
+
+#summaryTitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 6vh;
+  font-weight: 600;
+  text-align: center;
 }
 
 #summaryCard1 {
-  margin-top: -10vh;
-  margin-bottom: 10vh;
   background-color: #c8dacc;
 }
 
@@ -86,8 +93,6 @@
 }
 
 #summaryCard3 {
-  margin-top: -10vh;
-  margin-bottom: 10vh;
   background-color: #c8dacc;
 }
 

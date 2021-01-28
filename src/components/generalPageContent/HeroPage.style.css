@@ -1,6 +1,6 @@
 #heroPage{
   background-image: url("/images/background3.png");
-  height: 300vh;
+  min-height: 300vh;
   background-attachment: fixed;
   background-position:right;
   background-size: cover;
