@@ -33,7 +33,7 @@ const Navbar = (props) => {
       {(isDesktopOrLaptop || isTabletOrMobileDevice || isTabletOrMobile) && (
         <>
           <div className={navbar ? "navbar active" : "navbar"}>
-            <Menu text inverted size="massive" color="">
+            <Menu text size="massive" color="">
               <Menu.Item
                 position="left"
                 id="logo"
@@ -42,7 +42,6 @@ const Navbar = (props) => {
                 to={{ pathname: "/" }}
               >
                 <Image
-                  size="small"
                   data-cy="logo"
                   src="/images/final logo.png"
                   alt="Logo"
