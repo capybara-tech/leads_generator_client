@@ -15,8 +15,9 @@
 }
 
 #dropDownMenu {
-  background-color:#fffff4;
+  background-color:transparent;
   font-family: "Poppins", sans-serif;
+  border:none;
 }
 
 #navbarButtonMenuItem {
@@ -24,7 +25,7 @@
 }
 
 .subnavAngleRight {
-  color:#70af85;
+  color: #fe8733;
 }
 
 #navbarButton {
