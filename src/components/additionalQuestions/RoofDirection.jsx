@@ -14,9 +14,17 @@ const RoofDirection = (props) => {
       <div id="roofDirection">
         <input type="hidden" name="roof_direction" value={roofDirection} />
         <Grid id="roofDirectionIcons">
-          <h3 id="questionForRoofDirection">
-            What's the <span id="directionWord">direction</span> of your roof?
-          </h3>
+          <div id="roofDirectionQuestionDiv">
+            <p id="questionForRoofDirection">
+              <img
+                id="roofDirectionQuestionImage"
+                src="/images/questionLogo.png"
+                alt="installationDate"
+              />{" "}
+              {""}
+              What's the direction of your roof?
+            </p>
+          </div>
           <Grid.Row relaxed columns={4}>
             <Grid.Column>
               <Scrolllink
@@ -31,13 +39,14 @@ const RoofDirection = (props) => {
                 }}
               >
                 <button
+                  className="roofDirectionButtonIcons"
                   id="northIcon"
                   type="button"
                   onClick={() => setRoofDirection("North")}
                 >
                   <img
                     className="imgRoofDirectionIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/roofDirection/n.png"
                     alt="North°"
                   />
                 </button>{" "}
@@ -56,13 +65,14 @@ const RoofDirection = (props) => {
                 }}
               >
                 <button
+                  className="roofDirectionButtonIcons"
                   id="northEastIcon"
                   type="button"
                   onClick={() => setRoofDirection("North East")}
                 >
                   <img
                     className="imgRoofDirectionIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/roofDirection/ne.png"
                     alt="North East"
                   />
                 </button>{" "}
@@ -81,13 +91,14 @@ const RoofDirection = (props) => {
                 }}
               >
                 <button
+                  className="roofDirectionButtonIcons"
                   id="eastIcon"
                   type="button"
                   onClick={() => setRoofDirection("East")}
                 >
                   <img
                     className="imgRoofDirectionIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/roofDirection/e.png"
                     alt="East"
                   />
                 </button>{" "}
@@ -106,13 +117,14 @@ const RoofDirection = (props) => {
                 }}
               >
                 <button
+                  className="roofDirectionButtonIcons"
                   id="southEastIcon"
                   type="button"
                   onClick={() => setRoofDirection("South East")}
                 >
                   <img
                     className="imgRoofDirectionIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/roofDirection/se.png"
                     alt="South East"
                   />
                 </button>{" "}
@@ -133,13 +145,14 @@ const RoofDirection = (props) => {
                 }}
               >
                 <button
+                  className="roofDirectionButtonIcons"
                   id="southIcon"
                   type="button"
                   onClick={() => setRoofDirection("South")}
                 >
                   <img
                     className="imgRoofDirectionIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/roofDirection/s.png"
                     alt="South"
                   />
                 </button>{" "}
@@ -158,13 +171,14 @@ const RoofDirection = (props) => {
                 }}
               >
                 <button
+                  className="roofDirectionButtonIcons"
                   id="southWestIcon"
                   type="button"
                   onClick={() => setRoofDirection("South West")}
                 >
                   <img
                     className="imgRoofDirectionIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/roofDirection/sw.png"
                     alt="South West"
                   />
                 </button>{" "}
@@ -183,13 +197,14 @@ const RoofDirection = (props) => {
                 }}
               >
                 <button
+                  className="roofDirectionButtonIcons"
                   id="westIcon"
                   type="button"
                   onClick={() => setRoofDirection("West")}
                 >
                   <img
                     className="imgRoofDirectionIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/roofDirection/w.png"
                     alt="West"
                   />
                 </button>{" "}
@@ -208,13 +223,14 @@ const RoofDirection = (props) => {
                 }}
               >
                 <button
+                  className="roofDirectionButtonIcons"
                   id="northWestIcon"
                   type="button"
                   onClick={() => setRoofDirection("North West")}
                 >
                   <img
                     className="imgRoofDirectionIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/roofDirection/nw.png"
                     alt="North West"
                   />
                 </button>{" "}
@@ -278,4 +294,5 @@ const RoofDirection = (props) => {
     </>
   );
 };
+
 export default RoofDirection;
