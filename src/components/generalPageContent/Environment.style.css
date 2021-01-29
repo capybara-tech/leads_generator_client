@@ -7,9 +7,13 @@
   padding: 5vw;
   font-size: 3vh;
   padding-top: 20vh;
-  height: 90vh;
+  height: 100vh;
   width: 100vw;
-  background-color: #0d0e0b;
+  background-image: url("/images/econmicsBackground.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #environmentTitle {
@@ -99,7 +103,7 @@
   font-weight: 400;
   background-color: transparent;
   border-style: solid;
-  color: #fe8733cb;
+  color: #fe8733;
   border-radius: 10px;
 }
 
