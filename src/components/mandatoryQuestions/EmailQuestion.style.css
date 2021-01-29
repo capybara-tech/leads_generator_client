@@ -1,17 +1,17 @@
 #emailQuestion {
   position: relative;
   height: 100vh;
-  background-color: #ededed;
+  background-color: #fffff4;
 }
 
-#questionAskingForEmail {
+#emailQuestionDiv {
+  display: inline-block;
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 1, 5vw;
+  font-size: 3vh;
 }
 
-#nameFromPerson {
-  color: #fe8733cb;
+#emailQuestionImage {
+  height: 3.5vh;
 }
 
 #questionForEmail {

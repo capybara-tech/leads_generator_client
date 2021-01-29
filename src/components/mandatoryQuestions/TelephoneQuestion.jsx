@@ -13,20 +13,27 @@ const normaliseTelephone = (value) => {
 const TelephoneQuestion = () => {
   return (
     <div id="telephoneQuestion">
-      <div id="questionForTelephone">
-        <h3 id="questionAskingForTelephone">
-          Great, and the best number to <span id="contactWord">contact</span>{" "}
-          you on?
-        </h3>
-        <Field
-          id="fieldTelephone"
-          name="telephone"
-          component="input"
-          type="text"
-          placeholder="Telephone"
-          parse={normaliseTelephone}
-        />
-        <br />
+      <div id="telephoneQuestionDiv">
+        <div id="questionForTelephone">
+          <p id="questionAskingForTelephone">
+            <img
+              id="nameQuestionImage"
+              src="/images/questionLogo.png"
+              alt="telephone question"
+            />{" "}
+            {""}
+            Great, and the best number to contact you on?
+          </p>
+          <Field
+            id="fieldTelephone"
+            name="telephone"
+            component="input"
+            type="text"
+            placeholder="Telephone"
+            parse={normaliseTelephone}
+          />
+          <br />
+        </div>
       </div>
       <Scrolllink
         to="emailQuestion"
