@@ -48,7 +48,7 @@ const Environment = () => {
         <Grid.Row id="environmentCategory">
           <Grid.Column>
             <p className="titleEnvironmentBenefit">
-              Solar panels shrink your carbon dixiode(CO2) emissions
+              Solar panels shrink your carbon dioxide(CO2) emissions
             </p>
             <p className="mainEnvironmentContent">
               By 20%, a staggering{" "}
@@ -59,12 +59,12 @@ const Environment = () => {
             </p>
           </Grid.Column>
           <Grid.Column>
-            <Image id="footPrintImg" src="/images/HouseWithSolarPanels.png" />
+            <Image id="footPrintImg" src="/images/LowerCo2.png" />
           </Grid.Column>
         </Grid.Row>
         <Grid.Row id="environmentCategory">
           <Grid.Column>
-            <Image id="fossilFuelsImg" src="/images/HouseWithSolarPanels.png" />
+            <Image id="fossilFuelsImg" src="/images/fossilfuels.png" />
           </Grid.Column>
           <Grid.Column>
             <p className="titleEnvironmentBenefit">
@@ -131,7 +131,7 @@ const Environment = () => {
           <Grid.Column>
             <Image
               id="independenceImg"
-              src="/images/HouseWithSolarPanels.png"
+              src="/images/CleanBritishSun.png"
             />
           </Grid.Column>
         </Grid.Row>
