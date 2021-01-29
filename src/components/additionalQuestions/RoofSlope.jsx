@@ -46,7 +46,7 @@ const RoofSlope = (props) => {
                 >
                   <img
                     className="imgRoofSlopeIcons"
-                    src="/images/flatRoof.png"
+                    src="/images/questionIcons/roofSlope/flatRoof.png"
                     alt="0-5°"
                   />
                 </button>
@@ -72,7 +72,7 @@ const RoofSlope = (props) => {
                 >
                   <img
                     className="imgRoofSlopeIcons"
-                    src="/images/lowPitchRoof.png"
+                    src="/images/questionIcons/roofSlope/lowPitchRoof.png"
                     alt="5-20°"
                   />
                 </button>
@@ -98,7 +98,7 @@ const RoofSlope = (props) => {
                 >
                   <img
                     className="imgRoofSlopeIcons"
-                    src="/images/ordinaryRoof.png"
+                    src="/images/questionIcons/roofSlope/ordinaryRoof.png"
                     alt="20-40°"
                   />
                 </button>
@@ -124,7 +124,7 @@ const RoofSlope = (props) => {
                 >
                   <img
                     className="imgRoofSlopeIcons"
-                    src="/images/steepRoof.png"
+                    src="/images/questionIcons/roofSlope/steepRoof.png"
                     alt="40°+"
                   />
                 </button>

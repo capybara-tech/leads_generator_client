@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PropertyType from "./PropertyType";
 import "./InstallationDate.style.css";
 import { Link as Scrolllink } from "react-scroll";
-import { Grid, Icon, Popup, Image } from "semantic-ui-react";
+import { Grid, Icon, Popup } from "semantic-ui-react";
 
 const InstallationDate = (props) => {
   const [timeFrame, setTimeFrame] = useState("");
@@ -46,7 +46,7 @@ const InstallationDate = (props) => {
                 >
                   <img
                     className="imgInstallationDateIcons"
-                    src="/images/0-3months.png"
+                    src="/images/questionIcons/installationDate/0-3months.png"
                     alt="0-3 months"
                   />
                 </button>{" "}
@@ -72,7 +72,7 @@ const InstallationDate = (props) => {
                 >
                   <img
                     className="imgInstallationDateIcons"
-                    src="/images/3-6months.png"
+                    src="/images/questionIcons/installationDate/3-6months.png"
                     alt="3-6 months"
                   />
                 </button>{" "}
@@ -98,7 +98,7 @@ const InstallationDate = (props) => {
                 >
                   <img
                     className="imgInstallationDateIcons"
-                    src="/images/6-12months.png"
+                    src="/images/questionIcons/installationDate/6-12months.png"
                     alt="6-12 months"
                   />
                 </button>{" "}
@@ -125,7 +125,7 @@ const InstallationDate = (props) => {
                 >
                   <img
                     className="imgInstallationDateIcons"
-                    src="/images/notSureDates.png"
+                    src="/images/questionIcons/installationDate/notSureDates.png"
                     alt="Not sure"
                   />
                 </button>
