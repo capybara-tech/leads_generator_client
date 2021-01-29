@@ -14,10 +14,10 @@ const InstallationDate = (props) => {
       <div id="installationDate">
         <input type="hidden" name="installation_date" value={timeFrame} />
         <Grid id="installationIcons">
-          <div id="questionDiv">
+          <div id="installationDateQuestionDiv">
             <p>
               <img
-                id="questionImage"
+                id="installationQuestionImage"
                 src="/images/questionLogo.png"
                 alt="installationDate"
               />{" "}
@@ -39,7 +39,7 @@ const InstallationDate = (props) => {
                 }}
               >
                 <button
-                  className="buttonIcons"
+                  className="installationDateButtonIcons"
                   id="zeroToThreeMonthsIcon"
                   type="button"
                   onClick={() => setTimeFrame("0-3 Months")}
@@ -65,7 +65,7 @@ const InstallationDate = (props) => {
                 }}
               >
                 <button
-                  className="buttonIcons"
+                  className="installationDateButtonIcons"
                   id="threeToSixMonthsIcon"
                   type="button"
                   onClick={() => setTimeFrame("3-6 Months")}
@@ -91,7 +91,7 @@ const InstallationDate = (props) => {
                 }}
               >
                 <button
-                  className="buttonIcons"
+                  className="installationDateButtonIcons"
                   id="sixToTwelveMonthsIcon"
                   type="button"
                   onClick={() => setTimeFrame("6-12 Months")}
@@ -118,7 +118,7 @@ const InstallationDate = (props) => {
                 }}
               >
                 <button
-                  className="buttonIcons"
+                  className="installationDateButtonIcons"
                   id="notSure"
                   type="button"
                   onClick={() => setTimeFrame("Not sure")}

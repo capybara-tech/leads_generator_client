@@ -10,20 +10,20 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  background-color:transparent;
+  background-color: transparent;
 }
 
-#questionDiv {
-    display: inline-block;
+#installationDateQuestionDiv {
+  display: inline-block;
   font-family: "Poppins", sans-serif;
   font-size: 3vh;
 }
 
-#questionImage {
-  height:3.5vh;
+#installationQuestionImage {
+  height: 3.5vh;
 }
 
-.buttonIcons {
+.installationDateButtonIcons {
   background-color: transparent;
   border-radius: 10px;
   border-color: #bababa;
@@ -31,14 +31,14 @@
   outline: none;
 }
 
+.installationDateButtonIcons:hover {
+  border-color: #70af85;
+}
+
 .imgInstallationDateIcons {
   height: 30vh;
   width: 10vw;
   background-color: #fffff4;
-}
-
-.buttonIcons:hover {
-  border-color: #70af85;
 }
 
 .imgInstallationDateIcons {
