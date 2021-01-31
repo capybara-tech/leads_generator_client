@@ -1,7 +1,12 @@
 #midPageSubmitOrContinue {
   position: relative;
-  height: 60vh;
+  height: 30vh;
+  border-radius: 10px;
   background-color: #c8dacc;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  margin-top: 25vh;
+  margin-bottom: 10vh;
 }
 
 #midPageTitle {
