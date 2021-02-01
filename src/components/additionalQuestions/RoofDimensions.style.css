@@ -77,8 +77,8 @@ input:-webkit-autofill:active {
   font-weight: 400;
   font-size: 2vh;
   position: absolute;
-  top: 54%;
-  left: 55%;
+  top: 46vh;
+  left: 85vw;
   background-color: transparent;
   border: none;
   outline: none;
