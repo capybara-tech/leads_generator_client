@@ -1,19 +1,20 @@
 {
   "landingPage": {
-    "banner": {
-      "headline1": "Together we can transform the UK into a green haven",
-      "headline2": "by us installing solar panels",
-      "ourAims": {
-        "aims": "Our aims:",
-        "aim1": "Create a new eco initiative, where yes everyone is a winner and a % of our profits are donated back to society",
-        "aim2": "By obtaining a quote you are donating indirectly to charity, no strings attached!",
-        "aim3": "You will lower your energy bills and benefit from a long-term steady investment, with returns better than any bank",
-        "aim4": "Make solar energy easily accessible to all, matching varying needs to our carefully selected partners",
-        "aim5": "Revolutionise the solar market, voice the benefits of solar helping people live in a greener society"
-      },
-      "obtainQuote": "Obtain 3 quotes now"
+    "firstSegment": {
+      "headline1": "You, us & solar panels",
+      "headline2": "equals a greener UK",
+      "obtainQuote": "Obtain 3 quotes now",
+      "charities": "We donate  of our profits to other eco initiatives"
     },
-    "infoSegment": {
+    "secondSegment": {
+      "para1": "Our primary mission is to help future proof our the planet and combat climate destruction.",
+      "para2": "Through promoting the generally unknown environmental benefits of solar, and some lobbying thrown in, our aim is to help people live more informed and creative lives. Tech available to be harnessed like the popular electric car.",
+      "para3": "Being 100% dedicated to our cause we have teamed up with two conservational charities and donate a percentage of our profits directly to them. Better together."
+    },
+    "thirdSegment": {
+      "header": {
+        "title": "WattsWhat in a nutshell"
+      },
       "get3Quotes": {
         "title": "3 quotes with minimal effort",
         "advantage1": "Our partners are MCS registered, vetted and we continue to monitor their reviews",
