@@ -213,71 +213,79 @@
     },
     "faqsPage": {
       "opening": "Frequently asked questions",
+      "costs": {
+        "title": "What is the cost for the quotes? (a heads up - free!)",
+        "content": "Absolutely free, with no obligations. Quotes will be provided directly to you by our solar installers."
+      },
+      "mCS": {
+        "title": "Are your installers certified?",
+        "content": "We have only partnered with MCS registered installers giving you confidence that industry standards are followed and you will be eligible for the current energy export schemes."
+      },
       "disadvantages": {
         "title": "What are the disadvantages of solar panels?",
-        "answer": "Like everything in this world there are disadvantages. They require lots of space and are they are not suitable for every roof(our specialists will of course point this out if the case!). They are pricy to install and not cheap to move if you do. Whilst the return on investment (ROI) is one of the best you can make, its over a relatively long period. Efficiency is affected by the weather (although daylight is enough for them to work just not at their best). Production of the panels can also create pollution",
-        "contactUs": {
-          "title": "How can I get into contact with WattsWhat?",
-          "answer": "Start an instant chat by clicking the icon in the bottom right hand corner of the screen. Alternatively, you can drop us an email at capybara.it@gmail.com. We are here ready to answer any questions or provide friendly advice."
-        }
+        "answer": "Like everything in this world there are disadvantages. They require lots of space and are they are not suitable for every roof(our specialists will of course point this out if the case!). They are pricy to install and not cheap to move if you do. Whilst the return on investment (ROI) is one of the best you can make, its over a relatively long period. Efficiency is affected by the weather (although daylight is enough for them to work just not at their best). Production of the panels can also create pollution"
       },
-      "howSolarWorksPage": {
-        "title": "How do solar panels actually work?",
-        "titleSub": "Lets keep it simple, like the process itself:",
-        "step1Title": "Daylight",
-        "step1": "Not only sunshine, daylight hits the solar photovoltaic cells in the panels.",
-        "step2Title": "Electricity produced",
-        "step2": "Direct current (DC) electricity is produced.",
-        "step3Title": "Conversion",
-        "step3": "An inverter converts DC electricity to alternating current electricity (AC).",
-        "step4Title": "Utilise electricity",
-        "step4": "The electricity can then be used in your property, excess sold to the National Grid or stored."
-      },
-      "howWattsWhatWorksPage": {
-        "title": "The WATTSWHAT way",
-        "subTitle": "Your environmental revolution in four easy steps",
-        "process": {
-          "step1Title": "Request 3 quotes - no obligation and free!",
-          "step1Content": "You will firstly answer a few easy questions about your property. A heads up - give as much detail as possible for a more accurate quote. We will connect you with selected partners across the UK, every job's covered.",
-          "step2Title": "Get quotes",
-          "step2Content": "We'll pass your details to 3 installers who will be in touch in lightning speed. There's a lot for our professionals to consider when installing a solar panel system so its likely they will arrange a mutually convenient time to check out your property and to iron out any queries.",
-          "step3Title": "Choose your MCS professional",
-          "step3Content": "Armed with quotes and recommendations you are all set to choose your tradesman. We are against pushy sales practices or hidden costs!",
-          "step4Title": "Job complete",
-          "step4Content": "Once your panels are up, it would be helpful if you could drop us a line rating our partners reliability, work and value for money. Feedback rewards good work and holds the installer accountable for any (very rare)problems.",
-          "conclusion": "Save time, money & hassle - request your quotes"
-        },
-        "summary": {
-          "point1Title": "Only selected partners",
-          "point1Content": "We don't pass your personal details to any Tom, Dick or Harry. We evaluate our partners to ensure they meet our super-stringent service standards, they're a friendly bunch too",
-          "point2Title": "MCS registered installers",
-          "point2Content": "Have confidence - all of our installers are MCS certified. Experienced tip-top professionals delivering quality work and adhering to industry standards",
-          "point3Title": "Jaw-dropping warranties",
-          "point3Content": "For peace of mind, a massive 25 year warranty is typically on offer. There are not many other guarantees out there for that length of time!"
-        }
-      },
-      "becomeAPartnerPage": {
-        "title": "Join #TEAMSOLSPANA",
-        "subTitle": "Get a steady flow of jobs*, reduce your admin & keep all revenue from our referral(apart from of course our minimal intro fee).",
-        "criteriaOneTitle": "Customer satisfacion",
-        "criteriaOneContent": "We love our customers and want you too so its important that you provide a first class service at all times.",
-        "criteriaOneFlipTitle": "100%",
-        "criteriaOneFlipContent": "Nothing less!",
-        "criteriaTwoTitle": "MCS certified",
-        "criteriaTwoContent": "With the regulated society we now live in, the only other condition is that you are MCS registered.",
-        "criteriaTwoFlipTitle": "No offense",
-        "crtieriaTwoFlipContent": "It's what our customers expect!",
-        "conclusion": "Say goodbye to tedious paperwork, simply drop us an email or start a live chat to get the ball rolling.",
-        "signOff": "Join our quest to make the UK more energy efficient.",
-        "smallPrint": "*based on location"
-      },
-      "contactUsPage": {
-        "title": "Contact the SOLSPANA team",
-        "strapLine": "The quickest way to to get in touch is to start a live chat, alternatively:",
-        "email": "capybara.it@gmail.com",
-        "post": "Kista, Stockholm",
-        "conclude": "Real people ready to address your queries or offer friendly advice."
+      "contactUs": {
+        "title": "How can I get into contact with WattsWhat?",
+        "answer": "Start an instant chat by clicking the icon in the bottom right hand corner of the screen. Alternatively, you can drop us an email at capybara.it@gmail.com. We are here ready to answer any questions or provide friendly advice."
       }
+    },
+    "howSolarWorksPage": {
+      "title": "How do solar panels actually work?",
+      "titleSub": "Lets keep it simple, like the process itself:",
+      "step1Title": "Daylight",
+      "step1": "Not only sunshine, daylight hits the solar photovoltaic cells in the panels.",
+      "step2Title": "Electricity produced",
+      "step2": "Direct current (DC) electricity is produced.",
+      "step3Title": "Conversion",
+      "step3": "An inverter converts DC electricity to alternating current electricity (AC).",
+      "step4Title": "Utilise electricity",
+      "step4": "The electricity can then be used in your property, excess sold to the National Grid or stored."
+    },
+    "howWattsWhatWorksPage": {
+      "title": "The WATTSWHAT way",
+      "subTitle": "Your environmental revolution in four easy steps",
+      "process": {
+        "step1Title": "Request 3 quotes - no obligation and free!",
+        "step1Content": "You will firstly answer a few easy questions about your property. A heads up - give as much detail as possible for a more accurate quote. We will connect you with selected partners across the UK, every job's covered.",
+        "step2Title": "Get quotes",
+        "step2Content": "We'll pass your details to 3 installers who will be in touch in lightning speed. There's a lot for our professionals to consider when installing a solar panel system so its likely they will arrange a mutually convenient time to check out your property and to iron out any queries.",
+        "step3Title": "Choose your MCS professional",
+        "step3Content": "Armed with quotes and recommendations you are all set to choose your tradesman. We are against pushy sales practices or hidden costs!",
+        "step4Title": "Job complete",
+        "step4Content": "Once your panels are up, it would be helpful if you could drop us a line rating our partners reliability, work and value for money. Feedback rewards good work and holds the installer accountable for any (very rare)problems.",
+        "conclusion": "Save time, money & hassle - request your quotes"
+      },
+      "summary": {
+        "point1Title": "Only selected partners",
+        "point1Content": "We don't pass your personal details to any Tom, Dick or Harry. We evaluate our partners to ensure they meet our super-stringent service standards, they're a friendly bunch too",
+        "point2Title": "MCS registered installers",
+        "point2Content": "Have confidence - all of our installers are MCS certified. Experienced tip-top professionals delivering quality work and adhering to industry standards",
+        "point3Title": "Jaw-dropping warranties",
+        "point3Content": "For peace of mind, a massive 25 year warranty is typically on offer. There are not many other guarantees out there for that length of time!"
+      }
+    },
+    "becomeAPartnerPage": {
+      "title": "Join #TEAMSOLSPANA",
+      "subTitle": "Get a steady flow of jobs*, reduce your admin & keep all revenue from our referral(apart from of course our minimal intro fee).",
+      "criteriaOneTitle": "Customer satisfacion",
+      "criteriaOneContent": "We love our customers and want you too so its important that you provide a first class service at all times.",
+      "criteriaOneFlipTitle": "100%",
+      "criteriaOneFlipContent": "Nothing less!",
+      "criteriaTwoTitle": "MCS certified",
+      "criteriaTwoContent": "With the regulated society we now live in, the only other condition is that you are MCS registered.",
+      "criteriaTwoFlipTitle": "No offense",
+      "crtieriaTwoFlipContent": "It's what our customers expect!",
+      "conclusion": "Say goodbye to tedious paperwork, simply drop us an email or start a live chat to get the ball rolling.",
+      "signOff": "Join our quest to make the UK more energy efficient.",
+      "smallPrint": "*based on location"
+    },
+    "contactUsPage": {
+      "title": "Contact the SOLSPANA team",
+      "strapLine": "The quickest way to to get in touch is to start a live chat, alternatively:",
+      "email": "capybara.it@gmail.com",
+      "post": "Kista, Stockholm",
+      "conclude": "Real people ready to address your queries or offer friendly advice."
     }
   }
 }
