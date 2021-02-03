@@ -66,10 +66,6 @@
 }
 
 #bannerButton {
-  position: absolute;
-  top: 95%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-size: 1.3vw;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -85,9 +81,3 @@
   border: solid #70af85;
 }
 
-#heroTree {
-  position: absolute;
-  top: 50%;
-  transform: translate(0%, -50%);
-  right: 15vw;
-}

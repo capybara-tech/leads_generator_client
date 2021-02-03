@@ -1,15 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Link as Scrolllink } from "react-scroll";
-import {
-  Button,
-  Icon,
-  Image,
-  Grid,
-  Segment,
-  Header,
-  Card,
-} from "semantic-ui-react";
+import { Grid, Button, Icon } from "semantic-ui-react";
 import { motion } from "framer-motion";
 import "./EnvironmentalSectionLandingPage.style.css";
 
@@ -33,7 +25,7 @@ const EnvironmentSectionLandingPage = () => {
               combat climate destruction.
             </p>
           </Grid.Column>
-          <Grid.Column >
+          <Grid.Column>
             <p id="promotingEnvironmentalBenefitsText">
               Through promoting the generally unknown environmental benefits of
               solar, and some lobbying thrown in, our aim is to help people live
@@ -47,21 +39,22 @@ const EnvironmentSectionLandingPage = () => {
             <p id="ourDedicationText">
               Being 100% dedicated to our cause we have teamed up with two
               conservational charities and donate a percentage of our profits
-              directly to them. Better together.
+              directly to them.
+              <br/>
+              <Button
+              id="bannerButton"
+              data-cy="button"
+              as={Link}
+              to={{ pathname: "/aboutus" }}
+            >
+              Read more
+            </Button>
             </p>
+          
           </Grid.Column>
         </Grid.Row>
       </Grid>
 
-      {/* 
-      <Button
-        id="bannerButton"
-        data-cy="button"
-        as={Link}
-        to={{ pathname: "/aboutus" }}
-      >
-        Read more
-      </Button>
       <div id="dubbleArrowDown">
         <motion.span
           transition={bounceTransition}
@@ -81,7 +74,7 @@ const EnvironmentSectionLandingPage = () => {
             <Icon id="dubbleArrowDown" size="big" name="angle double down" />
           </Scrolllink>
         </motion.span>
-      </div> */}
+      </div>
     </>
   );
 };
