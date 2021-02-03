@@ -213,9 +213,17 @@
     },
     "faqsPage": {
       "opening": "Frequently asked questions",
+      "howItWorks": {
+        "title": "How does WattsWhat's service work?",
+        "content": "Straightforward and effortless. Click the get up to 3 quotes button in the top right hand corner. Answer a few straightforward questions, it takes less than two minutes, three of our certified installers will be in contact with you and shall provide quotes. As there’s a lot for our professionals to consider they will more than likely arrange a mutually convenient date to check our your roof. Three quotes in no time and hassle free!"
+      },
       "costs": {
         "title": "What is the cost for the quotes? (a heads up - free!)",
         "content": "Absolutely free, with no obligations. Quotes will be provided directly to you by our solar installers."
+      },
+      "numberOfQuotes": {
+        "title": "How many quotes will I receive?",
+        "content": "Three. When undertaking larger works, three quotes is generally a good amount to cover the market and obtain a competitive price alongside service."
       },
       "mCS": {
         "title": "Are your installers certified?",
@@ -228,6 +236,10 @@
       "contactUs": {
         "title": "How can I get into contact with WattsWhat?",
         "answer": "Start an instant chat by clicking the icon in the bottom right hand corner of the screen. Alternatively, you can drop us an email at capybara.it@gmail.com. We are here ready to answer any questions or provide friendly advice."
+      },
+      "installer": {
+        "title": "As a solar professional, how do I partner with WattsWhat?",
+        "content": "Drop us an email to capybara.it@gmail.com or start a live chat to get the ball rolling. We are a genuine team here at WattsWhat looking to collaborate and grow our expanding network. We have a have a steady flow of jobs, there are no subscription or sign up fees and you keep all of the revenue from our referral apart from of course our minimal intro fee."
       }
     },
     "howSolarWorksPage": {
