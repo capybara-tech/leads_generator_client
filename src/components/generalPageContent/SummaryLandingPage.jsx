@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Card, Button, List, Menu, Grid, Divider } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import "./SummaryLandingPage.style.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const SummaryLandingPage = () => {
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  });
+  
   return (
     <div id="summaryLandingPage">
       <Grid id="summaryCards">
@@ -15,6 +23,7 @@ const SummaryLandingPage = () => {
         <Grid.Row>
           <Grid.Column>
             <Card.Group centered id="summaryCardGroup">
+              <div data-aos="fade-right">
               <Card id="summaryCard1">
                 <Card.Content>
                   <Card.Header id="summaryTitle1">
@@ -59,6 +68,8 @@ const SummaryLandingPage = () => {
                 </Menu.Item>
                 <br />
               </Card>
+              </div>
+              <div data-aos="flip-left">
               <Card id="summaryCard2">
                 <Card.Content>
                   <Card.Header id="summaryTitle2">
@@ -111,6 +122,8 @@ const SummaryLandingPage = () => {
                 </Menu.Item>
                 <br />
               </Card>
+              </div>
+              <div data-aos="flip-right">
               <Card id="summaryCard3">
                 <Card.Content>
                   <Card.Header id="summaryTitle3">
@@ -164,6 +177,8 @@ const SummaryLandingPage = () => {
                 </Menu.Item>
                 <br />
               </Card>
+              </div>
+              <div data-aos="fade-left">
               <Card id="summaryCard4">
                 <Card.Content>
                   <Card.Header id="summaryTitle4">
@@ -216,6 +231,7 @@ const SummaryLandingPage = () => {
                 </Menu.Item>
                 <br />
               </Card>
+              </div>
             </Card.Group>
           </Grid.Column>
         </Grid.Row>
