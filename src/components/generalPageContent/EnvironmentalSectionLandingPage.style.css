@@ -1,13 +1,64 @@
-#environmentSection {
+#topCardsEnvironment {
+  position: relative;
+  width: 100vw;
+  padding-left: 5vh;
+  padding-right: 5vh;
+}
 
+#bottomCardEnvironment {
+  position: relative;
+  width: 100vw;
+}
+
+#ourPrimaryMisson {
+  height: 70vh;
+  background-image: url("/images/old-age-360714_1920.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#ourPrimaryMissonText {
+  padding-left: 15vh;
+  color: white;
+  position: absolute;
+  top: 50%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5vw;
+}
+
+#promotingEnvironmentalBenefitsText {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 2.5vw;
+}
+
+#ourDedication {
+  background-image: url("/images/charity.png");
+  height: 50vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-right: 30vh;
+}
+
+#ourDedicationText {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5vw;
+  margin-right: 50vh;
+  padding-left: 5vh;
 }
 
 #environmentalContentLandingPage {
-  width:50vw;
-  color:black;
+  width: 50vw;
+  color: black;
   position: absolute;
-  top:50vh;
-  left:5vw;
+  top: 50vh;
+  left: 5vw;
   transform: translate(0%, -50%);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -17,7 +68,7 @@
 #bannerButton {
   position: absolute;
   top: 95%;
-  left:50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   font-size: 1.3vw;
   font-family: "Poppins", sans-serif;
@@ -36,7 +87,7 @@
 
 #heroTree {
   position: absolute;
-  top:50%;
+  top: 50%;
   transform: translate(0%, -50%);
-  right:15vw;
+  right: 15vw;
 }

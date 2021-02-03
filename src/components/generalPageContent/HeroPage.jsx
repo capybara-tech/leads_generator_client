@@ -6,9 +6,7 @@ import CountUp from "react-countup";
 import { motion } from "framer-motion";
 import "./HeroPage.style.css";
 
-
 const HeroPage = () => {
-
   const bounceTransition = {
     y: {
       duration: 0.4,
@@ -21,8 +19,9 @@ const HeroPage = () => {
     <div id="heroPage">
       <div id="bannerContent">
         <p id="bannerTitle">
-          Let's transform the UK into a<br /> green haven with solar panels{" "}
-          <br />
+          You, us & solar panels <br />
+          equals a greener UK
+          <br/>
           <mark id="subTitleObtainQuotes">
             Obtain 3 quotes now
             <Menu.Item
@@ -41,7 +40,7 @@ const HeroPage = () => {
               We donate <span className="numbers" ref={countUpRef} /> of our
               profits
               <br />
-              to other green initiaves
+              to other eco initiatives
             </p>
           )}
         </CountUp>
@@ -67,7 +66,6 @@ const HeroPage = () => {
         </motion.span>
       </div>
     </div>
-    
   );
 };
 
