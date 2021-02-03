@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Button, List, Menu, Grid } from "semantic-ui-react";
+import { Card, Button, List, Menu, Grid, Divider } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import "./SummaryLandingPage.style.css";
 
@@ -9,7 +9,7 @@ const SummaryLandingPage = () => {
       <Grid id="summaryCards">
         <Grid.Row>
           <Grid.Column>
-            <p id="summaryTitle">WattsWhat in a nutshell</p>
+            <Divider horizontal id="summaryTitle">WattsWhat in a nutshell</Divider>
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
@@ -24,7 +24,7 @@ const SummaryLandingPage = () => {
                   <Card.Description id="summaryContent1">
                     <List>
                       <List.Item className="solarBenefits">
-                        <List.Icon name="check circle" />
+                        <List.Icon name="check" />
                         <List.Content data-cy="content">
                           Our partners are MCS registered, vetted and we
                           continue to monitor their reviews
@@ -32,14 +32,14 @@ const SummaryLandingPage = () => {
                       </List.Item>{" "}
                       <br />
                       <List.Item className="solarBenefits">
-                        <List.Icon name="check circle" />
+                        <List.Icon name="check" />
                         <List.Content data-cy="content">
                           Compare competitive quotes with service
                         </List.Content>
                       </List.Item>{" "}
                       <br />
                       <List.Item className="solarBenefits">
-                        <List.Icon name="check circle" />
+                        <List.Icon name="check" />
                         <List.Content data-cy="content">
                           No obligation and free - we are against pushy sales
                           practices!
@@ -68,7 +68,7 @@ const SummaryLandingPage = () => {
                   <Card.Description id="summaryContent2">
                     <List>
                       <List.Item className="solarBenefits">
-                        <List.Icon name="check circle" />
+                        <List.Icon name="check" />
                         <List.Content className="content">
                           Harvest infinite, truly clean (and free!) energy from
                           the sun
@@ -76,7 +76,7 @@ const SummaryLandingPage = () => {
                       </List.Item>{" "}
                       <br />
                       <List.Item className="solarBenefits">
-                        <List.Icon name="check circle" />
+                        <List.Icon name="check" />
                         <List.Content>
                           Dramatically reduce your property's thirst for fossil
                           fuels, burnt to produce electricity
@@ -84,7 +84,7 @@ const SummaryLandingPage = () => {
                       </List.Item>{" "}
                       <br />
                       <List.Item className="solarBenefits">
-                        <List.Icon name="check circle" />
+                        <List.Icon name="check" />
                         <List.Content>
                           Solar panels have no emissions and therefore zero
                           climate impact once installed
@@ -92,7 +92,7 @@ const SummaryLandingPage = () => {
                       </List.Item>{" "}
                       <br />
                       <List.Item className="solarBenefits">
-                        <List.Icon name="check circle" />
+                        <List.Icon name="check" />
                         <List.Content>
                           Shrink you carbon footprint drastically overnight
                         </List.Content>
@@ -120,7 +120,7 @@ const SummaryLandingPage = () => {
                   <Card.Description id="summaryContent3">
                     <List>
                       <List.Item className="solarBenefits">
-                        <List.Icon name="check circle" />
+                        <List.Icon name="check" />
                         <List.Content>
                           Lower energy bills and sell excess electricity to the
                           National Grid
@@ -128,7 +128,7 @@ const SummaryLandingPage = () => {
                       </List.Item>{" "}
                       <br />
                       <List.Item className="solarBenefits">
-                        <List.Icon name="check circle" />
+                        <List.Icon name="check" />
                         <List.Content>
                           Government grants and financial support are up for
                           grabs
@@ -136,14 +136,14 @@ const SummaryLandingPage = () => {
                       </List.Item>{" "}
                       <br />
                       <List.Item className="solarBenefits">
-                        <List.Icon name="check circle" />
+                        <List.Icon name="check" />
                         <List.Content>
                           Increases the value of your property
                         </List.Content>
                       </List.Item>{" "}
                       <br />
                       <List.Item className="solarBenefits">
-                        <List.Icon name="check circle" />
+                        <List.Icon name="check" />
                         <List.Content>
                           An impressive return on investment (ROI) and solar
                           panel prices have fallen by around 70% since 2010,
@@ -173,7 +173,7 @@ const SummaryLandingPage = () => {
                   <Card.Description id="summaryContent4">
                     <List>
                       <List.Item className="solarBenefits">
-                        <List.Icon name="check circle" />
+                        <List.Icon name="check" />
                         <List.Content>
                           Daylight (not only sunlight is required!) hits the
                           solar photovoltaic cells in the panels
@@ -181,14 +181,14 @@ const SummaryLandingPage = () => {
                       </List.Item>{" "}
                       <br />
                       <List.Item className="solarBenefits">
-                        <List.Icon name="check circle" />
+                        <List.Icon name="check" />
                         <List.Content>
                           Direct current (DC) electricity is produced
                         </List.Content>
                       </List.Item>{" "}
                       <br />
                       <List.Item className="solarBenefits">
-                        <List.Icon name="check circle" />
+                        <List.Icon name="check" />
                         <List.Content>
                           With a bit of magic, an inverter converts DC
                           electricity to alternating current electricity (AC)
@@ -196,7 +196,7 @@ const SummaryLandingPage = () => {
                       </List.Item>{" "}
                       <br />
                       <List.Item className="solarBenefits">
-                        <List.Icon name="check circle" />
+                        <List.Icon name="check" />
                         <List.Content>
                           The energy can then be used in your property, excess
                           sold to the national grid or stored
