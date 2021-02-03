@@ -1,0 +1,16 @@
+#heroLandingPageSection {
+  min-height: 100vh;
+  background-image: url("/images/background3.png");
+  background-position:right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+#environmentalLandingPageSection {
+  min-height: 100vh;
+}
+
+#summaryLandingPageSection {
+  min-height: 100vh;
+}
