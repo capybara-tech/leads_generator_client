@@ -1,33 +1,31 @@
-
-
-#bannerContent{
+#bannerContent {
   position: absolute;
-  top:50vh;
-  left:5vw;
+  top: 50vh;
+  left: 5vw;
   transform: translate(0%, -50%);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 3vw;
-  color:black;
+  color: black;
 }
 
-#subTitleObtainQuotes{
+#subTitleObtainQuotes {
   background: none;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 2vw;
-  color:black;
+  color: black;
 }
 
 #environmentalHeroTitle {
   position: absolute;
-  top:50vh;
-  right:5vw;
+  top: 50vh;
+  right: 5vw;
   transform: translate(0%, -50%);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 2vw;
-  color:white;
+  color: white;
 }
 
 .numbers {
@@ -44,7 +42,7 @@
   display: flex;
   position: absolute;
   top: 94%;
-  left:50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   color: black;
 }

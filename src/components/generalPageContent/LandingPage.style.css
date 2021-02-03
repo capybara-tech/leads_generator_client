@@ -1,7 +1,7 @@
 #heroLandingPageSection {
   min-height: 100vh;
   background-image: url("/images/background3.png");
-  background-position:right;
+  background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #fffff4;
@@ -15,5 +15,4 @@
 #summaryLandingPageSection {
   min-height: 100vh;
   background-image: linear-gradient(#fffff4, #70af85);
-  
 }

@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import EnvironmentSectionLandingPage from "./EnvironmentSectionLandingPage";
 import HeroPage from "./HeroPage";
 import SummaryLandingPage from "./SummaryLandingPage";
-import { Grid } from "semantic-ui-react"
-import "./LandingPage.style.css"
+import { Grid } from "semantic-ui-react";
+import "./LandingPage.style.css";
 
 const LandingPage = () => {
   useEffect(() => {

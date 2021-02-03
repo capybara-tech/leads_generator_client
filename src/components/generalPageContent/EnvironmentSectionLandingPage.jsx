@@ -38,19 +38,17 @@ const EnvironmentSectionLandingPage = () => {
           <Grid.Column id="ourDedication" textAlign="center">
             <p id="ourDedicationText">
               Being 100% dedicated to our cause we have teamed up with two
-              conservational charities and donate a percentage of our profits
-              directly to them.
-              <br/>
+              conservational charities and donate a percentage of our profits.
+              <br />
               <Button
-              id="bannerButton"
-              data-cy="button"
-              as={Link}
-              to={{ pathname: "/aboutus" }}
-            >
-              Read more
-            </Button>
+                id="bannerButton"
+                data-cy="button"
+                as={Link}
+                to={{ pathname: "/aboutus" }}
+              >
+                Read more
+              </Button>
             </p>
-          
           </Grid.Column>
         </Grid.Row>
       </Grid>

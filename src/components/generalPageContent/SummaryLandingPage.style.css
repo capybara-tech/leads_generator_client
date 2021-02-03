@@ -1,8 +1,9 @@
 #summaryCards {
   position: relative;
+  margin-top: 5vw;
   top: 50%;
   transform: translate(0, -50%);
-  padding-bottom:10vh;
+  padding-bottom: 10vh;
 }
 
 #summaryTitle {
@@ -12,10 +13,8 @@
   text-align: center;
 }
 
-
-
 #summaryCard1 {
-  height:55vh;
+  height: 55vh;
   background-color: transparent;
   border-style: solid;
   border-width: 0.3vh;
@@ -23,11 +22,11 @@
 }
 
 #summaryTitle1 {
-  color:#0d0e0b;
+  color: #0d0e0b;
 }
 
 #summaryContent1 {
-  color:#0d0e0b;
+  color: #0d0e0b;
   font-size: 2vh;
 }
 
@@ -59,7 +58,7 @@ i.icon.check {
 }
 
 #summaryCard2 {
-  height:55vh;
+  height: 55vh;
   background-color: transparent;
   border-style: solid;
   border-width: 0.3vh;
@@ -71,7 +70,7 @@ i.icon.check {
 }
 
 #summaryContent2 {
-  color:#0d0e0b;
+  color: #0d0e0b;
   font-size: 2vh;
 }
 
@@ -99,7 +98,7 @@ i.icon.check {
 }
 
 #summaryCard3 {
-  height:55vh;
+  height: 55vh;
   background-color: transparent;
   border-style: solid;
   border-width: 0.3vh;
@@ -111,7 +110,7 @@ i.icon.check {
 }
 
 #summaryContent3 {
-  color:#0d0e0b;
+  color: #0d0e0b;
   font-size: 2vh;
 }
 
@@ -139,7 +138,7 @@ i.icon.check {
 }
 
 #summaryCard4 {
-  height:55vh;
+  height: 55vh;
   background-color: transparent;
   border-style: solid;
   border-width: 0.3vh;
@@ -151,7 +150,7 @@ i.icon.check {
 }
 
 #summaryContent4 {
-  color:#0d0e0b;
+  color: #0d0e0b;
   font-size: 2vh;
 }
 

@@ -21,7 +21,7 @@ const HeroPage = () => {
         <p id="bannerTitle">
           You, us & solar panels <br />
           equals a greener UK
-          <br/>
+          <br />
           <mark id="subTitleObtainQuotes">
             Obtain 3 quotes now
             <Menu.Item
