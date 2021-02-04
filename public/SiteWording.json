@@ -59,7 +59,7 @@
         "content": "Petrol and diesel car sales are banned from 2030, solar power gets no real airtime. We are here to change that where people live more informed and more creative lives."
       },
       "footprint": {
-        "title": "Solar panels shrink your carbon dixiode(CO2) emissions",
+        "title": "Solar panels shrink your carbon dioxide(CO2) emissions",
         "content1": "By 20%, a staggering 1.5 - 2 tonnes of CO2 a year. These numbers speak for themselves!"
       },
       "fossilFuels": {
@@ -219,10 +219,14 @@
       "howSolarWorksPage": {
         "title": "How do solar panels actually work?",
         "titleSub": "Lets keep it simple, like the process itself:",
-        "step1": "Not only sunshine, daylight hits the solar photovoltaic cells in the panels",
-        "step2": "Direct current (DC) electricity is produced",
-        "step3": "An inverter converts DC electricity to alternating current electricity (AC)",
-        "step4": "The electricity can then be used in your property, excess sold to the National Grid or stored"
+        "step1Title": "Daylight",
+        "step1": "Not only sunshine, daylight hits the solar photovoltaic cells in the panels.",
+        "step2Title": "Electricity produced",
+        "step2": "Direct current (DC) electricity is produced.",
+        "step3Title": "Conversion",
+        "step3": "An inverter converts DC electricity to alternating current electricity (AC).",
+        "step4Title": "Utilise electricity",
+        "step4": "The electricity can then be used in your property, excess sold to the National Grid or stored."
       },
       "howWattsWhatWorksPage": {
         "title": "The WATTSWHAT way",
