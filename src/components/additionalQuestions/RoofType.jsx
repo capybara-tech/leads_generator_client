@@ -86,14 +86,14 @@ const RoofType = (props) => {
               >
                 <button
                   className="imgRoofTypeBtn"
-                  id="metalIcon"
+                  id="zincIcon"
                   type="button"
-                  onClick={() => setRoofType("metal")}
+                  onClick={() => setRoofType("zinc")}
                 >
                   <img
                     className="imgRoofTypeIcons"
                     src="/images/questionIcons/roofType/zinc.png"
-                    alt="metal"
+                    alt="zinc"
                   />
                 </button>
               </Scrolllink>
@@ -112,20 +112,46 @@ const RoofType = (props) => {
               >
                 <button
                   className="imgRoofTypeBtn"
-                  id="asbestosIcon"
+                  id="rubberIcon"
                   type="button"
-                  onClick={() => setRoofType("asbestos")}
+                  onClick={() => setRoofType("EPDM(rubber)")}
                 >
                   <img
                     className="imgRoofTypeIcons"
                     src="/images/questionIcons/roofType/rubber.png"
-                    alt="asbestos"
+                    alt="EPDM(rubber)"
                   />
                 </button>
               </Scrolllink>
             </Grid.Column>
           </Grid.Row>
-          <Grid.Row columns={1}>
+          <Grid.Row columns={2}>
+            <Grid.Column>
+              <Scrolllink
+                to="roofDirection"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={1500}
+                onMouseDown={async (e) => {
+                  setIndex(0);
+                }}
+              >
+                <button
+                  className="imgRoofTypeBtn"
+                  id="anotherIcon"
+                  type="button"
+                  onClick={() => setRoofType("another")}
+                >
+                  <img
+                    className="imgRoofTypeIcons"
+                    src="/images/dummylogo.png"
+                    alt="another"
+                  />
+                </button>
+              </Scrolllink>{" "}
+            </Grid.Column>
             <Grid.Column>
               <Scrolllink
                 to="roofDirection"
