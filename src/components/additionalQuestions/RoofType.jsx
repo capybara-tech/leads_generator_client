@@ -66,7 +66,7 @@ const RoofType = (props) => {
                 >
                   <img
                     className="imgRoofTypeIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/roofType/felt.png"
                     alt="felt"
                   />
                 </button>
@@ -146,7 +146,7 @@ const RoofType = (props) => {
                 >
                   <img
                     className="imgRoofTypeIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/roofType/corrugatedMetal.png"
                     alt="another"
                   />
                 </button>
@@ -172,7 +172,7 @@ const RoofType = (props) => {
                 >
                   <img
                     className="imgRoofTypeIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/roofType/other.png"
                     alt="another"
                   />
                 </button>
