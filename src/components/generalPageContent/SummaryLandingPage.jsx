@@ -24,10 +24,10 @@ const SummaryLandingPage = () => {
         <Grid.Row>
           <Grid.Column>
             <Card.Group centered id="summaryCardGroup">
-              <div data-aos="fade-right">
+              <div id="threeQuotes" data-aos="fade-right">
                 <Card id="summaryCard1">
                   <Card.Content>
-                    <Card.Header id="summaryTitle1">
+                    <Card.Header data-cy="title" id="summaryTitle1">
                       Get up to 3 Quotes
                     </Card.Header>{" "}
                     <br />
@@ -70,10 +70,10 @@ const SummaryLandingPage = () => {
                   <br />
                 </Card>
               </div>
-              <div data-aos="flip-left">
+              <div id="impactPlanet" data-aos="flip-left">
                 <Card id="summaryCard2">
                   <Card.Content>
-                    <Card.Header id="summaryTitle2">
+                    <Card.Header data-cy="title" id="summaryTitle2">
                       Help save our bruised planet
                     </Card.Header>{" "}
                     <br />
@@ -81,7 +81,7 @@ const SummaryLandingPage = () => {
                       <List>
                         <List.Item className="solarBenefits">
                           <List.Icon name="check" />
-                          <List.Content className="content">
+                          <List.Content data-cy="content" className="content">
                             Harvest infinite, truly clean (and free!) energy
                             from the sun
                           </List.Content>
@@ -89,7 +89,7 @@ const SummaryLandingPage = () => {
                         <br />
                         <List.Item className="solarBenefits">
                           <List.Icon name="check" />
-                          <List.Content>
+                          <List.Content data-cy="content">
                             Dramatically reduce your property's thirst for
                             fossil fuels, burnt to produce electricity
                           </List.Content>
@@ -97,7 +97,7 @@ const SummaryLandingPage = () => {
                         <br />
                         <List.Item className="solarBenefits">
                           <List.Icon name="check" />
-                          <List.Content>
+                          <List.Content data-cy="content">
                             Solar panels have no emissions and therefore zero
                             climate impact once installed
                           </List.Content>
@@ -105,7 +105,7 @@ const SummaryLandingPage = () => {
                         <br />
                         <List.Item className="solarBenefits">
                           <List.Icon name="check" />
-                          <List.Content>
+                          <List.Content data-cy="content">
                             Shrink you carbon footprint drastically overnight
                           </List.Content>
                         </List.Item>{" "}
@@ -124,10 +124,10 @@ const SummaryLandingPage = () => {
                   <br />
                 </Card>
               </div>
-              <div data-aos="flip-right">
+              <div id="impactWallet" data-aos="flip-right">
                 <Card id="summaryCard3">
                   <Card.Content>
-                    <Card.Header id="summaryTitle3">
+                    <Card.Header data-cy="title" id="summaryTitle3">
                       Figures which won't disappoint
                     </Card.Header>{" "}
                     <br />
@@ -135,7 +135,7 @@ const SummaryLandingPage = () => {
                       <List>
                         <List.Item className="solarBenefits">
                           <List.Icon name="check" />
-                          <List.Content>
+                          <List.Content data-cy="content">
                             Lower energy bills and sell excess electricity to
                             the National Grid
                           </List.Content>
@@ -143,7 +143,7 @@ const SummaryLandingPage = () => {
                         <br />
                         <List.Item className="solarBenefits">
                           <List.Icon name="check" />
-                          <List.Content>
+                          <List.Content data-cy="content">
                             Government grants and financial support are up for
                             grabs
                           </List.Content>
@@ -151,14 +151,14 @@ const SummaryLandingPage = () => {
                         <br />
                         <List.Item className="solarBenefits">
                           <List.Icon name="check" />
-                          <List.Content>
+                          <List.Content data-cy="content">
                             Increases the value of your property
                           </List.Content>
                         </List.Item>{" "}
                         <br />
                         <List.Item className="solarBenefits">
                           <List.Icon name="check" />
-                          <List.Content>
+                          <List.Content data-cy="content">
                             An impressive return on investment (ROI) and solar
                             panel prices have fallen by around 70% since 2010,
                             quite a bargain now!
@@ -179,10 +179,10 @@ const SummaryLandingPage = () => {
                   <br />
                 </Card>
               </div>
-              <div data-aos="fade-left">
+              <div id="howPanelsWork" data-aos="fade-left">
                 <Card id="summaryCard4">
                   <Card.Content>
-                    <Card.Header id="summaryTitle4">
+                    <Card.Header data-cy="title" id="summaryTitle4">
                       How solar panels work
                     </Card.Header>{" "}
                     <br />
@@ -190,7 +190,7 @@ const SummaryLandingPage = () => {
                       <List>
                         <List.Item className="solarBenefits">
                           <List.Icon name="check" />
-                          <List.Content>
+                          <List.Content data-cy="content">
                             Daylight (not only sunlight is required!) hits the
                             solar photovoltaic cells in the panels
                           </List.Content>
@@ -198,14 +198,14 @@ const SummaryLandingPage = () => {
                         <br />
                         <List.Item className="solarBenefits">
                           <List.Icon name="check" />
-                          <List.Content>
+                          <List.Content data-cy="content">
                             Direct current (DC) electricity is produced
                           </List.Content>
                         </List.Item>{" "}
                         <br />
                         <List.Item className="solarBenefits">
                           <List.Icon name="check" />
-                          <List.Content>
+                          <List.Content data-cy="content">
                             With a bit of magic, an inverter converts DC
                             electricity to alternating current electricity (AC)
                           </List.Content>
@@ -213,7 +213,7 @@ const SummaryLandingPage = () => {
                         <br />
                         <List.Item className="solarBenefits">
                           <List.Icon name="check" />
-                          <List.Content>
+                          <List.Content data-cy="content">
                             The energy can then be used in your property, excess
                             sold to the national grid or stored
                           </List.Content>
