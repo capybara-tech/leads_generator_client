@@ -37,7 +37,7 @@ describe("Visitor can navigate app from landing information grid", () => {
 
   it("visitor can navigate to how do solar panels work page", () => {
     cy.get("#cardButton4").click();
-    cy.get("[data-cy=title]").should("contain", "How does solar work?");
+    cy.get("[data-cy=title]").should("contain", "How do solar panels actually work?");
     cy.get("#quotesDiv").should("not.exist");
     cy.get("#planetDiv").should("not.exist");
     cy.get("#walletDiv").should("not.exist");
