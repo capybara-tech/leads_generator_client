@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
-import BannerLandingPage from "./BannerLandingPage";
-import LandingPageInfoSegment from "./LandingPageInfoSegment";
+import EnvironmentSectionLandingPage from "./EnvironmentSectionLandingPage";
+import HeroPage from "./HeroPage";
+import SummaryLandingPage from "./SummaryLandingPage";
+import { Grid } from "semantic-ui-react";
+import "./LandingPage.style.css";
 
 const LandingPage = () => {
   useEffect(() => {
@@ -9,8 +12,17 @@ const LandingPage = () => {
 
   return (
     <div>
-      <BannerLandingPage />
-      <LandingPageInfoSegment />
+      <Grid>
+        <Grid.Row id="heroLandingPageSection">
+          <HeroPage />
+        </Grid.Row>
+        <Grid.Row id="environmentalLandingPageSection">
+          <EnvironmentSectionLandingPage />
+        </Grid.Row>
+        <Grid.Row id="summaryLandingPageSection">
+          <SummaryLandingPage />
+        </Grid.Row>
+      </Grid>
     </div>
   );
 };
