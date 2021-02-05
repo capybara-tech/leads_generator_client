@@ -10,8 +10,8 @@ const FAQs = () => {
   return (
     <>
       <div id="faqsPage">
-        <Grid verticalAlign={"middle"}>
-          <Grid.Row centered={true} id="faqTopBanner">
+        <Grid>
+          <Grid.Row verticalAlign={"bottom"} centered={true}  id="faqTopBanner">
             <p id="faqTitle">Frequently asked questions</p>
           </Grid.Row>
           <div>
