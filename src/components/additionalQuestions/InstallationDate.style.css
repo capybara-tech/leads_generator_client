@@ -1,7 +1,7 @@
 #installationDate {
   position: relative;
   height: 100vh;
-  background-color: #ededed;
+  background-color: #fffff4;
 }
 
 #installationIcons {
@@ -10,25 +10,40 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  background-color: transparent;
+}
+
+#installationDateQuestionDiv {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 3vh;
+}
+
+#installationQuestionImage {
+  height: 3.5vh;
+}
+
+.installationDateButtonIcons {
+  background-color: transparent;
+  border-radius: 10px;
+  border-color: #bababa;
+  border-style:solid;
+  outline: none;
+}
+
+.installationDateButtonIcons:hover {
+  border-color: #70af85;
 }
 
 .imgInstallationDateIcons {
   height: 30vh;
   width: 10vw;
+  background-color: #fffff4;
 }
 
-#questionForInstallationDate {
-  font-family: "Poppins", sans-serif;
-  font-size: 3vh;
-}
-
-#installationWord {
-  color: #fe8733cb;
-}
-
-#moveOnToIconsOpening {
-  font-family: "Poppins", sans-serif;
-  font-size: 3vh;
+.imgInstallationDateIcons {
+  background-color: transparent;
+  border-color: #bababa;
 }
 
 input:-webkit-autofill,

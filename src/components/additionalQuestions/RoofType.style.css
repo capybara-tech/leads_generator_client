@@ -1,7 +1,7 @@
 #roofType {
   position: relative;
   height: 100vh;
-  background-color: #ededed;
+  background-color: #fffff4;
 }
 
 #roofTypeIcons {
@@ -10,6 +10,29 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  background-color: transparent;
+}
+
+#roofTypeQuestionDiv {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 3vh;
+}
+
+#roofTypeQuestionImage {
+  height: 3.5vh;
+}
+
+.roofTypeButtonIcons {
+  background-color: transparent;
+  border-radius: 10px;
+  border-color: #bababa;
+  border-style: solid;
+  outline: none;
+}
+
+.roofTypeButtonIcons:hover {
+  border-color: #70af85;
 }
 
 .imgRoofTypeIcons {
@@ -20,10 +43,6 @@
 #questionForRoofType {
   font-family: "Poppins", sans-serif;
   font-size: 3vh;
-}
-
-#typeOfRoofWording {
-  color: #fe8733cb;
 }
 
 input:-webkit-autofill,

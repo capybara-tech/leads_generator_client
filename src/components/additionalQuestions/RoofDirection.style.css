@@ -1,7 +1,7 @@
 #roofDirection {
   position: relative;
   height: 100vh;
-  background-color: #ededed;
+  background-color: #fffff4;
 }
 
 #roofDirectionIcons {
@@ -10,6 +10,29 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  background-color: transparent;
+}
+
+#roofDirectionQuestionDiv {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 3vh;
+}
+
+#roofDirectionQuestionImage {
+  height: 3.5vh;
+}
+
+.roofDirectionButtonIcons {
+  background-color: transparent;
+  border-radius: 10px;
+  border-color: #bababa;
+  border-style: solid;
+  outline: none;
+}
+
+.roofDirectionButtonIcons:hover {
+  border-color: #70af85;
 }
 
 .imgRoofDirectionIcons {
@@ -20,10 +43,6 @@
 #questionForRoofDirection {
   font-family: "Poppins", sans-serif;
   font-size: 3vh;
-}
-
-#directionWord {
-  color: #fe8733cb;
 }
 
 input:-webkit-autofill,

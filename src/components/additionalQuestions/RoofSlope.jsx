@@ -14,9 +14,17 @@ const RoofSlope = (props) => {
       <div id="roofSlope">
         <input type="hidden" name="roof_slope" value={roofSlope} />
         <Grid id="roofSlopeIcons">
-          <h2 id="questionForRoofSlope">
-            What's the <span id="slopeWord">slope</span> of your roof?
-          </h2>
+          <div id="roofSlopeQuestionDiv">
+            <p id="questionForRoofSlope">
+              <img
+                id="roofSlopeQuestionImage"
+                src="/images/questionLogo.png"
+                alt="installationDate"
+              />{" "}
+              {""}
+              What's the slope of your roof?
+            </p>
+          </div>
           <Grid.Row relaxed columns={4}>
             <Grid.Column>
               <Scrolllink
@@ -31,13 +39,14 @@ const RoofSlope = (props) => {
                 }}
               >
                 <button
+                  className="roofSlopeButtonIcons"
                   id="zeroToFiveDegreesIcon"
                   type="button"
                   onClick={() => setRoofSlope("0-5°")}
                 >
                   <img
                     className="imgRoofSlopeIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/roofSlope/flatRoof.png"
                     alt="0-5°"
                   />
                 </button>
@@ -56,13 +65,14 @@ const RoofSlope = (props) => {
                 }}
               >
                 <button
+                  className="roofSlopeButtonIcons"
                   id="fiveToTwentyDegreesIcon"
                   type="button"
                   onClick={() => setRoofSlope("5-20°")}
                 >
                   <img
                     className="imgRoofSlopeIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/roofSlope/lowPitchRoof.png"
                     alt="5-20°"
                   />
                 </button>
@@ -81,13 +91,14 @@ const RoofSlope = (props) => {
                 }}
               >
                 <button
+                  className="roofSlopeButtonIcons"
                   id="twentyToFortyDegreesIcon"
                   type="button"
                   onClick={() => setRoofSlope("20-40°")}
                 >
                   <img
                     className="imgRoofSlopeIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/roofSlope/ordinaryRoof.png"
                     alt="20-40°"
                   />
                 </button>
@@ -106,13 +117,14 @@ const RoofSlope = (props) => {
                 }}
               >
                 <button
+                  className="roofSlopeButtonIcons"
                   id="fortyDegreesPlusIcon"
                   type="button"
                   onClick={() => setRoofSlope("40°+")}
                 >
                   <img
                     className="imgRoofSlopeIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/roofSlope/steepRoof.png"
                     alt="40°+"
                   />
                 </button>
@@ -120,7 +132,7 @@ const RoofSlope = (props) => {
             </Grid.Column>
           </Grid.Row>
           <Grid.Row relaxed columns={1}>
-            <Grid.Column>
+            <Grid.Column textAlign={"left"}>
               <p id="exactRoofSlopeQ">
                 If you know your exact roof slope please enter it below
               </p>

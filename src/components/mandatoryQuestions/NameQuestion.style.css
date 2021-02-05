@@ -8,7 +8,7 @@
 
 #nameQuestion {
   height: 100vh;
-  background-color: #ededed;
+  background-color: #fffff4;
 }
 
 #questionForName {
@@ -17,6 +17,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#nameQuestionDiv {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 3vh;
+}
+
+#nameQuestionImage {
+  height: 3.5vh;
 }
 
 #fieldName {
@@ -45,13 +55,4 @@ input:-webkit-autofill:active {
   top: 50%;
   right: 15%;
   color: rgba(0, 0, 0, 0.4);
-}
-
-#helloWord {
-  color: #fe8733cb;
-}
-#openingQuestion {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 1, 5vw;
 }

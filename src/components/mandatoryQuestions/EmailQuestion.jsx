@@ -7,21 +7,27 @@ import { Popup, Icon } from "semantic-ui-react";
 const EmailQuestion = () => {
   return (
     <div id="emailQuestion">
-      <div id="questionForEmail">
-        <h3 id="questionAskingForEmail">
-          Thanks <span id="nameFromPerson">name of person</span>, what's your
-          email address?
-        </h3>{" "}
-        <Field
-          id="fieldEmail"
-          name="email"
-          component="input"
-          type="text"
-          placeholder="Email"
-        />
-        <br />
+      <div id="emailQuestionDiv">
+        <div id="questionForEmail">
+          <p id="questionAskingForEmail">
+          <img
+              id="emailQuestionImage"
+              src="/images/questionLogo.png"
+              alt="email question"
+            />{" "}
+            {""}
+            Great, what's your email address?
+          </p>{" "}
+          <Field
+            id="fieldEmail"
+            name="email"
+            component="input"
+            type="text"
+            placeholder="Email"
+          />
+          <br />
+        </div>
       </div>
-
       <Scrolllink
         id="emailBack"
         to="nameQuestion"

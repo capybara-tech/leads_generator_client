@@ -14,11 +14,17 @@ const RoofType = (props) => {
       <div id="roofType">
         <input type="hidden" name="roof_type" value={roofType} />
         <Grid id="roofTypeIcons">
-          <h3 id="questionForRoofType">
-            What <span id="typeOfRoofWording">type of roof</span> does the
-            property have?
-          </h3>
-
+          <div id="roofTypeQuestionDiv">
+            <p id="questionForRoofType">
+              <img
+                id="roofDirectionQuestionImage"
+                src="/images/questionLogo.png"
+                alt="roofType"
+              />{" "}
+              {""}
+              What type of roof does the property have?
+            </p>
+          </div>
           <Grid.Row columns={4}>
             <Grid.Column>
               <Scrolllink
@@ -33,14 +39,14 @@ const RoofType = (props) => {
                 }}
               >
                 <button
-                  className="imgRoofTypeBtn"
+                  className="roofTypeButtonIcons"
                   id="tiledIcon"
                   type="button"
                   onClick={() => setRoofType("tiled")}
                 >
                   <img
                     className="imgRoofTypeIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/roofType/tiles.png"
                     alt="tiled"
                   />
                 </button>
@@ -59,14 +65,14 @@ const RoofType = (props) => {
                 }}
               >
                 <button
-                  className="imgRoofTypeBtn"
+                  className="roofTypeButtonIcons"
                   id="feltIcon"
                   type="button"
                   onClick={() => setRoofType("felt")}
                 >
                   <img
                     className="imgRoofTypeIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/roofType/felt.png"
                     alt="felt"
                   />
                 </button>
@@ -85,15 +91,15 @@ const RoofType = (props) => {
                 }}
               >
                 <button
-                  className="imgRoofTypeBtn"
-                  id="metalIcon"
+                  className="roofTypeButtonIcons"
+                  id="zincIcon"
                   type="button"
-                  onClick={() => setRoofType("metal")}
+                  onClick={() => setRoofType("zinc")}
                 >
                   <img
                     className="imgRoofTypeIcons"
-                    src="/images/dummylogo.png"
-                    alt="metal"
+                    src="/images/questionIcons/roofType/zinc.png"
+                    alt="zinc"
                   />
                 </button>
               </Scrolllink>
@@ -111,21 +117,21 @@ const RoofType = (props) => {
                 }}
               >
                 <button
-                  className="imgRoofTypeBtn"
-                  id="asbestosIcon"
+                  className="roofTypeButtonIcons"
+                  id="rubberIcon"
                   type="button"
-                  onClick={() => setRoofType("asbestos")}
+                  onClick={() => setRoofType("EPDM(rubber)")}
                 >
                   <img
                     className="imgRoofTypeIcons"
-                    src="/images/dummylogo.png"
-                    alt="asbestos"
+                    src="/images/questionIcons/roofType/rubber.png"
+                    alt="EPDM(rubber)"
                   />
                 </button>
               </Scrolllink>
             </Grid.Column>
           </Grid.Row>
-          <Grid.Row columns={1}>
+          <Grid.Row columns={2}>
             <Grid.Column>
               <Scrolllink
                 to="roofDirection"
@@ -139,14 +145,40 @@ const RoofType = (props) => {
                 }}
               >
                 <button
-                  className="imgRoofTypeBtn"
+                  className="roofTypeButtonIcons"
                   id="anotherIcon"
                   type="button"
                   onClick={() => setRoofType("another")}
                 >
                   <img
                     className="imgRoofTypeIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/roofType/corrugatedMetal.png"
+                    alt="another"
+                  />
+                </button>
+              </Scrolllink>{" "}
+            </Grid.Column>
+            <Grid.Column>
+              <Scrolllink
+                to="roofDirection"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={1500}
+                onMouseDown={async (e) => {
+                  setIndex(0);
+                }}
+              >
+                <button
+                  className="roofTypeButtonIcons"
+                  id="anotherIcon"
+                  type="button"
+                  onClick={() => setRoofType("another")}
+                >
+                  <img
+                    className="imgRoofTypeIcons"
+                    src="/images/questionIcons/roofType/other.png"
                     alt="another"
                   />
                 </button>

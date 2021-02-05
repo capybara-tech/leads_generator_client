@@ -61,24 +61,29 @@ const AddressQuestion = ({ isScriptLoaded, isScriptLoadSucceed }) => {
               getSuggestionItemProps,
               loading,
             }) => (
-              <div id="questionForAddress">
-                <h3>
-                  Lastly the <span id="addressWord">address</span> intend on
-                  turning green?
-                </h3>
-                <input
-                  id="fieldAddress"
-                  onChange={(e) => setAddress(e.target.value)}
-                  name="address"
-                  {...getInputProps({})}
-                />
-                <div>
+              <div id="addressQuestionDiv">
+                <div id="questionForAddress">
+                  <p>
+                    {" "}
+                    <img
+                      id="addressQuestionImage"
+                      src="/images/questionLogo.png"
+                      alt="address question"
+                    />{" "}
+                    {""}Lastly, the address intend on turning green?
+                  </p>
+                  <input
+                    id="fieldAddress"
+                    onChange={(e) => setAddress(e.target.value)}
+                    name="address"
+                    {...getInputProps({})}
+                  />
                   {loading ? <div>...loading</div> : null}
                   {suggestions.map((suggestion) => {
                     const style = {
                       backgroundColor: suggestion.active
-                        ? "#fe8733cb"
-                        : "#ededed",
+                        ? "#70af85"
+                        : "#fffff4",
                     };
                     return (
                       <div {...getSuggestionItemProps(suggestion, { style })}>

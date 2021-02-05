@@ -1,7 +1,7 @@
 #electricity {
   position: relative;
   height: 100vh;
-  background-color: #ededed;
+  background-color: #fffff4;
 }
 
 #fuseSizeIcons {
@@ -10,6 +10,29 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  background-color: transparent;
+}
+
+#fuseSizeQuestionDiv {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 3vh;
+}
+
+#fuseSizeQuestionImage {
+  height: 3.5vh;
+}
+
+.fuseSizeButtonIcons {
+  background-color: transparent;
+  border-radius: 10px;
+  border-color: #bababa;
+  border-style: solid;
+  outline: none;
+}
+
+.fuseSizeButtonIcons:hover {
+  border-color: #70af85;
 }
 
 .imgFuseSizeIcons {
@@ -19,11 +42,8 @@
 
 #questionAskingForElectricity {
   font-family: "Poppins", sans-serif;
-  font-size: 3vh;
-}
-
-#fuseSizeWord {
-  color: #fe8733cb;
+  font-size: 2.5vh;
+  text-align: left;
 }
 
 #fieldEnergyConsumption {
@@ -36,10 +56,6 @@
   outline: none;
   background-color: transparent;
   background: transparent;
-}
-
-#consuptionWord {
-  color: #fe8733cb;
 }
 
 input:-webkit-autofill,
@@ -56,4 +72,11 @@ input:-webkit-autofill:active {
   top: 50%;
   left: 15%;
   color: rgba(0, 0, 0, 0.4);
+}
+
+#questionAskingForConsumption {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 2.5vh;
+  text-align: left;
 }

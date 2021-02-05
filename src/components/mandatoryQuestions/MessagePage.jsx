@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Modal, Menu } from "semantic-ui-react";
+import { Modal, Menu, Card, Icon, Button } from "semantic-ui-react";
+import "./MessagePage.style.css";
 
 const MessagePage = ({ message }) => {
   return (
@@ -17,11 +18,25 @@ const MessagePage = ({ message }) => {
           {/* success message */}
           <Modal basic open={message}>
             <Modal.Content>
-              <h1>Success</h1>
-              <p data-cy="message">{message}</p>
-              <Menu.Item as={Link} to={{ pathname: "/" }}>
-                <button>Back to homepage</button>
-              </Menu.Item>
+              <Card id="successCard" centered={true}>
+                <Card.Content id="successMessageContent" textAlign="center">
+                  <Card.Header>
+                    <Icon name="check" size="huge" />
+                    <br />
+                    <br />
+                  </Card.Header>
+                  <Card.Header>YAY!</Card.Header>
+                  <Card.Description data-cy="message">
+                    sit back & relax, our partners will contact in no time at
+                    all
+                    <br />
+                    <br />
+                    <Menu.Item as={Link} to={{ pathname: "/" }}>
+                      <Button id="successMessageButton">Back</Button>
+                    </Menu.Item>
+                  </Card.Description>
+                </Card.Content>
+              </Card>
             </Modal.Content>
           </Modal>
         </>

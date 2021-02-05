@@ -12,33 +12,37 @@ const RoofDimensions = (props) => {
   return (
     <>
       <div id="roofDimensions">
-        <div id="questionForRoofDimensions">
-          <h3 id="questionAskingForRoofDimensions">
-            {" "}
-            What's your roof <span id="dimesionWord">dimension</span>?
-          </h3>
-          <Field
-            id="fieldGutterHeight"
-            name="gutter_height"
-            component="input"
-            type="number"
-            placeholder="Gutter height"
-          />
-          <Field
-            id="fieldRoofWidth"
-            name="roof_width"
-            component="input"
-            type="number"
-            placeholder="Roof width"
-          />
-          <Field
-            id="fieldRoofLength"
-            name="roof_length"
-            component="input"
-            type="number"
-            placeholder="Roof length"
-          />
+        <div id="roofDimensionsQuestionDiv">
+          <p id="questionAskingForRoofDimensions">
+            <img
+              id="roofDimensionsQuestionImage"
+              src="/images/questionLogo.png"
+              alt="roof dimensions question"
+            />{" "}
+            What's your roof dimension?
+          </p>
         </div>
+        <Field
+          id="fieldGutterHeight"
+          name="gutter_height"
+          component="input"
+          type="number"
+          placeholder="Gutter height"
+        />
+        <Field
+          id="fieldRoofWidth"
+          name="roof_width"
+          component="input"
+          type="number"
+          placeholder="Roof height"
+        />
+        <Field
+          id="fieldRoofLength"
+          name="roof_length"
+          component="input"
+          type="number"
+          placeholder="Roof length"
+        />
         <Scrolllink
           id="nextToElectricity"
           to="electricity"

@@ -14,9 +14,17 @@ const PropertyType = (props) => {
       <div id="propertyType">
         <input type="hidden" name="property_type" value={propertyType} />
         <Grid id="propertyTypeIcons">
-          <h3 id="questionForPropertyType">
-            What type of <span id="propertyWord">property</span> do you own?
-          </h3>
+          <div id="propertyTypeQuestionDiv">
+            <p id="questionForPropertyType">
+              <img
+                id="propertyTypeQuestionImage"
+                src="/images/questionLogo.png"
+                alt="propertyType"
+              />{" "}
+              {""}
+              What type of property do you own?
+            </p>
+          </div>
           <Grid.Row relaxed columns={4}>
             <Grid.Column>
               <Scrolllink
@@ -31,7 +39,7 @@ const PropertyType = (props) => {
                 }}
               >
                 <button
-                  className="buttonIcons"
+                  className="propertyTypeButtonIcons"
                   id="houseIcon"
                   type="button"
                   onClick={() => {
@@ -41,7 +49,7 @@ const PropertyType = (props) => {
                 >
                   <img
                     className="imgPropertyTypeIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/propertyType/detached.png"
                     alt="house"
                   />
                 </button>{" "}
@@ -60,7 +68,7 @@ const PropertyType = (props) => {
                 }}
               >
                 <button
-                  className="buttonIcons"
+                  className="propertyTypeButtonIcons"
                   id="apartmentIcon"
                   type="button"
                   onClick={() => {
@@ -70,7 +78,7 @@ const PropertyType = (props) => {
                 >
                   <img
                     className="imgPropertyTypeIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/propertyType/apartment.png"
                     alt="apartment"
                   />
                 </button>{" "}
@@ -89,7 +97,7 @@ const PropertyType = (props) => {
                 }}
               >
                 <button
-                  className="buttonIcons"
+                  className="propertyTypeButtonIcons"
                   id="terracedSemiDetachedIcon"
                   type="button"
                   onClick={() => {
@@ -99,7 +107,7 @@ const PropertyType = (props) => {
                 >
                   <img
                     className="imgPropertyTypeIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/propertyType/semiTerraced.png"
                     alt="terraced semi detached"
                   />
                 </button>{" "}
@@ -118,7 +126,7 @@ const PropertyType = (props) => {
                 }}
               >
                 <button
-                  className="buttonIcons"
+                  className="propertyTypeButtonIcons"
                   id="barnIcon"
                   type="button"
                   onClick={() => {
@@ -128,7 +136,7 @@ const PropertyType = (props) => {
                 >
                   <img
                     className="imgPropertyTypeIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/propertyType/barn.png"
                     alt="barn"
                   />
                 </button>{" "}
@@ -149,7 +157,7 @@ const PropertyType = (props) => {
                 }}
               >
                 <button
-                  className="buttonIcons"
+                  className="propertyTypeButtonIcons"
                   id="commercialIcon"
                   type="button"
                   onClick={() => {
@@ -159,7 +167,7 @@ const PropertyType = (props) => {
                 >
                   <img
                     className="imgPropertyTypeIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/propertyType/commercial.png"
                     alt="commercial"
                   />
                 </button>{" "}
@@ -178,7 +186,7 @@ const PropertyType = (props) => {
                 }}
               >
                 <button
-                  className="buttonIcons"
+                  className="propertyTypeButtonIcons"
                   id="agriculturalIcon"
                   type="button"
                   onClick={() => {
@@ -188,7 +196,7 @@ const PropertyType = (props) => {
                 >
                   <img
                     className="imgPropertyTypeIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/propertyType/agricultural.png"
                     alt="agricultural"
                   />
                 </button>{" "}
@@ -207,7 +215,7 @@ const PropertyType = (props) => {
                 }}
               >
                 <button
-                  className="buttonIcons"
+                  className="propertyTypeButtonIcons"
                   id="otherPropertyIcon"
                   type="button"
                   onClick={() => {
@@ -217,7 +225,7 @@ const PropertyType = (props) => {
                 >
                   <img
                     className="imgPropertyTypeIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/propertyType/other.png"
                     alt="other property"
                   />
                 </button>{" "}

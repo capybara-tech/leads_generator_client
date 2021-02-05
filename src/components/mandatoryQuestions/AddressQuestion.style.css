@@ -1,17 +1,17 @@
 #addressQuestion {
   position: relative;
   height: 100vh;
-  background-color: #ededed;
+  background-color: #fffff4;
 }
 
-#questionAskingForAddress {
+#addressQuestionDiv {
+  display: inline-block;
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 1, 5vw;
+  font-size: 3vh;
 }
 
-#addressWord {
-  color: #fe8733cb;
+#addressQuestionImage {
+  height: 3.5vh;
 }
 
 #questionForAddress {

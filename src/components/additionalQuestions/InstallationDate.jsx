@@ -14,10 +14,17 @@ const InstallationDate = (props) => {
       <div id="installationDate">
         <input type="hidden" name="installation_date" value={timeFrame} />
         <Grid id="installationIcons">
-          <h3 id="questionForInstallationDate">
-            When are you looking for{" "}
-            <span id="installationWord">installation</span>?
-          </h3>
+          <div id="installationDateQuestionDiv">
+            <p>
+              <img
+                id="installationQuestionImage"
+                src="/images/questionLogo.png"
+                alt="installationDate"
+              />{" "}
+              {""}
+              When are you looking for installation?
+            </p>
+          </div>
           <Grid.Row relaxed columns={4}>
             <Grid.Column>
               <Scrolllink
@@ -32,14 +39,14 @@ const InstallationDate = (props) => {
                 }}
               >
                 <button
-                  className="buttonIcons"
+                  className="installationDateButtonIcons"
                   id="zeroToThreeMonthsIcon"
                   type="button"
                   onClick={() => setTimeFrame("0-3 Months")}
                 >
                   <img
                     className="imgInstallationDateIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/installationDate/0-3months.png"
                     alt="0-3 months"
                   />
                 </button>{" "}
@@ -58,14 +65,14 @@ const InstallationDate = (props) => {
                 }}
               >
                 <button
-                  className="buttonIcons"
+                  className="installationDateButtonIcons"
                   id="threeToSixMonthsIcon"
                   type="button"
                   onClick={() => setTimeFrame("3-6 Months")}
                 >
                   <img
                     className="imgInstallationDateIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/installationDate/3-6months.png"
                     alt="3-6 months"
                   />
                 </button>{" "}
@@ -84,14 +91,14 @@ const InstallationDate = (props) => {
                 }}
               >
                 <button
-                  className="buttonIcons"
+                  className="installationDateButtonIcons"
                   id="sixToTwelveMonthsIcon"
                   type="button"
                   onClick={() => setTimeFrame("6-12 Months")}
                 >
                   <img
                     className="imgInstallationDateIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/installationDate/6-12months.png"
                     alt="6-12 months"
                   />
                 </button>{" "}
@@ -99,6 +106,7 @@ const InstallationDate = (props) => {
             </Grid.Column>
             <Grid.Column>
               <Scrolllink
+                className="installationDateScrollLinks"
                 to="propertyType"
                 activeClass="active"
                 spy={true}
@@ -110,14 +118,14 @@ const InstallationDate = (props) => {
                 }}
               >
                 <button
-                  className="buttonIcons"
+                  className="installationDateButtonIcons"
                   id="notSure"
                   type="button"
                   onClick={() => setTimeFrame("Not sure")}
                 >
                   <img
                     className="imgInstallationDateIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/installationDate/notSureDates.png"
                     alt="Not sure"
                   />
                 </button>

@@ -7,17 +7,25 @@ import { Popup, Icon } from "semantic-ui-react";
 const NameQuestion = () => {
   return (
     <div id="nameQuestion">
-      <div id="questionForName">
-        <h3 id="openingQuestion" data-cy="title">
-          <span id="helloWord">Hello!</span> My name's Felix, what's yours?
-        </h3>
-        <Field
-          id="fieldName"
-          name="name"
-          component="input"
-          type="text"
-          placeholder="Name..."
-        />
+      <div id="nameQuestionDiv">
+        <div id="questionForName">
+          <p id="openingQuestion" data-cy="title">
+            <img
+              id="nameQuestionImage"
+              src="/images/questionLogo.png"
+              alt="name question"
+            />{" "}
+            {""}
+            Hello! My name's Felix, what's yours?
+          </p>
+          <Field
+            id="fieldName"
+            name="name"
+            component="input"
+            type="text"
+            placeholder="Name..."
+          />{" "}
+        </div>
         <br />
       </div>
       <Scrolllink
