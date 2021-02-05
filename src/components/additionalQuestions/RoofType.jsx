@@ -14,11 +14,17 @@ const RoofType = (props) => {
       <div id="roofType">
         <input type="hidden" name="roof_type" value={roofType} />
         <Grid id="roofTypeIcons">
-          <h3 id="questionForRoofType">
-            What <span id="typeOfRoofWording">type of roof</span> does the
-            property have?
-          </h3>
-
+          <div id="roofTypeQuestionDiv">
+            <p id="questionForRoofType">
+              <img
+                id="roofDirectionQuestionImage"
+                src="/images/questionLogo.png"
+                alt="roofType"
+              />{" "}
+              {""}
+              What type of roof does the property have?
+            </p>
+          </div>
           <Grid.Row columns={4}>
             <Grid.Column>
               <Scrolllink
@@ -33,7 +39,7 @@ const RoofType = (props) => {
                 }}
               >
                 <button
-                  className="imgRoofTypeBtn"
+                  className="roofTypeButtonIcons"
                   id="tiledIcon"
                   type="button"
                   onClick={() => setRoofType("tiled")}
@@ -59,7 +65,7 @@ const RoofType = (props) => {
                 }}
               >
                 <button
-                  className="imgRoofTypeBtn"
+                  className="roofTypeButtonIcons"
                   id="feltIcon"
                   type="button"
                   onClick={() => setRoofType("felt")}
@@ -85,7 +91,7 @@ const RoofType = (props) => {
                 }}
               >
                 <button
-                  className="imgRoofTypeBtn"
+                  className="roofTypeButtonIcons"
                   id="zincIcon"
                   type="button"
                   onClick={() => setRoofType("zinc")}
@@ -111,7 +117,7 @@ const RoofType = (props) => {
                 }}
               >
                 <button
-                  className="imgRoofTypeBtn"
+                  className="roofTypeButtonIcons"
                   id="rubberIcon"
                   type="button"
                   onClick={() => setRoofType("EPDM(rubber)")}
@@ -139,7 +145,7 @@ const RoofType = (props) => {
                 }}
               >
                 <button
-                  className="imgRoofTypeBtn"
+                  className="roofTypeButtonIcons"
                   id="anotherIcon"
                   type="button"
                   onClick={() => setRoofType("another")}
@@ -165,7 +171,7 @@ const RoofType = (props) => {
                 }}
               >
                 <button
-                  className="imgRoofTypeBtn"
+                  className="roofTypeButtonIcons"
                   id="anotherIcon"
                   type="button"
                   onClick={() => setRoofType("another")}
