@@ -25,18 +25,14 @@ const MessagePage = ({ message }) => {
                     <br />
                     <br />
                   </Card.Header>
-                  <Card.Header>
-                    YAY!
-                    <br /> Nothing went wrong!
-                  </Card.Header>
-                  <Card.Description>
-                    sit back & relax, our partnes will contact you!
+                  <Card.Header>YAY!</Card.Header>
+                  <Card.Description data-cy="message">
+                    sit back & relax, our partners will contact in no time at
+                    all
                     <br />
                     <br />
                     <Menu.Item as={Link} to={{ pathname: "/" }}>
-                      <Button id="successMessageButton">
-                        Back to homepage
-                      </Button>
+                      <Button id="successMessageButton">Back</Button>
                     </Menu.Item>
                   </Card.Description>
                 </Card.Content>
