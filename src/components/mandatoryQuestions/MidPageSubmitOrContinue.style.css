@@ -1,12 +1,18 @@
 #midPageSubmitOrContinue {
+  height:100vh;
+  background-color: #fffff4;
+}
+
+#SubmitOrContinueDiv {
   position: relative;
-  height: 30vh;
+  min-height: 35vh;
+  width:60vw;
   border-radius: 10px;
   background-color: #c8dacc;
-  margin-left: 20vw;
-  margin-right: 20vw;
-  margin-top: 25vh;
-  margin-bottom: 10vh;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+ 
 }
 
 #midPageTitle {
