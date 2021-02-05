@@ -1,0 +1,23 @@
+#successMessageContent {
+  background-color: #70af85;
+  font-family: "Poppins", sans-serif;
+  font-size: 3vh;
+}
+#successCard {
+  box-shadow: none;
+  border-radius: 10px;
+  min-width: 25vw;
+}
+#successMessageButton {
+  position: relative;
+  font-size: 3vh;
+  border-radius: 20px;
+  background-color: #fffff4;
+  color: #70af85;
+  border-style: solid;
+}
+#successMessageButton:hover {
+  background-color: #70af85;
+  color: #fffff4;
+  border-color: #fffff4;
+}
