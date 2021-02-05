@@ -1,7 +1,7 @@
 #propertyType {
   position: relative;
   height: 100vh;
-  background-color: #ededed;
+  background-color: #fffff4;
 }
 
 #propertyTypeIcons {
@@ -10,6 +10,29 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  background-color: transparent;
+}
+
+#propertyTypeQuestionDiv {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 3vh;
+}
+
+#propertyTypeQuestionImage {
+  height: 3.5vh;
+}
+
+.propertyTypeButtonIcons {
+  background-color: transparent;
+  border-radius: 10px;
+  border-color: #bababa;
+  border-style: solid;
+  outline: none;
+}
+
+.propertyTypeButtonIcons:hover {
+  border-color: #70af85;
 }
 
 .imgPropertyTypeIcons {
@@ -20,10 +43,6 @@
 #questionForPropertyType {
   font-family: "Poppins", sans-serif;
   font-size: 3vh;
-}
-
-#propertyWord {
-  color: #fe8733cb;
 }
 
 input:-webkit-autofill,
