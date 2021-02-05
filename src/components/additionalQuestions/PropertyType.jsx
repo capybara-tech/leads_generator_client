@@ -41,7 +41,7 @@ const PropertyType = (props) => {
                 >
                   <img
                     className="imgPropertyTypeIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/propertyType/detached.png"
                     alt="house"
                   />
                 </button>{" "}
@@ -70,7 +70,7 @@ const PropertyType = (props) => {
                 >
                   <img
                     className="imgPropertyTypeIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/propertyType/apartment.png"
                     alt="apartment"
                   />
                 </button>{" "}
@@ -99,7 +99,7 @@ const PropertyType = (props) => {
                 >
                   <img
                     className="imgPropertyTypeIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/propertyType/semiTerraced.png"
                     alt="terraced semi detached"
                   />
                 </button>{" "}
@@ -128,7 +128,7 @@ const PropertyType = (props) => {
                 >
                   <img
                     className="imgPropertyTypeIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/propertyType/barn.png"
                     alt="barn"
                   />
                 </button>{" "}
@@ -159,7 +159,7 @@ const PropertyType = (props) => {
                 >
                   <img
                     className="imgPropertyTypeIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/propertyType/commercial.png"
                     alt="commercial"
                   />
                 </button>{" "}
@@ -188,7 +188,7 @@ const PropertyType = (props) => {
                 >
                   <img
                     className="imgPropertyTypeIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/propertyType/agricultural.png"
                     alt="agricultural"
                   />
                 </button>{" "}
@@ -217,7 +217,7 @@ const PropertyType = (props) => {
                 >
                   <img
                     className="imgPropertyTypeIcons"
-                    src="/images/dummylogo.png"
+                    src="/images/questionIcons/propertyType/other.png"
                     alt="other property"
                   />
                 </button>{" "}
