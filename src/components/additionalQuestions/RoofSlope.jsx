@@ -132,7 +132,7 @@ const RoofSlope = (props) => {
             </Grid.Column>
           </Grid.Row>
           <Grid.Row relaxed columns={1}>
-            <Grid.Column>
+            <Grid.Column textAlign={"left"}>
               <p id="exactRoofSlopeQ">
                 If you know your exact roof slope please enter it below
               </p>

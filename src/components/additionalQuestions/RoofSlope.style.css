@@ -110,5 +110,6 @@ input:-webkit-autofill:active {
 
 #exactRoofSlopeQ {
   font-family: "Poppins", sans-serif;
-  font-size: 2vh;
+  font-size: 2.5vh;
+  text-align: left;
 }

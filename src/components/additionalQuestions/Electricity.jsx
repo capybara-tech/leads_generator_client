@@ -82,8 +82,8 @@ const Electricity = (props) => {
           </Grid.Column>
         </Grid.Row>
         <Grid.Row relaxed columns={1}>
-          <Grid.Column>
-            <h3 id="questionAskingForElectricity">
+          <Grid.Column textAlign={"left"}>
+            <h3 id="questionAskingForConsumption">
               What is your yearly electricity consumption?
             </h3>
             <Field

@@ -42,7 +42,8 @@
 
 #questionAskingForElectricity {
   font-family: "Poppins", sans-serif;
-  font-size: 3vh;
+  font-size: 2.5vh;
+  text-align: left;
 }
 
 #fieldEnergyConsumption {
@@ -71,4 +72,11 @@ input:-webkit-autofill:active {
   top: 50%;
   left: 15%;
   color: rgba(0, 0, 0, 0.4);
+}
+
+#questionAskingForConsumption {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 2.5vh;
+  text-align: left;
 }
