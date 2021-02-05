@@ -78,7 +78,6 @@ const AddressQuestion = ({ isScriptLoaded, isScriptLoadSucceed }) => {
                     name="address"
                     {...getInputProps({})}
                   />
-                  <div></div>
                   {loading ? <div>...loading</div> : null}
                   {suggestions.map((suggestion) => {
                     const style = {

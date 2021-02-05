@@ -16,7 +16,7 @@ const EmailQuestion = () => {
               alt="email question"
             />{" "}
             {""}
-            Thanks [name of person], what's your email address?
+            Great, what's your email address?
           </p>{" "}
           <Field
             id="fieldEmail"
