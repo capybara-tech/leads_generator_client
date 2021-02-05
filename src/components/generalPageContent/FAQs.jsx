@@ -12,7 +12,7 @@ const FAQs = () => {
       <div id="faqsPage">
         <Grid>
           <Grid.Row id="faqTopBanner">
-            <p id="faqTitle">Frequently asked questions</p>
+            <p data-cy="title"id="faqTitle">Frequently asked questions</p>
           </Grid.Row>
           <div>
             <Card.Group centered={true} itemsPerRow={"3"} stackable>
