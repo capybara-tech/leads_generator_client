@@ -11,12 +11,12 @@ const FAQs = () => {
     <>
       <div id="faqsPage">
         <Grid>
-          <Grid.Row verticalAlign={"bottom"} centered={true}  id="faqTopBanner">
+          <Grid.Row id="faqTopBanner">
             <p id="faqTitle">Frequently asked questions</p>
           </Grid.Row>
           <div>
             <Card.Group centered={true} itemsPerRow={"3"} stackable>
-              <Card>
+              <Card id="faqCards">
                 <Card.Content>
                   <Card.Header>How does WattsWhat's service work?</Card.Header>
                   <Card.Description>
@@ -31,7 +31,7 @@ const FAQs = () => {
                   </Card.Description>
                 </Card.Content>
               </Card>
-              <Card>
+              <Card id="faqCards">
                 <Card.Content>
                   <Card.Header>
                     What is the cost for the quotes? (a heads up - free!)
@@ -42,7 +42,7 @@ const FAQs = () => {
                   </Card.Description>
                 </Card.Content>
               </Card>
-              <Card>
+              <Card id="faqCards">
                 <Card.Content>
                   <Card.Header>How many quotes will I receive?</Card.Header>
                   <Card.Description>
@@ -52,7 +52,7 @@ const FAQs = () => {
                   </Card.Description>
                 </Card.Content>
               </Card>
-              <Card>
+              <Card id="faqCards">
                 <Card.Content>
                   <Card.Header>Are your installers certified?</Card.Header>
                   <Card.Description>
@@ -62,7 +62,7 @@ const FAQs = () => {
                   </Card.Description>
                 </Card.Content>
               </Card>
-              <Card>
+              <Card id="faqCards">
                 <Card.Content>
                   <Card.Header>
                     What are the disadvantages of solar panels?
@@ -80,7 +80,7 @@ const FAQs = () => {
                   </Card.Description>
                 </Card.Content>
               </Card>
-              <Card>
+              <Card id="faqCards">
                 <Card.Content>
                   <Card.Header>
                     How can I get into contact with WattsWhat?
@@ -93,7 +93,7 @@ const FAQs = () => {
                   </Card.Description>
                 </Card.Content>
               </Card>
-              <Card>
+              <Card id="faqCards">
                 <Card.Content>
                   <Card.Header>
                     As a solar professional, how do I partner with WattsWhat?
