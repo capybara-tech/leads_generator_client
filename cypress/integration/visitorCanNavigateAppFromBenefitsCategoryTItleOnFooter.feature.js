@@ -5,7 +5,7 @@ describe("Visitor can navigate app from benefits category title on the footer", 
 
   it("to Ecofriendly", () => {
     cy.get("[data-cy=footer]").within(() => {
-      cy.get("[data-cy=button]").contains("Ecofriendly").click();
+      cy.get("[data-cy=button]").contains("Environmental").click();
     });
     cy.get("[data-cy=title]").should(
       "contain",
@@ -36,7 +36,7 @@ describe("Visitor can navigate app from benefits category title on the footer", 
 
   it("to Profit-oriented", () => {
     cy.get("[data-cy=footer]").within(() => {
-      cy.get("[data-cy=button]").contains("Profit-oriented").click();
+      cy.get("[data-cy=button]").contains("Financial").click();
     });
     cy.get("[data-cy=title]").should(
       "contain",
