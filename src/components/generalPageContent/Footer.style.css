@@ -35,7 +35,7 @@
 }
 
 .footerLink:hover {
-  color: rgba(223, 223, 223, 0.605);
+  color: #bababa;
 }
 
 #adminLink {
@@ -43,7 +43,7 @@
 }
 
 #trophy {
-  color: rgba(238, 238, 238, 0.742);
+  color: #fe8733;
 }
 
 .contact {
@@ -55,17 +55,17 @@
 }
 
 #instagramIcon:hover {
-  color: rgba(223, 223, 223, 0.605);
+  color: #bababa;
 }
 
 #facebookIcon:hover {
-  color: rgba(223, 223, 223, 0.605);
+  color: #bababa;
 }
 
 #twitterIcon:hover {
-  color: rgba(223, 223, 223, 0.605);
+  color: #bababa;
 }
 
 #linkedinIcon:hover {
-  color: rgba(223, 223, 223, 0.605);
+  color: #bababa;
 }

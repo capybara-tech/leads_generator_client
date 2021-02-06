@@ -29,7 +29,7 @@ const Footer = (props) => {
                 as={Link}
                 to={{ pathname: "/environment" }}
               >
-                Ecofriendly
+                Environmental
               </Link>{" "}
               <br />
               <Link
@@ -38,7 +38,7 @@ const Footer = (props) => {
                 as={Link}
                 to={{ pathname: "/economics" }}
               >
-                Profit-oriented
+                Financial
               </Link>{" "}
             </Grid.Column>
             <Grid.Column>
@@ -58,7 +58,7 @@ const Footer = (props) => {
                 as={Link}
                 to={{ pathname: "/howitworks" }}
               >
-                How WATTSWHAT works
+                How WattsWhat works
               </Link>{" "}
               <br />
               <Link
@@ -88,7 +88,8 @@ const Footer = (props) => {
                 to={{ pathname: "/termsandconditions" }}
               >
                 Terms and conditions
-              </Link>{" "}
+              </Link>
+              <br />{" "}
               <Link
                 className="footerLink"
                 data-cy="button"
@@ -158,9 +159,7 @@ const Footer = (props) => {
                   aria-hidden="true"
                 />
               </div>
-              <h3 className="footerHeader">
-                Our awesome charities
-              </h3>
+              <h3 className="footerHeader">Our charities</h3>
               <p id="protectTheForest" className="footerLink">
                 Protect the forest
               </p>
