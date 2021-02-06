@@ -1,13 +1,13 @@
 .footer {
   padding-top: 10vh;
   position: absolute;
-  background: rgba(0, 66, 37, 0.5);
+  background: #181460;
   text-align: center;
   width: 100%;
   font-family: "Poppins", sans-serif;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-weight: bold;
-  color: #0e0905cb;
+  color: #fffff4;
 }
 
 .footerHeader {
@@ -24,12 +24,12 @@
   height: 0;
   width: 3.5vw;
   content: "";
-  border-top: 2.5px solid #fe8733cb;
+  border-top: 2.5px solid;
 }
 
 .footerLink {
-  color: #0e0905cb;
-  font-size: 1.3em;
+  color: #fffff4;
+  font-size: 1.2em;
   font-weight: bold;
   margin: 0em;
 }
