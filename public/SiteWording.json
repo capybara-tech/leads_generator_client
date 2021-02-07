@@ -305,6 +305,12 @@
       "aboutUs": {
         "title": "About us",
         "content": "This website is owned and operated by xxx Limited. We are registered in England & Wales under number xxxx of xxx (registered office). Our VAT number is xxxx and Data protection registration reference xxxx. Our contact details can be found by clicking here."
+      },
+        "governinglaw": {
+          "title": "Governing law and jurisdiction",
+          "content1": "These terms and conditions / terms of use shall be construed and governed in all respects in accordance with English law and shall be subject to the exclusive jurisdiction of the English Courts.",
+          "content2": "If any provision of these terms and conditions / terms of use shall be prohibited by law or adjudged by a Court or other competent authority to be unlawful, void or unenforceable such provision shall to the extent required be severed from these terms and conditions / terms of use and rendered ineffective as far as possible without modifying the remaining provisions of these terms and conditions / terms of use and shall not in any way affect any other circumstances of or the validity or enforcement of the terms and conditions / terms of use."
+        }
       }
     }
   }
