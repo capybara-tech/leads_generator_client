@@ -23,7 +23,7 @@ const SummaryLandingPage = () => {
         </Grid.Row>
         <Grid.Row>
           <Grid.Column>
-            <Card.Group centered id="summaryCardGroup">
+            <Card.Group stackable centered id="summaryCardGroup">
               <div id="threeQuotes" data-aos="fade-right">
                 <Card id="summaryCard1">
                   <Card.Content>

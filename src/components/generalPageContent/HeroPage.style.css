@@ -1,3 +1,8 @@
+#heroPage {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
 #bannerContent {
   position: absolute;
   top: 50vh;
@@ -41,7 +46,7 @@
   height: 1rem;
   display: flex;
   position: absolute;
-  top: 94%;
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: black;

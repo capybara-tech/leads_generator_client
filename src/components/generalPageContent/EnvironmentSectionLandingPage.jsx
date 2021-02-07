@@ -40,6 +40,7 @@ const EnvironmentSectionLandingPage = () => {
               Being 100% dedicated to our cause we have teamed up with two
               conservational charities and donate a percentage of our profits.
               <br />
+              <br />
               <Button
                 id="bannerButton"
                 data-cy="button"

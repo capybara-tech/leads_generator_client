@@ -1,3 +1,8 @@
+#summaryLandingPage {
+  min-width:100vw;
+  min-height:100vh;
+}
+
 #summaryCards {
   position: relative;
   margin-top: 5vw;

@@ -1,6 +1,10 @@
+#environmentSection {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
 #topCardsEnvironment {
   position: relative;
-  width: 100vw;
   padding-left: 5vh;
   padding-right: 5vh;
 }
@@ -35,7 +39,8 @@
 
 #ourDedication {
   background-image: url("/images/charity.png");
-  height: 50vh;
+  max-height: 50vh;
+  min-height: 40vh;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -71,6 +76,7 @@
   font-weight: 400;
   background-color: transparent;
   border-style: solid;
+  border-width: 0.1vw;
   color: black;
   border-radius: 10px;
 }
@@ -79,4 +85,5 @@
   background-color: transparent;
   color: #70af85;
   border: solid #70af85;
+  border-width: 0.1vw;
 }
