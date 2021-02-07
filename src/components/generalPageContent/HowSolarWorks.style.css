@@ -1,5 +1,5 @@
 #howSolarWorksContent {
-  height: 105vh;
+  min-height: 105vh;
   padding-top: 15vh;
   color: #0D0E0B;
 }

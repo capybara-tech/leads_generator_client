@@ -298,6 +298,14 @@
       "email": "capybara.it@gmail.com",
       "post": "Kista, Stockholm",
       "conclude": "Real people ready to address your queries or offer friendly advice."
+    },
+    "termsAndConditions": {
+      "title": "Terms and conditions / Terms of use",
+      "subTitle": "Please ensure that you read carefully and understand fully these terms and conditions / terms of use before using this website.",
+      "aboutUs": {
+        "title": "About us",
+        "content": "This website is owned and operated by xxx Limited. We are registered in England & Wales under number xxxx of xxx (registered office). Our VAT number is xxxx and Data protection registration reference xxxx. Our contact details can be found by clicking here."
+      }
     }
   }
 }
