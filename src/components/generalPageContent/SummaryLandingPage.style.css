@@ -19,6 +19,7 @@
   border-style: solid;
   border-width: 0.3vh;
   border-radius: 10px;
+  box-shadow: none;
 }
 
 #summaryTitle1 {
@@ -63,6 +64,7 @@ i.icon.check {
   border-style: solid;
   border-width: 0.3vh;
   border-radius: 10px;
+  box-shadow: none;
 }
 
 #summaryTitle2 {
@@ -103,6 +105,7 @@ i.icon.check {
   border-style: solid;
   border-width: 0.3vh;
   border-radius: 10px;
+  box-shadow: none;
 }
 
 #summaryTitle3 {
@@ -143,6 +146,7 @@ i.icon.check {
   border-style: solid;
   border-width: 0.3vh;
   border-radius: 10px;
+  box-shadow: none;
 }
 
 #summaryTitle4 {
