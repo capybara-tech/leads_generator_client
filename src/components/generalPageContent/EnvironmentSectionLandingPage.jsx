@@ -26,6 +26,7 @@ const EnvironmentSectionLandingPage = () => {
             </p>
           </Grid.Column>
           <Grid.Column>
+            <p id="promotionEnvironmentalBenefitsTitle">Voice the benefits</p>
             <p id="promotingEnvironmentalBenefitsText">
               Through promoting the generally unknown environmental benefits of
               solar, and some lobbying thrown in, our aim is to help people live
@@ -36,6 +37,7 @@ const EnvironmentSectionLandingPage = () => {
         </Grid.Row>
         <Grid.Row columns={1} id="bottomCardEnvironment">
           <Grid.Column id="ourDedication" textAlign="center">
+          <p id="ourDedicationTitle">Our charities</p>
             <p id="ourDedicationText">
               Being 100% dedicated to our cause we have teamed up with two
               conservational charities and donate a percentage of our profits.

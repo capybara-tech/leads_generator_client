@@ -22,19 +22,27 @@
 }
 
 #ourPrimaryMissonText {
-  padding-left: 15vh;
+  text-align: center;
   color: white;
   position: absolute;
-  top: 50%;
+  bottom: 30%;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 1.5vw;
+  font-size: 1rem;
+  background-color: #70af85;
+}
+
+#promotionEnvironmentalBenefitsTitle {
+  padding-top: 5%;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
 }
 
 #promotingEnvironmentalBenefitsText {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 2.5vw;
+  font-size: 1.3rem;
+  text-align: left;
 }
 
 #ourDedication {
