@@ -30,17 +30,18 @@ const EnvironmentSectionLandingPage = () => {
             <p id="promotingEnvironmentalBenefitsText">
               Through promoting the generally unknown environmental benefits of
               solar, and some lobbying thrown in, our aim is to help people live
-              more informed and creative lives. Tech available to be harnessed
-              like the popular electric car.
+              more informed and creative lives. <br /> <br />
+              Think of solar panels as the undiscovered electic car.
             </p>
           </Grid.Column>
         </Grid.Row>
         <Grid.Row columns={1} id="bottomCardEnvironment">
           <Grid.Column id="ourDedication" textAlign="center">
-          <p id="ourDedicationTitle">Our charities</p>
+            <p id="ourDedicationTitle">Our charities</p>
             <p id="ourDedicationText">
-              Being 100% dedicated to our cause we have teamed up with two
-              conservational charities and donate a percentage of our profits.
+              The team here at WattsWhat are 100% dedicated to our cause.
+              We donate a percentage of our profits to two conservational
+              charities who we have teamed up with.
               <br />
               <br />
               <Button

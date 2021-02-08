@@ -30,6 +30,7 @@
   font-weight: 600;
   font-size: 1rem;
   background-color: #70af85;
+  border-radius: 3px;
 }
 
 #promotionEnvironmentalBenefitsTitle {
@@ -55,15 +56,21 @@
   margin-right: 30vh;
 }
 
+#ourDedicationTitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  text-align: left;
+  padding-left: 5vw;
+}
+
 #ourDedicationText {
   position: absolute;
-  top: 50%;
-  transform: translate(0%, -50%);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 1.5vw;
+  text-align: left;
+  padding-left: 5vw;
+  font-size: 1.3rem;
   margin-right: 50vh;
-  padding-left: 5vh;
 }
 
 #environmentalContentLandingPage {
