@@ -16,7 +16,7 @@ const HowItWorks = () => {
         The WATTSWHAT way
       </h1>
       <div id="howItWorksCards">
-        <Card.Group>
+        <Card.Group centered>
           <Card id="card1">
             <Card.Content>
               <Card.Header id="howItWorksNumber1">01</Card.Header>

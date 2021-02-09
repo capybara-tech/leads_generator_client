@@ -1,5 +1,5 @@
 #howItWorksContent {
-  height: 105vh;
+  min-height: 105vh;
   padding-top: 12vh;
 }
 
@@ -13,6 +13,7 @@
 #howItWorkssubTitle {
   font-family: "Poppins", sans-serif;
   font-size: 2vh;
+  margin-top: 10vh;
   margin-left: 20%;
 }
 
