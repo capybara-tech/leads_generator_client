@@ -185,3 +185,63 @@ i.icon.check {
   border-width: 0.1vw;
   border-color: #fe8733;
 }
+
+
+/* ------------mobile------------ */
+
+#summaryLandingPageMobile {
+  min-height:100vh;
+  min-width: 100vw;
+}
+
+#summaryTitleMobile {
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+#summaryCardGroupMobile {
+  padding-top: 5rem;
+  min-width: 100vw;
+}
+
+#summaryCardsMobile {
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+
+#summaryCard1Mobile {
+  width:48vw;
+  min-height:90vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+#summaryCard2Mobile {
+  width:48vw;
+  min-height:90vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+#summaryCard3Mobile {
+  width:48vw;
+  min-height:90vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+#summaryCard4Mobile {
+  width:48vw;
+  height:90vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}

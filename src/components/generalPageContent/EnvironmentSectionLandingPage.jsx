@@ -53,7 +53,7 @@ const EnvironmentSectionLandingPage = () => {
                       </Grid.Column>
                     </Grid.Row>
                     <Grid.Row id="ourDedicationMobile">
-                      <Grid.Column textAlign={"center"}>
+                      <Grid.Column>
                         {" "}
                         <p id="ourDedicationTitleMobile">Our charities</p>
                         <p id="ourDedicationTextMobile">
@@ -75,12 +75,7 @@ const EnvironmentSectionLandingPage = () => {
                     </Grid.Row>
                     <Grid.Row id="ourCharitiesImageMobile">
                       <Grid.Column>
-                        <Image
-                          size="medium"
-                          centered
-                          src="/images/charity.png"
-                        />
-                      </Grid.Column>
+                      <Image size="medium" centered src="/images/charity.png"/></Grid.Column>
                     </Grid.Row>
                   </Grid>
                 </>
