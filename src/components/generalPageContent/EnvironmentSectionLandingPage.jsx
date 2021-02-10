@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Link as Scrolllink } from "react-scroll";
-import { Grid, Button, Icon } from "semantic-ui-react";
+import { Grid, Button, Icon, Image } from "semantic-ui-react";
 import { motion } from "framer-motion";
 import Media from "react-media";
 import "./EnvironmentalSectionLandingPage.style.css";
@@ -28,37 +28,56 @@ const EnvironmentSectionLandingPage = () => {
             <>
               {matches.mobile && (
                 <>
-                <Grid>
-                  <Grid.Row id="topCardsEnvironmentMobile">
-                    <Grid.Column id="ourPrimaryMissionRowMobile">
-                      {" "}
-                      <p id="ourPrimaryMissonTextMobile">
-                        Our primary mission is to help future proof our planet
-                        and combat climate destruction.
-                      </p>
-                    </Grid.Column>
-                  </Grid.Row>
-                  <Grid.Row id="promotionEnvironmentalBenefitsCardMobile">
-                    <Grid.Column>
-                      <p id="promotionEnvironmentalBenefitsTitleMobile">
-                        Voice the benefits
-                      </p>
-                      <p id="promotingEnvironmentalBenefitsTextMobile">
-                        Through promoting the generally unknown environmental
-                        benefits of solar, and some lobbying thrown in, our aim
-                        is to help people live more informed and creative lives.{" "}
-                        <br /> <br />
-                        Think of solar panels as the undiscovered electic car.
-                      </p>
-                    </Grid.Column>
-                  </Grid.Row>
-                  <Grid.Row>
-                    <Grid.Column></Grid.Column>
-                  </Grid.Row>
-                  <Grid.Row>
-                    <Grid.Column></Grid.Column>
-                  </Grid.Row>
-                </Grid>
+                  <Grid>
+                    <Grid.Row id="topCardsEnvironmentMobile">
+                      <Grid.Column id="ourPrimaryMissionRowMobile">
+                        {" "}
+                        <p id="ourPrimaryMissonTextMobile">
+                          Our primary mission is to help future proof our planet
+                          and combat climate destruction.
+                        </p>
+                      </Grid.Column>
+                    </Grid.Row>
+                    <Grid.Row id="promotionEnvironmentalBenefitsCardMobile">
+                      <Grid.Column>
+                        <p id="promotionEnvironmentalBenefitsTitleMobile">
+                          Voice the benefits
+                        </p>
+                        <p id="promotingEnvironmentalBenefitsTextMobile">
+                          Through promoting the generally unknown environmental
+                          benefits of solar, and some lobbying thrown in, our
+                          aim is to help people live more informed and creative
+                          lives. <br /> <br />
+                          Think of solar panels as the undiscovered electic car.
+                        </p>
+                      </Grid.Column>
+                    </Grid.Row>
+                    <Grid.Row id="ourDedicationMobile">
+                      <Grid.Column textAlign={"center"}>
+                        {" "}
+                        <p id="ourDedicationTitleMobile">Our charities</p>
+                        <p id="ourDedicationTextMobile">
+                          The team here at WattsWhat are 100% dedicated to our
+                          cause. We donate a percentage of our profits to two
+                          conservational charities who we have teamed up with.
+                          <br />
+                          <br />
+                          <Button
+                            id="bannerButtonMobile"
+                            data-cy="button"
+                            as={Link}
+                            to={{ pathname: "/aboutus" }}
+                          >
+                            Read more
+                          </Button>
+                        </p>
+                      </Grid.Column>
+                    </Grid.Row>
+                    <Grid.Row id="ourCharitiesImageMobile">
+                      <Grid.Column>
+                      <Image size="medium" centered src="/images/charity.png"/></Grid.Column>
+                    </Grid.Row>
+                  </Grid>
                 </>
               )}
               {matches.desktop && (
