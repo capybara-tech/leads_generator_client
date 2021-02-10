@@ -16,3 +16,19 @@
   min-height: 100vh;
   background-image: linear-gradient(#fffff4, #70af85);
 }
+
+
+/* ----------mobile---------- */
+
+
+#heroLandingPageSectionMobile {
+  min-height: 100vh;
+}
+
+#environmentalLandingPageSectionMobile {
+  min-height: 100vh;
+}
+
+#summaryLandingPageSectionMobile {
+  min-height: 100vh;
+}

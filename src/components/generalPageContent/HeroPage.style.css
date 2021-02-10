@@ -51,3 +51,70 @@
   transform: translate(-50%, -50%);
   color: black;
 }
+
+/* ------------mobile------------ */
+
+
+#heroPageMobile {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+#topBannerContentMobile {
+  width: 100vw;
+  height:50vh;
+  background-color:#fffff4;
+}
+
+#bannerTitleMobile {
+  position: relative;
+  top:50%;
+  transform: translate(0%,-50%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: black;
+}
+
+#subTitleObtainQuotesMobile {
+  background: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: black;
+}
+
+#bottomBannerContentMobile {
+  width: 100vw;
+  height:50vh;
+  background-color: #70af85;
+}
+
+#environmentalHeroTitleMobile {
+  position: relative;
+  top:50%;
+  transform: translate(0%,-50%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: black;
+}
+
+.numbers {
+  color: #fe8733;
+}
+
+#angleDownIconMobile {
+  color: #fe8733;
+}
+
+#dubbleArrowDownMobile {
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
