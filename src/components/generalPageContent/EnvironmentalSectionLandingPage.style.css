@@ -103,3 +103,31 @@
   border: solid #70af85;
   border-width: 0.1vw;
 }
+
+/* ------------mobile--------------- */
+
+#topCardsEnvironmentMobile {
+  position: relative;
+  padding-top:0vh;
+}
+
+#ourPrimaryMissinRowMobile {
+  min-height:40vh;
+  background-image: url("/images/old-age-360714_1920.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width:100vw;
+}
+
+#ourPrimaryMissonTextMobile {
+  position: relative;
+  top:80%;
+  text-align: center;
+  color: #fffff4;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  background-color: #70af85;
+  border-radius: 3px;
+  margin: 1rem;
+}
