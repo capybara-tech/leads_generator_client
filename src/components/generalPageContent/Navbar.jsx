@@ -33,69 +33,72 @@ const Navbar = (props) => {
           <>
             {matches.mobile && (
               <>
-                <nav role="navigation">
-                  <Menu.Item  position="right"
-                          as={Link}
-                          to={{ pathname: "/" }}><img id="logoMobile" src="/images/final logo.png"/></Menu.Item>
-                
-                  <div id="menuToggle">
-                    
-                    <input type="checkbox" />
-                    
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div id="navbarMobile">
+                  <nav role="navigation">
+                    <Menu text id="logoMobile">
+                    <Menu.Item
+                    position={"right"}
+                     as={Link} to={{ pathname: "/" }}>
+                      <Image size={"small"} src="/images/final logo.png" />
+                    </Menu.Item>
+</Menu>
+                    <div id="menuToggle">
+                      <input type="checkbox" />
 
-                    <ul id="menu">
-                      <Menu text vertical>
-                        <p>Why Solar</p>
-                        <ol>
-                        <Menu.Item
-                          position="right"
-                          as={Link}
-                          to={{ pathname: "/environment" }}
-                          content="- Environment"
-                          data-cy="button"
-                        /></ol>
-                        <ol>
+                      <span></span>
+                      <span></span>
+                      <span></span>
 
-                        <Menu.Item
-                          position="right"
-                          as={Link}
-                          to={{ pathname: "/economics" }}
-                          content="- Economy"
-                          data-cy="button"
-                        /></ol>
+                      <ul id="menu">
+                        <Menu text vertical>
+                          <p>Why Solar</p>
+                          <ol>
+                            <Menu.Item
+                              position="right"
+                              as={Link}
+                              to={{ pathname: "/environment" }}
+                              content="- Environment"
+                              data-cy="button"
+                            />
+                          </ol>
+                          <ol>
+                            <Menu.Item
+                              position="right"
+                              as={Link}
+                              to={{ pathname: "/economics" }}
+                              content="- Economy"
+                              data-cy="button"
+                            />
+                          </ol>
 
-                        <Menu.Item
-                          position="right"
-                          as={Link}
-                          to={{ pathname: "/aboutus" }}
-                          content="About us"
-                          data-cy="button"
-                        />
+                          <Menu.Item
+                            position="right"
+                            as={Link}
+                            to={{ pathname: "/aboutus" }}
+                            content="About us"
+                            data-cy="button"
+                          />
 
-                        <Menu.Item
-                          position="right"
-                          as={Link}
-                          to={{ pathname: "/faqs" }}
-                          content="FAQs"
-                          data-cy="button"
-                        />
-                        <Menu.Item
-                          id="navbarButtonMenuItemMobile"
-                          position="right"
-                          as={Link}
-                          to={{ pathname: "/quotes" }}
-                          content="Get up to 3 quotes"
-                          data-cy="button"
-                        />
-                          
-                        
-                      </Menu>
-                    </ul>
-                  </div>
-                </nav>
+                          <Menu.Item
+                            position="right"
+                            as={Link}
+                            to={{ pathname: "/faqs" }}
+                            content="FAQs"
+                            data-cy="button"
+                          />
+                          <Menu.Item
+                            id="navbarButtonMenuItemMobile"
+                            position="right"
+                            as={Link}
+                            to={{ pathname: "/quotes" }}
+                            content="Get up to 3 quotes"
+                            data-cy="button"
+                          />
+                        </Menu>
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
               </>
             )}
             {matches.desktop && (
