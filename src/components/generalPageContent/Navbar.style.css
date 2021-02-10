@@ -145,8 +145,10 @@
 
 #logoMobile {
   position: absolute;
-  width:100vw;
+  width:50vw;
+  left:50vw;
   top:25px;
+  z-index: 99;
 }
 
 #navbarMobile {
