@@ -30,7 +30,7 @@ const HeroPage = () => {
               {matches.mobile && (
                 <div id="heroPageMobile">
                   <Grid>
-                    <Grid.Row id="topBannerContentMobile" textAlign={"center"}>
+                    <Grid.Row id="topBannerContentMobile">
                       <Grid.Column>
                         {" "}
                           <p id="bannerTitleMobile">
@@ -50,7 +50,7 @@ const HeroPage = () => {
                         
                       </Grid.Column>
                     </Grid.Row>
-                    <Grid.Row id="bottomBannerContentMobile" textAlign={"center"}>
+                    <Grid.Row id="bottomBannerContentMobile">
                       <Grid.Column>
                           <CountUp
                             start={0}
