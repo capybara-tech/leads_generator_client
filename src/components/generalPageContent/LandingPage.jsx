@@ -30,9 +30,9 @@ const LandingPage = () => {
                   <Grid.Row id="environmentalLandingPageSectionMobile">
                     <EnvironmentSectionLandingPage />
                   </Grid.Row>
-                  <Grid.Row id="summaryLandingPageSectionMobile">
+                  {/* <Grid.Row id="summaryLandingPageSectionMobile">
                     <SummaryLandingPage />
-                  </Grid.Row>
+                  </Grid.Row> */}
                 </Grid>
               </div>
             )}

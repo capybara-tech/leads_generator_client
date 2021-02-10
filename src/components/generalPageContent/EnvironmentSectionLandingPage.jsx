@@ -27,13 +27,28 @@ const EnvironmentSectionLandingPage = () => {
           {(matches) => (
             <>
               {matches.mobile && (
+                <>
                 <Grid>
                   <Grid.Row id="topCardsEnvironmentMobile">
-                    <Grid.Column id="ourPrimaryMissinRowMobile">
+                    <Grid.Column id="ourPrimaryMissionRowMobile">
                       {" "}
                       <p id="ourPrimaryMissonTextMobile">
-                        Our primary mission is to help future proof our
-                        planet and combat climate destruction.
+                        Our primary mission is to help future proof our planet
+                        and combat climate destruction.
+                      </p>
+                    </Grid.Column>
+                  </Grid.Row>
+                  <Grid.Row id="promotionEnvironmentalBenefitsCardMobile">
+                    <Grid.Column>
+                      <p id="promotionEnvironmentalBenefitsTitleMobile">
+                        Voice the benefits
+                      </p>
+                      <p id="promotingEnvironmentalBenefitsTextMobile">
+                        Through promoting the generally unknown environmental
+                        benefits of solar, and some lobbying thrown in, our aim
+                        is to help people live more informed and creative lives.{" "}
+                        <br /> <br />
+                        Think of solar panels as the undiscovered electic car.
                       </p>
                     </Grid.Column>
                   </Grid.Row>
@@ -43,10 +58,8 @@ const EnvironmentSectionLandingPage = () => {
                   <Grid.Row>
                     <Grid.Column></Grid.Column>
                   </Grid.Row>
-                  <Grid.Row>
-                    <Grid.Column></Grid.Column>
-                  </Grid.Row>
                 </Grid>
+                </>
               )}
               {matches.desktop && (
                 <>

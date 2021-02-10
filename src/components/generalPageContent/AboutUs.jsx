@@ -168,35 +168,35 @@ const AboutUs = () => {
         <Grid id="ourAimsGrid">
           <Grid.Row columns={5}>
             <Grid.Column>
-              <img id="winner" src="images/aboutUsPage/trophy.png" />
+              <img alt="winner" id="winner" src="images/aboutUsPage/trophy.png" />
               <p>
                 Create a new eco initiative, where yes everyone is a winner and
                 a % of our profits are donated back to society
               </p>
             </Grid.Column>
             <Grid.Column>
-              <img id="like" src="images/aboutUsPage/heart.png" />
+              <img alt="like" id="like" src="images/aboutUsPage/heart.png" />
               <p>
                 By obtaining a quote you are donating indirectly to charity, no
                 strings attached!
               </p>
             </Grid.Column>
             <Grid.Column>
-              <img id="money" src="images/aboutUsPage/money.png" />
+              <img alt="money" id="money" src="images/aboutUsPage/money.png" />
               <p>
                 You will lower your energy bills and benefit from a long-term
                 steady investment, with returns better than any bank
               </p>
             </Grid.Column>
             <Grid.Column>
-              <img id="handshake" src="images/aboutUsPage/thumbsUp.png" />
+              <img alt="handshake" id="handshake" src="images/aboutUsPage/thumbsUp.png" />
               <p>
                 Make solar energy easily accessible to all, matching varying
                 needs to our carefully selected partners
               </p>
             </Grid.Column>
             <Grid.Column>
-              <img id="recycle" src="images/aboutUsPage/recycle.png"/>
+              <img alt="recycle" id="recycle" src="images/aboutUsPage/recycle.png"/>
               <p>
                 Revolutionise the solar market, voice the benefits of solar
                 helping people live in a greener society

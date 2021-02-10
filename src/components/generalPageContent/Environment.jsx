@@ -17,8 +17,8 @@ const Environment = () => {
           <span id="titleEnvironmentEmphasis">install solar </span>
         </p>
         <p id="environmentSubHeader">
-          ...one of the most effective ways to reduce your mucky emissions💪.
-          Sleep easy knowing you are making a genuine difference🎯 to the
+          ...one of the most effective ways to reduce your mucky emissions<span aria-label="" role="img">💪</span>.
+          Sleep easy knowing you are making a genuine difference<span aria-label="" role="img">🎯</span> to the
           environment.
         </p>
         <TextLoop interval={1750}>

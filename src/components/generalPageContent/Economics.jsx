@@ -30,8 +30,8 @@ const Economics = () => {
         </p>
         <p id="economicsSubHeader">
           If the environmental benefits of solar panels has not convinced you,
-          the seven financial ones will😃. For those who have already seen
-          what's what this is the icing on the 🍰!
+          the seven financial ones will<span aria-label="" role="img">😃</span>. For those who have already seen
+          what's what this is the icing on the <span aria-label="" role="img">🍰</span>!
         </p>
         <TextLoop interval={1750}>
           <div>
