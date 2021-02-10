@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Media from "react-media";
 import { Link, withRouter } from "react-router-dom";
 import "./Navbar.style.css";
-import { Menu, Button, Image, Dropdown, Icon, Grid } from "semantic-ui-react";
+import { Menu, Button, Image, Dropdown, Icon } from "semantic-ui-react";
 
 const Navbar = (props) => {
   const [navbar, setNavbar] = useState(false);
@@ -36,12 +36,14 @@ const Navbar = (props) => {
                 <div id="navbarMobile">
                   <nav role="navigation">
                     <Menu text id="logoMobile">
-                    <Menu.Item
-                    position={"right"}
-                     as={Link} to={{ pathname: "/" }}>
-                      <Image size={"small"} src="/images/final logo.png" />
-                    </Menu.Item>
-</Menu>
+                      <Menu.Item
+                        position={"right"}
+                        as={Link}
+                        to={{ pathname: "/" }}
+                      >
+                        <Image size={"small"} src="/images/final logo.png" />
+                      </Menu.Item>
+                    </Menu>
                     <div id="menuToggle">
                       <input type="checkbox" />
 
