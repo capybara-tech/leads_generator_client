@@ -7,7 +7,7 @@
   position: relative;
   padding-left: 5vh;
   padding-right: 5vh;
-  padding-top:0vh;
+  padding-top: 0vh;
 }
 
 #bottomCardEnvironment {
@@ -108,11 +108,11 @@
 
 #topCardsEnvironmentMobile {
   position: relative;
-  padding:0vh;
+  padding: 0vh;
 }
 
 #ourPrimaryMissionRowMobile {
-  min-height:100vw;
+  min-height: 100vw;
   background-image: url("/images/old-age-360714_1920.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -122,15 +122,15 @@
 
 #ourPrimaryMissonTextMobile {
   position: relative;
-  top:80%;
-  left:50%;
+  top: 80%;
+  left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: black;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 1rem;
-  min-width:100vw;
+  min-width: 100vw;
   background-color: #c8dacc;
   border-radius: 3px;
   margin: 1rem;
@@ -147,7 +147,7 @@
 #promotionEnvironmentalBenefitsTitleMobile {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
-  padding-left:2rem;
+  padding-left: 2rem;
 }
 
 #promotingEnvironmentalBenefitsTextMobile {
@@ -155,32 +155,32 @@
   font-weight: 400;
   font-size: 1.3rem;
   text-align: left;
-  padding-left:2rem;
+  padding-left: 2rem;
   padding-right: 2rem;
 }
 
 #ourDedicationMobile {
-  padding:2rem;
+  padding: 2rem;
 }
 
 #ourDedicationTitleMobile {
   position: absolute;
-  left:50%;
-  transform: translate(-50%,-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 2rem;  
+  font-size: 2rem;
 }
 
 #ourDedicationTextMobile {
   font-family: "Poppins", sans-serif;
   position: relative;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-weight: 400;
   font-size: 1.3rem;
-  padding:2rem;
+  padding: 2rem;
 }
 
 #bannerButtonMobile {

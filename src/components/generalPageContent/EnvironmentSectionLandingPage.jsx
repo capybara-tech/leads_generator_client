@@ -75,7 +75,12 @@ const EnvironmentSectionLandingPage = () => {
                     </Grid.Row>
                     <Grid.Row id="ourCharitiesImageMobile">
                       <Grid.Column>
-                      <Image size="medium" centered src="/images/charity.png"/></Grid.Column>
+                        <Image
+                          size="medium"
+                          centered
+                          src="/images/charity.png"
+                        />
+                      </Grid.Column>
                     </Grid.Row>
                   </Grid>
                 </>
