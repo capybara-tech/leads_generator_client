@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Media from "react-media";
 import { Link, withRouter } from "react-router-dom";
 import "./Navbar.style.css";
-import { Menu, Button, Image, Dropdown, Icon } from "semantic-ui-react";
+import { Menu, Button, Image, Dropdown, Icon, Grid } from "semantic-ui-react";
 
 const Navbar = (props) => {
   const [navbar, setNavbar] = useState(false);
@@ -34,29 +34,65 @@ const Navbar = (props) => {
             {matches.mobile && (
               <>
                 <nav role="navigation">
+                  <Menu.Item  position="right"
+                          as={Link}
+                          to={{ pathname: "/" }}><img id="logoMobile" src="/images/final logo.png"/></Menu.Item>
+                
                   <div id="menuToggle">
+                    
                     <input type="checkbox" />
-
+                    
                     <span></span>
                     <span></span>
                     <span></span>
 
                     <ul id="menu">
-                      <a href="#">
-                        <li>Home</li>
-                      </a>
-                      <a href="#">
-                        <li>About</li>
-                      </a>
-                      <a href="#">
-                        <li>Info</li>
-                      </a>
-                      <a href="#">
-                        <li>Contact</li>
-                      </a>
-                      <a href="https://erikterwan.com/" target="_blank">
-                        <li>Show me more</li>
-                      </a>
+                      <Menu text vertical>
+                        <p>Why Solar</p>
+                        <ol>
+                        <Menu.Item
+                          position="right"
+                          as={Link}
+                          to={{ pathname: "/environment" }}
+                          content="- Environment"
+                          data-cy="button"
+                        /></ol>
+                        <ol>
+
+                        <Menu.Item
+                          position="right"
+                          as={Link}
+                          to={{ pathname: "/economics" }}
+                          content="- Economy"
+                          data-cy="button"
+                        /></ol>
+
+                        <Menu.Item
+                          position="right"
+                          as={Link}
+                          to={{ pathname: "/aboutus" }}
+                          content="About us"
+                          data-cy="button"
+                        />
+
+                        <Menu.Item
+                          position="right"
+                          as={Link}
+                          to={{ pathname: "/faqs" }}
+                          content="FAQs"
+                          data-cy="button"
+                        />
+                        <Menu.Item
+                          id="navbarButtonMenuItemMobile"
+                          position="right"
+                          as={Link}
+                          to={{ pathname: "/quotes" }}
+                          content="Get up to 3 quotes"
+                          data-cy="button"
+                        />
+                          
+                        
+                      </Menu>
                     </ul>
                   </div>
                 </nav>
