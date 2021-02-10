@@ -30,7 +30,7 @@ const Navbar = (props) => {
 
   return (
     <div>
-      {(isDesktopOrLaptop || isTabletOrMobileDevice || isTabletOrMobile) && (
+      {isDesktopOrLaptop && 
         <>
           <div className={navbar ? "navbar active" : "navbar"}>
             <Menu text size="massive" color="">
@@ -41,11 +41,7 @@ const Navbar = (props) => {
                 as={Link}
                 to={{ pathname: "/" }}
               >
-                <Image
-                  data-cy="logo"
-                  src="/images/final logo.png"
-                  alt="Logo"
-                />
+                <Image data-cy="logo" src="/images/final logo.png" alt="Logo" />
               </Menu.Item>
               <Menu.Item position="right">
                 <Dropdown item text="Why solar" data-cy="button">
@@ -55,14 +51,16 @@ const Navbar = (props) => {
                       as={Link}
                       to={{ pathname: "/environment" }}
                     >
-                    Environment <Icon className="subnavAngleRight" name="angle right"/>
+                      Environment{" "}
+                      <Icon className="subnavAngleRight" name="angle right" />
                     </Dropdown.Item>
                     <Dropdown.Item
                       id="linkToEconomicsPage"
                       as={Link}
                       to={{ pathname: "/economics" }}
                     >
-                     Economy <Icon className="subnavAngleRight" name="angle right" />
+                      Economy{" "}
+                      <Icon className="subnavAngleRight" name="angle right" />
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
@@ -93,8 +91,38 @@ const Navbar = (props) => {
               </Menu.Item>
             </Menu>
           </div>
-        </>
-      )}
+        </>}
+        {(isTabletOrMobile || isTabletOrMobileDevice) && 
+          <>
+            <nav role="navigation">
+              <div id="menuToggle">
+                <input type="checkbox" />
+  
+                <span></span>
+                <span></span>
+                <span></span>
+  
+                <ul id="menu">
+                  <a href="#">
+                    <li>Home</li>
+                  </a>
+                  <a href="#">
+                    <li>About</li>
+                  </a>
+                  <a href="#">
+                    <li>Info</li>
+                  </a>
+                  <a href="#">
+                    <li>Contact</li>
+                  </a>
+                  <a href="https://erikterwan.com/" target="_blank">
+                    <li>Show me more</li>
+                  </a>
+                </ul>
+              </div>
+            </nav>
+          </>
+        }
     </div>
   );
 };
