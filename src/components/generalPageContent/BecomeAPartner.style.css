@@ -37,3 +37,48 @@
   font-size: 1vh;
   margin-left: 20%;
 }
+
+/* ------------mobile----------- */
+
+#becomeAPartnerContentMobile {
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #fffff4;
+}
+
+#titleJoinTeamMobile {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.3rem;
+  margin-top: 7rem;
+  color: #fe8733cb;
+}
+
+#subTitleJoinTeamMobile {
+  font-family: "Poppins", sans-serif;
+  margin-top:-1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+}
+
+#joinTeamCard1 {
+  background-color: transparent;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+#joinTeamCard2 {
+  background-color: transparent;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+#signOffJoinTeamMobile {
+  font-family: "Give You Glory";
+  font-size: 1.5rem;
+}
+
+#conditionMobile {
+  font-family: "Poppins", sans-serif;
+  font-size: 1vh;
+  
+}
