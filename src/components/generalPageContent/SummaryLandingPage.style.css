@@ -218,7 +218,7 @@ i.icon.check {
 
 #summaryCard1Mobile {
   width:45vw;
-  height:85vh;
+  min-height:85vh;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 0.9rem;
@@ -250,7 +250,7 @@ i.icon.check {
 
 #summaryCard2Mobile {
   width:45vw;
-  height:85vh;
+  min-height:85vh;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 0.9rem;
@@ -282,7 +282,7 @@ i.icon.check {
 
 #summaryCard3Mobile {
   width:45vw;
-  height:85vh;
+  min-height:85vh;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 0.9rem;
@@ -314,7 +314,7 @@ i.icon.check {
 
 #summaryCard4Mobile {
   width:45vw;
-  height:85vh;
+  min-height:85vh;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 0.9rem;
