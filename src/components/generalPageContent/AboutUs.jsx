@@ -45,7 +45,10 @@ const AboutUs = () => {
                     <Segment raised id="aboutUsSegmentInfoMobile">
                       <Grid>
                         <Grid.Row columns={1}>
-                          <Grid.Column textAlign={"center"} id="ourCharitysMobile">
+                          <Grid.Column
+                            textAlign={"center"}
+                            id="ourCharitysMobile"
+                          >
                             <Reveal animated="fade">
                               <Reveal.Content visible>
                                 <div id="ourCharitysVisibleMobile">
@@ -75,7 +78,10 @@ const AboutUs = () => {
                           </Grid.Column>
                         </Grid.Row>
                         <Grid.Row columns={1}>
-                          <Grid.Column textAlign={"center"} id="ourVisionMobile">
+                          <Grid.Column
+                            textAlign={"center"}
+                            id="ourVisionMobile"
+                          >
                             <Reveal animated="fade">
                               <Reveal.Content visible>
                                 <div id="ourVisionVisibleMobile">
@@ -103,6 +109,198 @@ const AboutUs = () => {
                         </Grid.Row>
                       </Grid>
                     </Segment>
+                    <div id="aboutUsBottomBanner">
+                      <p id="meetTheTeamTitleMobile">- Meet the team -</p>
+                      <Grid id="meetTheTeam">
+                        <Grid.Row columns={3}>
+                          <Grid.Column>
+                            <Popup
+                              position="bottom center"
+                              content="A stickler for searching for meaning and purpose, even in small things!"
+                              on="hover"
+                              inverted
+                              trigger={
+                                <Image
+                                  verticalAlign="middle"
+                                  src={
+                                    "https://react.semantic-ui.com/images/avatar/large/daniel.jpg"
+                                  }
+                                  circular
+                                  size="small"
+                                />
+                              }
+                            />
+                            <p className="teamMemberName">Alex Bellamy</p>
+                            <p className="teamMemberTitles">
+                              CEO and co-founder
+                            </p>
+                            <Icon name="mail" size="big" />
+                            {/* fix email link */}
+                          </Grid.Column>
+                          <Grid.Column>
+                            <Popup
+                              position="bottom center"
+                              content="Bla Bla Bla Bla Bla Bla Bla Bla Bla"
+                              on="hover"
+                              inverted
+                              trigger={
+                                <Image
+                                  verticalAlign="middle"
+                                  src={
+                                    "https://react.semantic-ui.com/images/avatar/large/daniel.jpg"
+                                  }
+                                  circular
+                                  size="small"
+                                />
+                              }
+                            />
+                            <p className="teamMemberName">
+                              Felix Oppong Willborg
+                            </p>
+                            <p className="teamMemberTitles">
+                              COO and co-founder
+                            </p>
+                            <Icon name="mail" size="big" />
+                            {/* fix email link */}
+                          </Grid.Column>
+                          <Grid.Column>
+                            <Popup
+                              position="bottom center"
+                              content="Woff!"
+                              on="hover"
+                              inverted
+                              trigger={
+                                <Image
+                                  verticalAlign="middle"
+                                  src={
+                                    "https://react.semantic-ui.com/images/avatar/large/daniel.jpg"
+                                  }
+                                  circular
+                                  size="small"
+                                />
+                              }
+                            />
+                            <p className="teamMemberName">Twinky</p>
+                            <p className="teamMemberTitles">
+                              Head of Customer Satisfaction
+                            </p>
+                            <Icon name="mail" size="big" />
+                            {/* fix email link */}
+                          </Grid.Column>
+                        </Grid.Row>
+                      </Grid>
+                      <p id="ceoMessageTitleMobile">
+                        - A message from our CEO -
+                      </p>
+                      <p id="ceoMessage">
+                        With our planet coming under increasing pressure from
+                        global threats such as global warming, plastic clogging
+                        up our oceans and deforestation, like most others it
+                        concerns me what the world will be like for my
+                        grandchildren and their offspring. Challenge the status
+                        quo by investing in 100% clean and limitless solar
+                        energy - and help change the world for tomorrow.
+                      </p>
+                      <p>Alex Bellamy, CEO Capybara UK</p>
+                    </div>
+                    <div id="middleSegment">
+                      <p id="ourAmbitionTitle">- Our ambition -</p>
+                    </div>
+
+                    <Segment raised id="ourAimsSegment">
+                      <Grid id="ourAimsGridMobile">
+                        <Grid.Row centered={true} columns={1}>
+                          <Grid.Column textAlign={"center"}>
+                            <Image
+                              size="small"
+                              alt="winner"
+                              id="winnerMobile"
+                              src="images/aboutUsPage/trophy.png"
+                            />
+                            <p>
+                              Create a new eco initiative, where yes everyone is
+                              a winner and a % of our profits are donated back
+                              to society
+                            </p>
+                          </Grid.Column>
+                        </Grid.Row>
+                        <Grid.Row columns={2}>
+                          <Grid.Column>
+                            <Image
+                              size="small"
+                              alt="like"
+                              id="like"
+                              src="images/aboutUsPage/heart.png"
+                            />
+                            <p>
+                              By obtaining a quote you are donating indirectly
+                              to charity, no strings attached!
+                            </p>
+                          </Grid.Column>
+                          <Grid.Column>
+                            <Image
+                              size="small"
+                              alt="money"
+                              id="money"
+                              src="images/aboutUsPage/money.png"
+                            />
+                            <p>
+                              You will lower your energy bills and benefit from
+                              a long-term steady investment, with returns better
+                              than any bank
+                            </p>
+                          </Grid.Column>
+                        </Grid.Row>
+                        <Grid.Row columns={2}>
+                          <Grid.Column>
+                            <Image
+                              size="small"
+                              alt="handshake"
+                              id="handshake"
+                              src="images/aboutUsPage/thumbsUp.png"
+                            />
+                            <p>
+                              Make solar energy easily accessible to all,
+                              matching varying needs to our carefully selected
+                              partners
+                            </p>
+                          </Grid.Column>
+                          <Grid.Column>
+                            <Image
+                              size="small"
+                              alt="recycle"
+                              id="recycle"
+                              src="images/aboutUsPage/recycle.png"
+                            />
+                            <p>
+                              Revolutionise the solar market, voice the benefits
+                              of solar helping people live in a greener society
+                            </p>
+                          </Grid.Column>
+                        </Grid.Row>
+                      </Grid>
+                    </Segment>
+                    <div id="ourAimsConclusionMobile">
+                      <Grid>
+                        <Grid.Row columns={1}>
+                          <Grid.Column>
+                            <p id="conclusionOfOurAimsMobile">
+                              Transparency, honesty and dedication to our
+                              customers are a given
+                            </p>
+                            <Button
+                              data-cy="button"
+                              as={Link}
+                              to={{ pathname: "/quotes" }}
+                              id="quoteButtonMobile"
+                            >
+                              Feeling inspired? <br />
+                              Click to obtain quotes
+                            </Button>
+                          </Grid.Column>
+                        </Grid.Row>
+                      </Grid>
+                    </div>
                   </div>
                 </>
               )}
