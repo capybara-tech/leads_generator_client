@@ -1,6 +1,6 @@
 #summaryLandingPage {
-  min-width:100vw;
-  min-height:100vh;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 #summaryCards {
@@ -186,11 +186,10 @@ i.icon.check {
   border-color: #fe8733;
 }
 
-
 /* ------------mobile------------ */
 
 #summaryLandingPageMobile {
-  min-height:100vh;
+  min-height: 100vh;
   min-width: 100vw;
   margin-top: -12vh;
 }
@@ -213,16 +212,15 @@ i.icon.check {
 #summaryCardsMobile {
   padding-bottom: 5rem;
   padding-top: 5rem;
-
 }
 
 #summaryCard1Mobile {
-  width:45vw;
-  min-height:85vh;
+  width: 45vw;
+  min-height: 85vh;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 0.9rem;
-  margin:5px 
+  margin: 5px;
 }
 
 #cardButton1Mobile {
@@ -249,12 +247,12 @@ i.icon.check {
 }
 
 #summaryCard2Mobile {
-  width:45vw;
-  min-height:85vh;
+  width: 45vw;
+  min-height: 85vh;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 0.9rem;
-  margin:5px
+  margin: 5px;
 }
 
 #cardButton2Mobile {
@@ -281,12 +279,12 @@ i.icon.check {
 }
 
 #summaryCard3Mobile {
-  width:45vw;
-  min-height:85vh;
+  width: 45vw;
+  min-height: 85vh;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 0.9rem;
-  margin:5px
+  margin: 5px;
 }
 
 #cardButton3Mobile {
@@ -313,12 +311,12 @@ i.icon.check {
 }
 
 #summaryCard4Mobile {
-  width:45vw;
-  min-height:85vh;
+  width: 45vw;
+  min-height: 85vh;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 0.9rem;
-  margin:5px
+  margin: 5px;
 }
 
 #cardButton4Mobile {

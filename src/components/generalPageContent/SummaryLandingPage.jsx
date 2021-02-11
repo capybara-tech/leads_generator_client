@@ -25,13 +25,10 @@ const SummaryLandingPage = () => {
             <>
               {matches.mobile && (
                 <div id="summaryLandingPageMobile">
-                  
                   <Grid id="summaryCardsMobile">
-                  
                     <Grid.Row>
-                    
                       <Grid.Column>
-                      <Divider />
+                        <Divider />
                         <p id="summaryTitleMobile">WattsWhat in a nutshell</p>
                       </Grid.Column>
                     </Grid.Row>

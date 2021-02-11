@@ -30,7 +30,9 @@ const HowSolarWorks = () => {
                   <Card.Group centered>
                     <Card id="howSolarWorksCard1">
                       <Card.Content>
-                        <Card.Header id="howSolarWorksNumber1Mobile">01</Card.Header>
+                        <Card.Header id="howSolarWorksNumber1Mobile">
+                          01
+                        </Card.Header>
                         <br />
                         <Card.Header id="howSolarWorksCardTitle1">
                           Daylight
@@ -52,7 +54,9 @@ const HowSolarWorks = () => {
                     </Card>
                     <Card id="howSolarWorksCard2">
                       <Card.Content>
-                        <Card.Header id="howSolarWorksNumber2Mobile">02</Card.Header>
+                        <Card.Header id="howSolarWorksNumber2Mobile">
+                          02
+                        </Card.Header>
                         <br />
                         <Card.Header id="howSolarWorksCardTitle2">
                           Electricity produced
@@ -73,7 +77,9 @@ const HowSolarWorks = () => {
                     </Card>
                     <Card id="howSolarWorksCard3">
                       <Card.Content>
-                        <Card.Header id="howSolarWorksNumber3Mobile">03</Card.Header>
+                        <Card.Header id="howSolarWorksNumber3Mobile">
+                          03
+                        </Card.Header>
                         <br />
                         <Card.Header id="howSolarWorksCardTitle3">
                           Conversion
@@ -95,7 +101,9 @@ const HowSolarWorks = () => {
                     </Card>
                     <Card id="howSolarWorksCard4">
                       <Card.Content>
-                        <Card.Header id="howSolarWorksNumber4Mobile">04</Card.Header>
+                        <Card.Header id="howSolarWorksNumber4Mobile">
+                          04
+                        </Card.Header>
                         <br />
                         <Card.Header id="howSolarWorksCardTitle4">
                           Utilise electricity

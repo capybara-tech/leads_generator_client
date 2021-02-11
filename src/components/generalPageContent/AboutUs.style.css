@@ -188,13 +188,12 @@
   border-radius: 10px;
 }
 
-
 /* ------------mobile-------------- */
 
 #aboutUsContentMobile {
   background-color: #fffff4;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
 
 #aboutUsTitleMobile {
@@ -226,8 +225,8 @@
 
 .infoSegmentTitleMobile {
   position: absolute;
-  top:50%;
-  left:50%;
+  top: 50%;
+  left: 50%;
   font-family: "Poppins", sans-serif;
   text-align: center;
   transform: translate(-50%, -50%);
@@ -238,11 +237,10 @@
   font-size: 0.8rem;
 }
 
-
 .infoSegmentParagraphMobile {
   position: absolute;
-  top:50%;
-  left:50%;
+  top: 50%;
+  left: 50%;
   font-family: "Poppins", sans-serif;
   transform: translate(-50%, -50%);
   font-size: 1rem;
@@ -255,8 +253,8 @@
 #ourCharitysVisibleMobile {
   position: relative;
   width: 100vw;
-  height:40vh;
-  background-color:#fffff4;
+  height: 40vh;
+  background-color: #fffff4;
 }
 
 #ourCharitysHiddenMobile {
@@ -272,8 +270,8 @@
 #ourVisionVisibleMobile {
   position: relative;
   width: 100vw;
-  height:40vh;
-  background-color:#fffff4;
+  height: 40vh;
+  background-color: #fffff4;
 }
 
 #ourVisionHiddenMobile {
@@ -303,7 +301,7 @@
 
 #winnerMobile {
   color: #d4af37;
-  left:50%;
+  left: 50%;
   transform: translate(-50%, 0);
 }
 
