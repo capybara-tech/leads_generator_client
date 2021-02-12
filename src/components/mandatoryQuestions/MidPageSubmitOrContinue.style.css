@@ -1,18 +1,17 @@
 #midPageSubmitOrContinue {
-  height:100vh;
+  min-height: 100vh;
   background-color: #fffff4;
 }
 
 #SubmitOrContinueDiv {
   position: relative;
   min-height: 35vh;
-  width:60vw;
+  width: 60vw;
   border-radius: 10px;
   background-color: #c8dacc;
-  top:50%;
-  left:50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
- 
 }
 
 #midPageTitle {
@@ -86,5 +85,98 @@
 }
 
 #backToAddressQ.active {
+  border-bottom: 3px solid black;
+}
+
+/* -------------mobile----------- */
+
+#midPageSubmitOrContinueMobile {
+  min-height: 100vh;
+  background-color: #fffff4;
+}
+
+#SubmitOrContinueDivMobile {
+  position: relative;
+  min-height: 50vh;
+  width: 80vw;
+  border-radius: 10px;
+  background-color: #c8dacc;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}
+
+#midPageTitleMobile {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  left: 50%;
+  transform: translate(-50%, 10%);
+}
+
+#messageMidPageMobile {
+  padding: 1rem;
+}
+
+#midPageParagraphMobile {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+#backToAddressQMobile {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+#gridWithButtonsMobile {
+  width:80vw;
+}
+
+#backToAddressQMobile::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 0.3s;
+}
+
+#backToAddressQMobile:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#backToAddressQMobile.active {
+  border-bottom: 3px solid black;
+}
+
+#continueToIconsMobile {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+#continueToIconsMobile::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 0.3s;
+}
+
+#continueToIconsMobile:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#continueToIconsMobile.active {
   border-bottom: 3px solid black;
 }
