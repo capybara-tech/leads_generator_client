@@ -39,3 +39,40 @@
   font-size: 3vh;
   margin-left: 20%;
 }
+
+/* --------mobile---------- */
+
+#contactUsContentMobile {
+  min-height: 100vh;
+  padding-top: 10rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: "Poppins", sans-serif;
+  background-color: #fffff4;
+}
+
+#titleMobile {
+  font-size: 2.5rem; 
+  color: #fe8733cb;
+  
+}
+
+#subTitleMobile { 
+  font-size: 1rem;
+}
+
+.contactTitleMobile {
+  font-size: 2rem;  
+}
+
+.contactContentMobile {
+  font-size: 1rem;
+  color: #fe8733cb;
+ 
+}
+
+#conclusionMobile {
+  font-family: "Give You Glory";
+  font-size: 1.5rem;
+  
+}
