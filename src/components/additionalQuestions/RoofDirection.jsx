@@ -302,7 +302,7 @@ const RoofDirection = (props) => {
                           </Grid.Column>
                           <Grid.Column>
                             <Scrolllink
-                              to="roofDimensions"
+                              to="roofDimensionsMobile"
                               activeClass="active"
                               spy={true}
                               smooth={true}
@@ -321,7 +321,6 @@ const RoofDirection = (props) => {
                           </Grid.Column>
                         </Grid.Row>
                       </Grid>
-
                     </Grid>
                   </div>
                   <>{components[index]}</>
