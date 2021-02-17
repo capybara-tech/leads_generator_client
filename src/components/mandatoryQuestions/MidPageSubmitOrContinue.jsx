@@ -62,7 +62,7 @@ const MidPageSubmitOrContinue = (props) => {
                                 }}
                               >
                                 <button id="continueToIconsMobile">
-                                  Continue
+                                  Next
                                 </button>
                               </Scrolllink>
                             </Grid.Column>

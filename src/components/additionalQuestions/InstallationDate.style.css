@@ -85,7 +85,7 @@ input:-webkit-autofill:active {
   font-size: 1.5rem;
 }
 
-#installationCard1 {
+#installationCardMobile {
   min-width:80vw;
   height:11vh;
   background-color: transparent;
@@ -93,13 +93,13 @@ input:-webkit-autofill:active {
   box-shadow: none;
 }
 
-#installationCardText1 {
+#installationCardTextMobile {
   position: relative;
   text-align: center;
   font-size: 2rem;
 }
 
-#installationCardGridRow1 {
+#installationCardGridRowMobile {
   position: relative;
   top:50%;
   transform: translate(-0%, -50%);
@@ -126,4 +126,60 @@ input:-webkit-autofill:active {
 .imgInstallationDateIconsMobile {
   background-color: transparent;
   border-color: #bababa;
+}
+
+#gridWithButtonsMobile {
+  width:80vw;
+}
+
+#backToPreviousQuestionMobile {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+#backToPreviousQuestionMobile::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 0.3s;
+}
+
+#backToPreviousQuestionMobile:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#backToPreviousQuestionMobile.active {
+  border-bottom: 3px solid black;
+}
+
+#nextQuestionMobile {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+#nextQuestionMobile::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 0.3s;
+}
+
+#nextQuestionMobile:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#nextQuestionMobile.active {
+  border-bottom: 3px solid black;
 }

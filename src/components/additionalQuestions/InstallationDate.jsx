@@ -3,7 +3,7 @@ import PropertyType from "./PropertyType";
 import "./InstallationDate.style.css";
 import { Link as Scrolllink } from "react-scroll";
 import Media from "react-media";
-import { Grid, Icon, Popup } from "semantic-ui-react";
+import { Grid, Icon, Popup, Card, Image } from "semantic-ui-react";
 
 const InstallationDate = (props) => {
   const [timeFrame, setTimeFrame] = useState("");
@@ -49,7 +49,24 @@ const InstallationDate = (props) => {
                           setIndex(0);
                         }}
                       >
-                        <p id="installationCardText1">0-3 Months</p>
+                        <Card id="installationCardMobile" fluid>
+                          <Grid.Row
+                            id="installationCardGridRowMobile"
+                            itemsPerRow={2}
+                          >
+                            <Grid.Column>
+                              {" "}
+                              <Image
+                                floated={"left"}
+                                src="/images/questionIcons/installationDate/felt.png"
+                                size={"tiny"}
+                              />
+                            </Grid.Column>
+                            <Grid.Column>
+                              <p id="installationCardTextMobile">0-3 Months</p>
+                            </Grid.Column>
+                          </Grid.Row>
+                        </Card>
                       </button>
 
                       <button
@@ -61,7 +78,24 @@ const InstallationDate = (props) => {
                           setIndex(0);
                         }}
                       >
-                        <p id="installationCardText1">3-6 Months</p>
+                        <Card id="installationCardMobile" fluid>
+                          <Grid.Row
+                            id="installationCardGridRowMobile"
+                            itemsPerRow={2}
+                          >
+                            <Grid.Column>
+                              {" "}
+                              <Image
+                                floated={"left"}
+                                src="/images/questionIcons/installationDate/felt.png"
+                                size={"tiny"}
+                              />
+                            </Grid.Column>
+                            <Grid.Column>
+                              <p id="installationCardTextMobile">3-6 Months</p>
+                            </Grid.Column>
+                          </Grid.Row>
+                        </Card>
                       </button>
 
                       <button
@@ -73,7 +107,24 @@ const InstallationDate = (props) => {
                           setIndex(0);
                         }}
                       >
-                        <p id="installationCardText1">6-12 Months</p>
+                        <Card id="installationCardMobile" fluid>
+                          <Grid.Row
+                            id="installationCardGridRowMobile"
+                            itemsPerRow={2}
+                          >
+                            <Grid.Column>
+                              {" "}
+                              <Image
+                                floated={"left"}
+                                src="/images/questionIcons/installationDate/felt.png"
+                                size={"tiny"}
+                              />
+                            </Grid.Column>
+                            <Grid.Column>
+                              <p id="installationCardTextMobile">6-12 Months</p>
+                            </Grid.Column>
+                          </Grid.Row>
+                        </Card>
                       </button>
 
                       <button
@@ -85,9 +136,81 @@ const InstallationDate = (props) => {
                           setIndex(0);
                         }}
                       >
-                        <p id="installationCardText1">Not sure</p>
+                        <Card id="installationCardMobile" fluid>
+                          <Grid.Row
+                            id="installationCardGridRowMobile"
+                            itemsPerRow={2}
+                          >
+                            <Grid.Column>
+                              {" "}
+                              <Image
+                                floated={"left"}
+                                src="/images/questionIcons/installationDate/felt.png"
+                                size={"tiny"}
+                              />
+                            </Grid.Column>
+                            <Grid.Column>
+                              <p id="installationCardTextMobile">Not sure</p>
+                            </Grid.Column>
+                          </Grid.Row>
+                        </Card>
                       </button>
                     </div>
+                    <Grid id="gridWithButtonsMobile" centered={true}>
+                      <Grid.Row columns="3">
+                        <Grid.Column>
+                          {" "}
+                          <Scrolllink
+                            to="midPageSubmitOrContinueMobile"
+                            activeClass="active"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={1500}
+                          >
+                            <button id="backToPreviousQuestionMobile">
+                              Back
+                            </button>
+                          </Scrolllink>
+                        </Grid.Column>
+                        <Grid.Column>
+                          <Popup
+                            trigger={
+                              <button
+                                id="submitButton"
+                                data-cy="button"
+                                type="submit"
+                                onClick={props.onSubmit}
+                              >
+                                Submit
+                              </button>
+                            }
+                            content="Are you sure you want to submit now?"
+                            inverted
+                            position="top center"
+                          />
+                        </Grid.Column>
+                        <Grid.Column>
+                          <Scrolllink
+                            to="propertyType"
+                            activeClass="active"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={1500}
+                          >
+                            <button
+                              onMouseDown={async (e) => {
+                                setIndex(0);
+                              }}
+                              id="nextQuestionMobile"
+                            >
+                              Next
+                            </button>
+                          </Scrolllink>
+                        </Grid.Column>
+                      </Grid.Row>
+                    </Grid>
                   </Grid>
                   <div>{components[index]}</div>
                 </>
