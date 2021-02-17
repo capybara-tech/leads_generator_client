@@ -164,18 +164,18 @@
   content: "";
   width: 100%;
   height: 0%;
-  background-color: #70af8f;
+  background-color: #70af85;
   transition: height 0.5s;
 }
 
 #revealQuestionOneAnswer:hover::after {
   height: 70%;
   transition: height 0.5s;
-  background-color: #70af8f;
+  background-color: #70af85;
 }
 
 #revealQuestionOneAnswer.active {
-  background-color: #70af8f;
+  background-color: #70af85;
 }
 
 #revealQuestionTwoAnswer::after {
@@ -184,18 +184,18 @@
   content: "";
   width: 100%;
   height: 0%;
-  background-color: #70af8f;
+  background-color: #70af85;
   transition: height 0.5s;
 }
 
 #revealQuestionTwoAnswer:hover::after {
   height: 90%;
   transition: height 0.5s;
-  background-color: #70af8f;
+  background-color: #70af85;
 }
 
 #revealQuestionTwoAnswer.active {
-  background-color: #70af8f;
+  background-color: #70af85;
 }
 
 #revealQuestionThreeAnswer::after {
@@ -204,18 +204,18 @@
   content: "";
   width: 100%;
   height: 0%;
-  background-color: #70af8f;
+  background-color: #70af85;
   transition: height 0.5s;
 }
 
 #revealQuestionThreeAnswer:hover::after {
   height: 60%;
   transition: height 0.5s;
-  background-color: #70af8f;
+  background-color: #70af85;
 }
 
 #revealQuestionThreeAnswer.active {
-  background-color: #70af8f;
+  background-color: #70af85;
 }
 
 .questionInCo2Segment {
@@ -261,4 +261,80 @@
   margin-left: 0.5vw;
   color: #fffff4;
   z-index: 99;
+}
+
+/* ---------mobile----------- */
+
+
+#environmentContentMobile {
+  background-color: #fffff4;
+  font-family: "Poppins", sans-serif;
+}
+
+#environmentBannerMobile {
+  font-family: "Poppins", sans-serif;
+  padding: 5vw;
+  font-size: 1.1rem;
+  padding-top: 20vh;
+  min-height: 80vh;
+  width: 100vw;
+  background-color: #70af85;
+}
+
+#environmentTitleMobile {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  color: #fffff4;
+}
+
+#titleEnvironmentEmphasisMobile {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+#environmentSubHeaderMobile {
+  color: #fffff4;
+}
+
+.environmentalBenefitsMobile {
+  color: #fe8733;
+  font-weight: bold;
+}
+
+#environmentalInformationSectionMobile {
+  padding:2rem;
+}
+
+.titleEnvironmentBenefitMobile {
+ font-size: 1.5rem;
+}
+
+.mainEnvironmentContentMobile {
+ font-size: 0.9rem;
+ text-align: justify;
+}
+
+#co2PerspectiveMobile {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.questionInCo2SegmentMobile {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+}
+
+#environmentalBottomBannerMobile {
+  min-height:80vh;
+  background-color: #c8dacc;
+  padding:2rem;
+}
+
+#environmentConclusionMobile {
+  font-family: "Give You Glory";
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  text-align: center;
 }
