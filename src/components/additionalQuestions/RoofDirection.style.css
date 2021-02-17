@@ -67,3 +67,38 @@ input:-webkit-autofill:active {
   left: 15%;
   color: rgba(0, 0, 0, 0.4);
 }
+
+/* ------------mobile----------- */
+
+
+#roofDirectionCardMobile {
+  min-width:80vw;
+  height:11vh;
+  background-color: transparent;
+  font-family: "Poppins", sans-serif;
+  box-shadow: none;
+}
+
+#roofDirectionCardTextMobile {
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#roofDirectionCardGridRowMobile {
+  position: relative;
+  top:50%;
+  transform: translate(-0%, -50%);
+}
+
+.roofDirectionButtonIconsMobile {
+  background-color: transparent;
+  border-radius: 10px;
+  border-color: #bababa;
+  border-style:solid;
+  outline: none;
+}
+
+.roofDirectionButtonIconsMobile:hover {
+  border-color: #70af85;
+}
