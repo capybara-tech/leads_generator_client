@@ -161,7 +161,7 @@ const Footer = (props) => {
                           </p>
                         </Grid.Column>
                       </Grid.Row>
-                      <Grid.Row centered={"true"} columns={1}>
+                      <Grid.Row centered={"true"}>
                         <Grid.Column>
                           <h3 className="footerHeader">Follow us on</h3>
                           <div id="socialMedia">
