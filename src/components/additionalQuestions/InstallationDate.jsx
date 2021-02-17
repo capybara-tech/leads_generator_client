@@ -3,7 +3,7 @@ import PropertyType from "./PropertyType";
 import "./InstallationDate.style.css";
 import { Link as Scrolllink } from "react-scroll";
 import Media from "react-media";
-import { Grid, Icon, Popup, Card, Image } from "semantic-ui-react";
+import { Grid, Icon, Popup } from "semantic-ui-react";
 
 const InstallationDate = (props) => {
   const [timeFrame, setTimeFrame] = useState("");
@@ -12,7 +12,7 @@ const InstallationDate = (props) => {
 
   return (
     <>
-            <div>
+      <div>
         <Media
           queries={{
             mobile: "(max-width: 599px)",
@@ -22,170 +22,75 @@ const InstallationDate = (props) => {
           {(matches) => (
             <>
               {matches.mobile && (
-                <Grid id="installationDateMobile">
-                  <div id="installationDateQuestionDivMobile">
-                    <p>
-                      <img
-                        id="installationQuestionImage"
-                        src="/images/questionLogo.png"
-                        alt="installationDate"
-                      />{" "}
-                      {""}
-                      When are you looking for installation?
-                    </p>
+                <>
+                  <Grid id="installationDateMobile">
+                    <input
+                      type="hidden"
+                      name="installation_date"
+                      value={timeFrame}
+                    />
+                    <div id="installationDateQuestionDivMobile">
+                      <p>
+                        <img
+                          id="installationQuestionImage"
+                          src="/images/questionLogo.png"
+                          alt="installationDate"
+                        />{" "}
+                        {""}
+                        When are you looking for installation?
+                      </p>
 
-                    <Card.Group>
-                      <Scrolllink
-                        to="propertyType"
-                        activeClass="active"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={1500}
+                      <button
+                        className="installationDateButtonIconsMobile"
+                        id="zeroToThreeMonthsIconMobile"
+                        type="button"
+                        onClick={() => setTimeFrame("0-3 Months")}
                         onMouseDown={async (e) => {
                           setIndex(0);
                         }}
                       >
-                        <button
-                          className="installationDateButtonIconsMobile"
-                          id="zeroToThreeMonthsIconMobile"
-                          type="button"
-                          onClick={() => setTimeFrame("0-3 Months")}
-                        >
-                          <Card id="installationCard1" fluid>
-                            <Grid.Row
-                              id="installationCardGridRow1"
-                              itemsPerRow={2}
-                            >
-                              <Grid.Column>
-                                {" "}
-                                <Image
-                                  floated={"left"}
-                                  src="/images/questionIcons/installationDate/felt.png"
-                                  size={"tiny"}
-                                />
-                              </Grid.Column>
-                              <Grid.Column>
-                                <p id="installationCardText1">0-3 Months</p>
-                              </Grid.Column>
-                            </Grid.Row>
-                          </Card>
-                        </button>
-                      </Scrolllink>
-                      <Scrolllink
-                        to="propertyType"
-                        activeClass="active"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={1500}
+                        <p id="installationCardText1">0-3 Months</p>
+                      </button>
+
+                      <button
+                        className="installationDateButtonIconsMobile"
+                        id="zeroToThreeMonthsIconMobile"
+                        type="button"
+                        onClick={() => setTimeFrame("3-6 Months")}
                         onMouseDown={async (e) => {
                           setIndex(0);
                         }}
                       >
-                        <button
-                          className="installationDateButtonIconsMobile"
-                          id="zeroToThreeMonthsIconMobile"
-                          type="button"
-                          onClick={() => setTimeFrame("0-3 Months")}
-                        >
-                          <Card id="installationCard1" fluid>
-                            <Grid.Row
-                              id="installationCardGridRow1"
-                              itemsPerRow={2}
-                            >
-                              <Grid.Column>
-                                {" "}
-                                <Image
-                                  floated={"left"}
-                                  src="/images/questionIcons/installationDate/felt.png"
-                                  size={"tiny"}
-                                />
-                              </Grid.Column>
-                              <Grid.Column>
-                                <p id="installationCardText1">3-6 Months</p>
-                              </Grid.Column>
-                            </Grid.Row>
-                          </Card>
-                        </button>
-                      </Scrolllink>
-                      <Scrolllink
-                        to="propertyType"
-                        activeClass="active"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={1500}
+                        <p id="installationCardText1">3-6 Months</p>
+                      </button>
+
+                      <button
+                        className="installationDateButtonIconsMobile"
+                        id="zeroToThreeMonthsIconMobile"
+                        type="button"
+                        onClick={() => setTimeFrame("6-12 Months")}
                         onMouseDown={async (e) => {
                           setIndex(0);
                         }}
                       >
-                        <button
-                          className="installationDateButtonIconsMobile"
-                          id="zeroToThreeMonthsIconMobile"
-                          type="button"
-                          onClick={() => setTimeFrame("6-12 Months")}
-                        >
-                          <Card id="installationCard1" fluid>
-                            <Grid.Row
-                              id="installationCardGridRow1"
-                              itemsPerRow={2}
-                            >
-                              <Grid.Column>
-                                {" "}
-                                <Image
-                                  floated={"left"}
-                                  src="/images/questionIcons/installationDate/felt.png"
-                                  size={"tiny"}
-                                />
-                              </Grid.Column>
-                              <Grid.Column>
-                                <p id="installationCardText1">6-12 Months</p>
-                              </Grid.Column>
-                            </Grid.Row>
-                          </Card>
-                        </button>
-                      </Scrolllink>
-                      <Scrolllink
-                        to="propertyType"
-                        activeClass="active"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={1500}
+                        <p id="installationCardText1">6-12 Months</p>
+                      </button>
+
+                      <button
+                        className="installationDateButtonIconsMobile"
+                        id="zeroToThreeMonthsIconMobile"
+                        type="button"
+                        onClick={() => setTimeFrame("not sure")}
                         onMouseDown={async (e) => {
                           setIndex(0);
                         }}
                       >
-                        <button
-                          className="installationDateButtonIconsMobile"
-                          id="zeroToThreeMonthsIconMobile"
-                          type="button"
-                          onClick={() => setTimeFrame("not sure")}
-                        >
-                          <Card id="installationCard1" fluid>
-                            <Grid.Row
-                              id="installationCardGridRow1"
-                              itemsPerRow={2}
-                            >
-                              <Grid.Column>
-                                {" "}
-                                <Image
-                                  floated={"left"}
-                                  src="/images/questionIcons/installationDate/felt.png"
-                                  size={"tiny"}
-                                />
-                              </Grid.Column>
-                              <Grid.Column>
-                                <p id="installationCardText1">Not sure</p>
-                              </Grid.Column>
-                            </Grid.Row>
-                          </Card>
-                        </button>
-                      </Scrolllink>
-                    </Card.Group>
-                  </div>
-                </Grid>
+                        <p id="installationCardText1">Not sure</p>
+                      </button>
+                    </div>
+                  </Grid>
+                  <div>{components[index]}</div>
+                </>
               )}
               {matches.desktop && (
                 <>
