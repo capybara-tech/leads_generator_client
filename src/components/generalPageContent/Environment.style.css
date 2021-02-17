@@ -265,7 +265,6 @@
 
 /* ---------mobile----------- */
 
-
 #environmentContentMobile {
   background-color: #fffff4;
   font-family: "Poppins", sans-serif;
@@ -303,16 +302,16 @@
 }
 
 #environmentalInformationSectionMobile {
-  padding:2rem;
+  padding: 2rem;
 }
 
 .titleEnvironmentBenefitMobile {
- font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .mainEnvironmentContentMobile {
- font-size: 0.9rem;
- text-align: justify;
+  font-size: 0.9rem;
+  text-align: justify;
 }
 
 #co2PerspectiveMobile {
@@ -327,9 +326,9 @@
 }
 
 #environmentalBottomBannerMobile {
-  min-height:80vh;
+  min-height: 80vh;
   background-color: #c8dacc;
-  padding:2rem;
+  padding: 2rem;
 }
 
 #environmentConclusionMobile {

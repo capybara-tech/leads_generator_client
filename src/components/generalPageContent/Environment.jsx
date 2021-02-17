@@ -86,7 +86,6 @@ const Environment = () => {
                       </p>
                     </Grid.Column>
                   </Grid.Row>
-
                   <Grid.Row>
                     <Grid.Column>
                       <Image
@@ -127,14 +126,12 @@ const Environment = () => {
                       <p id="environmentCondition">*on average</p>
                     </Grid.Column>
                   </Grid.Row>
-
                   <Grid.Column>
                     <Image
                       id="independenceImg"
                       src="/images/CleanBritishSun.png"
                     />
                   </Grid.Column>
-
                   <Grid.Row>
                     <Grid.Column>
                       {" "}
@@ -165,7 +162,6 @@ const Environment = () => {
                       </p>
                     </Grid.Column>
                   </Grid.Row>
-
                   <Grid.Row>
                     <Grid.Column>
                       {" "}
@@ -211,28 +207,27 @@ const Environment = () => {
                       <br />- 3.5 times around the globe!
                     </p>
                   </Grid.Row>
-
                   <Grid.Row>
                     <p className="questionInCo2SegmentMobile">
                       Amount of coal burned? <br />- 1,000 kg
                     </p>
                   </Grid.Row>
                   <Grid.Row columns={1}>
-                      <Grid.Column>
-                        <p id="environmentConclusionMobile">
-                          Solar - the right choice to live 'greener' and protect
-                          the future of our planet.
-                        </p>
-                        <Button
-                          data-cy="button"
-                          as={Link}
-                          to={{ pathname: "/quotes" }}
-                          id="environmentQuoteButton"
-                        >
-                          get up to 3 quotes
-                        </Button>
-                      </Grid.Column>
-                    </Grid.Row>
+                    <Grid.Column>
+                      <p id="environmentConclusionMobile">
+                        Solar - the right choice to live 'greener' and protect
+                        the future of our planet.
+                      </p>
+                      <Button
+                        data-cy="button"
+                        as={Link}
+                        to={{ pathname: "/quotes" }}
+                        id="environmentQuoteButton"
+                      >
+                        get up to 3 quotes
+                      </Button>
+                    </Grid.Column>
+                  </Grid.Row>
                 </Grid>
               </div>
             )}
