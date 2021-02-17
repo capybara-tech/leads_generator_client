@@ -176,7 +176,7 @@ const RoofSlope = (props) => {
                           <Grid.Column>
                             {" "}
                             <Scrolllink
-                              to="installationDateMobile"
+                              to="propertyTypeMobile"
                               activeClass="active"
                               spy={true}
                               smooth={true}
@@ -207,7 +207,7 @@ const RoofSlope = (props) => {
                           </Grid.Column>
                           <Grid.Column>
                             <Scrolllink
-                              to="roofSlope"
+                              to="roofType"
                               activeClass="active"
                               spy={true}
                               smooth={true}
