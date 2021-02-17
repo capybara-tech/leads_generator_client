@@ -603,7 +603,6 @@ const PropertyType = (props) => {
           )}
         </Media>
       </div>
-      {components[index]}
     </>
   );
 };
