@@ -314,9 +314,18 @@
   text-align: justify;
 }
 
+#environmentBottomBannerSegment {
+  position: absolute;
+  width: 90vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  background-color: #fffff4;
+}
+
 #co2PerspectiveMobile {
   font-family: "Poppins", sans-serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 

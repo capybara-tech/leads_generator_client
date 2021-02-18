@@ -188,30 +188,32 @@ const Environment = () => {
                     </Grid.Column>
                   </Grid.Row>
                 </Grid>
+                <Segment raised id="environmentBottomBannerSegment">
+                  <Grid>
+                    <Grid.Row>
+                      <p id="co2PerspectiveMobile">
+                        Let's put 2 tonnes of Co2 into perspective
+                      </p>
+                    </Grid.Row>
+                    <Grid.Row>
+                      <p className="questionInCo2SegmentMobile">
+                        iPhones charged/year? <br />- 255,064 times
+                      </p>
+                    </Grid.Row>
+                    <Grid.Row>
+                      <p className="questionInCo2SegmentMobile">
+                        Train journeys?
+                        <br />- 3.5 times around the globe!
+                      </p>
+                    </Grid.Row>
+                    <Grid.Row>
+                      <p className="questionInCo2SegmentMobile">
+                        Amount of coal burned? <br />- 1,000 kg
+                      </p>
+                    </Grid.Row>
+                  </Grid>
+                </Segment>
                 <Grid id="environmentalBottomBannerMobile">
-                  <Grid.Row>
-                    <p id="co2PerspectiveMobile">
-                      Let's put 2 tonnes of Co2 into perspective
-                    </p>
-                  </Grid.Row>
-                  <Grid.Row>
-                    {" "}
-                    <p className="questionInCo2SegmentMobile">
-                      iPhones charged/year? <br />- 255,064 times
-                    </p>
-                  </Grid.Row>
-                  <Grid.Row>
-                    {" "}
-                    <p className="questionInCo2SegmentMobile">
-                      Train journeys?
-                      <br />- 3.5 times around the globe!
-                    </p>
-                  </Grid.Row>
-                  <Grid.Row>
-                    <p className="questionInCo2SegmentMobile">
-                      Amount of coal burned? <br />- 1,000 kg
-                    </p>
-                  </Grid.Row>
                   <Grid.Row columns={1}>
                     <Grid.Column>
                       <p id="environmentConclusionMobile">
