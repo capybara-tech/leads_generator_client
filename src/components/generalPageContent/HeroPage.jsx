@@ -78,7 +78,7 @@ const HeroPage = () => {
                           >
                             <Scrolllink
                               id="dubbleArrowDownMobile"
-                              to="environmentSection"
+                              to="topCardsEnvironmentMobile"
                               activeClass="active"
                               spy={true}
                               smooth={true}
