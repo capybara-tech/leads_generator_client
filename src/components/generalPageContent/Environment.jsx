@@ -42,7 +42,7 @@ const Environment = () => {
                   <TextLoop interval={1750}>
                     <div>
                       <p className="environmentalBenefitsMobile">
-                        Harvest infinite and clean energy from the sun
+                        Harvest infinite and clean energy from<br/> the sun
                       </p>
                     </div>
                     <div>

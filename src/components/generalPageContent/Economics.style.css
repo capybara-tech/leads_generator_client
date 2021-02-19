@@ -179,6 +179,8 @@ li span {
 /* ----------mobile----------- */
 
 #economicsContentMobile {
+  min-height: 100vh;
+  min-width: 100vw;
   background-color: #fffff4;
   font-family: "Poppins", sans-serif;
 }
@@ -188,8 +190,8 @@ li span {
   padding: 5vw;
   font-size: 1.1rem;
   padding-top: 20vh;
-  min-height: 80vh;
-  width: 100vw;
+  min-height: 85vh;
+  min-width: 100vw;
   background-color: #70af85;
 }
 
@@ -212,6 +214,7 @@ li span {
 .financialBenefitsMobile {
   color: #fe8733;
   font-weight: bold;
+  width: 80vw;
 }
 
 #economyInformationSectionMobile {
@@ -229,6 +232,7 @@ li span {
 
 #economicsBottomBannerMobile {
   min-height: 60vh;
+  min-width: 100vw;
   background-color: #c8dacc;
   padding: 2rem;
 }

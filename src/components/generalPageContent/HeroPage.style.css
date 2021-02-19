@@ -113,14 +113,3 @@
 #angleDownIconMobile {
   color: #fe8733;
 }
-
-#dubbleArrowDownMobile {
-  width: 1rem;
-  height: 1rem;
-  display: flex;
-  position: absolute;
-  top: 85%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color:  #0d0e0b;
-}

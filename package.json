@@ -58,6 +58,7 @@
   "devDependencies": {
     "cypress": "4.11.0",
     "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.5"
+    "enzyme-adapter-react-16": "^1.15.5",
+    "postcss": "^8.2.6"
   }
 }

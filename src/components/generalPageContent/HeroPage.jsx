@@ -69,26 +69,7 @@ const HeroPage = () => {
                               </p>
                             )}
                           </CountUp>
-                        <div id="dubbleArrowDownMobile">
-                          <motion.span
-                            transition={bounceTransition}
-                            animate={{
-                              y: ["50%", "-50%"],
-                            }}
-                          >
-                            <Scrolllink
-                              id="dubbleArrowDownMobile"
-                              to="environmentSection"
-                              activeClass="active"
-                              spy={true}
-                              smooth={true}
-                              offset={0}
-                              duration={1500}
-                            >
-                              <Icon id="dubbleArrowDownMobile" size="big" name="angle double down" />
-                            </Scrolllink>
-                          </motion.span>
-                        </div>
+                        
                       </Grid.Column>
                     </Grid.Row>
                   </Grid>
