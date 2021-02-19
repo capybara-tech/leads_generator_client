@@ -67,6 +67,7 @@ const App = () => {
                   <Route path="/contactus" component={ContactUs} />
                   <Route path="/adminhomepage" component={AdminHomePage} />
                 </Switch>
+                <CookieNotice />
                 <Footer />
               </div>
             )}
@@ -92,6 +93,7 @@ const App = () => {
                   <Route path="/contactus" component={ContactUs} />
                   <Route path="/adminhomepage" component={AdminHomePage} />
                 </Switch>
+                <CookieNotice />
                 <Footer />
               </div>
             )}
