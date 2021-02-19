@@ -16,6 +16,7 @@ import PrivacyPolicy from "./components/generalPageContent/Legals/PrivacyPolicy"
 import Cookies from "./components/generalPageContent/Legals/Cookies";
 import ContactUs from "./components/generalPageContent/ContactUs";
 import AdminHomePage from "./components/admin/AdminHomePage";
+import CookieNotice from "./components/generalPageContent/CookieNotice"
 import { connect } from "react-redux";
 
 const App = () => {
@@ -54,6 +55,7 @@ const App = () => {
         <Route path="/adminhomepage" component={AdminHomePage} />
       </Switch>
       <Footer />
+      <CookieNotice />
     </div>
   );
 };
