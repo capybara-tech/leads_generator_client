@@ -84,7 +84,7 @@ const SummaryLandingPage = () => {
                                 data-cy="button"
                               >
                                 <Button id="cardButton1Mobile">
-                                  Read More
+                                Request Quotes
                                 </Button>
                               </Menu.Item>
                               <br />
@@ -339,7 +339,7 @@ const SummaryLandingPage = () => {
                                 to={{ pathname: "/quotes" }}
                                 data-cy="button"
                               >
-                                <Button id="cardButton1">Read More</Button>
+                                <Button id="cardButton1">Request Quotes</Button>
                               </Menu.Item>
                               <br />
                             </Card>

@@ -1,6 +1,6 @@
 #summaryLandingPage {
   min-width: 100vw;
-  min-height: 100vh;
+  min-height: 75vh;
 }
 
 #summaryCards {
@@ -24,6 +24,7 @@
   border-width: 0.3vh;
   border-radius: 10px;
   box-shadow: none;
+  margin-right: 1vw;
 }
 
 #summaryTitle1 {
@@ -69,6 +70,7 @@ i.icon.check {
   border-width: 0.3vh;
   border-radius: 10px;
   box-shadow: none;
+  margin-right: 1vw;
 }
 
 #summaryTitle2 {
@@ -110,6 +112,7 @@ i.icon.check {
   border-width: 0.3vh;
   border-radius: 10px;
   box-shadow: none;
+  margin-right: 1vw;
 }
 
 #summaryTitle3 {
