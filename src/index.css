@@ -1,18 +1,20 @@
 body,
 html,
 .app {
-  
   min-height: 100vh;
   min-width: 100vh;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 #appMobile {
   overflow-x: hidden;
   position: fixed;
-  overflow-y: scroll;
+  overflow-y: scroll !important;
   height: 100vh;
   min-width: 100vw;
-  
 }
 
 #submitButton {
