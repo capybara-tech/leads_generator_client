@@ -9,8 +9,8 @@
   width: 60vw;
   border-radius: 10px;
   background-color: #c8dacc;
-  top: 50%;
-  left: 50%;
+  top: 50vh;
+  left: 50vw;
   transform: translate(-50%, -50%);
 }
 
