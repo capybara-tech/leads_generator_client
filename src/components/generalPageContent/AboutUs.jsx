@@ -203,11 +203,11 @@ const AboutUs = () => {
                       </p>
                       <p>Alex Bellamy, CEO Capybara UK</p>
                     </div>
-                    <div id="middleSegment">
-                      <p id="ourAmbitionTitle">- Our ambition -</p>
-                    </div>
 
-                    <Segment raised id="ourAimsSegment">
+                    <Segment raised id="ourAimsSegmentMobile">
+                   
+                      <p id="ourAmbitionTitle">- Our ambition -</p>
+                   
                       <Grid id="ourAimsGridMobile">
                         <Grid.Row centered={true} columns={1}>
                           <Grid.Column textAlign={"center"}>
@@ -464,11 +464,10 @@ const AboutUs = () => {
                       </p>
                       <p>Alex Bellamy, CEO Capybara UK</p>
                     </div>
-                    <div id="middleSegment">
-                      <p id="ourAmbitionTitle">- Our ambition -</p>
-                    </div>
+                    
                   </div>
                   <Segment raised id="ourAimsSegment">
+                      <p id="ourAmbitionTitle">- Our ambition -</p>
                     <Grid id="ourAimsGrid">
                       <Grid.Row columns={5}>
                         <Grid.Column>

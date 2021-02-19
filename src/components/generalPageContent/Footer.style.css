@@ -1,5 +1,7 @@
 .footer {
+  min-width: 100vw;
   padding-top: 10vh;
+  padding-bottom: 15vh;
   position: relative;
   background: #181460;
   text-align: center;

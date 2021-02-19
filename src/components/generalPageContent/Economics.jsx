@@ -65,7 +65,7 @@ const Economics = () => {
                     </div>
                     <div>
                       <p className="financialBenefitsMobile">
-                        Government grants and financial support are up for grabs
+                        Government grants and financial support<br /> are up for grabs
                       </p>
                     </div>
                     <div>
@@ -80,7 +80,7 @@ const Economics = () => {
                     </div>
                     <div>
                       <p className="financialBenefitsMobile">
-                        Solar panel prices have fallen by around 70% since 2010!
+                        Solar panel prices have fallen by around 70%<br/> since 2010!
                       </p>
                     </div>
                     <div>

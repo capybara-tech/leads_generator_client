@@ -266,6 +266,8 @@
 /* ---------mobile----------- */
 
 #environmentContentMobile {
+  min-height:100vh;
+  min-width: 100vw;
   background-color: #fffff4;
   font-family: "Poppins", sans-serif;
 }
@@ -275,8 +277,8 @@
   padding: 5vw;
   font-size: 1.1rem;
   padding-top: 20vh;
-  min-height: 80vh;
-  width: 100vw;
+  min-height: 85vh;
+  min-width: 100vw;
   background-color: #70af85;
 }
 
@@ -318,7 +320,7 @@
   position: absolute;
   width: 90vw;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
   z-index: 9;
   background-color: #fffff4;
 }
@@ -335,7 +337,7 @@
 }
 
 #environmentalBottomBannerMobile {
-  min-height: 80vh;
+  min-height: 100vh;
   background-color: #c8dacc;
   padding: 2rem;
 }
@@ -343,6 +345,6 @@
 #environmentConclusionMobile {
   font-family: "Give You Glory";
   font-size: 1.5rem;
-  padding-top: 2rem;
+  padding-top: 25rem;
   text-align: center;
 }

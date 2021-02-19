@@ -79,17 +79,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9;
+  background-color: #fffff4;
 }
 
-#middleSegment {
-  height: 60vh;
-}
 
 #ourAmbitionTitle {
   padding-top: 5vh;
   font-family: "Poppins", sans-serif;
   font-size: 5vh;
   text-align: center;
+  background-color: #fffff4;
 }
 
 #meetTheTeamTitle {
@@ -121,6 +120,7 @@
 #ceoMessage {
   font-family: "Poppins", sans-serif;
   font-size: 3vh;
+  padding-bottom: 20vw;
 }
 
 #aboutUsBottomBanner {
@@ -133,11 +133,10 @@
 
 #ourAimsGrid {
   font-family: "Poppins", sans-serif;
-  padding-top: 30vh;
   padding-left: 5vw;
   padding-right: 5vw;
-  padding-bottom: 20vh;
   text-align: center;
+  padding-bottom: 1rem;
   background-color: #fffff4;
 }
 
@@ -308,10 +307,10 @@
 #ourAimsConclusionMobile {
   min-height: 80vh;
   text-align: center;
-  padding-top: 15rem;
+  padding-top: 45rem;
   font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 5rem;
   background-color: #c8dacc;
 }
 
@@ -330,4 +329,14 @@
   border-style: solid;
   color: #fe8733cb;
   border-radius: 10px;
+}
+
+#ourAimsSegmentMobile {
+  position: absolute;
+  width: 90vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  background-color: #fffff4;
+  margin-top: 50vh;
 }
