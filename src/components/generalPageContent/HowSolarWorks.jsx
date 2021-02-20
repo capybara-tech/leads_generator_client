@@ -27,7 +27,7 @@ const HowSolarWorks = () => {
                   <p id="howSolarWorksSubTitleMobile">
                     Lets keep it simple, like the process itself:
                   </p>
-                  <Card.Group centered>
+                  <Card.Group centered id="solarWorksCardsMobile">
                     <Card id="howSolarWorksCard1">
                       <Card.Content>
                         <Card.Header id="howSolarWorksNumber1Mobile">
@@ -134,7 +134,7 @@ const HowSolarWorks = () => {
                   <h3 id="howSolarWorksSubTitle">
                     Lets keep it simple, like the process itself:
                   </h3>
-                  <Card.Group centered>
+                  <Card.Group centered id="solarWorksCards">
                     <Card id="howSolarWorksCard1">
                       <Card.Content>
                         <Card.Header id="howSolarWorksNumber1">01</Card.Header>
@@ -217,7 +217,7 @@ const HowSolarWorks = () => {
                           <Icon
                             id="howSolarWorksArrow4"
                             size="huge"
-                            name="arrow circle right"
+                            name="check circle"
                           />
                         </Card.Description>
                       </Card.Content>
