@@ -214,21 +214,6 @@ const RoofType = (props) => {
                       <Grid id="gridWithButtonsMobile" centered={true}>
                         <Grid.Row columns="3">
                           <Grid.Column>
-                            {" "}
-                            <Scrolllink
-                              to="roofSlope"
-                              activeClass="active"
-                              spy={true}
-                              smooth={true}
-                              offset={0}
-                              duration={1500}
-                            >
-                              <button id="backToPreviousQuestionMobile">
-                                Back
-                              </button>
-                            </Scrolllink>
-                          </Grid.Column>
-                          <Grid.Column>
                             <Popup
                               trigger={
                                 <button
@@ -246,23 +231,15 @@ const RoofType = (props) => {
                             />
                           </Grid.Column>
                           <Grid.Column>
-                            <Scrolllink
-                              to="roofDirection"
-                              activeClass="active"
-                              spy={true}
-                              smooth={true}
-                              offset={0}
-                              duration={1500}
+                            <button
+                            type="button"
+                              onMouseDown={async (e) => {
+                                setIndex(0);
+                              }}
+                              id="nextQuestionMobile"
                             >
-                              <button
-                                onMouseDown={async (e) => {
-                                  setIndex(0);
-                                }}
-                                id="nextQuestionMobile"
-                              >
-                                Next
-                              </button>
-                            </Scrolllink>
+                              Skip question
+                            </button>
                           </Grid.Column>
                         </Grid.Row>
                       </Grid>

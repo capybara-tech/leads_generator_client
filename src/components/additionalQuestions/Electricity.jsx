@@ -138,22 +138,6 @@ const Electricity = (props) => {
                   <Grid id="gridWithButtonsMobile" centered={true}>
                     <Grid.Row columns="3">
                       <Grid.Column>
-                        {" "}
-                        <Scrolllink
-                          to="roofSlope"
-                          activeClass="active"
-                          spy={true}
-                          smooth={true}
-                          offset={0}
-                          duration={1500}
-                        >
-                          <button id="backToPreviousQuestionMobile">
-                            Back
-                          </button>
-                        </Scrolllink>
-                      </Grid.Column>
-                      <Grid.Column></Grid.Column>
-                      <Grid.Column>
                         <Popup
                           trigger={
                             <button

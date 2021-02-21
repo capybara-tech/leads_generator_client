@@ -58,62 +58,38 @@ const RoofDimensions = (props) => {
                         placeholder="3. Gutter height"
                       />
                       <Grid id="gridWithButtonsMobile" centered={true}>
-                      <Grid.Row columns="3">
-                        <Grid.Column>
-                          {" "}
-                          <Scrolllink
-                            to="roofType"
-                            activeClass="active"
-                            spy={true}
-                            smooth={true}
-                            offset={0}
-                            duration={1500}
-                          >
-                            <button id="backToPreviousQuestionMobile">
-                              Back
-                            </button>
-                          </Scrolllink>
-                        </Grid.Column>
-                        <Grid.Column>
-                          <Popup
-                            trigger={
-                              <button
-                                id="submitButton"
-                                data-cy="button"
-                                type="submit"
-                                onClick={props.onSubmit}
-                              >
-                                Submit
-                              </button>
-                            }
-                            content="Are you sure you want to submit now?"
-                            inverted
-                            position="top center"
-                          />
-                        </Grid.Column>
-                        <Grid.Column>
-                          <Scrolllink
-                            to="roofDimensionsMobile"
-                            activeClass="active"
-                            spy={true}
-                            smooth={true}
-                            offset={0}
-                            duration={1500}
-                          >
+                        <Grid.Row columns="3">
+                          <Grid.Column>
+                            <Popup
+                              trigger={
+                                <button
+                                  id="submitButton"
+                                  data-cy="button"
+                                  type="submit"
+                                  onClick={props.onSubmit}
+                                >
+                                  Submit
+                                </button>
+                              }
+                              content="Are you sure you want to submit now?"
+                              inverted
+                              position="top center"
+                            />
+                          </Grid.Column>
+                          <Grid.Column>
                             <button
+                            type="button"
                               onMouseDown={async (e) => {
                                 setIndex(0);
                               }}
                               id="nextQuestionMobile"
                             >
-                              Next
+                              Skip
                             </button>
-                          </Scrolllink>
-                        </Grid.Column>
-                      </Grid.Row>
-                    </Grid>
+                          </Grid.Column>
+                        </Grid.Row>
+                      </Grid>
                     </div>
-                    
                   </div>
                   <>{components[index]}</>
                 </>
