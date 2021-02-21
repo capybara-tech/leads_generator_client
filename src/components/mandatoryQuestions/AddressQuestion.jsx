@@ -95,41 +95,15 @@ const AddressQuestion = ({ isScriptLoaded, isScriptLoadSucceed }) => {
               </div>
             )}
           </PlacesAutocomplete>
-          <Scrolllink
-            to="telephoneQuestion"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={1500}
-          >
-            <Popup
-              trigger={
-                <Icon size="big" name="angle left" id="backToTelephoneQ" />
-              }
-              content="Back to previous question"
-              inverted
-              position="bottom center"
-            />
-          </Scrolllink>
-          <Scrolllink
-            to="midPageSubmitOrContinue"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={1500}
-            onMouseDown={async (e) => {
-              setIndex(0);
-            }}
-          >
-            <Popup
-              trigger={<Icon size="big" name="angle right" id="nextToIconQ" />}
-              content="Next question"
-              inverted
-              position="bottom center"
-            />
-          </Scrolllink>
+          <button
+                    id="moveOnMobile"
+                    type="button"
+                    onMouseDown={async (e) => {
+                      setIndex(0);
+                    }}
+                  >
+                    Move on to next section
+                  </button>
         </div>
         {components[index]}
       </>

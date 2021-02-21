@@ -91,7 +91,7 @@
 /* -------------mobile----------- */
 
 #midPageSubmitOrContinueMobile {
-  min-height: 100vh;
+  min-height: 60vh;
   background-color: #fffff4;
 }
 
@@ -101,7 +101,7 @@
   width: 80vw;
   border-radius: 10px;
   background-color: #c8dacc;
-  top: 50vh;
+  top: 30vh;
   left: 50vw;
   transform: translate(-50%, -50%);
 }

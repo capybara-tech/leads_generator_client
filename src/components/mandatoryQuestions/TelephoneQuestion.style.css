@@ -59,6 +59,13 @@ input:-webkit-autofill:active {
 
 /* -------------mobile-------------- */
 
+#telephoneQuestionMobile {
+  position: relative;
+  min-height: 50vh;
+  min-width: 100vw;
+  background-color:#fffff4;
+}
+
 
 #fieldTelephoneMobile {
   font-family: "Poppins", sans-serif;

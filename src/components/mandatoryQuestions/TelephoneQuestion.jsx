@@ -24,7 +24,7 @@ const TelephoneQuestion = () => {
           {(matches) => (
             <>
               {matches.mobile && (
-                <div id="telephoneQuestion">
+                <div id="telephoneQuestionMobile">
                   <div id="telephoneQuestionDiv">
                     <div id="questionForTelephone">
                       <p id="questionAskingForTelephone">
@@ -47,44 +47,6 @@ const TelephoneQuestion = () => {
                       <br />
                     </div>
                   </div>
-                  <Scrolllink
-                    to="emailQuestion"
-                    activeClass="active"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={1500}
-                  >
-                    <Popup
-                      trigger={
-                        <Icon size="big" name="angle left" id="backToEmailQ" />
-                      }
-                      content="Back to previous question"
-                      inverted
-                      position="bottom center"
-                    />
-                  </Scrolllink>
-                  <Scrolllink
-                    to="addressQuestion"
-                    activeClass="active"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={1500}
-                  >
-                    <Popup
-                      trigger={
-                        <Icon
-                          size="big"
-                          name="angle right"
-                          id="nextToAddressQ"
-                        />
-                      }
-                      content="Next question"
-                      inverted
-                      position="bottom center"
-                    />
-                  </Scrolllink>
                 </div>
               )}
               {matches.desktop && (

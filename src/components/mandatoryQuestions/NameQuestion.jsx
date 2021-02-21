@@ -18,7 +18,7 @@ const NameQuestion = () => {
           {(matches) => (
             <>
               {matches.mobile && (
-                <div id="nameQuestion">
+                <div id="nameQuestionMobile">
                   <div id="nameQuestionDiv">
                     <div id="questionForName">
                       <p id="openingQuestion" data-cy="title">
@@ -40,23 +40,7 @@ const NameQuestion = () => {
                     </div>
                     <br />
                   </div>
-                  <Scrolllink
-                    to="emailQuestion"
-                    activeClass="active"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={1500}
-                  >
-                    <Popup
-                      trigger={
-                        <Icon size="big" name="angle right" id="nextToEmailQ" />
-                      }
-                      content="Next question"
-                      inverted
-                      position="bottom center"
-                    />
-                  </Scrolllink>
+                  
                 </div>
               )}
               {matches.desktop && (
