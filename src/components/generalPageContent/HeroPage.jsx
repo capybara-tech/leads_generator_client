@@ -47,7 +47,6 @@ const HeroPage = () => {
                               />
                             </mark>
                           </p>
-                        
                       </Grid.Column>
                     </Grid.Row>
                     <Grid.Row id="bottomBannerContentMobile">
@@ -69,7 +68,6 @@ const HeroPage = () => {
                               </p>
                             )}
                           </CountUp>
-                        
                       </Grid.Column>
                     </Grid.Row>
                   </Grid>
@@ -125,7 +123,7 @@ const HeroPage = () => {
                         activeClass="active"
                         spy={true}
                         smooth={true}
-                        offset={0}
+                        offset={-100}
                         duration={1500}
                       >
                         <Icon

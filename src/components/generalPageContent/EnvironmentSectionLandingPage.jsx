@@ -139,7 +139,7 @@ const EnvironmentSectionLandingPage = () => {
                         activeClass="active"
                         spy={true}
                         smooth={true}
-                        offset={0}
+                        offset={-160}
                         duration={1500}
                       >
                         <Icon
