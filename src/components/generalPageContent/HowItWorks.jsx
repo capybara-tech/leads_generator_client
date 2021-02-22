@@ -133,7 +133,7 @@ const HowItWorks = () => {
                             <Icon
                               id="howItWorksArrow4Mobile"
                               size="huge"
-                              name="arrow circle right"
+                              name="check circle"
                             />
                           </Card.Description>
                         </Card.Content>
@@ -254,15 +254,14 @@ const HowItWorks = () => {
                             <Icon
                               id="howItWorksArrow4"
                               size="huge"
-                              name="arrow circle right"
+                              name="check circle"
                             />
                           </Card.Description>
                         </Card.Content>
                       </Card>
                     </Card.Group>
                   </div>
-
-                  <p id="howItWorksconclusion">
+                  <p id="howItWorksConclusion">
                     <br />
                     Save time, money & hassle - request your quotes
                   </p>
