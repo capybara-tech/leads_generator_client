@@ -238,7 +238,7 @@ const RoofType = (props) => {
                               }}
                               id="nextQuestionMobile"
                             >
-                              Skip question
+                              Skip
                             </button>
                           </Grid.Column>
                         </Grid.Row>
