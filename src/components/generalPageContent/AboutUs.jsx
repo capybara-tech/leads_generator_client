@@ -173,7 +173,7 @@ const AboutUs = () => {
                                 <Image
                                   verticalAlign="middle"
                                   src={
-                                    "https://react.semantic-ui.com/images/avatar/large/daniel.jpg"
+                                    "/images/TwinkyPhoto.jpg"
                                   }
                                   circular
                                   size="small"
@@ -436,7 +436,7 @@ const AboutUs = () => {
                                 <Image
                                   verticalAlign="middle"
                                   src={
-                                    "https://react.semantic-ui.com/images/avatar/large/daniel.jpg"
+                                    "/images/TwinkyPhoto.jpg"
                                   }
                                   circular
                                   size="small"
