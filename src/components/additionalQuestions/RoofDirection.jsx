@@ -60,8 +60,8 @@ const RoofDirection = (props) => {
                               {" "}
                               <Image
                                 floated={"left"}
-                                src="/images/questionIcons/installationDate/felt.png"
-                                size={"tiny"}
+                                src="/images/questionIcons/roofDirection/nMobile.png"
+                                className="roofDirectionImageMobile"
                               />
                             </Grid.Column>
                             <Grid.Column>
@@ -88,8 +88,8 @@ const RoofDirection = (props) => {
                               {" "}
                               <Image
                                 floated={"left"}
-                                src="/images/questionIcons/installationDate/felt.png"
-                                size={"tiny"}
+                                src="/images/questionIcons/roofDirection/neMobile.png"
+                                className="roofDirectionImageMobile"
                               />
                             </Grid.Column>
                             <Grid.Column>
@@ -116,8 +116,8 @@ const RoofDirection = (props) => {
                               {" "}
                               <Image
                                 floated={"left"}
-                                src="/images/questionIcons/installationDate/felt.png"
-                                size={"tiny"}
+                                src="/images/questionIcons/roofDirection/eMobile.png"
+                                className="roofDirectionImageMobile"
                               />
                             </Grid.Column>
                             <Grid.Column>
@@ -144,8 +144,8 @@ const RoofDirection = (props) => {
                               {" "}
                               <Image
                                 floated={"left"}
-                                src="/images/questionIcons/installationDate/felt.png"
-                                size={"tiny"}
+                                src="/images/questionIcons/roofDirection/seMobile.png"
+                                className="roofDirectionImageMobile"
                               />
                             </Grid.Column>
                             <Grid.Column>
@@ -172,8 +172,8 @@ const RoofDirection = (props) => {
                               {" "}
                               <Image
                                 floated={"left"}
-                                src="/images/questionIcons/installationDate/felt.png"
-                                size={"tiny"}
+                                src="/images/questionIcons/roofDirection/sMobile.png"
+                                className="roofDirectionImageMobile"
                               />
                             </Grid.Column>
                             <Grid.Column>
@@ -200,8 +200,8 @@ const RoofDirection = (props) => {
                               {" "}
                               <Image
                                 floated={"left"}
-                                src="/images/questionIcons/installationDate/felt.png"
-                                size={"tiny"}
+                                src="/images/questionIcons/roofDirection/swMobile.png"
+                                className="roofDirectionImageMobile"
                               />
                             </Grid.Column>
                             <Grid.Column>
@@ -228,8 +228,8 @@ const RoofDirection = (props) => {
                               {" "}
                               <Image
                                 floated={"left"}
-                                src="/images/questionIcons/installationDate/felt.png"
-                                size={"tiny"}
+                                src="/images/questionIcons/roofDirection/wMobile.png"
+                                className="roofDirectionImageMobile"
                               />
                             </Grid.Column>
                             <Grid.Column>
@@ -256,8 +256,8 @@ const RoofDirection = (props) => {
                               {" "}
                               <Image
                                 floated={"left"}
-                                src="/images/questionIcons/installationDate/felt.png"
-                                size={"tiny"}
+                                src="/images/questionIcons/roofDirection/nwMobile.png"
+                                className="roofDirectionImageMobile"
                               />
                             </Grid.Column>
                             <Grid.Column>

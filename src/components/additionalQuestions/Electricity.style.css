@@ -103,6 +103,11 @@ input:-webkit-autofill:active {
   transform: translate(-0%, -50%);
 }
 
+.fuseImageMobile {
+ height:10vh;
+ padding-left: 1rem;
+}
+
 .fuseSizeButtonIconsMobile {
   background-color: transparent;
   border-radius: 10px;

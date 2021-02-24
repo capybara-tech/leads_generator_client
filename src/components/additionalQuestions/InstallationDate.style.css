@@ -113,6 +113,11 @@ input:-webkit-autofill:active {
   outline: none;
 }
 
+.installationImageMobile {
+  height:10vh;
+  padding-left: 1rem;
+ }
+
 .installationDateButtonIconsMobile:hover {
   border-color: #70af85;
 }

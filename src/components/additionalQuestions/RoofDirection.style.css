@@ -23,6 +23,11 @@
   height: 3.5vh;
 }
 
+.roofDirectionImageMobile {
+  height:10vh;
+  padding-left: 1rem;
+ }
+
 .roofDirectionButtonIcons {
   background-color: transparent;
   border-radius: 10px;

@@ -53,10 +53,10 @@ const RoofSlope = (props) => {
                               <Grid.Column>
                                 {" "}
                                 <Image
-                                  floated={"left"}
-                                  src="/images/questionIcons/installationDate/felt.png"
-                                  size={"tiny"}
-                                />
+                                floated={"left"}
+                                src="/images/questionIcons/roofSlope/flatRoof.png"
+                                className="roofSlopeImageMobile"
+                              />
                               </Grid.Column>
                               <Grid.Column>
                                 <p id="roofSlopeCardTextMobile">Flat roof</p>
@@ -82,10 +82,10 @@ const RoofSlope = (props) => {
                               <Grid.Column>
                                 {" "}
                                 <Image
-                                  floated={"left"}
-                                  src="/images/questionIcons/installationDate/felt.png"
-                                  size={"tiny"}
-                                />
+                                floated={"left"}
+                                src="/images/questionIcons/roofSlope/lowPitchRoof.png"
+                                className="roofSlopeImageMobile"
+                              />
                               </Grid.Column>
                               <Grid.Column>
                                 <p id="roofSlopeCardTextMobile">
@@ -113,10 +113,10 @@ const RoofSlope = (props) => {
                               <Grid.Column>
                                 {" "}
                                 <Image
-                                  floated={"left"}
-                                  src="/images/questionIcons/installationDate/felt.png"
-                                  size={"tiny"}
-                                />
+                                floated={"left"}
+                                src="/images/questionIcons/roofSlope/ordinaryRoof.png"
+                                className="roofSlopeImageMobile"
+                              />
                               </Grid.Column>
                               <Grid.Column>
                                 <p id="roofSlopeCardTextMobile">
@@ -144,10 +144,10 @@ const RoofSlope = (props) => {
                               <Grid.Column>
                                 {" "}
                                 <Image
-                                  floated={"left"}
-                                  src="/images/questionIcons/installationDate/felt.png"
-                                  size={"tiny"}
-                                />
+                                floated={"left"}
+                                src="/images/questionIcons/roofSlope/steepRoof.png"
+                                className="roofSlopeImageMobile"
+                              />
                               </Grid.Column>
                               <Grid.Column>
                                 <p id="roofSlopeCardTextMobile">Steep roof</p>

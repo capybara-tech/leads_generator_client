@@ -61,8 +61,8 @@ const PropertyType = (props) => {
                               {" "}
                               <Image
                                 floated={"left"}
-                                src="/images/questionIcons/installationDate/felt.png"
-                                size={"tiny"}
+                                src="/images/questionIcons/propertyType/detachedMobile.png"
+                                className="propertyImageMobile"
                               />
                             </Grid.Column>
                             <Grid.Column>
@@ -90,8 +90,8 @@ const PropertyType = (props) => {
                               {" "}
                               <Image
                                 floated={"left"}
-                                src="/images/questionIcons/installationDate/felt.png"
-                                size={"tiny"}
+                                src="/images/questionIcons/propertyType/apartmentMobile.png"
+                                className="propertyImageMobile"
                               />
                             </Grid.Column>
                             <Grid.Column>
@@ -119,8 +119,8 @@ const PropertyType = (props) => {
                               {" "}
                               <Image
                                 floated={"left"}
-                                src="/images/questionIcons/installationDate/felt.png"
-                                size={"tiny"}
+                                src="/images/questionIcons/propertyType/semiTerracedMobile.png"
+                                className="propertyImageMobile"
                               />
                             </Grid.Column>
                             <Grid.Column>
@@ -150,8 +150,8 @@ const PropertyType = (props) => {
                               {" "}
                               <Image
                                 floated={"left"}
-                                src="/images/questionIcons/installationDate/felt.png"
-                                size={"tiny"}
+                                src="/images/questionIcons/propertyType/barnMobile.png"
+                                className="propertyImageMobile"
                               />
                             </Grid.Column>
                             <Grid.Column>
@@ -178,8 +178,8 @@ const PropertyType = (props) => {
                               {" "}
                               <Image
                                 floated={"left"}
-                                src="/images/questionIcons/installationDate/felt.png"
-                                size={"tiny"}
+                                src="/images/questionIcons/propertyType/commercialMobile.png"
+                                className="propertyImageMobile"
                               />
                             </Grid.Column>
                             <Grid.Column>
@@ -206,8 +206,8 @@ const PropertyType = (props) => {
                               {" "}
                               <Image
                                 floated={"left"}
-                                src="/images/questionIcons/installationDate/felt.png"
-                                size={"tiny"}
+                                src="/images/questionIcons/propertyType/agriculturalMobile.png"
+                                className="propertyImageMobile"
                               />
                             </Grid.Column>
                             <Grid.Column>
@@ -236,8 +236,8 @@ const PropertyType = (props) => {
                               {" "}
                               <Image
                                 floated={"left"}
-                                src="/images/questionIcons/installationDate/felt.png"
-                                size={"tiny"}
+                                src="/images/questionIcons/propertyType/otherMobile.png"
+                                className="propertyImageMobile"
                               />
                             </Grid.Column>
                             <Grid.Column>

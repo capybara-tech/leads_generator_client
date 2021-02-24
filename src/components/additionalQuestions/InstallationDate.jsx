@@ -58,8 +58,8 @@ const InstallationDate = (props) => {
                               {" "}
                               <Image
                                 floated={"left"}
-                                src="/images/questionIcons/installationDate/felt.png"
-                                size={"tiny"}
+                                src="/images/questionIcons/installationDate/0-3monthsMobile.png"
+                                className="installationImageMobile"
                               />
                             </Grid.Column>
                             <Grid.Column>
@@ -87,8 +87,8 @@ const InstallationDate = (props) => {
                               {" "}
                               <Image
                                 floated={"left"}
-                                src="/images/questionIcons/installationDate/felt.png"
-                                size={"tiny"}
+                                src="/images/questionIcons/installationDate/3-6monthsMobile.png"
+                                className="installationImageMobile"
                               />
                             </Grid.Column>
                             <Grid.Column>
@@ -116,8 +116,8 @@ const InstallationDate = (props) => {
                               {" "}
                               <Image
                                 floated={"left"}
-                                src="/images/questionIcons/installationDate/felt.png"
-                                size={"tiny"}
+                                src="/images/questionIcons/installationDate/6-12monthsMobile.png"
+                                className="installationImageMobile"
                               />
                             </Grid.Column>
                             <Grid.Column>
@@ -145,8 +145,8 @@ const InstallationDate = (props) => {
                               {" "}
                               <Image
                                 floated={"left"}
-                                src="/images/questionIcons/installationDate/felt.png"
-                                size={"tiny"}
+                                src="/images/questionIcons/installationDate/notSureDatesMobile.png"
+                                className="installationImageMobile"
                               />
                             </Grid.Column>
                             <Grid.Column>

@@ -149,6 +149,11 @@ input:-webkit-autofill:active {
   transform: translate(-0%, -50%);
 }
 
+.roofSlopeImageMobile {
+  height:10vh;
+  padding-left: 1rem;
+ }
+
 .roofSlopeButtonIconsMobile {
   background-color: transparent;
   border-radius: 10px;

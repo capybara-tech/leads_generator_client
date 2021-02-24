@@ -56,8 +56,8 @@ const RoofType = (props) => {
                               {" "}
                               <Image
                                 floated={"left"}
-                                src="/images/questionIcons/installationDate/felt.png"
-                                size={"tiny"}
+                                src="/images/questionIcons/roofType/tilesMobile.png"
+                                className="roofTypeImageMobile"
                               />
                             </Grid.Column>
                             <Grid.Column>
@@ -85,8 +85,8 @@ const RoofType = (props) => {
                               {" "}
                               <Image
                                 floated={"left"}
-                                src="/images/questionIcons/installationDate/felt.png"
-                                size={"tiny"}
+                                src="/images/questionIcons/roofType/feltMobile.png"
+                                className="roofTypeImageMobile"
                               />
                             </Grid.Column>
                             <Grid.Column>
@@ -114,8 +114,8 @@ const RoofType = (props) => {
                               {" "}
                               <Image
                                 floated={"left"}
-                                src="/images/questionIcons/installationDate/felt.png"
-                                size={"tiny"}
+                                src="/images/questionIcons/roofType/zincMobile.png"
+                                className="roofTypeImageMobile"
                               />
                             </Grid.Column>
                             <Grid.Column>
@@ -143,8 +143,8 @@ const RoofType = (props) => {
                               {" "}
                               <Image
                                 floated={"left"}
-                                src="/images/questionIcons/installationDate/felt.png"
-                                size={"tiny"}
+                                src="/images/questionIcons/roofType/rubberMobile.png"
+                                className="roofTypeImageMobile"
                               />
                             </Grid.Column>
                             <Grid.Column>
@@ -171,8 +171,8 @@ const RoofType = (props) => {
                               {" "}
                               <Image
                                 floated={"left"}
-                                src="/images/questionIcons/installationDate/felt.png"
-                                size={"tiny"}
+                                src="/images/questionIcons/roofType/corrugatedMetalMobile.png"
+                                className="roofTypeImageMobile"
                               />
                             </Grid.Column>
                             <Grid.Column>
@@ -201,8 +201,8 @@ const RoofType = (props) => {
                               {" "}
                               <Image
                                 floated={"left"}
-                                src="/images/questionIcons/installationDate/felt.png"
-                                size={"tiny"}
+                                src="/images/questionIcons/roofType/otherMobile.png"
+                                className="roofTypeImageMobile"
                               />
                             </Grid.Column>
                             <Grid.Column>

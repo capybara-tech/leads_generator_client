@@ -104,6 +104,11 @@ input:-webkit-autofill:active {
   transform: translate(-0%, -50%);
 }
 
+.roofTypeImageMobile {
+  height:10vh;
+  padding-left: 1rem;
+ }
+
 .roofTypeButtonIconsMobile {
   background-color: transparent;
   border-radius: 10px;

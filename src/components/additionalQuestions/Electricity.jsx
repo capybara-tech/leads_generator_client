@@ -45,8 +45,8 @@ const Electricity = (props) => {
                           {" "}
                           <Image
                             floated={"left"}
-                            src="/images/questionIcons/installationDate/felt.png"
-                            size={"tiny"}
+                            src="/images/questionIcons/fuseSize/30Mobile.png"
+                            className="fuseImageMobile"
                           />
                         </Grid.Column>
                         <Grid.Column>
@@ -67,8 +67,8 @@ const Electricity = (props) => {
                           {" "}
                           <Image
                             floated={"left"}
-                            src="/images/questionIcons/installationDate/felt.png"
-                            size={"tiny"}
+                            src="/images/questionIcons/fuseSize/60Mobile.png"
+                            className="fuseImageMobile"
                           />
                         </Grid.Column>
                         <Grid.Column>
@@ -89,8 +89,8 @@ const Electricity = (props) => {
                           {" "}
                           <Image
                             floated={"left"}
-                            src="/images/questionIcons/installationDate/felt.png"
-                            size={"tiny"}
+                            src="/images/questionIcons/fuseSize/80Mobile.png"
+                            className="fuseImageMobile"
                           />
                         </Grid.Column>
                         <Grid.Column>
@@ -111,8 +111,8 @@ const Electricity = (props) => {
                           {" "}
                           <Image
                             floated={"left"}
-                            src="/images/questionIcons/installationDate/felt.png"
-                            size={"tiny"}
+                            src="/images/questionIcons/fuseSize/80+Mobile.png"
+                            className="fuseImageMobile"
                           />
                         </Grid.Column>
                         <Grid.Column>

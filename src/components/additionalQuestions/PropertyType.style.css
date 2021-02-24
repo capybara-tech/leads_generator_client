@@ -103,6 +103,11 @@ input:-webkit-autofill:active {
   transform: translate(-0%, -50%);
 }
 
+.propertyImageMobile {
+  height:10vh;
+  padding-left: 1rem;
+ }
+
 .propertyTypeButtonIconsMobile {
   background-color: transparent;
   border-radius: 10px;
