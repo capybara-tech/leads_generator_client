@@ -197,18 +197,18 @@ const Environment = () => {
                     </Grid.Row>
                     <Grid.Row>
                       <p className="questionInCo2SegmentMobile">
-                        iPhones charged/year? <br />- 255,064 times
+                        iPhones charged/year? <br />- <span className="numbersMobile">255,064</span> times
                       </p>
                     </Grid.Row>
                     <Grid.Row>
                       <p className="questionInCo2SegmentMobile">
                         Train journeys?
-                        <br />- 3.5 times around the globe!
+                        <br />- <span className="numbersMobile">3.5</span> times around the globe!
                       </p>
                     </Grid.Row>
                     <Grid.Row>
                       <p className="questionInCo2SegmentMobile">
-                        Amount of coal burned? <br />- 1,000 kg
+                        Amount of coal burned? <br />- <span className="numbersMobile">1,000</span> kg
                       </p>
                     </Grid.Row>
                   </Grid>

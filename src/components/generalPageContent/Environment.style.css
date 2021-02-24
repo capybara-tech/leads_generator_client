@@ -87,7 +87,6 @@
 #environmentBottomBanner {
   height: 60vh;
   background-color: #c8dacc;
-  text-align: center;
 }
 
 #environmentConclusion {
@@ -98,6 +97,9 @@
 }
 
 #environmentQuoteButton {
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
   font-size: 4vh;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -329,15 +331,17 @@
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
+  padding:1rem;
 }
 
 .questionInCo2SegmentMobile {
   font-family: "Poppins", sans-serif;
   font-size: 1.3rem;
+  padding:1rem;
 }
 
 #environmentalBottomBannerMobile {
-  min-height: 100vh;
+  min-height: 110vh;
   background-color: #c8dacc;
   padding: 2rem;
 }
@@ -345,6 +349,11 @@
 #environmentConclusionMobile {
   font-family: "Give You Glory";
   font-size: 1.5rem;
-  padding-top: 25rem;
+  padding-top: 35rem;
   text-align: center;
+}
+
+.numbersMobile{
+  color:#fe8733;
+  font-weight: 600;
 }
