@@ -95,15 +95,17 @@ const AddressQuestion = ({ isScriptLoaded, isScriptLoadSucceed }) => {
               </div>
             )}
           </PlacesAutocomplete>
-          <button
-                    id="moveOnMobile"
-                    type="button"
-                    onMouseDown={async (e) => {
-                      setIndex(0);
-                    }}
-                  >
-                    Move on to next section
-                  </button>
+          <div id="bottomDivNextQuestionMobile">
+            <button
+              id="moveOnMobile"
+              type="button"
+              onMouseDown={async (e) => {
+                setIndex(0);
+              }}
+            >
+              Move on to next section
+            </button>
+          </div>
         </div>
         {components[index]}
       </>

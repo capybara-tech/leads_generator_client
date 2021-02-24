@@ -1,6 +1,6 @@
 #roofDirection {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #fffff4;
 }
 
@@ -70,6 +70,12 @@ input:-webkit-autofill:active {
 
 /* ------------mobile----------- */
 
+#roofDirectionIconsMobile {
+  position: relative;
+  min-height: 100vh;
+  background-color: #fffff4;
+  padding:2rem;
+}
 
 #roofDirectionCardMobile {
   min-width:80vw;

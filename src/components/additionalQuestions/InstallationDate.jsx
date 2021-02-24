@@ -155,39 +155,40 @@ const InstallationDate = (props) => {
                           </Grid.Row>
                         </Card>
                       </button>
+                      <Card id="installationCardMobile" fluid>
+                        <Grid.Row
+                          id="installationCardGridRowMobile"
+                          itemsPerRow={1}
+                        >
+                          <Grid.Column>
+                            <Popup
+                              trigger={
+                                <button
+                                  className="submitButtonMobile"
+                                  data-cy="button"
+                                  type="submit"
+                                  onClick={props.onSubmit}
+                                >
+                                  Submit
+                                </button>
+                              }
+                              content="Are you sure you want to submit now?"
+                              inverted
+                              position="top center"
+                            />
+                            <button
+                              type="button"
+                              onMouseDown={async (e) => {
+                                setIndex(0);
+                              }}
+                              id="nextQuestionMobile"
+                            >
+                              Skip question
+                            </button>
+                          </Grid.Column>
+                        </Grid.Row>
+                      </Card>
                     </div>
-                    <Grid id="gridWithButtonsMobile" centered={true}>
-                      <Grid.Row columns="3">
-                        <Grid.Column>
-                          <Popup
-                            trigger={
-                              <button
-                                id="submitButton"
-                                data-cy="button"
-                                type="submit"
-                                onClick={props.onSubmit}
-                              >
-                                Submit
-                              </button>
-                            }
-                            content="Are you sure you want to submit now?"
-                            inverted
-                            position="top center"
-                          />
-                        </Grid.Column>
-                        <Grid.Column>
-                          <button
-                          type="button"
-                            onMouseDown={async (e) => {
-                              setIndex(0);
-                            }}
-                            id="nextQuestionMobile"
-                          >
-                            Skip
-                          </button>
-                        </Grid.Column>
-                      </Grid.Row>
-                    </Grid>
                   </Grid>
                   <div>{components[index]}</div>
                 </>

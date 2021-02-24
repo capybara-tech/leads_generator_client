@@ -29,7 +29,7 @@ const RoofDirection = (props) => {
                       name="roof_direction"
                       value={roofDirection}
                     />
-                    <Grid id="roofDirectionIcons">
+                    <Grid id="roofDirectionIconsMobile">
                       <div id="roofDirectionQuestionDiv">
                         <p id="questionForRoofDirection">
                           <img
@@ -266,13 +266,16 @@ const RoofDirection = (props) => {
                           </Grid.Row>
                         </Card>
                       </button>
-                      <Grid id="gridWithButtonsMobile" centered={true}>
-                        <Grid.Row columns="3">
+                      <Card id="roofDirectionCardMobile" fluid>
+                        <Grid.Row
+                          id="roofDirectionCardGridRowMobile"
+                          itemsPerRow={1}
+                        >
                           <Grid.Column>
                             <Popup
                               trigger={
                                 <button
-                                  id="submitButton"
+                                  className="submitButtonMobile"
                                   data-cy="button"
                                   type="submit"
                                   onClick={props.onSubmit}
@@ -284,20 +287,18 @@ const RoofDirection = (props) => {
                               inverted
                               position="top center"
                             />
-                          </Grid.Column>
-                          <Grid.Column>
                             <button
-                            type="button"
+                              type="button"
                               onMouseDown={async (e) => {
                                 setIndex(0);
                               }}
                               id="nextQuestionMobile"
                             >
-                              Skip
+                              Skip question
                             </button>
                           </Grid.Column>
                         </Grid.Row>
-                      </Grid>
+                      </Card>
                     </Grid>
                   </div>
                   <>{components[index]}</>

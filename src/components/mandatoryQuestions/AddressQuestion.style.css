@@ -61,25 +61,26 @@ input:-webkit-autofill:active {
 
 #moveOnMobile {
   position: relative;
+  left:50%;
+  transform: translate(-50%, 0%);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 1.5rem;
-  top:60vh;
-  left: 50vw;
-  transform: translate(-50%, -50%);
-  border-radius: 10px;
-  border-width: 0.1vw;
+  font-size: 1rem;
   background-color: transparent;
-  color: #0d0e0b;
-  border-style: solid;
-  border-color: #0d0e0b;
+  border-style: none;
   outline: none;
 }
 
 #moveOnMobile:hover {
   background-color: transparent;
   color: #70af85;
-  border-style: solid;
-  border-width: 0.1vw;
-  border-color: #70af85;
+ 
+}
+
+#bottomDivNextQuestionMobile {
+  background-color:transparent;
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  padding:1rem;
 }

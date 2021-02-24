@@ -135,27 +135,23 @@ const Electricity = (props) => {
                       />
                     </Grid.Column>
                   </Grid.Row>
-                  <Grid id="gridWithButtonsMobile" centered={true}>
-                    <Grid.Row columns="3">
+                  <Card id="electricityCardMobile" fluid>
+                    <Grid.Row
+                      id="electricityCardGridRowMobile"
+                      itemsPerRow={1}
+                    >
                       <Grid.Column>
-                        <Popup
-                          trigger={
-                            <button
-                              id="submitButton"
-                              data-cy="button"
-                              type="submit"
-                              onClick={props.onSubmit}
-                            >
-                              Submit
-                            </button>
-                          }
-                          content="Are you sure you want to submit now?"
-                          inverted
-                          position="top center"
-                        />
+                        <button
+                          className="submitButtonMobile"
+                          data-cy="button"
+                          type="submit"
+                          onClick={props.onSubmit}
+                        >
+                          Submit
+                        </button>
                       </Grid.Column>
                     </Grid.Row>
-                  </Grid>
+                  </Card>
                 </Grid>
               </div>
             )}

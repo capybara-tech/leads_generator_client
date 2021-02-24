@@ -3,7 +3,7 @@ import InstallationDate from "../additionalQuestions/InstallationDate";
 import "./MidPageSubmitOrContinue.style.css";
 import { Link as Scrolllink } from "react-scroll";
 import Media from "react-media";
-import { Popup, Grid } from "semantic-ui-react";
+import { Popup } from "semantic-ui-react";
 
 const MidPageSubmitOrContinue = (props) => {
   const components = [<InstallationDate />];
@@ -34,56 +34,33 @@ const MidPageSubmitOrContinue = (props) => {
                           more accurate quote or you can choose to submit right
                           now{" "}
                         </p>
-                        <Grid id="gridWithButtonsMobile" centered={true}>
-                          <Grid.Row centered={true} columns={2}>
-                            <Grid.Column textAlign={"left"}>
-                              <Scrolllink
-                                to="addressQuestion"
-                                activeClass="active"
-                                spy={true}
-                                smooth={true}
-                                offset={-0}
-                                duration={1500}
-                              >
-                                <button id="backToAddressQMobile">Back</button>
-                              </Scrolllink>
-                            </Grid.Column>
-                            
-                            <Grid.Column textAlign={"right"}>
-                              <Scrolllink
-                                to="installationDate"
-                                activeClass="active"
-                                spy={true}
-                                smooth={true}
-                                offset={-0}
-                                duration={1500}
-                                onMouseDown={async (e) => {
-                                  setIndex(0);
-                                }}
-                              >
-                                <button id="continueToIconsMobile">
-                                  Next
-                                </button>
-                              </Scrolllink>
-                            </Grid.Column>
-                          </Grid.Row>
-                        </Grid>
                       </div>
-                      <Popup
-                        trigger={
-                          <button
-                            id="submitButton"
-                            data-cy="button"
-                            type="submit"
-                            onClick={props.onSubmit}
-                          >
-                            Submit
-                          </button>
-                        }
-                        content="Are you sure you want to submit now there are only icons to click?"
-                        inverted
-                        position="top center"
-                      />
+                      <div className="bottomDivNextQuestionMobile">
+                        <Popup
+                          trigger={
+                            <button
+                              className="submitButtonMobile"
+                              data-cy="button"
+                              type="submit"
+                              onClick={props.onSubmit}
+                            >
+                              Submit
+                            </button>
+                          }
+                          content="Are you sure you want to submit now there are only icons to click?"
+                          inverted
+                          position="top center"
+                        />
+                        <button
+                          type="button"
+                          onMouseDown={async (e) => {
+                            setIndex(0);
+                          }}
+                          id="continueToIconsMobile"
+                        >
+                          Move on
+                        </button>
+                      </div>
                     </div>
                   </div>
                   <div>{components[index]}</div>

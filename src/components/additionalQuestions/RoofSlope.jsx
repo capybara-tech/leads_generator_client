@@ -23,9 +23,9 @@ const RoofSlope = (props) => {
             <>
               {matches.mobile && (
                 <>
-                  <div id="roofSlope">
+                  <div id="roofSlopeMobile">
                     <input type="hidden" name="roof_slope" value={roofSlope} />
-                    <Grid id="roofSlopeIcons">
+                    <Grid id="roofSlopeIconsMobile">
                       <div id="roofSlopeQuestionDiv">
                         <p id="questionForRoofSlope">
                           <img
@@ -168,16 +168,27 @@ const RoofSlope = (props) => {
                             type="number"
                             placeholder="Exact roof slope"
                             onChange={(e) => setRoofSlope(e.target.value)}
-                          ></input>
+                          ></input><button
+                          type="button"
+                          onMouseDown={async (e) => {
+                            setIndex(0);
+                          }}
+                          id="nextQuestionMobile"
+                        >
+                          Next
+                        </button>
                         </Grid.Column>
                       </Grid.Row>
-                      <Grid id="gridWithButtonsMobile" centered={true}>
-                        <Grid.Row columns="3">
+                      <Card id="roofSlopeCardMobile" fluid>
+                        <Grid.Row
+                          id="roofSlopeCardGridRowMobile"
+                          itemsPerRow={1}
+                        >
                           <Grid.Column>
                             <Popup
                               trigger={
                                 <button
-                                  id="submitButton"
+                                  className="submitButtonMobile"
                                   data-cy="button"
                                   type="submit"
                                   onClick={props.onSubmit}
@@ -189,20 +200,18 @@ const RoofSlope = (props) => {
                               inverted
                               position="top center"
                             />
-                          </Grid.Column>
-                          <Grid.Column>
                             <button
-                            type="button"
+                              type="button"
                               onMouseDown={async (e) => {
                                 setIndex(0);
                               }}
                               id="nextQuestionMobile"
                             >
-                              Skip
+                              Skip question
                             </button>
                           </Grid.Column>
                         </Grid.Row>
-                      </Grid>
+                      </Card>
                     </Grid>
                   </div>
                   <>{components[index]}</>

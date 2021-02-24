@@ -127,3 +127,11 @@ input:-webkit-autofill:active {
   background-color: transparent;
   background: transparent;
 }
+
+#electricityCardMobile {
+  min-width:80vw;
+  height:11vh;
+  background-color: transparent;
+  font-family: "Poppins", sans-serif;
+  box-shadow: none;
+}

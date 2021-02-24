@@ -24,9 +24,9 @@ const RoofType = (props) => {
               {matches.mobile && (
                 <>
                   {" "}
-                  <div id="roofType">
+                  <div id="roofTypeMobile">
                     <input type="hidden" name="roof_type" value={roofType} />
-                    <Grid id="roofTypeIcons">
+                    <Grid id="roofTypeIconsMobile">
                       <div id="roofTypeQuestionDiv">
                         <p id="questionForRoofType">
                           <img
@@ -211,13 +211,16 @@ const RoofType = (props) => {
                           </Grid.Row>
                         </Card>
                       </button>
-                      <Grid id="gridWithButtonsMobile" centered={true}>
-                        <Grid.Row columns="3">
+                      <Card id="roofTypeCardMobile" fluid>
+                          <Grid.Row
+                            id="roofTypeCardGridRowMobile"
+                            itemsPerRow={1}
+                          >
                           <Grid.Column>
                             <Popup
                               trigger={
                                 <button
-                                  id="submitButton"
+                                  className="submitButtonMobile"
                                   data-cy="button"
                                   type="submit"
                                   onClick={props.onSubmit}
@@ -229,20 +232,18 @@ const RoofType = (props) => {
                               inverted
                               position="top center"
                             />
-                          </Grid.Column>
-                          <Grid.Column>
                             <button
-                            type="button"
+                              type="button"
                               onMouseDown={async (e) => {
                                 setIndex(0);
                               }}
                               id="nextQuestionMobile"
                             >
-                              Skip
+                              Skip question
                             </button>
                           </Grid.Column>
                         </Grid.Row>
-                      </Grid>
+                      </Card>
                     </Grid>
                   </div>
                   <>{components[index]}</>
