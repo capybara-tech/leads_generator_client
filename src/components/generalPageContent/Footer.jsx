@@ -335,7 +335,7 @@ const Footer = (props) => {
                             <i
                               id="instagramIcon"
                               onClick={() =>
-                                window.open("https://instagram.com")
+                                window.open("https://www.instagram.com/wattswhatsolar/")
                               }
                               className="fa fa-instagram fa"
                               aria-hidden="true"
@@ -343,7 +343,7 @@ const Footer = (props) => {
                             <i
                               id="facebookIcon"
                               onClick={() =>
-                                window.open("https://facebook.com")
+                                window.open("https://www.facebook.com/WattsWhat-544380999829418")
                               }
                               className="fa fa-facebook"
                               aria-hidden="true"
