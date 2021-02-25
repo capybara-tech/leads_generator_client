@@ -20,14 +20,14 @@ const ContactUs = () => {
           <>
             {matches.mobile && (
               <div id="contactUsContentMobile">
-                <h1 data-cy="title" id="titleMobile">
+                <p data-cy="title" id="titleMobile">
                   Contact the WATTSWHAT team
-                </h1>
-                <h3 id="subTitleMobile">
+                </p>
+                <p id="subTitleMobile">
                   The quickest way to to get in touch is to start a{" "}
                   <span id="liveChat">live chat</span>
                   <Icon name="rocketchat" />, alternatively:
-                </h3>
+                </p>
                 <h2 className="contactTitleMobile">Email</h2>
                 <p className="contactContentMobile">capybara.it@gmail.com</p>
                 <h2 className="contactTitleMobile">Post</h2>
@@ -40,14 +40,14 @@ const ContactUs = () => {
             )}
             {matches.desktop && (
               <div id="contactUsContent">
-                <h1 data-cy="title" id="title">
+                <p data-cy="title" id="title">
                   Contact the WATTSWHAT team
-                </h1>
-                <h3 id="subTitle">
+                </p>
+                <p id="subTitle">
                   The quickest way to to get in touch is to start a{" "}
                   <span id="liveChat">live chat</span>
                   <Icon name="rocketchat" />, alternatively:
-                </h3>
+                </p>
                 <h2 className="contactTitle">Email</h2>
                 <p className="contactContent">capybara.it@gmail.com</p>
                 <h2 className="contactTitle">Post</h2>

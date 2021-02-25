@@ -27,7 +27,7 @@
   font-size: 3vh;
   width: 40vw;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #0d0e0b;
   box-shadow: none;
   outline: none;
   background-color: transparent;
@@ -72,7 +72,7 @@ input:-webkit-autofill:active {
   width: 15rem;
   border: none;
   border-radius: 0px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #0d0e0b;
   box-shadow: none;
   outline: none;
   background-color: transparent;

@@ -176,12 +176,12 @@ const Electricity = (props) => {
                         className="fuseSizeButtonIcons"
                         id="16AIcon"
                         type="button"
-                        onClick={() => setFuseSize("16A")}
+                        onClick={() => setFuseSize("30 amps")}
                       >
                         <img
                           className="imgFuseSizeIcons"
                           src="/images/questionIcons/fuseSize/30.png"
-                          alt="16A"
+                          alt="30 amps"
                         />
                       </button>
                     </Grid.Column>
@@ -190,12 +190,12 @@ const Electricity = (props) => {
                         className="fuseSizeButtonIcons"
                         id="20AIcon"
                         type="button"
-                        onClick={() => setFuseSize("20A")}
+                        onClick={() => setFuseSize("60 amps")}
                       >
                         <img
                           className="imgFuseSizeIcons"
                           src="/images/questionIcons/fuseSize/60.png"
-                          alt="20A"
+                          alt="60 amps"
                         />
                       </button>
                     </Grid.Column>
@@ -204,12 +204,12 @@ const Electricity = (props) => {
                         className="fuseSizeButtonIcons"
                         id="25AIcon"
                         type="button"
-                        onClick={() => setFuseSize("25A")}
+                        onClick={() => setFuseSize("80 amps")}
                       >
                         <img
                           className="imgFuseSizeIcons"
                           src="/images/questionIcons/fuseSize/80.png"
-                          alt="25A"
+                          alt="80 amps"
                         />
                       </button>
                     </Grid.Column>
@@ -218,12 +218,12 @@ const Electricity = (props) => {
                         className="fuseSizeButtonIcons"
                         id="35AOrAboveIcon"
                         type="button"
-                        onClick={() => setFuseSize("35A or above")}
+                        onClick={() => setFuseSize("80+ amps")}
                       >
                         <img
                           className="imgFuseSizeIcons"
                           src="/images/questionIcons/fuseSize/80+.png"
-                          alt="35A or above"
+                          alt="80+ amps"
                         />
                       </button>
                     </Grid.Column>

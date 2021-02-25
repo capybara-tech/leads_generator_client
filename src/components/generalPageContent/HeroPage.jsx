@@ -33,41 +33,41 @@ const HeroPage = () => {
                     <Grid.Row id="topBannerContentMobile">
                       <Grid.Column>
                         {" "}
-                          <p id="bannerTitleMobile">
-                            You, us & solar panels <br />
-                            equals a greener UK
-                            <br />
+                        <p id="bannerTitleMobile">
+                          You, us & solar panels <br />
+                          equals a greener UK
+                          <br />
+                          <Menu.Item as={Link} to={{ pathname: "/quotes" }}>
                             <mark id="subTitleObtainQuotesMobile">
-                              Obtain 3 quotes now
-                              <Menu.Item
+                              Obtain 3 quotes now{" "}
+                              <Icon
                                 id="angleDownIconMobile"
-                                icon={{ name: "angle down" }}
-                                as={Link}
-                                to={{ pathname: "/quotes" }}
+                                name="angle down"
                               />
-                            </mark>
-                          </p>
+                            </mark>{" "}
+                          </Menu.Item>
+                        </p>
                       </Grid.Column>
                     </Grid.Row>
                     <Grid.Row id="bottomBannerContentMobile">
                       <Grid.Column>
-                          <CountUp
-                            start={0}
-                            end={15}
-                            delay={0}
-                            duration={4}
-                            suffix={"%"}
-                          >
-                            {({ countUpRef }) => (
-                              <p id="environmentalHeroTitleMobile">
-                                We donate{" "}
-                                <span className="numbers" ref={countUpRef} /> of
-                                our profits
-                                <br />
-                                to other eco initiatives
-                              </p>
-                            )}
-                          </CountUp>
+                        <CountUp
+                          start={0}
+                          end={15}
+                          delay={0}
+                          duration={4}
+                          suffix={"%"}
+                        >
+                          {({ countUpRef }) => (
+                            <p id="environmentalHeroTitleMobile">
+                              We donate{" "}
+                              <span className="numbers" ref={countUpRef} /> of
+                              our profits
+                              <br />
+                              to other eco initiatives
+                            </p>
+                          )}
+                        </CountUp>
                       </Grid.Column>
                     </Grid.Row>
                   </Grid>
@@ -80,15 +80,12 @@ const HeroPage = () => {
                       You, us & solar panels <br />
                       equals a greener UK
                       <br />
-                      <mark id="subTitleObtainQuotes">
-                        Obtain 3 quotes now
-                        <Menu.Item
-                          id="angleDownIcon"
-                          icon={{ name: "angle down" }}
-                          as={Link}
-                          to={{ pathname: "/quotes" }}
-                        />
-                      </mark>
+                      <Menu.Item as={Link} to={{ pathname: "/quotes" }}>
+                        <mark id="subTitleObtainQuotes">
+                          Obtain 3 quotes now{" "}
+                          <Icon id="angleDownIcon" name="angle down" />
+                        </mark>
+                      </Menu.Item>
                     </p>
                   </div>
                   <div id="environmentalHeroTitle">

@@ -24,7 +24,7 @@
   font-size: 2vh;
   width: 14vw;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #0d0e0b;
   box-shadow: none;
   outline: none;
   background-color: transparent;
@@ -39,7 +39,7 @@
   font-size: 2vh;
   width: 21vw;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #0d0e0b;
   box-shadow: none;
   outline: none;
   background-color: transparent;
@@ -55,7 +55,7 @@
   text-align: right;
   width: 20vw;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #0d0e0b;
   box-shadow: none;
   outline: none;
   background-color: transparent;
@@ -91,7 +91,7 @@ input:-webkit-autofill:active {
   display: block;
   width: 0;
   height: 2px;
-  background: black;
+  background: #0d0e0b;
   transition: width 0.3s;
 }
 
@@ -101,7 +101,7 @@ input:-webkit-autofill:active {
 }
 
 #nextToElectricityQ.active {
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #0d0e0b;
 }
 
 #skipToElectricityQ {
@@ -148,7 +148,7 @@ input:-webkit-autofill:active {
   width: 15rem;
   border: none;
   border-radius: 0px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #0d0e0b;
   box-shadow: none;
   outline: none;
   background-color: transparent;
@@ -161,7 +161,7 @@ input:-webkit-autofill:active {
   width: 15rem;
   border: none;
   border-radius: 0px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #0d0e0b;
   box-shadow: none;
   outline: none;
   background-color: transparent;
@@ -174,7 +174,7 @@ input:-webkit-autofill:active {
   width: 15rem;
   border: none;
   border-radius: 0px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #0d0e0b;
   box-shadow: none;
   outline: none;
   background-color: transparent;
