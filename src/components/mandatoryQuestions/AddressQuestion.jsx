@@ -97,6 +97,7 @@ const AddressQuestion = ({ isScriptLoaded, isScriptLoadSucceed }) => {
           </PlacesAutocomplete>
           <div id="bottomDivNextQuestionMobile">
             <button
+            data-cy="button"
               id="moveOnMobile"
               type="button"
               onMouseDown={async (e) => {
