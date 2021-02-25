@@ -16,14 +16,14 @@ import PrivacyPolicy from "./components/generalPageContent/Legals/PrivacyPolicy"
 import Cookies from "./components/generalPageContent/Legals/Cookies";
 import ContactUs from "./components/generalPageContent/ContactUs";
 import AdminHomePage from "./components/admin/AdminHomePage";
-import CookieNotice from "./components/generalPageContent/CookieNotice"
+import CookieNotice from "./components/generalPageContent/CookieNotice";
 import { connect } from "react-redux";
 import Media from "react-media";
 
 const App = () => {
   useEffect(() => {
-    // var Tawk_API = Tawk_API || {},
-    //   Tawk_LoadStart = new Date();
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
     (function () {
       var s1 = document.createElement("script"),
         s0 = document.getElementsByTagName("script")[0];
