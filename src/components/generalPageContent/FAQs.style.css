@@ -35,3 +35,16 @@
 #faqCards:hover {
   background-color: #70af85;
 }
+
+/* ---------mobile------------- */
+
+#faqTitleMobile {
+  padding:2rem;
+  position: relative;
+  top: 40%;
+  transform: translate(-0%, -25%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 3.5rem;
+  padding-bottom: 8rem;
+}

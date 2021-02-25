@@ -1,10 +1,13 @@
 #contactUsContent {
-  height: 100vh;
+  min-height: 100vh;
+  min-width: 100vw;
   padding-top: 15vh;
+  background-color: #fffff4;
 }
 
 #title {
   font-family: "Poppins", sans-serif;
+  font-weight: 600;
   font-size: 7vh;
   margin-top: 7%;
   margin-left: 20%;
@@ -13,6 +16,7 @@
 
 #subTitle {
   font-family: "Poppins", sans-serif;
+  font-weight: 600;
   font-size: 2vh;
   margin-left: 20%;
 }
@@ -38,4 +42,44 @@
   font-family: "Give You Glory";
   font-size: 3vh;
   margin-left: 20%;
+}
+
+/* --------mobile---------- */
+
+#contactUsContentMobile {
+  min-height: 100vh;
+  padding-top: 10rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: "Poppins", sans-serif;
+  background-color: #fffff4;
+}
+
+#titleMobile {
+  font-size: 2.5rem; 
+  color: #fe8733cb;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+#subTitleMobile { 
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.contactTitleMobile {
+  font-size: 2rem;  
+}
+
+.contactContentMobile {
+  font-size: 1rem;
+  color: #fe8733cb;
+ 
+}
+
+#conclusionMobile {
+  font-family: "Give You Glory";
+  font-size: 1.5rem;
+  
 }

@@ -19,7 +19,7 @@ describe("Visitor can request quotes", () => {
         cy.wait(2000);
         cy.get("#fieldAddress").type("Galärvarvsvägen 14 115 21, Stockholm");
         cy.wait(2000);
-        cy.get("#nextToIconQ").click();
+        cy.get("[data-cy=button]").contains("Move on to next section").click();
         cy.get("[data-cy=button]").contains("Submit").click();
       });
       cy.get("[data-cy=message]").should(
@@ -36,7 +36,7 @@ describe("Visitor can request quotes", () => {
         cy.wait(2000);
         cy.get("#fieldAddress").type("Galärvarvsvägen 14 115 21, Stockholm");
         cy.wait(2000);
-        cy.get("#nextToIconQ").click();
+        cy.get("[data-cy=button]").contains("Move on to next section").click();
         cy.get("#continueToIcons").click();
         cy.get("#zeroToThreeMonthsIcon").click();
         cy.get("#houseIcon").click();
@@ -67,7 +67,7 @@ describe("Visitor can request quotes", () => {
         cy.wait(2000);
         cy.get("#fieldAddress").type("Galärvarvsvägen 14 115 21, Stockholm");
         cy.wait(2000);
-        cy.get("#nextToIconQ").click();
+        cy.get("[data-cy=button]").contains("Move on to next section").click();
         cy.get("#continueToIcons").click();
         cy.get("#skipToPropertyTypeQ").click();
         cy.get("#backToInstallationDateQ").click();

@@ -1,18 +1,20 @@
 #howItWorksContent {
-  height: 105vh;
+  min-height: 100vh;
+  min-width: 100vw;
   padding-top: 12vh;
 }
 
 #howItWorksTitle {
   font-family: "Poppins", sans-serif;
   font-size: 7vh;
-  margin-top: 2%;
+  margin-top: 1%;
   margin-left: 20%;
 }
 
 #howItWorkssubTitle {
   font-family: "Poppins", sans-serif;
   font-size: 2vh;
+  margin-top: 10vh;
   margin-left: 20%;
 }
 
@@ -27,22 +29,22 @@
 }
 
 #howItWorksNumber1 {
-  color: #fffff4;
+  color: #0d0e0b;
   font-size: 4vw;
 }
 
 #howItWorksCardTitle1 {
   font-family: "Poppins", sans-serif;
-  color: #fffff4;
+  color: #0d0e0b;
 }
 
 #howItWorksCardContent1 {
   font-family: "Poppins", sans-serif;
-  color: #fffff4;
+  color: #0d0e0b;
 }
 
 #howItWorksArrow1 {
-  color: #fffff4;
+  color: #0d0e0b;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -54,22 +56,22 @@
 }
 
 #howItWorksNumber2 {
-  color: #fffff4;
+  color: #0d0e0b;
   font-size: 4vw;
 }
 
 #howItWorksCardTitle2 {
   font-family: "Poppins", sans-serif;
-  color: #fffff4;
+  color: #0d0e0b;
 }
 
 #howItWorksCardContent2 {
   font-family: "Poppins", sans-serif;
-  color: #fffff4;
+  color: #0d0e0b;
 }
 
 #howItWorksArrow2 {
-  color: #fffff4;
+  color: #0d0e0b;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -81,22 +83,22 @@
 }
 
 #howItWorksNumber3 {
-  color: #fffff4;
+  color: #0d0e0b;
   font-size: 4vw;
 }
 
 #howItWorksCardTitle3 {
   font-family: "Poppins", sans-serif;
-  color: #fffff4;
+  color: #0d0e0b;
 }
 
 #howItWorksCardContent3 {
   font-family: "Poppins", sans-serif;
-  color: #fffff4;
+  color: #0d0e0b;
 }
 
 #howItWorksArrow3 {
-  color: #fffff4;
+  color: #0d0e0b;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -108,29 +110,182 @@
 }
 
 #howItWorksNumber4 {
-  color: #fffff4;
+  color: #0d0e0b;
   font-size: 4vw;
 }
 
 #howItWorksCardTitle4 {
   font-family: "Poppins", sans-serif;
-  color: #fffff4;
+  color: #0d0e0b;
 }
 
 #howItWorksCardContent4 {
   font-family: "Poppins", sans-serif;
-  color: #fffff4;
+  color: #0d0e0b;
 }
 
 #howItWorksArrow4 {
-  color: #fffff4;
+  color: #0d0e0b;
   position: absolute;
   right: 0;
   bottom: 0;
 }
 
-#howItWorksconclusion {
+#howItWorksConclusion {
   font-family: "Give You Glory";
   font-size: 3vh;
   margin-left: 30%;
+  margin-bottom: 3%;
+}
+
+/* ---------Mobile--------- */
+
+#howItWorksContentMobile {
+    min-height: 105vh;
+    padding-top: 10rem;
+    background-color: #fffff4;
+}
+
+#howItWorksTitleMobile {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+#howItWorkssubTitleMobile {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+#howItWorksCardsMobile {
+  margin-left: 5%;
+  display: inline-block;
+}
+
+#card1Mobile {
+  border-radius: 10px;
+  background-color: #fe8733;
+}
+
+#howItWorksNumber1Mobile {
+  color: #0d0e0b;
+  font-size: 4rem;
+}
+
+#howItWorksCardTitle1Mobile {
+  font-family: "Poppins", sans-serif;
+  color: #0d0e0b;
+}
+
+#howItWorksCardContent1Mobile {
+  font-family: "Poppins", sans-serif;
+  color: #0d0e0b;
+}
+
+#howItWorksArrow1Mobile {
+  color: #0d0e0b;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#card2Mobile {
+  border-radius: 10px;
+  background-color: #c8dacc;
+}
+
+#howItWorksNumber2Mobile {
+  color: #0d0e0b;
+  font-size: 4rem;
+}
+
+#howItWorksCardTitle2Mobile {
+  font-family: "Poppins", sans-serif;
+  color: #0d0e0b;
+}
+
+#howItWorksCardContent2Mobile {
+  font-family: "Poppins", sans-serif;
+  color: #0d0e0b;
+}
+
+#howItWorksArrow2Mobile {
+  color: #0d0e0b;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#card3Mobile {
+  border-radius: 10px;
+  background-color: #c6ebc9;
+}
+
+#howItWorksNumber3Mobile {
+  color: #0d0e0b;
+  font-size: 4rem;
+}
+
+#howItWorksCardTitle3Mobile {
+  font-family: "Poppins", sans-serif;
+  color: #0d0e0b;
+}
+
+#howItWorksCardContent3Mobile {
+  font-family: "Poppins", sans-serif;
+  color: #0d0e0b;
+}
+
+#howItWorksArrow3Mobile {
+  color: #0d0e0b;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#card4Mobile {
+  border-radius: 10px;
+  background-color: #70af85;
+}
+
+#howItWorksNumber4Mobile {
+  color: #0d0e0b;
+  font-size: 4rem;
+}
+
+#howItWorksCardTitle4Mobile {
+  font-family: "Poppins", sans-serif;
+  color: #0d0e0b;
+}
+
+#howItWorksCardContent4Mobile {
+  font-family: "Poppins", sans-serif;
+  color: #0d0e0b;
+}
+
+#howItWorksArrow4Mobile {
+  color: #0d0e0b;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#howItWorksconclusionDivMobile {
+  min-width:100vw;
+  padding-top: 5rem;
+}
+
+#howItWorksconclusionMobile {
+  position: relative;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Give You Glory";
+  font-size: 1.5rem;
+  padding-bottom: 1.4rem;
 }

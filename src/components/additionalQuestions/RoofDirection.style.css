@@ -1,6 +1,6 @@
 #roofDirection {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #fffff4;
 }
 
@@ -22,6 +22,11 @@
 #roofDirectionQuestionImage {
   height: 3.5vh;
 }
+
+.roofDirectionImageMobile {
+  height:10vh;
+  padding-left: 1rem;
+ }
 
 .roofDirectionButtonIcons {
   background-color: transparent;
@@ -66,4 +71,45 @@ input:-webkit-autofill:active {
   top: 50%;
   left: 15%;
   color: rgba(0, 0, 0, 0.4);
+}
+
+/* ------------mobile----------- */
+
+#roofDirectionIconsMobile {
+  position: relative;
+  min-height: 100vh;
+  background-color: #fffff4;
+  padding:2rem;
+}
+
+#roofDirectionCardMobile {
+  min-width:80vw;
+  height:11vh;
+  background-color: transparent;
+  font-family: "Poppins", sans-serif;
+  box-shadow: none;
+}
+
+#roofDirectionCardTextMobile {
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#roofDirectionCardGridRowMobile {
+  position: relative;
+  top:50%;
+  transform: translate(-0%, -50%);
+}
+
+.roofDirectionButtonIconsMobile {
+  background-color: transparent;
+  border-radius: 10px;
+  border-color: #bababa;
+  border-style:solid;
+  outline: none;
+}
+
+.roofDirectionButtonIconsMobile:hover {
+  border-color: #70af85;
 }

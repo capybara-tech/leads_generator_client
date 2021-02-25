@@ -5,7 +5,7 @@
   padding-top: 1vh;
   padding-bottom: 1vh;
   position: fixed;
-  background-color:transparent;
+  background-color: transparent;
   z-index: 10;
   width: 100%;
 }
@@ -15,9 +15,9 @@
 }
 
 #dropDownMenu {
-  background-color:transparent;
+  background-color: transparent;
   font-family: "Poppins", sans-serif;
-  border:none;
+  border: none;
 }
 
 #navbarButtonMenuItem {
@@ -34,12 +34,124 @@
   background-color: transparent;
   color: #0d0e0b;
   border-radius: 10px;
-  border: solid  #0d0e0b;
+  border: solid #0d0e0b;
   border-width: 2px;
 }
 
 #navbarButton:hover {
   background-color: transparent;
   border: solid #fe8733;
-  border-width:2px;
+  border-width: 2px;
+}
+
+/* --------------------mobile nav-------------------------------- */
+
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #0d0e0b;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+  color: #fe8733;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 999;
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #0d0e0b;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #0d0e0b;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #c8dacc;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+
+#logoMobile {
+  position: absolute;
+  width: 50vw;
+  left: 50vw;
+  top: 25px;
+  z-index: 99;
+}
+
+#navbarMobile {
+  top: 0vh;
+  position: absolute;
 }

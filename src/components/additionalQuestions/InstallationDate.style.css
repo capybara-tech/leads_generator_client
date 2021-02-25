@@ -68,3 +68,98 @@ input:-webkit-autofill:active {
   left: 15%;
   color: rgba(0, 0, 0, 0.4);
 }
+
+/* --------Mobile--------- */
+
+
+#installationDateMobile {
+  position: relative;
+  min-height: 100vh;
+  background-color: #fffff4;
+  padding:2rem;
+}
+
+#installationDateQuestionDivMobile {
+  font-family: "Poppins", sans-serif;
+  padding-top: 8rem;
+  font-size: 1.5rem;
+}
+
+#installationCardMobile {
+  min-width:80vw;
+  height:11vh;
+  background-color: transparent;
+  font-family: "Poppins", sans-serif;
+  box-shadow: none;
+}
+
+#installationCardTextMobile {
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#installationCardGridRowMobile {
+  position: relative;
+  top:50%;
+  transform: translate(-0%, -50%);
+}
+
+.installationDateButtonIconsMobile {
+  background-color: transparent;
+  border-radius: 10px;
+  border-color: #bababa;
+  border-style:solid;
+  outline: none;
+}
+
+.installationImageMobile {
+  height:10vh;
+  padding-left: 1rem;
+ }
+
+.installationDateButtonIconsMobile:hover {
+  border-color: #70af85;
+}
+
+.imgInstallationDateIconsMobile {
+  height: 30vh;
+  width: 10vw;
+  background-color: #fffff4;
+}
+
+.imgInstallationDateIconsMobile {
+  background-color: transparent;
+  border-color: #bababa;
+}
+
+#gridWithButtonsMobile {
+  width:80vw;
+}
+
+#nextQuestionMobile {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+#nextQuestionMobile::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 0.3s;
+}
+
+#nextQuestionMobile:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+#nextQuestionMobile.active {
+  border-bottom: 3px solid black;
+}
+

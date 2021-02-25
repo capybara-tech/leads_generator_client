@@ -1,6 +1,6 @@
 #propertyType {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #fffff4;
 }
 
@@ -66,4 +66,56 @@ input:-webkit-autofill:active {
   top: 50%;
   left: 15%;
   color: rgba(0, 0, 0, 0.4);
+}
+
+/* --------mobile--------- */
+
+#propertyTypeMobile {
+  position: relative;
+  min-height: 100vh;
+  background-color: #fffff4;
+  padding:2rem;
+}
+
+#propertyTypeQuestionDivMobile {
+  font-family: "Poppins", sans-serif;
+  padding-top: 8rem;
+  font-size: 1.5rem;
+}
+
+#propertyTypeCardMobile {
+  min-width:80vw;
+  height:11vh;
+  background-color: transparent;
+  font-family: "Poppins", sans-serif;
+  box-shadow: none;
+}
+
+#propertyTypeCardTextMobile {
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#propertyTypeCardGridRowMobile {
+  position: relative;
+  top:50%;
+  transform: translate(-0%, -50%);
+}
+
+.propertyImageMobile {
+  height:10vh;
+  padding-left: 1rem;
+ }
+
+.propertyTypeButtonIconsMobile {
+  background-color: transparent;
+  border-radius: 10px;
+  border-color: #bababa;
+  border-style:solid;
+  outline: none;
+}
+
+.propertyTypeButtonIconsMobile:hover {
+  border-color: #70af85;
 }

@@ -1,8 +1,12 @@
+#summaryLandingPage {
+  min-width: 100vw;
+  min-height: 75vh;
+}
+
 #summaryCards {
   position: relative;
   margin-top: 5vw;
   top: 50%;
-  transform: translate(0, -50%);
   padding-bottom: 10vh;
 }
 
@@ -19,6 +23,8 @@
   border-style: solid;
   border-width: 0.3vh;
   border-radius: 10px;
+  box-shadow: none;
+  margin-right: 1vw;
 }
 
 #summaryTitle1 {
@@ -63,6 +69,8 @@ i.icon.check {
   border-style: solid;
   border-width: 0.3vh;
   border-radius: 10px;
+  box-shadow: none;
+  margin-right: 1vw;
 }
 
 #summaryTitle2 {
@@ -103,6 +111,8 @@ i.icon.check {
   border-style: solid;
   border-width: 0.3vh;
   border-radius: 10px;
+  box-shadow: none;
+  margin-right: 1vw;
 }
 
 #summaryTitle3 {
@@ -143,6 +153,7 @@ i.icon.check {
   border-style: solid;
   border-width: 0.3vh;
   border-radius: 10px;
+  box-shadow: none;
 }
 
 #summaryTitle4 {
@@ -170,6 +181,162 @@ i.icon.check {
 }
 
 #cardButton4:hover {
+  background-color: transparent;
+  color: #fe8733;
+  border-style: solid;
+  border-width: 0.1vw;
+  border-color: #fe8733;
+}
+
+/* ------------mobile------------ */
+
+#summaryLandingPageMobile {
+  min-height: 100vh;
+  min-width: 100vw;
+  margin-top: -12vh;
+}
+
+#summaryTitleMobile {
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, 0%);
+}
+
+#summaryCardGroupMobile {
+  padding-top: 5rem;
+  min-width: 100vw;
+}
+
+#summaryCardsMobile {
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+
+#summaryCard1Mobile {
+  width: 45vw;
+  min-height: 85vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin: 5px;
+}
+
+#cardButton1Mobile {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 2vh;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  border-radius: 10px;
+  border-width: 0.1vw;
+  background-color: transparent;
+  color: #0d0e0b;
+  border-style: solid;
+  border-color: #0d0e0b;
+}
+
+#cardButton1Mobile:hover {
+  background-color: transparent;
+  color: #fe8733;
+  border-style: solid;
+  border-width: 0.1vw;
+  border-color: #fe8733;
+}
+
+#summaryCard2Mobile {
+  width: 45vw;
+  min-height: 85vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin: 5px;
+}
+
+#cardButton2Mobile {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 2vh;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  border-radius: 10px;
+  border-width: 0.1vw;
+  background-color: transparent;
+  color: #0d0e0b;
+  border-style: solid;
+  border-color: #0d0e0b;
+}
+
+#cardButton2Mobile:hover {
+  background-color: transparent;
+  color: #fe8733;
+  border-style: solid;
+  border-width: 0.1vw;
+  border-color: #fe8733;
+}
+
+#summaryCard3Mobile {
+  width: 45vw;
+  min-height: 85vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin: 5px;
+}
+
+#cardButton3Mobile {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 2vh;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  border-radius: 10px;
+  border-width: 0.1vw;
+  background-color: transparent;
+  color: #0d0e0b;
+  border-style: solid;
+  border-color: #0d0e0b;
+}
+
+#cardButton3Mobile:hover {
+  background-color: transparent;
+  color: #fe8733;
+  border-style: solid;
+  border-width: 0.1vw;
+  border-color: #fe8733;
+}
+
+#summaryCard4Mobile {
+  width: 45vw;
+  min-height: 85vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin: 5px;
+}
+
+#cardButton4Mobile {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 2vh;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  border-radius: 10px;
+  border-width: 0.1vw;
+  background-color: transparent;
+  color: #0d0e0b;
+  border-style: solid;
+  border-color: #0d0e0b;
+}
+
+#cardButton4Mobile:hover {
   background-color: transparent;
   color: #fe8733;
   border-style: solid;

@@ -1,9 +1,12 @@
 .footer {
+  width: 100vw;
   padding-top: 10vh;
-  position: absolute;
+  padding-bottom: 10vh;
+  position: relative;
   background: #181460;
   text-align: center;
   width: 100%;
+  bottom:0%;
   font-family: "Poppins", sans-serif;
   font-size: 0.8rem;
   font-weight: bold;

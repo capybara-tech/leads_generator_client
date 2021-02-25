@@ -2,7 +2,7 @@
   background-color: #fffff4;
 }
 .financialBenefits {
-  color: #fe8733;
+  color: #fffff4;
   font-weight: bold;
 }
 #economicsBanner {
@@ -45,10 +45,12 @@
   z-index: 9;
   background-color: #fffff4;
 }
+
 #economicsBottomBanner {
   height: 60vh;
   background-color: #c8dacc;
 }
+
 #conclusionEconomics {
   position: relative;
   top: 60%;
@@ -174,4 +176,86 @@ li span {
   background-position: center;
   background-repeat: no-repeat;
   background-color: #0d0e0b;
+}
+
+/* ----------mobile----------- */
+
+#economicsContentMobile {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #fffff4;
+  font-family: "Poppins", sans-serif;
+}
+
+#economicsBannerMobile {
+  font-family: "Poppins", sans-serif;
+  padding: 5vw;
+  font-size: 1.1rem;
+  padding-top: 20vh;
+  min-height: 85vh;
+  min-width: 100vw;
+  background-color: #70af85;
+}
+
+#economicsTitleMobile {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  color: #fffff4;
+}
+
+#titleEmphasis {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+#economicsSubHeaderMobile {
+  color: #fffff4;
+}
+
+.financialBenefitsMobile {
+  color: #fffff4;
+  font-weight: bold;
+  width: 80vw;
+}
+
+#economyInformationSectionMobile {
+  padding: 2rem;
+}
+
+.titleBenefitMobile {
+  font-size: 1.5rem;
+}
+
+.mainCategoryContentMobile {
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+#economicsBottomBannerMobile {
+  min-height: 60vh;
+  min-width: 100vw;
+  background-color: #c8dacc;
+  padding: 2rem;
+}
+
+#conclusionEconomicsMobile {
+  font-family: "Give You Glory";
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+#wattsWhatInNumbersMobile {
+  padding-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: #0d0e0b;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.numbersMobile {
+  color: #fe8733;
 }

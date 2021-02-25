@@ -1,7 +1,7 @@
 #addressQuestion {
   position: relative;
-  height: 100vh;
-  background-color: #fffff4;
+  min-height: 70vh;
+  background-color:#fffff4;
 }
 
 #addressQuestionDiv {
@@ -27,7 +27,7 @@
   font-size: 3vh;
   width: 40vw;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #0d0e0b;
   box-shadow: none;
   outline: none;
   background-color: transparent;
@@ -55,4 +55,32 @@ input:-webkit-autofill:active {
   top: 50%;
   left: 15%;
   color: rgba(0, 0, 0, 0.4);
+}
+
+/* --------mobile------- */
+
+#moveOnMobile {
+  position: relative;
+  left:50%;
+  transform: translate(-50%, 0%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: transparent;
+  border-style: none;
+  outline: none;
+}
+
+#moveOnMobile:hover {
+  background-color: transparent;
+  color: #70af85;
+ 
+}
+
+#bottomDivNextQuestionMobile {
+  background-color:transparent;
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  padding:1rem;
 }

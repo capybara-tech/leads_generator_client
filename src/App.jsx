@@ -16,11 +16,11 @@ import PrivacyPolicy from "./components/generalPageContent/Legals/PrivacyPolicy"
 import Cookies from "./components/generalPageContent/Legals/Cookies";
 import ContactUs from "./components/generalPageContent/ContactUs";
 import AdminHomePage from "./components/admin/AdminHomePage";
-import CookieNotice from "./components/generalPageContent/CookieNotice"
+import CookieNotice from "./components/generalPageContent/CookieNotice";
 import { connect } from "react-redux";
+import Media from "react-media";
 
 const App = () => {
-
   useEffect(() => {
     var Tawk_API = Tawk_API || {},
       Tawk_LoadStart = new Date();
@@ -37,25 +37,69 @@ const App = () => {
 
   return (
     <div>
-      <Navbar />
-      <Switch>
-        <Route exact path="/" component={LandingPage} />
-        <Route path="/environment" component={Environment} />
-        <Route path="/economics" component={Economics} />
-        <Route path="/aboutus" component={AboutUs} />
-        <Route path="/faqs" component={FAQs} />
-        <Route path="/quotes" component={QuotesPage} />
-        <Route path="/howsolarworks" component={HowSolarWorks} />
-        <Route path="/howitworks" component={HowItWorks} />
-        <Route path="/partner" component={BecomeAPartner} />
-        <Route path="/termsandconditions" component={TermsAndConditions} />
-        <Route path="/privacypolicy" component={PrivacyPolicy} />
-        <Route path="/cookies" component={Cookies} />
-        <Route path="/contactus" component={ContactUs} />
-        <Route path="/adminhomepage" component={AdminHomePage} />
-      </Switch>
-      <Footer />
-      <CookieNotice />
+      <Media
+        queries={{
+          mobile: "(max-width: 599px)",
+          desktop: "(min-width: 600px)",
+        }}
+      >
+        {(matches) => (
+          <>
+            {matches.mobile && (
+              <div id="appMobile">
+                <Navbar />
+                <Switch>
+                  <Route exact path="/" component={LandingPage} />
+                  <Route path="/environment" component={Environment} />
+                  <Route path="/economics" component={Economics} />
+                  <Route path="/aboutus" component={AboutUs} />
+                  <Route path="/faqs" component={FAQs} />
+                  <Route path="/quotes" component={QuotesPage} />
+                  <Route path="/howsolarworks" component={HowSolarWorks} />
+                  <Route path="/howitworks" component={HowItWorks} />
+                  <Route path="/partner" component={BecomeAPartner} />
+                  <Route
+                    path="/termsandconditions"
+                    component={TermsAndConditions}
+                  />
+                  <Route path="/privacypolicy" component={PrivacyPolicy} />
+                  <Route path="/cookies" component={Cookies} />
+                  <Route path="/contactus" component={ContactUs} />
+                  <Route path="/adminhomepage" component={AdminHomePage} />
+                </Switch>
+                <CookieNotice />
+                <Footer />
+              </div>
+            )}
+            {matches.desktop && (
+              <div>
+                <Navbar />
+                <Switch>
+                  <Route exact path="/" component={LandingPage} />
+                  <Route path="/environment" component={Environment} />
+                  <Route path="/economics" component={Economics} />
+                  <Route path="/aboutus" component={AboutUs} />
+                  <Route path="/faqs" component={FAQs} />
+                  <Route path="/quotes" component={QuotesPage} />
+                  <Route path="/howsolarworks" component={HowSolarWorks} />
+                  <Route path="/howitworks" component={HowItWorks} />
+                  <Route path="/partner" component={BecomeAPartner} />
+                  <Route
+                    path="/termsandconditions"
+                    component={TermsAndConditions}
+                  />
+                  <Route path="/privacypolicy" component={PrivacyPolicy} />
+                  <Route path="/cookies" component={Cookies} />
+                  <Route path="/contactus" component={ContactUs} />
+                  <Route path="/adminhomepage" component={AdminHomePage} />
+                </Switch>
+                <CookieNotice />
+                <Footer />
+              </div>
+            )}
+          </>
+        )}
+      </Media>
     </div>
   );
 };

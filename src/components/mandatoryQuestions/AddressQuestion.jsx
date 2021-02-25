@@ -112,6 +112,7 @@ const AddressQuestion = ({ isScriptLoaded, isScriptLoadSucceed }) => {
               position="bottom center"
             />
           </Scrolllink>
+          <div id="bottomDivNextQuestionMobile">
           <Scrolllink
             to="midPageSubmitOrContinue"
             activeClass="active"
@@ -123,13 +124,18 @@ const AddressQuestion = ({ isScriptLoaded, isScriptLoadSucceed }) => {
               setIndex(0);
             }}
           >
-            <Popup
-              trigger={<Icon size="big" name="angle right" id="nextToIconQ" />}
-              content="Next question"
-              inverted
-              position="bottom center"
-            />
-          </Scrolllink>
+            <button
+            data-cy="button"
+              id="moveOnMobile"
+              type="button"
+              onMouseDown={async (e) => {
+                setIndex(0);
+              }}
+            >
+              Move on to next section
+            </button>
+            </Scrolllink>
+          </div>
         </div>
         {components[index]}
       </>

@@ -33,7 +33,7 @@
 }
 
 .environmentalBenefits {
-  color: #fe8733;
+  color: #fffff4;
   font-weight: bold;
 }
 
@@ -87,7 +87,6 @@
 #environmentBottomBanner {
   height: 60vh;
   background-color: #c8dacc;
-  text-align: center;
 }
 
 #environmentConclusion {
@@ -98,6 +97,9 @@
 }
 
 #environmentQuoteButton {
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
   font-size: 4vh;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -164,18 +166,18 @@
   content: "";
   width: 100%;
   height: 0%;
-  background-color: #70af8f;
+  background-color: #70af85;
   transition: height 0.5s;
 }
 
 #revealQuestionOneAnswer:hover::after {
   height: 70%;
   transition: height 0.5s;
-  background-color: #70af8f;
+  background-color: #70af85;
 }
 
 #revealQuestionOneAnswer.active {
-  background-color: #70af8f;
+  background-color: #70af85;
 }
 
 #revealQuestionTwoAnswer::after {
@@ -184,18 +186,18 @@
   content: "";
   width: 100%;
   height: 0%;
-  background-color: #70af8f;
+  background-color: #70af85;
   transition: height 0.5s;
 }
 
 #revealQuestionTwoAnswer:hover::after {
   height: 90%;
   transition: height 0.5s;
-  background-color: #70af8f;
+  background-color: #70af85;
 }
 
 #revealQuestionTwoAnswer.active {
-  background-color: #70af8f;
+  background-color: #70af85;
 }
 
 #revealQuestionThreeAnswer::after {
@@ -204,18 +206,18 @@
   content: "";
   width: 100%;
   height: 0%;
-  background-color: #70af8f;
+  background-color: #70af85;
   transition: height 0.5s;
 }
 
 #revealQuestionThreeAnswer:hover::after {
   height: 60%;
   transition: height 0.5s;
-  background-color: #70af8f;
+  background-color: #70af85;
 }
 
 #revealQuestionThreeAnswer.active {
-  background-color: #70af8f;
+  background-color: #70af85;
 }
 
 .questionInCo2Segment {
@@ -261,4 +263,97 @@
   margin-left: 0.5vw;
   color: #fffff4;
   z-index: 99;
+}
+
+/* ---------mobile----------- */
+
+#environmentContentMobile {
+  min-height:100vh;
+  min-width: 100vw;
+  background-color: #fffff4;
+  font-family: "Poppins", sans-serif;
+}
+
+#environmentBannerMobile {
+  font-family: "Poppins", sans-serif;
+  padding: 5vw;
+  font-size: 1.1rem;
+  padding-top: 20vh;
+  min-height: 85vh;
+  min-width: 100vw;
+  background-color: #70af85;
+}
+
+#environmentTitleMobile {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  color: #fffff4;
+}
+
+#titleEnvironmentEmphasisMobile {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+#environmentSubHeaderMobile {
+  color: #fffff4;
+}
+
+.environmentalBenefitsMobile {
+  color: #fffff4;
+  font-weight: bold;
+}
+
+#environmentalInformationSectionMobile {
+  padding: 2rem;
+}
+
+.titleEnvironmentBenefitMobile {
+  font-size: 1.5rem;
+}
+
+.mainEnvironmentContentMobile {
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+#environmentBottomBannerSegment {
+  position: absolute;
+  width: 90vw;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 9;
+  background-color: #fffff4;
+}
+
+#co2PerspectiveMobile {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding:1rem;
+}
+
+.questionInCo2SegmentMobile {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  padding:1rem;
+}
+
+#environmentalBottomBannerMobile {
+  min-height: 110vh;
+  background-color: #c8dacc;
+  padding: 2rem;
+}
+
+#environmentConclusionMobile {
+  font-family: "Give You Glory";
+  font-size: 1.5rem;
+  padding-top: 35rem;
+  text-align: center;
+}
+
+.numbersMobile{
+  color:#fe8733;
+  font-weight: 600;
 }

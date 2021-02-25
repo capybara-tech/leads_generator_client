@@ -7,9 +7,11 @@
       "charities": "We donate  of our profits to other eco initiatives"
     },
     "secondSegment": {
-      "para1": "Our primary mission is to help future proof our the planet and combat climate destruction.",
-      "para2": "Through promoting the generally unknown environmental benefits of solar, and some lobbying thrown in, our aim is to help people live more informed and creative lives. Tech available to be harnessed like the popular electric car.",
-      "para3": "Being 100% dedicated to our cause we have teamed up with two conservational charities and donate a percentage of our profits directly to them. Better together."
+      "aim": "Our primary mission is to help future proof our planet and combat climate destruction.",
+      "title1": "Voice the benefits",
+      "content1": "Through promoting the generally unknown environmental benefits of solar, and some lobbying thrown in, our aim is to help people live more informed and creative lives. Think of solar panels as the undiscovered electic car.",
+      "title2": "Our charities",
+      "content2": "The team here at WattsWhat are 100% dedicated to our cause. We donate a percentage of our profits to two conservational charities who we have teamed up with."
     },
     "thirdSegment": {
       "header": {
@@ -282,12 +284,8 @@
       "subTitle": "Get a steady flow of jobs*, reduce your admin & keep all revenue from our referral(apart from of course our minimal intro fee).",
       "criteriaOneTitle": "Customer satisfacion",
       "criteriaOneContent": "We love our customers and want you too so its important that you provide a first class service at all times.",
-      "criteriaOneFlipTitle": "100%",
-      "criteriaOneFlipContent": "Nothing less!",
       "criteriaTwoTitle": "MCS certified",
       "criteriaTwoContent": "With the regulated society we now live in, the only other condition is that you are MCS registered.",
-      "criteriaTwoFlipTitle": "No offense",
-      "crtieriaTwoFlipContent": "It's what our customers expect!",
       "conclusion": "Say goodbye to tedious paperwork, simply drop us an email or start a live chat to get the ball rolling.",
       "signOff": "Join our quest to make the UK more energy efficient.",
       "smallPrint": "*based on location"

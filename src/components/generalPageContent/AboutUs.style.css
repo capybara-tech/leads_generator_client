@@ -79,17 +79,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9;
+  background-color: #fffff4;
 }
 
-#middleSegment {
-  height: 60vh;
-}
 
 #ourAmbitionTitle {
   padding-top: 5vh;
   font-family: "Poppins", sans-serif;
   font-size: 5vh;
   text-align: center;
+  background-color: #fffff4;
 }
 
 #meetTheTeamTitle {
@@ -121,6 +120,7 @@
 #ceoMessage {
   font-family: "Poppins", sans-serif;
   font-size: 3vh;
+  padding-bottom: 20vw;
 }
 
 #aboutUsBottomBanner {
@@ -133,11 +133,10 @@
 
 #ourAimsGrid {
   font-family: "Poppins", sans-serif;
-  padding-top: 30vh;
   padding-left: 5vw;
   padding-right: 5vw;
-  padding-bottom: 20vh;
   text-align: center;
+  padding-bottom: 1rem;
   background-color: #fffff4;
 }
 
@@ -186,4 +185,159 @@
   border-style: solid;
   color: #fe8733cb;
   border-radius: 10px;
+}
+
+/* ------------mobile-------------- */
+
+#aboutUsContentMobile {
+  background-color: #fffff4;
+  padding: 0;
+  margin: 0;
+}
+
+#aboutUsTitleMobile {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+#aboutUsBannerMobile {
+  font-family: "Poppins", sans-serif;
+  padding: 5vw;
+  padding-bottom: 10vh;
+  font-size: 1.5rem;
+  padding-top: 20vh;
+  min-height: 90vh;
+  min-width: 100vw;
+  background-color: #c8dacc;
+}
+
+#aboutUsSegmentInfoMobile {
+  padding: 0;
+  width: 100vw;
+  top: 5vh;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  z-index: 9;
+  background-color: #fffff4;
+}
+
+.infoSegmentTitleMobile {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+}
+
+.infoSegmentSubTitleMobile {
+  font-size: 0.8rem;
+}
+
+.infoSegmentParagraphMobile {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "Poppins", sans-serif;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+}
+
+#ourCharitysMobile {
+  background-color: #fffff4;
+}
+
+#ourCharitysVisibleMobile {
+  position: relative;
+  width: 100vw;
+  height: 40vh;
+  background-color: #fffff4;
+}
+
+#ourCharitysHiddenMobile {
+  height: 40vh;
+  width: 100vw;
+  background-color: #fffff4;
+}
+
+#ourVisionMobile {
+  background-color: #fffff4;
+}
+
+#ourVisionVisibleMobile {
+  position: relative;
+  width: 100vw;
+  height: 40vh;
+  background-color: #fffff4;
+}
+
+#ourVisionHiddenMobile {
+  height: 40vh;
+  width: 100vw;
+  background-color: #fffff4;
+}
+
+#meetTheTeamTitleMobile {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  padding-bottom: 10vh;
+}
+
+#ceoMessageTitleMobile {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  margin-top: -25vh;;
+}
+
+#ourAimsGridMobile {
+  font-family: "Poppins", sans-serif;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  text-align: center;
+  background-color: #fffff4;
+}
+
+#winnerMobile {
+  color: #d4af37;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#ourAimsConclusionMobile {
+  min-height: 80vh;
+  text-align: center;
+  padding-top: 38rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  padding-bottom: 3rem;
+  background-color: #c8dacc;
+}
+
+#conclusionOfOurAimsMobile {
+  font-family: "Give You Glory";
+  font-size: 4vh;
+  padding-top: 40vh;
+  text-align: center;
+}
+
+#quoteButtonMobile {
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background-color: transparent;
+  border-style: solid;
+  color: #fe8733cb;
+  border-radius: 10px;
+}
+
+#ourAimsSegmentMobile {
+  position: absolute;
+  width: 90vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  background-color: #fffff4;
+  margin-top: 50vh;
 }
