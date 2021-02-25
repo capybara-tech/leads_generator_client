@@ -2,7 +2,7 @@
   background-color: #fffff4;
 }
 .financialBenefits {
-  color: #fe8733;
+  color: #fffff4;
   font-weight: bold;
 }
 #economicsBanner {
@@ -45,10 +45,12 @@
   z-index: 9;
   background-color: #fffff4;
 }
+
 #economicsBottomBanner {
   height: 60vh;
   background-color: #c8dacc;
 }
+
 #conclusionEconomics {
   position: relative;
   top: 60%;
@@ -212,7 +214,7 @@ li span {
 }
 
 .financialBenefitsMobile {
-  color: #fe8733;
+  color: #fffff4;
   font-weight: bold;
   width: 80vw;
 }
@@ -255,5 +257,5 @@ li span {
 }
 
 .numbersMobile {
-  color:#fe8733;
+  color: #fe8733;
 }
