@@ -23,10 +23,10 @@ const Environment = () => {
             {matches.mobile && (
               <div id="environmentContentMobile">
                 <div id="environmentBannerMobile">
-                  <p data-cy="title" id="environmentTitleMobile">
+                  <h1 data-cy="title" id="environmentTitleMobile">
                     Help save our bruised planet <br />
                     <span id="titleEnvironmentEmphasis">install solar </span>
-                  </p>
+                  </h1>
                   <p id="environmentSubHeaderMobile">
                     ...one of the most effective ways to reduce your mucky
                     emissions
@@ -236,10 +236,10 @@ const Environment = () => {
             {matches.desktop && (
               <div id="environmentContent">
                 <div id="environmentBanner">
-                  <p data-cy="title" id="environmentTitle">
+                  <h1 data-cy="title" id="environmentTitle">
                     Help save our bruised planet <br />
                     <span id="titleEnvironmentEmphasis">install solar </span>
-                  </p>
+                  </h1>
                   <p id="environmentSubHeader">
                     ...one of the most effective ways to reduce your mucky
                     emissions
