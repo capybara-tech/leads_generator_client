@@ -34,7 +34,7 @@ const TelephoneQuestion = () => {
                           alt="telephone question"
                         />{" "}
                         {""}
-                        Great, and the best number to contact you on?
+                        and the best number to contact you on?
                       </p>
                       <Field
                         id="fieldTelephoneMobile"
@@ -60,7 +60,7 @@ const TelephoneQuestion = () => {
                           alt="telephone question"
                         />{" "}
                         {""}
-                        Great, and the best number to contact you on?
+                        and the best number to contact you on?
                       </p>
                       <Field
                         id="fieldTelephone"
