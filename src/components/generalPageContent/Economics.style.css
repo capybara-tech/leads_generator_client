@@ -194,7 +194,7 @@ li span {
   padding-top: 20vh;
   min-height: 85vh;
   min-width: 100vw;
-  background-color: #70af85;
+  background-image: linear-gradient(#c8dacc, #70af85);
 }
 
 #economicsTitleMobile {
