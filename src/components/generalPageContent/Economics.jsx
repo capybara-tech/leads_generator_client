@@ -35,10 +35,10 @@ const Economics = () => {
             {matches.mobile && (
               <div id="economicsContentMobile">
                 <div id="economicsBannerMobile">
-                  <p data-cy="title" id="economicsTitleMobile">
+                  <h1 data-cy="title" id="economicsTitleMobile">
                     Figures which <span id="titleEmphasis">won't</span>
                     <br /> disappoint
-                  </p>
+                  </h1>
                   <p id="economicsSubHeaderMobile">
                     If the environmental benefits of solar panels has not
                     convinced you, the seven financial ones will
@@ -505,10 +505,10 @@ const Economics = () => {
             {matches.desktop && (
               <div id="economicsContent">
                 <div id="economicsBanner">
-                  <p data-cy="title" id="economicsTitle">
+                  <h1 data-cy="title" id="economicsTitle">
                     Figures which <span id="titleEmphasis">won't</span>
                     <br /> disappoint
-                  </p>
+                  </h1>
                   <p id="economicsSubHeader">
                     If the environmental benefits of solar panels has not
                     convinced you, the seven financial ones will

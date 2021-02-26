@@ -40,9 +40,9 @@ const EnvironmentSectionLandingPage = () => {
                     </Grid.Row>
                     <Grid.Row id="promotionEnvironmentalBenefitsCardMobile">
                       <Grid.Column>
-                        <p id="promotionEnvironmentalBenefitsTitleMobile">
+                        <h5 id="promotionEnvironmentalBenefitsTitleMobile">
                           Voice the benefits
-                        </p>
+                        </h5>
                         <p id="promotingEnvironmentalBenefitsTextMobile">
                           Through promoting the generally unknown environmental
                           benefits of solar, and some lobbying thrown in, our
@@ -55,7 +55,7 @@ const EnvironmentSectionLandingPage = () => {
                     <Grid.Row id="ourDedicationMobile">
                       <Grid.Column>
                         {" "}
-                        <p id="ourDedicationTitleMobile">Our charities</p>
+                        <h5 id="ourDedicationTitleMobile">Our charities</h5>
                         <p id="ourDedicationTextMobile">
                           The team here at WattsWhat are 100% dedicated to our
                           cause. We donate a percentage of our profits to two
@@ -92,9 +92,9 @@ const EnvironmentSectionLandingPage = () => {
                         </p>
                       </Grid.Column>
                       <Grid.Column>
-                        <p id="promotionEnvironmentalBenefitsTitle">
+                        <h5 id="promotionEnvironmentalBenefitsTitle">
                           Voice the benefits
-                        </p>
+                        </h5>
                         <p id="promotingEnvironmentalBenefitsText">
                           Through promoting the generally unknown environmental
                           benefits of solar, and some lobbying thrown in, our
@@ -106,7 +106,7 @@ const EnvironmentSectionLandingPage = () => {
                     </Grid.Row>
                     <Grid.Row columns={1} id="bottomCardEnvironment">
                       <Grid.Column id="ourDedication" textAlign="center">
-                        <p id="ourDedicationTitle">Our charities</p>
+                        <h5 id="ourDedicationTitle">Our charities</h5>
                         <p id="ourDedicationText">
                           The team here at WattsWhat are 100% dedicated to our
                           cause. We donate a percentage of our profits to two

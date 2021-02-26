@@ -36,21 +36,14 @@ const MidPageSubmitOrContinue = (props) => {
                         </p>
                       </div>
                       <div className="bottomDivNextQuestionMobile">
-                        <Popup
-                          trigger={
-                            <button
-                              className="submitButtonMobile"
-                              data-cy="button"
-                              type="submit"
-                              onClick={props.onSubmit}
-                            >
-                              Submit
-                            </button>
-                          }
-                          content="Are you sure you want to submit now there are only icons to click?"
-                          inverted
-                          position="top center"
-                        />
+                        <button
+                          className="submitButtonMobile"
+                          data-cy="button"
+                          type="submit"
+                          onClick={props.onSubmit}
+                        >
+                          Submit
+                        </button>
                         <button
                           type="button"
                           onMouseDown={async (e) => {

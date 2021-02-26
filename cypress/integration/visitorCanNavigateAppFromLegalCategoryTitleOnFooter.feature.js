@@ -22,7 +22,7 @@ describe("Visitor can navigate app from legal category title on the footer", () 
       .contains("Figures which won't disappoint")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("Join #TEAMWATTSWHAT")
+      .contains("Become a partner")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("My name's Felix, what's yours?")
@@ -54,7 +54,7 @@ describe("Visitor can navigate app from legal category title on the footer", () 
       .contains("Figures which won't disappoint")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("Join #TEAMWATTSWHAT")
+      .contains("Become a partner")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("My name's Felix, what's yours?")
@@ -86,7 +86,7 @@ describe("Visitor can navigate app from legal category title on the footer", () 
       .contains("Figures which won't disappoint")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("Join #TEAMWATTSWHAT")
+      .contains("Become a partner")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("My name's Felix, what's yours?")

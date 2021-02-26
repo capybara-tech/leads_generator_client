@@ -29,7 +29,7 @@ const SummaryLandingPage = () => {
                     <Grid.Row>
                       <Grid.Column>
                         <Divider />
-                        <p id="summaryTitleMobile">WattsWhat in a nutshell</p>
+                        <h1 id="summaryTitleMobile">WattsWhat in a nutshell</h1>
                       </Grid.Column>
                     </Grid.Row>
                     <Grid.Row>
@@ -46,7 +46,7 @@ const SummaryLandingPage = () => {
                                   data-cy="title"
                                   id="summaryTitle1Mobile"
                                 >
-                                  Get up to 3 Quotes
+                                  <h3>Get up to 3 Quotes</h3>
                                 </Card.Header>{" "}
                                 <br />
                                 <Card.Description id="summaryContent1Mobile">
@@ -97,7 +97,7 @@ const SummaryLandingPage = () => {
                                   data-cy="title"
                                   id="summaryTitle2Mobile"
                                 >
-                                  Help save our bruised planet
+                                  <h3>Help save our bruised planet</h3>
                                 </Card.Header>{" "}
                                 <br />
                                 <Card.Description id="summaryContent2Mobile">
@@ -162,7 +162,7 @@ const SummaryLandingPage = () => {
                                   data-cy="title"
                                   id="summaryTitle3Mobile"
                                 >
-                                  Figures which won't disappoint
+                                  <h3>Figures which won't disappoint</h3>
                                 </Card.Header>{" "}
                                 <br />
                                 <Card.Description id="summaryContent3Mobile">
@@ -223,7 +223,7 @@ const SummaryLandingPage = () => {
                                   data-cy="title"
                                   id="summaryTitle4Mobile"
                                 >
-                                  How solar panels work
+                                  <h3>How solar panels work</h3>
                                 </Card.Header>{" "}
                                 <br />
                                 <Card.Description id="summaryContent4Mobile">
@@ -291,7 +291,7 @@ const SummaryLandingPage = () => {
                     <Grid.Row>
                       <Grid.Column>
                         <Divider horizontal id="summaryTitle">
-                          WattsWhat in a nutshell
+                          <h1>WattsWhat in a nutshell</h1>
                         </Divider>
                       </Grid.Column>
                     </Grid.Row>
@@ -302,7 +302,7 @@ const SummaryLandingPage = () => {
                             <Card id="summaryCard1">
                               <Card.Content>
                                 <Card.Header data-cy="title" id="summaryTitle1">
-                                  Get up to 3 Quotes
+                                  <h3>Get up to 3 Quotes</h3>
                                 </Card.Header>{" "}
                                 <br />
                                 <Card.Description id="summaryContent1">
@@ -348,7 +348,7 @@ const SummaryLandingPage = () => {
                             <Card id="summaryCard2">
                               <Card.Content>
                                 <Card.Header data-cy="title" id="summaryTitle2">
-                                  Help save our bruised planet
+                                  <h3>Help save our bruised planet</h3>
                                 </Card.Header>{" "}
                                 <br />
                                 <Card.Description id="summaryContent2">
@@ -408,7 +408,7 @@ const SummaryLandingPage = () => {
                             <Card id="summaryCard3">
                               <Card.Content>
                                 <Card.Header data-cy="title" id="summaryTitle3">
-                                  Figures which won't disappoint
+                                  <h3>Figures which won't disappoint</h3>
                                 </Card.Header>{" "}
                                 <br />
                                 <Card.Description id="summaryContent3">
@@ -464,7 +464,7 @@ const SummaryLandingPage = () => {
                             <Card id="summaryCard4">
                               <Card.Content>
                                 <Card.Header data-cy="title" id="summaryTitle4">
-                                  How solar panels work
+                                  <h3>How solar panels work</h3>
                                 </Card.Header>{" "}
                                 <br />
                                 <Card.Description id="summaryContent4">

@@ -93,7 +93,7 @@ const Footer = (props) => {
                             as={Link}
                             to={{ pathname: "/partner" }}
                           >
-                            Join #TEAMWATTSWHAT
+                            Become a partner
                           </Link>{" "}
                           <br />
                           <Link
@@ -262,7 +262,7 @@ const Footer = (props) => {
                             as={Link}
                             to={{ pathname: "/partner" }}
                           >
-                            Join #TEAMWATTSWHAT
+                            Become a partner
                           </Link>{" "}
                           <br />
                           <Link

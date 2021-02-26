@@ -211,21 +211,14 @@ const RoofType = (props) => {
                     <Card id="roofTypeCardMobile" fluid>
                       <Grid.Row id="roofTypeCardGridRowMobile" itemsPerRow={1}>
                         <Grid.Column>
-                          <Popup
-                            trigger={
-                              <button
-                                className="submitButtonMobile"
-                                data-cy="button"
-                                type="submit"
-                                onClick={props.onSubmit}
-                              >
-                                Submit
-                              </button>
-                            }
-                            content="Are you sure you want to submit now?"
-                            inverted
-                            position="top center"
-                          />
+                          <button
+                            className="submitButtonMobile"
+                            data-cy="button"
+                            type="submit"
+                            onClick={props.onSubmit}
+                          >
+                            Submit
+                          </button>
                           <button
                             type="button"
                             onMouseDown={async (e) => {
@@ -381,14 +374,14 @@ const RoofType = (props) => {
                         >
                           <button
                             className="roofTypeButtonIcons"
-                            id="anotherIcon"
+                            id="corrugatedMetalIcon"
                             type="button"
-                            onClick={() => setRoofType("another")}
+                            onClick={() => setRoofType("Corrugated Metal")}
                           >
                             <img
                               className="imgRoofTypeIcons"
                               src="/images/questionIcons/roofType/corrugatedMetal.png"
-                              alt="another"
+                              alt="Corrugated Metal"
                             />
                           </button>
                         </Scrolllink>{" "}
@@ -409,12 +402,12 @@ const RoofType = (props) => {
                             className="roofTypeButtonIcons"
                             id="anotherIcon"
                             type="button"
-                            onClick={() => setRoofType("another")}
+                            onClick={() => setRoofType("other")}
                           >
                             <img
                               className="imgRoofTypeIcons"
                               src="/images/questionIcons/roofType/other.png"
-                              alt="another"
+                              alt="other"
                             />
                           </button>
                         </Scrolllink>{" "}

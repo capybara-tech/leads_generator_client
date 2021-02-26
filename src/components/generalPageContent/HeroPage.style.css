@@ -3,6 +3,11 @@
   min-height: 100vh;
 }
 
+#bannerTitle{
+  font-family: "Poppins", sans-serif;
+  font-size:2.5rem;
+}
+
 #bannerContent {
   position: absolute;
   top: 50vh;

@@ -33,7 +33,7 @@ const HeroPage = () => {
                     <Grid.Row id="topBannerContentMobile">
                       <Grid.Column>
                         {" "}
-                        <p id="bannerTitleMobile">
+                        <h1 id="bannerTitleMobile">
                           You, us & solar panels <br />
                           equals a greener UK
                           <br />
@@ -46,7 +46,7 @@ const HeroPage = () => {
                               />
                             </mark>{" "}
                           </Menu.Item>
-                        </p>
+                        </h1>
                       </Grid.Column>
                     </Grid.Row>
                     <Grid.Row id="bottomBannerContentMobile">
@@ -59,13 +59,13 @@ const HeroPage = () => {
                           suffix={"%"}
                         >
                           {({ countUpRef }) => (
-                            <p id="environmentalHeroTitleMobile">
+                            <h2 id="environmentalHeroTitleMobile">
                               We donate{" "}
                               <span className="numbers" ref={countUpRef} /> of
                               our profits
                               <br />
                               to other eco initiatives
-                            </p>
+                            </h2>
                           )}
                         </CountUp>
                       </Grid.Column>
@@ -76,7 +76,7 @@ const HeroPage = () => {
               {matches.desktop && (
                 <div id="heroPage">
                   <div id="bannerContent">
-                    <p id="bannerTitle">
+                    <h1 id="bannerTitle">
                       You, us & solar panels <br />
                       equals a greener UK
                       <br />
@@ -86,7 +86,7 @@ const HeroPage = () => {
                           <Icon id="angleDownIcon" name="angle down" />
                         </mark>
                       </Menu.Item>
-                    </p>
+                    </h1>
                   </div>
                   <div id="environmentalHeroTitle">
                     <CountUp
@@ -97,13 +97,13 @@ const HeroPage = () => {
                       suffix={"%"}
                     >
                       {({ countUpRef }) => (
-                        <p>
+                        <h2>
                           We donate{" "}
                           <span className="numbers" ref={countUpRef} /> of our
                           profits
                           <br />
                           to other eco initiatives
-                        </p>
+                        </h2>
                       )}
                     </CountUp>
                   </div>
