@@ -60,7 +60,7 @@
   font-family: "Poppins", sans-serif;
   font-size: 1.3rem;
   font-weight: 600;
-  color: #0d0e0b;
+  color: #fffff4;
   transition: color 0.3s ease;
 }
 
@@ -106,7 +106,7 @@
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #0d0e0b;
+  background: #fffff4;
 }
 
 #menuToggle input:checked ~ span:nth-last-child(3) {
@@ -124,7 +124,7 @@
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  background: #c8dacc;
+  background:  #0d0e0b;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
@@ -154,4 +154,8 @@
 #navbarMobile {
   top: 0vh;
   position: absolute;
+}
+
+#whySolarMobileNav {
+  color: #fffff4;
 }

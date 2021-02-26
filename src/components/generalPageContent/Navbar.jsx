@@ -53,7 +53,7 @@ const Navbar = (props) => {
 
                       <ul id="menu">
                         <Menu text vertical>
-                          <p>Why Solar</p>
+                          <p id="whySolarMobileNav">Why Solar</p>
                           <ol>
                             <Menu.Item
                               position="right"
