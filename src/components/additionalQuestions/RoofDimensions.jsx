@@ -68,21 +68,14 @@ const RoofDimensions = (props) => {
                       itemsPerRow={1}
                     >
                       <Grid.Column>
-                        <Popup
-                          trigger={
-                            <button
-                              className="submitButtonMobile"
-                              data-cy="button"
-                              type="submit"
-                              onClick={props.onSubmit}
-                            >
-                              Submit
-                            </button>
-                          }
-                          content="Are you sure you want to submit now?"
-                          inverted
-                          position="top center"
-                        />
+                        <button
+                          className="submitButtonMobile"
+                          data-cy="button"
+                          type="submit"
+                          onClick={props.onSubmit}
+                        >
+                          Submit
+                        </button>
                         <button
                           type="button"
                           onMouseDown={async (e) => {
