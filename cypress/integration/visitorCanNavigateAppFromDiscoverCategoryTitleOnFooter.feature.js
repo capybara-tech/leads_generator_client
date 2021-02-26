@@ -17,7 +17,7 @@ describe("Visitor can navigate app from discover category title on the footer", 
       .contains("Figures which won't disappoint")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("Join #TEAMWATTSWHAT")
+      .contains("Become a partner")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("My name's Felix, what's yours?")
@@ -47,7 +47,7 @@ describe("Visitor can navigate app from discover category title on the footer", 
       .contains("Figures which won't disappoint")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("Join #TEAMWATTSWHAT")
+      .contains("Become a partner")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("My name's Felix, what's yours?")
@@ -63,11 +63,11 @@ describe("Visitor can navigate app from discover category title on the footer", 
     cy.get("[data-cy=title]").contains("FAQs").should("not.be.visible");
   });
 
-  it("to Join #TEAMWATTSWHAT", () => {
+  it("to Become a partner", () => {
     cy.get("[data-cy=footer]").within(() => {
-      cy.get("[data-cy=button]").contains("Join #TEAMWATTSWHAT").click();
+      cy.get("[data-cy=button]").contains("Become a partner").click();
     });
-    cy.get("[data-cy=title]").should("contain", "Join #TEAMWATTSWHAT");
+    cy.get("[data-cy=title]").should("contain", "Become a partner");
     cy.get("[data-cy=title]").contains("How do solar panels actually work?").should("not.be.visible");
     cy.get("[data-cy=title]").contains("About us").should("not.be.visible");
     cy.get("[data-cy=title]").contains("The WATTSWHAT way").should("not.be.visible");
@@ -109,7 +109,7 @@ describe("Visitor can navigate app from discover category title on the footer", 
       .contains("Figures which won't disappoint")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("Join #TEAMWATTSWHAT")
+      .contains("Become a partner")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("Terms and conditions")

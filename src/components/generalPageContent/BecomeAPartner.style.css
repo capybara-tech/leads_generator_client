@@ -1,42 +1,57 @@
-#becomeAPartnerContent {
+#becomeAPartner {
   min-height: 100vh;
   min-width: 100vw;
   padding-top: 15vh;
+  background-color: #fffff4;
 }
 
-#title {
+#becomeAPartnerContent {
+  position: absolute;
+  left:50vw;
+  transform: translateX(-50%);
+ 
+}
+
+#titleBecomePartner {
   font-family: "Poppins", sans-serif;
   font-size: 7vh;
   margin-top: 7%;
-  margin-left: 20%;
+  text-align: left;
   color: #fe8733cb;
 }
 
-#subTitle {
+#subTitleBecomePartner {
   font-family: "Poppins", sans-serif;
   font-size: 2vh;
-  margin-left: 20%;
+  text-align: left;
 }
 
 #highlightedWord {
   color: #fe8733cb;
 }
 
-#cardGroup {
-  margin-left: 25%;
-  display: inline-block;
+#cardGroupBecomePartner {
+  text-align: center;
 }
 
-#signOff {
+#becomePartnerCard1 {
+  background-color:transparent;
+}
+
+#becomePartnerCard2 {
+  background-color:transparent;
+}
+
+#signOffBecomePartner {
   font-family: "Give You Glory";
   font-size: 3vh;
-  margin-left: 20%;
+  text-align: left;
 }
 
-#condition {
+#conditionBecomePartner {
   font-family: "Poppins", sans-serif;
   font-size: 1vh;
-  margin-left: 20%;
+  text-align: left;
 }
 
 /* ------------mobile----------- */

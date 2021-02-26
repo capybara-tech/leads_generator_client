@@ -49,7 +49,7 @@ describe("Visitor can navigate app from benefits category title on the footer", 
       .contains("Help save our bruised planet install solar")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
-      .contains("Join #TEAMSOLSPANA")
+      .contains("Become a partner")
       .should("not.be.visible");
     cy.get("[data-cy=title]")
       .contains("My name's Felix, what's yours?")
