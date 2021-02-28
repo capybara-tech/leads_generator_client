@@ -18,4 +18,5 @@ const ExitIntentModal = (props) => {
     </div>
   ) : null;
 };
+
 export default ExitIntentModal;
