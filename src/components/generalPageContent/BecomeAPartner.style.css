@@ -14,7 +14,7 @@
 
 #titleBecomePartner {
   font-family: "Poppins", sans-serif;
-  font-size: 7vh;
+  font-size: 2.5rem;
   margin-top: 7%;
   text-align: left;
   color: #fe8733cb;
@@ -22,7 +22,7 @@
 
 #subTitleBecomePartner {
   font-family: "Poppins", sans-serif;
-  font-size: 2vh;
+  font-size: 1rem;
   text-align: left;
 }
 
@@ -44,13 +44,13 @@
 
 #signOffBecomePartner {
   font-family: "Give You Glory";
-  font-size: 3vh;
+  font-size: 1.2rem;
   text-align: left;
 }
 
 #conditionBecomePartner {
   font-family: "Poppins", sans-serif;
-  font-size: 1vh;
+  font-size: 0.5rem;
   text-align: left;
 }
 

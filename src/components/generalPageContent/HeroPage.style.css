@@ -15,7 +15,7 @@
   transform: translate(0%, -50%);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 3vw;
+  font-size: 1.2rem;
   color: #0d0e0b;
 }
 
@@ -23,7 +23,7 @@
   background: none;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 2vw;
+  font-size: 1rem;
   color:  #0d0e0b;
 }
 
@@ -34,7 +34,7 @@
   transform: translate(0%, -50%);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 2vw;
+  font-size: 1rem;
   color: #fffff4;
 }
 

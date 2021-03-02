@@ -74,18 +74,6 @@
   margin-right: 50vh;
 }
 
-#environmentalContentLandingPage {
-  width: 50vw;
-  color: black;
-  position: absolute;
-  top: 50vh;
-  left: 5vw;
-  transform: translate(0%, -50%);
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 2vw;
-}
-
 #bannerButton {
   font-size: 1.3vw;
   font-family: "Poppins", sans-serif;
@@ -185,7 +173,7 @@
 }
 
 #bannerButtonMobile {
-  font-size: 5vw;
+  font-size: 1.5rem;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   background-color: transparent;

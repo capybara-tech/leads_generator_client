@@ -6,14 +6,14 @@
 
 #howItWorksTitle {
   font-family: "Poppins", sans-serif;
-  font-size: 7vh;
+  font-size: 2.5rem;
   margin-top: 1%;
   margin-left: 20%;
 }
 
 #howItWorkssubTitle {
   font-family: "Poppins", sans-serif;
-  font-size: 2vh;
+  font-size: 1rem;
   margin-top: 10vh;
   margin-left: 20%;
 }
@@ -30,7 +30,7 @@
 
 #howItWorksNumber1 {
   color: #0d0e0b;
-  font-size: 4vw;
+  font-size: 3rem;
 }
 
 #howItWorksCardTitle1 {
@@ -57,7 +57,7 @@
 
 #howItWorksNumber2 {
   color: #0d0e0b;
-  font-size: 4vw;
+  font-size: 3rem;
 }
 
 #howItWorksCardTitle2 {
@@ -84,7 +84,7 @@
 
 #howItWorksNumber3 {
   color: #0d0e0b;
-  font-size: 4vw;
+  font-size: 3rem;
 }
 
 #howItWorksCardTitle3 {
@@ -111,7 +111,7 @@
 
 #howItWorksNumber4 {
   color: #0d0e0b;
-  font-size: 4vw;
+  font-size: 3rem;
 }
 
 #howItWorksCardTitle4 {
@@ -133,7 +133,7 @@
 
 #howItWorksConclusion {
   font-family: "Give You Glory";
-  font-size: 3vh;
+  font-size: 1.2rem;
   margin-left: 30%;
   margin-bottom: 3%;
 }
