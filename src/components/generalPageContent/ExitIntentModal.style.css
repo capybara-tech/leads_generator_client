@@ -1,0 +1,53 @@
+#exitIntentContent {
+  background-color: #70af85;
+  font-family: "Poppins", sans-serif;
+}
+
+#exitIntentCard {
+  box-shadow: none;
+  border-radius: 10px;
+  min-width: 55vw;
+  
+}
+
+#exitIntentHeader {
+  margin-top: 5vh;
+  font-size: 5.5rem;
+  float: left;
+}
+
+#exitIntentContent {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+#exitIntentHighlightedWord {
+  color: #fffff4;
+  font-weight: bold;
+}
+
+#exitIntentDisclaimer {
+  font-size: 1rem;
+  text-align: left;
+}
+
+#exitIntentSmallPrint {
+  font-size: .5rem;
+  text-align: left;
+}
+
+#exitIntentExitButton {
+  float: right;
+  position: relative;
+  font-size: 1.2rem;
+  background-color: #70af85;
+  border: none;
+}
+
+#exitIntentExitIcon {
+  color: #bababa;
+}
+
+#exitIntentExitIcon:hover {
+  color: #fffff4;
+}
