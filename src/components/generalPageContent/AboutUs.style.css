@@ -7,13 +7,13 @@
 #aboutUsTitle {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 9vh;
+  font-size: 4rem;
 }
 
 #aboutUsBanner {
   font-family: "Poppins", sans-serif;
   padding: 5vw;
-  font-size: 3vh;
+  font-size: 1.2rem;
   padding-top: 20vh;
   height: 90vh;
   width: 100vw;
@@ -36,7 +36,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   font-family: "Poppins", sans-serif;
-  font-size: 5vh;
+  font-size: 2rem;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -86,14 +86,14 @@
 #ourAmbitionTitle {
   padding-top: 5vh;
   font-family: "Poppins", sans-serif;
-  font-size: 5vh;
+  font-size: 2rem;
   text-align: center;
   background-color: #fffff4;
 }
 
 #meetTheTeamTitle {
   font-family: "Poppins", sans-serif;
-  font-size: 5vh;
+  font-size: 2rem;
   padding-bottom: 20vh;
 }
 
@@ -109,17 +109,17 @@
 .teamMemberName {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 3vh;
+  font-size: 1.2rem;
 }
 
 #ceoMessageTitle {
   font-family: "Poppins", sans-serif;
-  font-size: 5vh;
+  font-size: 2rem;
 }
 
 #ceoMessage {
   font-family: "Poppins", sans-serif;
-  font-size: 3vh;
+  font-size: 1.2rem;
   padding-bottom: 20vw;
 }
 
@@ -145,14 +145,14 @@
   text-align: center;
   padding: 10vh;
   font-family: "Poppins", sans-serif;
-  font-size: 5vh;
+  font-size: 2rem;
   padding-bottom: 20vh;
   background-color: #c8dacc;
 }
 
 #conclusionOfOurAims {
   font-family: "Give You Glory";
-  font-size: 4vh;
+  font-size: 1.8rem;
   padding-top: 40vh;
   text-align: center;
 }
@@ -178,7 +178,7 @@
 }
 
 #quoteButton {
-  font-size: 4vh;
+  font-size: 1.8rem;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   background-color: transparent;
@@ -317,7 +317,7 @@
 
 #conclusionOfOurAimsMobile {
   font-family: "Give You Glory";
-  font-size: 4vh;
+  font-size: 1.4rem;
   padding-top: 40vh;
   text-align: center;
 }

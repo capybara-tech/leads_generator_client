@@ -8,7 +8,7 @@
 #economicsBanner {
   font-family: "Poppins", sans-serif;
   padding: 5vw;
-  font-size: 3vh;
+  font-size: 1.2rem;
   padding-top: 20vh;
   height: 100vh;
   width: 100vw;
@@ -21,7 +21,7 @@
 #economicsTitle {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 9vh;
+  font-size: 3.5rem;
   color: #fffff4;
 }
 #titleEmphasis {
@@ -40,7 +40,7 @@
   width: 95vw;
   color: #0d0e0b;
   font-family: "Poppins", sans-serif;
-  font-size: 4vh;
+  font-size: 1.5rem;
   text-align: center;
   z-index: 9;
   background-color: #fffff4;
@@ -60,7 +60,7 @@
   color: #0d0e0b;
 }
 #economicsButton {
-  font-size: 4vh;
+  font-size: 1.5rem;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   background-color: transparent;
@@ -69,12 +69,12 @@
   border-radius: 10px;
 }
 .titleBenefit {
-  font-size: 5vh;
+  font-size: 2rem;
   font-weight: 600;
   color: #0d0e0b;
 }
 #propertyValueSection {
-  font-size: 2.5vh;
+  font-size: 1.1rem;
   font-family: "Poppins", sans-serif;
   margin-left: auto;
   margin-right: auto;
@@ -83,7 +83,7 @@
   padding: 10vh;
 }
 #lowerEnergyBillsSection {
-  font-size: 2.5vh;
+  font-size: 1.1rem;
   font-family: "Poppins", sans-serif;
   margin-left: auto;
   margin-right: auto;
@@ -93,7 +93,7 @@
   color: #0d0e0b;
 }
 #sellToNationalGridSection {
-  font-size: 2.5vh;
+  font-size: 1.1rem;
   font-family: "Poppins", sans-serif;
   margin-left: auto;
   margin-right: auto;
@@ -106,7 +106,7 @@
   height: 60vh;
 }
 #longtermInvestmentSection {
-  font-size: 2.5vh;
+  font-size: 1.1rem;
   font-family: "Poppins", sans-serif;
   margin-left: auto;
   margin-right: auto;
@@ -116,7 +116,7 @@
   color: #0d0e0b;
 }
 #lowMaintenanceSection {
-  font-size: 2.5vh;
+  font-size: 1.1rem;
   font-family: "Poppins", sans-serif;
   margin-left: auto;
   margin-right: auto;
@@ -126,7 +126,7 @@
   color: #0d0e0b;
 }
 #priceFallenSection {
-  font-size: 2.5vh;
+  font-size: 1.1rem;
   font-family: "Poppins", sans-serif;
   margin-left: auto;
   margin-right: auto;
@@ -136,7 +136,7 @@
   color: #0d0e0b;
 }
 #grantsAndFinancialSupportSection {
-  font-size: 2.5vh;
+  font-size: 1.1rem;
   font-family: "Poppins", sans-serif;
   margin-left: auto;
   margin-right: auto;
@@ -148,17 +148,17 @@
 .mainCategoryContent {
   font-family: "Poppins", sans-serif;
   text-align: justify;
-  font-size: 2.5vh;
+  font-size: 1.1rem;
 }
 .subContent {
   font-family: "Poppins", sans-serif;
   text-align: justify;
-  font-size: 1.75vh;
+  font-size: 1rem;
 }
 li {
   list-style: square outside none;
   text-align: justify;
-  font-size: 2.5vh;
+  font-size: 1.1rem;
   color: #fe8733;
 }
 li span {
