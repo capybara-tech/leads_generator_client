@@ -7,7 +7,6 @@
   box-shadow: none;
   border-radius: 10px;
   min-width: 55vw;
-  
 }
 
 #exitIntentHeader {
@@ -34,6 +33,24 @@
 #exitIntentSmallPrint {
   font-size: .5rem;
   text-align: left;
+}
+
+#exitIntentQuoteButton {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: transparent;
+  color: #0d0e0b;
+  border-radius: 10px;
+  border: solid #0d0e0b;
+  border-width: 2px;
+}
+
+#exitIntentQuoteButton:hover {
+  background-color: transparent;
+  border: solid #fe8733;
+  border-width: 2px;
 }
 
 #exitIntentExitButton {

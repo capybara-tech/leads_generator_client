@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./ExitIntentModal.style.css";
-import { Modal, Card, Icon } from "semantic-ui-react";
+import { Link } from "react-router-dom";
+import { Modal, Card, Button, Icon } from "semantic-ui-react";
 
 const ExitIntentModal = (props) => {
   const [show, setShow] = useState(props.show);
@@ -27,15 +28,20 @@ const ExitIntentModal = (props) => {
                 Obtain quotes now to be entered into our{" "}
                 <span id="exitIntentHighlightedWord">free £100</span> cash prize
                 draw*
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
                 <Card.Description id="exitIntentDisclaimer">
-                  We ask only those who are genuinely interested in solar to
+                  We ask only those who are genuinely interested in solar
                   request quotes
                 </Card.Description>
+                <br />
+                <Button
+                  as={Link}
+                  to={{ pathname: "/quotes" }}
+                  id="exitIntentQuoteButton"
+                  onClick={close}
+                >
+                  Click to get your 3 quotes
+                </Button>
+                <br />
                 <Card.Description id="exitIntentSmallPrint">
                   *terms apply, see our terms and conditions
                 </Card.Description>
