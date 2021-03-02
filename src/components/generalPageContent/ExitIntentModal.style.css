@@ -6,7 +6,11 @@
 #exitIntentCard {
   box-shadow: none;
   border-radius: 10px;
+  border: dashed .5vw #0d0e0b;
   min-width: 55vw;
+  padding: .1vh;
+  display: inline-block;
+  background-color: #fffff4;
 }
 
 #exitIntentHeader {
