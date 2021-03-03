@@ -20,7 +20,7 @@
 }
 
 #exitIntentContent {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-align: left;
 }
 
@@ -30,16 +30,14 @@
 }
 
 #exitIntentDisclaimer {
-  font-size: 1rem;
-  text-align: left;
-}
-
-#exitIntentSmallPrint {
-  font-size: .5rem;
-  text-align: left;
+  font-size: .65rem;
+  text-align: center;
 }
 
 #exitIntentQuoteButton {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
@@ -63,6 +61,7 @@
   font-size: 1.2rem;
   background-color: #70af85;
   border: none;
+  outline: none;
 }
 
 #exitIntentExitIcon {

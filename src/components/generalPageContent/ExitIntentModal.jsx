@@ -25,13 +25,9 @@ const ExitIntentModal = (props) => {
                 <br />
               </Card.Header>
               <Card.Description id="exitIntentContent">
-                Obtain quotes now to be entered into our{" "}
-                <span id="exitIntentHighlightedWord">free £100</span> cash prize
-                draw*
-                <Card.Description id="exitIntentDisclaimer">
-                  We ask only those who are genuinely interested in solar
-                  request quotes
-                </Card.Description>
+                By installing solar you will dramatically <span id="exitIntentHighlightedWord">reduce your carbon footprint overnight by up to 2 tonnes of CO2/year.</span> <br /> <br />
+                Also, <span id="exitIntentHighlightedWord">donate indirectly to charity</span>. We help fund other eco initiatives from each quote request.
+                <br />
                 <br />
                 <Button
                   as={Link}
@@ -41,9 +37,9 @@ const ExitIntentModal = (props) => {
                 >
                   Click to get your 3 quotes
                 </Button>
-                <br />
-                <Card.Description id="exitIntentSmallPrint">
-                  *terms apply, see our terms and conditions
+                <Card.Description id="exitIntentDisclaimer">
+                  We ask only those who are genuinely interested in solar
+                  request quotes
                 </Card.Description>
                 <br />
               </Card.Description>
