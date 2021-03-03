@@ -1,11 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Media from "react-media";
 import { Link, withRouter } from "react-router-dom";
+import ExitIntent from "../../utils/exitIntent.js";
+import ExitIntentModal from "./ExitIntentModal";
 import "./Navbar.style.css";
 import { Menu, Button, Image, Dropdown, Icon } from "semantic-ui-react";
 
 const Navbar = (props) => {
   const [navbar, setNavbar] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    const removeExitIntent = ExitIntent({
+      threshold: 30,
+      eventThrottle: 100,
+      onExitIntent: () => {
+        setShowPopup(true);
+      },
+    });
+    return () => {
+      removeExitIntent();
+    };
+  }, []);
 
   if (props.location.pathname === "/adminhomepage") {
     return false;
@@ -105,6 +121,7 @@ const Navbar = (props) => {
             )}
             {matches.desktop && (
               <>
+                <ExitIntentModal show={showPopup} />
                 <div className={navbar ? "navbar active" : "navbar"}>
                   <Menu text size="massive" color="">
                     <Menu.Item
