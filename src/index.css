@@ -24,7 +24,7 @@ html,
   outline: none;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 2vh;
+  font-size: 1rem;
   margin: 0;
   position: absolute;
   -ms-transform: translateX(-50%);
@@ -73,7 +73,7 @@ html,
   color: rgba(238, 238, 238, 0.742);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 7vw;
+  font-size: 2.5rem;
   position: absolute;
   top: 15%;
   left: 3%;
@@ -87,14 +87,14 @@ html,
 #subInfoTxtMob {
   background: none;
   color: rgba(238, 238, 238, 0.742);
-  font-size: 4.5vw;
+  font-size: 1.8rem;
 }
 
 #bannerTxtMob {
   color: rgba(238, 238, 238, 0.742);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 5vw;
+  font-size: 2rem;
   text-align: center;
   position: absolute;
   top: 43%;
@@ -109,7 +109,7 @@ html,
 #bannerButtonMob {
   position: absolute;
   transform: translate(-50%, -50%);
-  font-size: 3vw;
+  font-size: 1.2rem;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   background-color: transparent;

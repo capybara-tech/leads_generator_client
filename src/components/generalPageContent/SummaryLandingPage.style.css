@@ -12,7 +12,7 @@
 
 #summaryTitle {
   margin-top: -7vh;
-  font-size: 6vh;
+  font-size: 2.3rem;
   font-weight: 600;
   text-align: center;
 }
@@ -33,7 +33,7 @@
 
 #summaryContent1 {
   color: #0d0e0b;
-  font-size: 2vh;
+  font-size: 1rem;
 }
 
 i.icon.check {
@@ -44,7 +44,7 @@ i.icon.check {
   position: relative;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 2vh;
+  font-size: 1rem;
   left: 50%;
   transform: translate(-50%, 0%);
   border-radius: 10px;
@@ -79,14 +79,14 @@ i.icon.check {
 
 #summaryContent2 {
   color: #0d0e0b;
-  font-size: 2vh;
+  font-size: 1rem;
 }
 
 #cardButton2 {
   position: relative;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 2vh;
+  font-size: 1rem;
   left: 50%;
   transform: translate(-50%, 0%);
   border-radius: 10px;
@@ -121,14 +121,14 @@ i.icon.check {
 
 #summaryContent3 {
   color: #0d0e0b;
-  font-size: 2vh;
+  font-size: 1rem;
 }
 
 #cardButton3 {
   position: relative;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 2vh;
+  font-size: 1rem;
   left: 50%;
   transform: translate(-50%, 0%);
   border-radius: 10px;
@@ -162,14 +162,14 @@ i.icon.check {
 
 #summaryContent4 {
   color: #0d0e0b;
-  font-size: 2vh;
+  font-size: 1rem;
 }
 
 #cardButton4 {
   position: relative;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 2vh;
+  font-size: 1rem;
   left: 50%;
   transform: translate(-50%, 0%);
   border-radius: 10px;
@@ -229,7 +229,7 @@ i.icon.check {
   position: relative;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 2vh;
+  font-size: 1rem;
   left: 50%;
   transform: translate(-50%, 0%);
   border-radius: 10px;
@@ -261,7 +261,7 @@ i.icon.check {
   position: relative;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 2vh;
+  font-size: 1rem;
   left: 50%;
   transform: translate(-50%, 0%);
   border-radius: 10px;
@@ -293,7 +293,7 @@ i.icon.check {
   position: relative;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 2vh;
+  font-size: 1rem;
   left: 50%;
   transform: translate(-50%, 0%);
   border-radius: 10px;
@@ -325,7 +325,7 @@ i.icon.check {
   position: relative;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 2vh;
+  font-size: 1rem;
   left: 50%;
   transform: translate(-50%, 0%);
   border-radius: 10px;
