@@ -8,7 +8,7 @@
 #title {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 7vh;
+  font-size: 2.5rem;
   margin-top: 7%;
   margin-left: 20%;
   color: #fe8733cb;
@@ -17,19 +17,19 @@
 #subTitle {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 2vh;
+  font-size: 1rem;
   margin-left: 20%;
 }
 
 .contactTitle {
   font-family: "Poppins", sans-serif;
-  font-size: 3vh;
+  font-size: 1.2rem;
   margin-left: 20%;
 }
 
 .contactContent {
   font-family: "Poppins", sans-serif;
-  font-size: 2vh;
+  font-size: 1rem;
   margin-left: 20%;
   color: #fe8733cb;
 }
@@ -40,7 +40,7 @@
 
 #conclusion {
   font-family: "Give You Glory";
-  font-size: 3vh;
+  font-size: 1.2rem;
   margin-left: 20%;
 }
 

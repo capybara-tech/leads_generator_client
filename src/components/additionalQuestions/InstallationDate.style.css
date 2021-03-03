@@ -16,7 +16,7 @@
 #installationDateQuestionDiv {
   display: inline-block;
   font-family: "Poppins", sans-serif;
-  font-size: 3vh;
+  font-size: 1.2rem;
 }
 
 #installationQuestionImage {
@@ -52,7 +52,7 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   transition: background-color 5000s;
   font-family: "Poppins", sans-serif;
-  font-size: 3vh;
+  font-size: 1.2rem;
 }
 
 #skipToPropertyTypeQ {
