@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Media from "react-media";
 import { Link, withRouter } from "react-router-dom";
 import ExitIntent from "../../utils/exitIntent.js";
+import MobilePopup from "./MobilePopup";
 import ExitIntentModal from "./ExitIntentModal";
 import "./Navbar.style.css";
 import { Menu, Button, Image, Dropdown, Icon } from "semantic-ui-react";
@@ -49,6 +50,7 @@ const Navbar = (props) => {
           <>
             {matches.mobile && (
               <>
+                <MobilePopup show={props.showPopup} />
                 <div id="navbarMobile">
                   <nav role="navigation">
                     <Menu text id="logoMobile">
