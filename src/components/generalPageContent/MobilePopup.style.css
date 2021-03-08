@@ -1,0 +1,36 @@
+#mobilePopupContent {
+  background-color: #70af85;
+  font-family: "Poppins", sans-serif;
+}
+
+#mobilePopupCard {
+  box-shadow: none;
+  border-radius: 10px;
+  border: dashed .5vw #0d0e0b;
+  min-width: 55vw;
+  padding: .1vh;
+  display: inline-block;
+  background-color: #fffff4;
+}
+
+#mobilePopupHeader {
+  margin-top: 5vh;
+  font-size: 5rem;
+  font-weight: bold;
+  float: left;
+}
+
+#mobilePopupContent {
+  font-size: 1.4rem;
+  text-align: left;
+}
+
+#mobilePopupHighlightedWord {
+  color: #fffff4;
+  font-weight: bold;
+}
+
+#mobilePopupDisclaimer {
+  font-size: .65rem;
+  text-align: center;
+}
