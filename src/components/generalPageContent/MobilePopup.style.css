@@ -1,4 +1,4 @@
-#mobilePopupContent {
+.mobilePopupContent {
   background-color: #70af85;
   font-family: "Poppins", sans-serif;
 }
@@ -10,7 +10,7 @@
   min-width: 55vw;
   padding: .1vh;
   display: inline-block;
-  background-color: #fffff4;
+  background-color: #70af85;
 }
 
 #mobilePopupHeader {
@@ -20,7 +20,7 @@
   float: left;
 }
 
-#mobilePopupContent {
+.mobilePopupContent {
   font-size: 1rem;
   text-align: left;
 }

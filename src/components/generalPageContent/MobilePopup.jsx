@@ -9,7 +9,7 @@ const MobilePopup = (props) => {
   useEffect(() => {
     setTimeout(() => {
       setShowMobilePopup(true);
-    }, 10000);
+    }, 15000);
   }, [props.showPopupMobile]);
 
   const close = () => {
@@ -21,18 +21,25 @@ const MobilePopup = (props) => {
       <Modal basic open={showPopupMobile}>
         <Modal.Content>
           <Card id="mobilePopupCard" centered={true}>
-            <Card.Content id="mobilePopupContent">
-              <Card.Header id="mobilePopupHeader">
+            <Card.Content className="mobilePopupContent">
+              <Card.Header id="mobilePopupHeader" data-cy="title">
                 Did you know!
                 <br />
               </Card.Header>
-              <Card.Description id="mobilePopupContent">
+              <Card.Description
+                className="mobilePopupContent"
+                data-cy="message"
+              >
                 By installing solar you will dramatically{" "}
                 <span id="mobilePopupHighlightedWord">
                   reduce your carbon footprint overnight by up to 2 tonnes of
                   CO2/year.
                 </span>{" "}
                 <br /> <br />
+                <Card.Description
+                  className="mobilePopupContent"
+                  data-cy="message"
+                ></Card.Description>
                 Also,{" "}
                 <span id="mobilePopupHighlightedWord">
                   donate indirectly to charity
@@ -48,7 +55,10 @@ const MobilePopup = (props) => {
                 >
                   Click to get your 3 quotes
                 </Button>
-                <Card.Description id="mobilePopupDisclaimer">
+                <Card.Description
+                  id="mobilePopupDisclaimer"
+                  data-cy="disclaimer"
+                >
                   We ask only those who are genuinely interested in solar
                   request quotes
                 </Card.Description>
