@@ -14,7 +14,7 @@
 }
 
 #mobilePopupHeader {
-  margin-top: 5vh;
+  margin-top: 1vh;
   font-size: 5rem;
   font-weight: bold;
   float: left;
@@ -33,4 +33,32 @@
 #mobilePopupDisclaimer {
   font-size: .65rem;
   text-align: center;
+}
+
+#mobilePopupQuoteButton {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: transparent;
+  color: #0d0e0b;
+  border-radius: 10px;
+  border: solid #0d0e0b;
+  border-width: 2px;
+}
+
+#mobilePopupExitButton {
+  float: right;
+  position: relative;
+  font-size: 1.2rem;
+  background-color: #70af85;
+  border: none;
+  outline: none;
+}
+
+#mobilePopupExitIcon {
+  color: #bababa;
 }

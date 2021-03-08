@@ -22,8 +22,8 @@ import Media from "react-media";
 
 const App = () => {
   useEffect(() => {
-    var Tawk_API = Tawk_API || {},
-      Tawk_LoadStart = new Date();
+   // var Tawk_API = Tawk_API || {},
+    //  Tawk_LoadStart = new Date();
     (function () {
       var s1 = document.createElement("script"),
         s0 = document.getElementsByTagName("script")[0];
