@@ -1,0 +1,64 @@
+.mobilePopupContent {
+  background-color: #70af85;
+  font-family: "Poppins", sans-serif;
+}
+
+#mobilePopupCard {
+  box-shadow: none;
+  border-radius: 10px;
+  border: dashed .5vw #0d0e0b;
+  min-width: 55vw;
+  padding: .1vh;
+  display: inline-block;
+  background-color: #70af85;
+}
+
+#mobilePopupHeader {
+  margin-top: 1vh;
+  font-size: 4rem;
+  font-weight: bold;
+  float: left;
+}
+
+.mobilePopupContent {
+  font-size: 1rem;
+  text-align: left;
+}
+
+#mobilePopupHighlightedWord {
+  color: #fffff4;
+  font-weight: bold;
+}
+
+#mobilePopupDisclaimer {
+  font-size: .65rem;
+  text-align: center;
+}
+
+#mobilePopupQuoteButton {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  background-color: transparent;
+  color: #0d0e0b;
+  border-radius: 10px;
+  border: solid #0d0e0b;
+  border-width: 2px;
+}
+
+#mobilePopupExitButton {
+  float: right;
+  position: relative;
+  font-size: .75rem;
+  background-color: #70af85;
+  border: none;
+  outline: none;
+}
+
+#mobilePopupExitIcon {
+  color: #bababa;
+}
