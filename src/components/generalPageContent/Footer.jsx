@@ -198,6 +198,12 @@ const Footer = (props) => {
                           </div>
                         </Grid.Column>
                       </Grid.Row>
+                      <p>
+                    {" "}
+                    <br /> &copy;{new Date().getFullYear()} CAPYBARA TECH UK LTD |
+                    company no. 13255790, Manchester, UK | All rights
+                    reserved
+                  </p>
                     </Grid>
                   </Container>
                 </div>
@@ -376,8 +382,8 @@ const Footer = (props) => {
                   </Container>
                   <p>
                     {" "}
-                    <br /> &copy;{new Date().getFullYear()} CAPYBARA TECH |
-                    registration no. 123456-7890, Kista, Stockholm | All rights
+                    <br /> &copy;{new Date().getFullYear()} CAPYBARA TECH UK LTD |
+                    company no. 13255790, Manchester, UK | All rights
                     reserved
                   </p>
                   <Link
