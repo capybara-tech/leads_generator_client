@@ -155,7 +155,7 @@ const Footer = (props) => {
                             FAQs
                           </Link>{" "}
                           <br /> <br />
-                          <p className="contact">capybara.it@gmail.com</p>
+                          <p className="contact">hello@wattswhat.co.uk</p>
                           <p className="contact">
                             Monday - Friday | 8.00 - 16.00
                           </p>
@@ -330,7 +330,7 @@ const Footer = (props) => {
                             FAQs
                           </Link>{" "}
                           <br /> <br />
-                          <p className="contact">capybara.it@gmail.com</p>
+                          <p className="contact">hello@wattswhat.co.uk</p>
                           <p className="contact">
                             Monday - Friday | 8.00 - 16.00
                           </p>
