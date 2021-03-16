@@ -19,7 +19,7 @@
 #environmentTitle {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 3.5rem;
+  font-size: 5rem;
   color: #fffff4;
 }
 
@@ -30,11 +30,12 @@
 
 #environmentSubHeader {
   color: #fffff4;
+  font-size: 1.5rem;
 }
 
 .environmentalBenefits {
   color: #fffff4;
-  font-weight: bold;
+  font-size: 2rem;
 }
 
 #environmentCategory {
