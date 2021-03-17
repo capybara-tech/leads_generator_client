@@ -65,7 +65,8 @@ const Economics = () => {
                     </div>
                     <div>
                       <p className="financialBenefitsMobile">
-                        Government grants and financial support<br /> are up for grabs
+                        Government grants and financial support
+                        <br /> are up for grabs
                       </p>
                     </div>
                     <div>
@@ -80,7 +81,8 @@ const Economics = () => {
                     </div>
                     <div>
                       <p className="financialBenefitsMobile">
-                        Solar panel prices have fallen by around 70%<br/> since 2010!
+                        Solar panel prices have fallen by around 70%
+                        <br /> since 2010!
                       </p>
                     </div>
                     <div>
@@ -143,7 +145,6 @@ const Economics = () => {
                       </p>
                     </Grid.Column>
                   </Grid.Row>
-
                   <Grid.Row>
                     <Grid.Column>
                       {" "}
@@ -180,7 +181,6 @@ const Economics = () => {
                       </p>
                     </Grid.Column>
                   </Grid.Row>
-
                   <Grid.Row>
                     <Grid.Column>
                       {" "}
@@ -223,7 +223,6 @@ const Economics = () => {
                       </ul>
                     </Grid.Column>
                   </Grid.Row>
-
                   <Grid.Row>
                     <Grid.Column>
                       <Image
@@ -278,7 +277,6 @@ const Economics = () => {
                       </p>
                     </Grid.Column>
                   </Grid.Row>
-
                   <Grid.Row>
                     <Grid.Column>
                       {" "}
@@ -312,7 +310,6 @@ const Economics = () => {
                       </p>
                     </Grid.Column>
                   </Grid.Row>
-
                   <Grid.Row>
                     <Grid.Column>
                       {" "}
@@ -345,7 +342,6 @@ const Economics = () => {
                       </p>
                     </Grid.Column>
                   </Grid.Row>
-
                   <Grid.Row>
                     <Grid.Column>
                       {" "}
@@ -384,8 +380,8 @@ const Economics = () => {
                     </Grid.Column>
                   </Grid.Row>
                 </Grid>
-                <div id="economicsBottomBannerMobile">
-                  <Grid id="wattsWhatInNumbersMobile">
+                <Segment>
+                  <Grid>
                     <Grid.Row columns="2">
                       <Grid.Column>
                         <div>
@@ -404,7 +400,10 @@ const Economics = () => {
                                   }
                                 }}
                               >
-                                <span className="numbersMobile" ref={countUpRef} />
+                                <span
+                                  className="numbersMobile"
+                                  ref={countUpRef}
+                                />
                               </VisibilitySensor>
                             )}
                           </CountUp>
@@ -428,7 +427,10 @@ const Economics = () => {
                                   }
                                 }}
                               >
-                                <span className="numbersMobile" ref={countUpRef} />
+                                <span
+                                  className="numbersMobile"
+                                  ref={countUpRef}
+                                />
                               </VisibilitySensor>
                             )}
                           </CountUp>
@@ -456,7 +458,10 @@ const Economics = () => {
                                   }
                                 }}
                               >
-                                <span className="numbersMobile" ref={countUpRef} />
+                                <span
+                                  className="numbersMobile"
+                                  ref={countUpRef}
+                                />
                               </VisibilitySensor>
                             )}
                           </CountUp>
@@ -480,7 +485,10 @@ const Economics = () => {
                                   }
                                 }}
                               >
-                                <span className="numbersMobile" ref={countUpRef} />
+                                <span
+                                  className="numbersMobile"
+                                  ref={countUpRef}
+                                />
                               </VisibilitySensor>
                             )}
                           </CountUp>
@@ -489,6 +497,8 @@ const Economics = () => {
                       </Grid.Column>
                     </Grid.Row>
                   </Grid>
+                </Segment>
+                <div id="economicsBottomBannerMobile">
                   <div id="conclusionEconomicsMobile">
                     <p>It's easy, get up to three quotes now...</p>
                     <Button
