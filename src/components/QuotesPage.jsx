@@ -56,7 +56,7 @@ const QuotesPage = () => {
         energy_consumption: energy_consumption.value,
       };
 
-      response = await axios.post("http://localhost:3000/api/v1/quotes", {
+      response = await axios.post("/quotes", {
         quote: quoteParams,
       });
 
