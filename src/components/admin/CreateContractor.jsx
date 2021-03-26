@@ -29,7 +29,7 @@ const CreateContractor = () => {
       };
 
       response = await axios.post(
-        "http://localhost:3000/api/v1/admin/contractors",
+        "/admin/contractors",
         { contractor: contractorParams },
         { headers: headers }
       );
