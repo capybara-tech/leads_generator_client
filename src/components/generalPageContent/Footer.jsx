@@ -200,7 +200,7 @@ const Footer = (props) => {
                       </Grid.Row>
                       <p>
                     {" "}
-                    <br /> &copy;{new Date().getFullYear()} CAPYBARA TECH UK LTD |
+                    <br /> &copy;{new Date().getFullYear()} Capybara Tech UK Ltd |
                     company no. 13255790, Manchester, UK | All rights
                     reserved
                   </p>
@@ -382,7 +382,7 @@ const Footer = (props) => {
                   </Container>
                   <p>
                     {" "}
-                    <br /> &copy;{new Date().getFullYear()} CAPYBARA TECH UK LTD |
+                    <br /> &copy;{new Date().getFullYear()} Capybara Tech UK Ltd |
                     company no. 13255790, Manchester, UK | All rights
                     reserved
                   </p>
