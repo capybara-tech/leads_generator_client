@@ -112,6 +112,10 @@
   font-size: 1.2rem;
 }
 
+.emailButton {
+  color:white;
+}
+
 #ceoMessageTitle {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
