@@ -138,7 +138,15 @@ const AboutUs = () => {
                                 size="big"
                                 className="emailButton"
                               />
+                              <p>alex@wattswhat.co.uk</p>
                             </a>
+                            <i
+                              onClick={() =>
+                                window.open("https://www.linkedin.com/in/alex-bellamy-0237441b4/")
+                              }
+                              className="fa fa-linkedin"
+                              aria-hidden="true"
+                            />
                           </Grid.Column>
                           <Grid.Column>
                             <Popup
@@ -167,7 +175,15 @@ const AboutUs = () => {
                                 size="big"
                                 className="emailButton"
                               />
+                              <p>felix@wattswhat.co.uk</p>
                             </a>
+                            <i
+                              onClick={() =>
+                                window.open("https://www.linkedin.com/in/felix-oppong-willborg-827b93b5/")
+                              }
+                              className="fa fa-linkedin"
+                              aria-hidden="true"
+                            />
                           </Grid.Column>
                           <Grid.Column>
                             <Popup
@@ -194,6 +210,7 @@ const AboutUs = () => {
                                 size="big"
                                 className="emailButton"
                               />
+                               <p>hello@wattswhat.co.uk</p>
                             </a>
                           </Grid.Column>
                         </Grid.Row>
