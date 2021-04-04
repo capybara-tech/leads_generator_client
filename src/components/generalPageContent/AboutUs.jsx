@@ -432,6 +432,7 @@ const AboutUs = () => {
                               onClick={() =>
                                 window.open("https://www.linkedin.com/in/alex-bellamy-0237441b4/")
                               }
+                              id="alexLinkedInIcon"
                               className="fa fa-linkedin"
                               aria-hidden="true"
                             />
@@ -469,6 +470,7 @@ const AboutUs = () => {
                               onClick={() =>
                                 window.open("https://www.linkedin.com/in/felix-oppong-willborg-827b93b5/")
                               }
+                              id="felixLinkedInIcon"
                               className="fa fa-linkedin"
                               aria-hidden="true"
                             />
