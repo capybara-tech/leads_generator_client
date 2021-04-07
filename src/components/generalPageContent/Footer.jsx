@@ -155,7 +155,7 @@ const Footer = (props) => {
                             FAQs
                           </Link>{" "}
                           <br /> <br />
-                          <p className="contact">capybara.it@gmail.com</p>
+                          <p className="contact">hello@wattswhat.co.uk</p>
                           <p className="contact">
                             Monday - Friday | 8.00 - 16.00
                           </p>
@@ -163,8 +163,8 @@ const Footer = (props) => {
                       </Grid.Row>
                       <Grid.Row centered={"true"}>
                         <Grid.Column>
-                          <h3 className="footerHeader">Follow us on</h3>
-                          <div id="socialMedia">
+                          <h3 id="socialMediaFooterHeader">Follow us on</h3>
+                          <div id="socialMediaMobile">
                             <i
                               id="instagramIcon"
                               onClick={() =>
@@ -183,14 +183,14 @@ const Footer = (props) => {
                             />{" "}
                             <i
                               id="twitterIcon"
-                              onClick={() => window.open("https://twitter.com")}
+                              onClick={() => window.open("https://twitter.com/watts_what")}
                               className="fab fa-twitter-square fa"
                               aria-hidden="true"
                             />{" "}
                             <i
                               id="linkedinIcon"
                               onClick={() =>
-                                window.open("https://linkedin.com")
+                                window.open("https://www.linkedin.com/company/71707937")
                               }
                               className="fa fa-linkedin"
                               aria-hidden="true"
@@ -198,6 +198,12 @@ const Footer = (props) => {
                           </div>
                         </Grid.Column>
                       </Grid.Row>
+                      <p>
+                    {" "}
+                    <br /> &copy;{new Date().getFullYear()} Capybara Tech UK Ltd |
+                    company no. 13255790, Manchester, UK | All rights
+                    reserved
+                  </p>
                     </Grid>
                   </Container>
                 </div>
@@ -324,7 +330,7 @@ const Footer = (props) => {
                             FAQs
                           </Link>{" "}
                           <br /> <br />
-                          <p className="contact">capybara.it@gmail.com</p>
+                          <p className="contact">hello@wattswhat.co.uk</p>
                           <p className="contact">
                             Monday - Friday | 8.00 - 16.00
                           </p>
@@ -350,14 +356,14 @@ const Footer = (props) => {
                             />{" "}
                             <i
                               id="twitterIcon"
-                              onClick={() => window.open("https://twitter.com")}
+                              onClick={() => window.open("https://twitter.com/watts_what")}
                               className="fab fa-twitter-square fa"
                               aria-hidden="true"
                             />{" "}
                             <i
                               id="linkedinIcon"
                               onClick={() =>
-                                window.open("https://linkedin.com")
+                                window.open("https://www.linkedin.com/company/71707937/")
                               }
                               className="fa fa-linkedin"
                               aria-hidden="true"
@@ -376,8 +382,8 @@ const Footer = (props) => {
                   </Container>
                   <p>
                     {" "}
-                    <br /> &copy;{new Date().getFullYear()} CAPYBARA TECH |
-                    registration no. 123456-7890, Kista, Stockholm | All rights
+                    <br /> &copy;{new Date().getFullYear()} Capybara Tech UK Ltd |
+                    company no. 13255790, Manchester, UK | All rights
                     reserved
                   </p>
                   <Link

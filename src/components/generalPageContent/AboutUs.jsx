@@ -122,9 +122,7 @@ const AboutUs = () => {
                               trigger={
                                 <Image
                                   verticalAlign="middle"
-                                  src={
-                                    "/images/alexPhoto.png"
-                                  }
+                                  src={"/images/alexPhoto.png"}
                                   circular
                                   size="small"
                                 />
@@ -134,8 +132,21 @@ const AboutUs = () => {
                             <p className="teamMemberTitles">
                               CEO and co-founder
                             </p>
-                            <Icon name="mail" size="big" />
-                            {/* fix email link */}
+                            <a href="mailto:alex@wattswhat.co.uk">
+                              <Icon
+                                name="mail"
+                                size="big"
+                                className="emailButton"
+                              />
+                              <p>alex@wattswhat.co.uk</p>
+                            </a>
+                            <i
+                              onClick={() =>
+                                window.open("https://www.linkedin.com/in/alex-bellamy-0237441b4/")
+                              }
+                              className="fa fa-linkedin"
+                              aria-hidden="true"
+                            />
                           </Grid.Column>
                           <Grid.Column>
                             <Popup
@@ -146,9 +157,7 @@ const AboutUs = () => {
                               trigger={
                                 <Image
                                   verticalAlign="middle"
-                                  src={
-                                    "/images/FelixProfil.jpg"
-                                  }
+                                  src={"/images/FelixProfil.jpg"}
                                   circular
                                   size="small"
                                 />
@@ -160,8 +169,21 @@ const AboutUs = () => {
                             <p className="teamMemberTitles">
                               COO and co-founder
                             </p>
-                            <Icon name="mail" size="big" />
-                            {/* fix email link */}
+                            <a href="mailto:felix@wattswhat.co.uk">
+                              <Icon
+                                name="mail"
+                                size="big"
+                                className="emailButton"
+                              />
+                              <p>felix@wattswhat.co.uk</p>
+                            </a>
+                            <i
+                              onClick={() =>
+                                window.open("https://www.linkedin.com/in/felix-oppong-willborg-827b93b5/")
+                              }
+                              className="fa fa-linkedin"
+                              aria-hidden="true"
+                            />
                           </Grid.Column>
                           <Grid.Column>
                             <Popup
@@ -172,9 +194,7 @@ const AboutUs = () => {
                               trigger={
                                 <Image
                                   verticalAlign="middle"
-                                  src={
-                                    "/images/TwinkyPhoto.jpg"
-                                  }
+                                  src={"/images/TwinkyPhoto.jpg"}
                                   circular
                                   size="small"
                                 />
@@ -184,8 +204,14 @@ const AboutUs = () => {
                             <p className="teamMemberTitles">
                               Head of Customer Satisfaction
                             </p>
-                            <Icon name="mail" size="big" />
-                            {/* fix email link */}
+                            <a href="mailto:hello@wattswhat.co.uk">
+                              <Icon
+                                name="mail"
+                                size="big"
+                                className="emailButton"
+                              />
+                               <p>hello@wattswhat.co.uk</p>
+                            </a>
                           </Grid.Column>
                         </Grid.Row>
                       </Grid>
@@ -205,9 +231,8 @@ const AboutUs = () => {
                     </div>
 
                     <Segment raised id="ourAimsSegmentMobile">
-                   
                       <p id="ourAmbitionTitle">- Our ambition -</p>
-                   
+
                       <Grid id="ourAimsGridMobile">
                         <Grid.Row centered={true} columns={1}>
                           <Grid.Column textAlign={"center"}>
@@ -385,9 +410,7 @@ const AboutUs = () => {
                               trigger={
                                 <Image
                                   verticalAlign="middle"
-                                  src={
-                                    "/images/alexPhoto.png"
-                                  }
+                                  src={"/images/alexPhoto.png"}
                                   circular
                                   size="small"
                                 />
@@ -397,8 +420,22 @@ const AboutUs = () => {
                             <p className="teamMemberTitles">
                               CEO and co-founder
                             </p>
-                            <Icon name="mail" size="big" />
-                            {/* fix email link */}
+                            <a href="mailto:alex@wattswhat.co.uk">
+                              <Icon
+                                name="mail"
+                                size="big"
+                                className="emailButton"
+                              />
+                               <p>alex@wattswhat.co.uk</p>
+                            </a>
+                            <i
+                              onClick={() =>
+                                window.open("https://www.linkedin.com/in/alex-bellamy-0237441b4/")
+                              }
+                              id="alexLinkedInIcon"
+                              className="fa fa-linkedin"
+                              aria-hidden="true"
+                            />
                           </Grid.Column>
                           <Grid.Column>
                             <Popup
@@ -409,9 +446,7 @@ const AboutUs = () => {
                               trigger={
                                 <Image
                                   verticalAlign="middle"
-                                  src={
-                                    "/images/FelixProfil.jpg"
-                                  }
+                                  src={"/images/FelixProfil.jpg"}
                                   circular
                                   size="small"
                                 />
@@ -423,8 +458,22 @@ const AboutUs = () => {
                             <p className="teamMemberTitles">
                               COO and co-founder
                             </p>
-                            <Icon name="mail" size="big" />
-                            {/* fix email link */}
+                            <a href="mailto:felix@wattswhat.co.uk">
+                              <Icon
+                                name="mail"
+                                size="big"
+                                className="emailButton"
+                              />
+                              <p>felix@wattswhat.co.uk</p>
+                            </a>
+                            <i
+                              onClick={() =>
+                                window.open("https://www.linkedin.com/in/felix-oppong-willborg-827b93b5/")
+                              }
+                              id="felixLinkedInIcon"
+                              className="fa fa-linkedin"
+                              aria-hidden="true"
+                            />
                           </Grid.Column>
                           <Grid.Column>
                             <Popup
@@ -435,9 +484,7 @@ const AboutUs = () => {
                               trigger={
                                 <Image
                                   verticalAlign="middle"
-                                  src={
-                                    "/images/TwinkyPhoto.jpg"
-                                  }
+                                  src={"/images/TwinkyPhoto.jpg"}
                                   circular
                                   size="small"
                                 />
@@ -447,8 +494,14 @@ const AboutUs = () => {
                             <p className="teamMemberTitles">
                               Head of Customer Satisfaction
                             </p>
-                            <Icon name="mail" size="big" />
-                            {/* fix email link */}
+                            <a href="mailto:hello@wattswhat.co.uk">
+                              <Icon
+                                name="mail"
+                                size="big"
+                                className="emailButton"
+                              />
+                                <p>hello@wattswhat.co.uk</p>
+                            </a>
                           </Grid.Column>
                         </Grid.Row>
                       </Grid>
@@ -464,10 +517,9 @@ const AboutUs = () => {
                       </p>
                       <p>Alex Bellamy, CEO Capybara UK</p>
                     </div>
-                    
                   </div>
                   <Segment raised id="ourAimsSegment">
-                      <p id="ourAmbitionTitle">- Our ambition -</p>
+                    <p id="ourAmbitionTitle">- Our ambition -</p>
                     <Grid id="ourAimsGrid">
                       <Grid.Row columns={5}>
                         <Grid.Column>

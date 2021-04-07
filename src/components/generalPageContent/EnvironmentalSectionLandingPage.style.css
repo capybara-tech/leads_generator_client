@@ -18,7 +18,7 @@
 #ourPrimaryMisson {
   height: 70vh;
   background-image: url("/images/old-age-360714_1920.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -32,6 +32,8 @@
   font-size: 1rem;
   background-color: #70af85;
   border-radius: 3px;
+  margin-right:1vw;
+  
 }
 
 #promotionEnvironmentalBenefitsTitle {

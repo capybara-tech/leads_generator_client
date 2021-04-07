@@ -30,6 +30,14 @@
   border-top: 2.5px solid;
 }
 
+#socialMediaFooterHeader {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  position: relative;
+  line-height: 1.2em;
+}
+
 .footerLink {
   color: #fffff4;
   font-size: 1.2em;
@@ -71,4 +79,11 @@
 
 #linkedinIcon:hover {
   color: #bababa;
+}
+
+/* ------------mobile------------ */
+
+#socialMediaMobile {
+  font-size: 2.5rem;
+  text-align: center;
 }

@@ -115,7 +115,7 @@ const FAQs = () => {
                               Start an instant chat by clicking the icon in the
                               bottom right hand corner of the screen.
                               Alternatively, you can drop us an email at
-                              capybara.it@gmail.com. We are here ready to answer
+                              hello@wattswhat.co.uk. We are here ready to answer
                               any questions or provide friendly advice.
                             </Card.Description>
                           </Card.Content>
@@ -127,7 +127,7 @@ const FAQs = () => {
                               WattsWhat?
                             </Card.Header>
                             <Card.Description>
-                              Drop us an email to capybara.it@gmail.com or start
+                              Drop us an email to hello@wattswhat.co.uk or start
                               a live chat to get the ball rolling. We are a
                               genuine team here at WattsWhat looking to
                               collaborate and grow our expanding network. We
@@ -239,7 +239,7 @@ const FAQs = () => {
                               Start an instant chat by clicking the icon in the
                               bottom right hand corner of the screen.
                               Alternatively, you can drop us an email at
-                              capybara.it@gmail.com. We are here ready to answer
+                              hello@wattswhat.co.uk. We are here ready to answer
                               any questions or provide friendly advice.
                             </Card.Description>
                           </Card.Content>
@@ -251,7 +251,7 @@ const FAQs = () => {
                               WattsWhat?
                             </Card.Header>
                             <Card.Description>
-                              Drop us an email to capybara.it@gmail.com or start
+                              Drop us an email to hello@wattswhat.co.uk or start
                               a live chat to get the ball rolling. We are a
                               genuine team here at WattsWhat looking to
                               collaborate and grow our expanding network. We

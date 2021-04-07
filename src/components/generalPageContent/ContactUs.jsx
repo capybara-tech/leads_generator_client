@@ -29,7 +29,7 @@ const ContactUs = () => {
                   <Icon name="rocketchat" />, alternatively:
                 </p>
                 <h2 className="contactTitleMobile">Email</h2>
-                <p className="contactContentMobile">capybara.it@gmail.com</p>
+                <p className="contactContentMobile">hello@wattswhat.co.uk</p>
                 <h2 className="contactTitleMobile">Post</h2>
                 <p className="contactContentMobile">Kista, Stockholm</p> <br />
                 <p id="conclusionMobile">
@@ -49,7 +49,7 @@ const ContactUs = () => {
                   <Icon name="rocketchat" />, alternatively:
                 </p>
                 <h2 className="contactTitle">Email</h2>
-                <p className="contactContent">capybara.it@gmail.com</p>
+                <p className="contactContent">hello@wattswhat.co.uk</p>
                 <h2 className="contactTitle">Post</h2>
                 <p className="contactContent">Kista, Stockholm</p> <br />
                 <p id="conclusion">

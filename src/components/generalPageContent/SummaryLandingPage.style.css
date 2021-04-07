@@ -18,7 +18,7 @@
 }
 
 #summaryCard1 {
-  height: 55vh;
+  min-height: 65vh;
   background-color: transparent;
   border-style: solid;
   border-width: 0.3vh;
@@ -64,7 +64,7 @@ i.icon.check {
 }
 
 #summaryCard2 {
-  height: 55vh;
+  min-height: 65vh;
   background-color: transparent;
   border-style: solid;
   border-width: 0.3vh;
@@ -106,7 +106,7 @@ i.icon.check {
 }
 
 #summaryCard3 {
-  height: 55vh;
+  min-height: 65vh;
   background-color: transparent;
   border-style: solid;
   border-width: 0.3vh;
@@ -148,7 +148,7 @@ i.icon.check {
 }
 
 #summaryCard4 {
-  height: 55vh;
+  min-height: 65vh;
   background-color: transparent;
   border-style: solid;
   border-width: 0.3vh;

@@ -3,7 +3,7 @@
 }
 .financialBenefits {
   color: #fffff4;
-  font-weight: bold;
+  font-size: 2rem;
 }
 #economicsBanner {
   font-family: "Poppins", sans-serif;
@@ -21,7 +21,7 @@
 #economicsTitle {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 3.5rem;
+  font-size: 5rem;
   color: #fffff4;
 }
 #titleEmphasis {
@@ -30,6 +30,7 @@
 }
 #economicsSubHeader {
   color: #fffff4;
+  font-size: 1.5rem;
 }
 #solSpanaInNumbers {
   margin-bottom: -15%;
